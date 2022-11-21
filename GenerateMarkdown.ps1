@@ -1,0 +1,1 @@
+pandoc -s --extract-media ./ "TranslationsBuilder.docx" -t gfm -o ReadMe.md
