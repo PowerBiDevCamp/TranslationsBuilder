@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Update="Forms\FormAddCultureDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormAddLocalizedLabels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormConnect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormEditLocalizedLabel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormEditTranslation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormLoadingStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\FormSetDatasetName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

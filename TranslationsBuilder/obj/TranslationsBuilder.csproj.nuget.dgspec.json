@@ -1,0 +1,84 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\DevCamp\\TranslationsBuilder\\TranslationsBuilder\\TranslationsBuilder.csproj": {}
+  },
+  "projects": {
+    "C:\\DevCamp\\TranslationsBuilder\\TranslationsBuilder\\TranslationsBuilder.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\DevCamp\\TranslationsBuilder\\TranslationsBuilder\\TranslationsBuilder.csproj",
+        "projectName": "TranslationsBuilder",
+        "projectPath": "C:\\DevCamp\\TranslationsBuilder\\TranslationsBuilder\\TranslationsBuilder.csproj",
+        "packagesPath": "C:\\Users\\TedP\\.nuget\\packages\\",
+        "outputPath": "C:\\DevCamp\\TranslationsBuilder\\TranslationsBuilder\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\TedP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Microsoft.AnalysisServices.AdomdClient.NetCore.retail.amd64": {
+              "target": "Package",
+              "version": "[19.51.0, )"
+            },
+            "Microsoft.AnalysisServices.NetCore.retail.amd64": {
+              "target": "Package",
+              "version": "[19.51.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "System.Management": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

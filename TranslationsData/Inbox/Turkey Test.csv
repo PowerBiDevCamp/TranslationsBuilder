@@ -1,0 +1,5 @@
+﻿Object Type,Property,Name,English [en-US],Spanish [es-ES]
+Table,Caption,Sales,Sales,Ventas
+Measure,Caption,Sales[Hello World],Hello World,Hola Mundo
+Table,DisplayFolder,Sales[Finacial],Finacial,More Testing
+Measure,Caption,Sales[Sales Revenue],Sales Revenue,c

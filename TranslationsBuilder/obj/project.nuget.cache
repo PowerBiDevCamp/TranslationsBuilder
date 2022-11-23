@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "vuo1LHJGXDHQwDtCgoIoVleGM29QmN2eMk93LaUJQS41PQSMWltR3iipVqXdYK2/S5AjZbhhhJmgBKBGb0Fplw==",
+  "success": true,
+  "projectFilePath": "C:\\DevCamp\\TranslationsBuilder\\TranslationsBuilder\\TranslationsBuilder.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\TedP\\.nuget\\packages\\microsoft.analysisservices.adomdclient.netcore.retail.amd64\\19.51.0\\microsoft.analysisservices.adomdclient.netcore.retail.amd64.19.51.0.nupkg.sha512",
+    "C:\\Users\\TedP\\.nuget\\packages\\microsoft.analysisservices.netcore.retail.amd64\\19.51.0\\microsoft.analysisservices.netcore.retail.amd64.19.51.0.nupkg.sha512",
+    "C:\\Users\\TedP\\.nuget\\packages\\microsoft.identity.client\\4.43.0\\microsoft.identity.client.4.43.0.nupkg.sha512",
+    "C:\\Users\\TedP\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\TedP\\.nuget\\packages\\system.codedom\\7.0.0\\system.codedom.7.0.0.nupkg.sha512",
+    "C:\\Users\\TedP\\.nuget\\packages\\system.management\\7.0.0\\system.management.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

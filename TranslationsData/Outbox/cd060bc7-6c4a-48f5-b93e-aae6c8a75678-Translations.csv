@@ -1,0 +1,22 @@
+﻿Object Type,Property,Name,English [en-US],Swedish [sv-SE],Turkish [tr-TR],Hindi [hi-IN],Greek [el-GR],Japanese [ja-JP]
+Table,Caption,Products,Products,Produkter,Ürünler,उत्पादों,Προϊόντα,プロダクツ
+Column,Caption,Products[Product],Product,Produkt,Ürün,उत्पाद,Προϊόν,積
+Column,Caption,Products[Category],Category,Kategori,Kategori,वर्ग,Κατηγορία,カテゴリ
+Hierarchy,Caption,Products[Product Category],Product Category,Produktkategori,Ürün Kategorisi,उत्पाद श्रेणी,Κατηγορία Προϊόντος,製品カテゴリ
+Level,Caption,Products[Product Category]Category,Category,Kategori,Kategori,वर्ग,Κατηγορία,カテゴリ
+Level,Caption,Products[Product Category]Product,Product,Produkt,Ürün,उत्पाद,Προϊόν,積
+Hierarchy,DisplayFolder,Products[Product Category],Acme,Acme,Doruk,पराकाष्ठा,Ακμή,極み
+Table,Caption,Sales,Sales,Försäljning,Satış,बिक्री,Πωλήσεις,セールス
+Measure,Caption,Sales[Sales Revenue],Sales Revenue,Försäljningsintäkter,Satış Geliri,बिक्री राजस्व,Έσοδα Από Πωλήσεις,売上高
+Measure,DisplayFolder,Sales[Folder429],Folder429,Mapp429,Klasör429,फ़ोल्डर429,Φάκελος429,フォルダ429
+Measure,Caption,Sales[Units Sold],Units Sold,Sålda Enheter,Satılan Birimler,बेची गई इकाइयाँ,Μονάδες Που Πωλήθηκαν,販売台数
+Table,Caption,Calendar,Calendar,Kalender,Takvim,कैलेंडर,Ημερολόγιο,暦
+Column,Caption,Calendar[Date],Date,Datum,Tarih,खजूर,Ημερομηνία,日付
+Column,Caption,Calendar[Year],Year,År,Yıl,साल,Έτος,年
+Column,Caption,Calendar[Quarter],Quarter,Fjärdedel,Çeyrek,दिशा,Τέταρτο,四半期
+Column,Caption,Calendar[Month],Month,Månad,Ay,महीना,Μήνας,月
+Column,Caption,Calendar[Month in Year],Month in Year,Månad I År,Yıldan Aya,साल में महीना,Από Μήνα Σε Έτος,年度の月
+Column,Caption,Calendar[Day of Week],Day of Week,Veckodag,Haftanın Günü,सप्ताह का दिन,Ημέρα Της Εβδομάδας,曜日
+Measure,Caption,Localized Labels[My Report Title],My Report Title,Titeln På Min Rapport,Rapor Başlığım,मेरी रिपोर्ट का शीर्षक,Ο Τίτλος Της Έκθεσής Μου,マイ レポート タイトル
+Measure,Caption,Localized Labels[My Button Caption],My Button Caption,Min Knapp Bildtext,Düğme Altyazım,मेरा बटन कैप्शन,Λεζάντα Κουμπιού Μου,マイボタンのキャプション
+Measure,Caption,Localized Labels[My Visual Title],My Visual Title,Min Visuella Titel,Görsel Başlığım,मेरा दृश्य शीर्षक,Ο Οπτικός Μου Τίτλος,私のビジュアルタイトル
