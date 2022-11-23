@@ -19,9 +19,5 @@ In this exercise ddddd
         prompt**.
 
 <img src="./images/HandsOnLab/media/image1.png"
-style="width:1.51974in;height:1.86612in" />
-
-2.  You should now have an open Node.js command prompt.
-
-<img src="./images/HandsOnLab/media/image2.png"
-style="width:4.77095in;height:0.7045in" />
+style="width:7.5in;height:3.15069in"
+alt="Graphical user interface, application Description automatically generated" />
