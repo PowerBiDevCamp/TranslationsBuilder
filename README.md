@@ -27,107 +27,18 @@ maintain a separate PBIX project file for each language. Instead, they
 can increase reuse and lower report maintenance by designing and
 implementing multi-language reports.
 
-## Users Guide
+- [Installing Translations
+  Builder](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Installing%20Translations%20Builder.md)
 
-Video provides a powerful way to help you prove your point. When you
-click Online Video, you can paste in the embed code for the video you
-want to add. You can also type a keyword to search online for the video
-that best fits your document.
+- [Users
+  Guide](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Users%20Guide.md)
 
-To make your document look professionally produced, Word provides
-header, footer, cover page, and text box designs that complement each
-other. For example, you can add a matching cover page, header, and
-sidebar. Click Insert and then choose the elements you want from the
-different galleries.
+- [Developers
+  Guide](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Developers%20Guide.md)
 
-<img src="./Docs/images/TranslationsBuilder/media/image1.png"
-style="width:5.89571in;height:1.76871in"
-alt="Graphical user interface Description automatically generated" />
+- [Hands-On
+  Lab](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Hands-On%20Lab.md)
 
-### Install Translations Builder
-
-Video provides a powerful way to help you prove your point. When you
-click Online Video, you can paste in the embed code for the video you
-want to add. You can also type a keyword to search online for the video
-that best fits your document.
-
-To make your document look professionally produced, Word provides
-header, footer, cover page, and text box designs that complement each
-other. For example, you can add a matching cover page, header, and
-sidebar. Click Insert and then choose the elements you want from the
-different galleries.
-
-### Using Translations Builder as an External Tool for Power BI Desktop
-
-Themes and styles also help keep your document coordinated. When you
-click Design and choose a new Theme, the pictures, charts, and SmartArt
-graphics change to match your new theme. When you apply styles, your
-headings change to match the new theme.
-
-Save time in Word with new buttons that show up where you need them. To
-change the way a picture fits in your document, click it and a button
-for layout options appears next to it. When you work on a table, click
-where you want to add a row or a column, and then click the plus sign.
-
-Reading is easier, too, in the new Reading view. You can collapse parts
-of the document and focus on the text you want. If you need to stop
-reading before you reach the end, Word remembers where you left off -
-even on another device.
-
-### Adding a Secondary Culture
-
-Video provides a powerful way to help you prove your point. When you
-click Online Video, you can paste in the embed code for the video you
-want to add. You can also type a keyword to search online for the video
-that best fits your document.
-
-<img src="./Docs/images/TranslationsBuilder/media/image2.png"
-style="width:5.14724in;height:1.40384in"
-alt="Graphical user interface, application Description automatically generated" />
-
-Save time in Word with new buttons that show up where you need them. To
-change the way a picture fits in your document, click it and a button
-for layout options appears next to it. When you work on a table, click
-where you want to add a row or a column, and then click the plus sign.
-
-Reading is easier, too, in the new Reading view. You can collapse parts
-of the document and focus on the text you want. If you need to stop
-reading before you reach the end, Word remembers where you left off -
-even on another device.
-
-### Creating Translations by Hand
-
-To make your document look professionally produced, Word provides
-header, footer, cover page, and text box designs that complement each
-other. For example, you can add a matching cover page, header, and
-sidebar. Click Insert and then choose the elements you want from the
-different galleries.
-
-Themes and styles also help keep your document coordinated. When you
-click Design and choose a new Theme, the pictures, charts, and SmartArt
-graphics change to match your new theme. When you apply styles, your
-headings change to match the new theme.
-
-### Creating Machine Translations using the Azure Translation Service
-
-To make your document look professionally produced, Word provides
-header, footer, cover page, and text box designs that complement each
-other. For example, you can add a matching cover page, header, and
-sidebar. Click Insert and then choose the elements you want from the
-different galleries.
-
-<img src="./Docs/images/TranslationsBuilder/media/image3.png"
-style="width:2.9026in;height:1.00547in"
-alt="Graphical user interface, text, application Description automatically generated" />
-
-Themes and styles also help keep your document coordinated. When you
-click Design and choose a new Theme, the pictures, charts, and SmartArt
-graphics change to match your new theme. When you apply styles, your
-headings change to match the new theme.
-
-<img src="./Docs/images/TranslationsBuilder/media/image4.png"
-style="width:4.67485in;height:2.0894in"
-alt="Application Description automatically generated with medium confidence" />
-
-## Developers Guide
+- [Understanding Translations in Power
+  BI](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Understanding%20Translations%20in%20Power%20BI.md)
 
