@@ -40,7 +40,7 @@ other. For example, you can add a matching cover page, header, and
 sidebar. Click Insert and then choose the elements you want from the
 different galleries.
 
-<img src="./images/TranslationsBuilder/media/image1.png"
+<img src="./Docs/images/TranslationsBuilder/media/image1.png"
 style="width:5.89571in;height:1.76871in"
 alt="Graphical user interface Description automatically generated" />
 
@@ -81,7 +81,7 @@ click Online Video, you can paste in the embed code for the video you
 want to add. You can also type a keyword to search online for the video
 that best fits your document.
 
-<img src="./images/TranslationsBuilder/media/image2.png"
+<img src="./Docs/images/TranslationsBuilder/media/image2.png"
 style="width:5.14724in;height:1.40384in"
 alt="Graphical user interface, application Description automatically generated" />
 
@@ -116,7 +116,7 @@ other. For example, you can add a matching cover page, header, and
 sidebar. Click Insert and then choose the elements you want from the
 different galleries.
 
-<img src="./images/TranslationsBuilder/media/image3.png"
+<img src="./Docs/images/TranslationsBuilder/media/image3.png"
 style="width:2.9026in;height:1.00547in"
 alt="Graphical user interface, text, application Description automatically generated" />
 
@@ -125,8 +125,9 @@ click Design and choose a new Theme, the pictures, charts, and SmartArt
 graphics change to match your new theme. When you apply styles, your
 headings change to match the new theme.
 
-<img src="./images/TranslationsBuilder/media/image4.png"
+<img src="./Docs/images/TranslationsBuilder/media/image4.png"
 style="width:4.67485in;height:2.0894in"
 alt="Application Description automatically generated with medium confidence" />
 
 ## Developers Guide
+
