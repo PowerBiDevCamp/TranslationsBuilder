@@ -21,12 +21,23 @@ namespace TranslationsBuilder {
       return ((Language)listCultures.SelectedItem).LanguageTag;
     }
 
-    private void AddCultureDialog_Load(object sender, EventArgs e) {
+    private void PopulateListBox() {
+
+      listCultures.Items.Clear();
 
       var model = TranslationsManager.model;
       var cultures = model.Cultures;
 
-      foreach (var language in SupportedLanguages.AllLangauges) {
+      Dictionary<string, Language> languages;
+
+      if (chkShowAllLanguages.Checked) {
+        languages = SupportedLanguages.AllLangauges;
+      }
+      else {
+        languages = SupportedLanguages.GetCommonLangauges();
+      }
+
+      foreach (var language in languages) {
         if (!cultures.ContainsName(language.Key)) {
           listCultures.Items.Add(language.Value);
         }
@@ -35,7 +46,10 @@ namespace TranslationsBuilder {
       if (listCultures.Items.Count > 0) {
         listCultures.SelectedIndex = 0;
       }
+    }
 
+    private void AddCultureDialog_Load(object sender, EventArgs e) {
+      PopulateListBox();
     }
 
     private void btnCancel_Click(object sender, EventArgs e) {
@@ -46,8 +60,10 @@ namespace TranslationsBuilder {
     private void btnAddCulture_Click(object sender, EventArgs e) {
       this.DialogResult = DialogResult.OK;
       this.Close();
+    }
 
-      //
+    private void chkShowAllLanguages_CheckedChanged(object sender, EventArgs e) {
+      PopulateListBox();
     }
   }
 }

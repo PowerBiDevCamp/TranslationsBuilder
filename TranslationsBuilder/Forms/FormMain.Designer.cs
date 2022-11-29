@@ -115,12 +115,12 @@ namespace TranslationsBuilder {
       this.gridTranslations.Dock = System.Windows.Forms.DockStyle.Fill;
       this.gridTranslations.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
       this.gridTranslations.EnableHeadersVisualStyles = false;
-      this.gridTranslations.Location = new System.Drawing.Point(0, 305);
+      this.gridTranslations.Location = new System.Drawing.Point(0, 299);
       this.gridTranslations.MultiSelect = false;
       this.gridTranslations.Name = "gridTranslations";
       this.gridTranslations.RowHeadersWidth = 24;
       this.gridTranslations.RowTemplate.Height = 28;
-      this.gridTranslations.Size = new System.Drawing.Size(1416, 434);
+      this.gridTranslations.Size = new System.Drawing.Size(1416, 418);
       this.gridTranslations.TabIndex = 0;
       this.gridTranslations.TabStop = false;
       this.gridTranslations.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.gridTranslations_CellBeginEdit);
@@ -136,17 +136,17 @@ namespace TranslationsBuilder {
       this.groupDefaultCulture.Controls.Add(this.lblDefaultCultureNameLabel);
       this.groupDefaultCulture.Controls.Add(this.btnPopulateDefaultCultureTranslations);
       this.groupDefaultCulture.Controls.Add(this.txtDefaultCulture);
-      this.groupDefaultCulture.Location = new System.Drawing.Point(464, 45);
+      this.groupDefaultCulture.Location = new System.Drawing.Point(464, 47);
       this.groupDefaultCulture.Name = "groupDefaultCulture";
       this.groupDefaultCulture.Size = new System.Drawing.Size(224, 244);
       this.groupDefaultCulture.TabIndex = 1;
       this.groupDefaultCulture.TabStop = false;
-      this.groupDefaultCulture.Text = "Default Culture";
+      this.groupDefaultCulture.Text = "Default Language";
       // 
       // lblDefaultCultureNameLabel
       // 
       this.lblDefaultCultureNameLabel.AutoSize = true;
-      this.lblDefaultCultureNameLabel.Location = new System.Drawing.Point(14, 35);
+      this.lblDefaultCultureNameLabel.Location = new System.Drawing.Point(10, 35);
       this.lblDefaultCultureNameLabel.Name = "lblDefaultCultureNameLabel";
       this.lblDefaultCultureNameLabel.Size = new System.Drawing.Size(52, 20);
       this.lblDefaultCultureNameLabel.TabIndex = 31;
@@ -164,7 +164,7 @@ namespace TranslationsBuilder {
       // 
       // txtDefaultCulture
       // 
-      this.txtDefaultCulture.Location = new System.Drawing.Point(69, 29);
+      this.txtDefaultCulture.Location = new System.Drawing.Point(69, 32);
       this.txtDefaultCulture.Name = "txtDefaultCulture";
       this.txtDefaultCulture.Size = new System.Drawing.Size(143, 27);
       this.txtDefaultCulture.TabIndex = 0;
@@ -180,7 +180,8 @@ namespace TranslationsBuilder {
       this.groupDatasetProperties.Controls.Add(this.txtServerConnection);
       this.groupDatasetProperties.Controls.Add(this.lblDatasetName);
       this.groupDatasetProperties.Controls.Add(this.lblServerConnection);
-      this.groupDatasetProperties.Location = new System.Drawing.Point(9, 45);
+      this.groupDatasetProperties.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+      this.groupDatasetProperties.Location = new System.Drawing.Point(9, 47);
       this.groupDatasetProperties.Name = "groupDatasetProperties";
       this.groupDatasetProperties.Size = new System.Drawing.Size(440, 244);
       this.groupDatasetProperties.TabIndex = 0;
@@ -189,7 +190,7 @@ namespace TranslationsBuilder {
       // 
       // txtEstimatedSize
       // 
-      this.txtEstimatedSize.Location = new System.Drawing.Point(121, 141);
+      this.txtEstimatedSize.Location = new System.Drawing.Point(121, 143);
       this.txtEstimatedSize.Name = "txtEstimatedSize";
       this.txtEstimatedSize.ReadOnly = true;
       this.txtEstimatedSize.Size = new System.Drawing.Size(307, 27);
@@ -199,7 +200,7 @@ namespace TranslationsBuilder {
       // lblEstimatedSize
       // 
       this.lblEstimatedSize.AutoSize = true;
-      this.lblEstimatedSize.Location = new System.Drawing.Point(11, 147);
+      this.lblEstimatedSize.Location = new System.Drawing.Point(5, 145);
       this.lblEstimatedSize.Name = "lblEstimatedSize";
       this.lblEstimatedSize.Size = new System.Drawing.Size(109, 20);
       this.lblEstimatedSize.TabIndex = 25;
@@ -208,7 +209,7 @@ namespace TranslationsBuilder {
       // 
       // txtCompatibilityLevel
       // 
-      this.txtCompatibilityLevel.Location = new System.Drawing.Point(121, 104);
+      this.txtCompatibilityLevel.Location = new System.Drawing.Point(121, 106);
       this.txtCompatibilityLevel.Name = "txtCompatibilityLevel";
       this.txtCompatibilityLevel.ReadOnly = true;
       this.txtCompatibilityLevel.Size = new System.Drawing.Size(307, 27);
@@ -218,7 +219,7 @@ namespace TranslationsBuilder {
       // lblCompatibilityLevel
       // 
       this.lblCompatibilityLevel.AutoSize = true;
-      this.lblCompatibilityLevel.Location = new System.Drawing.Point(17, 109);
+      this.lblCompatibilityLevel.Location = new System.Drawing.Point(11, 109);
       this.lblCompatibilityLevel.Name = "lblCompatibilityLevel";
       this.lblCompatibilityLevel.Size = new System.Drawing.Size(103, 20);
       this.lblCompatibilityLevel.TabIndex = 21;
@@ -227,7 +228,7 @@ namespace TranslationsBuilder {
       // 
       // txtDatasetName
       // 
-      this.txtDatasetName.Location = new System.Drawing.Point(121, 67);
+      this.txtDatasetName.Location = new System.Drawing.Point(121, 69);
       this.txtDatasetName.Name = "txtDatasetName";
       this.txtDatasetName.ReadOnly = true;
       this.txtDatasetName.Size = new System.Drawing.Size(307, 27);
@@ -236,7 +237,7 @@ namespace TranslationsBuilder {
       // 
       // txtServerConnection
       // 
-      this.txtServerConnection.Location = new System.Drawing.Point(121, 29);
+      this.txtServerConnection.Location = new System.Drawing.Point(121, 32);
       this.txtServerConnection.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
       this.txtServerConnection.Name = "txtServerConnection";
       this.txtServerConnection.ReadOnly = true;
@@ -247,7 +248,7 @@ namespace TranslationsBuilder {
       // lblDatasetName
       // 
       this.lblDatasetName.AutoSize = true;
-      this.lblDatasetName.Location = new System.Drawing.Point(10, 73);
+      this.lblDatasetName.Location = new System.Drawing.Point(7, 72);
       this.lblDatasetName.Name = "lblDatasetName";
       this.lblDatasetName.Size = new System.Drawing.Size(107, 20);
       this.lblDatasetName.TabIndex = 18;
@@ -257,7 +258,7 @@ namespace TranslationsBuilder {
       // lblServerConnection
       // 
       this.lblServerConnection.AutoSize = true;
-      this.lblServerConnection.Location = new System.Drawing.Point(27, 37);
+      this.lblServerConnection.Location = new System.Drawing.Point(27, 36);
       this.lblServerConnection.Name = "lblServerConnection";
       this.lblServerConnection.Size = new System.Drawing.Size(87, 20);
       this.lblServerConnection.TabIndex = 17;
@@ -276,7 +277,7 @@ namespace TranslationsBuilder {
       this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
       this.panel2.Location = new System.Drawing.Point(0, 0);
       this.panel2.Name = "panel2";
-      this.panel2.Size = new System.Drawing.Size(1416, 305);
+      this.panel2.Size = new System.Drawing.Size(1416, 299);
       this.panel2.TabIndex = 8;
       // 
       // grpImportExportTranslations
@@ -285,7 +286,7 @@ namespace TranslationsBuilder {
       this.grpImportExportTranslations.Controls.Add(this.btnExportTranslations);
       this.grpImportExportTranslations.Controls.Add(this.btnImportTranslations);
       this.grpImportExportTranslations.Controls.Add(this.btnExportTranslationsSheet);
-      this.grpImportExportTranslations.Location = new System.Drawing.Point(938, 43);
+      this.grpImportExportTranslations.Location = new System.Drawing.Point(938, 45);
       this.grpImportExportTranslations.Name = "grpImportExportTranslations";
       this.grpImportExportTranslations.Size = new System.Drawing.Size(224, 246);
       this.grpImportExportTranslations.TabIndex = 4;
@@ -296,14 +297,14 @@ namespace TranslationsBuilder {
       // 
       this.listLanguageForTransation.BackColor = System.Drawing.SystemColors.Window;
       this.listLanguageForTransation.FormattingEnabled = true;
-      this.listLanguageForTransation.Location = new System.Drawing.Point(13, 65);
+      this.listLanguageForTransation.Location = new System.Drawing.Point(13, 70);
       this.listLanguageForTransation.Name = "listLanguageForTransation";
       this.listLanguageForTransation.Size = new System.Drawing.Size(198, 28);
       this.listLanguageForTransation.TabIndex = 6;
       // 
       // btnExportTranslations
       // 
-      this.btnExportTranslations.Location = new System.Drawing.Point(11, 99);
+      this.btnExportTranslations.Location = new System.Drawing.Point(11, 104);
       this.btnExportTranslations.Name = "btnExportTranslations";
       this.btnExportTranslations.Size = new System.Drawing.Size(200, 36);
       this.btnExportTranslations.TabIndex = 7;
@@ -313,7 +314,7 @@ namespace TranslationsBuilder {
       // 
       // btnImportTranslations
       // 
-      this.btnImportTranslations.Location = new System.Drawing.Point(11, 141);
+      this.btnImportTranslations.Location = new System.Drawing.Point(11, 146);
       this.btnImportTranslations.Name = "btnImportTranslations";
       this.btnImportTranslations.Size = new System.Drawing.Size(200, 36);
       this.btnImportTranslations.TabIndex = 8;
@@ -325,7 +326,7 @@ namespace TranslationsBuilder {
       // 
       this.btnExportTranslationsSheet.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
       this.btnExportTranslationsSheet.BackColor = System.Drawing.SystemColors.ControlLight;
-      this.btnExportTranslationsSheet.Location = new System.Drawing.Point(11, 24);
+      this.btnExportTranslationsSheet.Location = new System.Drawing.Point(11, 29);
       this.btnExportTranslationsSheet.Name = "btnExportTranslationsSheet";
       this.btnExportTranslationsSheet.Size = new System.Drawing.Size(200, 36);
       this.btnExportTranslationsSheet.TabIndex = 5;
@@ -340,7 +341,7 @@ namespace TranslationsBuilder {
       this.grpMachineTranslations.Controls.Add(this.btnGenenrateAllMachineTranslations);
       this.grpMachineTranslations.Controls.Add(this.btnGenenrateMachineTranslations);
       this.grpMachineTranslations.Controls.Add(this.listCultureToPopulate);
-      this.grpMachineTranslations.Location = new System.Drawing.Point(1175, 43);
+      this.grpMachineTranslations.Location = new System.Drawing.Point(1175, 45);
       this.grpMachineTranslations.Name = "grpMachineTranslations";
       this.grpMachineTranslations.Size = new System.Drawing.Size(224, 246);
       this.grpMachineTranslations.TabIndex = 9;
@@ -351,7 +352,7 @@ namespace TranslationsBuilder {
       // 
       this.btnFillEmptyTranslations.BackColor = System.Drawing.SystemColors.ControlLight;
       this.btnFillEmptyTranslations.ForeColor = System.Drawing.SystemColors.ControlText;
-      this.btnFillEmptyTranslations.Location = new System.Drawing.Point(13, 99);
+      this.btnFillEmptyTranslations.Location = new System.Drawing.Point(13, 103);
       this.btnFillEmptyTranslations.Name = "btnFillEmptyTranslations";
       this.btnFillEmptyTranslations.Size = new System.Drawing.Size(200, 36);
       this.btnFillEmptyTranslations.TabIndex = 14;
@@ -361,7 +362,7 @@ namespace TranslationsBuilder {
       // 
       // btnFillAllEmptyTranslations
       // 
-      this.btnFillAllEmptyTranslations.Location = new System.Drawing.Point(11, 180);
+      this.btnFillAllEmptyTranslations.Location = new System.Drawing.Point(11, 184);
       this.btnFillAllEmptyTranslations.Name = "btnFillAllEmptyTranslations";
       this.btnFillAllEmptyTranslations.Size = new System.Drawing.Size(200, 37);
       this.btnFillAllEmptyTranslations.TabIndex = 13;
@@ -371,7 +372,7 @@ namespace TranslationsBuilder {
       // 
       // btnGenenrateAllMachineTranslations
       // 
-      this.btnGenenrateAllMachineTranslations.Location = new System.Drawing.Point(11, 139);
+      this.btnGenenrateAllMachineTranslations.Location = new System.Drawing.Point(11, 143);
       this.btnGenenrateAllMachineTranslations.Name = "btnGenenrateAllMachineTranslations";
       this.btnGenenrateAllMachineTranslations.Size = new System.Drawing.Size(200, 36);
       this.btnGenenrateAllMachineTranslations.TabIndex = 12;
@@ -383,7 +384,7 @@ namespace TranslationsBuilder {
       // 
       this.btnGenenrateMachineTranslations.BackColor = System.Drawing.SystemColors.ControlLight;
       this.btnGenenrateMachineTranslations.ForeColor = System.Drawing.SystemColors.ControlText;
-      this.btnGenenrateMachineTranslations.Location = new System.Drawing.Point(11, 23);
+      this.btnGenenrateMachineTranslations.Location = new System.Drawing.Point(11, 27);
       this.btnGenenrateMachineTranslations.Name = "btnGenenrateMachineTranslations";
       this.btnGenenrateMachineTranslations.Size = new System.Drawing.Size(200, 36);
       this.btnGenenrateMachineTranslations.TabIndex = 10;
@@ -394,7 +395,7 @@ namespace TranslationsBuilder {
       // listCultureToPopulate
       // 
       this.listCultureToPopulate.FormattingEnabled = true;
-      this.listCultureToPopulate.Location = new System.Drawing.Point(11, 64);
+      this.listCultureToPopulate.Location = new System.Drawing.Point(11, 68);
       this.listCultureToPopulate.Name = "listCultureToPopulate";
       this.listCultureToPopulate.Size = new System.Drawing.Size(201, 28);
       this.listCultureToPopulate.TabIndex = 11;
@@ -403,12 +404,12 @@ namespace TranslationsBuilder {
       // 
       this.grpSecondaryCultures.Controls.Add(this.addSecondaryCulture);
       this.grpSecondaryCultures.Controls.Add(this.listSecondaryCultures);
-      this.grpSecondaryCultures.Location = new System.Drawing.Point(702, 44);
+      this.grpSecondaryCultures.Location = new System.Drawing.Point(702, 46);
       this.grpSecondaryCultures.Name = "grpSecondaryCultures";
       this.grpSecondaryCultures.Size = new System.Drawing.Size(224, 245);
       this.grpSecondaryCultures.TabIndex = 2;
       this.grpSecondaryCultures.TabStop = false;
-      this.grpSecondaryCultures.Text = "Secondary Cultures";
+      this.grpSecondaryCultures.Text = "Secondary Languages";
       // 
       // addSecondaryCulture
       // 
@@ -416,7 +417,7 @@ namespace TranslationsBuilder {
       this.addSecondaryCulture.Name = "addSecondaryCulture";
       this.addSecondaryCulture.Size = new System.Drawing.Size(200, 36);
       this.addSecondaryCulture.TabIndex = 3;
-      this.addSecondaryCulture.Text = "Add Culture";
+      this.addSecondaryCulture.Text = "Add Language";
       this.addSecondaryCulture.UseVisualStyleBackColor = true;
       this.addSecondaryCulture.Click += new System.EventHandler(this.AddSecondaryCulture);
       // 
@@ -441,7 +442,7 @@ namespace TranslationsBuilder {
             this.menuSyncDataModel});
       this.menuStrip.Location = new System.Drawing.Point(0, 0);
       this.menuStrip.Name = "menuStrip";
-      this.menuStrip.Padding = new System.Windows.Forms.Padding(6, 3, 0, 3);
+      this.menuStrip.Padding = new System.Windows.Forms.Padding(6, 3, 6, 3);
       this.menuStrip.Size = new System.Drawing.Size(1416, 38);
       this.menuStrip.TabIndex = 1;
       this.menuStrip.Text = "menuMain";
@@ -571,9 +572,9 @@ namespace TranslationsBuilder {
       // menuSyncDataModel
       // 
       this.menuSyncDataModel.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-      this.menuSyncDataModel.BackColor = System.Drawing.Color.White;
+      this.menuSyncDataModel.BackColor = System.Drawing.Color.LemonChiffon;
       this.menuSyncDataModel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-      this.menuSyncDataModel.ForeColor = System.Drawing.SystemColors.Desktop;
+      this.menuSyncDataModel.ForeColor = System.Drawing.Color.DarkRed;
       this.menuSyncDataModel.Margin = new System.Windows.Forms.Padding(4);
       this.menuSyncDataModel.Name = "menuSyncDataModel";
       this.menuSyncDataModel.Size = new System.Drawing.Size(140, 24);
@@ -630,8 +631,8 @@ namespace TranslationsBuilder {
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(1416, 739);
-      this.Controls.Add(this.statusStrip1);
       this.Controls.Add(this.gridTranslations);
+      this.Controls.Add(this.statusStrip1);
       this.Controls.Add(this.panel2);
       this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
       this.MainMenuStrip = this.menuStrip;

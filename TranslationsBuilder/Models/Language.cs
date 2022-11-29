@@ -7,6 +7,7 @@ namespace TranslationsBuilder.Models {
     public string TranslationId { get; set; }
     public string DisplayName { get; set; }
     public string NativeName { get; set; }
+    public bool ShownOnlyOnExtendedLanguageList { get; set; }
     public string FullName { get { 
       return DisplayName + " [" + LanguageTag + "]";
       }

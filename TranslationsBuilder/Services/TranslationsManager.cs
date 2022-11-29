@@ -719,7 +719,7 @@ namespace TranslationsBuilder.Services {
 
     private static void UpdateStatus(IStatusCalback StatusCalback, string CultureName, string ObjectName, string OriginalText, string TranslatedText) {
       if (StatusCalback != null) {
-        string TranslationType = "From " + model.Culture + " to " + CultureName;
+        string TranslationType = "[" + model.Culture + "] => [" + CultureName + "]";
         StatusCalback.updateLoadingStatus(TranslationType, ObjectName, OriginalText, TranslatedText);
       }
     }

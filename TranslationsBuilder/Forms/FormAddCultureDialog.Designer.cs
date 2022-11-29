@@ -28,6 +28,7 @@ namespace TranslationsBuilder {
       this.btnAddCulture = new System.Windows.Forms.Button();
       this.btnCancel = new System.Windows.Forms.Button();
       this.listCultures = new System.Windows.Forms.ListBox();
+      this.chkShowAllLanguages = new System.Windows.Forms.CheckBox();
       this.SuspendLayout();
       // 
       // btnAddCulture
@@ -36,7 +37,7 @@ namespace TranslationsBuilder {
       this.btnAddCulture.Name = "btnAddCulture";
       this.btnAddCulture.Size = new System.Drawing.Size(164, 37);
       this.btnAddCulture.TabIndex = 0;
-      this.btnAddCulture.Text = "Add Culture";
+      this.btnAddCulture.Text = "Add Language";
       this.btnAddCulture.UseVisualStyleBackColor = true;
       this.btnAddCulture.Click += new System.EventHandler(this.btnAddCulture_Click);
       // 
@@ -60,6 +61,17 @@ namespace TranslationsBuilder {
       this.listCultures.Sorted = true;
       this.listCultures.TabIndex = 2;
       // 
+      // chkShowAllLanguages
+      // 
+      this.chkShowAllLanguages.AutoSize = true;
+      this.chkShowAllLanguages.Location = new System.Drawing.Point(261, 122);
+      this.chkShowAllLanguages.Name = "chkShowAllLanguages";
+      this.chkShowAllLanguages.Size = new System.Drawing.Size(164, 24);
+      this.chkShowAllLanguages.TabIndex = 3;
+      this.chkShowAllLanguages.Text = "Show All Languages";
+      this.chkShowAllLanguages.UseVisualStyleBackColor = true;
+      this.chkShowAllLanguages.CheckedChanged += new System.EventHandler(this.chkShowAllLanguages_CheckedChanged);
+      // 
       // FormAddCultureDialog
       // 
       this.AcceptButton = this.btnAddCulture;
@@ -67,15 +79,17 @@ namespace TranslationsBuilder {
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.SystemColors.ActiveCaption;
       this.CancelButton = this.btnCancel;
-      this.ClientSize = new System.Drawing.Size(447, 407);
+      this.ClientSize = new System.Drawing.Size(446, 407);
+      this.Controls.Add(this.chkShowAllLanguages);
       this.Controls.Add(this.listCultures);
       this.Controls.Add(this.btnCancel);
       this.Controls.Add(this.btnAddCulture);
       this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
       this.Name = "FormAddCultureDialog";
-      this.Text = "Add Culture";
+      this.Text = "Add Language";
       this.Load += new System.EventHandler(this.AddCultureDialog_Load);
       this.ResumeLayout(false);
+      this.PerformLayout();
 
     }
 
@@ -84,5 +98,6 @@ namespace TranslationsBuilder {
     private System.Windows.Forms.Button btnAddCulture;
     private System.Windows.Forms.Button btnCancel;
     private System.Windows.Forms.ListBox listCultures;
-  }
+        private System.Windows.Forms.CheckBox chkShowAllLanguages;
+    }
 }

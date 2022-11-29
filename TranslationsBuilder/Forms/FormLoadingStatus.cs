@@ -40,5 +40,9 @@ namespace TranslationsBuilder {
     private void groupBox1_Enter(object sender, EventArgs e) {
 
     }
-  }
+
+        private void imageSpinner_Click(object sender, EventArgs e) {
+
+        }
+    }
 }

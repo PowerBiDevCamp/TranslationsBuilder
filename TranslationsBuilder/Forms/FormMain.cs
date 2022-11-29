@@ -441,7 +441,7 @@ namespace TranslationsBuilder {
       }
 
 
-      if (e.ColumnIndex >= 3 && e.RowIndex > 0) {
+      if (e.ColumnIndex >= 4 && e.RowIndex > 0) {
         var cell = gridTranslations.Rows[e.RowIndex].Cells[e.ColumnIndex];
         string cellContents = (cell.Value != null) ? cell.Value.ToString() : "";
 
