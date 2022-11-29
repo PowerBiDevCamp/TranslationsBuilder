@@ -33,6 +33,9 @@ should also review the [**User
 Guide**](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/User%20Guide.md)
 which walks you through basic operations as well as advanced procedures.
 
+<img src="./Docs/images/TranslationsBuilder/media/image1.png"
+style="width:7.5in;height:2.93333in" />
+
 If you are interested in what really goes on behind the scenes with
 Translations Builder and Power BI translations, you should read
 [**Understanding Translations in Power
