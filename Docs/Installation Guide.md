@@ -31,11 +31,12 @@ style="width:3.92006in;height:1.5in" />
 
 Note that the installation file named **TranslationsBuilderInstall.msi**
 has not been signed using Authenticate to verify the authenticity of the
-code manufacturer which is Power BI Dev Camp. We are currently in the
-process of obtaining a code-signing certificate for Power BI Dev Camp
-which will make the installation process smoother in the future. But for
-now, there are some extra steps to go through during installation
-because the Window operating system cannot verify who the publisher is.
+code manufacturer which is **Power BI Dev Camp**. We are currently in
+the process of obtaining a code-signing certificate for **Power BI Dev
+Camp** which will make the installation process smoother in the future.
+But for now, there are some extra steps to go through during
+installation because the Window operating system cannot verify who the
+publisher is.
 
 Open to context menu for **TranslationsBuilderInstall.msi** and select
 **Open** to run the installation program.
