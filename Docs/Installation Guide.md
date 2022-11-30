@@ -100,15 +100,14 @@ Wait until you see the **Installation Complete** dialog and then click
 &nbsp;<img src="./images/InstallationGuide/media/image12.png" style="width:75%" />
 
 ### Troubleshooting Installation
-The following information might be important to you if you need to
-troubleshoot your **Translations Builder** installation. The default
-**Folder** location for the **Translations Builder** EXE file and other
-deployment files uses this path.
+> The following information might be important to you if you need to
+troubleshoot your **Translations Builder** installation. 
 
+The default **Folder** location for the **Translations Builder** EXE file and other
+deployment files uses this path.
 ```
 C:\Program Files\Power BI Dev Camp\Translations Builder
 ```
-
 Here is what this folder looks like after installation if you examine it
 with Windows Explorer.
 
