@@ -1,7 +1,7 @@
 ## **Translations Builder Installation Guide**
 
 This installation guide will walk you through the installation process
-to get **Translations Builder** up and running on the same machine you
+to get **Translations Builder** up and running on the same machine where you
 use to work with Power BI Desktop. Before installing **Translations
 Builder**, you must ensure your computer meets the following
 requirements.
