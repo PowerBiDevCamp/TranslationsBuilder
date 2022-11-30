@@ -133,8 +133,8 @@ deployment files uses this path.
 
 C:\Program Files\Power BI Dev Camp\Translations Builder
 
-Here is what this folder looks like if you examine it with Windows
-Explorer.
+Here is what this folder looks like after installation if you examine it
+with Windows Explorer.
 
 <img src="./images/InstallationGuide/media/image13.png"
 style="width:3.53349in;height:1.65079in" />
@@ -164,7 +164,7 @@ path Power BI Desktop uses to launch **Translations Builder** as an
 external tools from the **External Tools** tab.
 
 <img src="./images/InstallationGuide/media/image15.png"
-style="width:5.33333in;height:1.54839in" />
+style="width:5.07177in;height:1.47245in" />
 
 If you installed **Translations Builder** into a **Folder** location
 other than the default value, you will need to modify the **path**
