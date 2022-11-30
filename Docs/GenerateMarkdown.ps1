@@ -4,7 +4,7 @@ pandoc -s --extract-media ./images/TranslationsBuilder "ReadMe.docx" -t gfm -o .
 
 pandoc -s --extract-media ./images/UnderstandingTranslationsInPowerBI "Understanding Translations in Power BI.docx" -t gfm -o "Understanding Translations in Power BI.md"
 
-pandoc -s --extract-media ./images/HandsOnLab "Hands-On Lab.docx" -t gfm -o "Hands-On Lab.md"
+pandoc -s --extract-media ./images/HandsOnLabExercises "Hands-On Lab Exercises.docx" -t gfm -o "Hands-On Lab Exercises.md"
 
 pandoc -s --extract-media ./images/UserGuide "User Guide.docx" -t gfm -o "User Guide.md"
 
