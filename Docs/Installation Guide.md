@@ -114,7 +114,9 @@ troubleshoot your **Translations Builder** installation. The default
 **Folder** location for the **Translations Builder** EXE file and other
 deployment files uses this path.
 
-> C:\Program Files\Power BI Dev Camp\Translations Builder
+```
+C:\Program Files\Power BI Dev Camp\Translations Builder
+```
 
 Here is what this folder looks like after installation if you examine it
 with Windows Explorer.
@@ -128,7 +130,9 @@ More specifically, the **Translations Builder** installation program
 copies a file named **translationsbuilder.pbitool.json** into the
 following folder.
 
-> C:\Program Files (x86)\Common Files\Microsoft Shared\Power BI Desktop\External Tools
+```
+C:\Program Files (x86)\Common Files\Microsoft Shared\Power BI Desktop\External Tools
+```
 
 If you examine this folder, it should contain the file named
 **translationsbuilder.pbitool.json** along with a separate files with a
