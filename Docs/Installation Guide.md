@@ -103,7 +103,7 @@ Wait until you see the **Installation Complete** dialog and then click
 > The following information might be important to you if you need to
 troubleshoot your **Translations Builder** installation. 
 
-The default **Folder** location for the **Translations Builder** EXE file and other
+The default **Folder** location for the installation of the **Translations Builder** EXE file and other
 deployment files uses this path.
 ```
 C:\Program Files\Power BI Dev Camp\Translations Builder
