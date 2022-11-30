@@ -6,8 +6,6 @@ pandoc -s --extract-media ./images/UnderstandingTranslationsInPowerBI "Understan
 
 pandoc -s --extract-media ./images/HandsOnLab "Hands-On Lab.docx" -t gfm -o "Hands-On Lab.md"
 
-pandoc -s --extract-media ./images/InstallationGuide "Installation Guide.docx" -t gfm -o "Installation Guide.md"
-
 pandoc -s --extract-media ./images/UserGuide "User Guide.docx" -t gfm -o "User Guide.md"
 
 pandoc -s --extract-media ./images/DeveloperGuide "Developer Guide.docx" -t gfm -o "Developer Guide.md"
