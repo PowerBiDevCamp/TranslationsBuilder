@@ -38,16 +38,14 @@ publisher is.
 Open to context menu for **TranslationsBuilderInstall.msi** and select
 **Open** to run the installation program.
 
-<img src="./images/InstallationGuide/media/image2.png"
-style="width:3.59325in;height:1.51667in" />
+<img src="./images/InstallationGuide/media/image2.png"  style="width:50%"  />
 
 Because **TranslationsBuilderInstall.msi** is not signed with a
 code-signing certificate, you will be prompted with the following dialog
 with the title **Windows protected your PC dialog**. Click the **More
 info** link to continue.
 
-<img src="./images/InstallationGuide/media/image3.png"
-style="width:2.70538in;height:1.84127in" />
+<img src="./images/InstallationGuide/media/image3.png"  />
 
 The next screen displays the name of the **App** as
 **TranslationsBuilderInstall.msi** and indicates that the publisher is
