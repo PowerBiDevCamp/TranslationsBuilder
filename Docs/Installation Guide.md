@@ -95,16 +95,13 @@ Wait until you see the **Installation Complete** dialog and then click
 &nbsp; <img src="./images/InstallationGuide/media/image10.png"  style="width:75%;magin:50px"  />
 
 3.  Locate and click the **Translations Builder** link on the **External Tools** tab.
-
 &nbsp; <img src="./images/InstallationGuide/media/image11.png"  style="width:75%" />
 
 4.  Once you see **Translations Builder** start up without an errors,
     you know it has been installed successfully.
-
-&nbsp; <img src="./images/InstallationGuide/media/image12.png" style="width:100%" />
+&nbsp; <img src="./images/InstallationGuide/media/image12.png" style="width:75%" />
 
 ### Troubleshooting Installation
-
 The following information might be important to you if you need to
 troubleshoot your **Translations Builder** installation. The default
 **Folder** location for the **Translations Builder** EXE file and other
