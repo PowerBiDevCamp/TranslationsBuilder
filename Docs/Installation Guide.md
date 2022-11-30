@@ -38,29 +38,26 @@ publisher is.
 Open to context menu for **TranslationsBuilderInstall.msi** and select
 **Open** to run the installation program.
 
-<img src="./images/InstallationGuide/media/image2.png"  style="width:50%"  />
+<img src="./images/InstallationGuide/media/image2.png" style="width:40%"  />
 
 Because **TranslationsBuilderInstall.msi** is not signed with a
 code-signing certificate, you will be prompted with the following dialog
 with the title **Windows protected your PC dialog**. Click the **More
 info** link to continue.
 
-<img src="./images/InstallationGuide/media/image3.png"  />
+<img src="./images/InstallationGuide/media/image3.png" style="width:50%"  />
 
 The next screen displays the name of the **App** as
 **TranslationsBuilderInstall.msi** and indicates that the publisher is
 unknown. Click the **Run anyway** button to begin the installation
 process.
 
-<img src="./images/InstallationGuide/media/image4.png"
-style="width:2.37502in;height:1.65079in" />
+<img src="./images/InstallationGuide/media/image4.png"  style="width:50%" />
 
 When you see the **Welcome** screen of the **Translations Builder Setup
 Wizard**, click **Next** to continue,
 
-<img src="./images/InstallationGuide/media/image5.png"
-style="width:2.15219in;height:1.76528in"
-alt="Graphical user interface, text, application, email Description automatically generated" />
+<img src="./images/InstallationGuide/media/image5.png"  style="width:50%"  /> />
 
 On the **Select Installation Folder** page, accept the default
 **Folder** location value and click **Next**.
