@@ -7,9 +7,7 @@ Builder**, you must ensure your computer meets the following
 requirements.
 
 - 64-bit Version of Windows 10 or Windows 11
-
 - 64-bit version of Power BI Desktop (November 2022 or later)
-
 - .NET 6 Runtime for Desktop Applications ([download install
   files](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-6.0.8-windows-x64-installer)).
 
