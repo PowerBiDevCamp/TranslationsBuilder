@@ -24,7 +24,7 @@ context menu of actions. The following screenshot shows what this
 experience looks like when using Google Chrome. Other browsers will
 provide a different experience.
 
-<img src="./images/InstallationGuide/media/image1.png" style="width:50%" />
+<img src="./images/InstallationGuide/media/image1.png" style="width:75%" />
 
 Note that the installation file named **TranslationsBuilderInstall.msi**
 has not been signed using Authenticate to verify the authenticity of the
