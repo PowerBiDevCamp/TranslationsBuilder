@@ -82,7 +82,7 @@ for Power BI Desktop external tools and that file has the hardcoded path
 of the default **Folder** location. If you change the **Folder**
 location from the default value, then you will need to update the file
 named **translationsbuilder.pbitool.json** which is explained at the end
-of this article in the Troubleshooting section.
+of this article in the **Troubleshooting Installation** section.
 
 On the **Confirm Installation** page, click **Next** to continue.
 
@@ -124,7 +124,7 @@ style="width:3.15873in;height:1.04812in" />
 <img src="./images/InstallationGuide/media/image12.png"
 style="width:4.48022in;height:2.03828in" />
 
-### Troubleshooting
+### Troubleshooting Installation
 
 The following information might be important to you if you need to
 troubleshoot your **Translations Builder** installation. The default
