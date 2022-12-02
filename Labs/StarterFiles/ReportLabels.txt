@@ -1,5 +1,9 @@
 Product Sales Report
-Product Sales
+Sales Summary
+Sales By Country
+Sales By Product
+Filter By Country
+Top 10 Customers
 Product Catalog
-Time-based Analysis
-Top Selling Products
+Set Product Filter
+Set Country Filter
