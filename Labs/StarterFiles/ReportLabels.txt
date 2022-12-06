@@ -4,6 +4,6 @@ Sales By Country
 Sales By Product
 Filter By Country
 Top 10 Customers
-Product Catalog
+Time Slices
 Set Product Filter
 Set Country Filter
