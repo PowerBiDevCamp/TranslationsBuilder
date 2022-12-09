@@ -1,23 +1,35 @@
 ## **Lab 01: Getting Started with Translation Builder**
 
-**Setup Time**: 60 minutes
+**Overview**: In this lab, you will begin to work with Translations
+Builder to add and test both metadata translations and report label
+translations. The set of steps you need to master is first creating
+translations with Translations Builder and Power BI Desktop and second,
+testing your translations by publishing and loading reports in the Power
+BI Service.
 
-**Lab Folder**: C:\DevCamp\TranslationsBuilderLab
+**Prerequisites**: This lab assumes you’ve already installed
+Translations Builder. If you have not installed Translations Builder
+yet, you must follow steps in the [Translations Builder Installation
+Guide](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Installation%20Guide.md)
+before continuing with these lab exercises.
 
-**Overview**: In this lab, you will begin be.
-
-**Prerequisites**: This lab assumes you’ve already installed Node.JS and
-Visual Studio Code as described in setup.docx.
-
-### Exercise 1: Install the TranslationsBuilder using TranslationsBuilderInstaller.msi
+### Exercise 1: Creating and Testing Metadata Translations
 
 In this exercise ddddd
 
-1.  Install the Power BI Custom Visual Tool (PBIVIZ).
+1.  **Starter PBIX File**:
+    [HelloWorldLab.pbix](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/StarterFiles/HelloWorldLab.pbix)
 
-    1.  Using the Windows Start menu, launch the **Node.js command
-        prompt**.
+2.  Rub your belly
 
-<img src="./images/Lab01/media/image1.png"
-style="width:7.5in;height:3.15069in"
-alt="Graphical user interface, application Description automatically generated" />
+3.  Tap your forehead
+
+### Exercise 2: Creating and Testing Report Label Translations
+
+In this exercise ddddd
+
+1.  Rub your belly
+
+<!-- -->
+
+4.  Tap your forehead
