@@ -10,79 +10,6 @@ maintain a separate PBIX project file for each language. Instead, they
 can increase reuse and lower report maintenance by designing and
 implementing multi-language reports.
 
-Updated: January xx, 2023  
-Ted Pattison  
-Power BI Customer Advisory Team (PBICAT)
-
-# Contents
-
-[Building Multi-language Reports in Power BI
-[1](#building-multi-language-reports-in-power-bi)](#building-multi-language-reports-in-power-bi)
-
-[Overview of Multi-language Report Development
-[2](#overview-of-multi-language-report-development)](#overview-of-multi-language-report-development)
-
-[Understand the Three Types of Translations
-[2](#understand-the-three-types-of-translations)](#understand-the-three-types-of-translations)
-
-[The Multi-language Report Development Process
-[3](#the-multi-language-report-development-process)](#the-multi-language-report-development-process)
-
-[Translations Builder Live Demo
-[5](#translations-builder-live-demo)](#translations-builder-live-demo)
-
-[Prepare Datasets and Reports for Localization
-[6](#prepare-datasets-and-reports-for-localization)](#prepare-datasets-and-reports-for-localization)
-
-[Avoid Report Design Techniques that Do Not Support Localization
-[6](#avoid-report-design-techniques-that-do-not-support-localization)](#avoid-report-design-techniques-that-do-not-support-localization)
-
-[Understanding the Localized Labels Table
-[7](#understanding-the-localized-labels-table)](#understanding-the-localized-labels-table)
-
-[Add Support for Page Navigation
-[7](#add-support-for-page-navigation)](#add-support-for-page-navigation)
-
-[Understanding How Translations Builder Works
-[8](#understanding-how-translations-builder-works)](#understanding-how-translations-builder-works)
-
-[Add Secondary Cultures to a Dataset
-[9](#add-secondary-cultures-to-a-dataset)](#add-secondary-cultures-to-a-dataset)
-
-[Add Metadata Translations to a Dataset Object
-[10](#add-metadata-translations-to-a-dataset-object)](#add-metadata-translations-to-a-dataset-object)
-
-[Generate Machine Translations using Azure Translator Service
-[12](#generate-machine-translations-using-azure-translator-service)](#generate-machine-translations-using-azure-translator-service)
-
-[Enable Human Workflows for Translation using Export and Import
-[16](#enable-human-workflows-for-translation-using-export-and-import)](#enable-human-workflows-for-translation-using-export-and-import)
-
-[Embed Power BI Reports with Specific Languages and Locales
-[17](#embed-power-bi-reports-with-specific-languages-and-locales)](#embed-power-bi-reports-with-specific-languages-and-locales)
-
-[Design and Implement a Data Translations Strategy
-[18](#design-and-implement-a-data-translations-strategy)](#design-and-implement-a-data-translations-strategy)
-
-[Determine Whether Your Solution Requires Data Translations
-[18](#determine-whether-your-solution-requires-data-translations)](#determine-whether-your-solution-requires-data-translations)
-
-[Modify the Dataset Design to Support Data Translations
-[20](#modify-the-dataset-design-to-support-data-translations)](#modify-the-dataset-design-to-support-data-translations)
-
-[Use Power Query to Generate Data Translations Rows
-[21](#use-power-query-to-generate-data-translations-rows)](#use-power-query-to-generate-data-translations-rows)
-
-[Load Reports using Bookmarks to Filter Data Translations
-[26](#load-reports-using-bookmarks-to-filter-data-translations)](#load-reports-using-bookmarks-to-filter-data-translations)
-
-[Setting the Language for Current User using RLS and UserCulture
-[27](#setting-the-language-for-current-user-using-rls-and-userculture)](#setting-the-language-for-current-user-using-rls-and-userculture)
-
-[Summary [28](#summary)](#summary)
-
-## Overview of Multi-language Report Development
-
 The purpose of this article is to explain the key concepts involved with
 the Power BI features for Internationalization and localization and to
 provide guidance for building reports that support multiple languages.
@@ -403,8 +330,6 @@ titles, headings and button captions used throughout the report.
 Now that you've seen how to create the **Localized Labels** table, it's
 time to move ahead and learn how to surface the measure name for a
 localized label on a Power BI report.
-
-### 
 
 ### Add Support for Page Navigation
 
