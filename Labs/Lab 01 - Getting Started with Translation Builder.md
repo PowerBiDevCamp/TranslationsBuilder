@@ -160,8 +160,8 @@ style="width:4.63759in;height:1.61905in" />
 <img src="./images/Lab01/media/image19.png"
 style="width:4.50937in;height:0.90476in" />
 
-20. Type Hello World. You should see that you can start typing in a
-    translation select that is selected to add a translation.
+20. Type Hello World. You should see that you can just start typing in
+    the selected cell to add or edit a translation.
 
 <img src="./images/Lab01/media/image20.png"
 style="width:4.48425in;height:0.88889in" />
@@ -201,7 +201,7 @@ the **{F2}** key to move a cell with content into edit mode.
 28. For the **Sales Revenue** measure, enter the Spanish translation of
     **Ingresos Por Ventas**.
 
-29. For the **Units Sold** measure, , enter the Spanish translation of
+29. For the **Units Sold** measure, enter the Spanish translation of
     **Unidades Vendidas**.
 
 30. When you are done with your edits, the Spanish translations should
@@ -216,10 +216,10 @@ style="width:3.8239in;height:1.22098in" />
 <img src="./images/Lab01/media/image24.png"
 style="width:3.19497in;height:0.947in" />
 
-It’s easy to forget to save your changes in Power BI Desktop. Don’t
-forget any changes made by Translations Builder are just made to the
-data model loaded in memory. None of your changes are saved back to the
-PBIX project file until you save in Power BI Desktop.
+It’s easy to forget to save your changes in Power BI Desktop. Be aware
+that any changes made by Translations Builder are just made to the data
+model loaded in memory. None of your changes are saved back to the PBIX
+project file until you save in Power BI Desktop.
 
 32. Publish the **TB-Lab01.pbix** project to push the changes to the
     project’s translations to the Power BI Service.
@@ -247,52 +247,246 @@ alt="Graphical user interface, text, application, email Description automaticall
 style="width:4.3122in;height:2.71669in"
 alt="Table Description automatically generated" />
 
-36. In particular, inspect the table visual columns which displays
-    column names and measure names in English.
+36. Inspect the table visual column headers which displays the names of
+    columns and measures in English.
 
 <img src="./images/Lab01/media/image29.png"
-style="width:5.13837in;height:1.54276in" />
+style="width:4.36478in;height:1.3105in" />
 
 Now, it’s time to test your translations for the first time by using the
 **language** query string parameter to load the report.
 
-37. Click the browser address bar and add the **language** parameter to
-    the end of the report URL then press **ENTER**.
+Click the browser address bar and add the following **language**
+parameter to the end of the report URL.
 
 /?language=es-ES
 
-38. You should see the **language** query string parameter accept by the
-    browser as it reloads the report.
+37. Press **ENTER.** You should see the **language** query string
+    parameter accepted by the browser as it reloads the report.
 
 <img src="./images/Lab01/media/image30.png"
 style="width:6.48154in;height:0.81132in" />
 
-39. You should see the Power BI Service UI has switch from English to
-    Spanish
+When the report reloads, you should see the UI experience for the Power
+BI Service UI switch from English to Spanish.
 
-40. You should also see columns headings with column names and measure
-    names are also displayed in Spanish.
+38. Verify the column and measure names in columns headings are
+    displayed with the Spanish translations you added.
 
 <img src="./images/Lab01/media/image31.png"
 style="width:5.50275in;height:1.49685in" />
 
 You have now successfully added the metadata translations to display
-this report in both English and Spanish.
+this report in both English and Spanish. Leave Power BI Desktop and
+Translations Builder open as you will continue using them in your next
+exercise.
 
 ### Exercise 2: Generating Machine Translations
 
 In this lab you will configure Translations Builder’s support to
-automatically provide machine translations using the Azure Translation
+automatically generate machine translations using the Azure Translator
 Service. While machine translations might not prove good enough to use
 in all production scenarios, they do provide a great first step in
 generating translations for testing and getting something into
 production sooner.
 
+To complete this lab you will require a **Key** and **Location** which
+provide access to the **Azure Translator Service**. If you do not have a
+Azure subscription and you cannot obtain your own Key, you can use the
+following Key and Location up through February 28, 2023.
+
 **Key**: a75b371ce1fc402ca84a05732cfcff27
 
 **Location**: eastus2
 
-xx
+1.  Return to Translations Builder and drop down the **Dataset
+    Connection** menu.
+
+<img src="./images/Lab01/media/image32.png"
+style="width:3.25397in;height:1.03885in" />
+
+39. Select the **Configure Settings…** menu command to display the
+    **Configuration Options** dialog.
+
+<img src="./images/Lab01/media/image33.png"
+style="width:4.00833in;height:1.60606in" />
+
+40. In the **Configuration Options** dialog, enter the **Key** and
+    **Location** for the Azure Translator Service.
+
+<img src="./images/Lab01/media/image34.png"
+style="width:3.77273in;height:1.80052in" />
+
+41. Once you have added the **Key** and **Location**, click **Save
+    Changes**.
+
+<img src="./images/Lab01/media/image35.png"
+style="width:4.56413in;height:1.7197in" />
+
+42. After you have configured the **Key** and **Location** for the Azure
+    Translator Service, new controls will appear on the main page.
+
+<img src="./images/Lab01/media/image36.png"
+style="width:5.29167in;height:1.41366in" />
+
+Now that you have added support for generating machine translations,
+it’s time to put that automatic translation support to work!
+
+43. Click the **Add Language** button to add your second secondary
+    language.
+
+<img src="./images/Lab01/media/image37.png"
+style="width:5.14286in;height:1.165in" />
+
+44. Select **French \[fr-FR\]** and click **Add Language**.
+
+45. You should now see that **French \[fr-FR\]** appears the second
+    language in the **Secondary Languages** list.
+
+<img src="./images/Lab01/media/image38.png"
+style="width:1.59849in;height:0.84293in" />
+
+46. Click the **Add Language** button to add your third secondary
+    language.
+
+47. Select **German \[de-DE\]** and click **Add Language**.
+
+48. You should now see that **German \[de-DE\]** appears the third
+    language in the **Secondary Languages** list.
+
+49. You will also notice that new columns have been added to the
+    translation grid for French and German translations.
+
+<img src="./images/Lab01/media/image39.png"
+style="width:5.12121in;height:1.93143in" />
+
+50. In the **Machine Translations – Single Language** section, select
+    **French \[fr-FR\]** from the drop down menu.
+
+<img src="./images/Lab01/media/image40.png"
+style="width:5.44697in;height:1.18825in" />
+
+51. Once you have selected **French \[fr-FR\]**, click **Generate
+    Translations** to create French translations for all rows in the
+    grid.
+
+<img src="./images/Lab01/media/image41.png"
+style="width:5.25758in;height:1.19634in" />
+
+52. As the code runs to interact with the Azure Translator Service, the
+    **Generating machine translation** dialog shows the progress.
+
+<img src="./images/Lab01/media/image42.png"
+style="width:4.4127in;height:1.80696in" />
+
+53. Once this dialog closes, you should see all cells the French column
+    has been filled with machine generated translations.
+
+<img src="./images/Lab01/media/image43.png"
+style="width:4.74603in;height:1.57395in" />
+
+54. Click the **Fill All Empty Translation** button in the **Machine
+    Translations - All Languages** section.
+
+<img src="./images/Lab01/media/image44.png"
+style="width:4.96825in;height:1.46667in" />
+
+55. You should see that all the cells the German column have been
+    populated with machine-generated translations.
+
+<img src="./images/Lab01/media/image45.png"
+style="width:4.75in;height:1.29217in" />
+
+Now, it’s time once again to test your work in the Power BI Service,
+
+56. Return to the **TB-Lab01.pbix** project in Power BI Desktop and save
+    your work by clicking the **Save** button.
+
+<img src="./images/Lab01/media/image24.png"
+style="width:3.19497in;height:0.947in"
+alt="Graphical user interface, application, Word Description automatically generated" />
+
+Don’t forget to save your work! Did we mention it’s easy to forget.
+
+57. Publish the **TB-Lab01.pbix** project to push your changes to the
+    project’s translations to the Power BI Service.
+
+<img src="./images/Lab01/media/image25.png"
+style="width:5.19816in;height:0.8239in"
+alt="Graphical user interface, application Description automatically generated" />
+
+58. When prompted by the **Replace this dataset?** Dialog, click the
+    **Replace** button to continue.
+
+<img src="./images/Lab01/media/image26.png"
+style="width:2.17282in;height:1.41509in"
+alt="Graphical user interface, text, application, email Description automatically generated" />
+
+59. Once you see **Success!**, click **Open ‘TB-Lab01.pbx’ in Power BI**
+    to view the report in the Power BI Service.
+
+<img src="./images/Lab01/media/image27.png"
+style="width:2.11831in;height:1.3231in"
+alt="Graphical user interface, text, application, email Description automatically generated" />
+
+60. The report should load as normal showing all text in English at
+    first.
+
+<img src="./images/Lab01/media/image28.png"
+style="width:4.05726in;height:2.55607in"
+alt="Table Description automatically generated" />
+
+Now, it’s time to test your French and German translations using the
+**language** query string parameter to load the report.
+
+61. Click the browser address bar and add the following **language**
+    parameter to the end of the report URL.
+
+/?language=fr-FR
+
+62. When the report reloads, you should see the UI experience for the
+    Power BI Service UI switch from English to French.
+
+<img src="./images/Lab01/media/image46.png"
+style="width:5.37121in;height:0.96133in" />
+
+63. Verify the column and measure names in columns headings are
+    displayed with the French translations.
+
+<img src="./images/Lab01/media/image47.png"
+style="width:3.71429in;height:1.0541in" />
+
+Now that you have tested the French translations, it’s time to test the
+German translations.
+
+64. Click the browser address bar and add the following **language**
+    parameter for German to the end of the report URL.
+
+/?language=de-DE
+
+65. When the report reloads, you should see the UI experience for the
+    Power BI Service UI switch to German.
+
+<img src="./images/Lab01/media/image48.png"
+style="width:5.68939in;height:1.00565in" />
+
+66. Verify the column and measure names in columns headings are
+    displayed with the German translations.
+
+<img src="./images/Lab01/media/image49.png"
+style="width:3.96825in;height:1.11846in" />
+
+You have now successfully added the metadata translations to display
+this report in English, Spanish, French and German. Through these lab
+exercises, you will continue to test all four languages in the browser
+as you continue add additional translation support. .
+
+67. Ex
+
+<img src="./images/Lab01/media/image50.png"
+style="width:6.40909in;height:1.09541in" />
+
+xxx
 
 ### Exercise 3: Creating and Testing Report Label Translations
 
@@ -302,4 +496,4 @@ In this exercise ddddd
 
 <!-- -->
 
-41. Tap your forehead
+68. Tap your forehead
