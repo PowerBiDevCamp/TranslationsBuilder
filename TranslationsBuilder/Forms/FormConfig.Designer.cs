@@ -25,10 +25,6 @@ namespace TranslationsBuilder {
     /// </summary>
     private void InitializeComponent() {
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormConfig));
-      this.lblServer = new System.Windows.Forms.Label();
-      this.txtServer = new System.Windows.Forms.TextBox();
-      this.lblDatabase = new System.Windows.Forms.Label();
-      this.txtDatabase = new System.Windows.Forms.TextBox();
       this.lblTranslationsOutboxFolderPath = new System.Windows.Forms.Label();
       this.txtTranslationsOutboxFolderPath = new System.Windows.Forms.TextBox();
       this.lblTranslationsInboxFolderPath = new System.Windows.Forms.Label();
@@ -44,42 +40,10 @@ namespace TranslationsBuilder {
       this.dialogSelectFolder = new System.Windows.Forms.FolderBrowserDialog();
       this.SuspendLayout();
       // 
-      // lblServer
-      // 
-      this.lblServer.AutoSize = true;
-      this.lblServer.Location = new System.Drawing.Point(11, 9);
-      this.lblServer.Name = "lblServer";
-      this.lblServer.Size = new System.Drawing.Size(50, 20);
-      this.lblServer.TabIndex = 0;
-      this.lblServer.Text = "Server";
-      // 
-      // txtServer
-      // 
-      this.txtServer.Location = new System.Drawing.Point(11, 32);
-      this.txtServer.Name = "txtServer";
-      this.txtServer.Size = new System.Drawing.Size(660, 27);
-      this.txtServer.TabIndex = 1;
-      // 
-      // lblDatabase
-      // 
-      this.lblDatabase.AutoSize = true;
-      this.lblDatabase.Location = new System.Drawing.Point(11, 61);
-      this.lblDatabase.Name = "lblDatabase";
-      this.lblDatabase.Size = new System.Drawing.Size(60, 20);
-      this.lblDatabase.TabIndex = 2;
-      this.lblDatabase.Text = "Dataset";
-      // 
-      // txtDatabase
-      // 
-      this.txtDatabase.Location = new System.Drawing.Point(11, 85);
-      this.txtDatabase.Name = "txtDatabase";
-      this.txtDatabase.Size = new System.Drawing.Size(660, 27);
-      this.txtDatabase.TabIndex = 3;
-      // 
       // lblTranslationsOutboxFolderPath
       // 
       this.lblTranslationsOutboxFolderPath.AutoSize = true;
-      this.lblTranslationsOutboxFolderPath.Location = new System.Drawing.Point(11, 116);
+      this.lblTranslationsOutboxFolderPath.Location = new System.Drawing.Point(12, 123);
       this.lblTranslationsOutboxFolderPath.Name = "lblTranslationsOutboxFolderPath";
       this.lblTranslationsOutboxFolderPath.Size = new System.Drawing.Size(218, 20);
       this.lblTranslationsOutboxFolderPath.TabIndex = 4;
@@ -87,15 +51,15 @@ namespace TranslationsBuilder {
       // 
       // txtTranslationsOutboxFolderPath
       // 
-      this.txtTranslationsOutboxFolderPath.Location = new System.Drawing.Point(11, 139);
+      this.txtTranslationsOutboxFolderPath.Location = new System.Drawing.Point(12, 146);
       this.txtTranslationsOutboxFolderPath.Name = "txtTranslationsOutboxFolderPath";
-      this.txtTranslationsOutboxFolderPath.Size = new System.Drawing.Size(660, 27);
-      this.txtTranslationsOutboxFolderPath.TabIndex = 5;
+      this.txtTranslationsOutboxFolderPath.Size = new System.Drawing.Size(540, 27);
+      this.txtTranslationsOutboxFolderPath.TabIndex = 3;
       // 
       // lblTranslationsInboxFolderPath
       // 
       this.lblTranslationsInboxFolderPath.AutoSize = true;
-      this.lblTranslationsInboxFolderPath.Location = new System.Drawing.Point(11, 172);
+      this.lblTranslationsInboxFolderPath.Location = new System.Drawing.Point(12, 179);
       this.lblTranslationsInboxFolderPath.Name = "lblTranslationsInboxFolderPath";
       this.lblTranslationsInboxFolderPath.Size = new System.Drawing.Size(206, 20);
       this.lblTranslationsInboxFolderPath.TabIndex = 6;
@@ -103,17 +67,17 @@ namespace TranslationsBuilder {
       // 
       // txtTranslationsInboxFolderPath
       // 
-      this.txtTranslationsInboxFolderPath.Location = new System.Drawing.Point(11, 197);
+      this.txtTranslationsInboxFolderPath.Location = new System.Drawing.Point(12, 204);
       this.txtTranslationsInboxFolderPath.Name = "txtTranslationsInboxFolderPath";
-      this.txtTranslationsInboxFolderPath.Size = new System.Drawing.Size(660, 27);
-      this.txtTranslationsInboxFolderPath.TabIndex = 7;
+      this.txtTranslationsInboxFolderPath.Size = new System.Drawing.Size(540, 27);
+      this.txtTranslationsInboxFolderPath.TabIndex = 5;
       // 
       // btnSaveConfigurationChanges
       // 
-      this.btnSaveConfigurationChanges.Location = new System.Drawing.Point(701, 21);
+      this.btnSaveConfigurationChanges.Location = new System.Drawing.Point(580, 17);
       this.btnSaveConfigurationChanges.Name = "btnSaveConfigurationChanges";
-      this.btnSaveConfigurationChanges.Size = new System.Drawing.Size(170, 37);
-      this.btnSaveConfigurationChanges.TabIndex = 10;
+      this.btnSaveConfigurationChanges.Size = new System.Drawing.Size(140, 37);
+      this.btnSaveConfigurationChanges.TabIndex = 7;
       this.btnSaveConfigurationChanges.Text = "Save Changes";
       this.btnSaveConfigurationChanges.UseVisualStyleBackColor = true;
       this.btnSaveConfigurationChanges.Click += new System.EventHandler(this.btnSaveConfigurationChanges_Click);
@@ -121,7 +85,7 @@ namespace TranslationsBuilder {
       // lblAzureTranslatorServiceKey
       // 
       this.lblAzureTranslatorServiceKey.AutoSize = true;
-      this.lblAzureTranslatorServiceKey.Location = new System.Drawing.Point(11, 229);
+      this.lblAzureTranslatorServiceKey.Location = new System.Drawing.Point(12, 10);
       this.lblAzureTranslatorServiceKey.Name = "lblAzureTranslatorServiceKey";
       this.lblAzureTranslatorServiceKey.Size = new System.Drawing.Size(195, 20);
       this.lblAzureTranslatorServiceKey.TabIndex = 9;
@@ -129,15 +93,15 @@ namespace TranslationsBuilder {
       // 
       // txtAzureTranslatorServiceKey
       // 
-      this.txtAzureTranslatorServiceKey.Location = new System.Drawing.Point(11, 252);
+      this.txtAzureTranslatorServiceKey.Location = new System.Drawing.Point(12, 33);
       this.txtAzureTranslatorServiceKey.Name = "txtAzureTranslatorServiceKey";
-      this.txtAzureTranslatorServiceKey.Size = new System.Drawing.Size(659, 27);
-      this.txtAzureTranslatorServiceKey.TabIndex = 8;
+      this.txtAzureTranslatorServiceKey.Size = new System.Drawing.Size(540, 27);
+      this.txtAzureTranslatorServiceKey.TabIndex = 1;
       // 
       // lblAzureTranslatorServiceLocation
       // 
       this.lblAzureTranslatorServiceLocation.AutoSize = true;
-      this.lblAzureTranslatorServiceLocation.Location = new System.Drawing.Point(13, 285);
+      this.lblAzureTranslatorServiceLocation.Location = new System.Drawing.Point(14, 66);
       this.lblAzureTranslatorServiceLocation.Name = "lblAzureTranslatorServiceLocation";
       this.lblAzureTranslatorServiceLocation.Size = new System.Drawing.Size(318, 20);
       this.lblAzureTranslatorServiceLocation.TabIndex = 11;
@@ -145,37 +109,37 @@ namespace TranslationsBuilder {
       // 
       // txtAzureTranslatorServiceLocation
       // 
-      this.txtAzureTranslatorServiceLocation.Location = new System.Drawing.Point(13, 309);
+      this.txtAzureTranslatorServiceLocation.Location = new System.Drawing.Point(14, 90);
       this.txtAzureTranslatorServiceLocation.Name = "txtAzureTranslatorServiceLocation";
-      this.txtAzureTranslatorServiceLocation.Size = new System.Drawing.Size(658, 27);
-      this.txtAzureTranslatorServiceLocation.TabIndex = 9;
+      this.txtAzureTranslatorServiceLocation.Size = new System.Drawing.Size(540, 27);
+      this.txtAzureTranslatorServiceLocation.TabIndex = 2;
       // 
       // btnCancel
       // 
-      this.btnCancel.Location = new System.Drawing.Point(701, 68);
+      this.btnCancel.Location = new System.Drawing.Point(580, 64);
       this.btnCancel.Name = "btnCancel";
-      this.btnCancel.Size = new System.Drawing.Size(170, 36);
-      this.btnCancel.TabIndex = 13;
+      this.btnCancel.Size = new System.Drawing.Size(140, 36);
+      this.btnCancel.TabIndex = 8;
       this.btnCancel.Text = "Cancel";
       this.btnCancel.UseVisualStyleBackColor = true;
       this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
       // 
       // btnSetOutboxPath
       // 
-      this.btnSetOutboxPath.Location = new System.Drawing.Point(678, 133);
+      this.btnSetOutboxPath.Location = new System.Drawing.Point(571, 140);
       this.btnSetOutboxPath.Name = "btnSetOutboxPath";
       this.btnSetOutboxPath.Size = new System.Drawing.Size(53, 36);
-      this.btnSetOutboxPath.TabIndex = 14;
+      this.btnSetOutboxPath.TabIndex = 4;
       this.btnSetOutboxPath.Text = "set";
       this.btnSetOutboxPath.UseVisualStyleBackColor = true;
       this.btnSetOutboxPath.Click += new System.EventHandler(this.SetOutboxPath);
       // 
       // btnSetInboxPath
       // 
-      this.btnSetInboxPath.Location = new System.Drawing.Point(678, 192);
+      this.btnSetInboxPath.Location = new System.Drawing.Point(571, 199);
       this.btnSetInboxPath.Name = "btnSetInboxPath";
       this.btnSetInboxPath.Size = new System.Drawing.Size(53, 36);
-      this.btnSetInboxPath.TabIndex = 15;
+      this.btnSetInboxPath.TabIndex = 6;
       this.btnSetInboxPath.Text = "set";
       this.btnSetInboxPath.UseVisualStyleBackColor = true;
       this.btnSetInboxPath.Click += new System.EventHandler(this.SetInboxPath);
@@ -187,7 +151,7 @@ namespace TranslationsBuilder {
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.SystemColors.ActiveCaption;
       this.CancelButton = this.btnCancel;
-      this.ClientSize = new System.Drawing.Size(901, 365);
+      this.ClientSize = new System.Drawing.Size(738, 260);
       this.Controls.Add(this.btnSetInboxPath);
       this.Controls.Add(this.btnSetOutboxPath);
       this.Controls.Add(this.btnCancel);
@@ -200,10 +164,6 @@ namespace TranslationsBuilder {
       this.Controls.Add(this.lblTranslationsInboxFolderPath);
       this.Controls.Add(this.txtTranslationsOutboxFolderPath);
       this.Controls.Add(this.lblTranslationsOutboxFolderPath);
-      this.Controls.Add(this.txtDatabase);
-      this.Controls.Add(this.lblDatabase);
-      this.Controls.Add(this.txtServer);
-      this.Controls.Add(this.lblServer);
       this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
       this.Name = "FormConfig";
       this.Text = "Configuration Options";
@@ -214,11 +174,6 @@ namespace TranslationsBuilder {
     }
 
     #endregion
-
-    private System.Windows.Forms.Label lblServer;
-    private System.Windows.Forms.TextBox txtServer;
-    private System.Windows.Forms.Label lblDatabase;
-    private System.Windows.Forms.TextBox txtDatabase;
     private System.Windows.Forms.Label lblTranslationsOutboxFolderPath;
     private System.Windows.Forms.TextBox txtTranslationsOutboxFolderPath;
     private System.Windows.Forms.Label lblTranslationsInboxFolderPath;

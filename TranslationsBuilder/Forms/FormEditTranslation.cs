@@ -23,7 +23,7 @@ namespace TranslationsBuilder {
       ObjectType = objectType;
       PropertyName = propertyName;
       ObjectName = objectName;
-      DefaultTranslation = TranslationsManager.GetDefaultTranslationFromObjectName(objectName, objectType, propertyName);
+      DefaultTranslation = TranslationsManager.GetDefaultTranslation(objectName, objectType, propertyName);
       Language = language;
       txtTranslation.Text = translationValue;
       lblObjectType.Text = objectType;

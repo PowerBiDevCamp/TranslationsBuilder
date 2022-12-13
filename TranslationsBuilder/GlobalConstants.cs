@@ -9,7 +9,7 @@ namespace TranslationsBuilder {
 
   class GlobalConstants {
 
-    public const string VersionNumber = "0.90";
+    public const string VersionNumber = "2.0";
     public const string ApplicationName = "Translations Builder";
     public const string ApplicationTitle = ApplicationName + " | Version " + VersionNumber;
 

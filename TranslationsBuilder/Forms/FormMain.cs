@@ -11,6 +11,7 @@ using TranslationsBuilder.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Drawing;
 using static System.Windows.Forms.DataGridView;
+using System.Configuration;
 
 namespace TranslationsBuilder {
 
@@ -27,7 +28,6 @@ namespace TranslationsBuilder {
       }
       else {
         labelStatusBar.Text = "Not connected";
-
       }
     }
 
@@ -80,7 +80,7 @@ namespace TranslationsBuilder {
 
     private void menuConnect_Click(object sender, EventArgs e) {
 
-      bool sessionsExist  = (PowerBiDesktopUtilities.GetActiveDatasetConnections().Count() > 0);
+      bool sessionsExist = (PowerBiDesktopUtilities.GetActiveDatasetConnections().Count() > 0);
 
       if (sessionsExist) {
         using (FormConnect dialog = new FormConnect()) {
@@ -169,13 +169,6 @@ namespace TranslationsBuilder {
       this.Refresh();
     }
 
-    private void PopulateDefaultCultureTranslations(object sender, EventArgs e) {
-      labelStatusBar.Text = "Loading Data Model...";
-
-      TranslationsManager.PopulateDefaultCultureTranslations();
-      this.PopulateGridWithTranslations();
-    }
-
     private void AddSecondaryCulture(object sender, EventArgs e) {
 
       using (FormAddCultureDialog dialog = new FormAddCultureDialog()) {
@@ -245,10 +238,12 @@ namespace TranslationsBuilder {
 
     private void SetGenenrateMachineTranslationsButton() {
       if (TranslatorService.IsAvailable) {
-        grpMachineTranslations.Visible = true;
+        grpMachineTranslationsSingleLanguage.Visible = true;
+        grpMachineTranslationsAllLanguages.Visible = true;
       }
       else {
-        grpMachineTranslations.Visible = false;
+        grpMachineTranslationsSingleLanguage.Visible = false;
+        grpMachineTranslationsAllLanguages.Visible= false;
       }
     }
 
@@ -311,8 +306,6 @@ namespace TranslationsBuilder {
 
     private void GenenrateAllMachineTranslations(object sender, EventArgs e) {
 
-      TranslationsManager.PopulateDefaultCultureTranslations();
-
       using (FormLoadingStatus dialog = new FormLoadingStatus()) {
 
         dialog.StartPosition = FormStartPosition.CenterScreen;
@@ -331,8 +324,8 @@ namespace TranslationsBuilder {
     }
 
     private void FillAllEmptyTranslations(object sender, EventArgs e) {
+
       labelStatusBar.Text = "Executing FillAllEmptyTranslations operation...";
-      TranslationsManager.PopulateDefaultCultureTranslations();
 
       using (FormLoadingStatus dialog = new FormLoadingStatus()) {
 
@@ -408,7 +401,8 @@ namespace TranslationsBuilder {
 
     private void gridTranslations_CellDoubleClick(object sender, DataGridViewCellEventArgs e) {
 
-      if (e.ColumnIndex == -1) {
+      if (e.ColumnIndex == -1 && TranslatorService.IsAvailable) {
+        // allow double click on row heading to generate machine translation for all secondary languages across row
 
         string objectType = gridTranslations.Rows[e.RowIndex].Cells[0]?.Value.ToString();
         string propertyName = gridTranslations.Rows[e.RowIndex].Cells[1]?.Value.ToString();
@@ -421,6 +415,7 @@ namespace TranslationsBuilder {
           dialog.Close();
         }
         PopulateGridWithTranslations();
+
       }
 
       if (e.ColumnIndex == 2) {
@@ -440,12 +435,33 @@ namespace TranslationsBuilder {
         }
       }
 
+      if (e.ColumnIndex == 3 && e.RowIndex > 0) {
+        var cell = gridTranslations.Rows[e.RowIndex].Cells[e.ColumnIndex];
+        string cellContents = (cell.Value != null) ? cell.Value.ToString() : "";
+
+        // this is the default translation when column index is 3
+        var ObjectType = gridTranslations.Rows[e.RowIndex].Cells[0].Value.ToString();
+        var PropertyName = gridTranslations.Rows[e.RowIndex].Cells[1].Value.ToString();
+        var ObjectName = gridTranslations.Rows[e.RowIndex].Cells[2].Value.ToString();
+        var Language = SupportedLanguages.GetLanguageFromFullName(gridTranslations.Columns[e.ColumnIndex].HeaderText).LanguageTag;
+
+
+        using (FormEditDefaultTranslation dialog = new FormEditDefaultTranslation(ObjectType, PropertyName, ObjectName, Language, cellContents)) {
+          dialog.StartPosition = FormStartPosition.CenterParent;
+          dialog.ShowDialog(this);
+          if (dialog.DialogResult == DialogResult.OK) {
+            labelStatusBar.Text = ObjectName + " updated at " + DateTime.Now.ToShortTimeString();
+            PopulateGridWithTranslations();
+          }
+        }
+
+      }
 
       if (e.ColumnIndex >= 4 && e.RowIndex > 0) {
         var cell = gridTranslations.Rows[e.RowIndex].Cells[e.ColumnIndex];
         string cellContents = (cell.Value != null) ? cell.Value.ToString() : "";
 
-        // this is a translation when column index is 3 or greater
+        // this is a secondary translation when column index is 4 or greater
         var ObjectType = gridTranslations.Rows[e.RowIndex].Cells[0].Value.ToString();
         var PropertyName = gridTranslations.Rows[e.RowIndex].Cells[1].Value.ToString();
         var ObjectName = gridTranslations.Rows[e.RowIndex].Cells[2].Value.ToString();
@@ -516,10 +532,10 @@ namespace TranslationsBuilder {
 
       string confirmDeleteMessage = "Are you sure you want to delete the language - " + language + "?\r\n" +
                                     "Deleting this secondary language will delete all its translations.";
-     
+
       contextMenu.Hide();
-      
-      bool userConfirmedOperation  = UserInteraction.PromptUserToConfirmOperation(confirmDeleteMessage, "Delete Secondary Language Operation");
+
+      bool userConfirmedOperation = UserInteraction.PromptUserToConfirmOperation(confirmDeleteMessage, "Delete Secondary Language Operation");
       if (userConfirmedOperation) {
 
         string languageTag = SupportedLanguages.GetLanguageFromFullName(language).LanguageTag;

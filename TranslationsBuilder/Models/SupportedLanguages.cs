@@ -38,7 +38,7 @@ namespace TranslationsBuilder.Models {
     static public Language Norwegian = new Language { LanguageTag = "nb-NO", TranslationId = "nb", DisplayName = "Norwegian", NativeName = "Norsk", ShownOnlyOnExtendedLanguageList = false };
     static public Language Persian = new Language { LanguageTag = "fa-IR", TranslationId = "fa", DisplayName = "Persian", NativeName = "فارسی (ایران)", ShownOnlyOnExtendedLanguageList = true };
     static public Language Polish = new Language { LanguageTag = "pl-PL", TranslationId = "pl", DisplayName = "Polish", NativeName = "Polski", ShownOnlyOnExtendedLanguageList = false };
-    static public Language Portuguese = new Language { LanguageTag = "pt-PT", TranslationId = "pt-pt", DisplayName = "Portuguese", NativeName = "Português", ShownOnlyOnExtendedLanguageList = false };
+    static public Language Portuguese = new Language { LanguageTag = "pt-PT", TranslationId = "pt", DisplayName = "Portuguese", NativeName = "Português", ShownOnlyOnExtendedLanguageList = false };
     static public Language Romanian = new Language { LanguageTag = "ro-RO", TranslationId = "ro", DisplayName = "Romanian", NativeName = "Română", ShownOnlyOnExtendedLanguageList = true };
     static public Language Russian = new Language { LanguageTag = "ru-RU", TranslationId = "ru", DisplayName = "Russian", NativeName = "Pусский", ShownOnlyOnExtendedLanguageList = false };
     static public Language Serbian = new Language { LanguageTag = "sr-Latn-BA", TranslationId = "sr-Latn", DisplayName = "Serbian", NativeName = "Srpski", ShownOnlyOnExtendedLanguageList = true };

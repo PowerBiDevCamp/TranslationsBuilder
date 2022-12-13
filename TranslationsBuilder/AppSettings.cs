@@ -63,9 +63,6 @@ namespace TranslationsBuilder {
 
     public static void processStartupParameters(string[] args) {
 
-      if (args.Length == 0 && string.IsNullOrEmpty(settings.Server)) {
-        // WTF
-      }
 
       if (args.Length > 0) {
         if (args[0].ToLower().Contains("powerbi:")) {
@@ -79,7 +76,13 @@ namespace TranslationsBuilder {
       if (args.Length > 1) {
         Database = args[1];
       }
+
+      if (args.Length == 0 && string.IsNullOrEmpty(settings.Server)) {
+        // WTF
+      }
+
     }
+
 
   }
 }

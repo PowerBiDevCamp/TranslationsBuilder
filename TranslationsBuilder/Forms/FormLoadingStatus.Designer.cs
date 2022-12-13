@@ -125,9 +125,9 @@ namespace TranslationsBuilder {
       // 
       this.imageSpinner.BackColor = System.Drawing.Color.Transparent;
       this.imageSpinner.Image = ((System.Drawing.Image)(resources.GetObject("imageSpinner.Image")));
-      this.imageSpinner.Location = new System.Drawing.Point(15, 13);
+      this.imageSpinner.Location = new System.Drawing.Point(36, 26);
       this.imageSpinner.Name = "imageSpinner";
-      this.imageSpinner.Size = new System.Drawing.Size(168, 157);
+      this.imageSpinner.Size = new System.Drawing.Size(139, 134);
       this.imageSpinner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
       this.imageSpinner.TabIndex = 10;
       this.imageSpinner.TabStop = false;
@@ -150,7 +150,6 @@ namespace TranslationsBuilder {
       this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
       this.Name = "FormLoadingStatus";
       this.Text = "Generating machine translations";
-      this.Load += new System.EventHandler(this.frmLoadingStatus_Load);
       ((System.ComponentModel.ISupportInitialize)(this.imageSpinner)).EndInit();
       this.ResumeLayout(false);
       this.PerformLayout();
@@ -159,7 +158,6 @@ namespace TranslationsBuilder {
 
     #endregion
     private System.Windows.Forms.PictureBox imageSpinner;
-    private System.Windows.Forms.GroupBox groupBox1;
     private System.Windows.Forms.Label lblTranslationTypeLabel;
     private System.Windows.Forms.Label lblTranslationType;
     private System.Windows.Forms.Label llblTranslatedTextLabel;

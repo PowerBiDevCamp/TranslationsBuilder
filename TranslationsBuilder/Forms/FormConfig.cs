@@ -19,8 +19,6 @@ namespace TranslationsBuilder {
     }
 
     private void FormConfig_Load(object sender, EventArgs e) {
-      txtServer.Text = AppSettings.Server;
-      txtDatabase.Text = AppSettings.Database;
       txtTranslationsOutboxFolderPath.Text = AppSettings.TranslationsOutboxFolderPath;
       txtTranslationsInboxFolderPath.Text = AppSettings.TranslationsInboxFolderPath;
       txtAzureTranslatorServiceKey.Text = AppSettings.AzureTranslatorServiceKey;
@@ -28,8 +26,6 @@ namespace TranslationsBuilder {
     }
 
     private void btnSaveConfigurationChanges_Click(object sender, EventArgs e) {
-      AppSettings.Server = txtServer.Text;
-      AppSettings.Database = txtDatabase.Text;
       AppSettings.TranslationsOutboxFolderPath = txtTranslationsOutboxFolderPath.Text;
       AppSettings.TranslationsInboxFolderPath = txtTranslationsInboxFolderPath.Text;
       AppSettings.AzureTranslatorServiceKey = txtAzureTranslatorServiceKey.Text;

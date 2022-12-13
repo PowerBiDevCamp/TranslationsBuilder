@@ -18,31 +18,18 @@ namespace TranslationsBuilder {
       lblObjectName.Text = ObjectName;
       lblOriginalText.Text = OriginalText;
       lblTranslatedText.Text = TranslatedText;
-      this.Refresh();
+      RedrawUI();
     }
 
     public FormLoadingStatus() {
       InitializeComponent();
+      RedrawUI();
     }
 
-    private void frmLoadingStatus_Load(object sender, EventArgs e) {
-
+    private void RedrawUI() {
+      foreach (Control control in this.Controls) {
+        control.Refresh();
+      }
     }
-
-    private void lblTranslationTypeLabel_Click(object sender, EventArgs e) {
-
-    }
-
-    private void label1_Click(object sender, EventArgs e) {
-
-    }
-
-    private void groupBox1_Enter(object sender, EventArgs e) {
-
-    }
-
-        private void imageSpinner_Click(object sender, EventArgs e) {
-
-        }
-    }
+  }
 }
