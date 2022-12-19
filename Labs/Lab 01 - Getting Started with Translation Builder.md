@@ -20,8 +20,7 @@ be associated with a Premium capacity as indicated by the diamond image
 premium capacity is required because Power BI translations do not load
 properly for reports in the shared capacity.
 
-<img src="./images/Lab01/media/image1.png"
-style="width:3.30818in;height:1.10708in" />
+... <img src="./images/Lab01/media/image1.png" style="width:3.30818in;height:1.10708in" />
 
 **Prerequisite 2**: This lab assumes you’ve already installed
 Translations Builder. If you haven’t installed Translations Builder yet,
@@ -38,8 +37,7 @@ translations appear to report consumers. At the end of this exercise,
 you will use Translations Builder to add metadata translations for the
 column names and measure names in the dataset.
 
-1.  Download the PBIX starter file named **TB-Lab01.pbix** from the
-    following link
+1.  Download the PBIX starter file named **TB-Lab01.pbix** from the following link
 
 <https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/StarterFiles/TB-Lab01.pbix>
 
