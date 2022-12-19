@@ -72,8 +72,7 @@ style="width:3.65079in;height:2.39214in" />
 <img src="./images/Lab01/media/image6.png"
 style="width:3.98413in;height:2.40207in" />
 
-Now you are going to publish the **TB-Lab01.pbix** project to a
-workspace in the Power BI Service.
+> Now you are going to publish the **TB-Lab01.pbix** project to a workspace in the Power BI Service.
 
 7.  Navigate to the **Home** tab and then click the **Publish** button.
 
