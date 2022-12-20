@@ -108,7 +108,7 @@ happy
 13. The **Dataset properties** section provides details about the
     dataset connection and the PBIX project file.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image13.png" style="width:40%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image13.png" style="width:35%" />
 
 14. The translation grid at the bottom of the page displays one row for
     each non-hidden dataset object in the data model.
