@@ -189,12 +189,12 @@ project file until you save in Power BI Desktop.
 26. Publish the **TB-Lab01.pbix** project to push the changes to the
     project’s translations to the Power BI Service.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image25.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image25.png" style="width:80%" />
 
 27. When prompted by the **Replace this dataset?** Dialog, click the
     **Replace** button to continue.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image26.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image26.png" style="width:40%" />
 
 28. Once you see **Success!**, click **Open ‘TB-Lab01.pbx’ in Power BI**
     to view the report in the Power BI Service.
