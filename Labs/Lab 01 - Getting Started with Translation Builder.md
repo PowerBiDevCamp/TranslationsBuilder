@@ -37,10 +37,10 @@ translations appear to report consumers. At the end of this exercise,
 you will use Translations Builder to add metadata translations for the
 column names and measure names in the dataset.
 
-1.  Download the PBIX starter file named **TB-Lab01.pbix** from the following link
+1. Download the PBIX starter file named **TB-Lab01.pbix** from the following link
 
 ```
-   <https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/StarterFiles/TB-Lab01.pbix>
+    <https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/StarterFiles/TB-Lab01.pbix>
 ```
 
 2.  Create a new folder on your local hard drive for these lab exercises
