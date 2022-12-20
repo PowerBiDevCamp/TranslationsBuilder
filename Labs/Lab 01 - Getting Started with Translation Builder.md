@@ -361,7 +361,7 @@ save in Power BI Desktop and to lose your work.
 20.  The report should load as normal showing all text in English at
     first.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image28.png" style="width:80%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image28.png" style="width:60%" />
 
 > Now, it’s time to test your French, German & Italian translations using
 the **language** query string parameter to load the report.
