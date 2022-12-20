@@ -489,7 +489,7 @@ Table** command using the shortcut key of **Ctrl+A**.
 10. Once the dialog is in **Advanced Mode**, click the **Delete All
     Labels** button to remove the sample report labels.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image59.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image59.png" style="width:40%" />
 
 11. In the **Labels** textbox, type the report label **Product Sales
     Report**.
@@ -500,12 +500,12 @@ Table** command using the shortcut key of **Ctrl+A**.
 13. Click the **Add Labels** button to add the two new labels to your
     project.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image60.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image60.png" style="width:40%" />
 
 14. You should now see two new rows have been added to the translations
     gird with the two new report labels.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image61.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image61.png" style="width:80%" />
 
 15. Click the **Fill All Empty Translations** button to create all the
     translations for both report labels.
