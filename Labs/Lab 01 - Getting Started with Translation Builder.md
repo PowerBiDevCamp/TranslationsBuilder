@@ -292,7 +292,7 @@ selecting languages to enable multiple selection
 7. Hold down the **CTRL**, and select **French**, **German** and
     **Italian**. And then click **Add Language**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image38.png" style="width:35%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image38.png" style="width:30%" />
 
 8. You should now see the three new languages appear in the **Secondary
     Languages** list.
