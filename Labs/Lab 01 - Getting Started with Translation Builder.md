@@ -40,13 +40,13 @@ column names and measure names in the dataset.
 1. Download the PBIX starter file named **TB-Lab01.pbix** from the following link
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/StarterFiles/TB-Lab01.pbix](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/StarterFiles/TB-Lab01.pbix)
+&nbsp;&nbsp;&nbsp;&nbsp;[https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/StarterFiles/TB-Lab01.pbix](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/StarterFiles/TB-Lab01.pbix)
 
 
 1.  Create a new folder on your local hard drive for these lab exercises
     in a location such as **C:\DevCampLabs\\**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image2.png"  style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image2.png"  style="width:50%" />
 
 3.  Copy **TB-Lab01.pbix** into the lab folder and then open it in Power
     BI Desktop to examine the report inside.
