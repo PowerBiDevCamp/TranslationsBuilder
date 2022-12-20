@@ -50,12 +50,12 @@ column names and measure names in the dataset.
 3.  Copy **TB-Lab01.pbix** into the lab folder and then open it in Power
     BI Desktop to examine the report inside.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image3.png"  style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image3.png"  style="width:80%" />
 
 4.  While in **Report view**, examine the **Fields** list to see the
     non-hidtables, columns and measure that are not hidden.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image4.png"  style="width:30%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image4.png"  style="width:20%" />
 
 5.  Now, navigate to **Model view** so you can see the entire data model
     including the columns hidden from **Report view**.
