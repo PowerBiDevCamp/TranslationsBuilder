@@ -258,22 +258,22 @@ following Key and Location up through February 28, 2023.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image32.png" style="width:50%" />
 
-39. Select the **Configure Settings…** menu command to display the
-    **Configuration Options** dialog.
+2. Select the **Configure Settings…** menu command to display the
+    **Configuration Options** dialog.    
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image33.png" style="width:50%" />
 
-40. In the **Configuration Options** dialog, enter the **Key** and
+3. In the **Configuration Options** dialog, enter the **Key** and
     **Location** for the Azure Translator Service.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image34.png" style="width:50%" />
 
-41. Once you have added the **Key** and **Location**, click **Save
+4. Once you have added the **Key** and **Location**, click **Save
     Changes**.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image35.png" style="width:50%" />
 
-42. After you have configured the **Key** and **Location** for the Azure
+5. After you have configured the **Key** and **Location** for the Azure
     Translator Service, new controls will appear on the main page.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image36.png" style="width:50%" />
@@ -281,7 +281,7 @@ following Key and Location up through February 28, 2023.
 Now that you have added support for generating machine translations,
 it’s time to put that automatic translation support to work!
 
-43. Click the **Add Language** button to add your second secondary
+6. Click the **Add Language** button to add your second secondary
     language.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image37.png" style="width:50%" />
