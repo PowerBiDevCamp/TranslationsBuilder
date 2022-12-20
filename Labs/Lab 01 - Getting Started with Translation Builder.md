@@ -678,7 +678,7 @@ machine-generated translations alone will not be adequate for many
 production scenarios. You will need a way to integrate other people
 acting as translators into a human workflow process.
 
-In this lab exercise, you will with the Translations Builder features to
+> In this lab exercise, you will with the Translations Builder features to
 export and import translations using a CSV file format. This will
 provide a quick way to generate translations sheets that can be sent to
 human translators. As you will see, translators can make their edits to
@@ -687,7 +687,7 @@ updated translation sheet back from a translator, Translation Builder
 provides an import operation to integrate those updated translations
 back into the dataset for the current project.
 
-**Prerequisite**: To complete this exercise, you will need Microsoft
+> **Prerequisite**: To complete this exercise, you will need Microsoft
 Excel installed on the same PC running Translations Builder.
 
 1.  Launch Windows Explorer and navigate to the folder where you copied
