@@ -766,21 +766,21 @@ it’s time to begin exporting translation sheets.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image91.png" style="width:50%" />
 
 > Over the next two steps you will use a trick in Excel to widen the
-columns so ou can see all their contents.
+columns so you can see all their contents.
 
 14. Click on the top left corner where the row headers and the column
      headers meet. This should select all columns and rows.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image92.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image92.png" style="width:40%" />
 
 15. Double-click on the column heading divider between the column
      headers showing **A** and **B**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image93.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image93.png" style="width:40%" />
 
 16. You should now be able to see all the text from each column.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image94.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image94.png" style="width:80%" />
 
 > This translation sheet is what you will send to translators. They can
 then use Excel to review the machine translations and make changes
