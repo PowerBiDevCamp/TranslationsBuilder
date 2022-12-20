@@ -30,7 +30,7 @@ before continuing with these lab exercises.
 
 ### Exercise 1: Creating and Testing Metadata Translations
 
-In this exercise, you will begin by downloading a PBIX file with a
+> In this exercise, you will begin by downloading a PBIX file with a
 simple data model and a single page report. You will publish the project
 to the Power BI Service to set up a workflow process to test how
 translations appear to report consumers. At the end of this exercise,
