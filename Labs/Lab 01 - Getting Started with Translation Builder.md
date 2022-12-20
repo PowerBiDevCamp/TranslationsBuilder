@@ -440,231 +440,229 @@ Builder uses to quickly and easily implement report label translations.
 1.  Return to the **TB-Lab01.pbix** project in Power BI Desktop and move
     to **Report view**.
 
-<!-- -->
-
-68. The text **Product Sales Report** is displayed with a rectangle
+2.  The text **Product Sales Report** is displayed with a rectangle
     shape object.
 
-69. The text **Product Sales List by Sales Revenue** is displayed using
+3.  The text **Product Sales List by Sales Revenue** is displayed using
     the **Title** property of the table visual.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image53.png" style="width:50%" />
 
-70. Now, move back to Translations Builder and drop down the **Generate
+4. Now, move back to Translations Builder and drop down the **Generate
     Translated Tables** menu.
 
-71. Select the **Create Localized Labels Table** to create the
+5. Select the **Create Localized Labels Table** to create the
     **Localized Labels Table**.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image54.png" style="width:50%" />
 
-72. When you create the **Localized Labels** table, you will be prompted
+6. When you create the **Localized Labels** table, you will be prompted
     with the following dialog. Click **<u>N</u>o** to continue.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image55.png" style="width:50%" />
 
-If you click **<u>Y</u>es**, Translations Builder will launch a browser
+> If you click **<u>Y</u>es**, Translations Builder will launch a browser
 and navigate to [this web
 page](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Building%20Multi-language%20Reports%20in%20Power%20BI.md#understanding-the-localized-labels-table)
 which explains the localized labels strategy.
 
-73. Once Translations Builder has created the **Localized Labels**
+7. Once Translations Builder has created the **Localized Labels**
     table, it will also add three sample report labels.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image56.png" style="width:50%" />
 
-Over the next few steps, you will delete these three sample report
+> Over the next few steps, you will delete these three sample report
 labels and replace them by adding two of your own.
 
-74. Drop down the **Generate Translated Tables** menu and select click
+8. Drop down the **Generate Translated Tables** menu and select click
     **Add Labels to the Localized Labels Table**.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image57.png" style="width:50%" />
 
-Note you can also execute the **Add Labels to the Localized Labels
+> Note you can also execute the **Add Labels to the Localized Labels
 Table** command using the shortcut key of **Ctrl+A**.
 
-75. In the **Add Localized Labels** dialog, click the **Advanced Mode**
+9. In the **Add Localized Labels** dialog, click the **Advanced Mode**
     checkbox.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image58.png" style="width:50%" />
 
-76. Once the dialog is in **Advanced Mode**, click the **Delete All
+10. Once the dialog is in **Advanced Mode**, click the **Delete All
     Labels** button to remove the sample report labels.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image59.png" style="width:50%" />
 
-77. In the **Labels** textbox, type the report label **Product Sales
+11. In the **Labels** textbox, type the report label **Product Sales
     Report**.
 
-78. Enter a line break and then type in the second label **Product List
+12. Enter a line break and then type in the second label **Product List
     by Sales Revenue**.
 
-79. Click the **Add Labels** button to add the two new labels to your
+13. Click the **Add Labels** button to add the two new labels to your
     project.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image60.png" style="width:50%" />
 
-80. You should now see two new rows have been added to the translations
+14. You should now see two new rows have been added to the translations
     gird with the two new report labels.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image61.png" style="width:50%" />
 
-81. Click the **Fill All Empty Translations** button to create all the
+15. Click the **Fill All Empty Translations** button to create all the
     translations for both report labels.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image62.png" style="width:50%" />
 
-82. At this point, the translations grid should be completely filled
+16. At this point, the translations grid should be completely filled
     with machine-generated translations.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image63.png" style="width:50%" />
 
-There is one critical step you must complete after modifying report
+> There is one critical step you must complete after modifying report
 labels in the **Localized Labels** table. More specifically, you must
 execute **Generate Translated Localized Labels Table** to create the
 measures that will be used to surface report labels on a report.
 
-83. Drop down the **Generate Translated Tables** menu and select click
+17. Drop down the **Generate Translated Tables** menu and select click
     **Generate Translated Localized Labels Table**.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image64.png" style="width:50%" />
 
-Note you can also execute the **Generate Translated Localized Labels
+> Note you can also execute the **Generate Translated Localized Labels
 Table** command using the shortcut key of **Ctrl+L**.
 
-84. Return to Power BI Desktop and navigate to **Report view**.
+18. Return to Power BI Desktop and navigate to **Report view**.
 
-85. Locate the **Translated Localized Labels** table in the **Fields**
+19. Locate the **Translated Localized Labels** table in the **Fields**
     list.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image65.png" style="width:50%" />
 
-86. Select the measure named **Product Sales Report Label** and examine
+20. Select the measure named **Product Sales Report Label** and examine
     the DAX expression behind this measure.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image66.png" style="width:50%" />
 
-The measures in the **Translated Localized Labels** table are what you
+> The measures in the **Translated Localized Labels** table are what you
 use to display report labels on a Power BI report.
 
-87. Select the measure named **Product List by Sales Revenue Label** and
+21. Select the measure named **Product List by Sales Revenue Label** and
     examine its DAX expression.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image67.png" style="width:50%" />
 
-Now that you have created the measures for translation in the
+> Now that you have created the measures for translation in the
 **Translated Localized Labels** table, it’s time to use them in the
 report.
 
-88. In the report layout, select the large yellow rectangle shape that
+22. In the report layout, select the large yellow rectangle shape that
     displays the report title **Product Sales Report**.
 
-89. With the rectangle shaped selected, move to the **Format** pane and
+23. With the rectangle shaped selected, move to the **Format** pane and
     locate the **Text** section inside the **Style** selection.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image68.png" style="width:50%" />
 
-90. Expand the **Text** section to see the **Text** property is
+24. Expand the **Text** section to see the **Text** property is
     configured with the literal string value of **Product Sales
     Report**.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image69.png" style="width:50%" />
 
-Literal string values in a report layout cannot be localized. Therefore,
+> Literal string values in a report layout cannot be localized. Therefore,
 you will replace this literal string with a measure with translations.
 
-91. Click on the ***fx*** button to the right of the textbox to replace
+25. Click on the ***fx*** button to the right of the textbox to replace
     the literal string value.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image70.png" style="width:50%" />
 
-92. In the **Text – Style** dialog, select **Field value** as the
+26. In the **Text – Style** dialog, select **Field value** as the
     **Format style**.
 
-93. Drop down the select control with the caption of **What field should
+27. Drop down the select control with the caption of **What field should
     we base this on?**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image71.png" style="width:50%" />
 
-94. Select the **Product Sales Report Label** measure from the
+28. Select the **Product Sales Report Label** measure from the
     **Translated Localized Labels** table.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image72.png" style="width:50%" />
 
-Now that you have configured the report title to support translations,
+> Now that you have configured the report title to support translations,
 you will do the same for the title of the table visual.
 
-95. Select the table visual that display the product list.
+29. Select the table visual that display the product list.
 
-96. With the table visual selected, move to the **Format** pane and
+30. With the table visual selected, move to the **Format** pane and
     click the **General** tab.
 
-97. Locate the **Title** section and the **Text** property inside with
+31. Locate the **Title** section and the **Text** property inside with
     the literal text value of **Product List by Sales Revenue**.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image73.png" style="width:50%" />
 
-98. Click on the ***fx*** button to the right of the textbox to replace
+32. Click on the ***fx*** button to the right of the textbox to replace
     the literal string value.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image74.png" style="width:50%" />
 
-99. In the **Text – Style** dialog, select **Field value** as the
+33. In the **Text – Style** dialog, select **Field value** as the
     **Format style**.
 
-100. Drop down the select menu with the caption of **What field should
+34. Drop down the select menu with the caption of **What field should
      we base this on?**
 
-101. Select the **Product List by Sales Revenue Label** measure from the
+35. Select the **Product List by Sales Revenue Label** measure from the
      **Translated Localized Labels** table.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image75.png" style="width:50%" />
 
 Now, it’s time once again to test your work in the Power BI Service,
 
-102. Save your work by clicking the **Save** button.
+36. Save your work by clicking the **Save** button.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image24.png" style="width:50%" />
 
 > Don’t forget to save your work! Did we mention it’s easy to forget and
 to lose your work.
 
-103. Publish the **TB-Lab01.pbix** project to push your changes to the
+37. Publish the **TB-Lab01.pbix** project to push your changes to the
      project’s translations to the Power BI Service.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image25.png"  style="width:50%" />
 
-104. When prompted by the **Replace this dataset?** Dialog, click the
+38. When prompted by the **Replace this dataset?** Dialog, click the
      **Replace** button to continue.
 
-105. Once you see **Success!**, click **Open ‘TB-Lab01.pbx’ in Power
+39. Once you see **Success!**, click **Open ‘TB-Lab01.pbx’ in Power
      BI** to view the report in the Power BI Service.
 
-106. The report should load as normal showing all text in English at
+40. The report should load as normal showing all text in English at
      first.
 
-107. Use the bookmark created earlier to load the report in Spanish.
+41. Use the bookmark created earlier to load the report in Spanish.
      Verify the report labels show Spanish translations.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image76.png" style="width:50%" />
 
-108. Use the bookmark created earlier to load the report in French.
+42. Use the bookmark created earlier to load the report in French.
      Verify the report labels show French translations.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image77.png" style="width:50%" />
 
-109. Use the bookmark created earlier to load the report in German.
+43. Use the bookmark created earlier to load the report in German.
      Verify the report labels show German translations.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image78.png" style="width:50%" />
 
-110. Use the bookmark created earlier to load the report in Italian.
+44. Use the bookmark created earlier to load the report in Italian.
      Verify the report labels show Italian Translations.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image79.png" style="width:50%" />
 
-You have now implemented report label translations using the
+> You have now implemented report label translations using the
 Translations Builder localized label strategy. You should be able to see
 that this will add a significant level of productivity to your future
 efforts to build Power BI reports that support multiple languages.
