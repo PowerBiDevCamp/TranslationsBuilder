@@ -41,7 +41,7 @@ alt="A picture containing chart Description automatically generated" />
 You can test out the live demo and the experience of a multi-language
 report by navigating the following URL.
 
-<https://multilanguagereportdemo.azurewebsites.net>
+- [**https://multilanguagereportdemo.azurewebsites.net**](https://multilanguagereportdemo.azurewebsites.net)
 
 When you test out the live demo, experiment by clicking links in the
 left navigation to reload the report using different langauges. For
@@ -51,7 +51,7 @@ language of German intead of English. You can see that all the
 text-based values in the entire report now display their German
 translations instead of English.
 
-### Power BI Support for Localization and Translations
+### Power BI Support for Translations and Localization
 
 The primary localization feature in Power BI used to build
 multi-language reports is known as **metadata translations**. Power BI
@@ -106,19 +106,27 @@ displayed to the user.
 
 When it comes to localizing Power BI artifacts such as datasets and
 reports, there are three different types of translations and you must be
-able distinguish between them. The three types of translations are
-metadata translations, report label translations and data translations.
-Let’s examine all three types in a little more depth.
+able distinguish between them. These are the three types of translations
+you should understand.
+
+- Metadata Translations
+
+- Report Label Translations
+
+- Data Translations
+
+Now, let’s examine all three types in a little more depth.
 
 **Metadata translations** provides localized values for dataset object
 properties. The object types which support metadata translation include
-tables, columns, measures, hierarchies and hierarchy levels. Metadata
-translations are the easiest to create, managed and integrate into a
-Power BI report. By leveraging the machine translation features of
-Translations Builder, you can add all the metadata translations you need
-to builder and test a Power BI report in a matter of seconds. As you
-will discover, adding metadata translations to your dataset is fairly
-straight-ahead and an essential first step. However, metadata
+tables, columns, measures, hierarchies and hierarchy levels.
+
+Metadata translations are the easiest to create, managed and integrate
+into a Power BI report. By leveraging the machine translation features
+of Translations Builder, you can add all the metadata translations you
+need to builder and test a Power BI report in a matter of seconds. As
+you will discover, adding metadata translations to your dataset is
+fairly straight-ahead and an essential first step. However, metadata
 translations rarely provide a complete solution by themselves. A
 complete solution will typically require going further to localize
 report labels.
