@@ -34,7 +34,7 @@ before continuing with these lab exercises.
 - [Exercise 3: Creating and Testing Report Label Translations](#exercise-3-creating-and-testing-report-label-translations)
 - [Exercise 4: Creating a Workflow Process To Gather \& Integrate Human Translations](#exercise-4-creating-a-workflow-process-to-gather--integrate-human-translations)
 
-> This document is also available for download in [DOCX format](Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.docx) and [PDF format](Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.pdf).
+> This document is also available for download in [DOCX format](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.docx) and [PDF format](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.pdf).
 
 ---
 
