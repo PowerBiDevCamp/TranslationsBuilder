@@ -462,14 +462,13 @@ Builder uses to quickly and easily implement report label translations.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image55.png" style="width:35%" />
 
 > If you click **<u>Y</u>es**, Translations Builder will launch a browser
-and navigate to [this web
-page](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Building%20Multi-language%20Reports%20in%20Power%20BI.md#understanding-the-localized-labels-table)
+and navigate to [this article](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Building%20Multi-language%20Reports%20in%20Power%20BI.md#understanding-the-localized-labels-table)
 which explains the localized labels strategy.
 
 7. Once Translations Builder has created the **Localized Labels**
     table, it will also add three sample report labels.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image56.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image56.png" style="width:90%" />
 
 > Over the next few steps, you will delete these three sample report
 labels and replace them by adding two of your own.
