@@ -829,7 +829,7 @@ like the one ahead, it’s unnecessary and distracting.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image100.png" style="width:35%" />
 
-The **Export All Translation Sheets** command generates the complete set
+> The **Export All Translation Sheets** command generates the complete set
 of translation sheets to be sent to translators.
 
 24. Return to the **Outbox** folder in Windows Explorer.
