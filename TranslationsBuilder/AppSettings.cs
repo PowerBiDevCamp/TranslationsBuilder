@@ -30,7 +30,14 @@ namespace TranslationsBuilder {
     }
 
     public static string TranslationsOutboxFolderPath {
-      get { return settings.TranslationsOutboxFolderPath; }
+      get {
+        if (string.IsNullOrEmpty(settings.TranslationsOutboxFolderPath)) {
+          return Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+        }
+        else {
+          return settings.TranslationsOutboxFolderPath;
+        }
+      }
       set {
         settings.TranslationsOutboxFolderPath = value;
         settings.Save();
@@ -38,7 +45,15 @@ namespace TranslationsBuilder {
     }
 
     public static string TranslationsInboxFolderPath {
-      get { return settings.TranslationsInboxFolderPath; }
+      get {
+
+        if (string.IsNullOrEmpty(settings.TranslationsInboxFolderPath)) {
+          return Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+        }
+        else {
+          return settings.TranslationsInboxFolderPath;
+        }
+      }
       set {
         settings.TranslationsInboxFolderPath = value;
         settings.Save();

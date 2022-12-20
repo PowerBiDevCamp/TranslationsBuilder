@@ -127,7 +127,7 @@
       // 
       // dialogOpenFile
       // 
-      this.dialogOpenFile.FileName = "openFileDialog1";
+      this.dialogOpenFile.FileName = "";
       // 
       // FormAddLocalizedLabels
       // 

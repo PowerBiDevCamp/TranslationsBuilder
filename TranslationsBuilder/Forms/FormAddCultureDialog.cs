@@ -17,8 +17,12 @@ namespace TranslationsBuilder {
       InitializeComponent();
     }
 
-    public string getLanguage() {
-      return ((Language)listCultures.SelectedItem).LanguageTag;
+    public string[] getLanguages() {
+      List<string> Languages = new List<string>();
+      foreach(object item in listCultures.SelectedItems) {
+        Languages.Add(((Language)item).LanguageTag);
+      }
+      return Languages.ToArray();
     }
 
     private void PopulateListBox() {

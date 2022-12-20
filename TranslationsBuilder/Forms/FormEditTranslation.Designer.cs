@@ -177,7 +177,7 @@
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-      this.ClientSize = new System.Drawing.Size(643, 253);
+      this.ClientSize = new System.Drawing.Size(576, 166);
       this.Controls.Add(this.lblDefaultTranslation);
       this.Controls.Add(this.lblDefaultTranslationLabel);
       this.Controls.Add(this.lblPropertyName);

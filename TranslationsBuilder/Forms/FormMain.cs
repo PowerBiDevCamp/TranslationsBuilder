@@ -12,6 +12,8 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Drawing;
 using static System.Windows.Forms.DataGridView;
 using System.Configuration;
+using System.Diagnostics;
+using System.Security.Policy;
 
 namespace TranslationsBuilder {
 
@@ -177,31 +179,49 @@ namespace TranslationsBuilder {
         dialog.ShowDialog(this);
 
         if (dialog.DialogResult == DialogResult.OK) {
-          string cultureName = dialog.getLanguage();
-          TranslationsManager.model.Cultures.Add(new Culture { Name = dialog.getLanguage() });
+
+          string[] languages = dialog.getLanguages();
+          string lastLanguage = "";
+          foreach (string language in languages) {
+            TranslationsManager.model.Cultures.Add(new Culture { Name = language });
+            lastLanguage = language;
+          }
           TranslationsManager.model.SaveChanges();
           listSecondaryCultures.Items.Clear();
           listSecondaryCultures.Items.AddRange(TranslationsManager.GetSecondaryCultureFullNamesInDataModel().ToArray());
           PopulateGridWithTranslations();
 
-          string cultureFullNames = SupportedLanguages.AllLangauges[cultureName].FullName;
+          string lastLanguageFullName = SupportedLanguages.AllLangauges[lastLanguage].FullName;
 
           listCultureToPopulate.Items.Clear();
           listCultureToPopulate.Items.AddRange(TranslationsManager.GetSecondaryCultureFullNamesInDataModel().ToArray());
-          listCultureToPopulate.SelectedIndex = listCultureToPopulate.Items.IndexOf(cultureFullNames);
+          listCultureToPopulate.SelectedIndex = listCultureToPopulate.Items.IndexOf(lastLanguageFullName);
 
           listLanguageForTransation.Items.Clear();
           listLanguageForTransation.Items.AddRange(TranslationsManager.GetSecondaryCultureFullNamesInDataModel().ToArray());
-          listLanguageForTransation.SelectedIndex = listLanguageForTransation.Items.IndexOf(cultureFullNames);
-          labelStatusBar.Text = "New Culture[" + dialog.getLanguage() + "] successfully added";
+          listLanguageForTransation.SelectedIndex = listLanguageForTransation.Items.IndexOf(lastLanguageFullName);
+          labelStatusBar.Text = "New Culture[" + lastLanguageFullName + "] successfully added";
         }
       }
     }
 
-    private void ExportTranslations(object sender, EventArgs e) {
-      labelStatusBar.Text = "Hello";
-      TranslationsManager.ExportTranslations();
-      labelStatusBar.Text = "Good Bye";
+    private void ExportTranslationsSheet(object sender, EventArgs e) {
+      labelStatusBar.Text = "Exporting Translations";
+      Language targetLanguage = SupportedLanguages.GetLanguageFromFullName(listLanguageForTransation.SelectedItem.ToString());
+      TranslationsManager.ExportTranslations(targetLanguage.LanguageTag, chkOpenExportInExcel.Checked);
+      labelStatusBar.Text = "Translations export Complete";
+    }
+
+    private void ExportAllTranslations(object sender, EventArgs e) {
+      labelStatusBar.Text = "Exporting Translations";
+      TranslationsManager.ExportTranslations(null, chkOpenExportInExcel.Checked);
+      labelStatusBar.Text = "Translations export Complete";
+    }
+
+    private void ExportAllTranslationSheets(object sender, EventArgs e) {
+      labelStatusBar.Text = "Exporting Translations";
+      TranslationsManager.ExportAllTranslationSheets(chkOpenExportInExcel.Checked);
+      labelStatusBar.Text = "Translations export Complete";
     }
 
     private void ImportTranslations(object sender, EventArgs e) {
@@ -219,12 +239,6 @@ namespace TranslationsBuilder {
 
     }
 
-    private void ExportTranslationsSheet(object sender, EventArgs e) {
-
-      Language targetLanguage = SupportedLanguages.GetLanguageFromFullName(listLanguageForTransation.SelectedItem.ToString());
-      TranslationsManager.ExportTranslations(targetLanguage.LanguageTag);
-
-    }
 
     private void ConfigureSettings(object sender, EventArgs e) {
       using (FormConfig dialog = new FormConfig()) {
@@ -243,7 +257,7 @@ namespace TranslationsBuilder {
       }
       else {
         grpMachineTranslationsSingleLanguage.Visible = false;
-        grpMachineTranslationsAllLanguages.Visible= false;
+        grpMachineTranslationsAllLanguages.Visible = false;
       }
     }
 
@@ -353,6 +367,7 @@ namespace TranslationsBuilder {
       SetMenuCommands();
       PopulateGridWithTranslations();
       labelStatusBar.Text = "Localized Labels table generated at " + DateTime.Now.ToShortTimeString();
+      UserInteraction.PromptOnLocalizedLabelsTableCreate();
     }
 
     private void GenerateTranslatedLocalizedLabelsTable(object sender, EventArgs e) {
@@ -435,7 +450,7 @@ namespace TranslationsBuilder {
         }
       }
 
-      if (e.ColumnIndex == 3 && e.RowIndex > 0) {
+      if (e.ColumnIndex == 3 && e.RowIndex >= 0) {
         var cell = gridTranslations.Rows[e.RowIndex].Cells[e.ColumnIndex];
         string cellContents = (cell.Value != null) ? cell.Value.ToString() : "";
 
@@ -457,7 +472,7 @@ namespace TranslationsBuilder {
 
       }
 
-      if (e.ColumnIndex >= 4 && e.RowIndex > 0) {
+      if (e.ColumnIndex >= 4 && e.RowIndex >= 0) {
         var cell = gridTranslations.Rows[e.RowIndex].Cells[e.ColumnIndex];
         string cellContents = (cell.Value != null) ? cell.Value.ToString() : "";
 
@@ -491,11 +506,9 @@ namespace TranslationsBuilder {
       var PropertyName = gridTranslations.Rows[e.RowIndex].Cells[1].Value.ToString();
       var ObjectName = gridTranslations.Rows[e.RowIndex].Cells[2].Value.ToString();
       var Language = SupportedLanguages.GetLanguageFromFullName(gridTranslations.Columns[e.ColumnIndex].HeaderText).LanguageTag;
-      var Translation = cell.Value.ToString();
+      string Translation = (cell.Value != null) ? cell.Value.ToString() : "";
       TranslationsManager.SetDatasetObjectTranslation(ObjectType, PropertyName, ObjectName, Language, Translation);
-
       cell.Style.BackColor = System.Drawing.Color.White;
-
     }
 
     private void gridTranslations_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e) {
@@ -562,5 +575,6 @@ namespace TranslationsBuilder {
       TranslationsManager.ExportModelAsBim();
     }
 
+  
   }
 }

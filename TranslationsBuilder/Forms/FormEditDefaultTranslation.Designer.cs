@@ -175,7 +175,7 @@
       // labelWarning
       // 
       this.labelWarning.ForeColor = System.Drawing.Color.Firebrick;
-      this.labelWarning.Location = new System.Drawing.Point(12, 172);
+      this.labelWarning.Location = new System.Drawing.Point(12, 161);
       this.labelWarning.Name = "labelWarning";
       this.labelWarning.Size = new System.Drawing.Size(570, 52);
       this.labelWarning.TabIndex = 28;
@@ -188,7 +188,7 @@
       this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-      this.ClientSize = new System.Drawing.Size(608, 230);
+      this.ClientSize = new System.Drawing.Size(608, 216);
       this.Controls.Add(this.labelWarning);
       this.Controls.Add(this.lblDefaultTranslation);
       this.Controls.Add(this.lblDefaultTranslationLabel);

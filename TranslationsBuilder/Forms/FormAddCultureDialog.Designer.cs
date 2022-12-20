@@ -29,6 +29,7 @@ namespace TranslationsBuilder {
       this.btnCancel = new System.Windows.Forms.Button();
       this.listCultures = new System.Windows.Forms.ListBox();
       this.chkShowAllLanguages = new System.Windows.Forms.CheckBox();
+      this.lblMulitselectAdvice = new System.Windows.Forms.Label();
       this.SuspendLayout();
       // 
       // btnAddCulture
@@ -57,6 +58,7 @@ namespace TranslationsBuilder {
       this.listCultures.ItemHeight = 20;
       this.listCultures.Location = new System.Drawing.Point(12, 12);
       this.listCultures.Name = "listCultures";
+      this.listCultures.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
       this.listCultures.Size = new System.Drawing.Size(229, 384);
       this.listCultures.Sorted = true;
       this.listCultures.TabIndex = 2;
@@ -72,6 +74,15 @@ namespace TranslationsBuilder {
       this.chkShowAllLanguages.UseVisualStyleBackColor = true;
       this.chkShowAllLanguages.CheckedChanged += new System.EventHandler(this.chkShowAllLanguages_CheckedChanged);
       // 
+      // lblMulitselectAdvice
+      // 
+      this.lblMulitselectAdvice.AutoSize = true;
+      this.lblMulitselectAdvice.Location = new System.Drawing.Point(12, 400);
+      this.lblMulitselectAdvice.Name = "lblMulitselectAdvice";
+      this.lblMulitselectAdvice.Size = new System.Drawing.Size(363, 20);
+      this.lblMulitselectAdvice.TabIndex = 4;
+      this.lblMulitselectAdvice.Text = "Hold down the CTRL key to enable multiple selection.";
+      // 
       // FormAddCultureDialog
       // 
       this.AcceptButton = this.btnAddCulture;
@@ -79,7 +90,8 @@ namespace TranslationsBuilder {
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.SystemColors.ActiveCaption;
       this.CancelButton = this.btnCancel;
-      this.ClientSize = new System.Drawing.Size(446, 407);
+      this.ClientSize = new System.Drawing.Size(446, 431);
+      this.Controls.Add(this.lblMulitselectAdvice);
       this.Controls.Add(this.chkShowAllLanguages);
       this.Controls.Add(this.listCultures);
       this.Controls.Add(this.btnCancel);
@@ -99,5 +111,6 @@ namespace TranslationsBuilder {
     private System.Windows.Forms.Button btnCancel;
     private System.Windows.Forms.ListBox listCultures;
         private System.Windows.Forms.CheckBox chkShowAllLanguages;
+        private System.Windows.Forms.Label lblMulitselectAdvice;
     }
 }

@@ -151,7 +151,7 @@ namespace TranslationsBuilder {
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.SystemColors.ActiveCaption;
       this.CancelButton = this.btnCancel;
-      this.ClientSize = new System.Drawing.Size(738, 260);
+      this.ClientSize = new System.Drawing.Size(738, 251);
       this.Controls.Add(this.btnSetInboxPath);
       this.Controls.Add(this.btnSetOutboxPath);
       this.Controls.Add(this.btnCancel);

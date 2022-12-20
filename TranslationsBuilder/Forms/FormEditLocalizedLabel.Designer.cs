@@ -84,7 +84,7 @@
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.SystemColors.ActiveCaption;
       this.CancelButton = this.btnCancel;
-      this.ClientSize = new System.Drawing.Size(553, 153);
+      this.ClientSize = new System.Drawing.Size(553, 130);
       this.Controls.Add(this.lblLabelTextLabel);
       this.Controls.Add(this.txtLabelName);
       this.Controls.Add(this.btnCancel);
