@@ -297,10 +297,10 @@ selecting languages to enable multiple selection
 8. You should now see the three new languages appear in the **Secondary
     Languages** list.
 
-9.  You will notice that new columns have been added to the
+9.  You will also notice that new columns have been added to the
     translation grid for each new language.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image39.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image39.png" style="width:80%" />
 
 10. In the **Machine Translations – Single Language** section, select
     **French \[fr-FR\]** from the drop down menu.
