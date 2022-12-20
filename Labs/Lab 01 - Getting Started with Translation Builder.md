@@ -602,12 +602,12 @@ you will do the same for the title of the table visual.
 31. Locate the **Title** section and the **Text** property inside with
     the literal text value of **Product List by Sales Revenue**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image73.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image73.png" style="width:70%" />
 
 32. Click on the ***fx*** button to the right of the textbox to replace
     the literal string value.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image74.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image74.png" style="width:30%" />
 
 33. In the **Text – Style** dialog, select **Field value** as the
     **Format style**.
