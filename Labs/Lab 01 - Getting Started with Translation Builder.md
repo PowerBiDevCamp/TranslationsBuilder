@@ -515,7 +515,7 @@ Table** command using the shortcut key of **Ctrl+A**.
 16. At this point, the translations grid should be completely filled
     with machine-generated translations.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image63.png" style="width:98%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image63.png" style="width:90%" />
 
 > There is one critical step you must complete after modifying report
 labels in the **Localized Labels** table. More specifically, you must
@@ -535,12 +535,12 @@ Table** command using the shortcut key of **Ctrl+L**.
 19. Locate the **Translated Localized Labels** table in the **Fields**
     list.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image65.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image65.png" style="width:80%" />
 
 20. Select the measure named **Product Sales Report Label** and examine
     the DAX expression behind this measure.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image66.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image66.png" style="width:80%" />
 
 > The measures in the **Translated Localized Labels** table are what you
 use to display report labels on a Power BI report.
@@ -548,7 +548,7 @@ use to display report labels on a Power BI report.
 21. Select the measure named **Product List by Sales Revenue Label** and
     examine its DAX expression.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image67.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image67.png" style="width:80%" />
 
 > Now that you have created the measures for translation in the
 **Translated Localized Labels** table, it’s time to use them in the
@@ -560,7 +560,7 @@ report.
 23. With the rectangle shaped selected, move to the **Format** pane and
     locate the **Text** section inside the **Style** selection.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image68.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image68.png" style="width:80%" />
 
 24. Expand the **Text** section to see the **Text** property is
     configured with the literal string value of **Product Sales
