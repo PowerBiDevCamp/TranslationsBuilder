@@ -227,12 +227,12 @@ parameter to the end of the report URL.
 When the report reloads, you should see the UI experience for the Power
 BI Service UI switch from English to Spanish.
 
-38. Verify the column and measure names in columns headings are
+33. Verify the column and measure names in columns headings are
     displayed with the Spanish translations you added.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image31.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image31.png" style="width:80%" />
 
-You have now successfully added the metadata translations to display
+> You have now successfully added the metadata translations to display
 this report in both English and Spanish. Leave Power BI Desktop and
 Translations Builder open as you will continue using them in your next
 exercise.
