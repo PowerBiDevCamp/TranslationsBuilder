@@ -194,17 +194,17 @@ project file until you save in Power BI Desktop.
 27. When prompted by the **Replace this dataset?** Dialog, click the
     **Replace** button to continue.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image26.png" style="width:40%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image26.png" style="width:30%" />
 
 28. Once you see **Success!**, click **Open ‘TB-Lab01.pbx’ in Power BI**
     to view the report in the Power BI Service.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image27.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image27.png" style="width:35%" />
 
 29.  The report should load with its default behavior showing all text in
     English at first.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image28.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image28.png" style="width:70%" />
 
 30. Inspect the table visual column headers which displays the names of
     columns and measures in English.
@@ -222,7 +222,7 @@ parameter to the end of the report URL.
 32. Press **ENTER.** You should see the **language** query string
     parameter accepted by the browser as it reloads the report.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image30.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image30.png" style="width:90%" />
 
 When the report reloads, you should see the UI experience for the Power
 BI Service UI switch from English to Spanish.
