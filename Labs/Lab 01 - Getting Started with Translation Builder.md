@@ -620,7 +620,7 @@ you will do the same for the title of the table visual.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image75.png" style="width:50%" />
 
-Now, it’s time once again to test your work in the Power BI Service,
+> Now, it’s time once again to test your work in the Power BI Service,
 
 36. Save your work by clicking the **Save** button.
 
