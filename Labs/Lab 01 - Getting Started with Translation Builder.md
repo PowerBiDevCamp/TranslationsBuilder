@@ -813,12 +813,12 @@ examine how to manage translation sheet files.
 21. In Windows Explorer, navigate to the **Outbox** folder. You should
      see the two files you generated using export operations.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image98.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image98.png" style="width:65%" />
 
 22. Return to Translations Builder and uncheck the checkbox with the
      caption **Open Export in Excel**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image99.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image99.png" style="width:35%" />
 
 > All three export commands use this checkbox to decide whether to open a
 translation sheet in Excel after it’s generated. In some cases, it’s
@@ -827,7 +827,7 @@ like the one ahead, it’s unnecessary and distracting.
 
 23. Click the **Export All Translation Sheets** button.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image100.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image100.png" style="width:35%" />
 
 The **Export All Translation Sheets** command generates the complete set
 of translation sheets to be sent to translators.
