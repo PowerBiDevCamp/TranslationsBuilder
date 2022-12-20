@@ -30,7 +30,7 @@ before continuing with these lab exercises.
 
 This document is also available for download in [DOCX format](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.docx) and [PDF format](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.pdf).
 
-####Table of Contents
+#### Table of Contents
 - [Exercise 1: Creating and Testing Metadata Translations](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Labs/Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.md#exercise-1-creating-and-testing-metadata-translations)
 - [Exercise 2: Generating Machine Translations](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Labs/Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.md#exercise-2-generating-machine-translations)
 - [Exercise 3: Creating and Testing Report Label Translations](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Labs/Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.md#exercise-3-creating-and-testing-report-label-translations)
