@@ -71,7 +71,7 @@ column names and measure names in the dataset.
 
 7.  Navigate to the **Home** tab and then click the **Publish** button.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image7.png" style="width:90%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image7.png" style="width:80%" />
 
 8.  When prompted by the **Publish to Power BI** dialog, choose your
     test workspace and then click **Select**.
@@ -81,7 +81,7 @@ column names and measure names in the dataset.
 9.  Once you see **Success!**, click **Open ‘TB-Lab01.pbx’ in Power BI**
     to view the report in the Power BI Service.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image9.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image9.png" style="width:40%" />
 
 10. The report named **TB-Lab01** should appear like the report shown in
     the screenshot below.
