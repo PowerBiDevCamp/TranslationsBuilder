@@ -813,7 +813,7 @@ examine how to manage translation sheet files.
 21. In Windows Explorer, navigate to the **Outbox** folder. You should
      see the two files you generated using export operations.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image98.png" style="width:65%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image98.png" style="width:70%" />
 
 22. Return to Translations Builder and uncheck the checkbox with the
      caption **Open Export in Excel**.
@@ -837,7 +837,7 @@ of translation sheets to be sent to translators.
 25. You should see that a sperate translation sheet has been generated
      for each secondary language.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image101.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image101.png" style="width:70%" />
 
 > Now that you have experienced how to export translation sheets, you will
 now learn how to import translation sheets.
@@ -846,7 +846,7 @@ now learn how to import translation sheets.
      **TB-Lab01-Translations-Master.csv** and
      **TB-Lab01-Translations-Spanish.csv**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image102.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image102.png" style="width:70%" />
 
 27. Copy the two selected translation sheet files to the Windows
      clipboard.
@@ -856,12 +856,12 @@ now learn how to import translation sheets.
 29. Paste the two translation sheet files from the Windows clipboard
      into the **Inbox** folder.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image103.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image103.png" style="width:70%" />
 
 30. Open the translation sheet named
      **Inbox\TB-Lab01-Translations-Spanish.csv** in Microsoft Excel.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image104.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image104.png" style="width:70%" />
 
 > The job of the translator is to review all translations in the fifth
 column and to make updates where appropriate. From the perspective of
