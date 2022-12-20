@@ -744,7 +744,7 @@ it’s time to begin exporting translation sheets.
 
 10. Examine what’s inside the Export/Import Translations section.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image88.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image88.png" style="width:80%" />
 
 > Let’s start by creating a translation sheet for a single language.
 
