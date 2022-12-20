@@ -108,7 +108,7 @@ happy
 13. The **Dataset properties** section provides details about the
     dataset connection and the PBIX project file.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image13.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image13.png" style="width:40%" />
 
 14. The translation grid at the bottom of the page displays one row for
     each non-hidden dataset object in the data model.
@@ -121,11 +121,11 @@ data model are not displayed. You don’t need to translate them.
 15. Click the **Add Language** button to add your first secondary
     language.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image15.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image15.png" style="width:70%" />
 
 16. Select **Spanish \[es-ES\]** and click **Add Language**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image16.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image16.png" style="width:30%" />
 
 17. You should now see that **Spanish \[es-ES\]** appears as the first
     language in the **Secondary Languages** list.
