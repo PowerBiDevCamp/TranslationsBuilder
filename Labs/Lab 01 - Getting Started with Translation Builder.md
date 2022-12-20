@@ -28,13 +28,17 @@ you must follow steps in the [Translations Builder Installation
 Guide](Docs/Installation%20Guide.md)
 before continuing with these lab exercises.
 
+---
+
+This document is also available for download in [DOCX format](Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.docx) and [PDF format](Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.pdf).
+
 #### Exercises in this lab...
 - [Exercise 1: Creating and Testing Metadata Translations](#exercise-1-creating-and-testing-metadata-translations)
 - [Exercise 2: Generating Machine Translations](#exercise-2-generating-machine-translations)
 - [Exercise 3: Creating and Testing Report Label Translations](#exercise-3-creating-and-testing-report-label-translations)
 - [Exercise 4: Creating a Workflow Process To Gather \& Integrate Human Translations](#exercise-4-creating-a-workflow-process-to-gather--integrate-human-translations)
 
-This document is also available for download in [DOCX format](Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.docx) and [PDF format](Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.pdf).
+---
 
 ### Exercise 1: Creating and Testing Metadata Translations
 > In this exercise, you will begin by downloading a PBIX file with a
