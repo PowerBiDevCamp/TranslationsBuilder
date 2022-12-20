@@ -547,7 +547,7 @@ use to display report labels on a Power BI report.
 
 > You should not edit the DAX expressions of measures in the the **Translated Localized Labels** table. Any changes you make will be lost as all the measures in this table are deleted and recreated each time you execute the **Generate Translated Localized Labels Table** command.
 
-1.  Select the measure named **Product List by Sales Revenue Label** and
+21.  Select the measure named **Product List by Sales Revenue Label** and
     examine its DAX expression.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image67.png" style="width:80%" />
@@ -584,12 +584,12 @@ you will replace this literal string with a measure with translations.
 27. Drop down the select control with the caption of **What field should
     we base this on?**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image71.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image71.png" style="width:35%" />
 
 28. Select the **Product Sales Report Label** measure from the
     **Translated Localized Labels** table.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image72.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image72.png" style="width:55%" />
 
 > Now that you have configured the report title to support translations,
 you will do the same for the title of the table visual.
