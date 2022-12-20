@@ -289,53 +289,53 @@ it’s time to put that automatic translation support to work!
 > You can hold down the **CTRL** key in the **Add Language** dialog while
 selecting languages to enable multiple selection
 
-44. Hold down the **CTRL**, and select **French**, **German** and
+7. Hold down the **CTRL**, and select **French**, **German** and
     **Italian**. And then click **Add Language**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image38.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image38.png" style="width:35%" />
 
-45. You should now see the three new languages appear in the **Secondary
+8. You should now see the three new languages appear in the **Secondary
     Languages** list.
 
-46. You will also notice that new columns have been added to the
+9.  You will notice that new columns have been added to the
     translation grid for each new language.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image39.png" style="width:50%" />
 
-47. In the **Machine Translations – Single Language** section, select
+10. In the **Machine Translations – Single Language** section, select
     **French \[fr-FR\]** from the drop down menu.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image40.png" style="width:50%" />
 
-48. Once you have selected **French \[fr-FR\]**, click **Generate
+11. Once you have selected **French \[fr-FR\]**, click **Generate
     Translations** to create French translations for all rows in the
     grid.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image41.png" style="width:50%" />
 
-49. As the code runs to interact with the Azure Translator Service, the
+12. As the code runs to interact with the Azure Translator Service, the
     **Generating machine translation** dialog shows the progress.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image42.png" style="width:50%" />
 
-50. Once this dialog closes, you should see all cells the French column
+13. Once this dialog closes, you should see all cells the French column
     has been filled with machine-generated translations.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image43.png" style="width:50%" />
 
-51. Click the **Fill All Empty Translation** button in the **Machine
+14. Click the **Fill All Empty Translation** button in the **Machine
     Translations - All Languages** section.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image44.png" style="width:50%" />
 
-52. You should see that the empty cells for all languages have now been
+15. You should see that the empty cells for all languages have now been
     populated with machine-generated translations.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image45.png" style="width:50%" />
 
 Now, it’s time once again to test your work in the Power BI Service,
 
-53. Return to the **TB-Lab01.pbix** project in Power BI Desktop and save
+16. Return to the **TB-Lab01.pbix** project in Power BI Desktop and save
     your work by clicking the **Save** button.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image24.png" style="width:50%" />
@@ -343,40 +343,40 @@ Now, it’s time once again to test your work in the Power BI Service,
 Don’t forget to save your work! Did we mention it’s easy to forget to
 save in Power BI Desktop and to lose your work.
 
-54. Publish the **TB-Lab01.pbix** project to push your changes to the
+17. Publish the **TB-Lab01.pbix** project to push your changes to the
     project’s translations to the Power BI Service.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image25.png" style="width:50%" />
 
-55. When prompted by the **Replace this dataset?** Dialog, click the
+18. When prompted by the **Replace this dataset?** Dialog, click the
     **Replace** button to continue.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image26.png" style="width:50%" />
 
-1.  Once you see **Success!**, click **Open ‘TB-Lab01.pbx’ in Power BI**
+19.  Once you see **Success!**, click **Open ‘TB-Lab01.pbx’ in Power BI**
     to view the report in the Power BI Service.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image27.png" style="width:50%" />
 
-1.  The report should load as normal showing all text in English at
+20.  The report should load as normal showing all text in English at
     first.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image28.png" style="width:50%" />
 
-Now, it’s time to test your French, German & Italian translations using
+> Now, it’s time to test your French, German & Italian translations using
 the **language** query string parameter to load the report.
 
-58. Click the browser address bar and add the **language** parameter
+21. Click the browser address bar and add the **language** parameter
     value of **fr-FR** for French to the end of the report URL.
 
 /?language=fr-FR
 
-59. When the report reloads, you should see the UI experience for the
+22. When the report reloads, you should see the UI experience for the
     Power BI Service UI switch from English to French.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image46.png" style="width:50%" />
 
-60. Verify the column and measure names in columns headings of the table
+23. Verify the column and measure names in columns headings of the table
     visual are displayed with French translations.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image47.png" style="width:50%" />
@@ -384,47 +384,47 @@ the **language** query string parameter to load the report.
 Now that you have tested the French translations, it’s time to test the
 two other new languages.
 
-61. Click the browser address bar and add the **language** parameter
+24. Click the browser address bar and add the **language** parameter
     value of **de-DE** for German to the end of the report URL.
 
 /?language=de-DE
 
-62. When the report reloads, you should see the UI experience for the
+25. When the report reloads, you should see the UI experience for the
     Power BI Service UI switch to German.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image48.png" style="width:50%" />
 
-63. Verify the column and measure names in columns headings are
+26. Verify the column and measure names in columns headings are
     displayed with the German translations.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image49.png" style="width:50%" />
 
-64. Click the browser address bar and add the **language** parameter of
+27. Click the browser address bar and add the **language** parameter of
     **it-IT** for Italian to the end of the report URL.
 
 /?language=it-IT
 
-65. When the report reloads, you should see the UI experience for the
+28. When the report reloads, you should see the UI experience for the
     Power BI Service UI switch to Italian.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image50.png" style="width:50%" />
 
-66. Verify the column and measure names in columns headings are
+29. Verify the column and measure names in columns headings are
     displayed with the Italian translations.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image51.png" style="width:50%" />
 
-You have now successfully added the metadata translations to display
+> You have now successfully added the metadata translations to display
 this report in five different languages. Throughout these lab exercises,
 you will continue to test all five languages in the browser as you add
 additional translation support.
 
-67. As a final step in this exercise, add a browser bookmark for each
+30. As a final step in this exercise, add a browser bookmark for each
     language with a **language** parameter at the end.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image52.png" style="width:50%" />
 
-Creating a browser bookmark for each language might take a minute or two
+> Creating a browser bookmark for each language might take a minute or two
 to set up at first. However, it will save lots of time in the long run
 as you continue to test the translations for this report in the lab work
 that remains ahead.
