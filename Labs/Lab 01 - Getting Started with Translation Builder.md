@@ -422,7 +422,7 @@ additional translation support.
 30. As a final step in this exercise, add a browser bookmark for each
     language with a **language** parameter at the end.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image52.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image52.png" style="width:90%" />
 
 > Creating a browser bookmark for each language might take a minute or two
 to set up at first. However, it will save lots of time in the long run
