@@ -946,6 +946,6 @@ finds the column when importing a translation sheet.
 44. After the import operation competes, the **French \[fr-FR\]**
      column should reappear as the last column on the right.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image114.png" style="width:100%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image114.png" style="width:90%" />
 
 > Congratulations. You have now completed this lab.
