@@ -222,7 +222,7 @@ parameter to the end of the report URL.
 32. Press **ENTER.** You should see the **language** query string
     parameter accepted by the browser as it reloads the report.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image30.png" style="width:90%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image30.png" style="width:100%" />
 
 When the report reloads, you should see the UI experience for the Power
 BI Service UI switch from English to Spanish.
