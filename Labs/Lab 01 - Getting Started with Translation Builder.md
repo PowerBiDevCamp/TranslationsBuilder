@@ -1,6 +1,6 @@
 ## **Lab 01: Getting Started with Translation Builder**
 
-**Overview**: In this lab, you will learn how to work with Power BI
+> **Overview**: In this lab, you will learn how to work with Power BI
 Desktop and Translations Builder to build multi-language reports for
 Power BI. You will start by downloading a PBIX project file named
 **TB-Lab01.pbix** and opening it in Power BI Desktop. Once you have
