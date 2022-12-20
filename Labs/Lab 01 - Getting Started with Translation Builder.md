@@ -459,7 +459,7 @@ Builder uses to quickly and easily implement report label translations.
 6. When you create the **Localized Labels** table, you will be prompted
     with the following dialog. Click **<u>N</u>o** to continue.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image55.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image55.png" style="width:35%" />
 
 > If you click **<u>Y</u>es**, Translations Builder will launch a browser
 and navigate to [this web
