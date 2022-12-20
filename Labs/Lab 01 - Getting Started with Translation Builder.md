@@ -28,8 +28,6 @@ you must follow steps in the [Translations Builder Installation
 Guide](Docs/Installation%20Guide.md)
 before continuing with these lab exercises.
 
----
-
 This document is also available for download in [DOCX format](Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.docx) and [PDF format](Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.pdf).
 
 #### Exercises in this lab...
