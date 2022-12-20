@@ -98,7 +98,7 @@ happy
 11. Return to Power BI Desktop, navigate to the **External Tools** tab
     and launch **Translations Builder**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image11.png" style="width:80%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image11.png" style="width:65%" />
 
 12. Translations Builder should start and load the data model for
     **TB-Lab01.pbix** as shown in the following screenshot.
