@@ -25,17 +25,20 @@ properly for reports in the shared capacity.
 > **Prerequisite 2**: This lab assumes you’ve already installed
 Translations Builder. If you haven’t installed Translations Builder yet,
 you must follow steps in the [Translations Builder Installation
-Guide](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Installation%20Guide.md)
+Guide](Docs/Installation%20Guide.md)
 before continuing with these lab exercises.
 
-This document is also available for download in [DOCX format](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.docx) and [PDF format](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.pdf).
-
 #### Table of Contents
-- [Exercise 1: Creating and Testing Metadata Translations](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Labs/Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.md#exercise-1-creating-and-testing-metadata-translations)
-- [Exercise 2: Generating Machine Translations](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Labs/Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.md#exercise-2-generating-machine-translations)
-- [Exercise 3: Creating and Testing Report Label Translations](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Labs/Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.md#exercise-3-creating-and-testing-report-label-translations)
-- [Exercise 4: Creating a Workflow Process To Gather & Integrate Human Translations](#exercise-4-creating-a-workflow-process-to-gather--integrate-human-translations)
-  
+- [**Lab 01: Getting Started with Translations Builder**](#lab-01-getting-started-with-translations-builder)
+    - [Table of Contents](#table-of-contents)
+  - [Exercise 1: Creating and Testing Metadata Translations](#exercise-1-creating-and-testing-metadata-translations)
+  - [Exercise 2: Generating Machine Translations](#exercise-2-generating-machine-translations)
+  - [Exercise 3: Creating and Testing Report Label Translations](#exercise-3-creating-and-testing-report-label-translations)
+  - [Exercise 4: Creating a Workflow Process To Gather \& Integrate Human Translations](#exercise-4-creating-a-workflow-process-to-gather--integrate-human-translations)
+
+
+This document is also available for download in [DOCX format](Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.docx) and [PDF format](Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.pdf).
+
 ### Exercise 1: Creating and Testing Metadata Translations
 > In this exercise, you will begin by downloading a PBIX file with a
 simple data model and a single page report. You will publish the project
@@ -44,13 +47,12 @@ translations appear to report consumers. At the end of this exercise,
 you will use Translations Builder to add metadata translations for the
 column names and measure names in the dataset.
 
-1. Download the PBIX starter file named **TB-Lab01.pbix** from the following link
+1. Download the PBIX starter file named **TB-Lab01.pbix** from the following link.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/StarterFiles/TB-Lab01.pbix](StarterFiles/TB-Lab01.pbix)
 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/StarterFiles/TB-Lab01.pbix](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/StarterFiles/TB-Lab01.pbix)
-
-
-2.  Create a new folder on your local hard drive for these lab exercises
+1.  Create a new folder on your local hard drive for these lab exercises
     in a location such as **C:\DevCampLabs\\**.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image2.png"  style="width:50%" />
