@@ -46,14 +46,14 @@ column names and measure names in the dataset.
 2.  Create a new folder on your local hard drive for these lab exercises
     in a location such as **C:\DevCampLabs\\**.
 
-<img src="./images/Lab01/media/image2.png"  style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image2.png"  style="width:50%" />
 
 3.  Copy **TB-Lab01.pbix** into the lab folder and then open it in Power
     BI Desktop to examine the report inside.
 
-<img src="./images/Lab01/media/image3.png"  style="width:50%" />
+&nbsp;&nbsp;<img src="./images/Lab01/media/image3.png"  style="width:50%" />
 
-4.  While in **Report view**, examine the **Fields** list to see the
+1.  While in **Report view**, examine the **Fields** list to see the
     non-hidtables, columns and measure that are not hidden.
 
 <img src="./images/Lab01/media/image4.png"  style="width:50%" />
