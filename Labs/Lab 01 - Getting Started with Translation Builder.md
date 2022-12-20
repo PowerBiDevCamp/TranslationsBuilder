@@ -55,7 +55,7 @@ column names and measure names in the dataset.
 4.  While in **Report view**, examine the **Fields** list to see the
     non-hidtables, columns and measure that are not hidden.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image4.png"  style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image4.png"  style="width:30%" />
 
 5.  Now, navigate to **Model view** so you can see the entire data model
     including the columns hidden from **Report view**.
