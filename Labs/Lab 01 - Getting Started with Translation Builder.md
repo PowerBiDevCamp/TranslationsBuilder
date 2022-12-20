@@ -28,6 +28,14 @@ you must follow steps in the [Translations Builder Installation
 Guide](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Installation%20Guide.md)
 before continuing with these lab exercises.
 
+This document is also available for download in [DOCX format](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.docx) and [PDF format](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.pdf).
+
+####Table of Contents
+- [Exercise 1: Creating and Testing Metadata Translations](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Labs/Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.md#exercise-1-creating-and-testing-metadata-translations)
+- [Exercise 2: Generating Machine Translations](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Labs/Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.md#exercise-2-generating-machine-translations)
+- [Exercise 3: Creating and Testing Report Label Translations](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Labs/Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.md#exercise-3-creating-and-testing-report-label-translations)
+- [Exercise 4: Creating a Workflow Process To Gather & Integrate Human Translations](#exercise-4-creating-a-workflow-process-to-gather--integrate-human-translations)
+  
 ### Exercise 1: Creating and Testing Metadata Translations
 > In this exercise, you will begin by downloading a PBIX file with a
 simple data model and a single page report. You will publish the project
