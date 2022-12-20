@@ -256,17 +256,17 @@ following Key and Location up through February 28, 2023.
 1.  Return to Translations Builder and drop down the **Dataset
     Connection** menu.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image32.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image32.png" style="width:40%" />
 
 2. Select the **Configure Settings…** menu command to display the
     **Configuration Options** dialog.    
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image33.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image33.png" style="width:40%" />
 
 3. In the **Configuration Options** dialog, enter the **Key** and
     **Location** for the Azure Translator Service.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image34.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image34.png" style="width:60%" />
 
 4. Once you have added the **Key** and **Location**, click **Save
     Changes**.
