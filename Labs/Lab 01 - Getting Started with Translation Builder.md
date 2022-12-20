@@ -20,7 +20,7 @@ be associated with a Premium capacity as indicated by the diamond image
 premium capacity is required because Power BI translations do not load
 properly for reports in the shared capacity.
 
-&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image1.png" style="width:50%" />
+&nbsp;&nbsp;<img src="./images/Lab01/media/image1.png" style="width:50%" />
 
 > **Prerequisite 2**: This lab assumes you’ve already installed
 Translations Builder. If you haven’t installed Translations Builder yet,
