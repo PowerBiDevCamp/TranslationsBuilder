@@ -76,12 +76,12 @@ column names and measure names in the dataset.
 8.  When prompted by the **Publish to Power BI** dialog, choose your
     test workspace and then click **Select**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image8.png" style="width:30%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image8.png" style="width:40%" />
 
 9.  Once you see **Success!**, click **Open ‘TB-Lab01.pbx’ in Power BI**
     to view the report in the Power BI Service.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image9.png" style="width:30%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image9.png" style="width:35%" />
 
 10. The report named **TB-Lab01** should appear like the report shown in
     the screenshot below.
@@ -98,12 +98,12 @@ happy
 11. Return to Power BI Desktop, navigate to the **External Tools** tab
     and launch **Translations Builder**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image11.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image11.png" style="width:80%" />
 
 12. Translations Builder should start and load the data model for
     **TB-Lab01.pbix** as shown in the following screenshot.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image12.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image12.png" style="width:90%" />
 
 13. The **Dataset properties** section provides details about the
     dataset connection and the PBIX project file.
