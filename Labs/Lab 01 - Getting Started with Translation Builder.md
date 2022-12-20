@@ -276,17 +276,17 @@ following Key and Location up through February 28, 2023.
 5. After you have configured the **Key** and **Location** for the Azure
     Translator Service, new controls will appear on the main page.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image36.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image36.png" style="width:90%" />
 
-Now that you have added support for generating machine translations,
+> Now that you have added support for generating machine translations,
 it’s time to put that automatic translation support to work!
 
 6. Click the **Add Language** button to add your second secondary
     language.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image37.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image37.png" style="width:80%" />
 
-You can hold down the **CTRL** key in the **Add Language** dialog while
+> You can hold down the **CTRL** key in the **Add Language** dialog while
 selecting languages to enable multiple selection
 
 44. Hold down the **CTRL**, and select **French**, **German** and
