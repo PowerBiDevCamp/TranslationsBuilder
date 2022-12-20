@@ -76,17 +76,17 @@ column names and measure names in the dataset.
 8.  When prompted by the **Publish to Power BI** dialog, choose your
     test workspace and then click **Select**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image8.png" style="width:40%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image8.png" style="width:30%" />
 
 9.  Once you see **Success!**, click **Open ‘TB-Lab01.pbx’ in Power BI**
     to view the report in the Power BI Service.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image9.png" style="width:40%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image9.png" style="width:30%" />
 
 10. The report named **TB-Lab01** should appear like the report shown in
     the screenshot below.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image10.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image10.png" style="width:80%" />
 
 > Now it’s time to begin adding translations. As you begin to add
 translations to a PBIX project, you will often follow this set of
