@@ -909,12 +909,12 @@ translation sheet.
 37. In the **Open** file dialog, select
      **TB-Lab01-Translations-Master.csv** and click **Open**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image109.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image109.png" style="width:70%" />
 
 38. You should see that the original, machine-generated Spanish
      translations now appear in the translation grid.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image110.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image110.png" style="width:80%" />
 
 > You can see that the master translation sheet can also serve as a great
 way to backup and restore your translations work. To make this point,
@@ -926,12 +926,12 @@ finds the column when importing a translation sheet.
 39. Right-click on the **French \[fr-FR\]** column header and click
      **Delete Secondary Language**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image111.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image111.png" style="width:80%" />
 
 40. When prompted by the **Confirm Delete Secondary Language
      Operation** dialog, click **OK** to continue.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image112.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image112.png" style="width:30%" />
 
 41. You should see that the column for French has been removed from the
      translations grid.
