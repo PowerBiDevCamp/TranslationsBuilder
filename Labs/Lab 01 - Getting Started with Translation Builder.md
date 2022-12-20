@@ -861,7 +861,7 @@ now learn how to import translation sheets.
 30. Open the translation sheet named
      **Inbox\TB-Lab01-Translations-Spanish.csv** in Microsoft Excel.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image104.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image104.png" style="width:80%" />
 
 > The job of the translator is to review all translations in the fifth
 column and to make updates where appropriate. From the perspective of
@@ -871,7 +871,7 @@ columns should be treated as read-only values.
 31. Enter new values for each of the Spanish translations in the fifth
      column.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image105.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image105.png" style="width:80%" />
 
 > Don’t worry whether the values you are valid translations. You just need
 to add any text so you can test the import process.
@@ -882,7 +882,7 @@ to add any text so you can test the import process.
 33. Return to Translations Builder and click the **Import
      Translations** button.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image106.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image106.png" style="width:35%" />
 
 > Remember to close translation sheet files in Microsoft Excel before
 importing them with Translations Builder to prevent errors.
