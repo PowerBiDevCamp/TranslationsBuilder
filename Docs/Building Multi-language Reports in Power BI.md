@@ -10,13 +10,46 @@ maintain a separate PBIX project file for each language. Instead, they
 can increase reuse and lower report maintenance by designing and
 implementing a strategy for building multi-language reports.
 
-The purpose of this article is to provide guidance for building Power BI
-reports that support multiple languages. You need to learn the key
-concepts of Power BI localization and a few essential skills to automate
-repetitive tasks that would take forever to complete manually. Once you
-understand how all the pieces fit together, you’ll be able to build
-multi-language reports for Power BI using a strategy that is reliable,
-predictable and scalable.
+The purpose of this article is to provide guidance and to teach the
+skills required to build Power BI reports that support multiple
+languages. An essential part of this guidance is based on leveraging an
+external tool that’s been created for Power BI Desktop named
+[Translations
+Builder](https://github.com/PowerBiDevCamp/TranslationsBuilder). You
+need to learn the key concepts of Power BI localization and a few
+essential skills with Translations Builder to automate repetitive tasks
+that would take forever to complete manually. Once you understand how
+all the pieces fit together, you’ll be able to build multi-language
+reports for Power BI using a strategy that is reliable, predictable and
+scalable.
+
+### Live Demo
+
+This article is accompanied a [**live
+demo**](https://multilanguagereportdemo.azurewebsites.net/) based on a
+single PBIX file solution named
+[**TranslationsBuilderLiveDemo.pbix**](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/LiveDemo/TranslationsBuilderLiveDemo.pbix).
+This live demo shows the potential of building multi-language reports
+for Power BI. The report in the lice demo supports English, Spanish,
+French, German, Dutch.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image1.png"
+style="width:3.74223in;height:1.83871in"
+alt="A picture containing chart Description automatically generated" />
+
+You can test out the live demo and the experience of a multi-language
+report by navigating the following URL.
+
+<https://multilanguagereportdemo.azurewebsites.net>
+
+When you test out the live demo, experiment by clicking links in the
+left navigation to reload the report using different langauges. For
+example, click on **German (Deutsch)**. When you do, there is JavaScript
+behind this web page that responds by reloading the report using the
+language of German intead of English. You can see that all the
+text-based values in the entire report now display their German
+translations instead of English.
 
 ### Power BI Support for Localization and Translations
 
@@ -56,7 +89,7 @@ nor the Power BI Service provide any support for storing or loading
 translations for text values stored as part of the report layout.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image1.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image2.png"
 style="width:3.12857in;height:1.11105in" />
 
 Think about a common scenario where you add a textbox or a button to a
@@ -124,32 +157,6 @@ they will also require data translations. Some projects to build a
 multilanguage report for Power BI will require data translations while
 other projects will not. This point will be revisited in more depth a
 little later.
-
-### Translations Builder Live Demo
-
-This article is accompanied a [**live
-demo**](https://multilanguagereportdemo.azurewebsites.net/) based on a
-single PBIX file solution named
-[**TranslationsBuilderLiveDemo.pbix**](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/LiveDemo/TranslationsBuilderLiveDemo.pbix).
-This live demo shows the potential of building multi-language reports
-for Power BI. The report in the lice demo supports English, Spanish,
-French, German, Dutch.
-
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image2.png"
-style="width:3.74223in;height:1.83871in" />
-
-xx
-
-<https://multilanguagereportdemo.azurewebsites.net>
-
-Experiment by clicking these radio buttons to load the report using
-different langauges. For example, click on the radio button with the
-caption of **German**. When you do, there is JavaScript behind this page
-that responds by reloading the report using the language of German
-intead of English. You can see that all the button captions in the
-left-hand navigation and text-based values in the visuals on the page
-now display their German translations instead of English.
 
 ### Packaging Dataset and Report in PBIX Project Files
 

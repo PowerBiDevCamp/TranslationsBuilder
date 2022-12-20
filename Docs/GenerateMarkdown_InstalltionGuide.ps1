@@ -1,2 +1,0 @@
-# command commented to prevent accident override which would erase manual edits ofr markdown
-# pandoc -s --extract-media ./images/InstallationGuide "Installation Guide.docx" -t gfm -o "Installation Guide.md"
