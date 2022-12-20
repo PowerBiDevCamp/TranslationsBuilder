@@ -632,7 +632,7 @@ to lose your work.
 37. Publish the **TB-Lab01.pbix** project to push your changes to the
      project’s translations to the Power BI Service.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image25.png"  style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image25.png"  style="width:70%" />
 
 38. When prompted by the **Replace this dataset?** Dialog, click the
      **Replace** button to continue.
