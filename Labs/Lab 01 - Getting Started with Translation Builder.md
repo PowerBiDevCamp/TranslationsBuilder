@@ -543,7 +543,7 @@ Table** command using the shortcut key of **Ctrl+L**.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image66.png" style="width:80%" />
 
 > The measures in the **Translated Localized Labels** table are what you
-use to display report labels on a Power BI report.
+use to display report labels on a Power BI report. You should be aware that you should not edit the DAX expressions for measures in the the **Translated Localized Labels** table as they are deleted and recreated each time you execute the **Generate Translated Localized Labels Table** command.
 
 21. Select the measure named **Product List by Sales Revenue Label** and
     examine its DAX expression.
