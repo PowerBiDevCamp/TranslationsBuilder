@@ -39,7 +39,9 @@ column names and measure names in the dataset.
 
 1.  Download the PBIX starter file named **TB-Lab01.pbix** from the following link
 
-> <https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/StarterFiles/TB-Lab01.pbix>
+```
+<https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/StarterFiles/TB-Lab01.pbix>
+```
 
 2.  Create a new folder on your local hard drive for these lab exercises
     in a location such as **C:\DevCampLabs\\**.
