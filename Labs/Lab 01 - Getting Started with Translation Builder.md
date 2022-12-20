@@ -157,81 +157,69 @@ data model are not displayed. You don’t need to translate them.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image22.png" style="width:50%" />
 
-The point of the last few steps has been for you to become comfortable
+> The point of the last few steps has been for you to become comfortable
 with the translation editing experience. You can see the grid provides
 an editing experience similar to working with Excel. You can even use
 the **{F2}** key to move a cell with content into edit mode.
 
 23. Now edit the translations in the Spanish column with better
     translated values. Use the following translations.
+  - For the **Products** table, enter the Spanish translation of **Productos**.
+  - For the **Product** column, enter the Spanish translation of **Producto**
+  - For the **Image** column, enter the Spanish translation of **Imagen**.
+  - For the **Sales** table, enter the Spanish translation of **Ventas**.
+  - For the **Sales Revenue** measure, enter the Spanish translation of **Ingresos Por Ventas**.
+  - For the **Units Sold** measure, enter the Spanish translation of **Unidades Vendidas**.
 
-24. For the **Products** table, enter the Spanish translation of
-    **Productos**.
-
-25. For the **Product** column, enter the Spanish translation of
-    **Producto**
-
-26. For the **Image** column, enter the Spanish translation of
-    **Imagen**.
-
-27. For the **Sales** table, enter the Spanish translation of
-    **Ventas**.
-
-28. For the **Sales Revenue** measure, enter the Spanish translation of
-    **Ingresos Por Ventas**.
-
-29. For the **Units Sold** measure, enter the Spanish translation of
-    **Unidades Vendidas**.
-
-30. When you are done with your edits, the Spanish translations should
+24. When you are done with your edits, the Spanish translations should
     match the following screenshot.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image23.png" style="width:50%" />
 
-31. Return to the **TB-Lab01.pbix** project in Power BI Desktop and save
+25. Return to the **TB-Lab01.pbix** project in Power BI Desktop and save
     your work by clicking the **Save** button.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image24.png" style="width:50%" />
 
-It’s easy to forget to save your changes in Power BI Desktop. Be aware
+> It’s easy to forget to save your changes in Power BI Desktop. Be aware
 that any changes made by Translations Builder are just made to the data
 model loaded in memory. None of your changes are saved back to the PBIX
 project file until you save in Power BI Desktop.
 
-32. Publish the **TB-Lab01.pbix** project to push the changes to the
+26. Publish the **TB-Lab01.pbix** project to push the changes to the
     project’s translations to the Power BI Service.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image25.png" style="width:50%" />
 
-33. When prompted by the **Replace this dataset?** Dialog, click the
+27. When prompted by the **Replace this dataset?** Dialog, click the
     **Replace** button to continue.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image26.png" style="width:50%" />
 
-34. Once you see **Success!**, click **Open ‘TB-Lab01.pbx’ in Power BI**
+28. Once you see **Success!**, click **Open ‘TB-Lab01.pbx’ in Power BI**
     to view the report in the Power BI Service.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image27.png" style="width:50%" />
 
-1.  The report should load with its default behavior showing all text in
+29.  The report should load with its default behavior showing all text in
     English at first.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image28.png" style="width:50%" />
 
-36. Inspect the table visual column headers which displays the names of
+30. Inspect the table visual column headers which displays the names of
     columns and measures in English.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image29.png" style="width:50%" />
 
-Now, it’s time to test your translations. You will accomplish this by
+> Now, it’s time to test your translations. You will accomplish this by
 using the **language** query string parameter to load the report.
 
-Click the browser address bar and add the following **language**
+31. Click the browser address bar and add the following **language**
 parameter to the end of the report URL.
 
-/?language=es-ES
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**/?language=es-ES**
 
-37. Press **ENTER.** You should see the **language** query string
+32. Press **ENTER.** You should see the **language** query string
     parameter accepted by the browser as it reloads the report.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image30.png" style="width:50%" />
