@@ -290,7 +290,7 @@ it’s time to put that automatic translation support to work!
 selecting languages to enable multiple selection
 
 7. Hold down the **CTRL**, and select **French**, **German** and
-    **Italian**. And then click **Add Language**.
+    **Italian** and then click **Add Language**.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image38.png" style="width:30%" />
 
@@ -305,35 +305,35 @@ selecting languages to enable multiple selection
 10. In the **Machine Translations – Single Language** section, select
     **French \[fr-FR\]** from the drop down menu.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image40.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image40.png" style="width:80%" />
 
 11. Once you have selected **French \[fr-FR\]**, click **Generate
     Translations** to create French translations for all rows in the
     grid.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image41.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image41.png" style="width:80%" />
 
 12. As the code runs to interact with the Azure Translator Service, the
     **Generating machine translation** dialog shows the progress.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image42.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image42.png" style="width:80%" />
 
 13. Once this dialog closes, you should see all cells the French column
     has been filled with machine-generated translations.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image43.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image43.png" style="width:80%" />
 
 14. Click the **Fill All Empty Translation** button in the **Machine
     Translations - All Languages** section.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image44.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image44.png" style="width:80%" />
 
 15. You should see that the empty cells for all languages have now been
     populated with machine-generated translations.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image45.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image45.png" style="width:80%" />
 
-Now, it’s time once again to test your work in the Power BI Service,
+> Now, it’s time once again to test your work in the Power BI Service,
 
 16. Return to the **TB-Lab01.pbix** project in Power BI Desktop and save
     your work by clicking the **Save** button.
