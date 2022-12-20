@@ -792,7 +792,7 @@ wherever they are required.
 18. Click the **Export All Translations** button to export a master
      translation sheet with the translations for all languages.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image95.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image95.png" style="width:35%" />
 
 > Translations Builder creates a translation sheet named
 **TB-Lab01-Translations-Master.csv** and opens this CSV file in Excel
