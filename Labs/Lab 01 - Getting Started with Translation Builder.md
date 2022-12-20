@@ -379,7 +379,7 @@ the **language** query string parameter to load the report.
 23. Verify the column and measure names in columns headings of the table
     visual are displayed with French translations.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image47.png" style="width:80%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image47.png" style="width:65%" />
 
 > Now that you have tested the French translations, it’s time to test the
 two other new languages.
@@ -397,7 +397,7 @@ two other new languages.
 26. Verify the column and measure names in columns headings are
     displayed with the German translations.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image49.png" style="width:80%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image49.png" style="width:65%" />
 
 27. Click the browser address bar and add the **language** parameter of
     **it-IT** for Italian to the end of the report URL.
@@ -412,7 +412,7 @@ two other new languages.
 29. Verify the column and measure names in columns headings are
     displayed with the Italian translations.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image51.png" style="width:80%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image51.png" style="width:65%" />
 
 > You have now successfully added the metadata translations to display
 this report in five different languages. Throughout these lab exercises,
