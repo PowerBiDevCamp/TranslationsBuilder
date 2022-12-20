@@ -440,10 +440,10 @@ Builder uses to quickly and easily implement report label translations.
 1.  Return to the **TB-Lab01.pbix** project in Power BI Desktop and move
     to **Report view**.
 
-2.  The text **Product Sales Report** is displayed with a rectangle
+2.  Look to see how the text **Product Sales Report** is displayed with a rectangle
     shape object.
 
-3.  The text **Product Sales List by Sales Revenue** is displayed using
+3.  Look to see how the text **Product Sales List by Sales Revenue** is displayed using
     the **Title** property of the table visual.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image53.png" style="width:50%" />
