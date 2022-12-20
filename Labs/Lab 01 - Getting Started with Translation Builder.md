@@ -369,50 +369,50 @@ the **language** query string parameter to load the report.
 21. Click the browser address bar and add the **language** parameter
     value of **fr-FR** for French to the end of the report URL.
 
-/?language=fr-FR
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**/?language=fr-FR**
 
 22. When the report reloads, you should see the UI experience for the
     Power BI Service UI switch from English to French.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image46.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image46.png" style="width:80%" />
 
 23. Verify the column and measure names in columns headings of the table
     visual are displayed with French translations.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image47.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image47.png" style="width:80%" />
 
-Now that you have tested the French translations, it’s time to test the
+> Now that you have tested the French translations, it’s time to test the
 two other new languages.
 
 24. Click the browser address bar and add the **language** parameter
     value of **de-DE** for German to the end of the report URL.
 
-/?language=de-DE
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**/?language=de-DE**
 
 25. When the report reloads, you should see the UI experience for the
     Power BI Service UI switch to German.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image48.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image48.png" style="width:80%" />
 
 26. Verify the column and measure names in columns headings are
     displayed with the German translations.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image49.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image49.png" style="width:80%" />
 
 27. Click the browser address bar and add the **language** parameter of
     **it-IT** for Italian to the end of the report URL.
 
-/?language=it-IT
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**/?language=it-IT**
 
 28. When the report reloads, you should see the UI experience for the
     Power BI Service UI switch to Italian.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image50.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image50.png" style="width:80%" />
 
 29. Verify the column and measure names in columns headings are
     displayed with the Italian translations.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image51.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image51.png" style="width:80%" />
 
 > You have now successfully added the metadata translations to display
 this report in five different languages. Throughout these lab exercises,
