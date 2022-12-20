@@ -515,7 +515,7 @@ Table** command using the shortcut key of **Ctrl+A**.
 16. At this point, the translations grid should be completely filled
     with machine-generated translations.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image63.png" style="width:80%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image63.png" style="width:98%" />
 
 > There is one critical step you must complete after modifying report
 labels in the **Localized Labels** table. More specifically, you must
