@@ -340,7 +340,7 @@ selecting languages to enable multiple selection
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image24.png" style="width:50%" />
 
-Don’t forget to save your work! Did we mention it’s easy to forget to
+> Don’t forget to save your work! Did we mention it’s easy to forget to
 save in Power BI Desktop and to lose your work.
 
 17. Publish the **TB-Lab01.pbix** project to push your changes to the
