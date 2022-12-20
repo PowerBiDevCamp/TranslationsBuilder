@@ -484,12 +484,12 @@ Table** command using the shortcut key of **Ctrl+A**.
 9. In the **Add Localized Labels** dialog, click the **Advanced Mode**
     checkbox.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image58.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image58.png" style="width:45%" />
 
 10. Once the dialog is in **Advanced Mode**, click the **Delete All
     Labels** button to remove the sample report labels.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image59.png" style="width:40%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image59.png" style="width:45%" />
 
 11. In the **Labels** textbox, type the report label **Product Sales
     Report**.
@@ -500,7 +500,7 @@ Table** command using the shortcut key of **Ctrl+A**.
 13. Click the **Add Labels** button to add the two new labels to your
     project.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image60.png" style="width:40%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image60.png" style="width:45%" />
 
 14. You should now see two new rows have been added to the translations
     gird with the two new report labels.
@@ -510,12 +510,12 @@ Table** command using the shortcut key of **Ctrl+A**.
 15. Click the **Fill All Empty Translations** button to create all the
     translations for both report labels.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image62.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image62.png" style="width:80%" />
 
 16. At this point, the translations grid should be completely filled
     with machine-generated translations.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image63.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image63.png" style="width:80%" />
 
 > There is one critical step you must complete after modifying report
 labels in the **Localized Labels** table. More specifically, you must
