@@ -904,7 +904,7 @@ translation sheet.
 
 36. click the **Import Translations** button.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image106.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image106.png" style="width:35%" />
 
 37. In the **Open** file dialog, select
      **TB-Lab01-Translations-Master.csv** and click **Open**.
@@ -926,7 +926,7 @@ finds the column when importing a translation sheet.
 39. Right-click on the **French \[fr-FR\]** column header and click
      **Delete Secondary Language**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image111.png" style="width:80%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image111.png" style="width:90%" />
 
 40. When prompted by the **Confirm Delete Secondary Language
      Operation** dialog, click **OK** to continue.
@@ -936,7 +936,7 @@ finds the column when importing a translation sheet.
 41. You should see that the column for French has been removed from the
      translations grid.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image113.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image113.png" style="width:90%" />
 
 42. click the **Import Translations** button.
 
