@@ -1,4 +1,4 @@
-## **Lab 01: Getting Started with Translation Builder**
+## **Lab 01: Getting Started with Translations Builder**
 
 > **Overview**: In this lab, you will learn how to work with Power BI
 Desktop and Translations Builder to build reports for
@@ -683,7 +683,7 @@ export and import translations using a CSV file format. This will
 provide a quick way to generate translations sheets that can be sent to
 human translators. As you will see, translators can make their edits to
 a translation sheets using Microsoft Excel. Once you’ve received an
-updated translation sheet back from a translator, Translation Builder
+updated translation sheet back from a translator, Translations Builder
 provides an import operation to integrate those updated translations
 back into the dataset for the current project.
 
@@ -695,255 +695,255 @@ Excel installed on the same PC running Translations Builder.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image80.png" style="width:50%" />
 
-111. Create two new folders inside the lab folder named **Outbox** and
+2. Create two new folders inside the lab folder named **Outbox** and
      **Inbox**.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image81.png" style="width:50%" />
 
-Next, you need to configure settings in Translations Builder so that
+> Next, you need to configure settings in Translations Builder so that
 these folders are used as targets for export and import operations.
 
-112. Return to Translations Builder and drop down the **Dataset
+3. Return to Translations Builder and drop down the **Dataset
      Connection** menu.
 
-113. Click **Configure Settings…** to display the **Configuration
+4. Click **Configure Settings…** to display the **Configuration
      Options** dialog.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image82.png" style="width:50%" />
 
-114. By default, folder paths for the **Outbox** and **Inbox** are
+5. By default, folder paths for the **Outbox** and **Inbox** are
      configured to target the current user’s **Documents** folder.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image83.png" style="width:50%" />
 
-Why does **Outbox** come before **Inbox**? That’s because you generally
+> Why does **Outbox** come before **Inbox**? That’s because you generally
 work with the **Outbox** first when you export translation sheets that
 you will send to translators. Once you get updated translations sheets
 back from translators, you add them to the **Inbox** for import.
 
-115. Click the **set** button to update the setting for **Translations
+6. Click the **set** button to update the setting for **Translations
      Outbox Folder Path**.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image84.png" style="width:50%" />
 
-116. Select the **Outbox** folder you created earlier in this exercise.
+7. Select the **Outbox** folder you created earlier in this exercise.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image85.png" style="width:50%" />
 
-117. Click the **set** button for **Translations Inbox Folder Path** and
+8. Click the **set** button for **Translations Inbox Folder Path** and
      select the **Inbox** folder you created earlier
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image86.png" style="width:50%" />
 
-118. Click **Save Changes**.
+9. Click **Save Changes**.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image87.png" style="width:50%" />
 
-Now that you have configured the folder paths for the Outbox and Inbox,
+> Now that you have configured the folder paths for the Outbox and Inbox,
 it’s time to begin exporting translation sheets.
 
-119. Examine what’s inside the Export/Import Translations section.
+10. Examine what’s inside the Export/Import Translations section.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image88.png" style="width:50%" />
 
-Let’s start by creating a translation sheet for a single language.
+> Let’s start by creating a translation sheet for a single language.
 
-120. Drop down the selection menu under the **Export Translations
+11. Drop down the selection menu under the **Export Translations
      Sheet** button and select **German \[de-DE\]**.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image89.png" style="width:50%" />
 
-121. After selecting **German \[de-DE\]**, click the **Export
+12. After selecting **German \[de-DE\]**, click the **Export
      Translations Sheet** button.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image90.png" style="width:50%" />
 
-Translations Builder should create a translation sheet named
+> Translations Builder should create a translation sheet named
 **TB-Lab01-Translations-German.csv** and open this CSV file in Excel
 
-122. Examine the contents of **TB-Lab01-Translations-German.csv**.
+13. Examine the contents of **TB-Lab01-Translations-German.csv**.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image91.png" style="width:50%" />
 
-Over the next two steps you will use a trick in Excel to widen the
+> Over the next two steps you will use a trick in Excel to widen the
 columns so ou can see all their contents.
 
-123. Click on the top left corner where the row headers and the column
+14. Click on the top left corner where the row headers and the column
      headers meet. This should select all columns and rows.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image92.png" style="width:50%" />
 
-124. Double-click on the column heading divider between the column
+15. Double-click on the column heading divider between the column
      headers showing **A** and **B**.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image93.png" style="width:50%" />
 
-125. You should now be able to see all the text from each column.
+16. You should now be able to see all the text from each column.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image94.png" style="width:50%" />
 
-This translation sheet is what you will send to translators. They can
+> This translation sheet is what you will send to translators. They can
 then use Excel to review the machine translations and make changes
 wherever they are required.
 
-126. Close **TB-Lab01-Translations-German.csv** and return to
-     Translation Builder.
+17. Close **TB-Lab01-Translations-German.csv** and return to
+     Translations Builder.
 
-127. Click the **Export All Translations** button to export a master
+18. Click the **Export All Translations** button to export a master
      translation sheet with the translations for all languages.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image95.png" style="width:50%" />
 
-Translations Builder creates a translation sheet named
+> Translations Builder creates a translation sheet named
 **TB-Lab01-Translations-Master.csv** and opens this CSV file in Excel
 
-128. When **TB-Lab01-Translations-Master.csv** open in Microsoft Excel,
+19. When **TB-Lab01-Translations-Master.csv** open in Microsoft Excel,
      you cannot see the contents of all columns at first.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image96.png" style="width:50%" />
 
-129. Use the Excel trick you learned earlier to expand all columns so
+20. Use the Excel trick you learned earlier to expand all columns so
      you can see the entire contents of all cells.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image97.png" style="width:50%" />
 
-Now that you have learned to export translations sheets, it’s time to
+> Now that you have learned to export translations sheets, it’s time to
 examine how to manage translation sheet files.
 
-130. In Windows Explorer, navigate to the **Outbox** folder. You should
+21. In Windows Explorer, navigate to the **Outbox** folder. You should
      see the two files you generated using export operations.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image98.png" style="width:50%" />
 
-131. Return to Translations Builder and uncheck the checkbox with the
+22. Return to Translations Builder and uncheck the checkbox with the
      caption **Open Export in Excel**.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image99.png" style="width:50%" />
 
-All three export commands use this checkbox to decide whether to open a
+> All three export commands use this checkbox to decide whether to open a
 translation sheet in Excel after it’s generated. In some cases, it’s
 handy to have the translation sheet open in Excel. In other scenarios
 like the one ahead, it’s unnecessary and distracting.
 
-132. Click the **Export All Translation Sheets** button.
+23. Click the **Export All Translation Sheets** button.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image100.png" style="width:50%" />
 
 The **Export All Translation Sheets** command generates the complete set
 of translation sheets to be sent to translators.
 
-133. Return to the **Outbox** folder in Windows Explorer.
+24. Return to the **Outbox** folder in Windows Explorer.
 
-134. You should see that a sperate translation sheet has been generated
+25. You should see that a sperate translation sheet has been generated
      for each secondary language.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image101.png" style="width:50%" />
 
-Now that you have experienced how to export translation sheets, you will
+> Now that you have experienced how to export translation sheets, you will
 now learn how to import translation sheets.
 
-135. In the **Outbox** folder in Windows Explorer, select
+26. In the **Outbox** folder in Windows Explorer, select
      **TB-Lab01-Translations-Master.csv** and
      **TB-Lab01-Translations-Spanish.csv**.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image102.png" style="width:50%" />
 
-136. Copy the two selected translation sheet files to the Windows
+27. Copy the two selected translation sheet files to the Windows
      clipboard.
 
-137. Navigate from the **Outbox** folder to the **Inbox** folder.
+28. Navigate from the **Outbox** folder to the **Inbox** folder.
 
-138. Paste the two translation sheet files from the Windows clipboard
+29. Paste the two translation sheet files from the Windows clipboard
      into the **Inbox** folder.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image103.png" style="width:50%" />
 
-139. Open the translation sheet named
+30. Open the translation sheet named
      **Inbox\TB-Lab01-Translations-Spanish.csv** in Microsoft Excel.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image104.png" style="width:50%" />
 
-The job of the translator is to review all translations in the fifth
+> The job of the translator is to review all translations in the fifth
 column and to make updates where appropriate. From the perspective of
 the translator, the top row with column headers and the first four
 columns should be treated as read-only values.
 
-140. Enter new values for each of the Spanish translations in the fifth
+31. Enter new values for each of the Spanish translations in the fifth
      column.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image105.png" style="width:50%" />
 
-Don’t worry whether the values you are valid translations. You just need
+> Don’t worry whether the values you are valid translations. You just need
 to add any text so you can test the import process.
 
-141. Save your changes to **TB-Lab01-Translations-Spanish.csv** and then
+32. Save your changes to **TB-Lab01-Translations-Spanish.csv** and then
      close the file in Microsoft Excel.
 
-142. Return to Translations Builder and click the **Import
+33. Return to Translations Builder and click the **Import
      Translations** button.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image106.png" style="width:50%" />
 
-Remember to close translation sheet files in Microsoft Excel before
+> Remember to close translation sheet files in Microsoft Excel before
 importing them with Translations Builder to prevent errors.
 
-143. In the **Open** file dialog, select
+34. In the **Open** file dialog, select
      **TB-Lab01-Translations-Spanish.csv** and click **Open**.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image107.png" style="width:50%" />
 
-144. You should see that your updates to the Spanish translation sheet
+35. You should see that your updates to the Spanish translation sheet
      now appear in the translation grid.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image108.png" style="width:50%" />
 
-Now that you have seen how to how to import translations from an updated
+> Now that you have seen how to how to import translations from an updated
 translations sheet with a single language, it’s time to move ahead and
 import translations from all languages at once by importing the master
 translation sheet.
 
-145. click the **Import Translations** button.
+36. click the **Import Translations** button.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image106.png" style="width:50%" />
 
-146. In the **Open** file dialog, select
+37. In the **Open** file dialog, select
      **TB-Lab01-Translations-Master.csv** and click **Open**.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image109.png" style="width:50%" />
 
-147. You should see that the original, machine-generated Spanish
+38. You should see that the original, machine-generated Spanish
      translations now appear in the translation grid.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image110.png" style="width:50%" />
 
-You can see that the master translation sheet can also serve as a great
+> You can see that the master translation sheet can also serve as a great
 way to backup and restore your translations work. To make this point,
 you are now going to delete the column for French. Deleting a column
 like this will delete all translations for that language. As you will
 see, Translations Builder will automatically add the column back if it
 finds the column when importing a translation sheet.
 
-148. Right-click on the **French \[fr-FR\]** column header and click
+39. Right-click on the **French \[fr-FR\]** column header and click
      **Delete Secondary Language**.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image111.png" style="width:50%" />
 
-149. When prompted by the **Confirm Delete Secondary Language
+40. When prompted by the **Confirm Delete Secondary Language
      Operation** dialog, click **OK** to continue.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image112.png" style="width:50%" />
 
-150. You should see that the column for French has been removed from the
+41. You should see that the column for French has been removed from the
      translations grid.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image113.png" style="width:50%" />
 
-151. click the **Import Translations** button.
+42. click the **Import Translations** button.
 
-152. In the **Open** file dialog, select
+43. In the **Open** file dialog, select
      **TB-Lab01-Translations-Master.csv** and click **Open**.
 
-153. After the import operation competes, the **French \[fr-FR\]**
+44. After the import operation competes, the **French \[fr-FR\]**
      column should reappear as the last column on the right.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image114.png" style="width:50%" />
