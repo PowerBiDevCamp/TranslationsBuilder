@@ -890,7 +890,7 @@ importing them with Translations Builder to prevent errors.
 34. In the **Open** file dialog, select
      **TB-Lab01-Translations-Spanish.csv** and click **Open**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image107.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image107.png" style="width:70%" />
 
 35. You should see that your updates to the Spanish translation sheet
      now appear in the translation grid.
@@ -938,7 +938,7 @@ finds the column when importing a translation sheet.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image113.png" style="width:90%" />
 
-42. click the **Import Translations** button.
+42. Click the **Import Translations** button.
 
 43. In the **Open** file dialog, select
      **TB-Lab01-Translations-Master.csv** and click **Open**.
@@ -946,6 +946,6 @@ finds the column when importing a translation sheet.
 44. After the import operation competes, the **French \[fr-FR\]**
      column should reappear as the last column on the right.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image114.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image114.png" style="width:100%" />
 
-Congratulations. You have now completed this lab.
+> Congratulations. You have now completed this lab.
