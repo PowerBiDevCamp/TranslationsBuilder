@@ -800,12 +800,12 @@ wherever they are required.
 19. When **TB-Lab01-Translations-Master.csv** open in Microsoft Excel,
      you cannot see the contents of all columns at first.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image96.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image96.png" style="width:80%" />
 
 20. Use the Excel trick you learned earlier to expand all columns so
      you can see the entire contents of all cells.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image97.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/Lab01/media/image97.png" style="width:90%" />
 
 > Now that you have learned to export translations sheets, it’s time to
 examine how to manage translation sheet files.
