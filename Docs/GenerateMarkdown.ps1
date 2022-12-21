@@ -4,6 +4,10 @@
 
 pandoc -s --extract-media ./images/BuildingMultiLanguageReportsInPowerBI "Building Multi-language Reports in Power BI.docx" -t gfm -o "Building Multi-language Reports in Power BI.md"
 
+
+pandoc -s --extract-media ./images/ObtainingKeyForAzureTranslatorService "Obtaining a Key for the Azure Translator Service.docx" -t gfm -o "Obtaining a Key for the Azure Translator Service.md"
+
+
 # pandoc -s --extract-media ./images/HandsOnLabExercises "Hands-On Lab Exercises.docx" -t gfm -o "Hands-On Lab Exercises.md"
 
 # pandoc -s --extract-media ./images/UserGuide "User Guide.docx" -t gfm -o "User Guide.md"
