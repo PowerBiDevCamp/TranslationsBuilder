@@ -10,46 +10,51 @@ maintain a separate PBIX project file for each language. Instead, they
 can increase reuse and lower report maintenance by designing and
 implementing a strategy for building multi-language reports.
 
-The purpose of this article is to provide guidance and to teach the
+This article has been created to provide guidance and to teach the
 skills required to build Power BI reports that support multiple
-languages. An essential part of this guidance is based on leveraging an
-external tool that’s been created for Power BI Desktop named
-[Translations
-Builder](https://github.com/PowerBiDevCamp/TranslationsBuilder). You
-need to learn the key concepts of Power BI localization and a few
-essential skills with Translations Builder to automate repetitive tasks
-that would take forever to complete manually. Once you understand how
-all the pieces fit together, you’ll be able to build multi-language
-reports for Power BI using a strategy that is reliable, predictable and
-scalable.
+languages. You need to learn a few key concepts about how Power BI
+translations work and how to automate repetitive tasks that would take
+forever to complete manually. An essential part of this guidance is
+based on using an external tool named [Translations
+Builder](https://github.com/PowerBiDevCamp/TranslationsBuilder) that’s
+been created for content creators using Power BI Desktop. Once you
+understand how all the pieces fit together, you’ll be able to build
+multi-language reports for Power BI using a strategy that is reliable,
+predictable and scalable.
 
-### Live Demo
+### Multi-language Report Live Demo
 
 This article is accompanied a [**live
 demo**](https://multilanguagereportdemo.azurewebsites.net/) based on a
 single PBIX file solution named
 [**TranslationsBuilderLiveDemo.pbix**](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/LiveDemo/TranslationsBuilderLiveDemo.pbix).
 This live demo shows the potential of building multi-language reports
-for Power BI. The report in the lice demo supports English, Spanish,
-French, German, Dutch.
-
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image1.png"
-style="width:3.74223in;height:1.83871in"
-alt="A picture containing chart Description automatically generated" />
-
-You can test out the live demo and the experience of a multi-language
-report by navigating the following URL.
+for Power BI. The report in the live demo supports English, Spanish,
+French, German, Dutch, Italian, Portuguese, Greek, Russian, Japanese,
+Chinese, Hindi, Hebrew and Afrikaans. You can test out the live demo and
+the experience a Power BI report that support over a dozen secondary
+languages by navigating the following URL.
 
 - [**https://multilanguagereportdemo.azurewebsites.net**](https://multilanguagereportdemo.azurewebsites.net)
 
 When you test out the live demo, experiment by clicking links in the
 left navigation to reload the report using different langauges. For
-example, click on **German (Deutsch)**. When you do, there is JavaScript
-behind this web page that responds by reloading the report using the
-language of German intead of English. You can see that all the
-text-based values in the entire report now display their German
-translations instead of English.
+example, click on the link with the caption of **German (Deutsch)**.
+When you do, you will see the report load with German translations as
+shown in the following screenshot.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image1.png"
+style="width:5.45447in;height:2.68in"
+alt="A picture containing chart Description automatically generated" />
+
+The live demo is based on a custom web application that uses Power BI
+embedding. When you click on a link in the left navigation, there is
+JavaScript behind this web page that responds by explicitly reloading
+the report using the language of German intead of English. You can see
+that all the text-based elements for the entire report are now displayed
+with their German translations instead of with the default English
+translations.
 
 ### Power BI Support for Translations and Localization
 
@@ -119,7 +124,20 @@ Now, let’s examine all three types in a little more depth.
 
 **Metadata translations** provides localized values for dataset object
 properties. The object types which support metadata translation include
-tables, columns, measures, hierarchies and hierarchy levels.
+tables, columns, measures, hierarchies and hierarchy levels. The
+following screenshot shows how metadata translations provide German
+names for the measures displayed in card visuals.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image3.png"
+style="width:6.6in;height:0.47588in" />
+
+Metadata translations are also used to display column names and measure
+names in tables and matrices.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image4.png"
+style="width:6.98in;height:1.25963in" />
 
 Metadata translations are the easiest to create, managed and integrate
 into a Power BI report. By leveraging the machine translation features
@@ -134,12 +152,21 @@ report labels.
 **Report label translations** provide localized values for text elements
 on a report that are not directly associated with a dataset object.
 Examples of report labels include the report title as well as section
-headings and button captions. Report label translations are harder to
-create and manage than metadata translations because Power BI provides
-no built-in feature to track or integrate them. Translations Builder
-solves this problem by creating a hidden table named **Localized
-Labels** in the dataset behind a report with measures which can track
-and load translations for each report label.
+headings and button captions. Here are a few examples of report label
+translations in the live demo with the report title and navigation
+button captions.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image5.png"
+style="width:7.20667in;height:1.15413in" />
+
+Report label translations are harder to create and manage than metadata
+translations because Power BI provides no built-in feature to track or
+integrate them. Translations Builder solves this problem by creating a
+hidden table named **Localized Labels** in the dataset behind a report
+with measures which can track and load translations for each report
+label. You will learn more about the Localized Labels table strategy
+later in this article.
 
 **Data translations** provide translated values for text-based columns
 in the underlying data itself. Think about a scenario where a Power BI
@@ -149,10 +176,21 @@ product names differently for users who speak different languages. For
 example, some users see products names in English while other users see
 product names in secondary languages.
 
-Keep in mind that data translations are harder to design and implement
-than the other two types of translations. The reason it’s harder is
-because you must typically redesign the underlying datasource with
-additional text columns for secondary languages. Once the underlying
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image6.png"
+style="width:3.98823in;height:1.78667in" />
+
+Data translations also appear in the axes of cartesian visuals and in
+legends as shown in the following screenshot.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image7.png"
+style="width:6.56989in;height:1.56667in" />
+
+Data translations are harder to design and implement than the other two
+types of translations. The reason it’s harder is because you must
+typically redesign the underlying datasource with additional text
+columns for secondary language translations. Once the underlying
 datasource has been extended with extra text columns for secondary
 language translations, you can then use a powerful new feature in Power
 BI Desktop known as Field Parameters to design a scheme where can
@@ -169,10 +207,11 @@ little later.
 ### Packaging Dataset and Report in PBIX Project Files
 
 Now that you understand high-level concepts of building multi-language
-reports, it's time to move forward and discuss the multi-language report
-development process. The first step here is to decide how to package
-your dataset definitions and report layouts for distribution. Let's
-examine two popular approaches used by creators using Power BI Desktop.
+reports with translations, it's time to discuss the multi-language
+report development process. The first step here is to decide how to
+package your dataset definitions and report layouts for distribution.
+Let's examine two popular approaches used by creators using Power BI
+Desktop.
 
 In the first approach, the goal is to keep things simple and convenient
 by creating a single PBIX project file which contains both a report
@@ -184,7 +223,7 @@ upgrade operation by importing an updated version of the PBIX project
 file.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image3.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image8.png"
 style="width:1.96338in;height:0.85324in" />
 
 The single PBIX file approach doesn't always provide the flexibility you
@@ -202,7 +241,7 @@ PBIX project files with report layouts which can be deployed and updated
 independently of the underlying dataset.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image4.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image9.png"
 style="width:2.37794in;height:1.28333in" />
 
 From the perspective of adding multi-language support to a Power BI
@@ -228,21 +267,21 @@ multiple PBIX files.
 ## Understanding How Translations Builder Works
 
 Translations Builder is an external tool for Power BI Desktop that has
-been developed using C#, .NET 6 and Windows Forms. Translations Builder
+been developed using .NET 6, C# and Windows Forms. Translations Builder
 does its work by reading and writing to a dataset definition that’s been
 loaded into a session of the Analysis Service engine running in Power BI
 Desktop. Translations Builder uses the Tabular Object Model (TOM) to
 perform read and write operations.
 
 Translations Builder uses TOM to establish a direct connection to the
-data model for a dataset loaded into Power BI Desktop. This provides the
-most direct approach for writing custom code to automate the process of
-managing metadata translations within a Power BI dataset.
+data model for a dataset definition loaded into Power BI Desktop. This
+provides the most direct approach for writing custom code to automate
+the process of creating and managing metadata translations within a
+Power BI dataset.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image5.png"
-style="width:3.31132in;height:1.14068in"
-alt="Diagram Description automatically generated" />
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image10.png"
+style="width:6.57361in;height:2.6in" />
 
 The **TranslationsBuilder** programs against TOM to automate adding
 secondary cultures and metadata translations to a Power BI dataset. The
@@ -269,23 +308,29 @@ startup. The **TranslationsBuilder** project contains a JSON deployment
 file named **translationsbuilder.pbitool.json**.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image6.png"
-style="width:3.75987in;height:0.75499in"
-alt="Graphical user interface, text Description automatically generated" />
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image11.png"
+style="width:3.86in;height:1.14848in" />
 
 When you launch an external tool like **TranslationsBuilder**, the
 application is passed startup parameters including a connection string
 which can be used to establish a connection back to the dataset that's
 loaded in Power BI Desktop. This allows **TranslationsBuilder** to
 display dataset information and to provide commands to automate adding
-metadata translations. **TranslationsBuilder** also provides a table
-grid down below which displays all the non-hidden dataset objects and
-their associated metadata translations.
+metadata translations.
+
+**TranslationsBuilder** also provides a table grid down below which
+displays all the non-hidden dataset objects and their associated
+metadata translations.
 
 **A key concept of Translations Builder is to abstract away the details
 of reading and writing translations from a dataset definition by
 providing a simple two-dimensional grid that can be edited as if it were
 an Excel spreadsheet.**
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image12.png"
+style="width:5.99958in;height:2.69204in"
+alt="Graphical user interface, application Description automatically generated" />
 
 Add grid view screenshot with metadata and localized labels
 
@@ -340,7 +385,7 @@ diagram below shows the details of executing a Translator service API
 request to convert a table name from English (en) to Dutch (nl).
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image7.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image13.png"
 style="width:5.77914in;height:1.21095in" />
 
 If you'd like to test out the support in **TranslationsBuilder** for
@@ -359,7 +404,7 @@ service in the Azure portal, you can navigate to the **Keys and
 Endpoint** page where you can view and acquire an application key.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image8.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image14.png"
 style="width:6.00293in;height:1.65031in" />
 
 On the **Keys and Endpoint** page, you can copy the application key and
@@ -369,7 +414,7 @@ then paste it into the **Configuration Options** dialog in
 dialog as well.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image9.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image15.png"
 style="width:2.6319in;height:1.28792in" />
 
 Once you have copy-and-pasted the application key and the location for
@@ -378,7 +423,7 @@ your Translator service instance, you can save your changes in the
 translations.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image10.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image16.png"
 style="width:3.3865in;height:1.45203in" />
 
 The **TranslationsBuilder** project contains a class named
@@ -415,7 +460,7 @@ select a target culture with the language you want and click the
 that language.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image11.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image17.png"
 style="width:6.05271in;height:1.78285in" />
 
 The actual implementation of **PopulateCultureWithMachineTranslations**
@@ -437,7 +482,7 @@ begin testing them by loading a localized report with different
 languages.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image12.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image18.png"
 style="width:7.5in;height:2.55625in" />
 
 Once you have added metadata translations for a secondary culture, you
@@ -510,7 +555,7 @@ The first thing you need to do is to hide every page in the report
 except for the first page which acts as the landing page.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image13.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image19.png"
 style="width:6.75059in;height:0.63244in" />
 
 Next, create a set of bookmarks. Each bookmark should be created to
@@ -519,7 +564,7 @@ demonstrates this technique by adding a bookmark for each page supported
 by the navigation menu.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image14.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image20.png"
 style="width:1.81164in;height:2.23313in"
 alt="Graphical user interface, text, application Description automatically generated" />
 
@@ -534,7 +579,7 @@ responds to the user’s click action by applying a bookmark to navigate
 to the target page.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image15.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image21.png"
 style="width:6.1in;height:1.25163in" />
 
 At this point, you've learned how to create the **Localized Labels**
@@ -574,7 +619,7 @@ Sheet** command which demonstrates how to generate a translation sheet
 for a human translator using a simple CSV format.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image16.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image22.png"
 style="width:7.60715in;height:1.50649in"
 alt="Graphical user interface, application Description automatically generated" />
 
@@ -588,7 +633,7 @@ saving it to the location of **TranslationsOutboxFolderPath** the
 in Microsoft Excel.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image17.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image23.png"
 style="width:7.09418in;height:2.19345in"
 alt="Graphical user interface, application, table, Excel Description automatically generated" />
 
@@ -600,7 +645,7 @@ translations which will then effectively overwrite the machine
 translations.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image18.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image24.png"
 style="width:6.99117in;height:1.35714in"
 alt="Graphical user interface, application Description automatically generated" />
 
@@ -647,7 +692,7 @@ embedding to determine whether the **UserCulture** is returning the
 language and locale you expect.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image19.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image25.png"
 style="width:6.95714in;height:3.94238in"
 alt="Chart, waterfall chart Description automatically generated" />
 
@@ -729,7 +774,7 @@ as the data from any database instance only needs to be viewed by users
 in a single language.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image20.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image26.png"
 style="width:5.84793in;height:4.02857in" />
 
 The important observation is that each customer deployment uses a single
@@ -748,7 +793,7 @@ languages while the data being analyzed is coming from a single database
 instance.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image21.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image27.png"
 style="width:6.14478in;height:1.77914in" />
 
 Once again, the key question to ask is whether you will have people who
@@ -847,7 +892,7 @@ The **Languages** query generates a table with a row for each language
 which will be used in the row expansion process.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image22.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image28.png"
 style="width:3.76488in;height:0.80393in" />
 
 ### Load Reports using Bookmarks to Filter Data Translations
@@ -863,7 +908,7 @@ report-level filtering on the **LanguageTag** column on both the
 **German** translations are displayed to the user.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image23.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image29.png"
 style="width:7.1846in;height:2.4945in" />
 
 The best way to control filtering in a Power BI report is to create a
@@ -874,7 +919,7 @@ set the data translations filtering as shown in the following
 screenshot.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image24.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image30.png"
 style="width:7.26455in;height:2.55714in" />
 
 Earlier in this article, you learned that it is possible to open a
@@ -887,7 +932,7 @@ is named **bookmarkGuid** and it makes it possible to apply a bookmark
 as the report is loading before anything is displayed to the user.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image25.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image31.png"
 style="width:7.21417in;height:3.19345in" />
 
 ### Setting the Language for Current User using RLS and UserCulture
@@ -910,7 +955,7 @@ table where the **LanguageTag** column is equal to the return value of
 the **UserCulture** function.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image26.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image32.png"
 style="width:5.02245in;height:1.65059in" />
 
 The RLS role named **LocalizedUser** also applies a second filter on the
@@ -918,7 +963,7 @@ The RLS role named **LocalizedUser** also applies a second filter on the
 return value of the **UserCulture** function.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image27.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image33.png"
 style="width:5.02055in;height:1.57917in" />
 
 If you are developing with App-Owns-Data embedding, you will be required
@@ -928,7 +973,7 @@ demonstrates how to generate an embed token with an effective identity
 containing the **LocalizedUser** role using the Power BI .NET SDK.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image28.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image34.png"
 style="width:6.56809in;height:3.25059in" />
 
 ## Summary
