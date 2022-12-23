@@ -15,8 +15,8 @@ skills required to build Power BI reports that support multiple
 languages. You need to learn a few key concepts about how Power BI
 translations work and how to automate repetitive tasks that would take
 forever to complete manually. An essential part of this guidance is
-based on using an external tool named [Translations
-Builder](https://github.com/PowerBiDevCamp/TranslationsBuilder) that’s
+based on using an external tool named [**Translations
+Builder**](https://github.com/PowerBiDevCamp/TranslationsBuilder) that’s
 been created for content creators using Power BI Desktop. Once you
 understand how all the pieces fit together, you’ll be able to build
 multi-language reports for Power BI using a strategy that is reliable,
@@ -27,7 +27,7 @@ predictable and scalable.
 This article is accompanied a [**live
 demo**](https://multilanguagereportdemo.azurewebsites.net/) based on a
 single PBIX file solution named
-[ProductSalesMultiLanguage.pbix](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/LiveDemo/ProductSalesMultiLanguage.pbix).
+[**ProductSalesMultiLanguage.pbix**](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/LiveDemo/ProductSalesMultiLanguage.pbix).
 This live demo shows the potential of building multi-language reports
 for Power BI. The report in the live demo can be loaded using English,
 Spanish, French, German, Dutch, Italian, Portuguese, Greek, Russian,
