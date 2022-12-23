@@ -56,7 +56,7 @@ that all the text-based elements for the entire report are now displayed
 with their German translations instead of with the default English
 translations.
 
-### Power BI Support for Translations and Localization
+### Power BI Support for Metadata Translations
 
 The primary localization feature in Power BI used to build
 multi-language reports is known as **metadata translations**. Power BI
@@ -95,7 +95,7 @@ translations for text values stored as part of the report layout.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image2.png"
-style="width:3.12857in;height:1.11105in" />
+style="width:2.44828in;height:0.86946in" />
 
 Think about a common scenario where you add a textbox or a button to a
 Power BI report and then you type in literal text for a string value
@@ -106,6 +106,97 @@ second example, page tabs in a Power BI report are also problematic
 because their display names cannot be localized. Therefore, you must
 design multi-language reports so that page tabs are hidden and never
 displayed to the user.
+
+### Implementing Translations using Dynamic Measures
+
+A second essential Power BI feature to assist with building
+multi-language reports is the DAX **USERCULTURE()** function. The
+following screenshot shows how the live demo displays the return value
+of **USERCULTURE()** in the upper right corner of the report banner. You
+will not typically display something like this in a real application,
+but it’s included with the live demo so you can see what language and
+locale are being used as you switch between languages.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image3.png"
+style="width:6.85535in;height:0.4947in" />
+
+The **USERCULTURE()** function returns a string with lower-case language
+ID parsed together with a hyphen and a locale identifier that specifies
+a geographical region. Here are a few examples of strings returned by
+**USERCULTURE()**.
+
+- **en-US** \[language=English, locale identifier=United States\]
+
+- **es-ES** \[language=Spanish, locale identifier=Spain\]
+
+- **fr-FR** \[language=French, locale identifier=French\]
+
+- **de-DE** \[language=German, locale identifier=Germany\]
+
+- **ja-JP** \[language=Japanese, locale identifier=Japan\]
+
+Remember that you can only use the **USERCULTURE()** function to
+implement dynamic translations in a measures. That’s because measures
+are always evaluated at query time so they reflect the language and
+locale of the current user. However, you cannot effectively use the
+**USERCULTURE()** function in the DAX expression for columns and tables.
+That’s because these DAX expressions are evaluates only once when a
+dataset loads into memory. Only the DAX expressions for measures will be
+recalculated each time a new user accesses a dataset already loaded into
+memory.
+
+You can write a measure with DAX to obtain the language ID for the
+current user using **USERCULTURE** and **LEFT**.
+
+CurrentLanguage = LEFT(USERCULTURE(), 2)
+
+Taking things one step further, you can add the **SWITCH** statement to
+create a measure for dynamic translaltions.
+
+Product Sales Report Label = SWITCH(LEFT(USERCULTURE(), 2),
+
+"es", "Informe De Ventas De Productos",
+
+"fr", "Rapport Sur Les Ventes De Produits",
+
+"de", "Produktverkaufsbericht",
+
+"Product Sales Report"
+
+)
+
+### Formatting Dates and Times with the Current User Locale
+
+The second part of the string returned by **USERCULTURE** is the locale
+identifier which specifies a geographical region. Let’s start with an
+example. Consider a scenario where you are building a report for an
+audience of users that live in both New York and in London. All these
+users speak English, but they live in different regions where dates and
+numbers are formatted different.
+
+A user from New York has a locale identifier of en-**US** while a user
+in London has a locale identifier of en-**GB**. It’s possible to
+discover the locale identifier of the current user in a measure by
+parsing the value returned by **USERCULTURE()**. However, you find that
+is not necessary in the majority of cases.
+
+That’s because the Power BI visuals used in a report know how to do the
+right thing. More specifically, a Power BI visual will automatically
+inspect the locale of the current user when formatting a date or a
+number. The one thing you need to pay attention to is the formatting
+strings you use to configure the columns and measures that are based on
+date and numeric datatypes.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image4.png"
+style="width:2.38961in;height:1.31848in" />
+
+of the current user by examine the
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image5.png"
+style="width:1.45455in;height:0.9896in" />
 
 ### Understanding the Three Types of Translations
 
@@ -129,14 +220,14 @@ following screenshot shows how metadata translations provide German
 names for the measures displayed in card visuals.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image3.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image6.png"
 style="width:6.6in;height:0.47588in" />
 
 Metadata translations are also used to display column names and measure
 names in tables and matrices.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image4.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image7.png"
 style="width:6.98in;height:1.25963in" />
 
 Metadata translations are the easiest to create, manage and integrate
@@ -157,7 +248,7 @@ the live demo with the report title and the captions of navigation
 buttons.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image5.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image8.png"
 style="width:7.20667in;height:1.15413in" />
 
 Report label translations are harder to create and manage than metadata
@@ -179,14 +270,14 @@ example, some users see products names in English while other users see
 product names in secondary languages.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image6.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image9.png"
 style="width:3.98823in;height:1.78667in" />
 
 Data translations also appear in the axes of cartesian visuals and in
 legends as shown in the following screenshot.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image7.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image10.png"
 style="width:6.56989in;height:1.56667in" />
 
 Data translations are harder to design and implement than the other two
@@ -224,7 +315,7 @@ upgrade operation by importing an updated version of the PBIX project
 file.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image8.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image11.png"
 style="width:1.96338in;height:0.85324in" />
 
 The single PBIX file approach doesn't always provide the flexibility you
@@ -242,7 +333,7 @@ PBIX project files with report layouts which can be deployed and updated
 independently of the underlying dataset.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image9.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image12.png"
 style="width:2.37794in;height:1.28333in" />
 
 From the perspective of adding multi-language support to a Power BI
@@ -281,7 +372,7 @@ the process of creating and managing metadata translations within a
 Power BI dataset.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image10.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image13.png"
 style="width:5.20126in;height:2.00562in" />
 
 Why dataset definition instead of dataset? The dataset inside a PBIX
@@ -306,7 +397,7 @@ After installation, you should be able to launch Translations Builder
 from the External Tools tab in Power BI Desktop.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image11.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image14.png"
 style="width:3.86in;height:1.14848in" />
 
 When you launch an external tool like **TranslationsBuilder**, the
@@ -327,7 +418,7 @@ translations grid to create, view and edit translations with an
 experience similar to working with an Excel spreadsheet.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image12.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image15.png"
 style="width:3.99145in;height:1.79098in"
 alt="Graphical user interface, application Description automatically generated" />
 
@@ -342,7 +433,7 @@ require translations. The following screenshot shows a simple data model
 before it’s been modified to support secondary languages.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image13.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image16.png"
 style="width:4.67317in;height:2.17692in"
 alt="Graphical user interface, application Description automatically generated" />
 
@@ -352,7 +443,7 @@ fourth column display the translation for the dataset’s default language
 which in this case is English \[en-US\].
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image14.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image17.png"
 style="width:3.04403in;height:1.18999in"
 alt="Table Description automatically generated" />
 
@@ -360,7 +451,7 @@ Translations Builder provides an **Add Language** command to add
 secondary languages to the project’s data model.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image15.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image18.png"
 style="width:4.42767in;height:0.74013in"
 alt="Background pattern Description automatically generated" />
 
@@ -368,7 +459,7 @@ Clicking **Add Language** displays the **Add Language** dialog which
 allows the user to add one or more languages.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image16.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image19.png"
 style="width:2.05489in;height:2.15426in"
 alt="Graphical user interface Description automatically generated" />
 
@@ -376,7 +467,7 @@ After a language has been added, the user can see the language in the
 **Secondary languages** list.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image17.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image20.png"
 style="width:5.14465in;height:1.18499in"
 alt="A picture containing application Description automatically generated" />
 
@@ -384,7 +475,7 @@ Adding a new language will also add a new column of editable cells to
 the translations grid.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image18.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image21.png"
 style="width:4.63759in;height:1.61905in"
 alt="Table Description automatically generated" />
 
@@ -393,7 +484,7 @@ involved, they can add and update translations for secondary languages
 directly in the translation grid with an Excel-like editing experience.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image19.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image22.png"
 style="width:3.8239in;height:1.22098in"
 alt="Table Description automatically generated" />
 
@@ -402,18 +493,7 @@ object to the dataset. Instead, Translations Builder is actually adding
 a **Culture** object with includes both a language ID and a locale
 identifier. In Power BI datasets, a **Culture** object is identified
 using a string-based key which combines a lower-case language ID and an
-upper-case locale identifier for the geographical region. Here are a few
-examples of strings which identity a specific **Culture** object.
-
-- **en-US** \[language=English, locale identifier=United States\]
-
-- **es-ES** \[language=Spanish, locale identifier=Spain\]
-
-- **fr-FR** \[language=French, locale identifier=French\]
-
-- **de-DE** \[language=German, locale identifier=Germany\]
-
-- **ja-JP** \[language=Japanese, locale identifier=Japan\]
+upper-case locale identifier for the geographical region.
 
 You should understand that Translations Builder has abstracted away the
 differences between a language and a culture. This has been done to
@@ -433,7 +513,7 @@ Therefore, you must always return back to Power BI Desktop and click the
 created or edited translations.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image20.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image23.png"
 style="width:4.41351in;height:1.30818in"
 alt="Graphical user interface, application, Word Description automatically generated" />
 
@@ -456,7 +536,7 @@ file, a user can publish the PBIX project from Power BI Desktop to the
 Power BI Service.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image21.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image24.png"
 style="width:5.19816in;height:0.8239in"
 alt="Graphical user interface, application Description automatically generated" />
 
@@ -476,7 +556,7 @@ browser as it reloads the report. If you load a report using a
 experience for the Power BI Service UI switch from English to Spanish.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image22.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image25.png"
 style="width:6.48154in;height:0.81132in"
 alt="A screenshot of a computer Description automatically generated" />
 
@@ -484,7 +564,7 @@ You will also see that the report displays the Spanish translations for
 the names of columns and measure.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image23.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image26.png"
 style="width:5.54899in;height:1.50943in"
 alt="Graphical user interface, text, application Description automatically generated" />
 
@@ -507,6 +587,48 @@ If you want to jump in and get started with Translations Builder right
 away, you can work through the hands-on lab titled [Lab 01: Getting
 Started with Translations
 Builder](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Labs/Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.md).
+
+### Embedding Power BI Reports Using a Specific Language and Locale
+
+If you are developing with Power BI embedding, you can use the Power BI
+JavaScript API to load reports with a specific language and locale using
+the **localeSettings** parameter. The **localeSettings** parameter is an
+object with a **language** property that can be included as part of the
+**config** object that is passed in the call to **powerbi.embed** as
+shown in the following code.
+
+let config = {
+
+type: "report",
+
+id: reportId,
+
+embedUrl: embedUrl,
+
+accessToken: embedToken,
+
+tokenType: models.TokenType.Embed,
+
+localeSettings: { language: "de-DE" }
+
+};
+
+let report = powerbi.embed(reportContainer, config);
+
+When you embed reports using an explicit value for the **formatLocale**
+parameter, the **UserCulture** function will work *correctly. That means
+you can write and test measures that conditionally return values based
+on the user's locale. This is* different from the scenario in which
+you’re loading reports in the Power BI Service using the **language**
+query string parameter where the return value of the **UserCulture**
+function does not return the expected value.
+
+In the screenshot below, you can see a visual in the top right
+displaying a text value of **de-DE**. This visual displays the value
+returned by the **UserCulture** function. You can inspect this value
+when loading a report into the Power BI Service or with Power BI
+embedding to determine whether the **UserCulture** is returning the
+language and locale you expect.
 
 ### Generating Machine Translations using Azure Translator Service
 
@@ -559,7 +681,7 @@ it possible to configure the key and location to access the Azure
 Translator Service.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image24.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image27.png"
 style="width:4.62372in;height:1.74468in"
 alt="Table Description automatically generated with medium confidence" />
 
@@ -570,541 +692,11 @@ all languages at once. There are also commands to generate machine
 translations only for the translations that are currently empty.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image25.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image28.png"
 style="width:4.92453in;height:1.35122in"
 alt="Graphical user interface, application Description automatically generated" />
 
-### Understanding the Localized Labels Table
-
-When designing reports, it's a common practice to use text-based labels
-for report elements such as titles, headings and button captions. You've
-learned that any text value stored in a report layout cannot be
-localized. If you want to localize the text-based labels which are
-displayed on a Power BI report, then those labels must be defined inside
-the dataset. This leads to the innovative technique of creating a
-specialized table in the dataset definition for localized labels.
-
-The idea behind the **Localized Labels** table is pretty simple.
-
-You can localize the name of any measure inside a dataset. When you need
-a text label for a report title, you can add a new measure to the
-**Localized Labels** table and then give the measure a name for the
-English label such as **European Sales Report**. Since the label is a
-measure name, you can add metadata translations to supply a localized
-version of this label for each language.
-
-SHOW MENU to create localized labels table.
-
-The **TranslationsBuilderLiveDemo.pbix** sample demonstrates a hidden
-**Localized Labels** table to provide a set of localized labels for all
-titles, headings and button captions used throughout the report.
-
-Use them for report title. Easy to add to a Card visual or Share object
-such as a Rectangle.
-
-Now that you've seen how to create the **Localized Labels** table, it's
-time to move ahead and learn how to surface the measure name for a
-localized label on a Power BI report.
-
-### Surfacing Report Labels on a Report Page
-
-### Adding Support for Page Navigation
-
-As you recall, you cannot display Power BI report page tabs to the user
-in a multi-language report because page tabs do not support
-localization. Therefore, you must provide some other means for users to
-navigate from page to page. This can be accomplished using a design
-technique where you add shapes to a report which act as buttons. When
-the user clicks on a shape, the shape will apply a bookmark to navigate
-to another page. Let's step through the process of building a navigation
-menu that supports localization using measures from the **Localized
-Labels** table.
-
-The first thing you need to do is to hide every page in the report
-except for the first page which acts as the landing page.
-
-Next, create a set of bookmarks. Each bookmark should be created to
-navigate to a specific page. The **ProductSales.pbix** developer sample
-demonstrates this technique by adding a bookmark for each page supported
-by the navigation menu.
-
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image26.png"
-style="width:1.81164in;height:2.23313in"
-alt="Graphical user interface, text, application Description automatically generated" />
-
-At this point, you've learned how to create the **Localized Labels**
-table and add labels. You also learned how to generate the Translated
-Localized Labels table and to bind the measures in that table to report
-elements such as Card visuals, shapes and buttons. These are the
-localization techniques you will continue to use as you create and
-maintain reports that must support multiple languages
-
-### Enable Human Workflows for Translation using Export and Import
-
-Another important consideration when building multi-language reports
-involves the human aspect of translating text values from one language
-to another. While it's possible to generate the first round of metadata
-translations using machine translations, it's likely you will eventually
-need to integrate those friendly carbon-based life forms (i.e. people)
-who play the role of translators to generate high quality translations.
-Furthermore, you cannot expect that people who work as professional
-translators will be able to use an advanced Power BI data modeling tool
-like the Tabular Editor.
-
-While it's theoretically possible to have human translators work on
-files generated by the **Export Translations** command of the Tabular
-Editor, the JSON-based format will likely be rejected by professional
-translator teams due to it being a non-standard file format that is hard
-to work with. Once you begin writing custom code with TOM, however, you
-can generate the translation files that are sent out to a translation
-team using whatever file format they require.
-
-If you are working with a professional translation team, you might be
-requires to generate translation files in a standard translation format
-such as RESX files or XLIFF files. Depending on the requirements of the
-translator team, you might be able to generate translations files in
-easy-to-use formats such as CSV files or XLSX files. The
-**TranslationsBuilder** application provides an **Export Translation
-Sheet** command which demonstrates how to generate a translation sheet
-for a human translator using a simple CSV format.
-
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image27.png"
-style="width:7.60715in;height:1.50649in"
-alt="Graphical user interface, application Description automatically generated" />
-
-When you click the **Export Translation Sheet** button, the
-**TranslationsBuilder** application generates a CSV file for the
-selected language using a naming format (e.g.
-**ProductSales-Translations-German.csv**) which includes the dataset
-name and the language for translation. After generating the file and
-saving it to the location of **TranslationsOutboxFolderPath** the
-**TranslationsBuilder** application will then open the translation sheet
-in Microsoft Excel.
-
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image28.png"
-style="width:7.09418in;height:2.19345in"
-alt="Graphical user interface, application, table, Excel Description automatically generated" />
-
-Once these translation files have been generated, they can be sent out
-to the translation team. Once these translations files have been edited
-and returned with the high-quality human translations, you can then use
-the **Import Translations** command to important these human
-translations which will then effectively overwrite the machine
-translations.
-
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image29.png"
-style="width:6.99117in;height:1.35714in"
-alt="Graphical user interface, application Description automatically generated" />
-
-### Embed Power BI Reports with Specific Languages and Locales
-
-If you are developing with Power BI embedding, you can use the Power BI
-JavaScript API to load reports with a specific language and locale using
-the **localeSettings** parameter. The **localeSettings** parameter is an
-object with a **language** property and a **formatLocale** property that
-can be included as part of the **config** object that is passed in the
-call to **powerbi.embed** as shown in the following code.
-
-let config = {
-
-type: "report",
-
-id: reportId,
-
-embedUrl: embedUrl,
-
-accessToken: embedToken,
-
-tokenType: models.TokenType.Embed,
-
-localeSettings: { language: "de-DE", formatLocale: "de-DE" }
-
-};
-
-let report = powerbi.embed(reportContainer, config);
-
-When you embed reports using an explicit value for the **formatLocale**
-parameter, the **UserCulture** function will work correctly. That means
-you can write and test measures that conditionally return values based
-on the user's locale. This is different from the scenario in which
-you’re loading reports in the Power BI Service using the **language**
-query string parameter where the return value of the **UserCulture**
-function does not return the expected value.
-
-In the screenshot below, you can see a visual in the top right
-displaying a text value of **de-DE**. This visual displays the value
-returned by the **UserCulture** function. You can inspect this value
-when loading a report into the Power BI Service or with Power BI
-embedding to determine whether the **UserCulture** is returning the
-language and locale you expect.
-
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image30.png"
-style="width:6.95714in;height:3.94238in"
-alt="Chart, waterfall chart Description automatically generated" />
-
-This concludes the coverage of developing an external tool with custom
-code and TOM to automate the development tasks associated with creating
-and maintaining metadata translations in a multi-language reporting
-solution. Now it’s time to move ahead to the final section which
-addresses the ***why***, ***when*** and ***how*** of implementing data
-translations.
-
-When creating a report for Power BI, it's a common practice to add
-text-based labels for report elements such as titles, headings and
-button captions. However, this creates an unexpected bump in the road
-when building multi-language reports in Power BI Desktop. The problem is
-that you cannot create labels for a report using the standard approach
-where you add textboxes and buttons to the report. That's because any
-text you add for a property value of a textbox or a button is stored in
-the report layout and, therefore, cannot be localized.
-
-As discussed earlier in this article, the Power BI localization features
-are supported at the dataset definition level but not at the report
-layout level. At first you might ask the question ***how can I localize
-text-based values that are not stored inside the dataset definition?***
-The answer to this question is that you cannot.
-
-A better question to ask is ***how can I add the text-based values for
-labels so they become part of the dataset definition?*** Once the
-text-based values for labels become part of the dataset definition, then
-they can be localized. This leads to an innovative approach of creating
-the **Localized Labels** table. This design technique will be discussed
-in detail in the next section of this article.
-
-The **live demo** demonstrates how to implement localized labels in the
-report title and the top navigation menu buttons. The following
-screenshot shows the how button captions are translated when loaded with
-five different languages.
-
-The live demo also demonstrates how to implement data translations. With
-metadata translations, you can see the names of columns and measures
-change as you switch between languages. Data translations go further to
-localize the product names in rows of the **Products** table. The
-following screenshot shows how the **ProductSales.pbix** developer
-sample provides data translations for product names as well.
-
-## Design and Implement a Data Translations Strategy
-
-While all multi-language reports will require metadata translations, you
-cannot assume the same for data translations. Some projects will require
-data translations and others will not. In order the determine whether
-your project will require data translations, you'll need to think
-through the use cases you plan to support with your reporting solution.
-You will find that adding support for data translations can involve a
-good deal of planning and effort. You might decide to only support data
-translations if they are a hard requirement for your project.
-
-Implementing data translations is quite different from implementing
-metadata translations. They are different because Power BI doesn't offer
-any localization features to assist you with data translations. Instead,
-you must implement a data translation strategy on your own by extending
-a dataset definition with fundamental building blocks such as tables,
-columns, measures and filters. This article walks through one possible
-solution for implementing data translations by examining how this
-requirement is met in the **ProductSales.pbix** developer solution.
-
-### Determine Whether Your Solution Requires Data Translations
-
-To determine whether you need to implement data translations, start by
-thinking about how your reporting solution will be deployed and think
-about the use case for its intended audience. That leads to a key
-question. **Will you have people who speak different languages looking
-at the same database instance?**
-
-Imagine a scenario where you are developing a report template for a SaaS
-application with a well-known database schema. Now let's say some
-customer maintain their database instance in English while others
-maintain their database instances in other languages such as Spanish or
-German. There is no need to implement data translations in this use case
-as the data from any database instance only needs to be viewed by users
-in a single language.
-
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image31.png"
-style="width:5.84793in;height:4.02857in" />
-
-The important observation is that each customer deployment uses a single
-language for its database and all its users. Metadata translations must
-be implemented is this use case so you can deploy a single version of
-the PBIX file across all customer deployments. However, there is no need
-to implement data translations when no database instance ever needs to
-be viewed in multiple languages.
-
-Now let's examine a different use case which introduces the requirement
-of data translations. This is the use case for the **ProductSales.pbix**
-developers sample which involves a single database instance containing
-sales performance data across several European countries. This reporting
-solution has the requirement to display its report in different
-languages while the data being analyzed is coming from a single database
-instance.
-
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image32.png"
-style="width:6.14478in;height:1.77914in" />
-
-Once again, the key question to ask is whether you will have people who
-speak different languages looking at the same database instance. If the
-answer to that question is ***NO***, then you will not be required to
-implement data translations. If the answer to that question is
-***YES***, then you should ask additional questions because there are
-other consideration you should think through before deciding whether it
-make sense to implement data translations.
-
-When you're considering whether to implement data translations, you
-should examine the text-based columns which are candidates for
-translation to determine how hard will it be to translate those text
-value to secondary languages. Columns with short text values for things
-like product names, product categories and country names are a good
-candidates for data translations because the values are short and easy
-to translate. What if you have a column for product descriptions where
-each row has two to three sentences of text. While you can provide
-translations for product descriptions, they will require more effort to
-generate high quality translations. In general, columns with longer text
-values are less ideal as candidates for data translations.
-
-You should also consider the number of distinct column values that will
-require translation. You can easily translate product names in a
-database that holds 100 products. You can probably translate product
-names when the number gets up to 1000. However, what happens if the
-number of translated values reaches 10,000 or 100,000. Your translation
-team might have trouble scaling to handle that volume of language
-translation by humans.
-
-You also have to consider that your commitment to implement data
-translations often requires on-going maintenance. Every time someone
-adds a new record to the underlying database, you might be required to
-add new data translations for it. This is very different from
-implementing metadata translations where you create a finite number of
-translation for database objects and your work is done. Metadata
-translations don't require on-going maintenance as long as the
-underlying dataset schema remains the same.
-
-In summary, there are many factors that go into deciding whether you
-should implement data translations. You must decide whether you can
-afford to spend the time and effort it takes to implement data
-translations properly. You might decide that implementing metadata
-translations goes far enough. If your primary goal is to make your
-reporting solution compliant with laws or regulations, you might that
-find implementing metadata translations is all you need.
-
-### Modify the Dataset Design to Support Data Translations
-
-In years long before Microsoft introduced Power BI, software developers
-around the world were already building multi-language applications that
-support data translations. After two decades of designing and refining
-various database designs, several common design patterns have emerged as
-industry best practices to support data translations. Some of these
-design patterns involve adding a new table column for each language
-while other design patterns involve adding a new table row for each
-language. Column-based approach has benefits and the guidance in this
-article will focus on that approach.
-
-The following diagram shows the use case for the **ProductSales.pbix**
-developer sample. Note that this approach eliminates the need to
-redesign the underlying database to support data translations. Instead,
-all the ETL logic used to implemented data translations can be packaged
-and maintained inside a PBIX template file.
-
-Now it's time to examine a few queries in the **ProductSales.pbix**
-developer solution so you can see how Power Query can be used to
-generate the extra rows required in the row replication pattern. Let's
-begin by examining the query named **Languages** which generates a table
-based on the following M code.
-
-let
-
-OutputSchema = type table \[ LanguageTag=text, DisplayName=text,
-NativeName=text, SortOrder=number \],
-
-Languages = \#table(OutputSchema, {
-
-{ "en-US", "English", "English", 1 },
-
-{ "es-ES", "Spanish", "español", 2 },
-
-{ "fr-FR", "French", "français", 3 },
-
-{ "de-DE", "German", "Deutsch", 4 },
-
-{ "nl-NL", "Dutch", "Nederlands", 5 }
-
-})
-
-in
-
-Languages
-
-The **Languages** query generates a table with a row for each language
-which will be used in the row expansion process.
-
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image33.png"
-style="width:3.76488in;height:0.80393in" />
-
-### Load Reports using Bookmarks to Filter Data Translations
-
-Once you have created the Field Parameters to load \tables which use the
-row replication strategy, you must then figure out how to filter table
-rows so a user only sees the rows for one language at a time. In the
-**ProductSales.pbix** developer sample, the two tables that require
-filtering are **Products** and **Countries**. The following screenshot
-shows how you can use the **Filter** pane in Power BI Desktop to set
-report-level filtering on the **LanguageTag** column on both the
-**Products** table and the **Countries** table so only rows with
-**German** translations are displayed to the user.
-
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image34.png"
-style="width:7.1846in;height:2.4945in" />
-
-The best way to control filtering in a Power BI report is to create a
-set of bookmarks. The **ProductSales.pbix** developer sample includes a
-set of bookmarks that can be used to apply the filtering required for
-each of the supported languages. Now you can simply apply a bookmark to
-set the data translations filtering as shown in the following
-screenshot.
-
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image35.png"
-style="width:7.26455in;height:2.55714in" />
-
-Earlier in this article, you learned that it is possible to open a
-report in the Power BI Service using the **language** query string
-parameter to force a report to load the metadata translations for a
-specific language. Now that the report implements data translations in
-addition to metadata translations, it is now necessary to pass a second
-query string parameter to apply a bookmark. This query string parameter
-is named **bookmarkGuid** and it makes it possible to apply a bookmark
-as the report is loading before anything is displayed to the user.
-
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image36.png"
-style="width:7.21417in;height:3.19345in" />
-
-### Setting the Language for Current User using RLS and UserCulture
-
-If you deploy a multi-language report through the Power BI Service, your
-deployment scenario might require you to use URLs with query string
-parameters for **language** and **bookmarkGuid** to ensure that reports
-load with the correct metadata translations and the data translations
-filtering for a specific language. When you develop with Power BI
-embedding you have more control because you can embed the report with a
-**localeSettings** object which allows you to the specify the
-**language** and the **formatLocale**.
-
-If you are developing multi-language reports for use in a custom
-application that uses Power BI embedding, you can control data
-translations filtering using the Power BI features for Row Level
-Security (RLS). This approach involves creating a single RLS role named
-**LocalizedUser**. This RLS role applies a filter on the **Products**
-table where the **LanguageTag** column is equal to the return value of
-the **UserCulture** function.
-
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image37.png"
-style="width:5.02245in;height:1.65059in" />
-
-The RLS role named **LocalizedUser** also applies a second filter on the
-**Countries** table where the **LanguageTag** column is equal to the
-return value of the **UserCulture** function.
-
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image38.png"
-style="width:5.02055in;height:1.57917in" />
-
-If you are developing with App-Owns-Data embedding, you will be required
-to generate embed tokens with an effective identity which includes the
-RLS role named **LocalizedUser**. The following code listing
-demonstrates how to generate an embed token with an effective identity
-containing the **LocalizedUser** role using the Power BI .NET SDK.
-
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image39.png"
-style="width:6.56809in;height:3.25059in" />
-
-## Summary
-
-This article has examined how to use Power BI localization features to
-design and implement multi-language reports. Along the way you learned
-that Power BI datasets provide support for localization while the Power
-BI report designer does not. This partial support for localization in
-Power BI can lead to confusion as many common Power BI Desktop report
-design techniques do not support localization and must be avoided.
-
-Becoming successful at building multi-language reports requires a deep
-understanding of Power BI architecture and a thorough knowledge of which
-report design techniques support localization. You 've learned how to
-prepare datasets and reports for localization and how to create the
-**Localized Labels** table so you can localize report labels such as
-titles, headings and button captions. You also learned several different
-approaches you can use to add metadata translations to a dataset
-definition. After reading this article, you should now possess a deeper
-understanding and the fundamental skills you need to build
-multi-language reports in a reliable and testable fashion.
-
-This article also discussed when and how to implement data translations.
-You have learned that some projects will require data translations while
-other will not. You must decide whether to implement data translations
-on a project-by-project basis. Fortunately, you now know the right
-questions to ask in order to make that decision.
-
-The **ProductSales.pbix** developer sample demonstrates how to implement
-data translations using the row replication pattern. While this design
-approach will work well for some scenarios, it might have trouble
-scaling in larger scenarios as the number of rows in the tables with
-translated content increases due to the use of many-to-many
-relationship. In the fullness of time, Power BI developers will continue
-to come up with creative and innovative designs to implement an
-efficient data translation strategy for these types of scenarios.
-
-Also remember that one fine day in the future that Power BI will
-introduce support for calculated columns with dynamic evaluation. That
-will certainly open up opportunities for creating new designs for
-implementing data translation strategies that are more performant and
-less complex than using the row replication pattern which was
-demonstrated in this article with the **ProductSales.pbix** developer
-solution.
-
-## Prepare Datasets and Reports for Localization
-
-So far you've learned about essential concepts and background
-information you'll need to build multi-language reports. Now, it's time
-to move ahead and discuss the actual development process. We'll start by
-discussing a few general topics associated with software localization.
-After that, we'll move on to topics that are specific to Power BI and
-designing reports in Power BI Desktop.
-
-When it comes to localizing software, there are some universal
-principals to keep in mind. The first is to plan for localization from
-the start of any project. It's significantly harder to add localization
-support to an existing dataset or report that was initially built
-without any regard for Internationalization or localization. This is
-especially true with Power BI reports because there are so many popular
-design techniques that do not support localization. You might find that
-much of the work for adding localization support to existing Power BI
-reports involves moving backward and undoing the things that do not
-support localization before you can move forward with design techniques
-that do support localization.
-
-Another important concept in localization is to plan for growth. A label
-that's 400 pixels wide when displayed in English could require a much
-greater width when translated into another language. If you optimize the
-width of your labels for text in English, you might find that
-translations in other languages introduce unexpected line breaks or get
-cut off which, in turn, creates a compromised user experience.
-
-Adding a healthy degree of padding to localized labels is the norm when
-developing Internationalized software and it's essential that you test
-your reports with each language you plan to support. In essence, you
-need to ensure your report layouts looks the way you expect with any
-language you have chosen to support.
-
-### Avoid Report Design Techniques that Do Not Support Localization
+### Avoiding Report Design Techniques that Do Not Support Localization
 
 If you have experience with Power BI Desktop, it's critical that you
 learn which report design techniques to avoid when you begin building
@@ -1149,3 +741,539 @@ literal text you type into the **Title** property of the visual will be
 added to the report layout and cannot be localized. Therefore, you
 should either leave the visual **Title** property with its default value
 or hide the title so it is not displayed.
+
+### Understanding the Localized Labels Table
+
+As discussed earlier in this article, the Power BI localization features
+are supported at the dataset definition level but not at the report
+layout level. At first you might ask the question ***how can I localize
+text-based values that are not stored inside the dataset definition?***
+The answer is that there is no easy way to accomplish this. A better
+question to ask is ***how can I add the text-based values for labels so
+they become part of the dataset definition?***
+
+The idea behind the **Localized Labels** table is pretty simple. Power
+BI supports tracking translations for dataset objects. Therefore, you
+create a special table in the dataset and add a measure for each report
+label. Once you have created a measure for each report label, you can
+just let Power BI store and manage report label translations in the
+exact same way that it does for metadata translations.
+
+Translations Builder provides commands to create the **Localized
+Labels** table and to add a measure each time you add a report label.
+The Localized Labels table is created as a hidden table behind the
+scenes. The idea is that you can do all the work to create and manage
+report labels inside the Translation Builder user experience. There is
+no need to inspect or modify the Localized Labels table using the Power
+BI Desktop dataset design experience.
+
+The **TranslationsBuilderLiveDemo.pbix** sample demonstrates a hidden
+**Localized Labels** table to provide a set of localized labels for all
+titles, headings and button captions used throughout the report.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image29.png"
+style="width:2.06788in;height:1.78616in" />
+
+Translations Builder 1.0 introduced the Localized Labels table, but it
+did not take the strategy far enough. Consequently, it was petty awkward
+to surface report label translations from the Localized Labels table
+directly on a report page. With version 2.0, Translations Builder has an
+evolved strategy to perform more work behind the scenes in order to make
+it easier and more natural for report designers to surface report label
+translations on a report page.
+
+You start by adding the **Localized Labels** table to the current PBIX
+project by executing the **Create Localized Labels Table** command from
+the **Generate Translated Tables** menu.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image30.png"
+style="width:3.21384in;height:1.25001in"
+alt="Graphical user interface, text, application Description automatically generated" />
+
+When you execute this command to create the Localized Labels Table, you
+will be prompted by the following dialog asking if you want more
+information about the Localized Labels strategy. Interestingly enough,
+you’ll be redirect to this article.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image31.png"
+style="width:2.18134in;height:1.02329in"
+alt="Graphical user interface, application Description automatically generated" />
+
+After the **Localized Labels** table has been created, you will see
+three sample report labels as shown in the following screenshot. In most
+cases you will want to delete these sample report labels and replace
+them with those needed on the current project.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image32.png"
+style="width:5.94813in;height:1.31746in"
+alt="Graphical user interface Description automatically generated" />
+
+Remember, there is no need to interact with the **Localized Labels**
+table in Power BI Desktop. You can add and manage all the report labels
+you need using **Translations Builder**. To create your first report
+label, you can drop down the **Generate Translated Tables** menu and
+select **Add Labels to the Localized Labels Table**. Note you can also
+execute the **Add Labels to the Localized Labels Table** command using
+the shortcut key of **Ctrl+A**.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image33.png"
+style="width:3.16079in;height:1.1761in"
+alt="Graphical user interface, text, application Description automatically generated" />
+
+You can add report labels one at a time by typing in the text for the
+label and then clicking **Add Label**.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image34.png"
+style="width:3.45007in;height:1.07014in"
+alt="A picture containing icon Description automatically generated" />
+
+You can also move the **Add Localized Labels** dialog into advanced mode
+where you can delete all existing labels at once and enter a large batch
+of report labels in a single operation.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image35.png"
+style="width:3.01887in;height:1.87409in" />
+
+Once you have added a report label, it will appear in the translation.
+Here is an example of the report labels in the translation grid for the
+live demo project.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image36.png"
+style="width:5.59748in;height:1.36746in" />
+
+There is one critical step you must complete after modifying report
+labels in the **Localized Labels** table. More specifically, you must
+execute **Generate Translated Localized Labels Table** to create the
+measures that will be used to surface report labels on a report.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image37.png"
+style="width:3.06918in;height:1.08398in"
+alt="Graphical user interface, text, application Description automatically generated" />
+
+Here is what happens.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image38.png"
+style="width:3.10692in;height:1.59051in" />
+
+Any you add or update an report labels in the Localized Labels table,
+you will need to execute **Generate Translated Localized Labels Table**.
+
+What do the measure look like? Great question.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image39.png"
+style="width:1.31832in;height:2.28302in" />
+
+Xxxxxxx
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image40.png"
+style="width:2.88737in;height:2.08176in" />
+
+Explain USERCULTURE() function and explain how it enables localization
+opportunities
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image41.png"
+style="width:2.87615in;height:2.26415in" />
+
+Remember to execute the **Generate Translated Localized Labels Table**
+command and time you make changes to the Localized Labels table.
+
+Also, you should not edit the DAX expressions of measures in the
+**Translated Localized Labels** table. Any changes you make will be lost
+as all the measures in this table are deleted and recreated each time
+you execute **Generate Translated Localized Labels Table**.
+
+### Surfacing Report Labels on a Report Page
+
+Ddddddd
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image42.png"
+style="width:5.05031in;height:2.13989in" />
+
+ccccc
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image43.png"
+style="width:4.59748in;height:2.75994in" />
+
+Xxxxx
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image44.png"
+style="width:3.38365in;height:1.08839in"
+alt="Table Description automatically generated with low confidence" />
+
+Xxx
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image45.png"
+style="width:2.46541in;height:0.86148in"
+alt="A picture containing application Description automatically generated" />
+
+Xxxx
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image46.png"
+style="width:2.77164in;height:2.51572in" />
+
+When it comes to localizing software, there are some universal
+principals to keep in mind. The first is to plan for localization from
+the start of any project. It's significantly harder to add localization
+support to an existing dataset or report that was initially built
+without any regard for Internationalization or localization. This is
+especially true with Power BI reports because there are so many popular
+design techniques that do not support localization. You might find that
+much of the work for adding localization support to existing Power BI
+reports involves moving backward and undoing the things that do not
+support localization before you can move forward with design techniques
+that do support localization.
+
+Another important concept in localization is to plan for growth. A label
+that's 400 pixels wide when displayed in English could require a much
+greater width when translated into another language. If you optimize the
+width of your labels for text in English, you might find that
+translations in other languages introduce unexpected line breaks or get
+cut off which, in turn, creates a compromised user experience.
+
+Adding a healthy degree of padding to localized labels is the norm when
+developing Internationalized software and it's essential that you test
+your reports with each language you plan to support. In essence, you
+need to ensure your report layouts looks the way you expect with any
+language you have chosen to support.
+
+### Adding Support for Page Navigation
+
+As you recall, you cannot display Power BI report page tabs to the user
+in a multi-language report because page tabs do not support
+localization. Therefore, you must provide some other means for users to
+navigate from page to page. This can be accomplished using a design
+technique where you add shapes to a report which act as buttons. When
+the user clicks on a shape, the shape will apply a bookmark to navigate
+to another page. Let's step through the process of building a navigation
+menu that supports localization using measures from the **Localized
+Labels** table.
+
+The first thing you need to do is to hide every page in the report
+except for the first page which acts as the landing page.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image47.png"
+style="width:7.49653in;height:0.69792in" />
+
+Next, create a set of bookmarks. Each bookmark should be created to
+navigate to a specific page. The **live demo** sample demonstrates this
+technique by adding a bookmark for each page supported by the navigation
+menu.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image48.png"
+style="width:1.59253in;height:1.67925in" />
+
+Cccc
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image49.png"
+style="width:4.16981in;height:1.73166in" />
+
+xxxx
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image50.png"
+style="width:4.22642in;height:1.68218in" />
+
+Xxx
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image51.png"
+style="width:2.99067in;height:2.61006in" />
+
+xxx
+
+At this point, you've learned how to create the **Localized Labels**
+table and add labels. You also learned how to generate the Translated
+Localized Labels table and to bind the measures in that table to report
+elements such as Card visuals, shapes and buttons. These are the
+localization techniques you will continue to use as you create and
+maintain reports that must support multiple languages
+
+### Enabling Human Workflows for Translation using Export and Import
+
+Another important consideration when building multi-language reports
+involves the human aspect of translating text values from one language
+to another. While it's possible to generate the first round of metadata
+translations using machine translations, it's likely you will eventually
+need to integrate those friendly carbon-based life forms (i.e. people)
+who play the role of translators to generate high quality translations.
+Furthermore, you cannot expect that people who work as professional
+translators will be able or willing to use Power BI Desktop and
+Translations Builder.
+
+The **TranslationsBuilder** introduces the concept of a translation
+sheet. A translation sheet is a CSV file that you generate with an
+export operation to send out to a translator. The translator performs
+the work to update the translation sheet and then returns it back to
+you. You can then execute an import operation the integrate the changes
+to translations by a translator back into the current PBIX project’s
+dataset.
+
+When you click the **Export Translation Sheet** button, the
+**TranslationsBuilder** application generates a CSV file for the
+selected language using a naming format (e.g.
+**ProductSales-Translations-German.csv**) which includes the dataset
+name and the language for translation. After generating the file and
+saving it to the location of **TranslationsOutboxFolderPath** the
+**TranslationsBuilder** application will then open the translation sheet
+in Microsoft Excel.
+
+Once these translation files have been generated, they can be sent out
+to the translation team. Once these translations files have been edited
+and returned with the high-quality human translations, you can then use
+the **Import Translations** command to important these human
+translations which will then effectively overwrite the machine
+translations.
+
+This concludes the coverage of developing an external tool with custom
+code and TOM to automate the development tasks associated with creating
+and maintaining metadata translations in a multi-language reporting
+solution. Now it’s time to move ahead to the final section which
+addresses the ***why***, ***when*** and ***how*** of implementing data
+translations.
+
+The **live demo** demonstrates how to implement localized labels in the
+report title and the top navigation menu buttons. The following
+screenshot shows the how button captions are translated when loaded with
+five different languages.
+
+The live demo also demonstrates how to implement data translations. With
+metadata translations, you can see the names of columns and measures
+change as you switch between languages. Data translations go further to
+localize the product names in rows of the **Products** table. The
+following screenshot shows how the **ProductSales.pbix** developer
+sample provides data translations for product names as well.
+
+## Implementing a Data Translations Strategy
+
+While all multi-language reports will require metadata translations and
+report label translations, you cannot assume the same for data
+translations. Some projects will require data translations and others
+will not. In order the determine whether your project will require data
+translations, you'll need to think through the use cases you plan to
+support with your reporting solution. You will find that adding support
+for data translations can involve a good deal of planning and effort.
+You might decide to only support data translations if they are a hard
+requirement for your project.
+
+Implementing data translations is quite different from implementing
+metadata translations or report label translations. They are different
+because Power BI doesn't offer any localization features to assist you
+with data translations. Instead, you must implement a data translation
+strategy which typically involves extending the underlying database with
+extrat columns to track translations for text in rows of data such as
+the names of products, categories and countries.
+
+### Determine Whether Your Solution Really Requires Data Translations
+
+To determine whether you need to implement data translations, start by
+thinking about how your reporting solution will be deployed and think
+about the use case for its intended audience. That leads to a key
+question. **Will you have people who speak different languages looking
+at the same database instance?**
+
+Imagine a scenario where you are developing a report template for a SaaS
+application with a well-known database schema. Now let's say some
+customer maintain their database instance in English while others
+maintain their database instances in other languages such as Spanish or
+German. There is no need to implement data translations in this use case
+as the data from any database instance only needs to be viewed by users
+in a single language.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image52.png"
+style="width:5.84793in;height:4.02857in" />
+
+The important observation is that each customer deployment uses a single
+language for its database and all its users. Metadata translations must
+be implemented is this use case so you can deploy a single version of
+the PBIX file across all customer deployments. However, there is no need
+to implement data translations when no database instance ever needs to
+be viewed in multiple languages.
+
+Now let's examine a different use case which introduces the requirement
+of data translations. This is the use case for the **ProductSales.pbix**
+developers sample which involves a single database instance containing
+sales performance data across several European countries. This reporting
+solution has the requirement to display its report in different
+languages while the data being analyzed is coming from a single database
+instance.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image53.png"
+style="width:6.14478in;height:1.77914in" />
+
+Once again, the key question to ask is whether you will have people who
+speak different languages looking at the same database instance. If the
+answer to that question is ***NO***, then you will not be required to
+implement data translations. If the answer to that question is
+***YES***, then you should ask additional questions because there are
+other consideration you should think through before deciding whether it
+make sense to implement data translations.
+
+When you're considering whether to implement data translations, you
+should examine the text-based columns which are candidates for
+translation to determine how hard will it be to translate those text
+value to secondary languages. Columns with short text values for things
+like product names, product categories and country names are a good
+candidates for data translations because the values are short and easy
+to translate. What if you have a column for product descriptions where
+each row has two to three sentences of text. While you can provide
+translations for product descriptions, they will require more effort to
+generate high quality translations. In general, columns with longer text
+values are less ideal as candidates for data translations.
+
+You should also consider the number of distinct column values that will
+require translation. You can easily translate product names in a
+database that holds 100 products. You can probably translate product
+names when the number gets up to 1000. However, what happens if the
+number of translated values reaches 10,000 or 100,000. If you cannot
+rely on machine-generate translations. your translation team might have
+trouble scaling up to handle that volume of human translations.
+
+You also have to consider that your commitment to implement data
+translations often requires on-going maintenance. Every time someone
+adds a new record to the underlying database, you might be required to
+add new data translations for it. This is very different from
+implementing metadata translations or report label translations where
+you create a finite number of translations for database objects and,
+after that point, your work is done. Metadata translations and report
+label translations don't require on-going maintenance as long as the
+underlying dataset schema and the report layout remain the same.
+
+In summary, there are many factors that go into deciding whether you
+should implement data translations. You must decide whether you can
+afford to spend the time and effort it takes to implement data
+translations properly. You might decide that implementing metadata
+translations goes far enough. If your primary goal is to make your
+reporting solution compliant with laws or regulations, you might that
+find implementing metadata translations is all you need.
+
+### Modify the Dataset Design to Support Data Translations
+
+The recommended way
+
+The following diagram shows the use case for the **ProductSales.pbix**
+developer sample. Note that this approach eliminates the need to
+redesign the underlying database to support data translations. Instead,
+all the ETL logic used to implemented data translations can be packaged
+and maintained inside a PBIX template file.
+
+Now it's time to examine a few queries in the **ProductSales.pbix**
+developer solution so you can see how Power Query can be used to
+generate the extra rows required in the row replication pattern. Let's
+begin by examining the query named **Languages** which generates a table
+based on the following M code.
+
+let
+
+OutputSchema = type table \[ LanguageTag=text, DisplayName=text,
+NativeName=text, SortOrder=number \],
+
+Languages = \#table(OutputSchema, {
+
+{ "en-US", "English", "English", 1 },
+
+{ "es-ES", "Spanish", "español", 2 },
+
+{ "fr-FR", "French", "français", 3 },
+
+{ "de-DE", "German", "Deutsch", 4 },
+
+{ "nl-NL", "Dutch", "Nederlands", 5 }
+
+})
+
+in
+
+Languages
+
+The **Languages** query generates a table with a row for each language
+which will be used in the row expansion process.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image54.png"
+style="width:3.76488in;height:0.80393in" />
+
+### Load Reports using Bookmarks to Filter Data Translations
+
+Once you have created the Field Parameters to load \tables which use the
+row replication strategy, you must then figure out how to filter table
+rows so a user only sees the rows for one language at a time. In the
+**ProductSales.pbix** developer sample, the two tables that require
+filtering are **Products** and **Countries**. The following screenshot
+shows how you can use the **Filter** pane in Power BI Desktop to set
+report-level filtering on the **LanguageTag** column on both the
+**Products** table and the **Countries** table so only rows with
+**German** translations are displayed to the user.
+
+The best way to control filtering in a Power BI report is to create a
+set of bookmarks. The **ProductSales.pbix** developer sample includes a
+set of bookmarks that can be used to apply the filtering required for
+each of the supported languages. Now you can simply apply a bookmark to
+set the data translations filtering as shown in the following
+screenshot.
+
+Earlier in this article, you learned that it is possible to open a
+report in the Power BI Service using the **language** query string
+parameter to force a report to load the metadata translations for a
+specific language. Now that the report implements data translations in
+addition to metadata translations, it is now necessary to pass a second
+query string parameter to apply a bookmark. This query string parameter
+is named **bookmarkGuid** and it makes it possible to apply a bookmark
+as the report is loading before anything is displayed to the user.
+
+## Summary
+
+This article has examined how to use Power BI localization features to
+design and implement multi-language reports. Along the way you learned
+that Power BI datasets provide support for localization while the Power
+BI report designer does not. This partial support for localization in
+Power BI can lead to confusion as many common Power BI Desktop report
+design techniques do not support localization and must be avoided.
+
+Becoming successful at building multi-language reports requires a deep
+understanding of Power BI architecture and a thorough knowledge of which
+report design techniques support localization. You 've learned how to
+prepare datasets and reports for localization and how to create the
+**Localized Labels** table so you can localize report labels such as
+titles, headings and button captions. You also learned several different
+approaches you can use to add metadata translations to a dataset
+definition. After reading this article, you should now possess a deeper
+understanding and the fundamental skills you need to build
+multi-language reports in a reliable and testable fashion.
+
+This article also discussed when and how to implement data translations.
+You have learned that some projects will require data translations while
+other will not. You must decide whether to implement data translations
+on a project-by-project basis. Fortunately, you now know the right
+questions to ask in order to make that decision.
+
+The **ProductSales.pbix** developer sample demonstrates how to implement
+data translations using the row replication pattern. While this design
+approach will work well for some scenarios, it might have trouble
+scaling in larger scenarios as the number of rows in the tables with
+translated content increases due to the use of many-to-many
+relationship. In the fullness of time, Power BI developers will continue
+to come up with creative and innovative designs to implement an
+efficient data translation strategy for these types of scenarios.
