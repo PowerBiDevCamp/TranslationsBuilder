@@ -27,13 +27,13 @@ predictable and scalable.
 This article is accompanied a [**live
 demo**](https://multilanguagereportdemo.azurewebsites.net/) based on a
 single PBIX file solution named
-[**TranslationsBuilderLiveDemo.pbix**](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/LiveDemo/TranslationsBuilderLiveDemo.pbix).
+[ProductSalesMultiLanguage.pbix](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/LiveDemo/ProductSalesMultiLanguage.pbix).
 This live demo shows the potential of building multi-language reports
-for Power BI. The report in the live demo supports English, Spanish,
-French, German, Dutch, Italian, Portuguese, Greek, Russian, Japanese,
-Chinese, Hindi, Hebrew and Afrikaans. You can test out the live demo and
-the experience a Power BI report that support over a dozen secondary
-languages by navigating the following URL.
+for Power BI. The report in the live demo can be loaded using English,
+Spanish, French, German, Dutch, Italian, Portuguese, Greek, Russian,
+Japanese, Chinese, Hindi, Hebrew and Afrikaans. You can test out the
+live demo and the experience a Power BI report that support over a dozen
+secondary languages by navigating the following URL.
 
 - [**https://multilanguagereportdemo.azurewebsites.net**](https://multilanguagereportdemo.azurewebsites.net)
 
@@ -347,8 +347,7 @@ multi-language report development process can be broken down into a few
 distinct phases. Each of these phases will be examined in detail in this
 article.
 
-While the solution provided by
-[**TranslationsBuilderLiveDemo.pbix**](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/LiveDemo/TranslationsBuilderLiveDemo.pbix)
+While the solution provided by **ProductSalesMultiLanguage.pbix**
 demonstrates a single PBIX project file approach where the dataset and
 report are packaged together for convenience. However, nothing changes
 if you package and distribute datasets and reports using separate PBIX
@@ -725,7 +724,7 @@ of columns and measures in the underlying dataset definition (e.g.
 the visual will use the translations for whatever language has been used
 to load the report. The following table shows how the default **Title**
 property of this visual is updated for each language supported by the
-**ProductSales.pbix** developer sample.
+**ProductSalesMultiLanguage.pbix** developer sample.
 
 | Language        | Visual Title                         |
 |-----------------|--------------------------------------|
