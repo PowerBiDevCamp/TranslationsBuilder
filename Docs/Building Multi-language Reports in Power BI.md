@@ -757,6 +757,10 @@ is parsed together using the names of the columns and measures that have
 been added into the data roles such of **Axis**, **Legend** and
 **Values**.
 
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image29.png"
+style="width:3.87273in;height:2.91379in" />
+
 There is good news here. The default **Title** property for a Cartesian
 visual is dynamically parsed together in a fashion that supports
 localization. As long as you supply metadata translations for the names
@@ -780,18 +784,18 @@ must resist the temptation to replace it with a hard-coded text value.
 Any hard-code text you type into the **Title** property of the visual
 will be added to the report layout and cannot be localized. Therefore,
 you should either leave the visual **Title** property with its default
-value or you should use the Localized Table strategy to provide text
-values for report labels that can be localized.
+value or you should use the Localized Table strategy to create report
+labels that support localization.
 
 ### Introducing the Localized Labels Table Strategy
 
 As discussed earlier in this article, the Power BI localization features
 are supported at the dataset definition level but not at the report
-layout level. At first you might ask the question ***how can I localize
-text-based values that are not stored inside the dataset definition?***
-The answer is that there is no easy way to accomplish this. A better
-question to ask is ***how can I add the text-based values for labels so
-they become part of the dataset definition?***
+layout level. At first you might ask the question *how can I localize
+text-based values that are not stored inside the dataset definition?*
+The answer to this question is that there is no easy way to accomplish
+this. A better question to ask is *how can I add the text-based values
+for report labels to a dataset to add localization support?*
 
 The idea behind the **Localized Labels** table isn’t all that
 complicated. Power BI supports tracking translations for dataset
@@ -814,7 +818,7 @@ The **TranslationsBuilderLiveDemo.pbix** sample demonstrates a hidden
 titles, headings and button captions used throughout the report.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image29.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image30.png"
 style="width:2.06788in;height:1.78616in" />
 
 Translations Builder 1.0 introduced the Localized Labels table, but it
@@ -830,7 +834,7 @@ project by executing the **Create Localized Labels Table** command from
 the **Generate Translated Tables** menu.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image30.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image31.png"
 style="width:3.21384in;height:1.25001in"
 alt="Graphical user interface, text, application Description automatically generated" />
 
@@ -840,7 +844,7 @@ information about the Localized Labels strategy. Interestingly enough,
 you’ll be redirect to this article.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image31.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image32.png"
 style="width:2.18134in;height:1.02329in"
 alt="Graphical user interface, application Description automatically generated" />
 
@@ -850,7 +854,7 @@ cases you will want to delete these sample report labels and replace
 them with those needed on the current project.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image32.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image33.png"
 style="width:5.94813in;height:1.31746in"
 alt="Graphical user interface Description automatically generated" />
 
@@ -863,7 +867,7 @@ execute the **Add Labels to the Localized Labels Table** command using
 the shortcut key of **Ctrl+A**.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image33.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image34.png"
 style="width:3.16079in;height:1.1761in"
 alt="Graphical user interface, text, application Description automatically generated" />
 
@@ -871,7 +875,7 @@ You can add report labels one at a time by typing in the text for the
 label and then clicking **Add Label**.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image34.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image35.png"
 style="width:3.45007in;height:1.07014in"
 alt="A picture containing icon Description automatically generated" />
 
@@ -880,7 +884,7 @@ where you can delete all existing labels at once and enter a large batch
 of report labels in a single operation.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image35.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image36.png"
 style="width:3.01887in;height:1.87409in" />
 
 Once you have added a report label, it will appear in the translation.
@@ -888,7 +892,7 @@ Here is an example of the report labels in the translation grid for the
 live demo project.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image36.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image37.png"
 style="width:5.59748in;height:1.36746in" />
 
 There is one critical step you must complete after modifying report
@@ -897,14 +901,14 @@ execute **Generate Translated Localized Labels Table** to create the
 measures that will be used to surface report labels on a report.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image37.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image38.png"
 style="width:3.06918in;height:1.08398in"
 alt="Graphical user interface, text, application Description automatically generated" />
 
 Here is what happens.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image38.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image39.png"
 style="width:3.10692in;height:1.59051in" />
 
 Any you add or update an report labels in the Localized Labels table,
@@ -913,20 +917,20 @@ you will need to execute **Generate Translated Localized Labels Table**.
 What do the measure look like? Great question.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image39.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image40.png"
 style="width:1.31832in;height:2.28302in" />
 
 Xxxxxxx
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image40.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image41.png"
 style="width:2.88737in;height:2.08176in" />
 
 Explain USERCULTURE() function and explain how it enables localization
 opportunities
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image41.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image42.png"
 style="width:2.87615in;height:2.26415in" />
 
 Remember to execute the **Generate Translated Localized Labels Table**
@@ -942,33 +946,33 @@ you execute **Generate Translated Localized Labels Table**.
 Ddddddd
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image42.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image43.png"
 style="width:5.05031in;height:2.13989in" />
 
 ccccc
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image43.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image44.png"
 style="width:4.59748in;height:2.75994in" />
 
 Xxxxx
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image44.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image45.png"
 style="width:3.38365in;height:1.08839in"
 alt="Table Description automatically generated with low confidence" />
 
 Xxx
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image45.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image46.png"
 style="width:2.46541in;height:0.86148in"
 alt="A picture containing application Description automatically generated" />
 
 Xxxx
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image46.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image47.png"
 style="width:2.77164in;height:2.51572in" />
 
 When it comes to localizing software, there are some universal
@@ -1012,7 +1016,7 @@ The first thing you need to do is to hide every page in the report
 except for the first page which acts as the landing page.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image47.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image48.png"
 style="width:7.49653in;height:0.69792in" />
 
 Next, create a set of bookmarks. Each bookmark should be created to
@@ -1021,25 +1025,25 @@ technique by adding a bookmark for each page supported by the navigation
 menu.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image48.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image49.png"
 style="width:1.59253in;height:1.67925in" />
 
 Cccc
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image49.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image50.png"
 style="width:4.16981in;height:1.73166in" />
 
 xxxx
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image50.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image51.png"
 style="width:4.22642in;height:1.68218in" />
 
 Xxx
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image51.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image52.png"
 style="width:2.99067in;height:2.61006in" />
 
 xxx
@@ -1143,7 +1147,7 @@ as the data from any database instance only needs to be viewed by users
 in a single language.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image52.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image53.png"
 style="width:5.84793in;height:4.02857in" />
 
 The important observation is that each customer deployment uses a single
@@ -1162,7 +1166,7 @@ languages while the data being analyzed is coming from a single database
 instance.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image53.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image54.png"
 style="width:6.14478in;height:1.77914in" />
 
 Once again, the key question to ask is whether you will have people who
@@ -1254,7 +1258,7 @@ The **Languages** query generates a table with a row for each language
 which will be used in the row expansion process.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image54.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image55.png"
 style="width:3.76488in;height:0.80393in" />
 
 ### Load Reports using Bookmarks to Filter Data Translations
