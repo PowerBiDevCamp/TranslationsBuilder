@@ -673,13 +673,14 @@ part of the multi-language report development process.
 
 While human translators are an essential part of the end-to-end process,
 it can take a long time to send out translation files to a translation
-team and then wait for them to come back. With all the recent industry
-advances in Artificial Intelligence (AI), you also have the option to
-generate machine translations using a Web API that can be called
-directly from an external tool such as **TranslationsBuilder**. If you
-initially generate machine translations for each secondary culture you
-need to support, that will give you something to work with while waiting
-for a translation team to return their high-quality human translations.
+team and then to wait for them to come back. With all the recent
+industry advances in Artificial Intelligence (AI), you also have the
+option to generate machine translations using a Web API that can be
+called directly from an external tool such as Translations Builder. If
+you initially generate machine translations for each secondary language
+you need to support, that will give you something to work with while
+waiting for a translation team to return their high-quality human
+translations.
 
 While machine translation are not always guaranteed to be high quality,
 they do provide value in the multi-language report development process.
@@ -693,20 +694,20 @@ support for languages in scenarios where there are legal compliance
 issues and organizations are facing fines or litigation for
 non-compliance.
 
-**TranslationsBuilder** generates machine translations by executing API
-calls against the [Azure Translator
-service](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/translator-info-overview)
+Translations Builder generates machine translations by executing API
+calls against the [**Azure Translator
+service**](https://docs.microsoft.com/en-us/azure/cognitive-services/translator/translator-info-overview)
 which is an API endpoint offered through Azure Cognitive Services. This
 Web API makes it possible to automate enumerating through dataset
 objects to translate dataset object names from the default language to
 translations for secondary languages.
 
-If you'd like to test out the support in **TranslationsBuilder** for
+If you'd like to test out the support in Translations Builder for
 generating machine translations, you will require a Key for an instance
 of the Azure Translator Service. If you have an Azure subscription, you
-can learn how to obtain this key and its location by reading [Obtaining
-a Key for the Azure Translator
-Service](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Obtaining%20a%20Key%20for%20the%20Azure%20Translator%20Service.md).
+can learn how to obtain this key and its location by reading
+[**Obtaining a Key for the Azure Translator
+Service**](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Obtaining%20a%20Key%20for%20the%20Azure%20Translator%20Service.md).
 Translations Builder provides a Configuration Options dialog which makes
 it possible to configure the key and location to access the Azure
 Translator Service.
