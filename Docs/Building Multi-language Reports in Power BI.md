@@ -842,10 +842,10 @@ src="./images/BuildingMultiLanguageReportsInPowerBI/media/image31.png"
 style="width:3.21384in;height:1.25001in"
 alt="Graphical user interface, text, application Description automatically generated" />
 
-When you execute this command to create the Localized Labels Table, you
-will be prompted by the following dialog asking if you want more
-information about the Localized Labels strategy. Interestingly enough,
-you’ll be redirect to this article.
+When you execute this command to create the **Localized Labels** table,
+you will be prompted by the following dialog asking if you want more
+information about the **Localized Labels** table strategy. Interestingly
+enough, you’ll be redirect to this article if you click **<u>Y</u>es**.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image32.png"
@@ -891,13 +891,32 @@ of report labels in a single operation.
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image36.png"
 style="width:3.01887in;height:1.87409in" />
 
-Once you have added a report label, it will appear in the translation.
-Here is an example of the report labels in the translation grid for the
-live demo project.
+Once you have added a report label, it will appear in the translation
+grid as shown in the following screenshot.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image37.png"
 style="width:5.59748in;height:1.36746in" />
+
+One valuable aspect of the **Localized Labels** table strategy is that
+report labels can be created, managed and stored in the same PBIX
+project files that holds the metadata translations for tables, columns
+and measures. The **Localized Labels** table strategy is able to merge
+metadata translations and report label translations together in the
+translation gird. There is no need to distinguish between metadata
+translations and report label translations when it comes to editing
+translations or generating machine translations.
+
+There are other popular Power BI localization techniques that track
+translations for report label in a separate CSV file. While these
+techniques work just fine, they are not as streamlined as the
+**Localized Labels** table strategy because report label translations
+must be stored in a separate CSV file as they are managed separately
+from metadata translations. With the **Localized Labels** table
+strategy, report label translations are stored in the same PBIX file as
+metadata translations.
+
+### Generating the Translated Localized Labels Table
 
 There is one critical step you must complete after modifying report
 labels in the **Localized Labels** table. More specifically, you must
