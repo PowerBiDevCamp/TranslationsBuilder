@@ -393,7 +393,7 @@ multiple PBIX files.
 ## Understanding How Translations Builder Works
 
 Translations Builder is an external tool developed for Power BI Desktop
-using .NET 6, C# and Windows Forms. Translations Builder uses an API
+using C#, .NET 6, and Windows Forms. Translations Builder uses an API
 known as the ***Tabular Object Model (TOM)*** to update datasets that
 are open in Power BI Desktop. Translations Builder uses TOM to add and
 update metadata translations associated with datasets objects such as
