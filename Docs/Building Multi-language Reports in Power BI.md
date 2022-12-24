@@ -444,7 +444,9 @@ dataset information and to provide commands to automate adding metadata
 translations. You can read [**Translations Builder Developers
 Guide**](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Developer%20Guide.md)
 if you want to learn more about the details of working with Translations
-Builder as a developer.
+Builder as a developer. The content in this article will focus on
+teaching concepts and localization skills to content creators using
+Power BI Desktop.
 
 The key value proposition of Translations Builder is that is allows a
 content creator to view, add and update metadata translations using a
@@ -478,9 +480,11 @@ alt="Graphical user interface, application Description automatically generated" 
 
 If you examine this PBIX project more closely, you can see the first
 three columns in the translation grid contain read-only columns used to
-identity each metadata translation. The fourth column display the
-translation for the dataset’s default language which in this case is
-English \[en-US\].
+identity each metadata translation. Each metadata translation has a
+parent which is a dataset object such as a table, column or measure.
+Each translation is based on a property such as **Caption**. The fourth
+column displays the translation for the dataset’s default language which
+in this case is English **\[en-US\]**.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image17.png"
