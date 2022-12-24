@@ -426,22 +426,24 @@ the **External Tools** tab in the ribbon.
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image13.png"
 style="width:3.86in;height:1.14848in" />
 
-When you launch an external tool like **TranslationsBuilder**, the
+When you launch an external tool like Translations Builder, the
 application is passed startup parameters including a connection string
 which can be used to establish a connection back to the dataset that's
-loaded in Power BI Desktop. This allows **TranslationsBuilder** to
-display dataset information and to provide commands to automate adding
-metadata translations. You can read [Translations Builder Developers
+loaded in Power BI Desktop. This allows Translations Builder to display
+dataset information and to provide commands to automate adding metadata
+translations. You can read [Translations Builder Developers
 Guide](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Developer%20Guide.md)
 if you want to learn more about the details of working with Translations
 Builder as a developer.
 
 The key value proposition of Translations Builder is that is allows a
-content creator using Power BI Desktop to work with a two-dimensional,
-editable grid which abstracts aways the details or reading and writing
-translation in a dataset definition. Users can work with the
-translations grid to create, view and edit translations with an
-experience similar to working with an Excel spreadsheet.
+content creator to work with a two-dimensional grid which is used to
+view, add and update translations. This translations grid simplifies the
+user experience because it abstracts aways the low-level details or
+reading and writing metadata translation associated a dataset
+definition. Users can view, add and edit metadata translations in the
+translations grid with an experience similar to working with an Excel
+spreadsheet.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image14.png"
