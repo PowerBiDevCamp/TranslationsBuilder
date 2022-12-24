@@ -95,36 +95,26 @@ translations for text values stored as part of the report layout.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image2.png"
-style="width:2.44828in;height:0.86946in" />
+style="width:3.15208in;height:1.1194in" />
 
 Think about a common scenario where you add a textbox or a button to a
 Power BI report and then you type in literal text for a string value
 displayed to the user. That text value is stored in the report layout
 and cannot be localized. Therefore, you must avoid using textboxes and
-buttons with literal text values stored in the report layout. As a
-second example, page tabs in a Power BI report are also problematic
+buttons that contain literal text values stored in the report layout. As
+a second example, page tabs in a Power BI report are also problematic
 because their display names cannot be localized. Therefore, you must
 design multi-language reports so that page tabs are hidden and never
 displayed to the user.
 
-### Implementing Translations using Dynamic Measures
+### Implementing Translations Dynamically using Measures and USERCULTURE
 
-A second essential Power BI feature to assist with building
-multi-language reports is the DAX **USERCULTURE()** function. The
-following screenshot shows how the live demo displays the return value
-of **USERCULTURE()** in the upper right corner of the report banner. You
-will not typically display something like this in a real application,
-but it’s included with the live demo so you can see what language and
-locale are being used as you switch between languages.
-
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image3.png"
-style="width:6.85535in;height:0.4947in" />
-
-The **USERCULTURE()** function returns a string with lower-case language
-ID parsed together with a hyphen and a locale identifier that specifies
-a geographical region. Here are a few examples of strings returned by
-**USERCULTURE()**.
+A second essential feature to assist with building multi-language
+reports in Power BI is the DAX **USERCULTURE** function. The
+**USERCULTURE** function returns a string which includes a lower-case
+language ID parsed together with an upper-case locale identifier. Here
+are a few examples of strings with a language and locale that might be
+returned by **USERCULTURE**.
 
 - **en-US** \[language=English, locale identifier=United States\]
 
@@ -136,23 +126,36 @@ a geographical region. Here are a few examples of strings returned by
 
 - **ja-JP** \[language=Japanese, locale identifier=Japan\]
 
-Remember that you can only use the **USERCULTURE()** function to
-implement dynamic translations in a measures. That’s because measures
-are always evaluated at query time so they reflect the language and
-locale of the current user. However, you cannot effectively use the
-**USERCULTURE()** function in the DAX expression for columns and tables.
-That’s because these DAX expressions are evaluates only once when a
-dataset loads into memory. Only the DAX expressions for measures will be
-recalculated each time a new user accesses a dataset already loaded into
-memory.
+Remember that you can only use the **USERCULTURE** function to implement
+dynamic translations in measures. When you use **USERCULTURE** in the
+DAX expression for a measure, it’s guaranteed to return the language and
+locale identifier for the current user. The same is not true if you use
+the **USERCULTURE** function in the DAX expression for a table or a
+column which get evaluated at dataset load time. When you use
+**USERCULTURE** in the DAX expression for a table or calculated column,
+you don’t get the same guaranteed that it uses the language and locale
+of the current user.
 
-You can write a measure with DAX to obtain the language ID for the
-current user using **USERCULTURE** and **LEFT**.
+The live demo displays the return value of **USERCULTURE** in the upper
+right corner of the report banner. You will not typically display a
+report element like this in a real application, but it’s included with
+the live demo so you can see exactly what language and locale identifier
+are being used to load the report each time you switch to a new
+language.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image3.png"
+style="width:6.85535in;height:0.4947in" />
+
+Let’s look at a simple example of writing a DAX expression for a measure
+that implements dynamic translations. You can start by extracting the
+language ID for the current user using **USERCULTURE** together with
+**LEFT**.
 
 CurrentLanguage = LEFT(USERCULTURE(), 2)
 
-Taking things one step further, you can add the **SWITCH** statement to
-create a measure for dynamic translaltions.
+Now, you can take things a step further by adding a **SWITCH** statement
+to form a basic pattern for dynamic translations.
 
 Product Sales Report Label = SWITCH(LEFT(USERCULTURE(), 2),
 
@@ -166,37 +169,66 @@ Product Sales Report Label = SWITCH(LEFT(USERCULTURE(), 2),
 
 )
 
-### Formatting Dates and Times with the Current User Locale
+OK, it’s nowhere near as impressive as some of those fancy DAX patterns
+that come out of Italy. But hey, it’s a start.
 
-The second part of the string returned by **USERCULTURE** is the locale
-identifier which specifies a geographical region. Let’s start with an
-example. Consider a scenario where you are building a report for an
-audience of users that live in both New York and in London. All these
-users speak English, but they live in different regions where dates and
-numbers are formatted different.
+### Formatting Dates and Numbers with the Current User’s Locale
 
-A user from New York has a locale identifier of en-**US** while a user
-in London has a locale identifier of en-**GB**. It’s possible to
-discover the locale identifier of the current user in a measure by
-parsing the value returned by **USERCULTURE()**. However, you find that
-is not necessary in the majority of cases.
+Every report that loads in the Power BI Service is initialized with a
+specific language and a specific locale. The default behavior of the
+Power BI Service it to load each report using the language and region
+specified by the user’s browser settings. However, those settings can be
+overridden by adding the **language** query string parameter to the end
+of the report URL. If you’re developing with Power BI embedding, you
+also have control to load a report with a specific language and locale
+as demonstrated by the live demo.
 
-That’s because the Power BI visuals used in a report know how to do the
-right thing. More specifically, a Power BI visual will automatically
-inspect the locale of the current user when formatting a date or a
-number. The one thing you need to pay attention to is the formatting
-strings you use to configure the columns and measures that are based on
-date and numeric datatypes.
+You’ve already seen that you can implement dynamic translations by
+writing a DAX expression in a measure with conditional logic based on
+the user’s language. This is a technique that will be used frequently
+when building reports that support multiple languages. However, you will
+not be required to write conditional DAX logic based on the user’s
+locale. Why is that?
+
+The short answer is that Power BI visuals automatically handle
+locale-specific formatting behind the scenes. This makes things so much
+easier.
+
+The long answer is that a Power BI visual inspects the locale of the
+current user before rendering. During the rendering process, the visual
+applies formatting to a date or numeric value based on the user’s locale
+and the format string of the source column or measure.
+
+Consider a simple scenario in which you’re building a report for an
+audience of report consumers that live in both New York \[**en-US**\]
+and in London \[**en-GB**\]. All users speak English (**en**), but yet
+some live in different regions (**US** vs **GB**) where dates and
+numbers are formatted differently. For example, a user from New York
+wants to see dates in a **mm/dd/yyyy** format while a user from London
+wants to see dates in a **dd/mm/yyyy** format. Everything thing works
+out as long as you configure columns and measures using format strings
+that support regional formatting.
+
+If you are formatting a date, it is recommended you use a format string
+of **Short Date** or **Long Date** because those format strings support
+regional formatting. Power BI Desktop offers other formatting options
+(those without an asterisk) that should be avoided as they have a
+pre-defined display patterns to do not change in response to the user’s
+locale.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image4.png"
 style="width:2.38961in;height:1.31848in" />
 
-of the current user by examine the
+Here’s an example of how a date value with the format string **Short
+Date** appears when loaded under different locales.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image5.png"
 style="width:1.45455in;height:0.9896in" />
+
+The Japanese formatting is hands-down the winner. It’s the only
+formatting that automatically sorts chronologically.
 
 ### Understanding the Three Types of Translations
 
