@@ -714,7 +714,7 @@ Translator Service.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image27.png"
-style="width:4.62372in;height:1.74468in"
+style="width:4.29091in;height:1.6191in"
 alt="Table Description automatically generated with medium confidence" />
 
 Once a user has configured an Azure Translator Service key, Translations
@@ -732,18 +732,19 @@ alt="Graphical user interface, application Description automatically generated" 
 
 Earlier you learned that report label translations provide localized
 values for text elements on a report that are not directly associated
-with a dataset object such as a report title or a button caption. Given
-that Power BI provides no built-in features to track or integrate report
-labels, Translations Builder solves this problem using the **Localized
-Labels** table strategy. Before introducing this strategy, let’s take a
-moment to discuss the problems is has been designed to solve.
+with a dataset object. Examples of report labels are the text values for
+report titles, section headings and button captions. Given that Power BI
+provides no built-in features to track or integrate report labels,
+Translations Builder solves this problem using the **Localized Labels**
+table strategy. Before introducing this strategy, let’s take a moment to
+discuss the problems this strategy has been designed to solve.
 
-If you have experience with Power BI Desktop, it's critical that you
-learn which report design techniques to avoid when you begin building
-multi-language reports. Let's begin with the obvious things which cause
-problems due to a lack of localization support.
+If you have experience building datasets and reports with Power BI
+Desktop, it's critical that you learn which report design techniques to
+avoid when building multi-language reports. Let's begin with the obvious
+things which cause problems due to a lack of localization support.
 
-- Using textboxes or buttons with hard-coded text value
+- Using textboxes or buttons with hard-coded text values
 
 - Adding a hard-coded text value for the title of a visual
 
@@ -759,7 +760,7 @@ been added into the data roles such of **Axis**, **Legend** and
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image29.png"
-style="width:3.87273in;height:2.91379in" />
+style="width:2.91818in;height:2.1956in" />
 
 There is good news here. The default **Title** property for a Cartesian
 visual is dynamically parsed together in a fashion that supports
@@ -769,7 +770,7 @@ of columns and measures in the underlying dataset definition (e.g.
 the visual will use the translations for whatever language has been used
 to load the report. The following table shows how the default **Title**
 property of this visual is updated for each language supported by the
-**ProductSalesMultiLanguage.pbix** developer sample.
+**ProductSalesMultiLanguage.pbix** live demo.
 
 | Language        | Visual Title                         |
 |-----------------|--------------------------------------|
@@ -779,12 +780,12 @@ property of this visual is updated for each language supported by the
 | German (de-DE)  | Umsatz nach Land und Jahr            |
 | Dutch (nl-NL)   | Omzet per land en jaar               |
 
-Even if you don’t like the dynamically-generated visual **Title**, you
-must resist the temptation to replace it with a hard-coded text value.
-Any hard-code text you type into the **Title** property of the visual
-will be added to the report layout and cannot be localized. Therefore,
-you should either leave the visual **Title** property with its default
-value or you should use the Localized Table strategy to create report
+Even if you dislike the dynamically-generated visual **Title**, you must
+resist the temptation to replace it with a hard-coded text value. Any
+hard-coded text you type into the **Title** property of the visual will
+be added to the report layout and cannot be localized. Therefore, you
+should either leave the visual **Title** property with its default value
+or you should use the **Localized Table** strategy to create report
 labels that support localization.
 
 ### Introducing the Localized Labels Table Strategy
@@ -795,17 +796,19 @@ At first you might ask the question “*how can I localize text-based
 values in a Power BI report that are not stored inside the dataset?”*
 The answer to this question is that there is no simple way to accomplish
 this. A better question to ask is “*how can I add the text-based values
-for report labels into the dataset to add localization support?”*
+for report labels into the dataset to enable localization support?”*
 
 The idea behind the **Localized Labels** table isn’t all that
 complicated. Power BI supports tracking translations for dataset
-objects. Therefore, you create a special table in the dataset and add a
-measure for each report label. Once you have created a measure for each
-report label, you can just let Power BI store and manage report label
-translations behind the scenes in the exact same way that it does for
-metadata translations. In fact, report label translations are stored as
-metadata translations for the measures that have been added to the
-**Localized Labels** table.
+objects. Therefore, creating a dataset object for each report label.
+
+you create a special table in the dataset and add a measure for each
+report label. Once you have created a measure for each report label, you
+can then let Power BI store and manage report label translations behind
+the scenes in the exact same fashion that it does for metadata
+translations. In fact, the **Localized Labels** table strategy is based
+on the idea of using metadata translations to implement report label
+translations.
 
 Translations Builder provides a convenient command to create the
 **Localized Labels** table. There are also other commands to add a
@@ -911,17 +914,19 @@ There are other popular Power BI localization techniques that track
 translations for report label in a separate CSV file. While these
 techniques work just fine, they are not as streamlined as the
 **Localized Labels** table strategy because report label translations
-must be stored in a separate CSV file as they are managed separately
-from metadata translations. With the **Localized Labels** table
-strategy, report label translations are stored in the same PBIX file as
-metadata translations.
+must be stored in a separate CSV file. These techniques also require
+that you deal with report label translations in a manner that is
+different from how you deal with metadata translations. With the
+**Localized Labels** table strategy, report label translations are
+treated the same and stored in the same PBIX file as metadata
+translations.
 
 ### Generating the Translated Localized Labels Table
 
-There is one critical step you must complete after modifying report
-labels in the **Localized Labels** table. More specifically, you must
-execute **Generate Translated Localized Labels Table** to create the
-measures that will be used to surface report labels on a report.
+There is one critical step you must always complete after modifying
+report labels in the **Localized Labels** table. More specifically, you
+must execute **Generate Translated Localized Labels Table** to create
+the measures that will be used to surface report labels on a report.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image38.png"
