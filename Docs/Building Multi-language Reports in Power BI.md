@@ -395,8 +395,8 @@ multiple PBIX files.
 Translations Builder is a tool created for content creators using Power
 BI Desktop. Content creators can use this tools to add multi-language
 support to PBIX project files. The following screenshot shows what
-Translations Builder looks like when working with a simple dataset that
-supports a small number of secondary languages.
+Translations Builder looks like when working with a simple PBIX project
+that supports a small number of secondary languages.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image12.png"
@@ -405,12 +405,12 @@ style="width:6.34328in;height:3.00836in" />
 Translations Builder is an external tool developed for Power BI Desktop
 using C#, .NET 6, and Windows Forms. Translations Builder uses an API
 known as the ***Tabular Object Model (TOM)*** to update datasets that
-are open in Power BI Desktop. Translations Builder does most of its work
-by adding and updating the metadata translations associated with
-datasets objects including tables, columns and measures. However, there
-are several scenarios in which Translations Builder will actually create
-new tables in a dataset to implement strategies to handle various
-aspects of building multi-language reports.
+have been opened and are running in Power BI Desktop. Translations
+Builder does most of its work by adding and updating the metadata
+translations associated with datasets objects including tables, columns
+and measures. However, there are several scenarios in which Translations
+Builder will actually create new tables in a dataset to implement
+strategies to handle various aspects of building multi-language reports.
 
 When you open a PBIX project in Power BI Desktop, the dataset definition
 from inside the PBIX file is loaded into memory in a local session of
