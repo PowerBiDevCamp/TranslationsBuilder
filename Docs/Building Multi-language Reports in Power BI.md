@@ -790,48 +790,52 @@ labels that support localization.
 ### Introducing the Localized Labels Table Strategy
 
 As discussed earlier in this article, the Power BI localization features
-are supported at the dataset definition level but not at the report
-layout level. At first you might ask the question *how can I localize
-text-based values that are not stored inside the dataset definition?*
-The answer to this question is that there is no easy way to accomplish
-this. A better question to ask is *how can I add the text-based values
-for report labels to a dataset to add localization support?*
+are supported at the dataset level but not at the report layout level.
+At first you might ask the question “*how can I localize text-based
+values in a Power BI report that are not stored inside the dataset?”*
+The answer to this question is that there is no simple way to accomplish
+this. A better question to ask is “*how can I add the text-based values
+for report labels into the dataset to add localization support?”*
 
 The idea behind the **Localized Labels** table isn’t all that
 complicated. Power BI supports tracking translations for dataset
 objects. Therefore, you create a special table in the dataset and add a
 measure for each report label. Once you have created a measure for each
 report label, you can just let Power BI store and manage report label
-translations in the exact same way that it does for metadata
-translations.
+translations behind the scenes in the exact same way that it does for
+metadata translations. In fact, report label translations are stored as
+metadata translations for the measures that have been added to the
+**Localized Labels** table.
 
-Translations Builder provides commands to create the **Localized
-Labels** table and to add a measure each time you add a report label.
-The Localized Labels table is created as a hidden table behind the
-scenes. The idea is that you can do all the work to create and manage
-report labels inside the Translation Builder user experience. There is
-no need to inspect or modify the Localized Labels table using the Power
-BI Desktop dataset design experience.
+Translations Builder provides a convenient command to create the
+**Localized Labels** table. There are also other commands to add a
+measure each time you need a report label. The **Localized Labels**
+table is created as a hidden table behind the scenes. The idea is that
+you can do all the work to create and manage report labels inside the
+Translation Builder user experience. There is no need to inspect or
+modify the **Localized Labels** table using the Power BI Desktop dataset
+design experience.
 
-The **TranslationsBuilderLiveDemo.pbix** sample demonstrates a hidden
-**Localized Labels** table to provide a set of localized labels for all
-titles, headings and button captions used throughout the report.
+Here's an example of the **Localized Labels** table from the live demo
+project **ProductSalesMultiLanguage.pbix**. As you can see it provides
+localized report labels for all titles, headings and button captions
+used throughout the report.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image30.png"
 style="width:2.06788in;height:1.78616in" />
 
-Translations Builder 1.0 introduced the Localized Labels table, but it
-did not take the strategy far enough. Consequently, it was petty awkward
-to surface report label translations from the Localized Labels table
-directly on a report page. With version 2.0, Translations Builder has an
+Translations Builder 1.0 introduced the **Localized Labels** table, but
+it did not take the strategy far enough. Consequently, it was petty
+awkward to surface report labels from the **Localized Labels** table
+directly on a report page. Translations Builder 2.0 introduces an
 evolved strategy to perform more work behind the scenes in order to make
-it easier and more natural for report designers to surface report label
-translations on a report page.
+it easier and more natural for report designers to surface localized
+labels on a report page.
 
-You start by adding the **Localized Labels** table to the current PBIX
-project by executing the **Create Localized Labels Table** command from
-the **Generate Translated Tables** menu.
+You can start by adding the **Localized Labels** table to a PBIX project
+by executing the **Create Localized Labels Table** command from the
+**Generate Translated Tables** menu.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image31.png"
