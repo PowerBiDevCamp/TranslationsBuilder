@@ -594,10 +594,13 @@ the following language parameter to the end of the report URL.
 /?language=es-ES
 
 Once you add the **language** parameter to the end of the URL and press
-**ENTER**, you should see the **language** parameter accepted by the
-browser as it reloads the report. If you load a report using a
-**language** parameter value of **es-ES**, you should see the UI
-experience for the Power BI Service UI switch from English to Spanish.
+**ENTER**, you should be able to verify that the **language** parameter
+accepted by the browser as it reloads the report. If you forget to add
+the **?** or if you do not format the **language** parameter correctly,
+the browser will remove them from the URL as it loads the report. If you
+currently load a report using a **language** parameter value of
+**es-ES**, you should see the UI experience for the Power BI Service UI
+switch from English to Spanish.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image25.png"
@@ -613,10 +616,10 @@ style="width:5.54899in;height:1.50943in"
 alt="Graphical user interface, text, application Description automatically generated" />
 
 Now that you’ve seen how to test your work when working with
-translations, it possible to make an important high-level observation.
-As you begin to work with secondary languages and translations to
-localize a PBIX project, you will follow the same set of steps again and
-again:
+translations, it possible to make a high-level observation about working
+with Translations Builder. As you begin to work with secondary languages
+and translations to localize a PBIX project, you will follow the same
+set of steps again and again:
 
 1.  Make changes in Power BI Desktop
 
@@ -625,11 +628,11 @@ again:
 3.  Test your work with a browser in the Power BI Service using
     **language** parameter
 
-4.  Repeat steps 1-3 until done
+4.  Repeat steps 1-3 until translations work has been completed
 
-If you want to jump in and get started with Translations Builder right
-away, you can work through the hands-on lab titled [Lab 01: Getting
-Started with Translations
+You seem to be getting excited about all of this. If you want to jump
+right in and get started with Translations Builder, you can work try out
+the hands-on lab titled [Lab 01: Getting Started with Translations
 Builder](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Labs/Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.md).
 
 ### Embedding Power BI Reports Using a Specific Language and Locale
