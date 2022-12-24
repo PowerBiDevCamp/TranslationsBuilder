@@ -500,15 +500,15 @@ style="width:4.42767in;height:0.74013in"
 alt="Background pattern Description automatically generated" />
 
 Clicking **Add Language** displays the **Add Language** dialog which
-allows the user to add one or more languages.
+allows the user to add one or more secondary languages.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image19.png"
 style="width:2.05489in;height:2.15426in"
 alt="Graphical user interface Description automatically generated" />
 
-After a language has been added, the user can see the language in the
-**Secondary languages** list.
+After a new language has been added, the user can see the language in
+the **Secondary languages** list.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image20.png"
@@ -537,15 +537,16 @@ object to the dataset. Instead, Translations Builder is actually adding
 a **Culture** object with includes both a language ID and a locale
 identifier. In Power BI datasets, a **Culture** object is identified
 using a string-based key which combines a lower-case language ID and an
-upper-case locale identifier for the geographical region.
+upper-case locale identifier for the geographical region. Note this is
+the same string-based format returned by the **USERCULTURE** function.
 
-You should understand that Translations Builder has abstracted away the
-differences between a language and a culture. This has been done to
-simplify the user experience for content creators who can just think in
-terms of languages and not worry about the differences between a
-language and a culture. It’s not overly important to distinguish between
-a language and a culture until you begin programming with TOM and you
-need to add new **Culture** objects to a Power BI dataset.
+Translations Builder abstracts away the differences between a language
+and a culture. This has been done to simplify the user experience for
+content creators who can just think in terms of languages and not worry
+about the differences between a language and a culture. It’s not overly
+important to distinguish between a language and a culture until you
+begin programming with TOM and you need to add new **Culture** objects
+to a Power BI dataset.
 
 Another important aspect of working with Translations Builder has to do
 with saving your work. While external tools for Power BI Desktop like
