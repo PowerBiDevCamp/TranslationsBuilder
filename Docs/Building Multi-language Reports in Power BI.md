@@ -403,32 +403,22 @@ Translations Builder uses TOM to establish a direct connection to the
 data model for a dataset definition loaded into Power BI Desktop. This
 provides the most direct approach for writing custom code to automate
 the process of creating and managing metadata translations within a
-Power BI dataset.
+Power BI dataset. Translations Builder
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image12.png"
 style="width:5.20126in;height:2.00562in" />
 
-Why dataset definition instead of dataset? The dataset inside a PBIX
-file can be used to create multiple datasets. Therefore, you can thing
-about the dataset as a template or a dataset definition. In many cases
-it is not important to distinguish between a dataset and a dataset
-definition, but is helps to keep things more clear in the context of a
-highly technical discussion of Power BI translations.
-
-The **TranslationsBuilder** project has been created using the [external
-tools integration
+The **Translations Builder** project has been developed using the
+[external tools integration
 support](https://docs.microsoft.com/en-us/power-bi/transform-model/desktop-external-tools)
-for Power BI Desktop. Once the **TranslationsBuilder** application has
-been deploy on a Windows computer, you can launch it directly from Power
-BI Desktop using the **External Tools** tab in the ribbon.
-
-You can install Translations Builder on a computer where you've already
-installed Power BI Desktop using instructions in the [Translations
-Builder Installation
+for Power BI Desktop. You can install **Translations Builder** on a
+Windows PC where you've already installed Power BI Desktop using
+instructions in the [Translations Builder Installation
 Guide](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Installation%20Guide.md).
-After installation, you should be able to launch Translations Builder
-from the External Tools tab in Power BI Desktop.
+Once the **Translations Builder** application has been installed on a
+Windows computer, you can launch it directly from Power BI Desktop using
+the **External Tools** tab in the ribbon.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image13.png"
