@@ -563,12 +563,12 @@ style="width:4.41351in;height:1.30818in"
 alt="Graphical user interface, application, Word Description automatically generated" />
 
 Once the changes have been written back to the PBIX file, that file can
-be published to the Power BI Service for testing. Once you have tested
-your work and verified that the translations are working properly, you
-can also store the PBIX file in a source control system such as GitHub
-or an Azure DevOps repository. This provides the foundation for an ALM
-strategy where support for secondary languages and translations can be
-evolved across versions of a PBIX file.
+then be published to the Power BI Service for testing. Once you have
+tested your work and verified that the translations are working
+properly, you can also store the PBIX file in a source control system
+such as GitHub or an Azure DevOps repository. This provides the
+foundation for an ALM strategy where support for secondary languages and
+translations can be evolved across versions of a PBIX file.
 
 ### Testing Translations in the Power BI Service
 
