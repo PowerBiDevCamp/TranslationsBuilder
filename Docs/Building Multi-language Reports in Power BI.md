@@ -392,6 +392,16 @@ multiple PBIX files.
 
 ## Understanding How Translations Builder Works
 
+Translations Builder is a tool created for content creators using Power
+BI Desktop. Content creators can use this tools to add multi-language
+support to PBIX project files. The following screenshot shows what
+Translations Builder looks like when working with a simple dataset that
+support three secondary languages.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image12.png"
+style="width:6.34328in;height:3.00836in" />
+
 Translations Builder is an external tool developed for Power BI Desktop
 using C#, .NET 6, and Windows Forms. Translations Builder uses an API
 known as the ***Tabular Object Model (TOM)*** to update datasets that
@@ -408,8 +418,8 @@ the Analysis Services engine. Translations Builder uses TOM to establish
 a direct connection to a dataset for the current PBIX project.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image12.png"
-style="width:4.13103in;height:1.61006in" />
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image13.png"
+style="width:3.54088in;height:1.38005in" />
 
 The Translations Builder project has been developed using the
 [**external tools integration
@@ -423,55 +433,57 @@ Windows computer, you can launch it directly from Power BI Desktop using
 the **External Tools** tab in the ribbon.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image13.png"
-style="width:3.86in;height:1.14848in" />
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image14.png"
+style="width:2.67925in;height:0.79717in" />
 
 When you launch an external tool like Translations Builder, the
 application is passed startup parameters including a connection string
-which can be used to establish a connection back to the dataset that's
+which can be used to establish a connection back to a dataset that's
 loaded in Power BI Desktop. This allows Translations Builder to display
 dataset information and to provide commands to automate adding metadata
-translations. You can read [Translations Builder Developers
-Guide](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Developer%20Guide.md)
+translations. You can read [**Translations Builder Developers
+Guide**](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Developer%20Guide.md)
 if you want to learn more about the details of working with Translations
 Builder as a developer.
 
 The key value proposition of Translations Builder is that is allows a
-content creator to work with a two-dimensional grid which is used to
-view, add and update translations. This translations grid simplifies the
-user experience because it abstracts aways the low-level details or
-reading and writing metadata translation associated a dataset
-definition. Users can view, add and edit metadata translations in the
-translations grid with an experience similar to working with an Excel
-spreadsheet.
-
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image14.png"
-style="width:3.99145in;height:1.79098in"
-alt="Graphical user interface, application Description automatically generated" />
-
-### Adding Secondary Languages and Translations
-
-When you open Translations Builder for the first time it displays a row
-in the translation grid for each non-hidden table, measure and column in
-the project’s data model. The translation grid does not display dataset
-objects that are hidden from report view. The reason for this is that
-hidden objects will not be displayed on a report and, therefore, do not
-require translations. The following screenshot shows a simple data model
-before it’s been modified to support secondary languages.
+content creator to view, add and update metadata translations using a
+two-dimensional grid. This ***translations grid*** simplifies the user
+experience because it abstracts aways the low-level details or reading
+and writing metadata translation associated with a dataset definition.
+Users work with the translation grid to view, add and edit metadata
+translations in a manner that is similar to working with data inside an
+Excel spreadsheet.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image15.png"
-style="width:4.67317in;height:2.17692in"
-alt="Graphical user interface, application Description automatically generated" />
+style="width:5.42138in;height:1.06419in" />
 
-If you examine the translation grid more closely, you can see the first
-three columns contain read-only data to identity each translation. The
-fourth column display the translation for the dataset’s default language
-which in this case is English \[en-US\].
+### Adding Secondary Languages and Translations
+
+When you launch Translations Builder with a PBIX project for the first
+time, the translation grid will display a row in for each non-hidden
+table, measure and column in the project’s underlying data model. The
+translation grid does not display rows for dataset objects in the data
+model that are hidden from report view. The reason for this is that
+hidden objects will not be displayed on a report and, therefore, do not
+require translations. The following screenshot shows the starting point
+for a simple data model before it’s been modified to support secondary
+languages.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image16.png"
+style="width:5.50808in;height:2.56585in"
+alt="Graphical user interface, application Description automatically generated" />
+
+If you examine this PBIX project more closely, you can see the first
+three columns in the translation grid contain read-only columns used to
+identity each metadata translation. The fourth column display the
+translation for the dataset’s default language which in this case is
+English \[en-US\].
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image17.png"
 style="width:3.04403in;height:1.18999in"
 alt="Table Description automatically generated" />
 
@@ -479,7 +491,7 @@ Translations Builder provides an **Add Language** command to add
 secondary languages to the project’s data model.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image17.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image18.png"
 style="width:4.42767in;height:0.74013in"
 alt="Background pattern Description automatically generated" />
 
@@ -487,7 +499,7 @@ Clicking **Add Language** displays the **Add Language** dialog which
 allows the user to add one or more languages.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image18.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image19.png"
 style="width:2.05489in;height:2.15426in"
 alt="Graphical user interface Description automatically generated" />
 
@@ -495,7 +507,7 @@ After a language has been added, the user can see the language in the
 **Secondary languages** list.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image19.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image20.png"
 style="width:5.14465in;height:1.18499in"
 alt="A picture containing application Description automatically generated" />
 
@@ -503,7 +515,7 @@ Adding a new language will also add a new column of editable cells to
 the translations grid.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image20.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image21.png"
 style="width:4.63759in;height:1.61905in"
 alt="Table Description automatically generated" />
 
@@ -512,7 +524,7 @@ involved, they can add and update translations for secondary languages
 directly in the translation grid with an Excel-like editing experience.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image21.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image22.png"
 style="width:3.8239in;height:1.22098in"
 alt="Table Description automatically generated" />
 
@@ -541,7 +553,7 @@ Therefore, you must always return back to Power BI Desktop and click the
 created or edited translations.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image22.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image23.png"
 style="width:4.41351in;height:1.30818in"
 alt="Graphical user interface, application, Word Description automatically generated" />
 
@@ -564,7 +576,7 @@ file, a user can publish the PBIX project from Power BI Desktop to the
 Power BI Service.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image23.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image24.png"
 style="width:5.19816in;height:0.8239in"
 alt="Graphical user interface, application Description automatically generated" />
 
@@ -584,7 +596,7 @@ browser as it reloads the report. If you load a report using a
 experience for the Power BI Service UI switch from English to Spanish.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image24.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image25.png"
 style="width:6.48154in;height:0.81132in"
 alt="A screenshot of a computer Description automatically generated" />
 
@@ -592,7 +604,7 @@ You will also see that the report displays the Spanish translations for
 the names of columns and measure.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image25.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image26.png"
 style="width:5.54899in;height:1.50943in"
 alt="Graphical user interface, text, application Description automatically generated" />
 
@@ -709,7 +721,7 @@ it possible to configure the key and location to access the Azure
 Translator Service.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image26.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image27.png"
 style="width:4.62372in;height:1.74468in"
 alt="Table Description automatically generated with medium confidence" />
 
@@ -720,7 +732,7 @@ all languages at once. There are also commands to generate machine
 translations only for the translations that are currently empty.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image27.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image28.png"
 style="width:4.92453in;height:1.35122in"
 alt="Graphical user interface, application Description automatically generated" />
 
@@ -800,7 +812,7 @@ The **TranslationsBuilderLiveDemo.pbix** sample demonstrates a hidden
 titles, headings and button captions used throughout the report.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image28.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image29.png"
 style="width:2.06788in;height:1.78616in" />
 
 Translations Builder 1.0 introduced the Localized Labels table, but it
@@ -816,7 +828,7 @@ project by executing the **Create Localized Labels Table** command from
 the **Generate Translated Tables** menu.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image29.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image30.png"
 style="width:3.21384in;height:1.25001in"
 alt="Graphical user interface, text, application Description automatically generated" />
 
@@ -826,7 +838,7 @@ information about the Localized Labels strategy. Interestingly enough,
 you’ll be redirect to this article.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image30.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image31.png"
 style="width:2.18134in;height:1.02329in"
 alt="Graphical user interface, application Description automatically generated" />
 
@@ -836,7 +848,7 @@ cases you will want to delete these sample report labels and replace
 them with those needed on the current project.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image31.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image32.png"
 style="width:5.94813in;height:1.31746in"
 alt="Graphical user interface Description automatically generated" />
 
@@ -849,7 +861,7 @@ execute the **Add Labels to the Localized Labels Table** command using
 the shortcut key of **Ctrl+A**.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image32.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image33.png"
 style="width:3.16079in;height:1.1761in"
 alt="Graphical user interface, text, application Description automatically generated" />
 
@@ -857,7 +869,7 @@ You can add report labels one at a time by typing in the text for the
 label and then clicking **Add Label**.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image33.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image34.png"
 style="width:3.45007in;height:1.07014in"
 alt="A picture containing icon Description automatically generated" />
 
@@ -866,7 +878,7 @@ where you can delete all existing labels at once and enter a large batch
 of report labels in a single operation.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image34.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image35.png"
 style="width:3.01887in;height:1.87409in" />
 
 Once you have added a report label, it will appear in the translation.
@@ -874,7 +886,7 @@ Here is an example of the report labels in the translation grid for the
 live demo project.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image35.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image36.png"
 style="width:5.59748in;height:1.36746in" />
 
 There is one critical step you must complete after modifying report
@@ -883,14 +895,14 @@ execute **Generate Translated Localized Labels Table** to create the
 measures that will be used to surface report labels on a report.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image36.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image37.png"
 style="width:3.06918in;height:1.08398in"
 alt="Graphical user interface, text, application Description automatically generated" />
 
 Here is what happens.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image37.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image38.png"
 style="width:3.10692in;height:1.59051in" />
 
 Any you add or update an report labels in the Localized Labels table,
@@ -899,20 +911,20 @@ you will need to execute **Generate Translated Localized Labels Table**.
 What do the measure look like? Great question.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image38.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image39.png"
 style="width:1.31832in;height:2.28302in" />
 
 Xxxxxxx
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image39.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image40.png"
 style="width:2.88737in;height:2.08176in" />
 
 Explain USERCULTURE() function and explain how it enables localization
 opportunities
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image40.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image41.png"
 style="width:2.87615in;height:2.26415in" />
 
 Remember to execute the **Generate Translated Localized Labels Table**
@@ -928,33 +940,33 @@ you execute **Generate Translated Localized Labels Table**.
 Ddddddd
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image41.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image42.png"
 style="width:5.05031in;height:2.13989in" />
 
 ccccc
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image42.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image43.png"
 style="width:4.59748in;height:2.75994in" />
 
 Xxxxx
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image43.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image44.png"
 style="width:3.38365in;height:1.08839in"
 alt="Table Description automatically generated with low confidence" />
 
 Xxx
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image44.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image45.png"
 style="width:2.46541in;height:0.86148in"
 alt="A picture containing application Description automatically generated" />
 
 Xxxx
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image45.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image46.png"
 style="width:2.77164in;height:2.51572in" />
 
 When it comes to localizing software, there are some universal
@@ -998,7 +1010,7 @@ The first thing you need to do is to hide every page in the report
 except for the first page which acts as the landing page.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image46.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image47.png"
 style="width:7.49653in;height:0.69792in" />
 
 Next, create a set of bookmarks. Each bookmark should be created to
@@ -1007,25 +1019,25 @@ technique by adding a bookmark for each page supported by the navigation
 menu.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image47.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image48.png"
 style="width:1.59253in;height:1.67925in" />
 
 Cccc
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image48.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image49.png"
 style="width:4.16981in;height:1.73166in" />
 
 xxxx
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image49.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image50.png"
 style="width:4.22642in;height:1.68218in" />
 
 Xxx
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image50.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image51.png"
 style="width:2.99067in;height:2.61006in" />
 
 xxx
@@ -1129,7 +1141,7 @@ as the data from any database instance only needs to be viewed by users
 in a single language.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image51.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image52.png"
 style="width:5.84793in;height:4.02857in" />
 
 The important observation is that each customer deployment uses a single
@@ -1148,7 +1160,7 @@ languages while the data being analyzed is coming from a single database
 instance.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image52.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image53.png"
 style="width:6.14478in;height:1.77914in" />
 
 Once again, the key question to ask is whether you will have people who
@@ -1240,7 +1252,7 @@ The **Languages** query generates a table with a row for each language
 which will be used in the row expansion process.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image53.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image54.png"
 style="width:3.76488in;height:0.80393in" />
 
 ### Load Reports using Bookmarks to Filter Data Translations
