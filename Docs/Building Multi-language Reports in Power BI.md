@@ -795,19 +795,20 @@ are supported at the dataset level but not at the report layout level.
 At first you might ask the question “*how can I localize text-based
 values in a Power BI report that are not stored inside the dataset?”*
 The answer to this question is that there is no simple way to accomplish
-this. A better question to ask is “*how can I add the text-based values
-for report labels into the dataset as a dataset objects to enable
+this. A better question to ask is “*how can I add the text-based value
+for a report label into the dataset as a dataset object to enable
 localization support?”*
 
 The idea behind the **Localized Labels** table isn’t all that
 complicated. It builds on the idea that Power BI supports metadata
-translations for dataset objects including measure. When you add a
-report label with Translations Builder, the tool automatically adds a
-new measure to the Localized Labels table behind the scenes. Once a
-measure has been created for each report label, Power BI can store and
-manage its translations in the exact same fashion that it does for
-metadata translations. In fact, the **Localized Labels** table strategy
-uses metadata translations to implement report label translations.
+translations for specific types of dataset objects including measure.
+When you add a report label with Translations Builder, the tool
+automatically adds a new measure to the Localized Labels table behind
+the scenes. Once a measure has been created for each report label, Power
+BI can store and manage its translations in the exact same fashion that
+it does for metadata translations. In fact, the **Localized Labels**
+table strategy uses metadata translations to implement report label
+translations.
 
 Translations Builder provides a convenient command to create the
 **Localized Labels** table. There are also other commands to add a
