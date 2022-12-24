@@ -399,8 +399,8 @@ are open in Power BI Desktop. Translations Builder does most of its work
 by adding and updating the metadata translations associated with
 datasets objects including tables, columns and measures. However, there
 are several scenarios in which Translations Builder will actually create
-new tables in a dataset to implement various aspects of building
-multi-language reports.
+new tables in a dataset to implement strategies to handle various
+aspects of building multi-language reports.
 
 When you open a PBIX project in Power BI Desktop, the dataset definition
 from inside the PBIX file is loaded into memory in a local session of
@@ -414,11 +414,11 @@ style="width:4.13103in;height:1.61006in" />
 The Translations Builder project has been developed using the
 [**external tools integration
 support**](https://docs.microsoft.com/en-us/power-bi/transform-model/desktop-external-tools)
-for Power BI Desktop. You can install **Translations Builder** on a
-Windows PC where you've already installed Power BI Desktop using
-instructions in the [**Translations Builder Installation
+for Power BI Desktop. You can install Translations Builder on a Windows
+PC where you've already installed Power BI Desktop using instructions in
+the [**Translations Builder Installation
 Guide**](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Installation%20Guide.md).
-Once the **Translations Builder** application has been installed on a
+Once the Translations Builder application has been installed on a
 Windows computer, you can launch it directly from Power BI Desktop using
 the **External Tools** tab in the ribbon.
 
