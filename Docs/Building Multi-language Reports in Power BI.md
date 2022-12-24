@@ -727,21 +727,29 @@ src="./images/BuildingMultiLanguageReportsInPowerBI/media/image28.png"
 style="width:4.92453in;height:1.35122in"
 alt="Graphical user interface, application Description automatically generated" />
 
-### Avoiding Report Design Techniques that Do Not Support Localization
+## Understanding the Localized Labels Table
+
+Earlier you learned that report label translations provide localized
+values for text elements on a report that are not directly associated
+with a dataset object such as a report title or a button caption. Given
+that Power BI provides no built-in features to track or integrate report
+labels, Translations Builder solves this problem using the Localized
+Table strategy. Before introducing the Localized Labels table, let’s
+take a moment to discuss the problems is has been designed to solve.
 
 If you have experience with Power BI Desktop, it's critical that you
 learn which report design techniques to avoid when you begin building
 multi-language reports. Let's begin with the obvious things which cause
 problems due to a lack of localization support.
 
-- Using textboxes or buttons with literal text
+- Using textboxes or buttons with hard-coded text value
 
-- Adding literal text for the title of a visual
+- Adding a hard-coded text value for the title of a visual
 
 - Displaying page tabs to the user
 
-The key point here is that any literal text that gets added to the
-report layout cannot be localized. Consider the case where you add a
+The key point here is that any hard-coded text value that gets added to
+the report layout cannot be localized. Consider the case where you add a
 column chart to your report. By default, a Cartesian visual such as a
 column chart is assigned a dynamic value to its **Title** property which
 is parsed together using the names of the columns and measures that have
@@ -767,13 +775,14 @@ property of this visual is updated for each language supported by the
 | Dutch (nl-NL)   | Omzet per land en jaar               |
 
 Even if you don’t like the dynamically-generated visual **Title**, you
-must resist the temptation to replace it with a literal text value. Any
-literal text you type into the **Title** property of the visual will be
-added to the report layout and cannot be localized. Therefore, you
-should either leave the visual **Title** property with its default value
-or hide the title so it is not displayed.
+must resist the temptation to replace it with a hard-coded text value.
+Any hard-code text you type into the **Title** property of the visual
+will be added to the report layout and cannot be localized. Therefore,
+you should either leave the visual **Title** property with its default
+value or you should use the Localized Table strategy to provide text
+values for report labels that can be localized.
 
-### Understanding the Localized Labels Table
+### Introducing the Localized Labels Table
 
 As discussed earlier in this article, the Power BI localization features
 are supported at the dataset definition level but not at the report
