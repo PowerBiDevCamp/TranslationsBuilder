@@ -734,9 +734,9 @@ Earlier you learned that report label translations provide localized
 values for text elements on a report that are not directly associated
 with a dataset object such as a report title or a button caption. Given
 that Power BI provides no built-in features to track or integrate report
-labels, Translations Builder solves this problem using the Localized
-Table strategy. Before introducing the Localized Labels table, let’s
-take a moment to discuss the problems is has been designed to solve.
+labels, Translations Builder solves this problem using the **Localized
+Labels** table strategy. Before introducing this strategy, let’s take a
+moment to discuss the problems is has been designed to solve.
 
 If you have experience with Power BI Desktop, it's critical that you
 learn which report design techniques to avoid when you begin building
