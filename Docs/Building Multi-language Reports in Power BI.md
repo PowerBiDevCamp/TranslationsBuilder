@@ -705,9 +705,9 @@ translations for secondary languages.
 If you'd like to test out the support in Translations Builder for
 generating machine translations, you will require a Key for an instance
 of the Azure Translator Service. If you have an Azure subscription, you
-can learn how to obtain this key and its location by reading
-[**Obtaining a Key for the Azure Translator
-Service**](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Obtaining%20a%20Key%20for%20the%20Azure%20Translator%20Service.md).
+can learn how to obtain this key and its location by reading [Obtaining
+a Key for the Azure Translator
+Service](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Obtaining%20a%20Key%20for%20the%20Azure%20Translator%20Service.md).
 Translations Builder provides a Configuration Options dialog which makes
 it possible to configure the key and location to access the Azure
 Translator Service.
@@ -717,8 +717,8 @@ src="./images/BuildingMultiLanguageReportsInPowerBI/media/image27.png"
 style="width:4.62372in;height:1.74468in"
 alt="Table Description automatically generated with medium confidence" />
 
-Once a user has configured Translations Builder with an Azure Translator
-Service key, it displays additional command buttons which make it
+Once a user has configured an Azure Translator Service key, Translations
+Builder will begin to display additional command buttons which make it
 possible to generate translations for a single language at a time or for
 all languages at once. There are also commands to generate machine
 translations only for the translations that are currently empty.
@@ -783,7 +783,7 @@ you should either leave the visual **Title** property with its default
 value or you should use the Localized Table strategy to provide text
 values for report labels that can be localized.
 
-### Introducing the Localized Labels Table
+### Introducing the Localized Labels Table Strategy
 
 As discussed earlier in this article, the Power BI localization features
 are supported at the dataset definition level but not at the report
@@ -793,12 +793,13 @@ The answer is that there is no easy way to accomplish this. A better
 question to ask is ***how can I add the text-based values for labels so
 they become part of the dataset definition?***
 
-The idea behind the **Localized Labels** table is pretty simple. Power
-BI supports tracking translations for dataset objects. Therefore, you
-create a special table in the dataset and add a measure for each report
-label. Once you have created a measure for each report label, you can
-just let Power BI store and manage report label translations in the
-exact same way that it does for metadata translations.
+The idea behind the **Localized Labels** table isn’t all that
+complicated. Power BI supports tracking translations for dataset
+objects. Therefore, you create a special table in the dataset and add a
+measure for each report label. Once you have created a measure for each
+report label, you can just let Power BI store and manage report label
+translations in the exact same way that it does for metadata
+translations.
 
 Translations Builder provides commands to create the **Localized
 Labels** table and to add a measure each time you add a report label.
