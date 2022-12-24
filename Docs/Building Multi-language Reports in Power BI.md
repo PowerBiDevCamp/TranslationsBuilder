@@ -597,10 +597,10 @@ Once you add the **language** parameter to the end of the URL and press
 **ENTER**, you should be able to verify that the **language** parameter
 has been accepted by the browser as it reloads the report. If you forget
 to add the **?** or if you do not format the **language** parameter
-correctly, the browser will remove them from the URL as it loads the
-report. If you currently load a report using a **language** parameter
-value of **es-ES**, you should see the UI experience for the Power BI
-Service UI switch from English to Spanish.
+correctly, the browser will reject the parameter and remove it from the
+URL as it loads the report. If you correctly load a report using a
+**language** parameter value of **es-ES**, you should see the UI
+experience for the Power BI Service UI switch from English to Spanish.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image25.png"
@@ -628,21 +628,20 @@ set of steps again and again:
 3.  Test your work with a browser in the Power BI Service using
     **language** parameter
 
-4.  Repeat steps 1-3 until translations work has been completed
+4.  Repeat steps 1-3 until all the translations work has been completed
 
 You seem to be getting excited about all of this. If you want to jump
 right in and get started with Translations Builder, you can work try out
-the hands-on lab titled [Lab 01: Getting Started with Translations
-Builder](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Labs/Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.md).
+the hands-on lab titled [**Lab 01: Getting Started with Translations
+Builder**](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Labs/Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.md).
 
 ### Embedding Power BI Reports Using a Specific Language and Locale
 
 If you are developing with Power BI embedding, you can use the Power BI
-JavaScript API to load reports with a specific language and locale using
-the **localeSettings** parameter. The **localeSettings** parameter is an
-object with a **language** property that can be included as part of the
-**config** object that is passed in the call to **powerbi.embed** as
-shown in the following code.
+JavaScript API to load reports with a specific language and locale. This
+is accomplished by extending the **config** object passed to
+**powerbi.embed** with a **localeSettings** object containing a
+**language** property as shown in the following code.
 
 let config = {
 
@@ -661,21 +660,6 @@ localeSettings: { language: "de-DE" }
 };
 
 let report = powerbi.embed(reportContainer, config);
-
-When you embed reports using an explicit value for the **formatLocale**
-parameter, the **UserCulture** function will work *correctly. That means
-you can write and test measures that conditionally return values based
-on the user's locale. This is* different from the scenario in which
-you’re loading reports in the Power BI Service using the **language**
-query string parameter where the return value of the **UserCulture**
-function does not return the expected value.
-
-In the screenshot below, you can see a visual in the top right
-displaying a text value of **de-DE**. This visual displays the value
-returned by the **UserCulture** function. You can inspect this value
-when loading a report into the Power BI Service or with Power BI
-embedding to determine whether the **UserCulture** is returning the
-language and locale you expect.
 
 ### Generating Machine Translations using Azure Translator Service
 
