@@ -575,22 +575,21 @@ translations can be evolved across versions of a PBIX file.
 One of the issues that makes working with translations a bit more
 complicated is that you cannot test your work in Power BI Desktop.
 Instead, you must test your work in the Power BI Service in a workspace
-associated with a Premium capacity. After using Translations Builder to
-add translation support and save changes back to the underlying PBIX
-file, a user can publish the PBIX project from Power BI Desktop to the
-Power BI Service.
+associated with a Premium capacity. After you have added translation
+support with Translations Builder and you have save your changes to the
+underlying PBIX file, you can then publish the PBIX project from Power
+BI Desktop to the Power BI Service for testing.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image24.png"
 style="width:5.19816in;height:0.8239in"
 alt="Graphical user interface, application Description automatically generated" />
 
-Once you have published the PBIX project with a dataset and report to
-the Power BI Service, you can test loading the report using secondary
-language by modifying the report URL with a query string parameter named
-**language**. After the report loads with its default language, you can
-click the browser address bar and add the following language parameter
-to the end of the report URL.
+After publishing your PBIX project to the Power BI Service, you can test
+loading the report using secondary language by modifying the report URL
+with a query string parameter named **language**. After the report loads
+with its default language, you can click the browser address bar and add
+the following language parameter to the end of the report URL.
 
 /?language=es-ES
 
