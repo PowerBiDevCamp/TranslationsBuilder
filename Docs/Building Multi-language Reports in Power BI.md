@@ -591,7 +591,11 @@ with a query string parameter named **language**. After the report loads
 with its default language, you can click the browser address bar and add
 the following language parameter to the end of the report URL.
 
+\`\`\`
+
 /?language=es-ES
+
+\`\`\`
 
 Once you add the **language** parameter to the end of the URL and press
 **ENTER**, you should be able to verify that the **language** parameter
