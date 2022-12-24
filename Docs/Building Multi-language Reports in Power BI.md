@@ -396,7 +396,7 @@ Translations Builder is a tool created for content creators using Power
 BI Desktop. Content creators can use this tools to add multi-language
 support to PBIX project files. The following screenshot shows what
 Translations Builder looks like when working with a simple dataset that
-support three secondary languages.
+supports a small number of secondary languages.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image12.png"
