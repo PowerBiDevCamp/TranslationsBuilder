@@ -824,7 +824,7 @@ titles, headings and button captions used throughout the report.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image30.png"
-style="width:2.06788in;height:1.78616in" />
+style="width:2.50476in;height:2.16352in" />
 
 Translations Builder 1.0 introduced the **Localized Labels** table, but
 it did not take the strategy far enough. Consequently, the user
@@ -834,19 +834,20 @@ Builder 2.0 introduces an evolved strategy to perform more work behind
 the scenes in order to make it easier and more natural for report
 designers to surface localized labels on a report page.
 
-You can start by adding the **Localized Labels** table to a PBIX project
-by executing the **Create Localized Labels Table** command from the
+You can add the **Localized Labels** table to a PBIX project by
+executing the **Create Localized Labels Table** command from the
 **Generate Translated Tables** menu.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image31.png"
-style="width:3.21384in;height:1.25001in"
+style="width:4.02637in;height:1.56604in"
 alt="Graphical user interface, text, application Description automatically generated" />
 
 When you execute this command to create the **Localized Labels** table,
 you will be prompted by the following dialog asking if you want more
-information about the **Localized Labels** table strategy. Interestingly
-enough, you’ll be redirect to this article if you click **<u>Y</u>es**.
+information about the **Localized Labels** table strategy. If you click
+**<u>Y</u>es,** interestingly enough, you’ll be redirected back to this
+very section of this article
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image32.png"
@@ -856,7 +857,7 @@ alt="Graphical user interface, application Description automatically generated" 
 After the **Localized Labels** table has been created, you will see
 three sample report labels as shown in the following screenshot. In most
 cases you will want to delete these sample report labels and replace
-them with those needed on the current project.
+them with the actual report labels required on the current project.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image33.png"
