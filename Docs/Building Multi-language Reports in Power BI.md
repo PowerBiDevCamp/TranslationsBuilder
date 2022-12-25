@@ -958,7 +958,7 @@ Localized Labels** table.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image39.png"
-style="width:5.00909in;height:2.93071in" />
+style="width:5.95486in;height:3.43611in" />
 
 Unlike the **Localized Labels** table, the **Translated Localized
 Labels** table is not hidden from **Report View**. In fact, it’s quite
