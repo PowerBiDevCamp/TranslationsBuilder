@@ -1113,8 +1113,6 @@ from the **Translated Localized Labels** table.
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image52.png"
 style="width:2.99067in;height:2.61006in" />
 
-### Using Best Practices When Localizing Power BI Reports
-
 At this point, you've learned how to create the **Localized Labels**
 table and add labels. You also learned how to generate the **Translated
 Localized Labels** table and to bind the measures in that table to
@@ -1123,6 +1121,8 @@ localization techniques you will continue to use as you create and
 maintain reports that are required to support multiple languages. Now
 this section will conclude with some general advise building Power BI
 reports that support multiple languages.
+
+### Using Best Practices When Localizing Power BI Reports
 
 When it comes to localizing software, there are some universal
 principals to keep in mind. The first is to plan for localization from
