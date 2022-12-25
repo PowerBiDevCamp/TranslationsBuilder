@@ -1151,17 +1151,25 @@ language you have chosen to support.
 
 ## Enabling Human Workflows for Translation using Export and Import
 
-Another important consideration when building multi-language reports
-involves the human aspect of translating text values from one language
-to another. While it's possible to generate the first round of metadata
-translations using machine translations, it's likely you will eventually
-need to integrate those friendly carbon-based life forms (i.e. people)
-who play the role of translators to generate high quality translations.
-Furthermore, you cannot expect that people who work as professional
-translators will be able or willing to use Power BI Desktop and
-Translations Builder.
+Up to this point, you have learned to structure a Power BI report and
+its underlying dataset to support translations. You also learned how to
+complete this work in a quick and efficient manner by using Translations
+Builder and by generating machine translations. However. It’s import to
+acknowledge that machine-generated translations alone will not be
+adequate for most production scenarios. You need to find a way to
+integrate other people acting as translators into a human workflow
+process.
 
-The **TranslationsBuilder** introduces the concept of a translation
+Now it’s time to examine the Translations Builder features to export and
+import translations using a CSV file format. The export features provide
+a quick way to generate translations sheets that can be sent to human
+translators. As you will see, translators can make their edits to a
+translation sheets using Microsoft Excel. Once you’ve received an
+updated translation sheet back from a translator, Translations Builder
+provides an import operation to integrate those updated translations
+back into the dataset for the current project.
+
+The **Translations Builder** introduces the concept of a translation
 sheet. A translation sheet is a CSV file that you generate with an
 export operation to send out to a translator. The translator performs
 the work to update the translation sheet and then returns it back to
@@ -1184,6 +1192,366 @@ and returned with the high-quality human translations, you can then use
 the **Import Translations** command to important these human
 translations which will then effectively overwrite the machine
 translations.
+
+### Configuring Target Folders for Import and Export Operations
+
+Create two new folders inside the lab folder named **Outbox** and
+**Inbox**.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image53.png"
+style="width:2.54088in;height:1.13751in"
+alt="Graphical user interface, text, application, email Description automatically generated" />
+
+Next, you need to configure settings in Translations Builder so that
+these folders are used as targets for export and import operations.
+
+1.  Translations Builder and drop down the **Dataset Connection** menu.
+
+2.  Click **Configure Settings…** to display the **Configuration
+    Options** dialog.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image54.png"
+style="width:2.43649in;height:1.1761in"
+alt="Table Description automatically generated with medium confidence" />
+
+3.  By default, folder paths for the **Outbox** and **Inbox** are
+    configured to target the current user’s **Documents** folder.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image55.png"
+style="width:3.39in;height:1.33in"
+alt="Table Description automatically generated with low confidence" />
+
+Why does **Outbox** come before **Inbox**? That’s because you generally
+work with the **Outbox** first when you export translation sheets that
+you will send to translators. Once you get updated translations sheets
+back from translators, you add them to the **Inbox** for import.
+
+4.  Click the **set** button to update the setting for **Translations
+    Outbox Folder Path**.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image56.png"
+style="width:3.27in;height:1.28in"
+alt="Table Description automatically generated with medium confidence" />
+
+5.  Select the **Outbox** folder you created earlier in this exercise.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image57.png"
+style="width:2.84277in;height:1.59321in"
+alt="Graphical user interface, application Description automatically generated" />
+
+6.  Click the **set** button for **Translations Inbox Folder Path** and
+    select the **Inbox** folder you created earlier
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image58.png"
+style="width:3.46in;height:1.39in"
+alt="A picture containing table Description automatically generated" />
+
+7.  Click **Save Changes**.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image59.png"
+style="width:3.41in;height:1.37in"
+alt="A picture containing table Description automatically generated" />
+
+Now that you have configured the folder paths for the Outbox and Inbox,
+it’s time to begin exporting translation sheets.
+
+8.  Examine what’s inside the Export/Import Translations section.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image60.png"
+style="width:4.87302in;height:1.41879in"
+alt="Graphical user interface, application, Word Description automatically generated" />
+
+### Exporting a Translation Sheet for a Secondary Language
+
+Let’s start by creating a translation sheet for a single language.
+
+Drop down the selection menu under the **Export Translations Sheet**
+button and select **German \[de-DE\]**.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image61.png"
+style="width:2.89512in;height:1.06289in"
+alt="Graphical user interface, application Description automatically generated" />
+
+After selecting **German \[de-DE\]**, click the **Export Translations
+Sheet** button.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image62.png"
+style="width:2.84906in;height:1.02737in"
+alt="Graphical user interface, application Description automatically generated" />
+
+Translations Builder should create a translation sheet named
+**TB-Lab01-Translations-German.csv** and open this CSV file in Excel
+
+Examine the contents of **TB-Lab01-Translations-German.csv**.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image63.png"
+style="width:2.66332in;height:1.75472in"
+alt="Graphical user interface, application, table, Excel Description automatically generated" />
+
+Over the next two steps you will use a trick in Excel to widen the
+columns so ou can see all their contents.
+
+Click on the top left corner where the row headers and the column
+headers meet. This should select all columns and rows.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image64.png"
+style="width:2.7421in;height:1.41509in"
+alt="Graphical user interface, application, table, Excel Description automatically generated" />
+
+Double-click on the column heading divider between the column headers
+showing **A** and **B**.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image65.png"
+style="width:2.4151in;height:1.24849in"
+alt="Graphical user interface, application, table, Excel Description automatically generated" />
+
+You should now be able to see all the text from each column.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image66.png"
+style="width:4.22642in;height:1.18786in" />
+
+### Exporting the Master Style Sheet
+
+This translation sheet is what you will send to translators. They can
+then use Excel to review the machine translations and make changes
+wherever they are required. Click the **Export All Translations** button
+to export a master translation sheet with the translations for all
+languages.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image67.png"
+style="width:2.45283in;height:1.42953in"
+alt="Graphical user interface, application Description automatically generated" />
+
+Translations Builder creates a translation sheet named
+**TB-Lab01-Translations-Master.csv** and opens this CSV file in Excel.
+When **TB-Lab01-Translations-Master.csv** open in Microsoft Excel, you
+cannot see the contents of all columns at first.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image68.png"
+style="width:3.98113in;height:1.59983in"
+alt="Graphical user interface, text, application, table Description automatically generated" />
+
+Use the Excel trick you learned earlier to expand all columns so you can
+see the entire contents of all cells.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image69.png"
+style="width:6.95291in;height:0.96226in"
+alt="Graphical user interface, application Description automatically generated" />
+
+### Exporting Translation Sheets for All Secondary Languages
+
+Now that you have learned to export translations sheets, it’s time to
+examine how to manage translation sheet files.
+
+In Windows Explorer, navigate to the **Outbox** folder. You should see
+the two files you generated using export operations.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image70.png"
+style="width:5.91195in;height:1.68623in"
+alt="Graphical user interface, text, application, email Description automatically generated" />
+
+Return to Translations Builder and uncheck the checkbox with the caption
+**Open Export in Excel**.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image71.png"
+style="width:2.69811in;height:1.56947in"
+alt="Graphical user interface, application Description automatically generated" />
+
+All three export commands use this checkbox to decide whether to open a
+translation sheet in Excel after it’s generated. In some cases, it’s
+handy to have the translation sheet open in Excel. In other scenarios
+like the one ahead, it’s unnecessary and distracting.
+
+Click the **Export All Translation Sheets** button.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image72.png"
+style="width:2.67296in;height:1.61641in"
+alt="Graphical user interface Description automatically generated" />
+
+The **Export All Translation Sheets** command generates the complete set
+of translation sheets to be sent to translators.
+
+Return to the **Outbox** folder in Windows Explorer.
+
+You should see that a sperate translation sheet has been generated for
+each secondary language.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image73.png"
+style="width:4.26192in;height:1.8421in"
+alt="Graphical user interface, text, application, email Description automatically generated" />
+
+Now that you have experienced how to export translation sheets, you will
+now learn how to import translation sheets.
+
+### Importing Translation Sheets
+
+In the **Outbox** folder in Windows Explorer, select
+**TB-Lab01-Translations-Master.csv** and
+**TB-Lab01-Translations-Spanish.csv**.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image74.png"
+style="width:3.86419in;height:1.67019in"
+alt="Graphical user interface, text, application, email Description automatically generated" />
+
+Copy the two selected translation sheet files to the Windows clipboard.
+
+Navigate from the **Outbox** folder to the **Inbox** folder.
+
+Paste the two translation sheet files from the Windows clipboard into
+the **Inbox** folder.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image75.png"
+style="width:4.42538in;height:1.91275in"
+alt="Graphical user interface, text, application, email Description automatically generated" />
+
+Open the translation sheet named
+**Inbox\TB-Lab01-Translations-Spanish.csv** in Microsoft Excel.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image76.png"
+style="width:4.95306in;height:1.7619in"
+alt="Graphical user interface, text, application Description automatically generated" />
+
+The job of the translator is to review all translations in the fifth
+column and to make updates where appropriate. From the perspective of
+the translator, the top row with column headers and the first four
+columns should be treated as read-only values.
+
+Enter new values for each of the Spanish translations in the fifth
+column.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image77.png"
+style="width:5.18424in;height:1.22222in"
+alt="Graphical user interface, application Description automatically generated" />
+
+Don’t worry whether the values you are valid translations. You just need
+to add any text so you can test the import process.
+
+Save your changes to **TB-Lab01-Translations-Spanish.csv** and then
+close the file in Microsoft Excel.
+
+Return to Translations Builder and click the **Import Translations**
+button.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image78.png"
+style="width:2.25397in;height:1.31779in"
+alt="Graphical user interface, application Description automatically generated" />
+
+Remember to close translation sheet files in Microsoft Excel before
+importing them with Translations Builder to prevent errors.
+
+In the **Open** file dialog, select
+**TB-Lab01-Translations-Spanish.csv** and click **Open**.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image79.png"
+style="width:3.06918in;height:1.48451in"
+alt="Graphical user interface, text, application, email Description automatically generated" />
+
+You should see that your updates to the Spanish translation sheet now
+appear in the translation grid.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image80.png"
+style="width:5.02516in;height:1.28573in"
+alt="Graphical user interface, application Description automatically generated" />
+
+Now that you have seen how to how to import translations from an updated
+translations sheet with a single language, it’s time to move ahead and
+import translations from all languages at once by importing the master
+translation sheet.
+
+click the **Import Translations** button.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image78.png"
+style="width:2.26415in;height:1.32375in"
+alt="Graphical user interface, application Description automatically generated" />
+
+In the **Open** file dialog, select **TB-Lab01-Translations-Master.csv**
+and click **Open**.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image81.png"
+style="width:3.95598in;height:1.46488in"
+alt="Graphical user interface, text, application, email Description automatically generated" />
+
+You should see that the original, machine-generated Spanish translations
+now appear in the translation grid.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image82.png"
+style="width:5.04762in;height:1.15588in"
+alt="Graphical user interface Description automatically generated" />
+
+You can see that the master translation sheet can also serve as a great
+way to backup and restore your translations work. To make this point,
+you are now going to delete the column for French. Deleting a column
+like this will delete all translations for that language. As you will
+see, Translations Builder will automatically add the column back if it
+finds the column when importing a translation sheet.
+
+Right-click on the **French \[fr-FR\]** column header and click **Delete
+Secondary Language**.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image83.png"
+style="width:5.15723in;height:0.93094in"
+alt="Graphical user interface, text, application Description automatically generated" />
+
+When prompted by the **Confirm Delete Secondary Language Operation**
+dialog, click **OK** to continue.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image84.png"
+style="width:2.84986in;height:1.17149in"
+alt="Graphical user interface, application Description automatically generated" />
+
+You should see that the column for French has been removed from the
+translations grid.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image85.png"
+style="width:6.4127in;height:1.10314in"
+alt="Graphical user interface, text, application Description automatically generated" />
+
+click the **Import Translations** button.
+
+In the **Open** file dialog, select **TB-Lab01-Translations-Master.csv**
+and click **Open**.
+
+After the import operation competes, the **French \[fr-FR\]** column
+should reappear as the last column on the right.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image86.png"
+style="width:5.44227in;height:1.99167in"
+alt="A screenshot of a computer Description automatically generated with medium confidence" />
 
 This concludes the coverage of developing an external tool with custom
 code and TOM to automate the development tasks associated with creating
@@ -1241,7 +1609,7 @@ as the data from any database instance only needs to be viewed by users
 in a single language.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image53.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image87.png"
 style="width:5.84793in;height:4.02857in" />
 
 The important observation is that each customer deployment uses a single
@@ -1260,7 +1628,7 @@ languages while the data being analyzed is coming from a single database
 instance.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image54.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image88.png"
 style="width:6.14478in;height:1.77914in" />
 
 Once again, the key question to ask is whether you will have people who
@@ -1352,7 +1720,7 @@ The **Languages** query generates a table with a row for each language
 which will be used in the row expansion process.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image55.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image89.png"
 style="width:3.76488in;height:0.80393in" />
 
 ### Load Reports using Bookmarks to Filter Data Translations
