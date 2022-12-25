@@ -1053,6 +1053,9 @@ Labels** table and select any measure inside.
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image46.png"
 style="width:2.50903in;height:2.27736in" />
 
+You can use the same technique to localize a visual **Title** using a
+measure from the **Translated Localized Labels** table.
+
 ### Adding Support for Page Navigation
 
 As you recall, you cannot display Power BI report page tabs to the user
