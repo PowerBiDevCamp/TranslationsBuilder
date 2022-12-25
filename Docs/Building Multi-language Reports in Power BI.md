@@ -895,12 +895,14 @@ operation.
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image36.png"
 style="width:2.95828in;height:1.83648in" />
 
-Once you have added report labels to your PBIX project, they will appear
-in the translation grid as shown in the following screenshot.
+Once you’ve added the required report labels to your PBIX project, they
+will appear in the translation grid. At that point, you can add and edit
+localized label translations just like any other type of translation in
+the translation grid.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image37.png"
-style="width:5.59748in;height:1.36746in" />
+style="width:3.95598in;height:0.96644in" />
 
 As you learned earlier, Translations Builder only populates the
 translation grid with dataset objects that are not hidden from **Report
@@ -942,78 +944,168 @@ directly on a report page. You can create this table by executing the
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image38.png"
-style="width:3.06918in;height:1.08398in"
+style="width:2.4151in;height:0.85297in"
 alt="Graphical user interface, text, application Description automatically generated" />
 
-Here is what happens.
+The first time you execute the **Generate Translated Localized Labels
+Table** command, Translations Builder executes code to create the
+**Translated Localized Labels** table and populate it with measures.
+After that, executing the **Generate Translated Localized Labels Table**
+command will delete all the measures in the **Translated Localized
+Labels** table and recreate them to synchronize the report labels and
+translations between the **Localized Labels** table and the **Translated
+Localized Labels** table.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image39.png"
-style="width:3.10692in;height:1.59051in" />
+style="width:2.48169in;height:1.27044in" />
 
-Any you add or update an report labels in the Localized Labels table,
-you will need to execute **Generate Translated Localized Labels Table**.
-
-What do the measure look like? Great question.
+Unlike the **Localized Labels** table, the **Translated Localized
+Labels** is not hidden from **Report View**. In fact, it’s quite the
+opposite. The **Translated Localized Labels** provides measures that are
+intended to be used to surface report labels in a report. Here is an
+example of what the Fields list looks like to a report author when the
+report is in **Report View**.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image40.png"
-style="width:1.31832in;height:2.28302in" />
+style="width:1.68254in;height:2.91377in" />
 
-Xxxxxxx
+You can see that every measure in the **Translated Localized Labels**
+table has a name that ends with the world **Label**. The reason for this
+is that two measures inside the same dataset cannot have the same name.
+Measure names must be unique on a project-wide basis so it’s not
+possible to create measures in the **Translated Localized Labels** table
+that have the same name as the measures in the **Localized Labels**
+table. Therefore, the **Localized Labels** table strategy appends the
+word **Label** to all measure names in the **Translated Localized
+Labels** table to ensure their names are unique.
+
+If you examine the machine-generated DAX expressions for measures inside
+the **Translated Localized Labels** table, you will see they are based
+on the same pattern shown earlier which uses **USERCULTURE** to
+determine the language of the current user.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image41.png"
-style="width:2.88737in;height:2.08176in" />
+style="width:3.96281in;height:2.85714in" />
 
-Explain USERCULTURE() function and explain how it enables localization
-opportunities
+You must remember to execute **Generate Translated Localized Labels
+Table** anytime you make changes to the **Localized Labels** table. Keep
+this in mind because it is easy to forget. You should also resist any
+temptation to edit the DAX expressions for measures in the **Translated
+Localized Labels** table. Any edits you make will be lost as all the
+measures in this table are deleted and recreated each time you execute
+**Generate Translated Localized Labels Table**.
+
+### Surfacing Localized Labels on a Report Page
+
+As you have learned, report labels are implemented as measures in the
+**Translated Localized Labels** table. That makes them very easy to
+surface in a Power BI report. For example, you can add a **Card** visual
+to a report and then configure its **Fields** data role in the
+Visualizations pane with a measure from the **Translated Localized
+Labels** table.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image42.png"
-style="width:2.87615in;height:2.26415in" />
+style="width:5.53654in;height:2.34591in" />
 
-Remember to execute the **Generate Translated Localized Labels Table**
-command and time you make changes to the Localized Labels table.
-
-Also, you should not edit the DAX expressions of measures in the
-**Translated Localized Labels** table. Any changes you make will be lost
-as all the measures in this table are deleted and recreated each time
-you execute **Generate Translated Localized Labels Table**.
-
-### Surfacing Report Labels on a Report Page
-
-Ddddddd
+As Microsoft continues to evolve the report design experience in Power
+BI Desktop, we have seen several enhancements which make it easier for
+content creators to build multi-language reports. One essential aspect
+of these enhancements is the ability to use measures in a report layout
+to provide dynamic property values to report elements such as shapes and
+visuals. The live demo project uses a **Rectangle** shape to display the
+report label for the report title. The following screenshot shows how to
+select a **Rectangle** and then navigate to **Shape** \> **Style** \>
+**Text** section in the **Format** pane.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image43.png"
-style="width:5.05031in;height:2.13989in" />
+style="width:5.31168in;height:3.18868in" />
 
-ccccc
+The **Text** property of a **Rectangle** can be configured with a
+hard-coded string as shown in the following screenshot.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image44.png"
-style="width:4.59748in;height:2.75994in" />
+style="width:3.59765in;height:1.15723in"
+alt="Table Description automatically generated with low confidence" />
 
-Xxxxx
+As you know, you must avoid hard-coded text values in the report layout
+when creating multi-language reports. If you click on the ***fx***
+button to the right, Power BI Desktop will display a dialog which allows
+you to configure the **Text** property with a measure from the
+**Translated Localized Labels** table .
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image45.png"
-style="width:3.38365in;height:1.08839in"
-alt="Table Description automatically generated with low confidence" />
-
-Xxx
-
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image46.png"
 style="width:2.46541in;height:0.86148in"
 alt="A picture containing application Description automatically generated" />
 
 Xxxx
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image47.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image46.png"
 style="width:2.77164in;height:2.51572in" />
+
+### Adding Support for Page Navigation
+
+As you recall, you cannot display Power BI report page tabs to the user
+in a multi-language report because page tabs do not support
+localization. Therefore, you must provide some other means for users to
+navigate from page to page. This can be accomplished using a design
+technique where you add shapes to a report which act as buttons. When
+the user clicks on a shape, the shape will apply a bookmark to navigate
+to another page. Let's step through the process of building a navigation
+menu that supports localization using measures from the **Localized
+Labels** table.
+
+The first thing you need to do is to hide every page in the report
+except for the first page which acts as the landing page.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image47.png"
+style="width:7.49653in;height:0.69792in" />
+
+Next, create a set of bookmarks. Each bookmark should be created to
+navigate to a specific page. The **live demo** sample demonstrates this
+technique by adding a bookmark for each page supported by the navigation
+menu.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image48.png"
+style="width:1.59253in;height:1.67925in" />
+
+Cccc
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image49.png"
+style="width:4.16981in;height:1.73166in" />
+
+xxxx
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image50.png"
+style="width:4.22642in;height:1.68218in" />
+
+Xxx
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image51.png"
+style="width:2.99067in;height:2.61006in" />
+
+### Using Best Practices When Localizing Power BI Reports
+
+At this point, you've learned how to create the **Localized Labels**
+table and add labels. You also learned how to generate the **Translated
+Localized Labels** table and to bind the measures in that table to
+report elements such as Card visuals, shapes and buttons. These are the
+localization techniques you will continue to use as you create and
+maintain reports that are required to support multiple languages. Now
+this section will conclude with some general advise building Power BI
+reports that support multiple languages.
 
 When it comes to localizing software, there are some universal
 principals to keep in mind. The first is to plan for localization from
@@ -1040,62 +1132,7 @@ your reports with each language you plan to support. In essence, you
 need to ensure your report layouts looks the way you expect with any
 language you have chosen to support.
 
-### Adding Support for Page Navigation
-
-As you recall, you cannot display Power BI report page tabs to the user
-in a multi-language report because page tabs do not support
-localization. Therefore, you must provide some other means for users to
-navigate from page to page. This can be accomplished using a design
-technique where you add shapes to a report which act as buttons. When
-the user clicks on a shape, the shape will apply a bookmark to navigate
-to another page. Let's step through the process of building a navigation
-menu that supports localization using measures from the **Localized
-Labels** table.
-
-The first thing you need to do is to hide every page in the report
-except for the first page which acts as the landing page.
-
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image48.png"
-style="width:7.49653in;height:0.69792in" />
-
-Next, create a set of bookmarks. Each bookmark should be created to
-navigate to a specific page. The **live demo** sample demonstrates this
-technique by adding a bookmark for each page supported by the navigation
-menu.
-
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image49.png"
-style="width:1.59253in;height:1.67925in" />
-
-Cccc
-
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image50.png"
-style="width:4.16981in;height:1.73166in" />
-
-xxxx
-
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image51.png"
-style="width:4.22642in;height:1.68218in" />
-
-Xxx
-
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image52.png"
-style="width:2.99067in;height:2.61006in" />
-
-xxx
-
-At this point, you've learned how to create the **Localized Labels**
-table and add labels. You also learned how to generate the Translated
-Localized Labels table and to bind the measures in that table to report
-elements such as Card visuals, shapes and buttons. These are the
-localization techniques you will continue to use as you create and
-maintain reports that must support multiple languages
-
-### Enabling Human Workflows for Translation using Export and Import
+## Enabling Human Workflows for Translation using Export and Import
 
 Another important consideration when building multi-language reports
 involves the human aspect of translating text values from one language
@@ -1187,7 +1224,7 @@ as the data from any database instance only needs to be viewed by users
 in a single language.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image53.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image52.png"
 style="width:5.84793in;height:4.02857in" />
 
 The important observation is that each customer deployment uses a single
@@ -1206,7 +1243,7 @@ languages while the data being analyzed is coming from a single database
 instance.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image54.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image53.png"
 style="width:6.14478in;height:1.77914in" />
 
 Once again, the key question to ask is whether you will have people who
@@ -1298,7 +1335,7 @@ The **Languages** query generates a table with a row for each language
 which will be used in the row expansion process.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image55.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image54.png"
 style="width:3.76488in;height:0.80393in" />
 
 ### Load Reports using Bookmarks to Filter Data Translations
