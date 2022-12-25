@@ -1058,8 +1058,8 @@ measure from the **Translated Localized Labels** table.
 
 ### Adding Support for Page Navigation
 
-As you recall, you cannot display Power BI report page tabs to the user
-in a multi-language report because page tabs in a Power BI report do not
+As you recall, you cannot display page tabs to the user in a
+multi-language report because page tabs in a Power BI report do not
 support localization. Therefore, you must provide some other means for
 users to navigate from page to page. This can be accomplished using a
 design technique where you add shapes to a report which act as buttons.
