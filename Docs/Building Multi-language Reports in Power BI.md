@@ -819,8 +819,9 @@ no need to inspect or modify the **Localized Labels** table using the
 Power BI Desktop dataset design experience.
 
 Here's an example of the **Localized Labels** table from the live demo
-project. As you can see it provides localized report labels for all
-titles, headings and button captions used throughout the report.
+project. As you can see it provides localized report labels for the
+report title, visual titles and captions for navigation buttons used
+throughout the report.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image30.png"
