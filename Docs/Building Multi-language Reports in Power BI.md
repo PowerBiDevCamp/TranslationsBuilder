@@ -912,13 +912,13 @@ excludes hidden objects from being displayed in the translation grid.
 
 One valuable aspect of the **Localized Labels** table strategy is that
 report labels can be created, managed and stored in the same PBIX
-project files that holds the metadata translations for tables, columns
-and measures. The **Localized Labels** table strategy is able to merge
-metadata translations and report label translations together in the
-translation gird. There is no need to distinguish between metadata
-translations and report label translations when it comes to editing
-translations or when using Translations Builder features to generate
-machine translations.
+project file that holds the metadata translations for the names of
+tables, columns and measures. The **Localized Labels** table strategy is
+able to merge metadata translations and report label translations
+together in the translation gird. There is no need to distinguish
+between metadata translations and report label translations when it
+comes to editing translations or when using Translations Builder
+features to generate machine translations.
 
 In the Power BI community, there are other popular localization
 techniques that track report label translations in a separate CSV file.
