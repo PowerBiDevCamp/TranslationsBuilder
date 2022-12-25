@@ -915,10 +915,10 @@ report labels can be created, managed and stored in the same PBIX
 project file that holds the metadata translations for the names of
 tables, columns and measures. The **Localized Labels** table strategy is
 able to merge metadata translations and report label translations
-together in the translation gird. There is no need to distinguish
-between metadata translations and report label translations when it
-comes to editing translations or when using Translations Builder
-features to generate machine translations.
+together in a unified experience in the translation gird. There is no
+need to distinguish between metadata translations and report label
+translations when it comes to editing translations or when using
+Translations Builder features to generate machine translations.
 
 In the Power BI community, there are other popular localization
 techniques that track report label translations in a separate CSV file.
@@ -926,10 +926,10 @@ While these techniques work just fine, they are not as streamlined as
 the **Localized Labels** table strategy because report label
 translations must be stored in a separate CSV file. In other words,
 report label translations must be created separately and managed
-differently from a PBIX project’s metadata translations. With the
-**Localized Labels** table strategy, report label translations and
-metadata translations are stored together and managed the exact same
-way.
+differently from the metadata translations in a PBIX project. The
+**Localized Labels** table strategy allows for report label translations
+and metadata translations to be stored together and managed the exact
+same way.
 
 ### Generating the Translated Localized Labels Table
 
@@ -961,11 +961,12 @@ src="./images/BuildingMultiLanguageReportsInPowerBI/media/image39.png"
 style="width:1.92727in;height:1.14056in" />
 
 Unlike the **Localized Labels** table, the **Translated Localized
-Labels** is not hidden from **Report View**. In fact, it’s quite the
-opposite. The **Translated Localized Labels** provides measures that are
-intended to be used to surface report labels in a report. Here is an
-example of what the Fields list looks like to a report author when the
-report is in **Report View**.
+Labels** table is not hidden from **Report View**. In fact, it’s quite
+the opposite. The **Translated Localized Labels** table provides
+measures that are intended to be used to surface report labels in a
+report. Here is how the **Translated Localized Labels** table appears to
+a report author in the **Fields** pane when the report is in **Report
+View**.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image40.png"
@@ -988,7 +989,7 @@ determine the language of the current user.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image41.png"
-style="width:3.96281in;height:2.85714in" />
+style="width:3.25455in;height:2.34649in" />
 
 You must remember to execute **Generate Translated Localized Labels
 Table** anytime you make changes to the **Localized Labels** table. Keep
