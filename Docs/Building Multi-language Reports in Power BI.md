@@ -825,7 +825,7 @@ throughout the report.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image30.png"
-style="width:2.50476in;height:2.16352in" />
+style="width:2.25786in;height:2.15411in" />
 
 Translations Builder 1.0 introduced the **Localized Labels** table, but
 it did not take the strategy far enough. Consequently, the user
