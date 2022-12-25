@@ -1043,7 +1043,7 @@ shape using a measure from the **Translated Localized Labels** table .
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image45.png"
-style="width:2.50909in;height:0.87674in"
+style="width:2.17318in;height:0.75937in"
 alt="A picture containing application Description automatically generated" />
 
 Once this dialog appears, you can navigate to the **Translated Localized
@@ -1051,7 +1051,7 @@ Labels** table and select any measure inside.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image46.png"
-style="width:2.50903in;height:2.27736in" />
+style="width:2.31285in;height:2.09929in" />
 
 You can use the same technique to localize a visual **Title** using a
 measure from the **Translated Localized Labels** table.
@@ -1062,14 +1062,15 @@ As you recall, you cannot display page tabs to the user in a
 multi-language report because page tabs in a Power BI report do not
 support localization. Therefore, you must provide some other means for
 users to navigate from page to page. This can be accomplished using a
-design technique where you add shapes to a report which act as buttons.
-When the user clicks on a shape, the shape will apply a bookmark to
+design technique where you add a navigation menu using buttons. When the
+user clicks on a button, the button is configured to apply a bookmark to
 navigate to another page. Let's step through the process of building a
 navigation menu that supports localization using measures from the
 **Localized Labels** table.
 
-The first thing you need to do is to hide every page in the report
-except for the first page which acts as the landing page.
+The first thing you need to do when building a custom navigation menu is
+to hide every page in the report except for the first page which acts as
+the report landing page.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image47.png"
@@ -1082,24 +1083,34 @@ menu.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image48.png"
-style="width:1.59253in;height:1.67925in" />
+style="width:1.6257in;height:1.71422in" />
 
-Cccc
+When creating bookmarks for navigation, you should disable **Data** and
+**Display** and only enable **Current Page** behavior.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image49.png"
-style="width:4.16981in;height:1.73166in" />
+style="width:1.9754in;height:1.81564in" />
 
-xxxx
+The next step is to configure each button in the navigation menu to
+apply a bookmark to navigate to a specific page.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image50.png"
-style="width:4.22642in;height:1.68218in" />
+style="width:4.16981in;height:1.73166in" />
 
-Xxx
+After you’ve configured a button with a bookmark, the final step is to
+configure the **Text** property with a localized label.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image51.png"
+style="width:4.22642in;height:1.68218in" />
+
+The **Text** property of each button should be configured with a measure
+from the **Translated Localized Labels** table.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image52.png"
 style="width:2.99067in;height:2.61006in" />
 
 ### Using Best Practices When Localizing Power BI Reports
@@ -1230,7 +1241,7 @@ as the data from any database instance only needs to be viewed by users
 in a single language.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image52.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image53.png"
 style="width:5.84793in;height:4.02857in" />
 
 The important observation is that each customer deployment uses a single
@@ -1249,7 +1260,7 @@ languages while the data being analyzed is coming from a single database
 instance.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image53.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image54.png"
 style="width:6.14478in;height:1.77914in" />
 
 Once again, the key question to ask is whether you will have people who
@@ -1341,7 +1352,7 @@ The **Languages** query generates a table with a row for each language
 which will be used in the row expansion process.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image54.png"
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image55.png"
 style="width:3.76488in;height:0.80393in" />
 
 ### Load Reports using Bookmarks to Filter Data Translations
