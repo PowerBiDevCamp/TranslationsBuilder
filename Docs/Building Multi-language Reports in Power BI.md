@@ -196,8 +196,8 @@ easier.
 
 The long answer is that a Power BI visual inspects the locale of the
 current user before rendering. During the rendering process, the visual
-applies formatting to a date or numeric value based on the user’s locale
-and the format string of the source column or measure.
+determines what formatting to use for a date or numeric value based on
+the user’s locale and the format string of the source column or measure.
 
 Consider a simple scenario in which you’re building a report for an
 audience of report consumers that live in both New York \[**en-US**\]
@@ -230,8 +230,8 @@ Date** appears when loaded under different locales.
 | de-DE | 31.12.2022 |
 | ja-JP | 2022/12/31 |
 
-The Japanese formatting is hands-down the winner because it’s the only
-format that automatically sorts chronologically.
+The Japanese formatting is hands-down the winner. It’s the only format
+that automatically sorts chronologically.
 
 ### Understanding the Three Types of Translations
 
@@ -770,7 +770,7 @@ of columns and measures in the underlying dataset definition (e.g.
 the visual will use the translations for whatever language has been used
 to load the report. The following table shows how the default **Title**
 property of this visual is updated for each language supported by the
-**ProductSalesMultiLanguage.pbix** live demo.
+live demo.
 
 | Language        | Visual Title                         |
 |-----------------|--------------------------------------|
@@ -785,8 +785,8 @@ resist the temptation to replace it with a hard-coded text value. Any
 hard-coded text you type into the **Title** property of the visual will
 be added to the report layout and cannot be localized. Therefore, you
 should either leave the visual **Title** property with its default value
-or you should use the **Localized Table** strategy to create report
-labels that support localization.
+or you should use the **Localized Labels** table strategy to create
+report labels that support localization.
 
 ### Introducing the Localized Labels Table Strategy
 
@@ -801,14 +801,14 @@ localization support?”*
 
 The idea behind the **Localized Labels** table isn’t all that
 complicated. It builds on the idea that Power BI supports metadata
-translations for specific types of dataset objects including measure.
+translations for specific types of dataset objects including measures.
 When you add a report label with Translations Builder, the tool
-automatically adds a new measure to the Localized Labels table behind
-the scenes. Once a measure has been created for each report label, Power
-BI can store and manage its translations in the exact same fashion that
-it does for metadata translations. In fact, the **Localized Labels**
-table strategy uses metadata translations to implement report label
-translations.
+automatically adds a new measure to the **Localized Labels** table
+behind the scenes. Once a measure has been created for each report
+label, Power BI can store and manage its translations in the exact same
+fashion that it does for metadata translations. In fact, the **Localized
+Labels** table strategy uses metadata translations to implement report
+label translations.
 
 Translations Builder provides a convenient command to create the
 **Localized Labels** table. There are also other commands to add a
