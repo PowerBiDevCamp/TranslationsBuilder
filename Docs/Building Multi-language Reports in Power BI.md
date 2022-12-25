@@ -902,7 +902,7 @@ the translation grid.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image37.png"
-style="width:3.95598in;height:0.96644in" />
+style="width:7.14477in;height:1.74545in" />
 
 As you learned earlier, Translations Builder only populates the
 translation grid with dataset objects that are not hidden from **Report
@@ -944,7 +944,7 @@ directly on a report page. You can create this table by executing the
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image38.png"
-style="width:2.4151in;height:0.85297in"
+style="width:4.11841in;height:1.45455in"
 alt="Graphical user interface, text, application Description automatically generated" />
 
 The first time you execute the **Generate Translated Localized Labels
@@ -958,7 +958,7 @@ Localized Labels** table.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image39.png"
-style="width:5.95486in;height:3.43611in" />
+style="width:2.23636in;height:1.29044in" />
 
 Unlike the **Localized Labels** table, the **Translated Localized
 Labels** table is not hidden from **Report View**. In fact, it’s quite
@@ -970,7 +970,7 @@ View**.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image40.png"
-style="width:1.68254in;height:2.91377in" />
+style="width:1.29091in;height:2.23556in" />
 
 You can see that every measure in the **Translated Localized Labels**
 table has a name that ends with the world **Label**. The reason for this
@@ -989,7 +989,7 @@ determine the language of the current user.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image41.png"
-style="width:3.25455in;height:2.34649in" />
+style="width:2.23178in;height:1.60909in" />
 
 You must remember to execute **Generate Translated Localized Labels
 Table** anytime you make changes to the **Localized Labels** table. Keep
@@ -1034,18 +1034,19 @@ src="./images/BuildingMultiLanguageReportsInPowerBI/media/image44.png"
 style="width:3.59765in;height:1.15723in"
 alt="Table Description automatically generated with low confidence" />
 
-As you know, you must avoid hard-coded text values in the report layout
-when creating multi-language reports. If you click on the ***fx***
-button to the right, Power BI Desktop will display a dialog which allows
-you to configure the **Text** property with a measure from the
-**Translated Localized Labels** table .
+As you know, you must avoid hard-coding text values into the report
+layout when creating multi-language reports. If you click on the
+***fx*** button to the right, Power BI Desktop will display a dialog
+which allows you to configure the **Text** property with a measure from
+the **Translated Localized Labels** table .
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image45.png"
-style="width:2.46541in;height:0.86148in"
+style="width:3.01793in;height:1.05455in"
 alt="A picture containing application Description automatically generated" />
 
-Xxxx
+Once this dialog appears, you can navigate to the **Translated Localized
+Labels** table and select any measure inside.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image46.png"
