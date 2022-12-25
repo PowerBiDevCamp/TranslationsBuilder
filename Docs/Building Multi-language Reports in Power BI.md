@@ -1013,15 +1013,15 @@ src="./images/BuildingMultiLanguageReportsInPowerBI/media/image42.png"
 style="width:5.53654in;height:2.34591in" />
 
 As Microsoft continues to evolve the report design experience in Power
-BI Desktop, we have seen several enhancements which make it easier for
-content creators to build multi-language reports. One essential aspect
-of these enhancements is the ability to use measures in a report layout
-to configure dynamic property values for report elements such as visuals
-and shapes. The live demo project uses a **Rectangle** shape to display
-the localized report label for the report title. The following
-screenshot shows how to select a **Rectangle** shape and then navigate
-to configure its **Text** property value in **Shape** \> **Style** \>
-**Text** section in the **Format** pane.
+BI Desktop, there have been several new enhancements which make it
+easier for content creators to build multi-language reports. One
+essential aspect of these enhancements is a greater ability to use
+measures in a report layout to configure dynamic property values for
+report elements such as visuals and shapes. The live demo project uses a
+**Rectangle** shape to display the localized report label for the report
+title. The following screenshot shows how to select a **Rectangle**
+shape and then navigate to configure its **Text** property value in
+**Shape** \> **Style** \> **Text** section in the **Format** pane.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image43.png"
