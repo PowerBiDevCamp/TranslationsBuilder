@@ -852,7 +852,7 @@ very section of this article
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image32.png"
-style="width:1.95526in;height:0.91723in"
+style="width:1.63365in;height:0.76637in"
 alt="Graphical user interface, application Description automatically generated" />
 
 After the **Localized Labels** table has been created, you will see
@@ -862,7 +862,7 @@ them with the actual report labels required on the current project.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image33.png"
-style="width:5.08276in;height:1.12579in"
+style="width:5.33573in;height:1.18182in"
 alt="Graphical user interface Description automatically generated" />
 
 Remember, there is no need to interact with the **Localized Labels**
@@ -875,7 +875,7 @@ the shortcut key of **Ctrl+A**.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image34.png"
-style="width:2.96226in;height:1.10223in"
+style="width:3.27273in;height:1.21775in"
 alt="Graphical user interface, text, application Description automatically generated" />
 
 You can add report labels one at a time by typing in the text for the
@@ -958,7 +958,7 @@ Localized Labels** table.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image39.png"
-style="width:2.48169in;height:1.27044in" />
+style="width:1.92727in;height:1.14056in" />
 
 Unlike the **Localized Labels** table, the **Translated Localized
 Labels** is not hidden from **Report View**. In fact, it’s quite the
