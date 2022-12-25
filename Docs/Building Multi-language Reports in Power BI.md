@@ -1016,33 +1016,34 @@ As Microsoft continues to evolve the report design experience in Power
 BI Desktop, we have seen several enhancements which make it easier for
 content creators to build multi-language reports. One essential aspect
 of these enhancements is the ability to use measures in a report layout
-to provide dynamic property values to report elements such as shapes and
-visuals. The live demo project uses a **Rectangle** shape to display the
-report label for the report title. The following screenshot shows how to
-select a **Rectangle** and then navigate to **Shape** \> **Style** \>
+to configure dynamic property values for report elements such as visuals
+and shapes. The live demo project uses a **Rectangle** shape to display
+the localized report label for the report title. The following
+screenshot shows how to select a **Rectangle** shape and then navigate
+to configure its **Text** property value in **Shape** \> **Style** \>
 **Text** section in the **Format** pane.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image43.png"
 style="width:5.31168in;height:3.18868in" />
 
-The **Text** property of a **Rectangle** can be configured with a
-hard-coded string as shown in the following screenshot.
+The **Text** property of a **Rectangle** shape can be configured with a
+hard-coded string as shown in this screenshot.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image44.png"
 style="width:3.59765in;height:1.15723in"
 alt="Table Description automatically generated with low confidence" />
 
-As you know, you must avoid hard-coding text values into the report
-layout when creating multi-language reports. If you click on the
-***fx*** button to the right, Power BI Desktop will display a dialog
-which allows you to configure the **Text** property with a measure from
-the **Translated Localized Labels** table .
+However, you already know you must avoid hard-coding text values into
+the report layout when creating multi-language reports. If you click on
+the ***fx*** button to the right, Power BI Desktop will display a dialog
+which allows you to configure the **Text** property of the **Rectangle**
+shape using a measure from the **Translated Localized Labels** table .
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image45.png"
-style="width:3.01793in;height:1.05455in"
+style="width:2.50909in;height:0.87674in"
 alt="A picture containing application Description automatically generated" />
 
 Once this dialog appears, you can navigate to the **Translated Localized
@@ -1050,19 +1051,19 @@ Labels** table and select any measure inside.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image46.png"
-style="width:2.77164in;height:2.51572in" />
+style="width:2.50903in;height:2.27736in" />
 
 ### Adding Support for Page Navigation
 
 As you recall, you cannot display Power BI report page tabs to the user
-in a multi-language report because page tabs do not support
-localization. Therefore, you must provide some other means for users to
-navigate from page to page. This can be accomplished using a design
-technique where you add shapes to a report which act as buttons. When
-the user clicks on a shape, the shape will apply a bookmark to navigate
-to another page. Let's step through the process of building a navigation
-menu that supports localization using measures from the **Localized
-Labels** table.
+in a multi-language report because page tabs in a Power BI report do not
+support localization. Therefore, you must provide some other means for
+users to navigate from page to page. This can be accomplished using a
+design technique where you add shapes to a report which act as buttons.
+When the user clicks on a shape, the shape will apply a bookmark to
+navigate to another page. Let's step through the process of building a
+navigation menu that supports localization using measures from the
+**Localized Labels** table.
 
 The first thing you need to do is to hide every page in the report
 except for the first page which acts as the landing page.
