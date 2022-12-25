@@ -810,31 +810,29 @@ fashion that it does for metadata translations. In fact, the **Localized
 Labels** table strategy uses metadata translations to implement report
 label translations.
 
-Translations Builder provides a convenient command to create the
-**Localized Labels** table. There are also other commands to add a
-measure each time you need a report label. The **Localized Labels**
-table is created as a hidden table behind the scenes. The idea is that
-you can do all the work to create and manage report labels inside the
-Translation Builder user experience. There is no need to inspect or
-modify the **Localized Labels** table using the Power BI Desktop dataset
-design experience.
+Translations Builder provides commands to create the **Localized
+Labels** table and to add a measure each time you need a report label.
+The **Localized Labels** table is created as a hidden table behind the
+scenes. The idea is that you can do all the work to create and manage
+report labels inside the Translation Builder user experience. There is
+no need to inspect or modify the **Localized Labels** table using the
+Power BI Desktop dataset design experience.
 
 Here's an example of the **Localized Labels** table from the live demo
-project **ProductSalesMultiLanguage.pbix**. As you can see it provides
-localized report labels for all titles, headings and button captions
-used throughout the report.
+project. As you can see it provides localized report labels for all
+titles, headings and button captions used throughout the report.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image30.png"
 style="width:2.06788in;height:1.78616in" />
 
 Translations Builder 1.0 introduced the **Localized Labels** table, but
-it did not take the strategy far enough. Consequently, it was petty
-awkward to surface report labels from the **Localized Labels** table
-directly on a report page. Translations Builder 2.0 introduces an
-evolved strategy to perform more work behind the scenes in order to make
-it easier and more natural for report designers to surface localized
-labels on a report page.
+it did not take the strategy far enough. Consequently, the user
+experience was complicated and limited to surface report labels from the
+**Localized Labels** table directly on a report page. Translations
+Builder 2.0 introduces an evolved strategy to perform more work behind
+the scenes in order to make it easier and more natural for report
+designers to surface localized labels on a report page.
 
 You can start by adding the **Localized Labels** table to a PBIX project
 by executing the **Create Localized Labels Table** command from the
