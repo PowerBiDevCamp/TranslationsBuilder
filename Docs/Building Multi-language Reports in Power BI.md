@@ -852,7 +852,7 @@ very section of this article
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image32.png"
-style="width:2.18134in;height:1.02329in"
+style="width:1.95526in;height:0.91723in"
 alt="Graphical user interface, application Description automatically generated" />
 
 After the **Localized Labels** table has been created, you will see
@@ -862,7 +862,7 @@ them with the actual report labels required on the current project.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image33.png"
-style="width:5.94813in;height:1.31746in"
+style="width:5.08276in;height:1.12579in"
 alt="Graphical user interface Description automatically generated" />
 
 Remember, there is no need to interact with the **Localized Labels**
@@ -875,7 +875,7 @@ the shortcut key of **Ctrl+A**.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image34.png"
-style="width:3.16079in;height:1.1761in"
+style="width:2.96226in;height:1.10223in"
 alt="Graphical user interface, text, application Description automatically generated" />
 
 You can add report labels one at a time by typing in the text for the
@@ -883,23 +883,30 @@ label and then clicking **Add Label**.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image35.png"
-style="width:3.45007in;height:1.07014in"
+style="width:2.9106in;height:0.9028in"
 alt="A picture containing icon Description automatically generated" />
 
-You can also move the **Add Localized Labels** dialog into advanced mode
-where you can delete all existing labels at once and enter a large batch
-of report labels in a single operation.
+You can alternatively switch the **Add Localized Labels** dialog into
+**Advanced Mode** which makes it possible to delete all existing report
+labels at once and to enter a large batch of report labels in a single
+operation.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image36.png"
-style="width:3.01887in;height:1.87409in" />
+style="width:2.95828in;height:1.83648in" />
 
-Once you have added a report label, it will appear in the translation
+Once you have added report labels, they will appear in the translation
 grid as shown in the following screenshot.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image37.png"
 style="width:5.59748in;height:1.36746in" />
+
+As you learned earlier, Translations Builder only populates the
+translation grid with dataset objects that are not hidden from **Report
+View**. The measures in the **Localized Labels** table are hidden from
+**Report View** and they provide the one exception to the rule that
+excludes hidden objects from being displayed in the translation grid.
 
 One valuable aspect of the **Localized Labels** table strategy is that
 report labels can be created, managed and stored in the same PBIX
