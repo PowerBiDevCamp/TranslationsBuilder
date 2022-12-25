@@ -1119,8 +1119,8 @@ Localized Labels** table and to bind the measures in that table to
 report elements such as Card visuals, shapes and buttons. These are the
 localization techniques you will continue to use as you create and
 maintain reports that are required to support multiple languages. Now
-this section will conclude with some general advise building Power BI
-reports that support multiple languages.
+this section will conclude with some general advice for building Power
+BI reports that support multiple languages.
 
 ### Using Best Practices When Localizing Power BI Reports
 
