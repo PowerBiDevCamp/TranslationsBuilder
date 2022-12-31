@@ -47,8 +47,7 @@ namespace TranslationsBuilder {
 
       txtDefaultCulture.Text = SupportedLanguages.AllLangauges[model.Culture].FullName;
       txtCompatibilityLevel.Text = model.Database.CompatibilityLevel.ToString();
-      txtEstimatedSize.Text = (model.Database.EstimatedSize / 1000000).ToString("0.00") + " MB";
-
+ 
       listSecondaryCultures.Items.Clear();
       listSecondaryCultures.Items.AddRange(TranslationsManager.GetSecondaryCultureFullNamesInDataModel().ToArray());
 
@@ -116,7 +115,6 @@ namespace TranslationsBuilder {
 
       txtDefaultCulture.Text = "";
       txtCompatibilityLevel.Text = "";
-      txtEstimatedSize.Text = "";
 
       listSecondaryCultures.Items.Clear();
 
@@ -238,7 +236,6 @@ namespace TranslationsBuilder {
       }
 
     }
-
 
     private void ConfigureSettings(object sender, EventArgs e) {
       using (FormConfig dialog = new FormConfig()) {
@@ -575,6 +572,7 @@ namespace TranslationsBuilder {
       TranslationsManager.ExportModelAsBim();
     }
 
-  
-  }
+        private void txtEstimatedSize_TextChanged(object sender, EventArgs e) {
+                    }
+    }
 }

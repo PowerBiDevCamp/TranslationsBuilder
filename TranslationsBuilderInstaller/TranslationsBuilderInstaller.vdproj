@@ -71,7 +71,7 @@
         "DisplayName" = "8:Release"
         "IsDebugOnly" = "11:FALSE"
         "IsReleaseOnly" = "11:TRUE"
-        "OutputFilename" = "8:Release\\TranslationsBuilderInstaller.msi"
+        "OutputFilename" = "8:..\\SetupFiles\\TranslationsBuilderInstaller.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -179,17 +179,6 @@
         }
         "Folder"
         {
-            "{1525181F-901A-416C-8A58-119130FE478E}:_38C30E2471D6427F96651C367F913A02"
-            {
-            "Name" = "8:#1916"
-            "AlwaysCreate" = "11:FALSE"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Property" = "8:DesktopFolder"
-                "Folders"
-                {
-                }
-            }
             "{1525181F-901A-416C-8A58-119130FE478E}:_73653DC0C2194CA0BC8F6779CBDB7D65"
             {
             "Name" = "8:#1910"
@@ -246,17 +235,6 @@
                 {
                 }
             }
-            "{1525181F-901A-416C-8A58-119130FE478E}:_CB3A3F02BED74CF9A62E34DB1EAE0249"
-            {
-            "Name" = "8:#1919"
-            "AlwaysCreate" = "11:FALSE"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Property" = "8:ProgramMenuFolder"
-                "Folders"
-                {
-                }
-            }
         }
         "LaunchCondition"
         {
@@ -274,7 +252,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Translations Builder"
         "ProductCode" = "8:{9738FFA7-A9B3-4F1B-A82C-1C35DBB1A7AE}"
-        "PackageCode" = "8:{EA45A4F0-EC7C-4129-B034-48A1FB6935F6}"
+        "PackageCode" = "8:{04BFABB6-F527-4F47-B55B-D8337BAA4145}"
         "UpgradeCode" = "8:{3024AE64-35C9-44A9-B343-EB1849B294C8}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
@@ -394,34 +372,6 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_374DA0846A1D4B0381892E2F6D2604C6"
-            {
-            "Name" = "8:Translations Builder"
-            "Arguments" = "8:"
-            "Description" = "8:"
-            "ShowCmd" = "3:1"
-            "IconIndex" = "3:0"
-            "Transitive" = "11:FALSE"
-            "Target" = "8:_87A722ED67EE4E37AAA9168D104167BC"
-            "Folder" = "8:_38C30E2471D6427F96651C367F913A02"
-            "WorkingFolder" = "8:_7CBF58AB6A584CE8AD83661C46AFB597"
-            "Icon" = "8:_AC6C2C4CCE8249D1B985C0B00D412695"
-            "Feature" = "8:"
-            }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_7A289AF161154C219665A6451D90D095"
-            {
-            "Name" = "8:Translations Builder"
-            "Arguments" = "8:"
-            "Description" = "8:"
-            "ShowCmd" = "3:1"
-            "IconIndex" = "3:0"
-            "Transitive" = "11:FALSE"
-            "Target" = "8:_87A722ED67EE4E37AAA9168D104167BC"
-            "Folder" = "8:_CB3A3F02BED74CF9A62E34DB1EAE0249"
-            "WorkingFolder" = "8:_7CBF58AB6A584CE8AD83661C46AFB597"
-            "Icon" = "8:_AC6C2C4CCE8249D1B985C0B00D412695"
-            "Feature" = "8:"
-            }
         }
         "UserInterface"
         {
@@ -823,7 +773,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_87A722ED67EE4E37AAA9168D104167BC"
             {
-            "SourcePath" = "8:..\\TranslationsBuilder\\obj\\Debug\\net6.0-windows\\apphost.exe"
+            "SourcePath" = "8:..\\TranslationsBuilder\\obj\\Release\\net6.0-windows\\apphost.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_7CBF58AB6A584CE8AD83661C46AFB597"

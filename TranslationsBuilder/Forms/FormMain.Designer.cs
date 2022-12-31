@@ -35,8 +35,6 @@ namespace TranslationsBuilder {
       this.groupDatasetProperties = new System.Windows.Forms.GroupBox();
       this.lblDefaultCultureNameLabel = new System.Windows.Forms.Label();
       this.txtDefaultCulture = new System.Windows.Forms.TextBox();
-      this.txtEstimatedSize = new System.Windows.Forms.TextBox();
-      this.lblEstimatedSize = new System.Windows.Forms.Label();
       this.txtCompatibilityLevel = new System.Windows.Forms.TextBox();
       this.lblCompatibilityLevel = new System.Windows.Forms.Label();
       this.txtDatasetName = new System.Windows.Forms.TextBox();
@@ -128,16 +126,10 @@ namespace TranslationsBuilder {
       this.gridTranslations.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridTranslations_CellDoubleClick);
       this.gridTranslations.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridTranslations_CellEndEdit);
       // 
-      // dialogOpenFile
-      // 
-      this.dialogOpenFile.FileName = "";
-      // 
       // groupDatasetProperties
       // 
       this.groupDatasetProperties.Controls.Add(this.lblDefaultCultureNameLabel);
       this.groupDatasetProperties.Controls.Add(this.txtDefaultCulture);
-      this.groupDatasetProperties.Controls.Add(this.txtEstimatedSize);
-      this.groupDatasetProperties.Controls.Add(this.lblEstimatedSize);
       this.groupDatasetProperties.Controls.Add(this.txtCompatibilityLevel);
       this.groupDatasetProperties.Controls.Add(this.lblCompatibilityLevel);
       this.groupDatasetProperties.Controls.Add(this.txtDatasetName);
@@ -168,25 +160,6 @@ namespace TranslationsBuilder {
       this.txtDefaultCulture.Size = new System.Drawing.Size(307, 27);
       this.txtDefaultCulture.TabIndex = 32;
       this.txtDefaultCulture.TabStop = false;
-      // 
-      // txtEstimatedSize
-      // 
-      this.txtEstimatedSize.Location = new System.Drawing.Point(141, 192);
-      this.txtEstimatedSize.Name = "txtEstimatedSize";
-      this.txtEstimatedSize.ReadOnly = true;
-      this.txtEstimatedSize.Size = new System.Drawing.Size(307, 27);
-      this.txtEstimatedSize.TabIndex = 26;
-      this.txtEstimatedSize.TabStop = false;
-      // 
-      // lblEstimatedSize
-      // 
-      this.lblEstimatedSize.AutoSize = true;
-      this.lblEstimatedSize.Location = new System.Drawing.Point(27, 192);
-      this.lblEstimatedSize.Name = "lblEstimatedSize";
-      this.lblEstimatedSize.Size = new System.Drawing.Size(109, 20);
-      this.lblEstimatedSize.TabIndex = 25;
-      this.lblEstimatedSize.Text = "Estimated Size:";
-      this.lblEstimatedSize.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
       // 
       // txtCompatibilityLevel
       // 
@@ -695,8 +668,6 @@ namespace TranslationsBuilder {
     private ComboBox listLanguageForTransation;
     private ComboBox listCultureToPopulate;
     private Button btnGenenrateMachineTranslations;
-    private TextBox txtEstimatedSize;
-    private Label lblEstimatedSize;
     private TextBox txtCompatibilityLevel;
     private Label lblCompatibilityLevel;
     private TextBox txtDatasetName;
