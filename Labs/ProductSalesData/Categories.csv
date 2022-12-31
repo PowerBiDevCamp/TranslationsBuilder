@@ -1,4 +1,4 @@
-﻿CategoryId,Category,CategoryTranslationEnglish,CategoryTranslationSpanish,CategoryTranslationFrench,CategoryTranslationGerman,CategoryTranslationDutch,CategoryTranslationItalian,CategoryTranslationPortuguese,CategoryTranslationRussian,CategoryTranslationJapanese,CategoryTranslationHindi
-1,Fruits,Fruits,Frutas,Fruits,Früchte,Vruchten,Frutta,Frutas,Фрукты,果物,फल
-2,Vegetables,Vegetables,Verduras,Légumes,Gemüse,Groente,Verdura,Verduras,Овощи,菜,तरकारी
-3,Dairy,Dairy,Lechería,Laiterie,Molkerei,Zuivelfabriek,Caseificio,Leitaria,Молочный,酪農,दुग्धशाला
+﻿CategoryId,Category,CategoryTranslationEnglish,CategoryTranslationSpanish,CategoryTranslationFrench,CategoryTranslationGerman
+1,Fruits,Fruits,Frutas,Fruits,Früchte
+2,Vegetables,Vegetables,Verduras,Légumes,Gemüse
+3,Dairy,Dairy,Lechería,Laiterie,Molkerei

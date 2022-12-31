@@ -1,11 +1,11 @@
-﻿ProductId,Product,CategoryId,List Price,Product Image,ProductTranslationEnglish,ProductTranslationSpanish,ProductTranslationFrench,ProductTranslationGerman,ProductTranslationDutch,ProductTranslationItalian,ProductTranslationPortuguese,ProductTranslationRussian,ProductTranslationJapanese,ProductTranslationHindi
-1,Apples,1,0.75,http://classresources.blob.core.windows.net/images/Apples.png,Apples,Manzanas,Pommes,Äpfel,Appels,Mele,Maçãs,Яблоки,リンゴ,सेब
-2,Bananas,1,0.95,http://classresources.blob.core.windows.net/images/Bananas.png,Bananas,Plátanos,Bananes,Bananen,Bananen,Banane,Bananas,Бананы,バナナ,केले
-3,Oranges,1,1.25,http://classresources.blob.core.windows.net/images/Oranges.png,Oranges,Naranjas,Oranges,Orangen,Sinaasappelen,Arance,Laranjas,Апельсины,オレンジ,संतरे
-4,Carrots,2,0.95,http://classresources.blob.core.windows.net/images/Carrots.png,Carrots,Zanahoria,Carottes,Möhren,Worteltjes,Carote,Cenouras,Морковь,ニンジン,गाजर
-5,Cucumbers,2,2.25,http://classresources.blob.core.windows.net/images/Cucumbers.png,Cucumbers,Pepinos,Concombres,Gurken,Komkommers,Cetrioli,Pepinos,Огурцы,キュウリ,खीरे
-6,Potatoes,2,1.25,http://classresources.blob.core.windows.net/images/Potatoes.png,Potatoes,Papas,Pomme De Terre,Kartoffeln,Aardappels,Patate,Batata,Картофель,ジャガイモ,आलू
-7,Tomatoes,2,1.75,http://classresources.blob.core.windows.net/images/Tomatoes.png,Tomatoes,Tomates,Tomates,Tomaten,Tomaten,Pomodori,Tomates,Помидоры,トマト,टमाटर
-8,Milk,3,2.5,http://classresources.blob.core.windows.net/images/Milk.png,Milk,Leche,Lait,Milch,Melk,Latte,Leite,Молоко,乳,दूध
-9,Butter,3,2.25,http://classresources.blob.core.windows.net/images/Butter.png,Butter,Mantequilla,Beurre,Butter,Boter,Burro,Manteiga,Масло,バター,मक्खन
-10,Cheese,3,3.75,http://classresources.blob.core.windows.net/images/Cheese.png,Cheese,Queso,Fromage,Käse,Kaas,Formaggio,Queijo,Сыр,チーズ,पनीर
+﻿ProductId,Product,CategoryId,List Price,Product Image,ProductTranslationEnglish,ProductTranslationSpanish,ProductTranslationFrench,ProductTranslationGerman
+1,Apples,1,0.75,http://classresources.blob.core.windows.net/images/Apples.png,Apples,Manzanas,Pommes,Äpfel
+2,Bananas,1,0.95,http://classresources.blob.core.windows.net/images/Bananas.png,Bananas,Plátanos,Bananes,Bananen
+3,Oranges,1,1.25,http://classresources.blob.core.windows.net/images/Oranges.png,Oranges,Naranjas,Oranges,Orangen
+4,Carrots,2,0.95,http://classresources.blob.core.windows.net/images/Carrots.png,Carrots,Zanahoria,Carottes,Möhren
+5,Cucumbers,2,2.25,http://classresources.blob.core.windows.net/images/Cucumbers.png,Cucumbers,Pepinos,Concombres,Gurken
+6,Potatoes,2,1.25,http://classresources.blob.core.windows.net/images/Potatoes.png,Potatoes,Papas,Pomme De Terre,Kartoffeln
+7,Tomatoes,2,1.75,http://classresources.blob.core.windows.net/images/Tomatoes.png,Tomatoes,Tomates,Tomates,Tomaten
+8,Milk,3,2.5,http://classresources.blob.core.windows.net/images/Milk.png,Milk,Leche,Lait,Milch
+9,Butter,3,2.25,http://classresources.blob.core.windows.net/images/Butter.png,Butter,Mantequilla,Beurre,Butter
+10,Cheese,3,3.75,http://classresources.blob.core.windows.net/images/Cheese.png,Cheese,Queso,Fromage,Käse
