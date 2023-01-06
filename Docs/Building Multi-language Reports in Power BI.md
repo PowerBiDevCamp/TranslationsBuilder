@@ -2,8 +2,6 @@
 
 **Published**: January 2023
 
-**Note:** This document is available for download in either **[DOCX]()** or **[PDF]()** format. 
-
 Power BI provides Internationalization and localization features which
 make it possible to build multi-language reports. For example, you can
 design a Power BI report that renders in English for some users while
@@ -26,7 +24,9 @@ understand how all the pieces fit together, you’ll be able to build
 multi-language reports for Power BI using a strategy that is reliable,
 predictable and scalable.
 
-## Table of Contents
+**Note:** This document is available for download in either **[DOCX]()** or **[PDF]()** format. 
+
+### Table of Contents
 
 - [Building Multi-language Reports in Power BI](#building-multi-language-reports-in-power-bi)
   - [Multi-language Report Live Demo](#multi-language-report-live-demo)
