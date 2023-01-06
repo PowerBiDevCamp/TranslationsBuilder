@@ -487,7 +487,7 @@ the translations for the dataset’s default language and locale which in
 this case is **English [en-US]**.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image17.png"  style="width:50%"  />
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image17.png"  style="width:40%"  />
 
 While Translations Builder makes it possible to update the translations
 for the default language, you should do it sparingly. Doing so can be
