@@ -751,12 +751,12 @@ report labels that support localization.
 
 As discussed earlier in this article, the Power BI localization features
 are supported at the dataset level but not at the report layout level.
-At first you might ask the question “*how can I localize text-based
-values in a Power BI report that are not stored inside the dataset?”*
+At first you might ask the question **"how can I localize text-based
+values in a Power BI report that are not stored inside the dataset?"**
 The answer to this question is that there is no simple way to accomplish
-this. A better question to ask is “*how can I add text-based values for
+this. A better question to ask is **how can I add text-based values for
 report labels into the dataset as dataset objects to enable localization
-support?”*
+support?**
 
 The idea behind the **Localized Labels** table isn’t all that
 complicated. It builds on the idea that Power BI supports metadata
