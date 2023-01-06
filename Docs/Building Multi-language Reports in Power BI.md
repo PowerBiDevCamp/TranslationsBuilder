@@ -438,9 +438,7 @@ Once the Translations Builder application has been installed on a
 Windows computer, you can launch it directly from Power BI Desktop using
 the **External Tools** tab in the ribbon.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image14.png"
-style="width:2.67925in;height:0.79717in" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image14.png"  style="width:50%"  />
 
 When you launch an external tool like Translations Builder, the
 application is passed startup parameters including a connection string
