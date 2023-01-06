@@ -241,8 +241,8 @@ based on the user’s locale and the format string of the source column or
 measure.
 
 Consider a simple scenario in which you’re building a report for an
-audience of report consumers that live in both New York \[**en-US**\]
-and in London \[**en-GB**\]. All users speak English (**en**), but yet
+audience of report consumers that live in both New York [**en-US**]
+and in London [**en-GB**]. All users speak English (**en**), but yet
 some live in different regions (**US** vs **GB**) where dates and
 numbers are formatted differently. For example, a user from New York
 wants to see dates in a **mm/dd/yyyy** format while a user from London
@@ -518,7 +518,7 @@ identity each metadata translation. Each metadata translation has an
 **Description** property and the **DisplayFolder** property can be added
 if required. The fourth column in the translation grid always displays
 the translations for the dataset’s default language and locale which in
-this case is **English \[en-US\]**.
+this case is **English [en-US]**.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image17.png"
@@ -1055,7 +1055,7 @@ report elements such as visuals and shapes.
 The live demo project uses a **Rectangle** shape to display the
 localized report label for the report title. The following screenshot
 shows how to select a **Rectangle** shape and then navigate to configure
-its **Text** property value in **Shape** \> **Style** \> **Text**
+its **Text** property value in **Shape** > **Style** > **Text**
 section in the **Format** pane.
 
 <img
@@ -1281,7 +1281,7 @@ alt="Graphical user interface, application, Word Description automatically gener
 Let’s start by generating a translation sheet for a single language.
 First, you should drop down the selection menu under the **Export
 Translations Sheet** button and select a language such as **German
-\[de-DE\]**.
+[de-DE]**.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image59.png"
@@ -1410,7 +1410,7 @@ done with translations on a project-wide basis.
 To make this point, let’s move through a simple scenario in which you
 have already generated the master translation sheet for a project that
 includes several secondary languages. Now imagine you delete French as a
-language from the project by right-clicking on the **French \[fr-FR\]**
+language from the project by right-clicking on the **French [fr-FR]**
 column header and selecting **Delete Secondary Language**.
 
 <img
@@ -1443,7 +1443,7 @@ and you exclaim “Oh Mon Dieu!”. That’s because you just realized that
 you have deleted all the French translations accidently. Fortunately,
 you previously generated a master translation sheet that contains the
 French translations. This means you have not lost all your work. If you
-import the master translation sheet, the **French \[fr-FR\]** column
+import the master translation sheet, the **French [fr-FR]** column
 should reappear as the last column on the right.
 
 <img
@@ -1693,7 +1693,7 @@ style="width:3.64151in;height:1.38994in"
 alt="Diagram Description automatically generated" />
 
 To create a Field Parameter in Power BI Desktop, navigate to the
-**Modeling** tab and select **New parameter \> Fields**.
+**Modeling** tab and select **New parameter > Fields**.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image80.png"
@@ -1993,10 +1993,10 @@ Category Names** using this DAX expression.
 
 ```
 Translated Category Names = {
-  ("Category", NAMEOF('Products'\[CategoryTranslationEnglish\]), 0, "en"),
-  ("Categoría", NAMEOF('Products'\[CategoryTranslationSpanish\]), 1, "es"),
-  ("Catégorie", NAMEOF('Products'\[CategoryTranslationFrench\]), 2, "fr"),
-  ("Kategorie", NAMEOF('Products'\[CategoryTranslationGerman\]), 3, "de")
+  ("Category", NAMEOF('Products'[CategoryTranslationEnglish]), 0, "en"),
+  ("Categoría", NAMEOF('Products'[CategoryTranslationSpanish]), 1, "es"),
+  ("Catégorie", NAMEOF('Products'[CategoryTranslationFrench]), 2, "fr"),
+  ("Kategorie", NAMEOF('Products'[CategoryTranslationGerman]), 3, "de")
 }
 ```
 
@@ -2069,35 +2069,35 @@ default language and locale, the following Power Query function call
 will evaluate to a text-based value of **January**.
 
 ```
-Date.MonthName( \#date(2023, 1, 1) )
+Date.MonthName( #date(2023, 1, 1) )
 ```
 
 The **Date.MonthName** function accepts an second, optional string
 parameter to pass a specific language and locale.
 
 ```
-Date.MonthName( \#date(2023, 1, 1), "en-US")
+Date.MonthName( #date(2023, 1, 1), "en-US")
 ```
 
 If you want to translate the month name into Spanish, you can pass a
 text value of **es-ES** as the second parameter.
 
 ```
-Date.MonthName( \#date(2022, 12, 1), "es-ES")
+Date.MonthName( #date(2022, 12, 1), "es-ES")
 ```
 
 If you want to translate the month name into French, you can pass a text
 value of **fr-FR**.
 
 ```
-Date.MonthName( \#date(2022, 12, 1), "fr-FR")
+Date.MonthName( #date(2022, 12, 1), "fr-FR")
 ```
 
 If you want to translate the month name into German, you can pass a text
 value of **de-DE**.
 
 ```
-Date.MonthName( \#date(2022, 12, 1), "de-DE")
+Date.MonthName( #date(2022, 12, 1), "de-DE")
 ```
 
 Now, let's revisit the **Languages** table you saw earlier. Now we can
@@ -2121,62 +2121,33 @@ style="width:5.95238in;height:2.50946in" />
 Here's an example of the M code used to generate the **Translated Month
 Names Table**.
 
+```
 let
-
-Source = \#table( type table \[ MonthNumber = Int64.Type \],
-List.Split({1..12},1)),
-
-Translations = Table.AddColumn( Source, "Translations",
-
-each
-
-\[ MonthDate = \#date( 2022, \[ MonthNumber \], 1 ),
-
-Translations = List.Transform(Languages\[DefaultCulture\], each
-Date.MonthName( MonthDate, \_ ) ),
-
-TranslationTable = Table.FromList( Translations, null ),
-
-TranslationsTranspose = Table.Transpose(TranslationTable),
-
-TranslationsColumns = Table.RenameColumns(
-
-TranslationsTranspose,
-
-List.Zip({ Table.ColumnNames( TranslationsTranspose ),
-
-List.Transform(Languages\[Language\],
-
-each "MonthNameTranslations" & \_ ) })
-
-)
-
-\]
-
-),
-
-ExpandedTranslations = Table.ExpandRecordColumn(Translations,
-
-"Translations",
-
-{ "TranslationsColumns" },
-
-{ "TranslationsColumns" }),
-
-ColumnsCollection = List.Transform(Languages\[Language\], each
-"MonthNameTranslations" & \_ ),
-
-ExpandedTranslationsColumns =
-Table.ExpandTableColumn(ExpandedTranslations,
-
-"TranslationsColumns",
-
-ColumnsCollection,
-
-ColumnsCollection ),
-
-TypedColumnsCollection = List.Transform(ColumnsCollection, each {\_,
-type text}),
+  Source = #table( type table [ MonthNumber = Int64.Type ], List.Split({1..12},1)),
+  Translations = Table.AddColumn( Source, "Translations",
+    each
+      [ MonthDate = #date( 2022, [ MonthNumber ], 1 ),
+        Translations = List.Transform(Languages[DefaultCulture], each Date.MonthName( MonthDate, _ ) ),
+        TranslationTable = Table.FromList( Translations, null ),
+        TranslationsTranspose = Table.Transpose(TranslationTable),
+        TranslationsColumns = Table.RenameColumns(
+          TranslationsTranspose,
+          List.Zip({ Table.ColumnNames( TranslationsTranspose ),
+            List.Transform(Languages[Language],
+            each "MonthNameTranslations" & _ ) })
+          )
+      ]
+  ),
+  ExpandedTranslations = Table.ExpandRecordColumn(Translations,
+                                                  "Translations",
+                                                  { "TranslationsColumns" },
+                                                  { "TranslationsColumns" }),
+  ColumnsCollection = List.Transform(Languages[Language], each "MonthNameTranslations" & _ ),
+  ExpandedTranslationsColumns = Table.ExpandTableColumn(ExpandedTranslations,
+                                                        "TranslationsColumns",
+                                                        ColumnsCollection,
+                                                        ColumnsCollection ),
+TypedColumnsCollection = List.Transform(ColumnsCollection, each {_, type text}),
 
 QueryOutput = Table.TransformColumnTypes(ExpandedTranslationsColumns,
 TypedColumnsCollection)
@@ -2376,15 +2347,15 @@ for Spanish.
 
 let report = powerbi.embed(reportContainer, config);
 
-report.on("loaded", async (event: any) =\> {
+report.on("loaded", async (event: any) => {
 
 let languageToLoad = "es";
 
 // create filter object
 
-const filters = \[{
+const filters = [{
 
-\$schema: "http://powerbi.com/product/schema#basic",
+$schema: "http://powerbi.com/product/schema#basic",
 
 target: {
 
@@ -2396,13 +2367,13 @@ column: "LanguageId"
 
 operator: "In",
 
-values: \[ languageToLoad \],
+values: [ languageToLoad ],
 
 filterType: models.FilterType.Basic,
 
 requireSingleSelection: true
 
-}\];
+}];
 
 // pass filter object in a call to updateFilters
 
