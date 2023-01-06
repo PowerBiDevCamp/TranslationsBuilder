@@ -1928,39 +1928,24 @@ style="width:5.31746in;height:2.4399in" />
 Examine the following M code for the query that is being used to
 generate the **Languages** table.
 
+```
 let
-
-LanguagesTable = \#table(type table \[
-
-Language = text,
-
-LanguageId = text,
-
-DefaultCulture = text,
-
-SortOrder = number
-
-\], {
-
-{"English", "en", "en-US", 1 },
-
-{"Spanish", "es", "es-ES", 2 },
-
-{"French", "fr", "fr-FR", 3 },
-
-{"German", "de", "de-DE", 4 }
-
-}),
-
-SortedRows = Table.Sort(LanguagesTable,{{"SortOrder",
-Order.Ascending}}),
-
-QueryOutput = Table.TransformColumnTypes(SortedRows,{{"SortOrder",
-Int64.Type}})
-
+  LanguagesTable = \#table(type table \[
+    Language = text,
+    LanguageId = text,
+    DefaultCulture = text,
+    SortOrder = number
+  \], {
+    {"English", "en", "en-US", 1 },
+    {"Spanish", "es", "es-ES", 2 },
+    {"French", "fr", "fr-FR", 3 },
+    {"German", "de", "de-DE", 4 }
+  }),
+  SortedRows = Table.Sort(LanguagesTable,{{"SortOrder", Order.Ascending}}),
+  QueryOutput = Table.TransformColumnTypes(SortedRows,{{"SortOrder", Int64.Type}})
 in
-
-QueryOutput
+  QueryOutput
+```
 
 When this query executes, it generates the **Languages** table with a
 row for each of the four supported languages.
