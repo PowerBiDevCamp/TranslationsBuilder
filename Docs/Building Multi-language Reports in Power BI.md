@@ -739,7 +739,7 @@ property of this visual is updated for each of the these five languages.
 | German (de-DE)  | Umsatz nach Land und Jahr            |
 | Dutch (nl-NL)   | Omzet per land en jaar               |
 
-Even if you dislike the dynamically-generated visual **Title**, you must
+> Even if you dislike the dynamically-generated visual **Title**, you must
 resist the temptation to replace it with a hard-coded text value. Any
 hard-coded text you type into the **Title** property of the visual will
 be added to the report layout and cannot be localized. Therefore, you
