@@ -65,7 +65,7 @@ predictable and scalable.
   - [Embedding Reports That Implement Data Translations](#embedding-reports-that-implement-data-translations)
 - [Summary](#summary)
 
-
+<hr/>
 
 ### Multi-language Report Live Demo
 
