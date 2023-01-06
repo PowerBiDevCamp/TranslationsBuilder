@@ -135,7 +135,7 @@ metadata translations only applies to datasets. Neither Power BI Desktop
 nor the Power BI Service provide any support for storing or loading
 translations for text values stored as part of the report layout.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image2.png"  style="width=60%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image2.png"  style="width:40%"  />
 
 Think about a scenario where you add a textbox or button to a Power BI
 report and then you type in a hard-coded text value for a string
