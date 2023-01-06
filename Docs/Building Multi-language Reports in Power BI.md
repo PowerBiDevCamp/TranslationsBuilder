@@ -275,7 +275,7 @@ you should understand.
 - **Report Label Translations**
 - **Data Translations**
 
-Now, let’s examine all three types in a little more depth.
+> Now, it's time to examine all three types in a little more depth.
 
 **Metadata translations** provides localized values for dataset object
 properties. The object types which support metadata translation include
@@ -283,12 +283,12 @@ tables, columns, measures, hierarchies and hierarchy levels. The
 following screenshot shows how metadata translations provide German
 names for the measures displayed in Card visuals.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image5.png"  style="width:90%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image5.png"  style="width:96%"  />
 
 Metadata translations are also used to display column names and measure
 names in tables and matrices.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image6.png"  style="width:70%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image6.png"  style="width:96%" />
 
 Metadata translations are the easiest to create, manage and integrate
 into a Power BI report. By leveraging the features of Translations
