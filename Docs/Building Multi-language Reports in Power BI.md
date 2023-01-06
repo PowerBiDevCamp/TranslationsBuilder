@@ -195,24 +195,23 @@ that implements dynamic translations. You can start by extracting the
 language ID for the current user using **USERCULTURE** together with
 **LEFT**.
 
+```
 CurrentLanguage = LEFT(USERCULTURE(), 2)
+```
 
 Now, you can take things a step further by adding a **SWITCH** statement
 to form a basic pattern for dynamic translations.
 
+```
 Product Sales Report Label = SWITCH(LEFT(USERCULTURE(), 2),
-
-"es", "Informe De Ventas De Productos",
-
-"fr", "Rapport Sur Les Ventes De Produits",
-
-"de", "Produktverkaufsbericht",
-
-"Product Sales Report"
-
+    "es", "Informe De Ventas De Productos",
+    "fr", "Rapport Sur Les Ventes De Produits",
+    "de", "Produktverkaufsbericht",
+  "Product Sales Report"
 )
+```
 
-OK, it’s nowhere near as impressive as some of those fancy DAX patterns
+> OK, it’s nowhere near as impressive as some of those fancy DAX patterns
 that come out of Italy. But hey, it’s a start.
 
 ### Formatting Dates and Numbers with the Current User’s Locale
