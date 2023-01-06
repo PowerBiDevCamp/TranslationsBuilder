@@ -720,7 +720,7 @@ is parsed together using the names of the columns and measures that have
 been added into the data roles such of **Axis**, **Legend** and
 **Values**.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image29.png"  style="width:50%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image29.png"  style="width:40%" />
 
 There is good news here. The default **Title** property for a Cartesian
 visual is dynamically parsed together in a fashion that supports
