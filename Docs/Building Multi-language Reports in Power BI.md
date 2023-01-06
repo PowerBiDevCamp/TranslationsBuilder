@@ -24,7 +24,7 @@ understand how all the pieces fit together, you’ll be able to build
 multi-language reports for Power BI using a strategy that is reliable,
 predictable and scalable.
 
-**Note:** This document is available for download in either **[DOCX]()** or **[PDF]()** format. 
+**Note:** This document is available for download in either **[DOCX](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Docs/Building%20Multi-language%20Reports%20in%20Power%20BI.docx)** or **[PDF](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Docs/Building%20Multi-language%20Reports%20in%20Power%20BI.pdf)** format. 
 
 <hr/>
 
