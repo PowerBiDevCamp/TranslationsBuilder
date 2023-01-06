@@ -27,6 +27,7 @@ predictable and scalable.
 **Note:** This document is available for download in either **[DOCX]()** or **[PDF]()** format. 
 
 <hr/>
+
 ### Table of Contents
 - [Building Multi-language Reports in Power BI](#building-multi-language-reports-in-power-bi)
   - [Multi-language Report Live Demo](#multi-language-report-live-demo)
