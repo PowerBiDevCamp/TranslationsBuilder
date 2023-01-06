@@ -1776,10 +1776,10 @@ as **ProductTranslationEnglish** and **ProductTranslationSpanish**.
 
 ``` dax
 Translated Product Names = {
-  ("ProductTranslationEnglish", NAMEOF('Products'\[ProductTranslationEnglish\]), 0),
-  ("ProductTranslationSpanish", NAMEOF('Products'\[ProductTranslationSpanish\]), 1),
-  ("ProductTranslationFrench", NAMEOF('Products'\[ProductTranslationFrench\]), 2),
-  ("ProductTranslationGerman", NAMEOF('Products'\[ProductTranslationGerman\]), 3)
+  ("ProductTranslationEnglish", NAMEOF('Products'[ProductTranslationEnglish]), 0),
+  ("ProductTranslationSpanish", NAMEOF('Products'[ProductTranslationSpanish]), 1),
+  ("ProductTranslationFrench", NAMEOF('Products'[ProductTranslationFrench]), 2),
+  ("ProductTranslationGerman", NAMEOF('Products'[ProductTranslationGerman]), 3)
 }
 ```
 
@@ -1789,10 +1789,10 @@ shown in the following code listing.
 
 ```
 Translated Product Names = {
-  ("Product", NAMEOF('Products'\[ProductTranslationEnglish\]), 0),
-  ("Producto", NAMEOF('Products'\[ProductTranslationSpanish\]), 1),
-  ("Produit", NAMEOF('Products'\[ProductTranslationFrench\]), 2),
-  ("Produkt", NAMEOF('Products'\[ProductTranslationGerman\]), 3)
+  ("Product", NAMEOF('Products'[ProductTranslationEnglish]), 0),
+  ("Producto", NAMEOF('Products'[ProductTranslationSpanish]), 1),
+  ("Produit", NAMEOF('Products'[ProductTranslationFrench]), 2),
+  ("Produkt", NAMEOF('Products'[ProductTranslationGerman]), 3)
 }
 ```
 
@@ -1844,10 +1844,10 @@ character language identifier.
 
 ```
 Translated Product Names = {
-  ("Product", NAMEOF('Products'\[ProductTranslationEnglish\]), 0, "en" ),
-  ("Producto", NAMEOF('Products'\[ProductTranslationSpanish\]), 1, "es" ),
-  ("Produit", NAMEOF('Products'\[ProductTranslationFrench\]), 2, "fr" ),
-  ("Produkt", NAMEOF('Products'\[ProductTranslationGerman\]), 3, "de" )
+  ("Product", NAMEOF('Products'[ProductTranslationEnglish]), 0, "en" ),
+  ("Producto", NAMEOF('Products'[ProductTranslationSpanish]), 1, "es" ),
+  ("Produit", NAMEOF('Products'[ProductTranslationFrench]), 2, "fr" ),
+  ("Produkt", NAMEOF('Products'[ProductTranslationGerman]), 3, "de" )
 }
 ```
 
