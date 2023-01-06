@@ -789,8 +789,7 @@ it did not take the strategy far enough. Consequently, the user
 experience was complicated and limited to surface report labels from the
 **Localized Labels** table directly on a report page. Translations
 Builder 2.0 introduces an evolved strategy to perform more work behind
-the scenes in order to make it easier and more natural for report
-designers to surface localized report labels on a report page.
+the scenes in order to make it easier and more natural for content creators to surface localized report labels on a report page.
 
 You can create the **Localized Labels** table to a PBIX project by
 executing the **Create Localized Labels Table** command from the
