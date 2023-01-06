@@ -255,14 +255,14 @@ names for the measures displayed in Card visuals.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image5.png"
-style="width:6.6in;height:0.47588in" />
+style="width:7.07937in;height:0.51045in" />
 
 Metadata translations are also used to display column names and measure
 names in tables and matrices.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image6.png"
-style="width:6.98in;height:1.25963in" />
+style="width:7.21249in;height:1.30159in" />
 
 Metadata translations are the easiest to create, manage and integrate
 into a Power BI report. By leveraging the features of Translations
@@ -1477,7 +1477,7 @@ Labels** table behind the scenes.
 The ability of the **Import Translations** command to create the
 **Localized Labels** table and copy report labels into a target PBIX
 project provides the foundation for maintaining an enterprise-level
-master translation sheet with a general set of localized report labels
+master translation sheet with a reusable set of localized report labels
 you can use across all your PBIX projects. Each time you create a new
 PBIX project, you can simply import the enterprise-level translation
 sheet to instantly add the generalized set of localized report labels.
@@ -1524,14 +1524,14 @@ in a single language.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image76.png"
-style="width:4.75287in;height:3.27419in" />
+style="width:4.23964in;height:2.92063in" />
 
 The important observation is that each customer deployment uses a single
-language for its database and all its users. Metadata translations must
-be implemented in this use case so you can deploy a single version of
-the PBIX file across all customer deployments. However, there is no need
-to implement data translations when no database instance ever needs to
-be viewed in multiple languages.
+language for its database and all its users. Both metadata translations
+and report label translations must be implemented in this use case so
+you can deploy a single version of the PBIX file across all customer
+deployments. However, there is no need to implement data translations
+when no database instance ever needs to be viewed in multiple languages.
 
 Now let's examine a different use case which introduces the requirement
 of data translations. This is the use case for the
@@ -1543,7 +1543,7 @@ is coming from a single database instance.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image77.png"
-style="width:4.56792in;height:1.32258in" />
+style="width:5.61905in;height:1.62692in" />
 
 Once again, the key question to ask is whether you will have people who
 speak different languages looking at the same database instance. If the
@@ -1551,7 +1551,7 @@ answer to that question is ***NO***, then you will not be required to
 implement data translations. If the answer to that question is
 ***YES***, then you should ask additional questions because there are
 other consideration you should think through before deciding whether it
-make sense to implement data translations.
+makes sense to implement data translations.
 
 When you're considering whether to implement data translations, you
 should examine the text-based columns which are candidates for
@@ -1574,41 +1574,40 @@ rely on machine-generate translations. your translation team might have
 trouble scaling up to handle that volume of human translations.
 
 You also have to consider that your commitment to implement data
-translations often requires on-going maintenance. Every time someone
-adds a new record to the underlying database, you might be required to
-add new data translations for it. This is very different from
-implementing metadata translations or report label translations where
-you create a finite number of translations for database objects and,
-after that point, your work is done. Metadata translations and report
-label translations don't require on-going maintenance as long as the
+translations might require on-going maintenance. Every time someone adds
+a new record to the underlying database, there is the potential to
+introduce new text values that require translation. This is very
+different from implementing metadata translations or report label
+translations where you create a finite number of translations and, after
+that point, your work is done. Metadata translations and report label
+translations don't require on-going maintenance as long as the
 underlying dataset schema and the report layout remain the same.
 
 In summary, there are many factors that go into deciding whether you
-should implement data translations. You must decide whether you can
-afford to spend the time and effort required to implement data
-translations properly. In certain scenarios, you might decide that
-implementing metadata translations and report label translations goes
-far enough. If your primary goal is to make your reporting solution
-compliant with laws or regulations, you might also find that
-implementing data translations is not a requirment.
+should implement data translations. You must decide whether it's worth
+the time and effort required to implement data translations properly. In
+certain scenarios, you might decide that implementing metadata
+translations and report label translations goes far enough. If your
+primary goal is to make your reporting solution compliant with laws or
+regulations, you might also find that implementing data translations is
+not a requirement.
 
 ### Extending the Datasource Schema to Support Data Translations
 
 There are multiple ways to implement data translations in Power BI. The
 strategy shown here in this article represents just one possible
 approach. There is no single right answer when designing a data
-translation solution for Power BI. However, some data translation
-solutions are better than others. Whatever approach you choose, make
-sure to choose a strategy that scales in terms of performance. You
-should also ensure your strategy scales in terms of the overhead
-required to add support for new secondary languages as part of the
-on-going maintenance.
+translation strategy for Power BI. However, some data translation
+strategies are better than others. Whatever approach you choose, make
+sure it scales in terms of performance. You should also ensure your
+strategy scales in terms of the overhead required to add support for new
+secondary languages as part of the on-going maintenance.
 
 An earlier version of this article demonstrated a solution for
 implementing data translations based on adding extra rows to tables
-contain text-based columns such as product names. This solution relies
-on filtering rows to select a language. However, this strategy is
-limited in terms of scalability because it required many-to-many
+containing text-based columns such as product names. This solution
+relied on filtering rows to select a language. However, this strategy is
+limited in terms of scalability because it requires many-to-many
 relationships between tables. Fortunately, the strategy demonstrated in
 this version of this article presents new and more scalable solution.
 This new strategy for implementing data translations is made possible by
@@ -1667,7 +1666,7 @@ between multiple source columns in the underlying datasource.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image79.png"
-style="width:3.12903in;height:1.19433in"
+style="width:3.64151in;height:1.38994in"
 alt="Diagram Description automatically generated" />
 
 To create a Field Parameter in Power BI Desktop, navigate to the
@@ -1675,26 +1674,27 @@ To create a Field Parameter in Power BI Desktop, navigate to the
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image80.png"
-style="width:4.17742in;height:0.97871in" />
+style="width:4.67099in;height:1.09434in" />
 
 When you are prompted by the **Parameters** dialog, you can supply a
-**Name** for the new Field Parameter. You can also add a set of columns
-from the **Products** table using the **Fields** pane on the right.
+**Name** for the new Field Parameter. You can also add the set of
+translated name columns from the **Products** table using the **Fields**
+pane on the right.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image81.png"
-style="width:2.67742in;height:2.45965in" />
+style="width:3.27245in;height:3.00629in" />
 
 For our scenario, let's create a new Field Parameter named **Translated
-Product Names**. Let's also add the four columns from the **Products**
-table with the translated product names. When you are just starting to
-experiment with Field Parameters, you should leave the **Add slicer to
-page** option enabled as it helps in running a few tests to build your
-understanding.
+Product Names**. Let's also populate the fields connection of this Field
+Parameter with the four columns from the **Products** table with the
+translated product names. When you are just starting to experiment with
+Field Parameters, you should leave the **Add slicer to page** option
+enabled as it helps in running a few tests to build your understanding.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image82.png"
-style="width:3.36575in;height:2.80952in" />
+style="width:3.55627in;height:2.96855in" />
 
 After you have created a new Field Parameter, it appears in the
 **Fields** list on the right as a new table. If you select a Field
@@ -1706,9 +1706,6 @@ expression as shown in the following screenshot.
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image83.png"
 style="width:6.32258in;height:2.5671in" />
 
-From a data modeling perspective, a Field Parameter is created as a
-table with a set of fields.
-
 If you expand the **Fields** list while in **Report** view, you will see
 a single field with the same name as the parent table.
 
@@ -1716,16 +1713,19 @@ a single field with the same name as the parent table.
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image84.png"
 style="width:1.86806in;height:1.32325in" />
 
+From a data modeling perspective, you can see that a Field Parameter is
+created as a table with a set of fields.
+
 Let's conduct a quick experiment so you can better understand how Field
 Parameters work. Let's add a **Table** visual to the report page to the
-right of the slicer. Next, add the Field Parameter column into the
-**Columns** data role of the **Table** visual. As long as nothing is
-selected in the slicer, the table visual will show all four source
-columns added to the table.
+right of the slicer. Next, add the field inside the Field Parameter into
+the **Columns** data role of the **Table** visual. As long as nothing is
+selected in the slicer, the table visual displays all four source
+columns.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image84.png"
-style="width:4.5873in;height:1.49709in" />
+style="width:4.40252in;height:1.43678in" />
 
 Now, let's select a specific column in the slicer. When you do, the
 slicer applies filtering that reduces the number of columns displayed in
@@ -1733,7 +1733,7 @@ the table visual from four columns to a single column.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image85.png"
-style="width:4in;height:1.31172in" />
+style="width:4.44947in;height:1.45912in" />
 
 In the previous screenshot, you can see that the column values for
 product names have been translated into Spanish. However, there is still
@@ -1745,7 +1745,7 @@ Desktop created the new Field Parameter.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image86.png"
-style="width:5.82979in;height:1.00856in" />
+style="width:6.5912in;height:1.14029in" />
 
 If you examine the DAX expression generated by Power BI Desktop, you
 will see the hard-coded column names from the underlying datasource such
@@ -1783,7 +1783,7 @@ Translated Product Names = {
 
 }
 
-Once you make this change, you should see that the column header now
+Once you make this change, you will see that the column header is now
 translated properly along with product names.
 
 <img
@@ -1799,7 +1799,7 @@ fields in addition to the field you can see in **Report** view.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image88.png"
-style="width:5.12708in;height:2.03468in" />
+style="width:5.45174in;height:2.16352in" />
 
 Note that the names of the columns inside a Field Parameter are
 automatically generated based on the name you gave to the top-level
@@ -1811,14 +1811,14 @@ rename it. For example, you can rename the one field which is visible in
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image89.png"
-style="width:6.64285in;height:1.43931in" />
+style="width:7.02457in;height:1.52201in" />
 
 Likewise, you can rename the two other hidden fields with shorter names
 such as **Fields** and **SortOrder**.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image90.png"
-style="width:6.27742in;height:1.61272in" />
+style="width:6.60982in;height:1.69811in" />
 
 Now, here is where things get interesting. The Field Parameter that has
 been created is a table with three columns named **Product**, **Fields**
@@ -1847,23 +1847,23 @@ each language, a new column will appear in the **Data** view of the
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image91.png"
-style="width:5.38365in;height:1.32919in" />
+style="width:5.83348in;height:1.44025in" />
 
 The name **Value4** isn't quite specific enough for our needs. Let's
 rename the forth column to **LanguageId**.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image92.png"
-style="width:4.89in;height:1.14in" />
+style="width:5.84576in;height:1.36281in" />
 
-Finally, let's not forget to set the sort column for the new column
-named **LanguageId**.
+Finally, let's not forget to configure the sort column for the new
+column named **LanguageId**.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image93.png"
-style="width:6.31214in;height:2.19924in" />
+style="width:5.76191in;height:2.00753in" />
 
-You do not have to worry about setting the sort column for the two
+You do not have to worry about configuring the sort column for the two
 pre-existing fields named **Fields** and **Product**. That is done
 automatically by Power BI Desktop when you create a new Field Parameter.
 However, you need to explicitly configure the sort column when you add
@@ -1882,7 +1882,7 @@ as it will be used to select a language by filtering behind the scenes.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image94.png"
-style="width:5.37097in;height:2.16723in" />
+style="width:5.65792in;height:2.28302in" />
 
 At this point, we no longer need the slicer that can be automatically
 added by Power BI Desktop when creating the Field Parameter. While the
@@ -1896,7 +1896,7 @@ Parameter named **Translated Product Names** and extended it with an
 extra column named **LanguageId**. The **LanguageId** column will be
 used to filter which source column is used, and therefore, which
 language will be displayed to report consumers. In the next section, we
-will continue building out this solution for data translations by adding
+will continue building out the strategy for data translations by adding
 a new table named **Languages** which will be used to filter multiple
 Field Parameters at once in order to synchronize them as you switch
 between languages
@@ -1913,7 +1913,7 @@ in.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image95.png"
-style="width:6.60842in;height:3.03226in" />
+style="width:6.8945in;height:3.16352in" />
 
 Examine the following M code for the query that is being used to
 generate the **Languages** table.
@@ -1967,7 +1967,7 @@ using the **LanguageId** column as shown in the following screenshot.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image97.png"
-style="width:2.67401in;height:1.29255in" />
+style="width:2.96656in;height:1.43396in" />
 
 Once you have established the relationship between **Languages** and
 **Translated Product Names**, you have created the foundation for
@@ -2018,8 +2018,8 @@ src="./images/BuildingMultiLanguageReportsInPowerBI/media/image99.png"
 style="width:5.2131in;height:1.48256in" />
 
 The next step is to move to **Model** view where you can create a
-relationship based on the **LanguageId** column between Languages table
-and the **Translated Category Names** field parameter.
+relationship based on the **LanguageId** column between **Languages**
+table and the **Translated Category Names** Field Parameter.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image100.png"
@@ -2034,20 +2034,19 @@ synchronized to display the same language.
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image101.png"
 style="width:2.89833in;height:1.59884in" />
 
-You have now learned a technique to synchronize the selection of
-language for the current user across multiple Field Parameters. The
-example you've just seen involved two Field Parameters. If your project
-involves a greater number of columns requiring data translations such as
-10, 20 or even 50, you have a repeatable approach for adding new columns
-that can scale as high as you need.
+You have now learned how to synchronize the selection of language across
+multiple Field Parameters. The example you've just seen involves two
+Field Parameters. If your project involves a greater number of columns
+requiring data translations such as 10, 20 or even 50, you have now
+learned a repeatable approach that can scale as high as you need.
 
 One thing that can be confusing is trying to distinguish between the
 three different types of translations while testing. You can quickly
 test out your implementation of data translations in Power BI Desktop by
-changing the filter on the **Languages** table. However, the two types
-of translations don't work when you're working with Power BI Desktop.
-The metadata translations and report label translations you have added
-must be tested in the Power BI Service.
+changing the filter on the **Languages** table. However, the other two
+types of translations don't work correctly in Power BI Desktop. The
+metadata translations and report label translations you've added must
+always be tested in the Power BI Service.
 
 ### Implementing Data Translations for a Calendar Table
 
@@ -2060,15 +2059,15 @@ day.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image102.png"
-style="width:4.5896in;height:1.40639in" />
+style="width:4.7842in;height:1.46603in" />
 
 To properly implement data translations for columns in a calendar table,
 you need a strategy to translate month names and day of the week names
-into the different languages you'd like to support.
+into the secondary languages you plan to support.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image103.png"
-style="width:4.37572in;height:1.35424in" />
+style="width:4.87854in;height:1.50985in" />
 
 The strategy presented in this article for implementing calendar table
 column translations is based on Power Query and the power of the M query
@@ -2080,33 +2079,33 @@ will evaluate to a text-based value of **January**.
 
 Date.MonthName( \#date(2023, 1, 1) )
 
-The **Date.MonthName** function accepts an second, optional parameter to
-pass a specific language and locale.
+The **Date.MonthName** function accepts an second, optional string
+parameter to pass a specific language and locale.
 
 Date.MonthName( \#date(2023, 1, 1), "en-US")
 
-If you want to month name translated into French, you can pass a text
+If you want to translate the month name into French, you can pass a text
 value of **fr-FR** as the second parameter.
 
 Date.MonthName( \#date(2022, 12, 1), "fr-FR")
 
 Now, let's revisit the **Languages** table you saw earlier. Now we can
-reveal why it include the **DefaultCulture** column.
+reveal why it includes the **DefaultCulture** column.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image104.png"
 style="width:6.24277in;height:0.96916in" />
 
 Power Query is built on a functional query language named M which makes
-it possible to enumerate through the rows oof the **Languages** table to
+it possible to enumerate through the rows of the **Languages** table to
 discover what languages and what default cultures are supported in the
-current project. This makes it possible to write queries which use the
-**Languages** table as a datasource to generate calendar translation
-tables on the fly with month names and day or week names.
+current project. This makes it possible to write a query which uses the
+**Languages** table as its source to generate a calendar translation
+table with the names of months or weekdays.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image105.png"
-style="width:4.6891in;height:1.97688in" />
+style="width:7.15723in;height:3.01742in" />
 
 Here's an example of the M code used to generate the **Translated Month
 Names Table**.
@@ -2175,28 +2174,29 @@ in
 
 QueryOutput
 
-It's fair to say that this is an advanced query for advanced Power Query
-users. You will not be tested on this M code listing so don't feel you
-need to understand everything that's going on. You can simply copy and
-paste the M code for queries like this into your project when you need
-it.
+It's fair to say that this query contains advanced programming with M
+code. Don't worry. You will not be tested on this so don't feel you need
+to understand every M function call in this listing. You can simply copy
+and paste M code like this whenever you want to add calendar translation
+tables to your project.
 
 If the **Languages** table contains four rows for English, Spanish,
 French and German, the **Translated Month Names Table** query will
-generate a table like the one shown in the following screenshot.
+generate a table with four translation columns as shown in the following
+screenshot.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image106.png"
 style="width:7.48819in;height:1.95903in" />
 
 Likewise, the query named **Translated Day Names Table** will generate a
-table with day of week name translations.
+table with week day name translations.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image107.png"
 style="width:7.40751in;height:1.47093in" />
 
-There is an important design aspect of the two queries named
+There is an important observation about the two queries named
 **Translated Month Names Table** and **Translated Day Names Table**.
 These queries have been written to be generic. In other words, they do
 not contains any hard-coded column names. This lowers ongoing
@@ -2209,10 +2209,10 @@ adapt to those changes.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image108.png"
-style="width:5.04472in;height:2.6763in" />
+style="width:4.7539in;height:2.52201in" />
 
 Once again, always strive to use localize techniques that lower the
-overhead of adding new languages over time.
+overhead of adding new languages in the future.
 
 You've now seen how to generate the two translation tables named
 **Translated Month Names Table** and **Translated Day Names Table**. The
@@ -2235,23 +2235,23 @@ and the **DayNumber** column.
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image110.png"
 style="width:6.19581in;height:2.53757in" />
 
-Once you have created the required relationships with the Calendar
+Once you have created the required relationships with the **Calendar**
 table, the next step is to create a new Field Parameter for each of the
 two calendar translations tables. Fortunately, creating a Field
-Parameter for a calendar translation table is just like creating Field
-Parameter for product names and category names shown earlier.
+Parameter for a calendar translation table is just like creating the
+Field Parameters for product names and category names shown earlier.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image111.png"
-style="width:5.85524in;height:2.12139in" />
+style="width:6.32152in;height:2.29032in" />
 
 Don't forget that you need to add a relationship between these new Field
-Parameters and the **Languages** table to ensure the language filtering
-strategy works as expected.
+Parameter tables and the **Languages** table to ensure the language
+filtering strategy works as expected.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image112.png"
-style="width:2.9133in;height:3.71895in" />
+style="width:2.98184in;height:3.80645in" />
 
 Once you have created the Field Parameters for **Translated Month
 Names** and **Translated Day Names**, you can begin to surface them in a
@@ -2268,28 +2268,28 @@ week work as expected.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image114.png"
-style="width:6.42774in;height:1.33653in" />
+style="width:6.3871in;height:1.32808in" />
 
 ### Loading Reports using Bookmarks to Select a Language
 
 If you plan to publish a Power BI report with data translations for
-licensed users in the Power BI Service, you must devise a way to load
-the report with the correct language filtering for the current user.
-This can be accomplished by creating a set of bookmarks which apply
-filters to the **Languages** table. When using this approach, you start
-by creating a separate bookmark for each language that supports data
-translations.
+access by users through the Power BI Service, you must devise a way to
+load the report with the correct language filtering for the current
+user. This can be accomplished by creating a set of bookmarks which
+apply filters to the **Languages** table. When using this approach, you
+start by creating a separate bookmark for each language that supports
+data translations.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image115.png"
-style="width:1.8576in;height:1.53968in" />
+style="width:2.33636in;height:1.93651in" />
 
 When creating bookmarks to filter tables, you should disable **Display**
 and **Current Page** and only enable **Data** behavior.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image116.png"
-style="width:1.83535in;height:2.2659in" />
+style="width:1.63492in;height:2.01844in" />
 
 Earlier in this article, you learned that it is possible to load a
 report in the Power BI Service using the **language** parameter to force
@@ -2303,22 +2303,21 @@ report is loading.
 
 /?language=es&bookmarkGuid=Bookmark856920573e02a8ab1c2a
 
-The filtering applied to the **Languages** table is in place before
-anything is displayed to the user.
+The filtering on the **Languages** table is applied before any data is
+displayed to the user.
 
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image117.png"
-style="width:4.5104in;height:1.97688in" />
+style="width:4.56315in;height:2in" />
 
 ### Embedding Reports That Implement Data Translations
 
 Loading reports with Power BI embedding provides more flexibility than
-the report loading process for licensed users who are accessing the
-report through the Power BI Service. Earlier you saw it is possible to
-load a report using a specific language and locale by extending the
-**config** object passed to **powerbi.embed** with a **localeSettings**
-object containing a **language** property as shown in the following
-code.
+the report loading process for users accessing the report through the
+Power BI Service. Earlier you saw it is possible to load a report using
+a specific language and locale by extending the **config** object passed
+to **powerbi.embed** with a **localeSettings** object containing a
+**language** property as shown in the following code.
 
 let config = {
 
@@ -2338,14 +2337,20 @@ localeSettings: { language: "de-DE" }
 
 let report = powerbi.embed(reportContainer, config);
 
-When you embed a report with code like this which sets the **language**
-property of the **localeSettings** object, the metadata translations and
-report label translations will work as expected. However, there is one
-additional step required to filter the **Languages** table to select the
-appropriate language for the current user. While you embed a report
-which loads using a bookmark, the use of bookmarks is not required as it
-is with reports in the Power BI Service. Instead, you can apply a filter
-on the **Languages** table using the Power BI JavaScript API.
+When you embed a report with a **config** object like this which sets
+the **language** property of the **localeSettings** object, the metadata
+translations and report label translations will work as expected.
+However, there is one additional step required to filter the
+**Languages** table to select the appropriate language for the current
+user.
+
+While it's possible to apply a bookmark to an embedded a report, the use
+of bookmarks is not required as it is when loading reports for users in
+the Power BI Service. Instead, you can just apply a filter directly on
+the **Languages** table as the report loads using the Power BI
+JavaScript API. There is no need to add bookmarks for filtering the
+**Languages** table if you only intend to use a report using Power BI
+embedding.
 
 The recommended way to apply a filtering during the loading process of
 an embedded report is to register an event handler for the **loaded**
@@ -2354,12 +2359,17 @@ event. When you register an event handler for an embedded report's
 that executes before the rendering process begins. This makes the
 **loaded** event the ideal place to register an event handler whose
 purpose is to apply the correct filtering on the **Languages** table.
-Here is an example of register an event handler for the loaded event
-which applies a filter to the **Languages** table for Spanish.
+Here is an example of JavaScript code which registers an event handler
+for the **loaded** event to apply a filter to the **Languages** table
+for Spanish.
+
+let report = powerbi.embed(reportContainer, config);
 
 report.on("loaded", async (event: any) =\> {
 
 let languageToLoad = "es";
+
+// create filter object
 
 const filters = \[{
 
@@ -2383,6 +2393,8 @@ requireSingleSelection: true
 
 }\];
 
+// pass filter object in a call to updateFilters
+
 await report.updateFilters(models.FiltersOperations.Replace, filters);
 
 });
@@ -2394,26 +2406,38 @@ while **setFilters** does not.
 
 ## Summary 
 
-This article has examined how to use Power BI localization features to
-design and implement multi-language reports. Along the way you learned
-that Power BI datasets provide support for localization while the Power
-BI report designer does not. This partial support for localization in
-Power BI can lead to confusion as many common Power BI Desktop report
-design techniques do not support localization and must be avoided.
+As you read through this article, you learned about the end-to-end
+process for building Power BI multilanguage reports. You should now have
+a solid conceptual understanding of how Power BI translations work and
+you should be able to distinguish between the three essential types of
+translations which include metadata translations, report label
+translations and data translations.
 
-Becoming successful at building multi-language reports requires a deep
-understanding of Power BI architecture and a thorough knowledge of which
-report design techniques support localization. You 've learned how to
-prepare datasets and reports for localization and how to create the
-**Localized Labels** table so you can localize report labels such as
-titles, headings and button captions. You also learned several different
-approaches you can use to add metadata translations to a dataset
-definition. After reading this article, you should now possess a deeper
-understanding and the fundamental skills you need to build
-multi-language reports in a reliable and testable fashion.
+You've also learned that testing your work to localize Power BI reports
+can be challenging because metadata translations do not load correctly
+in Power BI Desktop. You must always publish your reports to a Premium
+workspace in the Power BI Service to test your work and to verify your
+translations are loading correctly.
 
-This article also discussed when and how to implement data translations.
-You have learned that some projects will require data translations while
-other will not. You must decide whether to implement data translations
-on a project-by-project basis. Fortunately, you now know the right
-questions to ask in order to make that decision.
+This article introduced you to the external tool named Translations
+Builder. You've seen how Translations Builder can significantly reduce
+the manual effort required to add translations and localization support
+to PBIX project files. You have also seen how Translations Builder
+provides features for generating machine translation which can really
+accelerate the process for building and testing multilanguage reports.
+
+This article examined how to export and import translation sheets which
+can enable a human workflow process and collaboration with an external
+team of translators. You learned how exporting a master translation
+sheet makes it possible to copy translations for secondary languages
+between PBIX projects. You also saw the potential to create an
+enterprise-level translation sheet which can be used to add a set of
+reusable report labels to each new PBIX project.
+
+The last section of this article examined when and how to implement data
+translations. If you are building a PBIX project that requires data
+translations, you can leverage the strategy which uses Field Parameters
+as the foundation for a design to switch languages through filtering the
+**Languages** table. All in all, you now have the knowledge and
+technical skills required to build multi-language reports for Power BI
+using a strategy that is reliable, predictable and scalable.
