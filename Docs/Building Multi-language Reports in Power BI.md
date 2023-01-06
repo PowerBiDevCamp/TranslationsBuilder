@@ -481,15 +481,13 @@ you can see the first three columns contain read-only columns used to
 identity each metadata translation. Each metadata translation has an
 **Object Type**, a **Property** and a **Name**. Translations for the
 **Caption** property will always be used while translations for the
-**Description** property and the **DisplayFolder** property can be added
+**Description** and **DisplayFolder** properties can be added
 if required. The fourth column in the translation grid always displays
 the translations for the dataset’s default language and locale which in
 this case is **English [en-US]**.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image17.png"
-style="width:2.73545in;height:1.06936in"
-alt="Table Description automatically generated" />
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image17.png"  style="width:75%"  />
 
 While Translations Builder makes it possible to update the translations
 for the default language, you should do it sparingly. Doing so can be
@@ -499,10 +497,7 @@ Power BI Desktop.
 Translations Builder provides an **Add Language** command to add
 secondary languages to the project’s data model.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image18.png"
-style="width:4.80657in;height:0.80347in"
-alt="Background pattern Description automatically generated" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image18.png"  style="width:70%" />
 
 Clicking **Add Language** displays the **Add Language** dialog which
 allows the user to add one or more secondary languages.
