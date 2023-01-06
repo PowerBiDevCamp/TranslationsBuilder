@@ -604,7 +604,7 @@ set of steps again and again:
 3.  Test your work with a browser in the Power BI Service using the **language** parameter
 4.  Repeat steps 1-3 until all the translations work has been completed
 
-Are you starting to get excited about working with Translations Builder?
+> Are you starting to get excited about working with Translations Builder?
 If you want to jump right in and get started, you can try out the
 hands-on lab titled [**Lab 01: Getting Started with Translations
 Builder**](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Labs/Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.md).
