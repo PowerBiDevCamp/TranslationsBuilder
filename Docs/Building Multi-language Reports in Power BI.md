@@ -804,14 +804,14 @@ information about the **Localized Labels** table strategy. If you click
 **<u>Y</u>es,** interestingly enough, you’ll be redirected back to this
 very section of this very article.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image32.png"  style="width:50%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image32.png"  style="width:40%"  />
 
 After the **Localized Labels** table has been created, you will see
 three sample report labels as shown in the following screenshot. In most
 cases you will want to delete these sample report labels and replace
 them with the actual report labels required on the current project.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image33.png"  style="width:70%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image33.png"  style="width:90%" />
 
 Remember, there is no need to interact with the **Localized Labels**
 table in Power BI Desktop. You can add and manage all the report labels
