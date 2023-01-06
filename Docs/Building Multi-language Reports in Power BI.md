@@ -369,7 +369,6 @@ others will not. This point will be revisited in more depth later in
 this article.
 
 ### Packaging Dataset and Report in PBIX Project Files
-
 Now that you understand high-level concepts of building multi-language
 reports with translations, it's time to discuss the multi-language
 report development process. The first step here is to decide how to
@@ -425,7 +424,6 @@ multi-language reports in scenarios where your solution contains
 multiple PBIX files.
 
 ## Understanding How Translations Builder Works
-
 Translations Builder is a tool designed for content creators using Power
 BI Desktop. Content creators can use this tools to add multi-language
 support to PBIX project files. The following screenshot shows what
@@ -497,7 +495,6 @@ src="./images/BuildingMultiLanguageReportsInPowerBI/media/image15.png"
 style="width:4.73988in;height:0.93041in" />
 
 ### Adding Secondary Languages and Translations
-
 When you launch Translations Builder with a PBIX project for the first
 time, the translation grid will display a row in for each non-hidden
 table, measure and column in the project’s underlying data model. The
@@ -613,7 +610,6 @@ foundation for an ALM strategy where support for secondary languages and
 translations can be evolved across versions of a PBIX file.
 
 ### Testing Translations in the Power BI Service
-
 One of the issues that makes working with translations a bit more
 complicated is that you cannot test your work in Power BI Desktop.
 Instead, you must test your work in the Power BI Service in a workspace
