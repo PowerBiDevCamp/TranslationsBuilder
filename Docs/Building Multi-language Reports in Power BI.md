@@ -251,7 +251,7 @@ regional formatting. Power BI Desktop offers some other formatting options
  that should be avoided as they have a pre-defined display patterns to do 
  not change in response to the user’s locale.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image4.png" style="width:45%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image4.png" style="width:25%" />
 
 Here are a few examples of how a date value formatted with **Short
 Date** appears when loaded under different locales.
