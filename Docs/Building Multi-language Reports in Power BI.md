@@ -661,12 +661,8 @@ and translations to localize a PBIX project, you will follow the same
 set of steps again and again:
 
 1.  Make changes in Power BI Desktop
-
 2.  Publish the PBIX project to the Power BI Service
-
-3.  Test your work with a browser in the Power BI Service using
-    **language** parameter
-
+3.  Test your work with a browser in the Power BI Service using the **language** parameter
 4.  Repeat steps 1-3 until all the translations work has been completed
 
 Are you starting to get excited about working with Translations Builder?
@@ -682,23 +678,18 @@ is accomplished by extending the **config** object passed to
 **powerbi.embed** with a **localeSettings** object containing a
 **language** property as shown in the following code.
 
+``` javascript
 let config = {
-
-type: "report",
-
-id: reportId,
-
-embedUrl: embedUrl,
-
-accessToken: embedToken,
-
-tokenType: models.TokenType.Embed,
-
-localeSettings: { language: "de-DE" }
-
+  type: "report",
+  id: reportId,
+  embedUrl: embedUrl,
+  accessToken: embedToken,
+  tokenType: models.TokenType.Embed,
+  localeSettings: { language: "de-DE" }
 };
 
 let report = powerbi.embed(reportContainer, config);
+```
 
 ### Generating Machine Translations using Azure Translator Service
 
