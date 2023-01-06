@@ -586,18 +586,12 @@ URL as it loads the report. Once you correctly loaded a report using a
 experience for the entire Power BI Service UI switch from English to
 Spanish.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image25.png"
-style="width:6.48154in;height:0.81132in"
-alt="A screenshot of a computer Description automatically generated" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image25.png"  style="width:80%" />
 
 You will also see that the report displays the Spanish translations for
 the names of columns and measures.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image26.png"
-style="width:4.84127in;height:1.31692in"
-alt="Graphical user interface, text, application Description automatically generated" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image26.png"  style="width:70%" />
 
 Now that you’ve seen how to test your work when working with
 translations, it possible to make a high-level observation about working
