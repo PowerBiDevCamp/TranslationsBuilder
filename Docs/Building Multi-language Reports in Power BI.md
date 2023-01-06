@@ -327,12 +327,12 @@ product names differently for users who speak different languages. For
 example, some users see products names in English while other users see
 product names in secondary languages.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image8.png"  style="width:80%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image8.png"  style="width:70%"  />
 
 Data translations also appear in the axes of cartesian visuals and in
 legends as shown in the following screenshot.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image9.png"  style="width:90%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image9.png"  style="width:96%"  />
 
 Data translations are harder to design and implement than the other two
 types of translations. The reason it’s harder is that you must typically
