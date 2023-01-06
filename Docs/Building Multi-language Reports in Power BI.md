@@ -283,16 +283,12 @@ tables, columns, measures, hierarchies and hierarchy levels. The
 following screenshot shows how metadata translations provide German
 names for the measures displayed in Card visuals.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image5.png"
-style="width:7.07937in;height:0.51045in" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image5.png"  style="width:90%"  />
 
 Metadata translations are also used to display column names and measure
 names in tables and matrices.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image6.png"
-style="width:7.21249in;height:1.30159in" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image6.png"  style="width:70%" />
 
 Metadata translations are the easiest to create, manage and integrate
 into a Power BI report. By leveraging the features of Translations
