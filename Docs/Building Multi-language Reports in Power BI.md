@@ -65,9 +65,10 @@ predictable and scalable.
   - [Loading Reports using Bookmarks to Select a Language](#loading-reports-using-bookmarks-to-select-a-language)
   - [Embedding Reports That Implement Data Translations](#embedding-reports-that-implement-data-translations)
 - [Summary](#summary)
-<hr/>
-### Multi-language Report Live Demo
 
+<hr/>
+
+### Multi-language Report Live Demo
 This article is accompanied a [**live
 demo**](https://multilanguagereportdemo.azurewebsites.net/) based on a
 single PBIX file solution named
