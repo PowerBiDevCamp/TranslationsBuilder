@@ -1842,17 +1842,14 @@ modifying the DAX expression for the Field Parameter by adding a fourth
 string parameter to the row for each language with the lower-case two
 character language identifier.
 
+```
 Translated Product Names = {
-
-("Product", NAMEOF('Products'\[ProductTranslationEnglish\]), 0, "en" ),
-
-("Producto", NAMEOF('Products'\[ProductTranslationSpanish\]), 1, "es" ),
-
-("Produit", NAMEOF('Products'\[ProductTranslationFrench\]), 2, "fr" ),
-
-("Produkt", NAMEOF('Products'\[ProductTranslationGerman\]), 3, "de" )
-
+  ("Product", NAMEOF('Products'\[ProductTranslationEnglish\]), 0, "en" ),
+  ("Producto", NAMEOF('Products'\[ProductTranslationSpanish\]), 1, "es" ),
+  ("Produit", NAMEOF('Products'\[ProductTranslationFrench\]), 2, "fr" ),
+  ("Produkt", NAMEOF('Products'\[ProductTranslationGerman\]), 3, "de" )
 }
+```
 
 Once you have updated the DAX expression with a language identifier for
 each language, a new column will appear in the **Data** view of the
