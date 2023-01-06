@@ -2280,7 +2280,9 @@ report URL parameter is named **bookmarkGuid** and this parameter makes
 it possible to specify the ID for a bookmark that gets applied as the
 report is loading.
 
+```
 /?language=es&bookmarkGuid=Bookmark856920573e02a8ab1c2a
+```
 
 The filtering on the **Languages** table is applied before any data is
 displayed to the user.
