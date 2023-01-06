@@ -811,7 +811,7 @@ three sample report labels as shown in the following screenshot. In most
 cases you will want to delete these sample report labels and replace
 them with the actual report labels required on the current project.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image33.png"  style="width:50%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image33.png"  style="width:30%" />
 
 Remember, there is no need to interact with the **Localized Labels**
 table in Power BI Desktop. You can add and manage all the report labels
