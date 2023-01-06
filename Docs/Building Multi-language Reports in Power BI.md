@@ -366,7 +366,7 @@ the dataset definition after they have been deployed, you can perform an
 upgrade operation by importing an updated version of the PBIX project
 file.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image10.png"  style="width:40%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image10.png"  style="width:35%"  />
 
 The single PBIX file approach doesn't always provide the flexibility you
 need. Imagine a scenario where one team is responsible for creating and
@@ -382,7 +382,7 @@ This makes it possible for the teams building reports to build PBIX
 project files with report layouts which can be deployed and updated
 independently of the underlying dataset.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image11.png"  style="width:40%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image11.png"  style="width:50%"  />
 
 From the perspective of adding multi-language support to a Power BI
 solution, it really doesn't matter which of these approaches you choose.
