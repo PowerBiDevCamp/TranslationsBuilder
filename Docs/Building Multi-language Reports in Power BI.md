@@ -113,18 +113,16 @@ A second essential feature to assist with building multi-language
 reports in Power BI is the DAX **USERCULTURE** function. The
 **USERCULTURE** function returns a string which includes a lower-case
 language ID parsed together with an upper-case locale identifier. Here
-are a few examples of strings with a language and locale that might be
-returned by **USERCULTURE**.
+are a few examples of string values retuned by the **USERCULTURE**
+function which indicate a specific language and locale.
 
-- **en-US** \[language=English, locale identifier=United States\]
-
-- **es-ES** \[language=Spanish, locale identifier=Spain\]
-
-- **fr-FR** \[language=French, locale identifier=French\]
-
-- **de-DE** \[language=German, locale identifier=Germany\]
-
-- **ja-JP** \[language=Japanese, locale identifier=Japan\]
+| USERCULTURE | Language | Locale        |
+|-------------|----------|---------------|
+| en-US       | English  | United States |
+| es-ES       | Spanish  | Spain         |
+| fr-FR       | French   | France        |
+| de-DE       | German   | Germany       |
+| Ja-JP       | Japanese | Japan         |
 
 Remember that you can only use the **USERCULTURE** function to implement
 dynamic translations in measures. When you use **USERCULTURE** in the
