@@ -392,7 +392,7 @@ PBIX project file or with a combination of PBIX project files. There are
 specific tasks you need to perform at the dataset level and other tasks
 you must perform when building report layouts in Power BI Desktop.
 
-While the solution provided by [**ProductSalesMultiLanguage.pbix**](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/LiveDemo/ProductSalesMultiLanguage.pbix)
+> While the solution provided by [**ProductSalesMultiLanguage.pbix**](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/LiveDemo/ProductSalesMultiLanguage.pbix)
 demonstrates a single PBIX project file approach where the dataset and
 report are packaged together for convenience. However, nothing changes
 if you package and distribute datasets and reports using separate PBIX
@@ -1535,7 +1535,7 @@ when no database instance ever needs to be viewed in multiple languages.
 
 Now let's examine a different use case which introduces the requirement
 of data translations. This is the use case for the
-**ProductSalesMultiLanguage.pbix** live demo which involves a single
+[**ProductSalesMultiLanguage.pbix**](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/LiveDemo/ProductSalesMultiLanguage.pbix) live demo which involves a single
 database instance containing sales performance data across several
 European countries. This reporting solution has the requirement to
 display its report in different languages while the data being analyzed
