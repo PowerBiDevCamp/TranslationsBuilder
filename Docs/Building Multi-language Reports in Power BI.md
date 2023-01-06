@@ -407,9 +407,7 @@ support to PBIX project files. The following screenshot shows what
 Translations Builder looks like when working with a simple PBIX project
 that supports a small number of secondary languages.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image12.png"
-style="width:6.34328in;height:3.00836in" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image12.png"  style="width:80%"  />
 
 Translations Builder is an external tool developed for Power BI Desktop
 using C#, .NET 6, and Windows Forms. Translations Builder uses an API
