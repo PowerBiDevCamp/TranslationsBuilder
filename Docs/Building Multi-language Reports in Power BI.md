@@ -271,20 +271,16 @@ Date** appears when loaded under different locales.
 | de-DE | 31.12.2022 |
 | ja-JP | 2022/12/31 |
 
-The Japanese formatting is hands-down the winner. It’s the only format
+> The Japanese formatting is hands-down the winner. It’s the only format
 that automatically sorts chronologically.
 
 ### Understanding the Three Types of Translations
-
 When it comes to localizing Power BI artifacts such as datasets and
 reports, there are three different types of translations and you must be
 able distinguish between them. These are the three types of translations
 you should understand.
-
 - Metadata Translations
-
 - Report Label Translations
-
 - Data Translations
 
 Now, let’s examine all three types in a little more depth.
