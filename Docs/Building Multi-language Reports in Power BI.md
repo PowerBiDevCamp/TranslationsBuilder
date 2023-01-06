@@ -2147,14 +2147,11 @@ let
                                                         "TranslationsColumns",
                                                         ColumnsCollection,
                                                         ColumnsCollection ),
-TypedColumnsCollection = List.Transform(ColumnsCollection, each {_, type text}),
-
-QueryOutput = Table.TransformColumnTypes(ExpandedTranslationsColumns,
-TypedColumnsCollection)
-
+  TypedColumnsCollection = List.Transform(ColumnsCollection, each {_, type text}),
+  QueryOutput = Table.TransformColumnTypes(ExpandedTranslationsColumns, TypedColumnsCollection)
 in
-
-QueryOutput
+  QueryOutput
+```
 
 It's fair to say that this query contains advanced programming with M
 code. Don't worry. You will not be tested on this so don't feel you need
