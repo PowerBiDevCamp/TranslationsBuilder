@@ -512,13 +512,13 @@ the **Secondary Languages** list.
 Adding a new language will also add a new column of editable cells to
 the translations grid.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image21.png" style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image21.png" style="width:60%"  />
 
 In scenarios where content creators know how to speak all the languages
 involved, they can add and update translations for secondary languages
 directly in the translation grid with an Excel-like editing experience.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image22.png"  style="width:70%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image22.png"  style="width:60%" />
 
 > Technically speaking, Translations Builder isn’t just adding a language
 object to the dataset. Instead, Translations Builder is actually adding
