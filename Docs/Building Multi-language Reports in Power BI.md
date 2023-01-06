@@ -474,10 +474,7 @@ require translations. The following screenshot shows the starting point
 for a simple data model before it’s been modified to support secondary
 languages.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image16.png"
-style="width:3.56441in;height:1.66042in"
-alt="Graphical user interface, application Description automatically generated" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image16.png"  style="width:70%" />
 
 If you examine the translation grid for this PBIX project more closely,
 you can see the first three columns contain read-only columns used to
