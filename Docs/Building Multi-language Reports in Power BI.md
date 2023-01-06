@@ -382,7 +382,7 @@ This makes it possible for the teams building reports to build PBIX
 project files with report layouts which can be deployed and updated
 independently of the underlying dataset.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image11.png"  style="width:50%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image11.png"  style="width:45%"  />
 
 From the perspective of adding multi-language support to a Power BI
 solution, it really doesn't matter which of these approaches you choose.
