@@ -247,14 +247,11 @@ that support regional formatting.
 
 If you are formatting a date, it is recommended you use a format string
 of **Short Date** or **Long Date** because those format strings support
-regional formatting. Power BI Desktop offers other formatting options
-(those without an asterisk) that should be avoided as they have a
-pre-defined display patterns to do not change in response to the user’s
-locale.
+regional formatting. Power BI Desktop offers some other formatting options
+ that should be avoided as they have a pre-defined display patterns to do 
+ not change in response to the user’s locale.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image4.png"
-style="width:2.38961in;height:1.31848in" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image4.png" style="width:75%" />
 
 Here are a few examples of how a date value formatted with **Short
 Date** appears when loaded under different locales.
