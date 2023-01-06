@@ -1879,9 +1879,9 @@ automatically by Power BI Desktop when you create a new Field Parameter.
 However, you need to explicitly configure the sort column when you add
 additional columns such as **LanguageId**.
 
-The authors would like to thank [Gerhard
-Brueckl](http://wordpress.gbrueckl.at/) for his [great blog
-post](https://blog.gbrueckl.at/2022/06/using-power-bi-field-parameters-to-translate-data-and-values/)
+The authors would like to thank **[Gerhard
+Brueckl](http://wordpress.gbrueckl.at/)** for his **[great blog
+post](https://blog.gbrueckl.at/2022/06/using-power-bi-field-parameters-to-translate-data-and-values/)**SS
 where we first learned about this technique.
 
 There is just one more thing to do with the new Field Parameter. Let's
