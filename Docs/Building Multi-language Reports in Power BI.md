@@ -497,13 +497,13 @@ Power BI Desktop.
 Translations Builder provides an **Add Language** command to add
 secondary languages to the project’s data model.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image18.png"  style="width:50%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image18.png"  style="width:60%" />
 
 Clicking **Add Language** displays the **Add Language** dialog which
 allows the user to add one or more secondary languages.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image19.png"  style="width:45%" />
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image19.png"  style="width:40%" />
 
 After a new language has been added, the user can see the language in
 the **Secondary Languages** list.
