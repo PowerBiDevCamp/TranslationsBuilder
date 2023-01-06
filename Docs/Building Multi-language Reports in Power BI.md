@@ -1,6 +1,6 @@
 # Building Multi-language Reports in Power BI
 
-> **Published**: January 2023
+**Published**: January 2023
 
 Power BI provides Internationalization and localization features which
 make it possible to build multi-language reports. For example, you can
@@ -88,10 +88,7 @@ example, click on the link with the caption of **German (Deutsch)**.
 When you do, you will see the report load with German translations as
 shown in the following screenshot.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image1.png"
-style="width:7.51378in;height:3.69182in"
-alt="A picture containing chart Description automatically generated" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image1.png" style="width=80%" />
 
 The live demo is based on a custom web application that uses Power BI
 embedding. When you click on a link in the left navigation, there is
