@@ -545,12 +545,9 @@ Therefore, you must always return back to Power BI Desktop and click the
 **Save** command any time you have added languages and any time you have
 created or updated translations.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image23.png"
-style="width:4.14286in;height:1.22908in"
-alt="Graphical user interface, application, Word Description automatically generated" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image23.png" />
 
-Once the changes have been written back to the PBIX file, that file can
+> Once the changes have been written back to the PBIX file, that file can
 then be published to the Power BI Service for testing. Once you have
 tested your work and verified that the translations are working
 properly, you can also store the PBIX file in a source control system
