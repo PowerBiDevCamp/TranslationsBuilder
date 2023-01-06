@@ -461,9 +461,7 @@ Users work with the translation grid to view, add and edit metadata
 translations in a manner that is similar to working with data inside an
 Excel spreadsheet.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image15.png"
-style="width:4.73988in;height:0.93041in" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image15.png"  style="width:80%"  />
 
 ### Adding Secondary Languages and Translations
 When you launch Translations Builder with a PBIX project for the first
