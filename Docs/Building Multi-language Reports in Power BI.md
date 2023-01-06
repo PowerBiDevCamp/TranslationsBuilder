@@ -564,10 +564,7 @@ support with Translations Builder and you have saved your changes to the
 underlying PBIX file, you can then publish the PBIX project from Power
 BI Desktop to the Power BI Service for testing.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image24.png"
-style="width:6.07937in;height:0.96357in"
-alt="Graphical user interface, application Description automatically generated" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image24.png"  style="width:80%"  />
 
 After publishing your PBIX project to the Power BI Service, you can test
 loading the report using secondary language by modifying the report URL
@@ -575,7 +572,9 @@ with a query string parameter named **language**. After the report loads
 with its default language, you can click the browser address bar and add
 the following **language** parameter to the end of the report URL.
 
+```
 /?language=es-ES
+```
 
 Once you add the **language** parameter to the end of the URL and press
 **ENTER**, you should be able to verify that the **language** parameter
