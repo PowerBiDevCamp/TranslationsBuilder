@@ -804,7 +804,7 @@ information about the **Localized Labels** table strategy. If you click
 **<u>Y</u>es,** interestingly enough, you’ll be redirected back to this
 very section of this very article.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image32.png"  style="width:32%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image32.png"  style="width:38%"  />
 
 After the **Localized Labels** table has been created, you will see
 three sample report labels as shown in the following screenshot. In most
