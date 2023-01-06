@@ -782,7 +782,7 @@ project. As you can see it provides localized report labels for the
 report title, visual titles and captions for navigation buttons used
 throughout the report.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image30.png"  style="width:42%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image30.png"  style="width:41%"  />
 
 > Translations Builder 1.0 introduced the **Localized Labels** table, but
 it did not take the strategy far enough. Consequently, the user
@@ -796,9 +796,7 @@ executing the **Create Localized Labels Table** command from the
 **Generate Translated Tables** menu.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image31.png"
-style="width:3.01587in;height:1.17301in"
-alt="Graphical user interface, text, application Description automatically generated" />
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image31.png"  style="width:70%"  />
 
 When you execute this command to create the **Localized Labels** table,
 you will be prompted by the following dialog asking if you want more
@@ -806,10 +804,7 @@ information about the **Localized Labels** table strategy. If you click
 **<u>Y</u>es,** interestingly enough, you’ll be redirected back to this
 very section of this very article.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image32.png"
-style="width:1.80921in;height:0.84872in"
-alt="Graphical user interface, application Description automatically generated" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image32.png"  style="width:70%"  />
 
 After the **Localized Labels** table has been created, you will see
 three sample report labels as shown in the following screenshot. In most
