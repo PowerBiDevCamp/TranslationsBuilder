@@ -392,7 +392,7 @@ PBIX project file or with a combination of PBIX project files. There are
 specific tasks you need to perform at the dataset level and other tasks
 you must perform when building report layouts in Power BI Desktop.
 
-While the solution provided by **ProductSalesMultiLanguage.pbix**
+While the solution provided by [**ProductSalesMultiLanguage.pbix**](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/LiveDemo/ProductSalesMultiLanguage.pbix)
 demonstrates a single PBIX project file approach where the dataset and
 report are packaged together for convenience. However, nothing changes
 if you package and distribute datasets and reports using separate PBIX
