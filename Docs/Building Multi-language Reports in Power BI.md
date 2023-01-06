@@ -503,9 +503,7 @@ Clicking **Add Language** displays the **Add Language** dialog which
 allows the user to add one or more secondary languages.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image19.png"
-style="width:2in;height:2.09671in"
-alt="Graphical user interface Description automatically generated" />
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image19.png"  style="width:70%" />
 
 After a new language has been added, the user can see the language in
 the **Secondary Languages** list.
