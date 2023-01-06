@@ -1776,19 +1776,10 @@ as **ProductTranslationEnglish** and **ProductTranslationSpanish**.
 
 ``` dax
 Translated Product Names = {
-
-("ProductTranslationEnglish",
-NAMEOF('Products'\[ProductTranslationEnglish\]), 0),
-
-("ProductTranslationSpanish",
-NAMEOF('Products'\[ProductTranslationSpanish\]), 1),
-
-("ProductTranslationFrench",
-NAMEOF('Products'\[ProductTranslationFrench\]), 2),
-
-("ProductTranslationGerman",
-NAMEOF('Products'\[ProductTranslationGerman\]), 3)
-
+  ("ProductTranslationEnglish", NAMEOF('Products'\[ProductTranslationEnglish\]), 0),
+  ("ProductTranslationSpanish", NAMEOF('Products'\[ProductTranslationSpanish\]), 1),
+  ("ProductTranslationFrench", NAMEOF('Products'\[ProductTranslationFrench\]), 2),
+  ("ProductTranslationGerman", NAMEOF('Products'\[ProductTranslationGerman\]), 3)
 }
 ```
 
@@ -1796,17 +1787,14 @@ The way to resolve this issue is to update the DAX expression to replace
 the column names with localized translations for the word **Product** as
 shown in the following code listing.
 
+```
 Translated Product Names = {
-
-("Product", NAMEOF('Products'\[ProductTranslationEnglish\]), 0),
-
-("Producto", NAMEOF('Products'\[ProductTranslationSpanish\]), 1),
-
-("Produit", NAMEOF('Products'\[ProductTranslationFrench\]), 2),
-
-("Produkt", NAMEOF('Products'\[ProductTranslationGerman\]), 3)
-
+  ("Product", NAMEOF('Products'\[ProductTranslationEnglish\]), 0),
+  ("Producto", NAMEOF('Products'\[ProductTranslationSpanish\]), 1),
+  ("Produit", NAMEOF('Products'\[ProductTranslationFrench\]), 2),
+  ("Produkt", NAMEOF('Products'\[ProductTranslationGerman\]), 3)
 }
+```
 
 Once you make this change, you will see that the column header is now
 translated properly along with product names.
