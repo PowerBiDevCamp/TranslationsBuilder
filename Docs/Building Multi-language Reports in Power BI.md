@@ -581,7 +581,7 @@ Once you add the **language** parameter to the end of the URL and press
 has been accepted by the browser as it reloads the report. If you forget
 to add the **?** or if you do not format the **language** parameter
 correctly, the browser will reject the parameter and remove it from the
-URL as it loads the report. Once you correctly load a report using a
+URL as it loads the report. Once you correctly loaded a report using a
 **language** parameter value of **es-ES**, you should see the user
 experience for the entire Power BI Service UI switch from English to
 Spanish.
