@@ -776,9 +776,7 @@ obvious things which cause problems due to a lack of localization
 support.
 
 - Using textboxes or buttons with hard-coded text values
-
 - Adding a hard-coded text value for the title of a visual
-
 - Displaying page tabs to the user
 
 The key point here is that any hard-coded text value that gets added to
