@@ -228,8 +228,8 @@ not be required to write conditional DAX logic based on the user’s
 locale. Why is that?
 
 The short answer is that Power BI visuals automatically handle
-locale-specific formatting behind the scenes. This makes things much
-easier. The long answer is that a Power BI visual inspects the locale of
+locale-specific formatting behind the scenes. 
+The long answer is that a Power BI visual inspects the locale of
 the current user before rendering. During the rendering process, the
 visual determines what formatting to use for a date or numeric value
 based on the user’s locale and the format string of the source column or
