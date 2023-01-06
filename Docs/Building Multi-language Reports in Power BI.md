@@ -26,8 +26,8 @@ predictable and scalable.
 
 **Note:** This document is available for download in either **[DOCX]()** or **[PDF]()** format. 
 
+<hr/>
 ### Table of Contents
-
 - [Building Multi-language Reports in Power BI](#building-multi-language-reports-in-power-bi)
   - [Multi-language Report Live Demo](#multi-language-report-live-demo)
   - [Power BI Support for Metadata Translations](#power-bi-support-for-metadata-translations)
@@ -64,9 +64,7 @@ predictable and scalable.
   - [Loading Reports using Bookmarks to Select a Language](#loading-reports-using-bookmarks-to-select-a-language)
   - [Embedding Reports That Implement Data Translations](#embedding-reports-that-implement-data-translations)
 - [Summary](#summary)
-
 <hr/>
-
 ### Multi-language Report Live Demo
 
 This article is accompanied a [**live
