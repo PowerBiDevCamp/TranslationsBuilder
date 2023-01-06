@@ -88,7 +88,7 @@ example, click on the link with the caption of **German (Deutsch)**.
 When you do, you will see the report load with German translations as
 shown in the following screenshot.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image1.png" style="width=95%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image1.png" style="width:95%" />
 
 The live demo is based on a custom web application that uses Power BI
 embedding. When you click on a link in the left navigation, there is
