@@ -1930,12 +1930,12 @@ generate the **Languages** table.
 
 ```
 let
-  LanguagesTable = \#table(type table \[
+  LanguagesTable = #table(type table [
     Language = text,
     LanguageId = text,
     DefaultCulture = text,
     SortOrder = number
-  \], {
+  ], {
     {"English", "en", "en-US", 1 },
     {"Spanish", "es", "es-ES", 2 },
     {"French", "fr", "fr-FR", 3 },
