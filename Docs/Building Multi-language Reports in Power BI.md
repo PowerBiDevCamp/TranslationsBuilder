@@ -1991,18 +1991,14 @@ translated category names similar to the translated product name
 columns. You can create a new Field Parameter named **Translated
 Category Names** using this DAX expression.
 
+```
 Translated Category Names = {
-
-("Category", NAMEOF('Products'\[CategoryTranslationEnglish\]), 0, "en"),
-
-("Categoría", NAMEOF('Products'\[CategoryTranslationSpanish\]), 1,
-"es"),
-
-("Catégorie", NAMEOF('Products'\[CategoryTranslationFrench\]), 2, "fr"),
-
-("Kategorie", NAMEOF('Products'\[CategoryTranslationGerman\]), 3, "de")
-
+  ("Category", NAMEOF('Products'\[CategoryTranslationEnglish\]), 0, "en"),
+  ("Categoría", NAMEOF('Products'\[CategoryTranslationSpanish\]), 1, "es"),
+  ("Catégorie", NAMEOF('Products'\[CategoryTranslationFrench\]), 2, "fr"),
+  ("Kategorie", NAMEOF('Products'\[CategoryTranslationGerman\]), 3, "de")
 }
+```
 
 After creating the Field Parameter named **Translated Category Names**,
 let's update the field names and configure the sort column as we did
