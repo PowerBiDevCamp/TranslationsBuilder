@@ -213,7 +213,7 @@ coming out of Italy. But hey, it’s a start.
 
 Every report that loads in the Power BI Service is initialized with a
 specific language and a specific locale. The default behavior of the
-Power BI Service it to load each report using the language and regional
+Power BI Service is to load each report using the language and regional
 locale specified by the user’s browser settings. However, those settings
 can be overridden by adding the **language** query string parameter to
 the end of the report URL. If you’re developing with Power BI embedding,
