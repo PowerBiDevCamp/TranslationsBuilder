@@ -425,9 +425,7 @@ inside the PBIX file is loaded into memory in a local session of the
 Analysis Services engine. Translations Builder uses TOM to establish a
 direct connection to the dataset of the current PBIX project.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image13.png"
-style="width:3.54088in;height:1.38005in" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image13.png"  style="width:40%"  />
 
 The Translations Builder project has been developed using the
 [**external tools integration
