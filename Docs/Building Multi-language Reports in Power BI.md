@@ -681,7 +681,7 @@ Translations Builder provides a **Configuration Options** dialog which
 makes it possible to configure the key and location to access the Azure
 Translator Service.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image27.png"  style="width:50%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image27.png"  style="width:60%" />
 
 Once a user has configured an Azure Translator Service key, Translations
 Builder will begin to display additional command buttons which make it
@@ -689,7 +689,7 @@ possible to generate translations for a single language at a time or for
 all languages at once. There are also commands to generate machine
 translations only for the translations that are currently empty.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image28.png"  style="width:50%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image28.png"  style="width:90%" />
 
 ## Understanding the Localized Labels Table
 
