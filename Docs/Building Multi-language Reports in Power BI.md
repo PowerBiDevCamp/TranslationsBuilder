@@ -2300,23 +2300,18 @@ a specific language and locale by extending the **config** object passed
 to **powerbi.embed** with a **localeSettings** object containing a
 **language** property as shown in the following code.
 
+``` javascript
 let config = {
-
-type: "report",
-
-id: reportId,
-
-embedUrl: embedUrl,
-
-accessToken: embedToken,
-
-tokenType: models.TokenType.Embed,
-
-localeSettings: { language: "de-DE" }
-
+  type: "report",
+  id: reportId,
+  embedUrl: embedUrl,
+  accessToken: embedToken,
+  tokenType: models.TokenType.Embed,
+  localeSettings: { language: "de-DE" }
 };
 
 let report = powerbi.embed(reportContainer, config);
+```
 
 When you embed a report with a **config** object like this which sets
 the **language** property of the **localeSettings** object, the metadata
@@ -2344,41 +2339,29 @@ Here is an example of JavaScript code which registers an event handler
 for the **loaded** event to apply a filter to the **Languages** table
 for Spanish.
 
+``` javascript
 let report = powerbi.embed(reportContainer, config);
 
 report.on("loaded", async (event: any) => {
+  let languageToLoad = "es";
 
-let languageToLoad = "es";
+  // create filter object
+  const filters = [{
+    $schema: "http://powerbi.comproduct/schema#basic",
+    target: {      table: "Languages", 
+      column: "LanguageId"
+    },
+    operator: "In",  
+    values: [ languageToLoad ],
+    filterType: models.FilterType.Basic,
+    requireSingleSelection: true
+  }];
 
-// create filter object
-
-const filters = [{
-
-$schema: "http://powerbi.com/product/schema#basic",
-
-target: {
-
-table: "Languages",
-
-column: "LanguageId"
-
-},
-
-operator: "In",
-
-values: [ languageToLoad ],
-
-filterType: models.FilterType.Basic,
-
-requireSingleSelection: true
-
-}];
-
-// pass filter object in a call to updateFilters
-
-await report.updateFilters(models.FiltersOperations.Replace, filters);
+  // pass filter object in a call to updateFilters
+  await report.updateFilters(models.FiltersOperations.Replace, filters);
 
 });
+```
 
 When setting filters with the Power BI JavaScript API, you should always
 prefer the **updateFilters** method over the **setFilters** method.
