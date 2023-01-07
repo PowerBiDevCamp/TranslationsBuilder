@@ -1188,7 +1188,7 @@ The final export command you should understand is the **Export All
 Translation Sheets** command which is provided to assist with the quick
 generation and the management of outbound translation sheet files.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image64.png"  style="width:40%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image64.png"  style="width:32%"  />
 
 When you execute the **Export All Translation Sheets** command, it
 generates the complete set of translation sheets to be sent to
@@ -1196,7 +1196,7 @@ translators. If you examine the **Outbox** folder, you should see that a
 sperate translation sheet has been generated for each secondary language
 that has been included in the current project.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image65.png"  style="width:80%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image65.png"  style="width:65%"  />
 
 ### Importing Translation Sheets
 
