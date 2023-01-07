@@ -1768,13 +1768,13 @@ After creating the Field Parameter named **Translated Category Names**,
 let's update the field names and configure the sort column as we did
 earlier for the Field parameter named **Translated Product Names**.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image99.png" style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image99.png" style="width:90%"  />
 
 The next step is to move to **Model** view where you can create a
 relationship based on the **LanguageId** column between **Languages**
 table and the **Translated Category Names** Field Parameter.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image100.png"  style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image100.png"  style="width:60%"  />
 
 Now you should be able to add the **Category** column to the **Table**
 visual along with the **Product** column. As you change the **Language**
