@@ -1814,7 +1814,7 @@ into the secondary languages you plan to support.
 
 <img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image103.png"  style="width:90%"  />
 
-The strategy presented in this article for implementing calendar table
+The strategy presented in this article for implementing **Calendar** table
 column translations is based on Power Query and the power of the M query
 language. Power Query provides several built-in functions such as
 **Date.MonthName** which accept a **Date** parameter and return a
