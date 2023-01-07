@@ -41,7 +41,7 @@ predictable and scalable.
   - [Testing Translations in the Power BI Service](#testing-translations-in-the-power-bi-service)
   - [Embedding Power BI Reports Using a Specific Language and Locale](#embedding-power-bi-reports-using-a-specific-language-and-locale)
   - [Generating Machine Translations using Azure Translator Service](#generating-machine-translations-using-azure-translator-service)
-  - [Understanding the Localized Labels Table](#understanding-the-localized-labels-table)]
+  - [Understanding the Localized Labels Table](#understanding-the-localized-labels-table)
   - [Introducing the Localized Labels Table Strategy](#introducing-the-localized-labels-table-strategy)
   - [Generating the Translated Localized Labels Table](#generating-the-translated-localized-labels-table)
   - [Surfacing Localized Labels on a Report Page](#surfacing-localized-labels-on-a-report-page)
@@ -52,7 +52,7 @@ predictable and scalable.
   - [Exporting a Translation Sheet for a Secondary Language](#exporting-a-translation-sheet-for-a-secondary-language)
   - [Exporting the Master Translation Sheet](#exporting-the-master-translation-sheet)
   - [Exporting Translation Sheets for All Secondary Languages](#exporting-translation-sheets-for-all-secondary-languages)
-  - [Importing Translation Sheets](#importing-translation-sheets)]
+  - [Importing Translation Sheets](#importing-translation-sheets)
   - [Importing a Master Translation Sheet](#importing-a-master-translation-sheet)
   - [Managing Dataset Translations at Enterprise Level](#managing-dataset-translations-at-enterprise-level)
 - [Implementing a Data Translations Strategy](#implementing-a-data-translations-strategy)
