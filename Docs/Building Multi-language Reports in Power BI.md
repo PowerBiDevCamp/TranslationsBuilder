@@ -1687,7 +1687,7 @@ between languages
 
 As a content creator working with Power BI Desktop, there are many
 different ways to add a new table to a data model. For this scenario,
-let's use Power Query and the M query language to create a new table
+let's use Power Query to create a new table
 named **Languages**. In Power BI Desktop, you can create a Blank Query
 and name it **Languages**. After that, open the Advanced Editor window
 where you can type in M code or copy it from somewhere else and paste it
