@@ -977,7 +977,7 @@ shape using a measure from the **Translated Localized Labels** table .
 Once the **Text - Style** dialog appears, you can navigate to the
 **Translated Localized Labels** table and select any measure.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image46.png"   style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image46.png"   style="width:50%"  />
 
 You can use the same technique to localize a visual **Title** using a
 measure from the **Translated Localized Labels** table.
