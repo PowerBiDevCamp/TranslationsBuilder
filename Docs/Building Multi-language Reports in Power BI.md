@@ -1955,7 +1955,7 @@ Once you have created the Field Parameters for **Translated Month
 Names** and **Translated Day Names**, you can begin to surface them in a
 report using cartesian visuals, tables and matrices.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image113.png" style="width:90%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image113.png" style="width:78%"  />
 
 Once everything is set up correctly, you should be able test your work
 using a report-level filter on the **Languages** table to switch between
