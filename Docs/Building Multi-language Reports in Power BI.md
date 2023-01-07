@@ -1666,7 +1666,7 @@ as it will be used to select a language by filtering behind the scenes.
 
 <img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image94.png"  style="width:58%"  />
 
-At this point, we no longer need the slicer that can be automatically
+> At this point, we no longer need the slicer that can be automatically
 added by Power BI Desktop when creating the Field Parameter. While the
 slicer automatically added by Power BI Desktop is great for simple
 demos, it can only control a single Field Parameter at a time. You need
