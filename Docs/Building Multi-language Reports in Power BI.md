@@ -1017,17 +1017,17 @@ When creating bookmarks for navigation, you should disable **Data** and
 The next step is to configure each button in the navigation menu to
 apply a bookmark to navigate to a specific page.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image50.png"   style="width:90%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image50.png"   style="width:95%"  />
 
 After you’ve configured a button with a bookmark, the final step is to
 configure the **Text** property with a localized label.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image51.png"   style="width:90%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image51.png"   style="width:95%"  />
 
 The **Text** property of each button can be configured with a measure
 from the **Translated Localized Labels** table.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image52.png"   style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image52.png"   style="width:40%"  />
 
 > At this point, you've learned how to create the **Localized Labels**
 table and how to add localized report labels to a PBIX project. You also
