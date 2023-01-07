@@ -1949,20 +1949,20 @@ Don't forget that you need to add a relationship between these new Field
 Parameter tables and the **Languages** table to ensure the language
 filtering strategy works as expected.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image112.png"  style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image112.png"  style="width:40%"  />
 
 Once you have created the Field Parameters for **Translated Month
 Names** and **Translated Day Names**, you can begin to surface them in a
 report using cartesian visuals, tables and matrices.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image113.png" style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image113.png" style="width:90%"  />
 
 Once everything is set up correctly, you should be able test your work
 using a report-level filter on the **Languages** table to switch between
 languages and to verify translations for names of months and days of the
 week work as expected.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image114.png"  style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image114.png"  style="width:90%"  />
 
 ### Loading Reports using Bookmarks to Select a Language
 
