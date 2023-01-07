@@ -835,7 +835,7 @@ You can alternatively switch the **Add Localized Labels** dialog into
 labels at once and to enter a large batch of report labels in a single
 operation.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image36.png"  style="width:35%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image36.png"  style="width:45%"  />
 
 Once you’ve added the required report labels to your PBIX project, they
 will appear in the translation grid. At that point, you can add and edit
@@ -845,7 +845,7 @@ the translation grid.
 <img
 src="./images/BuildingMultiLanguageReportsInPowerBI/media/image37.png"  style="width:90%" />
 
-As you learned earlier, Translations Builder only populates the
+> As you learned earlier, Translations Builder only populates the
 translation grid with dataset objects that are not hidden from **Report
 View**. The measures in the **Localized Labels** table are hidden from
 **Report View** and they provide the one exception to the rule that
