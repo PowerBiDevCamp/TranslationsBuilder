@@ -904,9 +904,9 @@ report. Here is how the **Translated Localized Labels** table appears to
 a report author in the **Fields** pane when the report is in **Report
 View** in Power BI Desktop.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image40.png" style="width:30%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image40.png" style="width:25%"  />
 
-You can see that every measure in the **Translated Localized Labels**
+> You can see that every measure in the **Translated Localized Labels**
 table has a name that ends with the world **Label**. The reason for this
 is that two measures inside the same dataset cannot have the same name.
 Measure names must be unique on a project-wide basis so it’s not
