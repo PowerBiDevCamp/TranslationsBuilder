@@ -1007,7 +1007,7 @@ technique by adding a bookmark for each page supported by the navigation
 menu.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image48.png"   style="width:30%"  />
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image48.png"   style="width:20%"  />
 
 When creating bookmarks for navigation, you should disable **Data** and
 **Display** and only enable **Current Page** behavior.
