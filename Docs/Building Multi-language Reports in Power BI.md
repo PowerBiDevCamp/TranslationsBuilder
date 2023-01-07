@@ -796,7 +796,7 @@ executing the **Create Localized Labels Table** command from the
 **Generate Translated Tables** menu.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image31.png"  style="width:50%"  />
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image31.png"  style="width:45%"  />
 
 When you execute this command to create the **Localized Labels** table,
 you will be prompted by the following dialog asking if you want more
@@ -804,7 +804,7 @@ information about the **Localized Labels** table strategy. If you click
 **<u>Y</u>es,** interestingly enough, you’ll be redirected back to this
 very section of this very article.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image32.png"  style="width:38%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image32.png"  style="width:35%"  />
 
 After the **Localized Labels** table has been created, you will see
 three sample report labels as shown in the following screenshot. In most
@@ -822,26 +822,20 @@ execute the **Add Labels to the Localized Labels Table** command using
 the shortcut key of **Ctrl+A**.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image34.png"
-style="width:3.19943in;height:1.19048in"
-alt="Graphical user interface, text, application Description automatically generated" />
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image34.png"  style="width:70%"  />
 
 You can add report labels one at a time to your project by typing in the
 text for the label and then clicking **Add Label**.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image35.png"
-style="width:3.52847in;height:1.09445in"
-alt="A picture containing icon Description automatically generated" />
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image35.png"   style="width:70%" />
 
 You can alternatively switch the **Add Localized Labels** dialog into
 **Advanced Mode** which makes it possible to delete all existing report
 labels at once and to enter a large batch of report labels in a single
 operation.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image36.png"
-style="width:3.52852in;height:2.19048in" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image36.png"  style="width:70%"  />
 
 Once you’ve added the required report labels to your PBIX project, they
 will appear in the translation grid. At that point, you can add and edit
