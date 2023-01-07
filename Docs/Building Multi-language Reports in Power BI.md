@@ -843,8 +843,7 @@ localized label translations just like any other type of translation in
 the translation grid.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image37.png"
-style="width:7.14477in;height:1.74545in" />
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image37.png"  style="width:50%" />
 
 As you learned earlier, Translations Builder only populates the
 translation grid with dataset objects that are not hidden from **Report
@@ -885,9 +884,7 @@ directly on a report page. You can create this table by executing the
 **Generate Translated Localized Labels Table** command.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image38.png"
-style="width:4.04459in;height:1.42847in"
-alt="Graphical user interface, text, application Description automatically generated" />
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image38.png"  style="width:50%" />
 
 The first time you execute the **Generate Translated Localized Labels
 Table** command, Translations Builder executes code to create the
