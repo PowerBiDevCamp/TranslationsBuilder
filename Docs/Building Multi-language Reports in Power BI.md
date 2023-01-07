@@ -47,7 +47,7 @@ predictable and scalable.
   - [Surfacing Localized Labels on a Report Page](#surfacing-localized-labels-on-a-report-page)
   - [Adding Support for Page Navigation](#adding-support-for-page-navigation)
   - [Using Best Practices When Localizing Power BI Reports](#using-best-practices-when-localizing-power-bi-reports)
-- [Enabling Human Workflows for Translation using Export and Import](#enabling-human-workflows-for-translation-using-export-and-import)
+- [Enabling Workflows for Human Translation using Export and Import](#enabling-human-workflows-for-translation-using-export-and-import)
   - [Configuring Target Folders for Import and Export Operations](#configuring-target-folders-for-import-and-export-operations)
   - [Exporting a Translation Sheet for a Secondary Language](#exporting-a-translation-sheet-for-a-secondary-language)
   - [Exporting the Master Translation Sheet](#exporting-the-master-translation-sheet)
@@ -1066,7 +1066,7 @@ your reports with each language you plan to support. In essence, you
 need to ensure your report layouts looks the way you expect with any
 language you have chosen to support.
 
-## Enabling Human Workflows for Translation using Export and Import
+## Enabling  Workflows for Human Translation using Export and Import
 
 Up to this point, you have learned to structure a Power BI report and
 its underlying dataset to support translations. You also learned how to
