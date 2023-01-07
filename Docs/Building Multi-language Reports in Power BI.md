@@ -1249,7 +1249,7 @@ When you attempt to delete the column for a secondary language,
 Translations Builder will prompt you with the **Confirm Delete Secondary
 Language Operation** dialog.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image71.png"  style="width:40%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image71.png"  style="width:32%" />
 
 You can click **OK** to continue and complete the delete operation.
 After you confirm the delete operation, you will see that the column for
