@@ -1607,12 +1607,12 @@ can just double-click on a field inside the Field Parameter node to
 rename it. For example, you can rename the one field which is visible in
 **Report** view to **Product**.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image89.png"  style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image89.png"  style="width:90%"  />
 
 Likewise, you can rename the two other hidden fields with shorter names
 such as **Fields** and **SortOrder**.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image90.png"  style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image90.png"  style="width:90%"  />
 
 Now, here is where things get interesting. The Field Parameter that has
 been created is a table with three columns named **Product**, **Fields**
@@ -1631,17 +1631,16 @@ Translated Product Names = {
   ("Produkt", NAMEOF('Products'[ProductTranslationGerman]), 3, "de" )
 }
 ```
-
 Once you have updated the DAX expression with a language identifier for
 each language, a new column will appear in the **Data** view of the
 **Products** table named **Value4**.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image91.png"  style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image91.png"  style="width:90%"  />
 
 The name **Value4** isn't quite specific enough for our needs. Let's
 rename the forth column to **LanguageId**.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image92.png"  style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image92.png"  style="width:90%"  />
 
 Finally, let's not forget to configure the sort column for the new
 column named **LanguageId**.
