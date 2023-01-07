@@ -1935,7 +1935,7 @@ relationship. The relationships created between the **Calendar** table
 and the two translations tables are based on the **MonthNumber** column
 and the **DayNumber** column.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image110.png" style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image110.png"  />
 
 Once you have created the required relationships with the **Calendar**
 table, the next step is to create a new Field Parameter for each of the
@@ -1943,7 +1943,7 @@ two calendar translations tables. Fortunately, creating a Field
 Parameter for a calendar translation table is just like creating the
 Field Parameters for product names and category names shown earlier.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image111.png"  style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image111.png"   />
 
 Don't forget that you need to add a relationship between these new Field
 Parameter tables and the **Languages** table to ensure the language
