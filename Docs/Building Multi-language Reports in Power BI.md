@@ -1889,7 +1889,7 @@ in
 ```
 
 > OK, so maybe this M code is a bit complicated. Don't worry. You will not be tested. You're not Chris Webb after all, so 
-don't feel you need to be able to understand or explain this code to others. You can simply copy and paste the M code
+don't feel you need to be able to understand or explain this industrial-strength M code to others. You can simply copy and paste the M code
 from [**ProductSalesMultiLanguage.pbix**](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/LiveDemo/ProductSalesMultiLanguage.pbix) whenever you need to add calendar translation tables to your project.
 
 If the **Languages** table contains four rows for English, Spanish,
