@@ -1897,12 +1897,12 @@ French and German, the **Translated Month Names Table** query will
 generate a table with four translation columns as shown in the following
 screenshot.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image106.png"  style="width:90%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image106.png"   />
 
 Likewise, the query named **Translated Day Names Table** will generate a
 table with week day name translations.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image107.png"  style="width:90%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image107.png"    />
 
 There is an important observation about the two queries named
 **Translated Month Names Table** and **Translated Day Names Table**.
