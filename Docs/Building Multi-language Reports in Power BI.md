@@ -883,8 +883,7 @@ strategy is based on running code to generate a second table named
 directly on a report page. You can create this table by executing the
 **Generate Translated Localized Labels Table** command.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image38.png"  style="width:50%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image38.png"  style="width:50%" />
 
 The first time you execute the **Generate Translated Localized Labels
 Table** command, Translations Builder executes code to create the
@@ -895,9 +894,7 @@ Labels** table and then recreate them to synchronize all the report
 label translations between the **Localized Labels** table and the
 **Translated Localized Labels** table.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image39.png"
-style="width:4.07123in;height:2.34921in" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image39.png" style="width:50%"  />
 
 Unlike the **Localized Labels** table, the **Translated Localized
 Labels** table is not hidden from **Report View**. In fact, it’s quite
@@ -907,9 +904,7 @@ report. Here is how the **Translated Localized Labels** table appears to
 a report author in the **Fields** pane when the report is in **Report
 View** in Power BI Desktop.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image40.png"
-style="width:1.87898in;height:3.25397in" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image40.png"   style="width:60%"  />
 
 You can see that every measure in the **Translated Localized Labels**
 table has a name that ends with the world **Label**. The reason for this
