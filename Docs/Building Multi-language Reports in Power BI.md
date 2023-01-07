@@ -1806,13 +1806,13 @@ might have added a custom Calendar table to your data model which makes
 it possible to visualize a breakdown of sales by the month or by the
 day.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image102.png"  style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image102.png"  style="width:90%"  />
 
 To properly implement data translations for columns in a calendar table,
 you need a strategy to translate month names and day of the week names
 into the secondary languages you plan to support.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image103.png"  style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image103.png"  style="width:90%"  />
 
 The strategy presented in this article for implementing calendar table
 column translations is based on Power Query and the power of the M query
