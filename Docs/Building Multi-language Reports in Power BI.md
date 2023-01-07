@@ -1495,19 +1495,19 @@ advantage of using Field Parameters is that they provide a column
 selector mechanism that can be used to dynamically switch back and forth
 between multiple source columns in the underlying datasource.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image79.png"  style="width:58%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image79.png"  style="width:52%" />
 
 To create a Field Parameter in Power BI Desktop, navigate to the
 **Modeling** tab and select **New parameter > Fields**.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image80.png"  style="width:90%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image80.png"  style="width:75%"  />
 
 When you are prompted by the **Parameters** dialog, you can supply a
 **Name** for the new Field Parameter. You can also add the set of
 translated name columns from the **Products** table using the **Fields**
 pane on the right.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image81.png"  style="width:65%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image81.png"  style="width:60%"  />
 
 For our scenario, let's create a new Field Parameter named **Translated
 Product Names**. Let's also populate the fields connection of this Field
@@ -1516,7 +1516,7 @@ translated product names. When you are just starting to experiment with
 Field Parameters, you should leave the **Add slicer to page** option
 enabled as it helps in running a few tests to build your understanding.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image82.png"  style="width:65%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image82.png"  style="width:60%"  />
 
 After you have created a new Field Parameter, it appears in the
 **Fields** list on the right as a new table. If you select a Field
