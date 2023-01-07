@@ -1243,19 +1243,13 @@ includes several secondary languages. Now imagine you delete French as a
 language from the project by right-clicking on the **French [fr-FR]**
 column header and selecting **Delete Secondary Language**.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image70.png"
-style="width:6.91675in;height:1.24855in"
-alt="Graphical user interface, text, application Description automatically generated" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image70.png"  style="width:95%"  />
 
 When you attempt to delete the column for a secondary language,
 Translations Builder will prompt you with the **Confirm Delete Secondary
 Language Operation** dialog.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image71.png"
-style="width:2.46371in;height:1.01275in"
-alt="Graphical user interface, application Description automatically generated" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image71.png"  style="width:40%" />
 
 You can click **OK** to continue and complete the delete operation.
 After you confirm the delete operation, you will see that the column for
