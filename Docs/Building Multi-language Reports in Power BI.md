@@ -2075,7 +2075,7 @@ report.on("loaded", async (event: any) => {
 });
 ```
 
-When setting filters with the Power BI JavaScript API, you should always
+> When setting filters with the Power BI JavaScript API, you should always
 prefer the **updateFilters** method over the **setFilters** method.
 That's because **updateFilters** allows you to remove existing filters
 while **setFilters** does not.
