@@ -964,7 +964,7 @@ section in the **Format** pane.
 The **Text** property of a **Rectangle** shape can be configured with a
 hard-coded string as shown in this screenshot.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image44.png"  style="width:50%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image44.png"  style="width:40%"  />
 
 However, you already know you must avoid hard-coding text values into
 the report layout when creating multi-language reports. If you click on
@@ -972,7 +972,7 @@ the ***fx*** button to the right, Power BI Desktop will display a dialog
 which allows you to configure the **Text** property of the **Rectangle**
 shape using a measure from the **Translated Localized Labels** table .
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image45.png"  style="width:70%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image45.png"  style="width:40%" />
 
 Once the **Text - Style** dialog appears, you can navigate to the
 **Translated Localized Labels** table and select any measure.
