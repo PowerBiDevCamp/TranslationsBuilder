@@ -843,7 +843,7 @@ localized label translations just like any other type of translation in
 the translation grid.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image37.png"  style="width:50%" />
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image37.png"  style="width:90%" />
 
 As you learned earlier, Translations Builder only populates the
 translation grid with dataset objects that are not hidden from **Report
