@@ -1693,7 +1693,7 @@ and name it **Languages**. After that, open the Advanced Editor window
 where you can type in M code or copy it from somewhere else and paste it
 in.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image95.png"  style="width:98%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image95.png"  />
 
 Examine the following M code for the query that is being used to
 generate the **Languages** table.
