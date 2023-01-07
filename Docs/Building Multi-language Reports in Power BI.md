@@ -1137,10 +1137,7 @@ you can begin to export and import translation sheets. As you can see,
 the **Export/Import Translations** section provides the commands for
 export and import operations.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image58.png"
-style="width:4.87302in;height:1.41879in"
-alt="Graphical user interface, application, Word Description automatically generated" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image58.png"  style="width:95%" />
 
 ### Exporting a Translation Sheet for a Secondary Language
 
@@ -1149,10 +1146,7 @@ First, you should drop down the selection menu under the **Export
 Translations Sheet** button and select a language such as **German
 [de-DE]**.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image59.png"
-style="width:3.91157in;height:1.43607in"
-alt="Graphical user interface, application Description automatically generated" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image59.png" style="width:70%"  />
 
 After selecting a language, you can click the **Export Translations
 Sheet** button to generate a translation sheet for that language.
