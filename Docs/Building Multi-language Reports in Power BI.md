@@ -1664,7 +1664,7 @@ Product Names**. As a final step, let's hide the **LanguageId** column
 from **Report** view. Report authors will never need to see this column
 as it will be used to select a language by filtering behind the scenes.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image94.png"  style="width:50%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image94.png"  style="width:40%"  />
 
 > At this point, we no longer need the slicer that can be automatically
 added by Power BI Desktop when creating the Field Parameter. While the
