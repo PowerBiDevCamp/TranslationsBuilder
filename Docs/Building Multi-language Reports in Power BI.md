@@ -1781,7 +1781,7 @@ visual along with the **Product** column. As you change the **Language**
 selection in the **Filter** pane, the two Field Parameters are now
 synchronized to display the same language.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image101.png"  style="width:85%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image101.png"  style="width:78%"  />
 
 You have now learned how to synchronize the selection of language across
 multiple Field Parameters. The example you've just seen involves two
