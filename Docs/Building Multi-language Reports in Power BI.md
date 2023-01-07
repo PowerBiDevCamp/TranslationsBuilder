@@ -1012,7 +1012,7 @@ src="./images/BuildingMultiLanguageReportsInPowerBI/media/image48.png"   style="
 When creating bookmarks for navigation, you should disable **Data** and
 **Display** and only enable **Current Page** behavior.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image49.png"   style="width:25%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image49.png"   style="width:35%"  />
 
 The next step is to configure each button in the navigation menu to
 apply a bookmark to navigate to a specific page.
