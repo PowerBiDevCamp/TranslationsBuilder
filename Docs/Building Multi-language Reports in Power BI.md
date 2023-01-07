@@ -1738,7 +1738,7 @@ can open the **Filter** pane and add the **Language** column from the
 configure this filter with the **Require single selection** option, you
 can then test out switching between languages using the **Filter** pane.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image98.png"  style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image98.png"  style="width:50%"  />
 
 ### Synchronizing Multiple Field Parameters
 
