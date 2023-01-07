@@ -822,13 +822,13 @@ execute the **Add Labels to the Localized Labels Table** command using
 the shortcut key of **Ctrl+A**.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image34.png"  style="width:55%"  />
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image34.png"  style="width:60%"  />
 
 You can add report labels one at a time to your project by typing in the
 text for the label and then clicking **Add Label**.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image35.png"   style="width:70%" />
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image35.png"   style="width:55%" />
 
 You can alternatively switch the **Add Localized Labels** dialog into
 **Advanced Mode** which makes it possible to delete all existing report
