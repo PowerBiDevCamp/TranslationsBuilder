@@ -1257,7 +1257,7 @@ French has been removed from the translations grid. Behind the scenes,
 Translations Builder has also deleted all the French translations from
 the project.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image72.png"  style="width:90%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image72.png"  style="width:98%" />
 
 Continuing with our scenario, you sense that something has gone wrong
 and you exclaim “Oh Mon Dieu!”. That’s because you just realized that
@@ -1267,10 +1267,7 @@ French translations. This means you have not lost all your work. If you
 import the master translation sheet, the **French [fr-FR]** column
 should reappear as the last column on the right.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image73.png"
-style="width:7.02649in;height:2.57143in"
-alt="A screenshot of a computer Description automatically generated with medium confidence" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image73.png"  style="width:95%" />
 
 ### Managing Dataset Translations at Enterprise Level
 
