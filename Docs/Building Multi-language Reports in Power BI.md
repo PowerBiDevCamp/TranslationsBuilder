@@ -1027,7 +1027,7 @@ configure the **Text** property with a localized label.
 The **Text** property of each button can be configured with a measure
 from the **Translated Localized Labels** table.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image52.png"   style="width:55%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image52.png"   style="width:48%"  />
 
 > At this point, you've learned how to create the **Localized Labels**
 table and how to add localized report labels to a PBIX project. You also
