@@ -1852,7 +1852,7 @@ current project. This makes it possible to write a query which uses the
 **Languages** table as its source to generate a calendar translation
 table with the names of months or weekdays.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image105.png"  style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image105.png"  style="width:90%"  />
 
 Here is the code listing for the M code used to generate the **Translated Month Names Table**.
 
