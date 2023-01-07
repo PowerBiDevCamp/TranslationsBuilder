@@ -1453,7 +1453,7 @@ translated product names to support data translations. In this case the
 **Products** table has been extended with a separate column with product
 name translations in English, Spanish, French and German.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image78.png"  style="width:95%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image78.png"  style="width:80%"  />
 
 Note that the design approach shown here is using a three-part naming
 convention for table column names used to hold data translations. The
