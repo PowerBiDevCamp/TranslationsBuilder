@@ -1,5 +1,3 @@
-> This document is also available for download in either **[DOCX](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Docs/Building%20Multi-language%20Reports%20in%20Power%20BI.docx)** or **[PDF](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Docs/Building%20Multi-language%20Reports%20in%20Power%20BI.pdf)** format. 
-
 # Building Multi-language Reports in Power BI
 
 **Published**: January 2023
@@ -25,6 +23,8 @@ been designed for content creators using Power BI Desktop. Once you
 understand how all the pieces fit together, you’ll be able to build
 multi-language reports for Power BI using a strategy that is reliable,
 predictable and scalable.
+
+> This document is also available for download in either **[DOCX](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Docs/Building%20Multi-language%20Reports%20in%20Power%20BI.docx)** or **[PDF](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Docs/Building%20Multi-language%20Reports%20in%20Power%20BI.pdf)** format. 
 
 <hr/>
 
