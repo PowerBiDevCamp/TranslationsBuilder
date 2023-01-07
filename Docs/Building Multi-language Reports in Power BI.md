@@ -2019,6 +2019,7 @@ let config = {
   localeSettings: { language: "de-DE" }
 };
 
+// embed report using config object
 let report = powerbi.embed(reportContainer, config);
 ```
 
@@ -2052,6 +2053,8 @@ for Spanish.
 let report = powerbi.embed(reportContainer, config);
 
 report.on("loaded", async (event: any) => {
+
+  // let's filter data tarnslations for Spanish
   let languageToLoad = "es";
 
   // create filter object
@@ -2061,12 +2064,12 @@ report.on("loaded", async (event: any) => {
       column: "LanguageId"
     },
     operator: "In",  
-    values: [ languageToLoad ],
+    values: [ languageToLoad ], // <- Filter based on Spanish
     filterType: models.FilterType.Basic,
     requireSingleSelection: true
   }];
 
-  // pass filter object in a call to updateFilters
+  // call updateFilters and pass filter object to set data translations to Spanish
   await report.updateFilters(models.FiltersOperations.Replace, filters);
 
 });
