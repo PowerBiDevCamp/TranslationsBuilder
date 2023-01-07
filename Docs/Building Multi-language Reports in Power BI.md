@@ -1915,9 +1915,9 @@ need to do is to update the data rows in the query which generates the
 Names Table** and **Translated Day Names Table** will automatically
 adapt to those changes.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image108.png"  style="width:50%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image108.png"  style="width:56%"  />
 
-Once again, always strive to use localize techniques that lower the
+> Once again, always strive to use localize techniques that lower the
 overhead of adding new languages in the future.
 
 You've now seen how to generate the two translation tables named
