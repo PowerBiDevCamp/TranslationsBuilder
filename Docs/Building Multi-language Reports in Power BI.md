@@ -1974,12 +1974,12 @@ apply filters to the **Languages** table. When using this approach, you
 start by creating a separate bookmark for each language that supports
 data translations.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image115.png"  style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image115.png"  style="width:40%"  />
 
 When creating bookmarks to filter tables, you should disable **Display**
 and **Current Page** and only enable **Data** behavior.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image116.png" style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image116.png" style="width:40%"  />
 
 Earlier in this article, you learned that it is possible to load a
 report in the Power BI Service using the **language** parameter to force
@@ -1998,7 +1998,7 @@ report is loading.
 The filtering on the **Languages** table is applied before any data is
 displayed to the user.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image117.png"  style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image117.png"  style="width:90%"  />
 
 ### Embedding Reports That Implement Data Translations
 
