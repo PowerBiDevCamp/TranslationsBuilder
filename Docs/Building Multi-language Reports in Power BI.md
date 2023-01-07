@@ -1531,7 +1531,7 @@ a single field with the same name as the parent table.
 
 <img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image84.png"  style="width:90%"  />
 
-From a data modeling perspective, you can see that a Field Parameter is
+> From a data modeling perspective, you can see that a Field Parameter is
 created as a table with a set of fields.
 
 Let's conduct a quick experiment so you can better understand how Field
