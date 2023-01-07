@@ -1507,7 +1507,7 @@ When you are prompted by the **Parameters** dialog, you can supply a
 translated name columns from the **Products** table using the **Fields**
 pane on the right.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image81.png"  style="width:50%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image81.png"  style="width:65%"  />
 
 For our scenario, let's create a new Field Parameter named **Translated
 Product Names**. Let's also populate the fields connection of this Field
@@ -1516,7 +1516,7 @@ translated product names. When you are just starting to experiment with
 Field Parameters, you should leave the **Add slicer to page** option
 enabled as it helps in running a few tests to build your understanding.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image82.png"  style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image82.png"  style="width:65%"  />
 
 After you have created a new Field Parameter, it appears in the
 **Fields** list on the right as a new table. If you select a Field
