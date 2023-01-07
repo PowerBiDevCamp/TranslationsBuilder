@@ -944,7 +944,7 @@ visual to a report and then configure its **Fields** data role in the
 **Visualizations** pane with a measure from the **Translated Localized
 Labels** table.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image42.png" style="width:50%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image42.png" style="width:70%" />
 
 As Microsoft continues to evolve the report design experience in Power
 BI Desktop, there have been several new enhancements which make it
