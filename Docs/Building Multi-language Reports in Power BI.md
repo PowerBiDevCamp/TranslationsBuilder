@@ -944,7 +944,7 @@ visual to a report and then configure its **Fields** data role in the
 **Visualizations** pane with a measure from the **Translated Localized
 Labels** table.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image42.png" style="width:70%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image42.png" style="width:85%" />
 
 As Microsoft continues to evolve the report design experience in Power
 BI Desktop, there have been several new enhancements which make it
@@ -959,17 +959,12 @@ shows how to select a **Rectangle** shape and then navigate to configure
 its **Text** property value in **Shape** > **Style** > **Text**
 section in the **Format** pane.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image43.png"
-style="width:6.26656in;height:3.76191in" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image43.png"  style="width:70%"  />
 
 The **Text** property of a **Rectangle** shape can be configured with a
 hard-coded string as shown in this screenshot.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image44.png"
-style="width:2.67986in;height:0.86201in"
-alt="Table Description automatically generated with low confidence" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image44.png"  style="width:85%"  />
 
 However, you already know you must avoid hard-coding text values into
 the report layout when creating multi-language reports. If you click on
@@ -977,17 +972,12 @@ the ***fx*** button to the right, Power BI Desktop will display a dialog
 which allows you to configure the **Text** property of the **Rectangle**
 shape using a measure from the **Translated Localized Labels** table .
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image45.png"
-style="width:2.68013in;height:0.93651in"
-alt="A picture containing application Description automatically generated" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image45.png"  style="width:70%" />
 
 Once the **Text - Style** dialog appears, you can navigate to the
 **Translated Localized Labels** table and select any measure.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image46.png"
-style="width:3.18276in;height:2.88889in" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image46.png"   style="width:70%"  />
 
 You can use the same technique to localize a visual **Title** using a
 measure from the **Translated Localized Labels** table.
