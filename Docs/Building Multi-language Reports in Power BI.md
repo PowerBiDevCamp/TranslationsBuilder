@@ -894,7 +894,7 @@ Labels** table and then recreate them to synchronize all the report
 label translations between the **Localized Labels** table and the
 **Translated Localized Labels** table.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image39.png" style="width:50%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image39.png" style="width:58%"  />
 
 Unlike the **Localized Labels** table, the **Translated Localized
 Labels** table is not hidden from **Report View**. In fact, it’s quite
@@ -904,7 +904,7 @@ report. Here is how the **Translated Localized Labels** table appears to
 a report author in the **Fields** pane when the report is in **Report
 View** in Power BI Desktop.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image40.png"   style="width:60%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image40.png" style="width:40%"  />
 
 You can see that every measure in the **Translated Localized Labels**
 table has a name that ends with the world **Label**. The reason for this
