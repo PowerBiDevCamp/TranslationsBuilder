@@ -1833,25 +1833,11 @@ parameter to pass a specific language and locale.
 Date.MonthName( #date(2023, 1, 1), "en-US")
 ```
 
-If you want to translate the month name into Spanish, you can pass a
-text value of **es-ES** as the second parameter.
-
-```
-Date.MonthName( #date(2022, 12, 1), "es-ES")
-```
-
 If you want to translate the month name into French, you can pass a text
 value of **fr-FR**.
 
 ```
 Date.MonthName( #date(2022, 12, 1), "fr-FR")
-```
-
-If you want to translate the month name into German, you can pass a text
-value of **de-DE**.
-
-```
-Date.MonthName( #date(2022, 12, 1), "de-DE")
 ```
 
 Now, let's revisit the **Languages** table you saw earlier. Now we can
