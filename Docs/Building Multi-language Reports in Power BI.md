@@ -1204,10 +1204,7 @@ Imagine a scenario where you have generated a translation sheet to send
 to a Spanish translator. When opened in Excel, this translation sheet
 appears as the one shown in the following screenshot.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image66.png"
-style="width:4.31792in;height:1.53597in"
-alt="Graphical user interface, text, application Description automatically generated" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image66.png"  style="width:70%" />
 
 The job of the translator is to review all translations in the fifth
 column and to make updates where appropriate. From the perspective of
@@ -1217,28 +1214,19 @@ translation sheet back from the translator with updates to the
 translations in the fifth column, you can return to Translations Builder
 and click the **Import Translations** button.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image67.png"
-style="width:1.6763in;height:0.98006in"
-alt="Graphical user interface, application Description automatically generated" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image67.png"  style="width:60%"  />
 
 Remember to close translation sheet files in Microsoft Excel before
 attempting to import them with Translations Builder to prevent errors.
 In the **Open** file dialog, select the translation sheet file and click
 **Open**.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image68.png"
-style="width:3.91983in;height:1.89595in"
-alt="Graphical user interface, text, application, email Description automatically generated" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image68.png"  style="width:40%" />
 
 You should see that your updates to the Spanish translation sheet now
 appear in the translation grid.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image69.png"
-style="width:5.93193in;height:1.35838in"
-alt="Graphical user interface Description automatically generated" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image69.png"  style="width:88%" />
 
 ### Importing a Master Translation Sheet
 
