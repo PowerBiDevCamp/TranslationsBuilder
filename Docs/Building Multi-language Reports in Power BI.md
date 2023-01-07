@@ -1588,7 +1588,7 @@ Translated Product Names = {
 Once you make this change, you will see that the column header is now
 translated properly along with product names.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image87.png"  style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image87.png"  style="width:80%"  />
 
 Up to this point we have only examined the Field Parameter in **Report**
 view. Now it's time to navigate to **Data** view where you can see two
@@ -1597,7 +1597,7 @@ addition fields inside the Field Parameter that are hidden from
 **Translated Product Names**, you will see there are two more hidden
 fields in addition to the field you can see in **Report** view.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image88.png"  style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image88.png"  style="width:90%"  />
 
 Note that the names of the columns inside a Field Parameter are
 automatically generated based on the name you gave to the top-level
