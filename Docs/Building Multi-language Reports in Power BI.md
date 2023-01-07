@@ -1125,12 +1125,12 @@ are configured to target the current user’s **Documents** folder. Click
 the **set** button to the right to update the setting for **Translations
 Outbox Folder Path**.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image56.png"  style="width:40%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image56.png"  style="width:50%"  />
 
 Once you have configured the **Outbox** folder path and the **Inbox**
 folder path the way you like, click **Save Changes**.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image57.png"  style="width:40%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image57.png"  style="width:50%" />
 
 After you have configured the folder paths for **Outbox** and **Inbox**,
 you can begin to export and import translation sheets. As you can see,
