@@ -999,7 +999,7 @@ to hide every page in the report except for the first page which acts as
 the report landing page.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image47.png"   style="width:85%"  />
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image47.png"   style="width:95%"  />
 
 Next, create a set of bookmarks. Each bookmark should be created to
 navigate to a specific page. The **live demo** sample demonstrates this
@@ -1007,7 +1007,7 @@ technique by adding a bookmark for each page supported by the navigation
 menu.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image48.png"   style="width:70%"  />
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image48.png"   style="width:50%"  />
 
 When creating bookmarks for navigation, you should disable **Data** and
 **Display** and only enable **Current Page** behavior.
