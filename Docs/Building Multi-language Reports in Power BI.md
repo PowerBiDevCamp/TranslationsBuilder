@@ -1178,8 +1178,7 @@ Builder generates a CSV file for the master translation sheet named
 **PbixProjectName-Translations-Master.csv**. When the master
 translations sheet opens in Microsoft Excel, you can see all secondary
 language columns and all translations. You can think of the master
-translation sheet as a backup of all the translation work you have done
-on a project-wide basis.
+translation sheet as a backup of all translations on a project-wide basis.
 
 <img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image63.png"  style="width:98%"  />
 
