@@ -1774,7 +1774,7 @@ The next step is to move to **Model** view where you can create a
 relationship based on the **LanguageId** column between **Languages**
 table and the **Translated Category Names** Field Parameter.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image100.png"  style="width:60%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image100.png"  style="width:48%"  />
 
 Now you should be able to add the **Category** column to the **Table**
 visual along with the **Product** column. As you change the **Language**
