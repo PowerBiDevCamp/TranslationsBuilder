@@ -1359,7 +1359,7 @@ German. There is no need to implement data translations in this use case
 as the data from any database instance only needs to be viewed by users
 in a single language.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image76.png" style="width:40%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image76.png" style="width:60%"  />
 
 The important observation is that each customer deployment uses a single
 language for its database and all its users. Both metadata translations
@@ -1376,7 +1376,7 @@ European countries. This reporting solution has the requirement to
 display its report in different languages while the data being analyzed
 is coming from a single database instance.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image77.png"  style="width:50%"   />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image77.png"  style="width:70%"   />
 
 Once again, the key question to ask is whether you will have people who
 speak different languages looking at the same database instance. If the
