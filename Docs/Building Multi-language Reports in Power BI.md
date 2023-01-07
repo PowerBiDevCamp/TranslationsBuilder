@@ -1160,7 +1160,7 @@ each time you generate a translation sheet. The **Open Export in Excel**
 option makes it possible to quickly view and edit the contents of a
 translation sheet.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image61.png"  style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image61.png"  style="width:90%"  />
 
 ### Exporting the Master Translation Sheet
 
