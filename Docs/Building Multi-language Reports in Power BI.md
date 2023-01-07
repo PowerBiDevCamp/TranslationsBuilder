@@ -1321,7 +1321,7 @@ you can use across all your PBIX projects. Each time you create a new
 PBIX project, you can simply import the enterprise-level translation
 sheet to instantly add the generalized set of localized report labels.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image75.png"  style="width:50%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image75.png"  style="width:40%"  />
 
 ## Implementing a Data Translations Strategy
 
