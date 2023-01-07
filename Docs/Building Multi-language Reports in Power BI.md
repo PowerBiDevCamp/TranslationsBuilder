@@ -1291,7 +1291,7 @@ first project and then imported this master translation sheet into the
 second project? It would provide a quick way to copy the localization
 and translations work you have done from one PBIX project to another.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image74.png"  style="width:80%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image74.png"  style="width:65%"  />
 
 The logic behind the **Import Translations** command starts by
 determining whether there are any secondary languages in the translation
@@ -1321,7 +1321,7 @@ you can use across all your PBIX projects. Each time you create a new
 PBIX project, you can simply import the enterprise-level translation
 sheet to instantly add the generalized set of localized report labels.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image75.png"  style="width:60%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image75.png"  style="width:50%"  />
 
 ## Implementing a Data Translations Strategy
 
