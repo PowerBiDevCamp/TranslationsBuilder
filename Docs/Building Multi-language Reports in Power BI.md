@@ -1118,28 +1118,19 @@ targets for export and import operations. You can drop down the
 **Dataset Connection** menu and click **Configure Settings** to display
 the **Configuration Options** dialog.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image55.png"
-style="width:2.71429in;height:1.31019in"
-alt="Table Description automatically generated with medium confidence" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image55.png" style="width:40%" />
 
 By default, folder paths for the **Outbox** folder and **Inbox** folder
 are configured to target the current user’s **Documents** folder. Click
 the **set** button to the right to update the setting for **Translations
 Outbox Folder Path**.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image56.png"
-style="width:2.73115in;height:1.06907in"
-alt="Table Description automatically generated with medium confidence" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image56.png"  style="width:70%"  />
 
 Once you have configured the **Outbox** folder path and the **Inbox**
 folder path the way you like, click **Save Changes**.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image57.png"
-style="width:2.79016in;height:1.12097in"
-alt="A picture containing table Description automatically generated" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image57.png"  style="width:70%" />
 
 After you have configured the folder paths for **Outbox** and **Inbox**,
 you can begin to export and import translation sheets. As you can see,
