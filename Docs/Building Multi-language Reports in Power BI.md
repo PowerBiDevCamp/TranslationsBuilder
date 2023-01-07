@@ -1146,15 +1146,12 @@ First, you should drop down the selection menu under the **Export
 Translations Sheet** button and select a language such as **German
 [de-DE]**.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image59.png" style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image59.png" style="width:50%"  />
 
 After selecting a language, you can click the **Export Translations
 Sheet** button to generate a translation sheet for that language.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image60.png"
-style="width:4.44584in;height:1.60317in"
-alt="Graphical user interface, application Description automatically generated" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image60.png"  style="width:50%"  />
 
 When generating translation sheets in this manner, you can enable or
 disable the **Open Export in Excel** option. When this option is
@@ -1163,9 +1160,7 @@ each time you generate a translation sheet. The **Open Export in Excel**
 option makes it possible to quickly view and edit the contents of a
 translation sheet.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image61.png"
-style="width:5.93001in;height:1.66667in" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image61.png"  style="width:70%"  />
 
 ### Exporting the Master Translation Sheet
 
