@@ -1645,7 +1645,7 @@ rename the forth column to **LanguageId**.
 Finally, let's not forget to configure the sort column for the new
 column named **LanguageId**.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image93.png"  style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image93.png"  style="width:90%"  />
 
 You do not have to worry about configuring the sort column for the two
 pre-existing fields named **Fields** and **Product**. That is done
@@ -1664,7 +1664,7 @@ Product Names**. As a final step, let's hide the **LanguageId** column
 from **Report** view. Report authors will never need to see this column
 as it will be used to select a language by filtering behind the scenes.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image94.png"  style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image94.png"  style="width:58%"  />
 
 At this point, we no longer need the slicer that can be automatically
 added by Power BI Desktop when creating the Field Parameter. While the
