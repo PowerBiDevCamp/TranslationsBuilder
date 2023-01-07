@@ -926,7 +926,7 @@ this DAX pattern falls back on the translations of the default language
 for the project’s underlying dataset if no match is found with a
 secondary language.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image41.png"   style="width:60%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image41.png"   style="width:50%"  />
 
 You must remember to execute **Generate Translated Localized Labels
 Table** anytime you make changes to the **Localized Labels** table. Keep
