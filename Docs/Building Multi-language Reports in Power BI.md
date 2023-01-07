@@ -999,8 +999,7 @@ to hide every page in the report except for the first page which acts as
 the report landing page.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image47.png"
-style="width:7.49653in;height:0.69792in" />
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image47.png"   style="width:85%"  />
 
 Next, create a set of bookmarks. Each bookmark should be created to
 navigate to a specific page. The **live demo** sample demonstrates this
@@ -1008,38 +1007,29 @@ technique by adding a bookmark for each page supported by the navigation
 menu.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image48.png"
-style="width:1.86661in;height:1.96825in" />
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image48.png"   style="width:70%"  />
 
 When creating bookmarks for navigation, you should disable **Data** and
 **Display** and only enable **Current Page** behavior.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image49.png"
-style="width:2.08963in;height:1.92064in" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image49.png"   style="width:70%"  />
 
 The next step is to configure each button in the navigation menu to
 apply a bookmark to navigate to a specific page.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image50.png"
-style="width:4.58663in;height:1.90476in" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image50.png"   style="width:70%"  />
 
 After you’ve configured a button with a bookmark, the final step is to
 configure the **Text** property with a localized label.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image51.png"
-style="width:4.98505in;height:1.98413in" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image51.png"   style="width:70%"  />
 
 The **Text** property of each button can be configured with a measure
 from the **Translated Localized Labels** table.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image52.png"
-style="width:2.52456in;height:2.20328in" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image52.png"   style="width:70%"  />
 
-At this point, you've learned how to create the **Localized Labels**
+> At this point, you've learned how to create the **Localized Labels**
 table and how to add localized report labels to a PBIX project. You also
 learned how to generate the **Translated Localized Labels** table and to
 bind the measures in that table to report elements such as Card visuals,
