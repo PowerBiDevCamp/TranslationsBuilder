@@ -1500,14 +1500,14 @@ between multiple source columns in the underlying datasource.
 To create a Field Parameter in Power BI Desktop, navigate to the
 **Modeling** tab and select **New parameter > Fields**.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image80.png"  style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image80.png"  style="width:90%"  />
 
 When you are prompted by the **Parameters** dialog, you can supply a
 **Name** for the new Field Parameter. You can also add the set of
 translated name columns from the **Products** table using the **Fields**
 pane on the right.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image81.png"  style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image81.png"  style="width:50%"  />
 
 For our scenario, let's create a new Field Parameter named **Translated
 Product Names**. Let's also populate the fields connection of this Field
