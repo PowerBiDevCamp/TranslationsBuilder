@@ -1221,12 +1221,12 @@ attempting to import them with Translations Builder to prevent errors.
 In the **Open** file dialog, select the translation sheet file and click
 **Open**.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image68.png"  style="width:60%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image68.png"  style="width:65%" />
 
 You should see that your updates to the Spanish translation sheet now
 appear in the translation grid.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image69.png"  style="width:88%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image69.png"  style="width:95%" />
 
 ### Importing a Master Translation Sheet
 
