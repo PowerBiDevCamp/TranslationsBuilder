@@ -1249,7 +1249,7 @@ When you attempt to delete the column for a secondary language,
 Translations Builder will prompt you with the **Confirm Delete Secondary
 Language Operation** dialog.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image71.png"  style="width:32%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image71.png"  style="width:36%" />
 
 You can click **OK** to continue and complete the delete operation.
 After you confirm the delete operation, you will see that the column for
@@ -1257,10 +1257,7 @@ French has been removed from the translations grid. Behind the scenes,
 Translations Builder has also deleted all the French translations from
 the project.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image72.png"
-style="width:6.87009in;height:1.18182in"
-alt="Graphical user interface, text, application Description automatically generated" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image72.png"  style="width:90%" />
 
 Continuing with our scenario, you sense that something has gone wrong
 and you exclaim “Oh Mon Dieu!”. That’s because you just realized that
