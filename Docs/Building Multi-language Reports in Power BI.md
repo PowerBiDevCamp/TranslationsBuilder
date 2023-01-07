@@ -1728,7 +1728,7 @@ specifically, you can create a one-to-one relationship between the
 **Languages** table and the **Translated Product Names** Field Parameter
 using the **LanguageId** column as shown in the following screenshot.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image97.png"  style="width:70%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image97.png"  style="width:50%" />
 
 Once you have established the relationship between **Languages** and
 **Translated Product Names**, you have created the foundation for
