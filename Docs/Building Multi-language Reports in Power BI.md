@@ -1926,7 +1926,7 @@ next step is to integrate these two tables into the data model with a
 **Calendar** table. The **Calendar** table can be defined as a
 calculated table based on the following DAX expression.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image109.png" style="width:55%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image109.png" style="width:60%" />
 
 With a **Calendar** table like this, you will typically create a
 relationship between the **Calendar** table and other fact tables such
