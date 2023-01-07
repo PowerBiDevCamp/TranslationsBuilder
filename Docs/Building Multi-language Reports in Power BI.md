@@ -1843,7 +1843,7 @@ Date.MonthName( #date(2022, 12, 1), "fr-FR")
 Now, let's revisit the **Languages** table you saw earlier. Now we can
 reveal why it includes the **DefaultCulture** column.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image104.png" style="width:70%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image104.png" style="width:90%" />
 
 Power Query is built on a functional query language named M which makes
 it possible to enumerate through the rows of the **Languages** table to
