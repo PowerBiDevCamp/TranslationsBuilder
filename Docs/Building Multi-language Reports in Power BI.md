@@ -1911,14 +1911,16 @@ not contains any hard-coded column names. This lowers ongoing
 maintenance because these queries do not require any modifications in
 the future when you add or remove languages from the project. All you
 need to do is to update the data rows in the query which generates the
-**Languages** table and the other two queries named **Translated Month
-Names Table** and **Translated Day Names Table** will automatically
+**Languages** table and the other two queries named **Translated Month Names Table** and **Translated Day Names Table** will automatically
 adapt to those changes.
 
 <img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image108.png"  style="width:56%"  />
 
 > Once again, always strive to use localize techniques that lower the
 overhead of adding new languages in the future.
+
+When you execute these two queries for the first time, they will create two new tables in the dataset with the names
+**Translated Month Names Table** and **Translated Day Names Table** with a translation column for each language. One additional task you have is to configure the sort column for each of the translation columns. For example, all the translation columns in **Translated Month Names Table** should be configured to use **MonthNumber** as their sort column while all the translations columns in in **Translated Day Names Table** should be configured to use **DayNumber** as their sort column.
 
 You've now seen how to generate the two translation tables named
 **Translated Month Names Table** and **Translated Day Names Table**. The
