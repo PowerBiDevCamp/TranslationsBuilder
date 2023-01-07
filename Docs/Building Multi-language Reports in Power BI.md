@@ -1529,7 +1529,7 @@ expression as shown in the following screenshot.
 If you expand the **Fields** list while in **Report** view, you will see
 a single field with the same name as the parent table.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image84.png"  style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image84.png"  style="width:90%"  />
 
 From a data modeling perspective, you can see that a Field Parameter is
 created as a table with a set of fields.
