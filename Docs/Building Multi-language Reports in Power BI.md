@@ -1214,14 +1214,14 @@ translation sheet back from the translator with updates to the
 translations in the fifth column, you can return to Translations Builder
 and click the **Import Translations** button.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image67.png"  style="width:60%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image67.png"  style="width:40%"  />
 
 Remember to close translation sheet files in Microsoft Excel before
 attempting to import them with Translations Builder to prevent errors.
 In the **Open** file dialog, select the translation sheet file and click
 **Open**.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image68.png"  style="width:40%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image68.png"  style="width:60%" />
 
 You should see that your updates to the Spanish translation sheet now
 appear in the translation grid.
