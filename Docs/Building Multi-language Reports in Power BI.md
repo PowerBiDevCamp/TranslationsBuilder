@@ -922,7 +922,7 @@ on the same DAX pattern shown earlier. First, this pattern uses the DAX
 functions **USERCULTURE** and **LEFT** to determine the 2-character
 language ID of the current user. The pattern then uses the **SWITCH**
 function to return the best translation for the current user. Note that
-this DAX pattern falls back on the translations of the default language
+this DAX pattern falls back on the default language translations 
 if no match is found with a secondary language.
 
 <img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image41.png"   style="width:50%"  />
@@ -944,9 +944,7 @@ visual to a report and then configure its **Fields** data role in the
 **Visualizations** pane with a measure from the **Translated Localized
 Labels** table.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image42.png"
-style="width:7.11769in;height:3.01587in" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image42.png" style="width:50%" />
 
 As Microsoft continues to evolve the report design experience in Power
 BI Desktop, there have been several new enhancements which make it
