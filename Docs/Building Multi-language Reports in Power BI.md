@@ -923,8 +923,7 @@ functions **USERCULTURE** and **LEFT** to determine the 2-character
 language ID of the current user. The pattern then uses the **SWITCH**
 function to return the best translation for the current user. Note that
 this DAX pattern falls back on the translations of the default language
-for the project’s underlying dataset if no match is found with a
-secondary language.
+if no match is found with a secondary language.
 
 <img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image41.png"   style="width:50%"  />
 
