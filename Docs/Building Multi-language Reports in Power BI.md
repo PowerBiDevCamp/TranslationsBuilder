@@ -1171,10 +1171,7 @@ Translations** command which generates a master translation sheet with
 all the secondary languages and translations that have been added to the
 current project.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image62.png"
-style="width:3.24102in;height:1.88889in"
-alt="Graphical user interface, application Description automatically generated" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image62.png"  style="width:40%"  />
 
 When you click the **Export All Translations** button, Translations
 Builder generates a CSV file for the master translation sheet named
