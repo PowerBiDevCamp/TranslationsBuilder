@@ -2023,7 +2023,7 @@ let config = {
 let report = powerbi.embed(reportContainer, config);
 ```
 
-When you embed a report with a **config** object like this which sets
+> When you embed a report with a **config** object like this which sets
 the **language** property of the **localeSettings** object, the metadata
 translations and report label translations will work as expected.
 However, there is one additional step required to filter the
