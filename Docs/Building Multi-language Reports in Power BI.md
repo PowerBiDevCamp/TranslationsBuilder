@@ -796,7 +796,7 @@ executing the **Create Localized Labels Table** command from the
 **Generate Translated Tables** menu.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image31.png"  style="width:55%"  />
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image31.png"  style="width:50%"  />
 
 When you execute this command to create the **Localized Labels** table,
 you will be prompted by the following dialog asking if you want more
@@ -822,7 +822,7 @@ execute the **Add Labels to the Localized Labels Table** command using
 the shortcut key of **Ctrl+A**.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image34.png"  style="width:60%"  />
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image34.png"  style="width:50%"  />
 
 You can add report labels one at a time to your project by typing in the
 text for the label and then clicking **Add Label**.
