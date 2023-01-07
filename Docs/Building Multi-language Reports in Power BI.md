@@ -1181,10 +1181,7 @@ language columns and all translations. You can think of the master
 translation sheet as a backup of all the translation work you have done
 on a project-wide basis.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image63.png"
-style="width:7.27295in;height:1.00656in"
-alt="Graphical user interface, application Description automatically generated" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image63.png"  style="width:98%"  />
 
 ### Exporting Translation Sheets for All Secondary Languages
 
