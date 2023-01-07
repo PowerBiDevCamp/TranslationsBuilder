@@ -828,14 +828,14 @@ You can add report labels one at a time to your project by typing in the
 text for the label and then clicking **Add Label**.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image35.png"   style="width:55%" />
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image35.png"   style="width:45%" />
 
 You can alternatively switch the **Add Localized Labels** dialog into
 **Advanced Mode** which makes it possible to delete all existing report
 labels at once and to enter a large batch of report labels in a single
 operation.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image36.png"  style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image36.png"  style="width:50%"  />
 
 Once you’ve added the required report labels to your PBIX project, they
 will appear in the translation grid. At that point, you can add and edit
