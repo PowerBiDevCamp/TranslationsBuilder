@@ -1007,12 +1007,12 @@ technique by adding a bookmark for each page supported by the navigation
 menu.
 
 <img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image48.png"   style="width:27%"  />
+src="./images/BuildingMultiLanguageReportsInPowerBI/media/image48.png"   style="width:25%"  />
 
 When creating bookmarks for navigation, you should disable **Data** and
 **Display** and only enable **Current Page** behavior.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image49.png"   style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image49.png"   style="width:25%"  />
 
 The next step is to configure each button in the navigation menu to
 apply a bookmark to navigate to a specific page.
