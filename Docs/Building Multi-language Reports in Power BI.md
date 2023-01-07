@@ -1524,7 +1524,7 @@ Parameter such **Translated Product Names** while in **Report** view,
 you should see the Field Parameter definition is based on a DAX
 expression as shown in the following screenshot.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image83.png"  style="width:70%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image83.png"  style="width:90%"  />
 
 If you expand the **Fields** list while in **Report** view, you will see
 a single field with the same name as the parent table.
