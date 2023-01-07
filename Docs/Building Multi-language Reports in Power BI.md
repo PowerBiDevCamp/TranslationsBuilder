@@ -1077,7 +1077,7 @@ adequate for many production scenarios. You need to find a way to
 integrate other people acting as translators into a human workflow
 process.
 
-The Translations Builder introduces the concept of a ***translation
+> The Translations Builder introduces the concept of a ***translation
 sheet***. A translation sheet is a CSV file that you generate with an
 export operation to send out to a translator. The human acting as a
 translator performs the work to update the translation sheet and then
