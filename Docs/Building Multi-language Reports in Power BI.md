@@ -1922,6 +1922,8 @@ overhead of adding new languages in the future.
 When you execute these two queries for the first time, they will create two new tables in the dataset with the names
 **Translated Month Names Table** and **Translated Day Names Table** with a translation column for each language. One additional task you have is to configure the sort column for each of the translation columns. For example, all the translation columns in **Translated Month Names Table** should be configured to use **MonthNumber** as their sort column while all the translations columns in in **Translated Day Names Table** should be configured to use **DayNumber** as their sort column.
 
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image108b.png"  style="width:70%"  />
+
 You've now seen how to generate the two translation tables named
 **Translated Month Names Table** and **Translated Day Names Table**. The
 next step is to integrate these two tables into the data model with a
