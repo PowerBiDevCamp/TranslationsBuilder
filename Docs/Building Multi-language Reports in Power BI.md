@@ -2054,7 +2054,7 @@ let report = powerbi.embed(reportContainer, config);
 
 report.on("loaded", async (event: any) => {
 
-  // let's filter data tarnslations for Spanish
+  // let's filter data translations for Spanish
   let languageToLoad = "es";
 
   // create filter object
