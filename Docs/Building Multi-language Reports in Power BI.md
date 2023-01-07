@@ -1854,8 +1854,7 @@ table with the names of months or weekdays.
 
 <img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image105.png"  style="width:70%"  />
 
-Here's an example of the M code used to generate the **Translated Month
-Names Table**.
+Here is the code listing for the M code used to generate the **Translated Month Names Table**.
 
 ```
 let
