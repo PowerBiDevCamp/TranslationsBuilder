@@ -1802,7 +1802,7 @@ always be tested in the Power BI Service.
 If you are implementing data translations, you can make your users happy
 by adding translation support for text-based columns in a **Calendar**
 table such as the names of months and days of the week. For example, you
-might have added a custom Calendar table to your data model which makes
+might have added a custom **Calendar** table to your data model which makes
 it possible to visualize a breakdown of sales by the month or by the
 day.
 
