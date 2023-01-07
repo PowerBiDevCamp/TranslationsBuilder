@@ -1920,7 +1920,7 @@ adapt to those changes.
 overhead of adding new languages in the future.
 
 When you execute these two queries for the first time, they will create two new tables in the dataset with the names
-**Translated Month Names Table** and **Translated Day Names Table** with a translation column for each language. One additional task you have is to configure the sort column for each of the translation columns. For example, all the translation columns in **Translated Month Names Table** should be configured to use the sort column  **MonthNumber**  while all the translations columns should be configured to use the sort column **Translated Day Names Table**.
+**Translated Month Names Table** and **Translated Day Names Table** with a translation column for each language. One additional task you have is to configure the sort column for each of the translation columns. For example, all the translation columns in **Translated Month Names Table** should be configured to use the sort column  **MonthNumber**  while all the translations columns in **Translated Day Names Table** should be configured to use the sort column **DayNumber**.
 
 <img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image108b.png"  style="width:70%"  />
 
