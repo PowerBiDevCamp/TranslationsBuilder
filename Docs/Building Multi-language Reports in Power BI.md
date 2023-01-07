@@ -1092,10 +1092,7 @@ includes the dataset name and the language for translation. The
 generated translation sheet file is saved to a special folder known as
 the **Outbox** folder.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image53.png"
-style="width:7.12674in;height:2.20635in"
-alt="Graphical user interface, application Description automatically generated" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image53.png" style="width:98%"  />
 
 As you will see, human translators can makes edits to a translation
 sheet using Microsoft Excel. Once you’ve received an updated translation
@@ -1104,10 +1101,7 @@ Translations Builder provides an **Import Translations** command to
 integrate those updated translations back into the dataset for the
 current project.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image54.png"
-style="width:6.93071in;height:2.50794in"
-alt="Graphical user interface Description automatically generated" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image54.png"   style="width:98%" />
 
 ### Configuring Target Folders for Import and Export Operations
 
