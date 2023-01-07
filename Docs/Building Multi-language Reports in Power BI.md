@@ -1495,7 +1495,7 @@ advantage of using Field Parameters is that they provide a column
 selector mechanism that can be used to dynamically switch back and forth
 between multiple source columns in the underlying datasource.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image79.png"  style="width:70%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image79.png"  style="width:50%" />
 
 To create a Field Parameter in Power BI Desktop, navigate to the
 **Modeling** tab and select **New parameter > Fields**.
