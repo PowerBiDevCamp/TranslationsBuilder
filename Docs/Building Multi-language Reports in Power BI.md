@@ -904,7 +904,7 @@ report. Here is how the **Translated Localized Labels** table appears to
 a report author in the **Fields** pane when the report is in **Report
 View** in Power BI Desktop.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image40.png" style="width:40%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image40.png" style="width:30%"  />
 
 You can see that every measure in the **Translated Localized Labels**
 table has a name that ends with the world **Label**. The reason for this
