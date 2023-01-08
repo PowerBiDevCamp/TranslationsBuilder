@@ -257,6 +257,7 @@ Here are a few examples of how a date value formatted with **Short
 Date** appears when loaded under different locales.
 
 | **en-US** | 12/31/2022 |
+|-----------|------------|
 | **en-GB** | 31/12/2022 |
 | **pt-PT** | 31-12-2022 |
 | **de-DE** | 31.12.2022 |
