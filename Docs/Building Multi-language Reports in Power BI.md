@@ -158,7 +158,7 @@ function which indicate a specific language and locale.
 
 | USERCULTURE | Language | Locale        |
 |-------------|----------|---------------|
-| en-US       | English  | United States |
+| **en-US**   | English  | United States |
 | es-ES       | Spanish  | Spain         |
 | fr-FR       | French   | France        |
 | de-DE       | German   | Germany       |
