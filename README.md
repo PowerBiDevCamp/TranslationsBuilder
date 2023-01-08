@@ -1,16 +1,5 @@
 # Translations Builder
 
-Power BI as a platform provides effective features for
-Internationalization and localization making it possible to build
-multi-language reports. For example, you can design a Power BI report
-that renders in English for some users while rendering in Spanish,
-French, German or Dutch for other users. If an organization has the
-requirement of building Power BI reports that support multiple
-languages, it's no longer necessary to clone and maintain a separate
-PBIX project file for each language. Instead, the organization can
-increase reuse and lower report maintenance by designing and
-implementing multi-language reports.
-
 Translations Builder is an external tool created for Power BI Desktop
 specifically to assist report authors and dataset authors with tasks
 associated with creating translations and building multi-language
@@ -20,6 +9,15 @@ that support multiple languages. **As a developer**, you can clone the
 GitHub repository with the Translations Builder source code and extend
 this application to meet whatever translation and localization
 requirements your organization faces.
+
+## Quick Start Guide
+Here are the primary links for learning how to build multi-language reports for Power BI
+ - [Building Multi-language Reports in Power BI](docs/Building Multi-language Reports in Power BI.md)
+ - [Hands-on Lab: Building Multi-language Reports for Power BI]()
+ - [Installation Guide](docs/Installation%20Guide.md)
+ - [User Guide](docs/User%20Guide.md)
+ - [Developer Guide](docs/Developer%20Guide.md)
+
 
 To begin using Translations Builder as a user, start by walking through
 the [**Installation
