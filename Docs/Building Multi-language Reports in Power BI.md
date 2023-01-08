@@ -159,10 +159,10 @@ function which indicate a specific language and locale.
 | USERCULTURE | Language | Locale        |
 |-------------|----------|---------------|
 | **en-US**   | English  | United States |
-| es-ES       | Spanish  | Spain         |
-| fr-FR       | French   | France        |
-| de-DE       | German   | Germany       |
-| Ja-JP       | Japanese | Japan         |
+| **es-ES**   | Spanish  | Spain         |
+| **fr-FR**   | French   | France        |
+| **de-DE**   | German   | Germany       |
+| **Ja-JP**   | Japanese | Japan         |
 
 Remember that you can only use the **USERCULTURE** function to implement
 dynamic translations in measures. When you use **USERCULTURE** in the
