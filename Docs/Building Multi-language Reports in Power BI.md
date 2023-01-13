@@ -76,7 +76,7 @@ single PBIX file solution named
 This live demo shows the potential of building multi-language reports
 for Power BI. The report in the live demo can be loaded using English,
 Spanish, French, German, Dutch, Italian, Portuguese, Greek, Russian,
-Japanese, Chinese, Hindi, Hebrew and Afrikaans. You can test out the
+Japanese, Chinese, Hindi and Hebrew. You can test out the
 live demo and the experience a Power BI report that support over a dozen
 secondary languages by navigating the following URL.
 
