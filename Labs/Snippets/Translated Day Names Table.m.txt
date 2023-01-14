@@ -29,6 +29,6 @@ let
                                                           ColumnsCollection, 
                                                           ColumnsCollection ),
     TypedColumnsCollection = List.Transform(ColumnsCollection, each {_, type text}),
-    ChangedType = Table.TransformColumnTypes(ExpandedTranslationsColumns, TypedColumnsCollection)
+    QueryOutput = Table.TransformColumnTypes(ExpandedTranslationsColumns, TypedColumnsCollection)
 in
-    ChangedType
+    QueryOutput
