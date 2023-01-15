@@ -149,7 +149,7 @@ a default locale of the **United States (US)**.
 
 18. Examine the translation grid down below which displays a row for each non-hidden dataset object in the data model.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image18.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image18.png" style="width:50%" />
 
 > Tables, columns and measures that are hidden from report view in the
 data model are not displayed. You don’t need to translate them.
