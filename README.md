@@ -11,9 +11,9 @@ this application to meet whatever translation and localization
 requirements your organization faces.
 
 ## Quick Start Guide
-Here are the primary links for learning how to build multi-language reports for Power BI
- - [Building Multi-language Reports in Power BI](docs/Building Multi-language Reports in Power BI.md)
- - [Hands-on Lab: Building Multi-language Reports for Power BI]()
+Here are the primary links for learning how to build multi-language reports for Power BI using Translations Builder.
+ - [Technical Article: Building Multi-language Reports for Power BI](Docs/Building%20Multi-language%20Reports%20in%20Power%20BI.md)
+ - [Hands-on Lab: Building Multi-language Reports for Power BI](Labs/Hands-on%20Lab%20-%20Building%20Multi-language%20Reports%20for%20Power%20BI.md)
  - [Installation Guide](docs/Installation%20Guide.md)
  - [User Guide](docs/User%20Guide.md)
  - [Developer Guide](docs/Developer%20Guide.md)
