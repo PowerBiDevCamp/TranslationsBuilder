@@ -93,169 +93,107 @@ and measure names in the dataset.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image7.png" style="width:70%" />
 
-Data Translations for month names and day names will be addressed in
-**Exercise 6**.
+> Data Translations for month names and day names will be addressed in **Exercise 6**.
 
-7.  Now, navigate to **Model** view so you can see the entire data model
-    including the columns hidden from **Report** view.
+7.  Now, navigate to **Model** view so you can see the entire data model including the columns hidden from **Report** view.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image8.png"
-style="width:5.17244in;height:2.69841in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image8.png" style="width:70%" />
 
-8.  Navigate to **Data view** and examine the rows of the **Products**
-    table.
+8.  Navigate to **Data view** and examine the rows of the **Products** table.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image9.png"
-style="width:3.77778in;height:1.38518in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image9.png" style="width:70%" />
 
-Next, you are going to publish the **Product Sales** project to a
-Premium workspace in the Power BI Service.
+> Next, you are going to publish the **Product Sales** project to a Premium workspace in the Power BI Service.
 
 9.  Navigate to the **Home** tab and then click the **Publish** button.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image10.png"
-style="width:4.22222in;height:0.9364in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image10.png" style="width:70%" />
 
-10. When prompted by the **Publish to Power BI** dialog, choose your
-    test workspace and then click **Select**.
+10. When prompted by the **Publish to Power BI** dialog, choose your test workspace and then click **Select**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image11.png"
-style="width:2.00529in;height:1.25795in"
-alt="Graphical user interface, text, application, email, Teams Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image11.png" style="width:70%" />
 
-11. Once you see **Success!**, click **Open ‘Product Sales.pbx’ in Power
-    BI** to view the report in the Power BI Service.
+11. Once you see **Success!**, click **Open ‘Product Sales.pbx’ in Power BI** to view the report in the Power BI Service.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image12.png"
-style="width:1.61409in;height:0.94472in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image12.png" style="width:70%" />
 
-12. The report named **Product Sales** should appear like the report
-    shown in the screenshot below.
+12. The report named **Product Sales** should appear like the report shown in the screenshot below.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image13.png"
-style="width:4.12436in;height:2.80495in"
-alt="Graphical user interface, chart Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image13.png" style="width:70%" />
 
-13. Navigate to the two other pages using the navigation buttons in the
-    toolbar under the report tile..
+13. Navigate to the two other pages using the navigation buttons in the toolbar under the report title.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image14.png"
-style="width:3.95714in;height:1.44839in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image14.png" style="width:70%" />
 
-Now it’s time to begin adding translations. As you begin to add
+> Now it’s time to begin adding translations. As you begin to add
 translations to a PBIX project, you will often follow this set of
 steps:  
 **(1)** make changes in Power BI Desktop, **(2)** publish the project,
-**(3)** check your work in the Power BI Service, **(4)** repeat until
-happy
+**(3)** check your work in the Power BI Service, **(4)** repeat
 
 14. Return to Power BI Desktop.
 
-15. Navigate to the **External Tools** tab and launch **Translations
-    Builder**.
+15. Navigate to the **External Tools** tab and launch **Translations Builder**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image15.png"
-style="width:3.56429in;height:0.78645in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image15.png" style="width:70%" />
 
-16. Translations Builder should start and load the data model for the
-    **Product Sales** project.
+16. Translations Builder should start and load the data model for the **Product Sales** project.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image16.png"
-style="width:5.56025in;height:3.15235in"
-alt="Graphical user interface Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image16.png" style="width:70%" />
 
-17. The **Dataset properties** section on the left provides details
-    about the dataset connection and the PBIX project file.
+17. The **Dataset properties** section on the left provides details about the dataset connection and the PBIX project file.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image17.png"
-style="width:3.15556in;height:1.4902in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image17.png" style="width:70%" />
 
-Every PBIX project file has a default language and a default locale. The
+> Every PBIX project file has a default language and a default locale. The
 **Product Sales** project has a default language of **English (en)** and
 a default locale of the **United States (US)**.
 
-18. Examine the translation grid down below which displays a row for
-    each non-hidden dataset object in the data model.
+18. Examine the translation grid down below which displays a row for each non-hidden dataset object in the data model.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image18.png"
-style="width:3in;height:2.54935in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image18.png" style="width:70%" />
 
-Tables, columns and measures that are hidden from report view in the
+> Tables, columns and measures that are hidden from report view in the
 data model are not displayed. You don’t need to translate them.
 
-19. Click the **Add Language** button to add your first secondary
-    language.
+19. Click the **Add Language** button to add your first secondary language.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image19.png"
-style="width:4.30159in;height:0.74957in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image19.png" style="width:70%" />
 
 20. Select **Spanish \[es-ES\]** and click **Add Language**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image20.png"
-style="width:1.68254in;height:1.7639in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image20.png" style="width:70%" />
 
-21. You should now see that **Spanish \[es-ES\]** appears as the first
-    language in the **Secondary Languages** list.
+21. You should now see that **Spanish \[es-ES\]** appears as the first language in the **Secondary Languages** list.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image21.png"
-style="width:4.42857in;height:0.99434in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image21.png" style="width:70%" />
 
-22. You should also notice that a new column has been added to the
-    translation grid for Spanish translations.
+22. You should also notice that a new column has been added to the translation grid for Spanish translations.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image22.png"
-style="width:4.03518in;height:1.36905in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image22.png" style="width:70%" />
 
-23. In the row with the **Products** table, click on the cell for the
-    **Spanish** column. It should turn blue when selected.
+23. In the row with the **Products** table, click on the cell for the **Spanish** column. It should turn blue when selected.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image23.png"
-style="width:4.51497in;height:0.88664in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image23.png" style="width:70%" />
 
-24. Type **Hello World**. You should see that you can just start typing
-    in the selected cell to add or edit a translation.
+24. Type **Hello World**. You should see that you can just start typing in the selected cell to add or edit a translation.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image24.png"
-style="width:4.59281in;height:0.90178in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image24.png" style="width:70%" />
 
-25. Press the **ENTER** key to save your changes. Note that pressing
-    **ENTER** will move the selection to the cell below.
+25. Press the **ENTER** key to save your changes. Note that pressing **ENTER** will move the selection to the cell below.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image25.png"
-style="width:4.52772in;height:0.86826in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image25.png" style="width:70%" />
 
-26. Now, type some more text and press **ENTER** repeatedly to quickly
-    add text to each cell in the Spanish column.
+26. Now, type some more text and press **ENTER** repeatedly to quickly add text to each cell in the Spanish column.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image26.png"
-style="width:4.28737in;height:1.65714in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image26.png" style="width:70%" />
 
-The point of the last few steps has been for you to become comfortable
+> The point of the last few steps has been for you to become comfortable
 with the translation editing experience. You can see the grid provides
 an editing experience similar to working with Excel. You can even use
 the **{F2}** key to move a cell with content into edit mode.
 
-27. \[OPTIONAL STEP\] Add Spanish translations using the following table
-    or translate them yourself if you know Spanish.
+27. \[OPTIONAL STEP\] Add Spanish translations using the following table or translate them yourself if you know Spanish.
 
 | **English**    | **Spanish**         |
 |----------------|---------------------|
@@ -275,111 +213,79 @@ the **{F2}** key to move a cell with content into edit mode.
 | Month          | Mes                 |
 | Day            | Día                 |
 
-It's OK if you don't want to type in all the Spanish translations from
-the table. Just add whatever text you'd like for each translation.
+> It's OK if you don't want to type in all the Spanish translations from
+the table. Just add whatever text you'd like for these translation so each one contains some text.
 
-28. When you are done with your edits, the Spanish translations should
-    match the following screenshot (or not).
+28. When you are done with your edits, the Spanish translations should match the following screenshot (or not).
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image27.png"
-style="width:2.75449in;height:1.86098in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image27.png" style="width:70%" />
 
-29. Return to the **Product Sales** project in Power BI Desktop and save
-    your work by clicking the **Save** button.
+29. Return to the **Product Sales** project in Power BI Desktop and save your work by clicking the **Save** button.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image28.png"
-style="width:3.00599in;height:0.8144in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image28.png" style="width:70%" />
 
-It’s easy to forget to save your changes in Power BI Desktop. Be aware
+> It’s easy to forget to save your changes in Power BI Desktop. Be aware
 that any changes made by Translations Builder are just made to the data
 model loaded in memory. None of your changes are saved back to the PBIX
 project file until you save in Power BI Desktop.
 
-30. Publish the **Product Sales project** to push the changes to the
-    project’s translations to the Power BI Service.
+30. Publish the **Product Sales project** to push the changes to the project’s translations to the Power BI Service.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image29.png"
-style="width:3.73653in;height:0.61929in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image29.png" style="width:70%" />
 
-31. When prompted by the **Replace this dataset?** Dialog, click the
-    **Replace** button to continue.
+31. When prompted by the **Replace this dataset?** Dialog, click the **Replace** button to continue.
 
-32. Once you see **Success!**, click **Open ‘Product Sales.pbx’ in Power
-    BI** to view the report in the Power BI Service.
+32. Once you see **Success!**, click **Open ‘Product Sales.pbx’ in Power BI** to view the report in the Power BI Service.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image30.png"
-style="width:1.979in;height:1.26429in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image30.png" style="width:70%" />
 
-33. The report should load with its default behavior showing all text in
-    English at first.
+33. The report should load with its default behavior showing all text in English at first.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image31.png"
-style="width:3.7616in;height:2.47987in"
-alt="Graphical user interface, chart Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image31.png" style="width:70%" />
 
-Now, it’s time to test your translations. You will accomplish this by
-using the **language** query string parameter to load the report.
+> Now, it’s time to test your translations. You will accomplish this by using the **language** query string parameter to load the report.
 
-34. Click the browser address bar and add the following **language**
-    parameter to the end of the report URL and press **ENTER.**
+34. Click the browser address bar and add the following **language** parameter to the end of the report URL and press **ENTER.**
 
+```
 /?language=es-ES
+```
 
-35. When you press **ENTER**, you should see the **language** parameter
-    accepted by the browser as it reloads the report.
+35. When you press **ENTER**, you should see the **language** parameter accepted by the browser as it reloads the report.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image32.png"
-style="width:5.78339in;height:1.20139in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image32.png" style="width:70%" />
 
-When the report reloads, you should see the UI experience for the entire
-Power BI Service UI switch from English to Spanish.
+> When the report reloads, you should see the UI experience for the entire Power BI Service UI switch from English to Spanish.
 
 36. Inspect the Card visuals at the bottom of the **Sales Summary**
     page. Verify the column and measure names are displayed with the
     Spanish translations you added earlier in this exercise.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image33.png"
-style="width:6.04301in;height:0.44869in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image33.png" style="width:70%" />
 
 37. Inspect the column headers in the Table visual. Verify the column
     and measure names are also displayed with the Spanish translations
     you added.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image34.png"
-style="width:6.56413in;height:1.09524in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image34.png" style="width:70%" />
 
-38. Inspect the Column Chart visual. Verify the title and legend title
-    are displayed with the Spanish translations.
+38. Inspect the Column Chart visual. Verify the title and legend title are displayed with the Spanish translations.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image35.png"
-style="width:5.89813in;height:1.46032in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image35.png" style="width:70%" />
 
 39. Navigate to the **Sales By Category** page.
 
-40. You should see the title of the Bar Chart visual is not translated
-    because the text for the title is hard-coded in the report.
+40. You should see the title of the Bar Chart visual is not translated because the text for the title is hard-coded in the report.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image36.png"
-style="width:6.37097in;height:1.28919in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image36.png" style="width:70%" />
 
-You have now successfully added the metadata translations to display
+>You have now successfully added the metadata translations to display
 this report in both English and Spanish. Leave Power BI Desktop and
 Translations Builder open as you will continue using them in your next
 exercise.
 
-### Exercise 2: Generating Machine Translations
-
-In this lab you will configure Translations Builder to support
+## Exercise 2: Generating Machine Translations
+> In this lab you will configure Translations Builder to support
 generating machine translations using the Azure Translator Service.
 While machine translations might not provide the level of quality
 required for some production scenarios, they do provide a great step
