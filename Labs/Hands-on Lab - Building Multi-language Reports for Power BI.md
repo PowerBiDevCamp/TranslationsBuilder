@@ -395,7 +395,7 @@ existing translations with newly-generated machine translations.
 
 20. Click the browser address bar and add the **language** parameter value of **fr-FR** for French to the end of the report URL.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **`?language=fr-FR`**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **`?language=fr-FR`**
 
 21. When the report reloads, you should see the UI experience for the Power BI Service UI switch from English to French.
 
