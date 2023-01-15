@@ -270,7 +270,7 @@ project file until you save in Power BI Desktop.
 
 39. Navigate to the **Sales By Category** page.
 
-40. You should see the title of the Bar Chart visual is not translated because the text for the title is hard-coded in the report.
+40. You should see the title of the Bar Chart visual is not translated because the text for this visual title is hard-coded in the report.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image36.png" style="width:92%" />
 
