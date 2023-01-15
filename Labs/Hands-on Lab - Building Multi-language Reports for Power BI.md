@@ -330,13 +330,13 @@ working on these lab exercises up through February 28, 2023.
 
 7. Hold down the **CTRL**, and select **French** and **German** and then click **Add Language**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image43.png" style="width:35%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image43.png" style="width:33%" />
 
 8. You should now see the two new languages appear in the **Secondary Languages** list.
 
 9. You will also notice that new columns have been added to the translation grid for each new language.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image44.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image44.png" style="width:80%" />
 
 10. In the **Machine Translations – Single Language** section, select **French \[fr-FR\]** from the drop down menu.
 
