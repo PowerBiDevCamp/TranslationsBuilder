@@ -76,7 +76,7 @@ and measure names in the dataset.
 3.  Copy **Product Sales.pbix** into the lab folder and then open it in
     Power BI Desktop to examine the report inside.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image4.png" style="width:70&" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image4.png" style="width:70%" />
 
 4.  While in **Report** view, examine the **Fields** list to see the
     tables, columns and measure that are not hidden.
