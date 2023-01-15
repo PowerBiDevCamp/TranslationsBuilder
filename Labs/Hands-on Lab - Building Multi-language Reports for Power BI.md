@@ -34,9 +34,7 @@ be associated with a Premium capacity as indicated by the diamond image
 premium capacity is required because Power BI translations do not load
 properly for reports in the shared capacity.
 
-&nbsp;&nbsp;&nbsp;&nbsp; <img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image1.png"
-style="width:3.09337in;height:1.01333in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image1.png" style="width:50%" />
 
 ### Student Files
 
@@ -50,38 +48,18 @@ you will need to copy and paste in Power BI Desktop. While you can copy
 and paste DAX and M code from this manual, some students will find it
 easier to copy the code from these text files instead.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image2.png"
-style="width:4.37994in;height:1.9in"
-alt="Graphical user interface, application Description automatically generated" />
+<img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image2.png" style="width:50%" />
 
 ### Lab Exercise Table of Contents
+- [Exercise 1: Creating and Testing Metadata Translations](#exercise-1-creating-and-testing-metadata-translations)
+- [Exercise 2: Generating Machine Translations](#exercise-2-generating-machine-translations)
+- [Exercise 3: Creating and Testing Report Label Translations](#exercise-3-creating-and-testing-report-label-translations)
+- [Exercise 4: Creating a Workflow Process To Gather & Integrate Human Translations](#exercise-4-creating-a-workflow-process-to-gather-integrate-human-translations)
+- [Exercise 5: Implementing Data Translations using Field Parameters](#exercise-5-implementing-data-translations-using-field-parameters)
+- [Exercise 6: Implementing Data Translations for a Calendar Table](#exercise-6-implementing-data-translations-for-a-calendar-table)
 
-[**Hands-on Lab: Building Multi-language Reports for Power BI**
-[1](#hands-on-lab-building-multi-language-reports-for-power-bi)](#hands-on-lab-building-multi-language-reports-for-power-bi)
-
-[Exercise 1: Creating and Testing Metadata Translations
-[2](#exercise-1-creating-and-testing-metadata-translations)](#exercise-1-creating-and-testing-metadata-translations)
-
-[Exercise 2: Generating Machine Translations
-[10](#exercise-2-generating-machine-translations)](#exercise-2-generating-machine-translations)
-
-[Exercise 3: Creating and Testing Report Label Translations
-[16](#exercise-3-creating-and-testing-report-label-translations)](#exercise-3-creating-and-testing-report-label-translations)
-
-[Exercise 4: Creating a Workflow Process To Gather & Integrate Human
-Translations
-[25](#exercise-4-creating-a-workflow-process-to-gather-integrate-human-translations)](#exercise-4-creating-a-workflow-process-to-gather-integrate-human-translations)
-
-[Exercise 5: Implementing Data Translations using Field Parameters
-[33](#exercise-5-implementing-data-translations-using-field-parameters)](#exercise-5-implementing-data-translations-using-field-parameters)
-
-[Exercise 6: Implementing Data Translations for a Calendar Table
-[60](#exercise-6-implementing-data-translations-for-a-calendar-table)](#exercise-6-implementing-data-translations-for-a-calendar-table)
-
-### Exercise 1: Creating and Testing Metadata Translations
-
-In this exercise, you will begin by downloading a PBIX file with a
+## Exercise 1: Creating and Testing Metadata Translations
+> In this exercise, you will begin by downloading a PBIX file with a
 simple data model and a report with three pages. You will publish the
 project to the Power BI Service to set up a workflow process to test
 your work with translations in the browser. After that, you will use
