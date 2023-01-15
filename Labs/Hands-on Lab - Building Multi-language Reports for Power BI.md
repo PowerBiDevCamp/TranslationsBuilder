@@ -40,7 +40,7 @@ properly for reports in the shared capacity.
 These hands-on lab instructions are accompanied by a set of files in a ZIP
 archive named **StudentFiles.zip** that you can download from
 [**HERE**](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/StudentFiles.zip).
-The **StudentFiles** folder inside the ZIP archive contain a completed solution for each of the six lab exercises in the form of a PBIX project file. There is also a
+The **StudentFiles** folder inside the ZIP archive contains a **Solution** folder with a completed solution for each of the six lab exercises in the form of a PBIX project file. There is also a
 **Snippets** folder with text files containing DAX code and M code that
 you will need to copy and paste in Power BI Desktop. While you can copy
 and paste DAX and M code from this manual, some students will find it
