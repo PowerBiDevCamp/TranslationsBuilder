@@ -15,6 +15,8 @@ so you can test out the translations you’ve added to the PBIX project to
 ensure they display correctly when loaded using different languages and
 locales.
 
+> This lab manual is also available for download in either **[DOCX](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/Hands-on%20Lab%20-%20Building%20Multi-language%20Reports%20for%20Power%20BI.docx)** or **[PDF](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/Hands-on%20Lab%20-%20Building%20Multi-language%20Reports%20for%20Power%20BI.pdf)** format. 
+
 ### Prerequisites
 
 - **Prerequisite 1**: This lab assumes you're experienced with Power BI
@@ -442,16 +444,14 @@ measures in four different languages. In the next exercise, you will
 move ahead to implement report label translations.
 
 ## Exercise 3: Creating and Testing Report Label Translations
-
-In this exercise, you will work through the process of adding report
+> In this exercise, you will work through the process of adding report
 label translations. You will add translations for the report title,
 navigation button captions and the title of a visual. This will give you
 experience working with the localized labels table strategy that
 Translations Builder uses to quickly and easily implement report label
 translations.
 
-1.  Return to the **Product Sales** project in Power BI Desktop and move
-    to **Report view**.
+1.  Return to the **Product Sales** project in Power BI Desktop and move to **Report view**.
 
 2.  Make sure the current page is **Sales Summary**.
 
