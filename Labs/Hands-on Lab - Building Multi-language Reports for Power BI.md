@@ -258,23 +258,23 @@ project file until you save in Power BI Desktop.
     page. Verify the column and measure names are displayed with the
     Spanish translations you added earlier in this exercise.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image33.png" style="width:80%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image33.png" style="width:92%" />
 
 37. Inspect the column headers in the Table visual. Verify the column
     and measure names are also displayed with the Spanish translations
     you added.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image34.png" style="width:80%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image34.png" style="width:92%" />
 
 38. Inspect the Column Chart visual. Verify the title and legend title are displayed with the Spanish translations.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image35.png" style="width:80%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image35.png" style="width:92%" />
 
 39. Navigate to the **Sales By Category** page.
 
 40. You should see the title of the Bar Chart visual is not translated because the text for the title is hard-coded in the report.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image36.png" style="width:80%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image36.png" style="width:92%" />
 
 >You have now successfully added the metadata translations to display
 this report in both English and Spanish. Leave Power BI Desktop and
