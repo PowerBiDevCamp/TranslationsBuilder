@@ -250,7 +250,7 @@ project file until you save in Power BI Desktop.
 
 35. When you press **ENTER**, you should see the **language** parameter accepted by the browser as it reloads the report.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image32.png"  />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image32.png" style="width:92%" />
 
 > When the report reloads, you should see the UI experience for the entire Power BI Service UI switch from English to Spanish.
 
