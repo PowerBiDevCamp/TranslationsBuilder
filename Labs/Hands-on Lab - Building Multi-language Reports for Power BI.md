@@ -287,7 +287,7 @@ required for some production scenarios, they do provide a great step
 forward in generating the first round translations which can be used for
 testing and for getting *\*something\** into production sooner.
 
-To complete this lab you will require a **Key** and **Location** which
+> To complete this lab you will require a **Key** and **Location** which
 provide access to the **Azure Translator Service**. If you have an Azure
 subscription, you can learn how to obtain this key and its location by
 reading [**Obtaining a Key for the Azure Translator
@@ -296,23 +296,16 @@ If you do not have a Azure subscription or you cannot obtain a key of
 your own, you can use the following **Key** and **Location** value when
 working on these lab exercises up through February 28, 2023.
 
-Key: **7bf614164d924cd9a9ba3d9cf351d15f**
+> Key: **7bf614164d924cd9a9ba3d9cf351d15f**
+> Location: **eastus2**
 
-Location: **eastus2**
+1.  Return to Translations Builder and drop down the **Dataset Connection** menu.
 
-1.  Return to Translations Builder and drop down the **Dataset
-    Connection** menu.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image37.png" style="width:50%" />
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image37.png"
-style="width:3.03571in;height:0.96917in" />
+2. Select the **Configure Settings…** menu command to display the **Configuration Options** dialog.
 
-41. Select the **Configure Settings…** menu command to display the
-    **Configuration Options** dialog.
-
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image38.png"
-style="width:2.97917in;height:1.19369in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image38.png" style="width:40%" />
 
 42. In the **Configuration Options** dialog, enter the **Key** and
     **Location** for the Azure Translator Service.
