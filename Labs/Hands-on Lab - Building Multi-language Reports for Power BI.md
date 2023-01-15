@@ -66,25 +66,17 @@ your work with translations in the browser. After that, you will use
 Translations Builder to add metadata translations for the column names
 and measure names in the dataset.
 
-1.  Download the PBIX starter file named **Product Sales.pbix** from the
-    following link
+1.  Download the PBIX starter file named **Product Sales.pbix** from **[this link](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/StarterFiles/Product%20Sales.pbix)** or from  the **StarterFiles** folder in the **StudentFiles** folder. 
 
-<https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/StarterFiles/Product%20Sales.pbix>
 
-2.  Create a new folder on your local hard drive for these lab exercises
-    in a location such as **C:\DevCampLabs**.
+2.  Create a new folder on your local hard drive for these lab exercises in a location such as **C:\DevCampLabs**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image3.png"
-style="width:3.32593in;height:1.2004in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image3.png" style="width:50%" />
 
 3.  Copy **Product Sales.pbix** into the lab folder and then open it in
     Power BI Desktop to examine the report inside.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image4.png"
-style="width:5.43715in;height:2.93103in"
-alt="Graphical user interface, table Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image4.png" style="width:70&" />
 
 4.  While in **Report** view, examine the **Fields** list to see the
     tables, columns and measure that are not hidden.
