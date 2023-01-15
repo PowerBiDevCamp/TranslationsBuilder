@@ -428,14 +428,13 @@ existing translations with newly-generated machine translations.
 > Creating a browser bookmark for each language might take a minute or two to set up at first. However, it will save lots of time in the long run
 as you continue to test the translations you create for this report in the lab work that remains ahead.
 
->In this exercise, you created bookmarks in the browser because they make it easier when testing 
-the report using different languages. Later in Exercise 5, you will
-create bookmarks inside the context of the report in the **Product
-Sales** project. To avoid any potential confusions, these lab exercises
+>In this exercise, you have created bookmarks in the browser because it makes it easier when testing 
+the report with different languages. Later in Exercise 5, you will create bookmarks inside the context of the report 
+in the **Product Sales** project. To avoid any potential confusions, these lab instructions
 will use the term ***browser bookmark*** when referring to the type of
-bookmark you have just created in the browser. These lab exercises will
-use the term ***report bookmark*** when referring to the type of
-bookmark that is created in a Power BI report.
+bookmark you just created in the browser. These lab exercises will
+use the term ***report bookmark*** when referring to the other type of
+bookmark that iss created in a Power BI report.
 
 > Let's summarize where you are at. You have now successfully created and
 tested metadata translations to display the names of columns and
