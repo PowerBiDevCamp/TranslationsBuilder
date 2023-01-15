@@ -190,7 +190,7 @@ with the translation editing experience. You can see the grid provides
 an editing experience similar to working with Excel. You can even use
 the **{F2}** key to move a cell with content into edit mode.
 
-27. \[OPTIONAL STEP\] Add Spanish translations using the following table or translate them yourself if you know Spanish.
+27. **OPTIONAL STEP**: Add Spanish translations using the following table or translate them yourself if you know Spanish.
 
 | **English**    | **Spanish**         |
 |----------------|---------------------|
