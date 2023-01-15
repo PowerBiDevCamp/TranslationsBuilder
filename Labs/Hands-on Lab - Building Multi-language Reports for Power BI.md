@@ -436,7 +436,7 @@ in the **Product Sales** project. To avoid any potential confusions, these lab i
 will use the term ***browser bookmark*** when referring to the type of
 bookmark you just created in the browser. These lab exercises will
 use the term ***report bookmark*** when referring to the other type of
-bookmark that iss created in a Power BI report.
+bookmark created in a Power BI report.
 
 > Let's summarize where you are at. You have now successfully created and
 tested metadata translations to display the names of columns and
