@@ -78,12 +78,9 @@ and measure names in the dataset.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image4.png" style="width:70%" />
 
-4.  While in **Report** view, examine the **Fields** list to see the
-    tables, columns and measure that are not hidden.
+4.  While in **Report** view, examine the **Fields** list to see the tables, columns and measure that are not hidden.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image5.png"
-style="width:1.46774in;height:2.70322in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image5.png" style="width:50%" />
 
 5.  Navigate to the second page named **Sales By Category** and examine
     its contents and layout.
