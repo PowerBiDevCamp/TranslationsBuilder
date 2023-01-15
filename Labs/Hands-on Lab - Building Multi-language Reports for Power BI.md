@@ -276,7 +276,7 @@ project file until you save in Power BI Desktop.
 
 >You have now successfully added the metadata translations to display
 this report in both English and Spanish. Leave Power BI Desktop and
-Translations Builder open as you will continue using them in your next
+Translations Builder open as you will continue using them in the next
 exercise.
 
 ## Exercise 2: Generating Machine Translations
