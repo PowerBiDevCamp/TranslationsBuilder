@@ -419,7 +419,7 @@ existing translations with newly-generated machine translations.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image58.png" style="width:70%" />
 
 > Take a moment to appreciate how the date and numeric formatting automatically changes across all four regional locales.
-> <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image59.png" style="70%" />
+> <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image59.png" style="50%" />
 
 26. As a final step in this exercise, add a browser bookmark for each language with a **language** parameter at the end.
 
