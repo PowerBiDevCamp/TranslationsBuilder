@@ -296,7 +296,7 @@ If you do not have a Azure subscription or you cannot obtain a key of
 your own, you can use the following **Key** and **Location** value when
 working on these lab exercises up through February 28, 2023.
 
-| Key                              | Location |
+| Key for Azure Translator Service | Location |
 | :---                             | :---     | 
 | 7bf614164d924cd9a9ba3d9cf351d15f | eastus2  |
 
