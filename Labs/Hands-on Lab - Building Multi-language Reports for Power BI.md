@@ -211,7 +211,7 @@ the **{F2}** key to move a cell with content into edit mode.
 | Day            | Día                 |
 
 > It's OK if you don't want to type in all the Spanish translations from the table. 
-Just add any text you'd like so that no translations remains empty.
+Just add any text you like so that no translations remains empty.
 
 28. When you are done with your edits, the Spanish translations should match the following screenshot (or not).
 
