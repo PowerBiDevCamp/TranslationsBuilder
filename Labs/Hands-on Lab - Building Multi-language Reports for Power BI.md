@@ -192,9 +192,10 @@ the **{F2}** key to move a cell with content into edit mode.
 
 27. **OPTIONAL STEP**: Add Spanish translations using the following table or translate them yourself if you know Spanish.
 
-| **English**    | **Spanish**         |
-|----------------|---------------------|
-| Products       | Productos           |
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | **English**    | **Spanish**         |
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |----------------|---------------------|
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Products       | Productos           |
+
 | Image          | Imagen              |
 | Category       | Categoría           |
 | Product        | Producto            |
