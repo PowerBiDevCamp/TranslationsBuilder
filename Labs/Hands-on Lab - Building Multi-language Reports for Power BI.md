@@ -151,7 +151,7 @@ a default locale of the **United States (US)**.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image18.png" style="width:40%" />
  
-> Tables, columns and measures hidden from report view in the data model are not displayed because they don't require translation.
+> Tables, columns and measures in the data model hidden from report view are not displayed because they don't require translation.
 
 19. Click the **Add Language** button to add your first secondary language.
 
@@ -159,11 +159,11 @@ a default locale of the **United States (US)**.
 
 20. Select **Spanish \[es-ES\]** and click **Add Language**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image20.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image20.png" style="width:60%" />
 
 21. You should now see that **Spanish \[es-ES\]** appears as the first language in the **Secondary Languages** list.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image21.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image21.png" style="width:40%" />
 
 22. You should also notice that a new column has been added to the translation grid for Spanish translations.
 
