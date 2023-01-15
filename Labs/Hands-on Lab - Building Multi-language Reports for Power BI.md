@@ -150,7 +150,7 @@ a default locale of the **United States (US)**.
 18. Examine the translation grid down below which displays a row for each non-hidden dataset object in the data model.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image18.png" style="width:40%" />
-
+ 
 > Tables, columns and measures hidden from report view in the data model are not displayed because they don't require translation.
 
 19. Click the **Add Language** button to add your first secondary language.
