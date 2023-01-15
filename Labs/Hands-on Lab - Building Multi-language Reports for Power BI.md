@@ -244,9 +244,8 @@ project file until you save in Power BI Desktop.
 
 34. Click the browser address bar and add the following **language** parameter to the end of the report URL and press **ENTER.**
 
-```
-/?language=es-ES
-```
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **`?language=es-ES`**
 
 35. When you press **ENTER**, you should see the **language** parameter accepted by the browser as it reloads the report.
 
@@ -409,7 +408,7 @@ existing translations with newly-generated machine translations.
 
 23. Click the browser address bar and add the **language** parameter value of **de-DE** for German to the end of the report URL.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **?language=de-DE**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **`?language=de-DE`**
 
 24. When the report reloads, you should see the UI experience for the Power BI Service UI switch to German.
 
