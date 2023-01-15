@@ -15,8 +15,6 @@ so you can test out the translations you’ve added to the PBIX project to
 ensure they display correctly when loaded using different languages and
 locales.
 
-> This lab manual is also available for download in either **[DOCX](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/Hands-on%20Lab%20-%20Building%20Multi-language%20Reports%20for%20Power%20BI.docx)** or **[PDF](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/Hands-on%20Lab%20-%20Building%20Multi-language%20Reports%20for%20Power%20BI.pdf)** format. 
-
 ### Prerequisites
 
 - **Prerequisite 1**: This lab assumes you're experienced with Power BI
@@ -49,6 +47,8 @@ and paste DAX and M code from this lab manual, some students will find it
 easier to copy the code from these text files in the **Snippets** folder instead.
 
 <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image2.png" style="width:65%" />
+
+> This lab manual is also available for download in either **[DOCX](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/Hands-on%20Lab%20-%20Building%20Multi-language%20Reports%20for%20Power%20BI.docx)** or **[PDF](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/Hands-on%20Lab%20-%20Building%20Multi-language%20Reports%20for%20Power%20BI.pdf)** format.
 
 ### Lab Exercise Table of Contents
 - [Exercise 1: Creating and Testing Metadata Translations](#exercise-1-creating-and-testing-metadata-translations)
