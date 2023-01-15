@@ -455,7 +455,7 @@ translations.
 
 2.  Make sure the current page is **Sales Summary**.
 
-<img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png" style="width:70%" />
 
 3. Examine the **Product Sales Report** label which is displayed using a Rectangle shape object.
 
