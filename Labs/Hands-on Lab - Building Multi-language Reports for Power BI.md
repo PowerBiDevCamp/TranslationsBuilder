@@ -373,7 +373,7 @@ existing translations with newly-generated machine translations.
 
 15. Return to the **Product Sales** project in Power BI Desktop and save your work by clicking the **Save** button.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image51.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image51.png" style="width:55%" />
 
 > Don’t forget to save your work! Did we mention it’s easy to forget which can inadvertently lead to you losing your work.
 
