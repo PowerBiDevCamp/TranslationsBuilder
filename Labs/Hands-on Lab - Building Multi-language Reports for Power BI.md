@@ -419,11 +419,11 @@ existing translations with newly-generated machine translations.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image58.png" style="width:70%" />
 
 > Take a moment to appreciate how the date and numeric formatting automatically changes across all four regional locales.
-> <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image59.png" style="width:70%" />
+> <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image59.png" style="width:80%" />
 
 26. As a final step in this exercise, add a browser bookmark for each language with a **language** parameter at the end.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image60.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image60.png" style="width:90%" />
 
 > Creating a browser bookmark for each language might take a minute or two to set up at first. However, it will save lots of time in the long run
 as you continue to test the translations you create for this report in the lab work that remains ahead.
