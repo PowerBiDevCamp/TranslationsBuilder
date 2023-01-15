@@ -163,11 +163,11 @@ a default locale of the **United States (US)**.
 
 21. You should now see that **Spanish \[es-ES\]** appears as the first language in the **Secondary Languages** list.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image21.png" style="width:40%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image21.png" style="width:60%" />
 
 22. You should also notice that a new column has been added to the translation grid for Spanish translations.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image22.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image22.png" style="width:50%" />
 
 23. In the row with the **Products** table, click on the cell for the **Spanish** column. It should turn blue when selected.
 
