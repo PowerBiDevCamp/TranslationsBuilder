@@ -332,31 +332,31 @@ working on these lab exercises up through February 28, 2023.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image43.png" style="width:33%" />
 
-8. You should now see the two new languages appear in the **Secondary Languages** list.
+> You should now see the two new languages appear in the **Secondary Languages** list.
 
-9. You will also notice that new columns have been added to the translation grid for each new language.
+8. You will also notice that new columns have been added to the translation grid for each new language.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image44.png" style="width:80%" />
 
-10. In the **Machine Translations – Single Language** section, select **French \[fr-FR\]** from the drop down menu.
+9. In the **Machine Translations – Single Language** section, select **French \[fr-FR\]** from the drop down menu.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image45.png" style="width:70%" />
 
-11. Once you have selected **French \[fr-FR\]**, click **Generate Translations** to create French translations for all rows in the grid.
+10. Once you have selected **French \[fr-FR\]**, click **Generate Translations** to create French translations for all rows in the grid.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image46.png" style="width:70%" />
 
-12. As the code runs to interact with the Azure Translator Service, the **Generating machine translation** dialog shows the progress.
+11. As the code runs to interact with the Azure Translator Service, the **Generating machine translation** dialog shows the progress.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image47.png" style="width:70%" />
 
-13. Once this dialog closes, you should see all cells the French column has been filled with machine-generated translations.
+12. Once this dialog closes, you should see all cells the French column has been filled with machine-generated translations.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image48.png" style="width:70%" />
 
 > If your Spanish translations are less than perfect, you can use the same technique to replace what you have with machine translations.
 
-14. Click the **Fill All Empty Translation** button in the **Machine Translations - All Languages** section.
+13. Click the **Fill All Empty Translation** button in the **Machine Translations - All Languages** section.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image49.png" style="width:70%" />
 
@@ -365,53 +365,53 @@ command generate machine translations just for translations that are
 empty. Use the **Generate All Translations** command to replace all
 existing translations with newly-generated machine translations.
 
-15. You should now see that the empty cells for all secondary languages have been populated with machine-generated translations.
+14. You should now see that the empty cells for all secondary languages have been populated with machine-generated translations.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image50.png" style="width:70%" />
 
 > Now, it’s time once again to test your work in the Power BI Service,
 
-16. Return to the **Product Sales** project in Power BI Desktop and save your work by clicking the **Save** button.
+15. Return to the **Product Sales** project in Power BI Desktop and save your work by clicking the **Save** button.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image51.png" style="width:70%" />
 
 > Don’t forget to save your work! Did we mention it’s easy to forget which can inadvertently lead to you losing your work.
 
-17. Publish the **Product Sales project** to push the changes to the project’s translations to the Power BI Service.
+16. Publish the **Product Sales project** to push the changes to the project’s translations to the Power BI Service.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image52.png" style="width:70%" />
 
-18. When prompted by the **Replace this dataset?** Dialog, click the **Replace** button to continue.
+17. When prompted by the **Replace this dataset?** Dialog, click the **Replace** button to continue.
 
-19. Once you see **Success!**, click **Open ‘Product Sales.pbx’ in Power BI** to view the report in the Power BI Service.
+18. Once you see **Success!**, click **Open ‘Product Sales.pbx’ in Power BI** to view the report in the Power BI Service.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image53.png" style="width:70%" />
 
-20. The report should load as normal showing all text in English at first.
+19. The report should load as normal showing all text in English at first.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image54.png" style="width:70%" />
 
 > Now, it’s time to test your French and German translations using the **language** query string parameter to load the report.
 
-21. Click the browser address bar and add the **language** parameter value of **fr-FR** for French to the end of the report URL.
+20. Click the browser address bar and add the **language** parameter value of **fr-FR** for French to the end of the report URL.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **?language=fr-FR**
 
-22. When the report reloads, you should see the UI experience for the Power BI Service UI switch from English to French.
+21. When the report reloads, you should see the UI experience for the Power BI Service UI switch from English to French.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image55.png" style="width:70%" />
 
-23. Verify the column and measure names used in all three visuals are displayed with French translations.
+22. Verify the column and measure names used in all three visuals are displayed with French translations.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image56.png" style="width:70%" />
 
 > Now that you have tested the French translations, it’s time to test German.
 
-24. Click the browser address bar and add the **language** parameter value of **de-DE** for German to the end of the report URL.
+23. Click the browser address bar and add the **language** parameter value of **de-DE** for German to the end of the report URL.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **?language=de-DE**
 
-64. When the report reloads, you should see the UI experience for the Power BI Service UI switch to German.
+24. When the report reloads, you should see the UI experience for the Power BI Service UI switch to German.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image57.png" style="width:70%" />
 
