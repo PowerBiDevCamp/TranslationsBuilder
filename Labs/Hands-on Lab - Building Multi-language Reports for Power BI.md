@@ -455,37 +455,23 @@ translations.
 
 2.  Make sure the current page is **Sales Summary**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png"
-style="width:3.92216in;height:0.53664in"
-alt="Graphical user interface, text, application, Word Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png" style="width:70%" />
 
-67. Examine the **Product Sales Report** label which is displayed using
-    a Rectangle shape object.
+3. Examine the **Product Sales Report** label which is displayed using a Rectangle shape object.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image62.png"
-style="width:5.91617in;height:0.45248in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image62.png" style="width:70%" />
 
-68. Examine the three buttons which provide the navigation menu allowing
-    users to switch between pages.
+4. Examine the three buttons which provide the navigation menu allowing users to switch between pages.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image63.png"
-style="width:5.92814in;height:0.61642in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image63.png" style="width:70%" />
 
-69. Move back to Translations Builder and drop down the **Generate
-    Translated Tables** menu.
+5. Move back to Translations Builder and drop down the **Generate Translated Tables** menu.
 
-70. Select the **Create Localized Labels Table** to create the
-    **Localized Labels Table**.
+6. Select the **Create Localized Labels Table** to create the **Localized Labels Table**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image64.png"
-style="width:2.45509in;height:0.9549in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image64.png" style="width:70%" />
 
-71. When you create the **Localized Labels** table, you will be prompted
-    with the following dialog. Click **<u>N</u>o** to continue.
+7. When you create the **Localized Labels** table, you will be prompted with the following dialog. Click **<u>N</u>o** to continue.
 
 <img
 src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image65.png"
