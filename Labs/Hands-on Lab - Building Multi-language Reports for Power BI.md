@@ -1,6 +1,6 @@
-## **Hands-on Lab: Building Multi-language Reports for Power BI**
+# **Hands-on Lab: Building Multi-language Reports for Power BI**
 
-**Overview**: In this lab, you will learn how to work with Power BI
+> **Overview**: In this lab, you will learn how to work with Power BI
 Desktop and [**Translations
 Builder**](https://github.com/PowerBiDevCamp/TranslationsBuilder) to
 build and test a multi-language report for Power BI. You will start by
@@ -15,28 +15,30 @@ so you can test out the translations you’ve added to the PBIX project to
 ensure they display correctly when loaded using different languages and
 locales.
 
-**Prerequisite 1**: This lab assumes you're experienced with Power BI
+### Prerequisites
+
+- **Prerequisite 1**: This lab assumes you're experienced with Power BI
 Desktop and you know how to build queries, datasets and reports.
 
-**Prerequisite 2**: This lab assumes you’ve already installed
+- **Prerequisite 2**: This lab assumes you’ve already installed
 Translations Builder. If you haven’t installed Translations Builder yet,
 you must follow steps in the [Translations Builder Installation
 Guide](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Installation%20Guide.md)
 before continuing with these lab exercises.
 
-**Prerequisite 3**: To complete this lab, you will need a Power BI
+- **Prerequisite 3**: To complete this lab, you will need a Power BI
 workspace where you have appropriate permissions to publish PBIX project
 files from Power BI Desktop to test your work. This workspace must also
 be associated with a Premium capacity as indicated by the diamond image
-(*see below*) displayed after the workspace name. A workspace in a
+ displayed after the workspace name (*see below*). A workspace in a
 premium capacity is required because Power BI translations do not load
 properly for reports in the shared capacity.
 
-<img
+&nbsp;&nbsp;&nbsp;&nbsp; <img
 src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image1.png"
 style="width:3.09337in;height:1.01333in" />
 
-**Student Files**
+### Student Files
 
 These lab instructions are accompanied by a set of files in a ZIP
 archive named **StudentFiles.zip** that you can download from
@@ -53,7 +55,7 @@ src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image2.png"
 style="width:4.37994in;height:1.9in"
 alt="Graphical user interface, application Description automatically generated" />
 
-# Lab Exercise Table of Contents
+### Lab Exercise Table of Contents
 
 [**Hands-on Lab: Building Multi-language Reports for Power BI**
 [1](#hands-on-lab-building-multi-language-reports-for-power-bi)](#hands-on-lab-building-multi-language-reports-for-power-bi)
