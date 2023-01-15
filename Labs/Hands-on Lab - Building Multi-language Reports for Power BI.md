@@ -141,7 +141,7 @@ steps:
 
 17. The **Dataset properties** section on the left provides details about the dataset connection and the PBIX project file.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image17.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image17.png" style="width:40%" />
 
 > Every PBIX project file has a default language and a default locale. The
 **Product Sales** project has a default language of **English (en)** and
