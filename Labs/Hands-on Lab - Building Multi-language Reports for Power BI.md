@@ -152,7 +152,7 @@ a default locale of the **United States (US)**.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image18.png" style="width:40%" />
 
 > Tables, columns and measures that are hidden from report view in the
-data model are not displayed because you don’t need to translate them.
+data model are not displayed because they don't require translations.
 
 19. Click the **Add Language** button to add your first secondary language.
 
