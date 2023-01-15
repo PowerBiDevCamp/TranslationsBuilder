@@ -318,7 +318,7 @@ working on these lab exercises up through February 28, 2023.
 
 5. After you have configured the **Key** and **Location** for the Azure Translator Service, new command will appear on the main window.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image41.png" style="width:75%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image41.png" style="width:70%" />
 
 > Now that you have added support for generating machine translations, it’s time to put that automatic translation support to work!
 
