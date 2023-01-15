@@ -54,7 +54,7 @@ easier to copy the code from these text files in the **Snippets** folder instead
 - [Exercise 1: Creating and Testing Metadata Translations](#exercise-1-creating-and-testing-metadata-translations)
 - [Exercise 2: Generating Machine Translations](#exercise-2-generating-machine-translations)
 - [Exercise 3: Creating and Testing Report Label Translations](#exercise-3-creating-and-testing-report-label-translations)
-- [Exercise 4: Creating a Workflow Process To Gather & Integrate Human Translations](#exercise-4-creating-a-workflow-process-to-gather-integrate-human-translations)
+- [Exercise 4: Creating a Workflow Process To Gather & Integrate Human Translations](#exercise-4-creating-a-workflow-process-to-gather-and-integrate-human-translations)
 - [Exercise 5: Implementing Data Translations using Field Parameters](#exercise-5-implementing-data-translations-using-field-parameters)
 - [Exercise 6: Implementing Data Translations for a Calendar Table](#exercise-6-implementing-data-translations-for-a-calendar-table)
 
@@ -893,7 +893,7 @@ to see that this will add a significant level of productivity to your
 future efforts to build Power BI reports that support multiple
 languages.
 
-## Exercise 4: Creating a Workflow Process To Gather & Integrate Human Translations
+## Exercise 4: Creating a Workflow Process To Gather and Integrate Human Translations
 
 Up to this point, you have done the work required to get the report and
 its underlying dataset into a structure to support translations for
