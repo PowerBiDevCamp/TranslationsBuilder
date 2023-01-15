@@ -260,9 +260,7 @@ project file until you save in Power BI Desktop.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image33.png" style="width:92%" />
 
-37. Inspect the column headers in the Table visual. Verify the column
-    and measure names are displayed with the Spanish translations
-    you added.
+37. Inspect the column headers in the Table visual. Column and measure names should be displayed with your Spanish translations.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image34.png" style="width:92%" />
 
