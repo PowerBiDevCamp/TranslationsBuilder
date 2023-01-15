@@ -893,7 +893,7 @@ to see that this will add a significant level of productivity to your
 future efforts to build Power BI reports that support multiple
 languages.
 
-### Exercise 4: Creating a Workflow Process To Gather & Integrate Human Translations
+## Exercise 4: Creating a Workflow Process To Gather & Integrate Human Translations
 
 Up to this point, you have done the work required to get the report and
 its underlying dataset into a structure to support translations for
@@ -1263,7 +1263,7 @@ style="width:7.1773in;height:3.0566in" />
 The key takeaway with this last step is that master translation sheets
 make it possible to backup and restore all localization work.
 
-### Exercise 5: Implementing Data Translations using Field Parameters
+## Exercise 5: Implementing Data Translations using Field Parameters
 
 In this exercise you will implement data translations for product names
 and category names. You will begin by extending the **Products** table
@@ -2343,7 +2343,7 @@ style="width:3.94977in;height:2.23358in" />
 You will now move on to the final exercise where you will implement data
 translations for the names of months and days of the week..
 
-### Exercise 6: Implementing Data Translations for a Calendar Table
+## Exercise 6: Implementing Data Translations for a Calendar Table
 
 In this exercise you will implement data translations for the names of
 months and days in a **Calendar** table. To properly implement data
