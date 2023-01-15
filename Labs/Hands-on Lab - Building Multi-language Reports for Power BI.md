@@ -137,7 +137,7 @@ steps:
 
 16. Translations Builder should start and load the data model for the **Product Sales** project.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image16.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image16.png" style="width:90%" />
 
 17. The **Dataset properties** section on the left provides details about the dataset connection and the PBIX project file.
 
