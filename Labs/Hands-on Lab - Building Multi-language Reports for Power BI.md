@@ -159,7 +159,7 @@ a default locale of the **United States (US)**.
 
 20. Select **Spanish \[es-ES\]** and click **Add Language**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image20.png" style="width:40%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image20.png" style="width:30%" />
 
 21. You should now see that **Spanish \[es-ES\]** appears as the first language in the **Secondary Languages** list.
 
