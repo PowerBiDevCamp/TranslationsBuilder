@@ -367,7 +367,7 @@ existing translations with newly-generated machine translations.
 
 14. You should now see that the empty cells for all secondary languages have been populated with machine-generated translations.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image50.png" style="width:55%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image50.png" style="width:60%" />
 
 > Now, it’s time once again to test your work in the Power BI Service,
 
@@ -377,7 +377,7 @@ existing translations with newly-generated machine translations.
 
 > Don’t forget to save your work! Did we mention it’s easy to forget which can inadvertently lead to you losing your work.
 
-16. Publish the **Product Sales project** to push the changes to the project’s translations to the Power BI Service.
+16. Publish the **Product Sales** project to push the changes to the project’s translations to the Power BI Service.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image52.png" style="width:70%" />
 
