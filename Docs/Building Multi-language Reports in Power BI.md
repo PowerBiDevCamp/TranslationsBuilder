@@ -606,8 +606,7 @@ set of steps again and again:
 
 > Are you starting to get excited about working with Translations Builder?
 If you want to jump right in and get started, you can try out the
-hands-on lab titled [**Lab 01: Getting Started with Translations
-Builder**](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Labs/Lab%2001%20-%20Getting%20Started%20with%20Translation%20Builder.md).
+hands-on lab titled [**Hands-on Lab: Building Multi-language Reports for Power BI**](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Labs/Hands-on%20Lab%20-%20Building%20Multi-language%20Reports%20for%20Power%20BI.md).
 
 ### Embedding Power BI Reports Using a Specific Language and Locale
 
