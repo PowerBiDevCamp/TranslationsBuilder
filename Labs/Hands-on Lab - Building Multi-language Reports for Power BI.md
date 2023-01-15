@@ -34,7 +34,7 @@ be associated with a Premium capacity as indicated by the diamond image
 premium capacity is required because Power BI translations do not load
 properly for reports in the shared capacity.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image1.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image1.png" style="width:40%" />
 
 ### Student Files
 
@@ -48,7 +48,7 @@ you will need to copy and paste in Power BI Desktop. While you can copy
 and paste DAX and M code from this manual, some students will find it
 easier to copy the code from these text files instead.
 
-<img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image2.png" style="width:50%" />
+<img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image2.png" style="width:65%" />
 
 ### Lab Exercise Table of Contents
 - [Exercise 1: Creating and Testing Metadata Translations](#exercise-1-creating-and-testing-metadata-translations)
