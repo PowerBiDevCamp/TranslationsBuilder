@@ -367,7 +367,7 @@ existing translations with newly-generated machine translations.
 
 14. You should now see that the empty cells for all secondary languages have been populated with machine-generated translations.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image50.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image50.png" style="width:55%" />
 
 > Now, it’s time once again to test your work in the Power BI Service,
 
