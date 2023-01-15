@@ -15,7 +15,7 @@ so you can test out the translations you’ve added to the PBIX project to
 ensure they display correctly when loaded using different languages and
 locales.
 
-### Prerequisites
+## Prerequisites
 
 - **Prerequisite 1**: This lab assumes you're experienced with Power BI
 Desktop and you know how to build queries, datasets and reports.
@@ -36,7 +36,7 @@ properly for reports in the shared capacity.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image1.png" style="width:40%" />
 
-### Student Files
+## Student Files
 These hands-on lab instructions are accompanied by a set of files in a ZIP
 archive named **StudentFiles.zip** that you can download from
 [**HERE**](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/StudentFiles.zip).
@@ -50,7 +50,7 @@ easier to copy the code from these text files in the **Snippets** folder instead
 
 > This lab manual is also available for download in either **[DOCX](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/Hands-on%20Lab%20-%20Building%20Multi-language%20Reports%20for%20Power%20BI.docx)** or **[PDF](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/Hands-on%20Lab%20-%20Building%20Multi-language%20Reports%20for%20Power%20BI.pdf)** format.
 
-### Lab Exercise Table of Contents
+## Lab Exercises
 - [Exercise 1: Creating and Testing Metadata Translations](#exercise-1-creating-and-testing-metadata-translations)
 - [Exercise 2: Generating Machine Translations](#exercise-2-generating-machine-translations)
 - [Exercise 3: Creating and Testing Report Label Translations](#exercise-3-creating-and-testing-report-label-translations)
@@ -58,7 +58,7 @@ easier to copy the code from these text files in the **Snippets** folder instead
 - [Exercise 5: Implementing Data Translations using Field Parameters](#exercise-5-implementing-data-translations-using-field-parameters)
 - [Exercise 6: Implementing Data Translations for a Calendar Table](#exercise-6-implementing-data-translations-for-a-calendar-table)
 
-## Exercise 1: Creating and Testing Metadata Translations
+# Exercise 1: Creating and Testing Metadata Translations
 > In this exercise, you will begin by downloading a PBIX file with a
 simple data model and a report with three pages. You will publish the
 project to the Power BI Service to set up a workflow process to test
@@ -280,7 +280,7 @@ this report in both English and Spanish. Leave Power BI Desktop and
 Translations Builder open as you will continue using them in the next
 exercise.
 
-## Exercise 2: Generating Machine Translations
+# Exercise 2: Generating Machine Translations
 > In this lab you will configure Translations Builder to support
 generating machine translations using the Azure Translator Service.
 While machine translations might not provide the level of quality
@@ -443,7 +443,7 @@ tested metadata translations to display the names of columns and
 measures in four different languages. In the next exercise, you will
 move ahead to implement report label translations.
 
-## Exercise 3: Creating and Testing Report Label Translations
+# Exercise 3: Creating and Testing Report Label Translations
 > In this exercise, you will work through the process of adding report
 label translations. You will add translations for the report title,
 navigation button captions and the title of a visual. This will give you
