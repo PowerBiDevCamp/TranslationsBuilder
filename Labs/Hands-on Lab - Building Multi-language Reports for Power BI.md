@@ -215,7 +215,7 @@ Just add any text so that no translations remains empty.
 
 28. When you are done with your edits, the Spanish translations should match the following screenshot (or not).
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image27.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image27.png" style="width:40%" />
 
 29. Return to the **Product Sales** project in Power BI Desktop and save your work by clicking the **Save** button.
 
