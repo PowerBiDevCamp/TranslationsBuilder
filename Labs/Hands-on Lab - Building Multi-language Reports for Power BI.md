@@ -455,21 +455,21 @@ translations.
 
 2.  Make sure the current page is **Sales Summary**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png" style="width:60%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png" style="width:50%" />
 
 3. Examine the **Product Sales Report** label which is displayed using a Rectangle shape object.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image62.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image62.png" style="width:90%" />
 
 4. Examine the three buttons which provide the navigation menu allowing users to switch between pages.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image63.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image63.png" style="width:90%" />
 
 5. Move back to Translations Builder and drop down the **Generate Translated Tables** menu.
 
 6. Select the **Create Localized Labels Table** to create the **Localized Labels Table**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image64.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image64.png" style="width:40%" />
 
 7. When you create the **Localized Labels** table, you will be prompted with the following dialog. Click **<u>N</u>o** to continue.
 
