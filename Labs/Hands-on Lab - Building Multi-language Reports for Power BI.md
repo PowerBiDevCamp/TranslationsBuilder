@@ -473,62 +473,37 @@ translations.
 
 7. When you create the **Localized Labels** table, you will be prompted with the following dialog. Click **<u>N</u>o** to continue.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image65.png"
-style="width:1.97019in;height:0.92424in"
-alt="Graphical user interface, application Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image65.png" style="width:70%" />
 
-If you click **<u>Y</u>es**, you will be redirected to [this web
-page](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Building%20Multi-language%20Reports%20in%20Power%20BI.md#understanding-the-localized-labels-table)
-which provides a detailed explanation of the Localized Labels table
-strategy.
+If you click **<u>Y</u>es**, you will be redirected to [this web page](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Building%20Multi-language%20Reports%20in%20Power%20BI.md#understanding-the-localized-labels-table)
+which provides a detailed explanation of the **Localized Labels** table strategy.
 
-72. Once Translations Builder has created the **Localized Labels**
-    table, it will also add three sample report labels.
+8. Once Translations Builder has created the **Localized Labels** table, it will also add three sample report labels.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image66.png"
-style="width:3.22057in;height:1.93413in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image66.png" style="width:70%" />
 
-Over the next few steps, you will delete these three sample report
-labels and replace them by adding five report labels of your own.
+> Over the next few steps, you will delete these three sample report labels and replace them by adding five report labels of your own.
 
-73. Drop down the **Generate Translated Tables** menu and select click
-    **Add Labels to the Localized Labels Table**.
+9. Drop down the **Generate Translated Tables** menu and select click **Add Labels to the Localized Labels Table**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image67.png"
-style="width:3.16079in;height:1.1761in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image67.png" style="width:70%" />
 
-Note you can also execute the **Add Labels to the Localized Labels
-Table** command using the shortcut key of **Ctrl+A**.
+> Note you can also execute the **Add Labels to the Localized Labels Table** command using the shortcut key of **Ctrl+A**.
 
-74. In the **Add Localized Labels** dialog, click the **Advanced Mode**
-    checkbox.
+10. In the **Add Localized Labels** dialog, click the **Advanced Mode** checkbox.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image68.png"
-style="width:3.08805in;height:1.00151in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image68.png" style="width:70%" />
 
-75. Once the dialog is in **Advanced Mode**, click the **Delete All
-    Labels** button to remove the sample report labels.
+11. Once the dialog is in **Advanced Mode**, click the **Delete All Labels** button to remove the sample report labels.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image69.png"
-style="width:3.01587in;height:1.87223in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image69.png" style="width:70%" />
 
-76. In the **Labels** textbox, type the following labels separated by
-    line breaks.
-
-    - **Product Sales Report**
-
-    - **Sales Summary**
-
-    - **Sales By Category**
-
-    - **Sales Over Time**
-
-    - **Top Selling Products**
+12. In the **Labels** textbox, type the following labels separated by line breaks.
+- **Product Sales Report**
+- **Sales Summary**
+- **Sales By Category**
+- **Sales Over Time**
+- **Top Selling Products**
 
 77. Click the **Add Labels** button to add the five new report labels to
     your project.
