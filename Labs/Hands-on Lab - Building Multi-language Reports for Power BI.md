@@ -37,7 +37,7 @@ properly for reports in the shared capacity.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image1.png" style="width:40%" />
 
 ### Student Files
-These hands-on lab instructions are accompanied by a set of student files in a ZIP
+These hands-on lab instructions are accompanied by a set of files in a ZIP
 archive named **StudentFiles.zip** that you can download from
 [**HERE**](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/Labs/StudentFiles.zip).
 The **StudentFiles** folder inside the ZIP archive contain a completed solution for each of the six lab exercises in the form of a PBIX project file. There is also a
