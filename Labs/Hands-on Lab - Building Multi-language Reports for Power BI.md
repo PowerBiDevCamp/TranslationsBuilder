@@ -302,218 +302,134 @@ working on these lab exercises up through February 28, 2023.
 
 1.  Return to Translations Builder and drop down the **Dataset Connection** menu.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image37.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image37.png" style="width:40%" />
 
 2. Select the **Configure Settings…** menu command to display the **Configuration Options** dialog.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image38.png" style="width:40%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image38.png" style="width:35%" />
 
-42. In the **Configuration Options** dialog, enter the **Key** and
-    **Location** for the Azure Translator Service.
+3. In the **Configuration Options** dialog, enter the **Key** and **Location** for the Azure Translator Service.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image39.png"
-style="width:3.93631in;height:2.15278in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image39.png" style="width:70%" />
 
-43. Once you have added the **Key** and **Location**, click **Save
-    Changes**.
+4. Once you have added the **Key** and **Location**, click **Save Changes**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image40.png"
-style="width:4.1835in;height:1.57857in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image40.png" style="width:70%" />
 
-44. After you have configured the **Key** and **Location** for the Azure
-    Translator Service, new command will appear on the main window.
+5. After you have configured the **Key** and **Location** for the Azure Translator Service, new command will appear on the main window.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image41.png"
-style="width:4.89189in;height:1.42612in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image41.png" style="width:70%" />
 
-Now that you have added support for generating machine translations,
-it’s time to put that automatic translation support to work!
+> Now that you have added support for generating machine translations, it’s time to put that automatic translation support to work!
 
-45. Click the **Add Language** button to add your second secondary
-    language.
+6. Click the **Add Language** button to add your second secondary language.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image42.png"
-style="width:5.01622in;height:1.48747in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image42.png" style="width:70%" />
 
-You can hold down the **CTRL** key in the **Add Language** dialog while
-selecting languages to enable multiple selection
+> You can hold down the **CTRL** key in the **Add Language** dialog while selecting languages to enable multiple selection.
 
-46. Hold down the **CTRL**, and select **French** and **German**. And
-    then click **Add Language**.
+7. Hold down the **CTRL**, and select **French** and **German** and then click **Add Language**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image43.png"
-style="width:1.93651in;height:1.98687in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image43.png" style="width:70%" />
 
-47. You should now see the two new languages appear in the **Secondary
-    Languages** list.
+8. You should now see the two new languages appear in the **Secondary Languages** list.
 
-48. You will also notice that new columns have been added to the
-    translation grid for each new language.
+9. You will also notice that new columns have been added to the translation grid for each new language.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image44.png"
-style="width:6.82302in;height:2.26486in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image44.png" style="width:70%" />
 
-49. In the **Machine Translations – Single Language** section, select
-    **French \[fr-FR\]** from the drop down menu.
+10. In the **Machine Translations – Single Language** section, select **French \[fr-FR\]** from the drop down menu.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image45.png"
-style="width:5.28108in;height:1.4318in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image45.png" style="width:70%" />
 
-50. Once you have selected **French \[fr-FR\]**, click **Generate
-    Translations** to create French translations for all rows in the
-    grid.
+11. Once you have selected **French \[fr-FR\]**, click **Generate Translations** to create French translations for all rows in the grid.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image46.png"
-style="width:5.31892in;height:1.51849in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image46.png" style="width:70%" />
 
-51. As the code runs to interact with the Azure Translator Service, the
-    **Generating machine translation** dialog shows the progress.
+12. As the code runs to interact with the Azure Translator Service, the **Generating machine translation** dialog shows the progress.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image47.png"
-style="width:5.10349in;height:2.21517in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image47.png" style="width:70%" />
 
-52. Once this dialog closes, you should see all cells the French column
-    has been filled with machine-generated translations.
+13. Once this dialog closes, you should see all cells the French column has been filled with machine-generated translations.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image48.png"
-style="width:4.84344in;height:2.60714in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image48.png" style="width:70%" />
 
-If your Spanish translations are less than perfect, you can use the same
-technique to replace what you have with machine translations.
+> If your Spanish translations are less than perfect, you can use the same technique to replace what you have with machine translations.
 
-53. Click the **Fill All Empty Translation** button in the **Machine
-    Translations - All Languages** section.
+14. Click the **Fill All Empty Translation** button in the **Machine Translations - All Languages** section.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image49.png"
-style="width:4.72143in;height:1.32522in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image49.png" style="width:70%" />
 
-In this scenario, you want to use the **Fill All Empty Translation**
+> In this scenario, you want to use the **Fill All Empty Translation**
 command generate machine translations just for translations that are
 empty. Use the **Generate All Translations** command to replace all
 existing translations with newly-generated machine translations.
 
-54. You should now see that the empty cells for all secondary languages
-    have been populated with machine-generated translations.
+15. You should now see that the empty cells for all secondary languages have been populated with machine-generated translations.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image50.png"
-style="width:3.96429in;height:1.88924in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image50.png" style="width:70%" />
 
-Now, it’s time once again to test your work in the Power BI Service,
+> Now, it’s time once again to test your work in the Power BI Service,
 
-55. Return to the **Product Sales** project in Power BI Desktop and save
-    your work by clicking the **Save** button.
+16. Return to the **Product Sales** project in Power BI Desktop and save your work by clicking the **Save** button.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image51.png"
-style="width:3.50794in;height:0.95039in"
-alt="A screenshot of a computer Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image51.png" style="width:70%" />
 
-Don’t forget to save your work! Did we mention it’s easy to forget which
-can inadvertently lead to you losing your work.
+> Don’t forget to save your work! Did we mention it’s easy to forget which can inadvertently lead to you losing your work.
 
-56. Publish the **Product Sales project** to push the changes to the
-    project’s translations to the Power BI Service.
+17. Publish the **Product Sales project** to push the changes to the project’s translations to the Power BI Service.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image52.png"
-style="width:5.31606in;height:0.88108in"
-alt="Graphical user interface, application Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image52.png" style="width:70%" />
 
-57. When prompted by the **Replace this dataset?** Dialog, click the
-    **Replace** button to continue.
+18. When prompted by the **Replace this dataset?** Dialog, click the **Replace** button to continue.
 
-58. Once you see **Success!**, click **Open ‘Product Sales.pbx’ in Power
-    BI** to view the report in the Power BI Service.
+19. Once you see **Success!**, click **Open ‘Product Sales.pbx’ in Power BI** to view the report in the Power BI Service.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image53.png"
-style="width:2.1611in;height:1.34982in"
-alt="Graphical user interface, text, application, email Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image53.png" style="width:70%" />
 
-59. The report should load as normal showing all text in English at
-    first.
+20. The report should load as normal showing all text in English at first.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image54.png"
-style="width:3.42535in;height:2.2214in"
-alt="Graphical user interface, chart Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image54.png" style="width:70%" />
 
-Now, it’s time to test your French and German translations using the
-**language** query string parameter to load the report.
+> Now, it’s time to test your French and German translations using the **language** query string parameter to load the report.
 
-60. Click the browser address bar and add the **language** parameter
-    value of **fr-FR** for French to the end of the report URL.
+21. Click the browser address bar and add the **language** parameter value of **fr-FR** for French to the end of the report URL.
 
-/?language=fr-FR
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **?language=fr-FR**
 
-61. When the report reloads, you should see the UI experience for the
-    Power BI Service UI switch from English to French.
+22. When the report reloads, you should see the UI experience for the Power BI Service UI switch from English to French.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image55.png"
-style="width:5.70811in;height:0.98903in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image55.png" style="width:70%" />
 
-62. Verify the column and measure names used in all three visuals are
-    displayed with French translations.
+23. Verify the column and measure names used in all three visuals are displayed with French translations.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image56.png"
-style="width:3.71394in;height:2.07936in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image56.png" style="width:70%" />
 
-Now that you have tested the French translations, it’s time to test
-German.
+> Now that you have tested the French translations, it’s time to test German.
 
-63. Click the browser address bar and add the **language** parameter
-    value of **de-DE** for German to the end of the report URL.
+24. Click the browser address bar and add the **language** parameter value of **de-DE** for German to the end of the report URL.
 
-/?language=de-DE
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **?language=de-DE**
 
-64. When the report reloads, you should see the UI experience for the
-    Power BI Service UI switch to German.
+64. When the report reloads, you should see the UI experience for the Power BI Service UI switch to German.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image57.png"
-style="width:5.1746in;height:1.01928in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image57.png" style="width:70%" />
 
-65. Verify the column and measure names in columns headings are
-    displayed with the German translations.
+25. Verify the column and measure names in columns headings are displayed with the German translations.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image58.png"
-style="width:3.75044in;height:2.13333in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image58.png" style="width:70%" />
 
-Take a moment to appreciate how the date and numeric formatting
-automatically changes across all four regional locales.
+> Take a moment to appreciate how the date and numeric formatting automatically changes across all four regional locales.
+> <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image59.png" style="70%" />
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image59.png"
-style="width:4.41772in;height:1.26209in" />
+26. As a final step in this exercise, add a browser bookmark for each language with a **language** parameter at the end.
 
-66. As a final step in this exercise, add a browser bookmark for each
-    language with a **language** parameter at the end.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image60.png" style="width:70%" />
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image60.png"
-style="width:6.04403in;height:1.18864in" />
+> Creating a browser bookmark for each language might take a minute or two to set up at first. However, it will save lots of time in the long run
+as you continue to test the translations you create for this report in the lab work that remains ahead.
 
-Creating a browser bookmark for each language might take a minute or two
-to set up at first. However, it will save lots of time in the long run
-as you continue to test the translations you create for this report in
-the lab work that remains ahead.
-
-In the previous step you created bookmark in the browser to easily test
+>In this exercise, you created bookmarks in the browser because they make it easier when testing 
 the report using different languages. Later in Exercise 5, you will
 create bookmarks inside the context of the report in the **Product
 Sales** project. To avoid any potential confusions, these lab exercises
@@ -522,12 +438,12 @@ bookmark you have just created in the browser. These lab exercises will
 use the term ***report bookmark*** when referring to the type of
 bookmark that is created in a Power BI report.
 
-Let's summarize where you are at. You have now successfully created and
+> Let's summarize where you are at. You have now successfully created and
 tested metadata translations to display the names of columns and
 measures in four different languages. In the next exercise, you will
 move ahead to implement report label translations.
 
-### Exercise 3: Creating and Testing Report Label Translations
+## Exercise 3: Creating and Testing Report Label Translations
 
 In this exercise, you will work through the process of adding report
 label translations. You will add translations for the report title,
