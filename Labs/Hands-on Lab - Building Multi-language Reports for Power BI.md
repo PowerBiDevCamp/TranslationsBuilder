@@ -85,15 +85,13 @@ and measure names in the dataset.
 5.  Navigate to the second page named **Sales By Category** and examine
     its contents and layout.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image6.png" style="width:60%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image6.png" style="width:70%" />
 
 > Data translations for product names and category names will be addressed in **Exercise 5**.
 
 6.  Navigate to the third page named **Sales Over Time** and examine its contents and layout.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image7.png"
-style="width:4.22581in;height:2.56798in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image7.png" style="width:70%" />
 
 Data Translations for month names and day names will be addressed in
 **Exercise 6**.
