@@ -1449,11 +1449,11 @@ values. You will correct the slicer's behavior in the next step
 
 92. The slicer visual should now display the three category names using data translations in German.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image209.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image209.png" style="width:90%" />
 
 93. Now experiment by switching the report-level filter on the **Languages** table to view the page in each of the supported languages.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image210.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image210.png" style="width:90%" />
 
 > You have now implemented data translations for product names and
 category names. The next step is to create a set of report bookmarks
@@ -1462,15 +1462,15 @@ report load time.
 
 94. From the **View** tab, click the **Bookmarks** button to display the **Bookmarks** pane.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image211.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image211.png" style="width:90%" />
 
 95. Set the report-level filter on the **Languages** table to **English** and then click the **Add** button in the **Bookmarks** pane.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image212.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image212.png" style="width:90%" />
 
 96. You should see a new report bookmark has been created named **Bookmark4**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image213.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image213.png" style="width:40%" />
 
 97. Rename the new report bookmark to **SetLanguageEnglish**.
 
