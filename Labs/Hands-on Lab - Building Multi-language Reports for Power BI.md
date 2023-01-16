@@ -928,7 +928,7 @@ master translation sheet.
 
 37. In the **Open** file dialog, select **Product Sales-Translations-Master.csv** and click **Open**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image128.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image128.png" style="width:60%" />
 
 38. You should see that the original, machine-generated Spanish translations are now back in the translation grid.
 
