@@ -868,13 +868,13 @@ of translation sheets to be sent to translators.
 
 25. You should see that a sperate translation sheet has been generated for each secondary language.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image120.png" style="width:60" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image120.png" style="width:60%" />
 
 > Now that you have experienced how to export translation sheets, you will now learn how to import translation sheets.
 
 26. In the **Outbox** folder, select **Product Sales-Translations-Master.csv** and **Product Sales-Translations-Spanish.csv**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image121.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image121.png" style="width:60%" />
 
 27. Copy the two selected translation sheet files to the Windows clipboard.
 
