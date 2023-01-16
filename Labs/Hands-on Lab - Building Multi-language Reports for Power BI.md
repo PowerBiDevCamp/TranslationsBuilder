@@ -1837,7 +1837,7 @@ steps should already be familiar.
 
 26. Name the Field Parameter **Translated Month Names** and add the translation columns from **Translated Month Names Table**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image260.png" style="width:40%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image260.png" style="width:46%" />
 
 27. Switch to **Data** view and select **Translated Month Names** in the **Data** pane so you can view its DAX expression.
 
