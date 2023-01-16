@@ -1812,19 +1812,19 @@ or from the **Snippets** folder inside the **StudentFiles** folder.
 
 21. Create a one-to-many relationship between **Translated Day Names Table** and **Calendar** based on the **DayNumber** column.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image255.png" style="width:30%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image255.png" style="width:40%" />
 
 22. Create a one-to-many relationship between **Translated Month Names Table** and **Calendar** based on the **MonthNumber** column.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image256.png" style="width:30%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image256.png" style="width:40%" />
 
 23. Hide **Translated Day Names Table** and **Translated Month Names Table** so they do not appear in **Report** view.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image257.png" style="width:30%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image257.png" style="width:40%" />
 
 24. Switch to **Report** view and navigate to the **Sales Over Time** page.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image258.png" style="width:90%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image258.png" style="width:70%" />
 
 > Now you need to create two new Field Parameters to implement data
 translations for month names and day names. However, you have created
