@@ -1023,7 +1023,7 @@ translations.
 
 11. Switch to **Report** view and create a new page in the report. Rename the new page **Test Page**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image142.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image142.png" style="width:54%" />
 
 > This test page will be used temporarily to test out the Field Parameter. You will delete this page later in this exercise.
 
