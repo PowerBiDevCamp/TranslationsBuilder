@@ -499,11 +499,11 @@ which provides a detailed explanation of the **Localized Labels** table strategy
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image69.png" style="width:47%" />
 
 12. In the **Labels** textbox, type the following labels separated by line breaks.
-  - **Product Sales Report**
-  - **Sales Summary**
-  - **Sales By Category**
-  - **Sales Over Time**
-  - **Top Selling Products**
+   - **Product Sales Report**
+   - **Sales Summary**
+   - **Sales By Category**
+   - **Sales Over Time**
+   - **Top Selling Products**
 
 13. Click the **Add Labels** button to add the five new report labels to your project.
 
