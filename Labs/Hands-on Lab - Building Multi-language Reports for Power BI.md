@@ -1500,7 +1500,7 @@ report load time.
 
 103. Rename the report bookmark to **SetLanguageSpanish** and ensure that the only behavior that remains enable is **Data**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image220.png" style="width:25%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image220.png" style="width:35%" />
 
 104. Update the report-level filter on the **Languages** table to **French** and then click **Add** in the **Bookmarks** pane.
 
@@ -1512,21 +1512,21 @@ report load time.
 
 106. Update the report-level filter on the **Languages** table to **German** and then click **Add** in the **Bookmarks** pane.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image223.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image223.png" style="width:30%" />
 
 107. Rename the report bookmark to **SetLanguageGerman** and ensure that the only behavior that remains enable is **Data**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image224.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image224.png" style="width:30%" />
 
 108. Now you should be able to apply these report bookmarks to change the language for data translations.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image225.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image225.png" style="width:90%" />
 
 > Before testing the report in the Power BI Service, you should explicitly set the default language filter and the start page.
 
 109. Set the report-level filter on the **Languages** table to **English**. Also hide the **Languages** filter so it is not seen by report consumers.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image226.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image226.png" style="width:30%" />
 
 > Don't give users the option of changing this filter as it only change
 data translations but not the other two types of translations.
