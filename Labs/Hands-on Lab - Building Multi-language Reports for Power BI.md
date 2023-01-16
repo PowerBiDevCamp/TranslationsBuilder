@@ -1001,7 +1001,7 @@ translations.
 
 6. Right-click the **RemoveTranslatedColumns** step and select the **Delete** menu command to delete this step from the query.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image137.png" style="width:30%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image137.png" style="width:45%" />
 
 7. You should see the query's output table now contains four columns with translations for product names.
 
