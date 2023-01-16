@@ -455,7 +455,7 @@ translations.
 
 2.  Make sure the current page is **Sales Summary**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png" style="width:54%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png" style="width:60%" />
 
 3. Examine the **Product Sales Report** label which is displayed using a Rectangle shape object.
 
@@ -586,14 +586,13 @@ you execute **Generate Translated Localized Labels Table**.
 
 > Now that you've updated the Rectangle shape with the report title, it's time to make similar updates to the navigation buttons.
 
-30. Select the first button in the navigation menu with the caption of
-    **Sales Summary**.
+30. Select the first button in the navigation menu with the caption of **Sales Summary**.
 
 31. With the **Sales Summary** button selected, move to the **Format** pane and click the **Button** tab.
 
 32. Locate the **Text** section and the **Text** property inside with the literal text value of **Sales Summary**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image81.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image81.png" style="width:90%" />
 
 33. Click on the ***fx*** button to display the **Text - State** dialog.
 
