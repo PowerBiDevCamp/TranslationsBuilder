@@ -1283,7 +1283,7 @@ in
 
 55. Open the **Filters** pane and create a report-level filter based on the **Language** column from the **Languages** table.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image176.png" style="width:25%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image176.png" style="width:40%" />
 
 56. Enable the **Require single selection** filter option and set the filter to **Spanish**.
 
