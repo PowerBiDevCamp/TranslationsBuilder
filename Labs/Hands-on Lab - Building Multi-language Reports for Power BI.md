@@ -1086,7 +1086,7 @@ Desktop created the new Field Parameter.
 
 24. Switch to **Data** view.
 
-25. Select the top node for **Translated Product Names** to see the DAX expression that defines the Field Parameter's fields collection.
+25. Select the top-level node for **Translated Product Names** to see the DAX expression that defines the Field Parameter's fields collection.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image152.png" style="width:70%" />
 
