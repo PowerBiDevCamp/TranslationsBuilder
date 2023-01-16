@@ -556,7 +556,7 @@ you execute **Generate Translated Localized Labels Table**.
 
 22. Ensure that **Sales Summary** is still the active page in **Report** view.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png" style="width:55%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png" style="width:60%" />
 
 23. In the report layout, select the large black Rectangle shape that displays the report title **Product Sales Report**.
 
