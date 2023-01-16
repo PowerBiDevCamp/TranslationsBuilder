@@ -1715,9 +1715,9 @@ in
     QueryOutput
 ```
 
-If you have trouble copying the M code from this page, it might be easier to copy it from
-[here](https://raw.githubusercontent.com/PowerBiDevCamp/TranslationsBuilder/main/Labs/StudentFiles/Snippets/Translated%20Month%20Names%20Table.m.txt)
-or from the Student Files folder.
+> If you have trouble copying the M code from this page, it might be easier to copy it from
+**[here](https://raw.githubusercontent.com/PowerBiDevCamp/TranslationsBuilder/main/Labs/StudentFiles/Snippets/Translated%20Month%20Names%20Table.m.txt)**
+or from the **Snippets** folder inside the **StudentFiles** folder.
 
 7. Once you have copied the M code into the Advanced Editor, click **Done** to save your changes and execute the new query.
 
@@ -1776,10 +1776,9 @@ in
     QueryOutput
 ```
 
-If you have trouble copying this M code from this page, it might be
-easier to copy it from
-[here](https://raw.githubusercontent.com/PowerBiDevCamp/TranslationsBuilder/main/Labs/StudentFiles/Snippets/Translated%20Day%20Names%20Table.m.txt)
-or from the Student Files folder
+> If you have trouble copying this M code from this page, it might be easier to copy it from
+**[here](https://raw.githubusercontent.com/PowerBiDevCamp/TranslationsBuilder/main/Labs/StudentFiles/Snippets/Translated%20Day%20Names%20Table.m.txt)**
+or from the **Snippets** folder inside the **StudentFiles** folder.
 
 13. Once you have copied the M code into the Advanced Editor, click **Done** to save your changes and execute the new query.
 
