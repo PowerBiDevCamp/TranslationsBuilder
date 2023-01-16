@@ -882,7 +882,7 @@ of translation sheets to be sent to translators.
 
 29. Paste the two translation sheet files from the Windows clipboard into the **Inbox** folder.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image122.png" style="width:60%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image122.png" style="width:70%" />
 
 30. Open the translation sheet named **Inbox\Product Sales-Translations-Spanish.csv** in Microsoft Excel.
 
