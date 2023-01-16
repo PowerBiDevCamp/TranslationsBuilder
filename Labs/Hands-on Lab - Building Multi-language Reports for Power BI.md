@@ -1378,11 +1378,11 @@ Translated Category Names = {
 
 76. Create a one-to-one relationship between **Translated Category Names** and **Languages** based on the **LanguageId** column.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image194.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image194.png" style="width:40%" />
 
 77. Hide the column **LanguageId** in **Translated Category Names** so it does not show up in **Report** view.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image195.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image195.png" style="width:40%" />
 
 78. Switch to **Report** view and then navigate to the **Sales By Category** page.
 
@@ -1408,16 +1408,16 @@ Translated Category Names = {
 
 84. You should now see data translations for German in the Y-axis and in the legend.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image201.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image201.png" style="width:50%" />
 
 85. Select the Matrix visual and verify it uses the **Product** column and the **Category** column from the **Products** table.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image202.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image202.png" style="width:60%" />
 
 86. Update the **Rows** data role of the Matrix visual to use **Product** from **Translated Product Names** and **Category** from
      **Translated Category Names**. You should now see data translations for German for category names.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image203.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image203.png" style="width:90%" />
 
 87. Click the **Expand** button with the pitchfork icon to drill down and display product names.
 
