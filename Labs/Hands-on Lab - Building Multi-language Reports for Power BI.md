@@ -486,7 +486,7 @@ which provides a detailed explanation of the **Localized Labels** table strategy
 
 9. Drop down the **Generate Translated Tables** menu and select click **Add Labels to the Localized Labels Table**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image67.png" style="width:40%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image67.png" style="width:48%" />
 
 > Note you can also execute the **Add Labels to the Localized Labels Table** command using the shortcut key of **Ctrl+A**.
 
@@ -528,7 +528,7 @@ measures that will be used to surface report labels on a report.
 
 17. Drop down the **Generate Translated Tables** menu and select click **Generate Translated Localized Labels Table**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image73.png" style="width:40%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image73.png" style="width:48%" />
 
 > Note you can also execute the **Generate Translated Localized Labels
 Table** command using the shortcut key of **Ctrl+L**.
