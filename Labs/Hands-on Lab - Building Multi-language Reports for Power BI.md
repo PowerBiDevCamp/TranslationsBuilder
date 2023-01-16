@@ -1661,6 +1661,8 @@ the names of months or weekdays.
 
 <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image241.png" style="width:90%" />
 
+> Now that you understand the theory, it's time to put that theory into practice. 
+
 1.  From the **Home** tab on the ribbon, click **Transform Data** to display the Power Query window with queries for the current project.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image242.png" style="width:70%" />
