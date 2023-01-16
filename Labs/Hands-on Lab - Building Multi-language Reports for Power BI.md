@@ -492,11 +492,11 @@ which provides a detailed explanation of the **Localized Labels** table strategy
 
 10. In the **Add Localized Labels** dialog, click the **Advanced Mode** checkbox.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image68.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image68.png" style="width:47%" />
 
 11. Once the dialog is in **Advanced Mode**, click the **Delete All Labels** button to remove the sample report labels.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image69.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image69.png" style="width:47%" />
 
 12. In the **Labels** textbox, type the following labels separated by line breaks.
   - **Product Sales Report**
@@ -507,7 +507,7 @@ which provides a detailed explanation of the **Localized Labels** table strategy
 
 13. Click the **Add Labels** button to add the five new report labels to your project.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image70.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image70.png" style="width:47%" />
 
 14. You should now see five new rows have been added to the translations grid for the new report labels.
 
