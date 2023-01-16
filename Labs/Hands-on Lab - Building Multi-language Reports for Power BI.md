@@ -473,7 +473,7 @@ translations.
 
 7. When you create the **Localized Labels** table, you will be prompted with the following dialog. Click **<u>N</u>o** to continue.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image65.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image65.png" style="width:40%" />
 
 > If you click **<u>Y</u>es**, you will be redirected to [this web page](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Building%20Multi-language%20Reports%20in%20Power%20BI.md#understanding-the-localized-labels-table)
 which provides a detailed explanation of the **Localized Labels** table strategy.
