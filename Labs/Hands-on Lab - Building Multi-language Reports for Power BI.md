@@ -612,11 +612,11 @@ you execute **Generate Translated Localized Labels Table**.
 
 39. Select the **Sales By Category Label** measure from the **Translated Localized Labels** table.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image84.png" style="width:30%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image84.png" style="width:27%" />
 
 40. Select the third button in the navigation menu with the caption of **Sales Over Time**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image85.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image85.png" style="width:90%" />
 
 41. With the **Sales Over Time** button selected, move to the **Format** pane and click the **Button** tab.
 
