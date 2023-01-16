@@ -830,7 +830,7 @@ wherever they are required.
 
 18. Click the **Export All Translations** button to export a master translation sheet with the translations for all languages.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image114.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image114.png" style="width:46%" />
 
 > Translations Builder creates a translation sheet named **Product Sales-Translations-Master.csv** and opens this CSV file in Excel
 
