@@ -949,7 +949,7 @@ exist in the current project.
 
 40. When prompted by the **Confirm Delete Secondary Language Operation** dialog, click **OK** to continue.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image131.png" style="width:40%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image131.png" style="width:30%" />
 
 > The **Delete Secondary Language** command is useful when you'd like to
 remove a secondary language and all its translations from the current
@@ -957,7 +957,7 @@ PBIX project.
 
 41. You should see that the column for French has been removed from the translations grid.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image132.png" style="width:7o%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image132.png" style="width:60%" />
 
 Now that you have removed all French translations, you will restore them
 by importing the master translation sheet.
