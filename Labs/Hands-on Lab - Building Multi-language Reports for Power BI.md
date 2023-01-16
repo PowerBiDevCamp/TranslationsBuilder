@@ -1221,7 +1221,7 @@ translations strategy by adding the **Languages** table.
 
 44. The Advanced Editor window will initially contain a minimal amount of M code.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image167.png" style="width:70" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image167.png" style="width:40" />
 
 45. Copy and paste the following M code into the Advanced Editor window
 
