@@ -1404,7 +1404,7 @@ Translated Category Names = {
 
 83. Update the Bar chart visual to use **Category** from **Translated Category Names**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image200.png" style="width:90%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image200.png" style="width:40%" />
 
 84. You should now see data translations for German in the Y-axis and in the legend.
 
