@@ -537,13 +537,13 @@ Table** command using the shortcut key of **Ctrl+L**.
 
 19. Locate the **Translated Localized Labels** table in the **Fields** list.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image74.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image74.png" style="width:90%" />
 
 > The measures in the **Translated Localized Labels** table are used to display report labels on a Power BI report.
 
 20. Select the measure named **Product Sales Report Label** and examine the DAX expression behind this measure.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image75.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image75.png" style="width:90%" />
 
 > You should not edit the DAX expressions of any measures in the
 **Translated Localized Labels** table. Any changes you make will be lost
@@ -556,7 +556,7 @@ you execute **Generate Translated Localized Labels Table**.
 
 22. Ensure that **Sales Summary** is still the active page in **Report** view.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png" style="width:50%" />
 
 23. In the report layout, select the large black Rectangle shape that displays the report title **Product Sales Report**.
 
