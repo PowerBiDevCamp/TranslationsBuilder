@@ -496,7 +496,7 @@ which provides a detailed explanation of the **Localized Labels** table strategy
 
 11. Once the dialog is in **Advanced Mode**, click the **Delete All Labels** button to remove the sample report labels.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image69.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image69.png" style="width:50%" />
 
 12. In the **Labels** textbox, type the following labels separated by line breaks.
   - **Product Sales Report**
