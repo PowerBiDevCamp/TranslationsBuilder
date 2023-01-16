@@ -122,7 +122,7 @@ and measure names in the dataset.
 
 12. The report named **Product Sales** should appear like the report shown in the screenshot below.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image13.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image13.png" style="width:90%" />
 
 13. Navigate to the two other pages using the navigation buttons in the toolbar under the report title.
 
