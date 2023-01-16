@@ -469,7 +469,7 @@ translations.
 
 6. Select the **Create Localized Labels Table** to create the **Localized Labels Table**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image64.png" style="width:40%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image64.png" style="width:48%" />
 
 7. When you create the **Localized Labels** table, you will be prompted with the following dialog. Click **<u>N</u>o** to continue.
 
