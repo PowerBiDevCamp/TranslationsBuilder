@@ -1368,7 +1368,7 @@ Translated Category Names = {
 
 73. Configure the **LanguageId** column to use **SortOrder** as its sort column.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image192.png" style="width:90%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image192.png" style="width:78%" />
 
 74. Switch to **Model** view.
 
