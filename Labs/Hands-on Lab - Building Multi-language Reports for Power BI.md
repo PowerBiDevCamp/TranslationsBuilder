@@ -789,38 +789,38 @@ back from translators, you add them to the **Inbox** for import.
 
 10. Examine what’s inside the **Export/Import Translations** section.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image107.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image107.png" style="width:80%" />
 
 > Let’s start by creating a translation sheet for a single language.
 
 11. Drop down the selection menu under the **Export Translations Sheet** button and select **German \[de-DE\]**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image108.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image108.png" style="width:50%" />
 
 12. After selecting **German \[de-DE\]**, click the **Export Translations Sheet** button.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image109.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image109.png" style="width:50%" />
 
 > Translations Builder should create a translation sheet named **Product Sales-Translations-German.csv** and open it in Excel
 
 13. Examine the contents of **Product Sales-Translations-German.csv**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image110.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image110.png" style="width:50%" />
 
 > Over the next two steps you will use a trick in Excel to widen the
 columns so ou can see all their contents.
 
 14. Click on the top left corner where the row headers and the column headers meet. This should select all columns and rows.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image111.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image111.png" style="width:50%" />
 
 15. Double-click on the column heading divider between the column headers showing **A** and **B**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image112.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image112.png" style="width:50%" />
 
 16. You should now be able to see all the text from each column.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image113.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image113.png" style="width:50%" />
 
 > This translation sheet is what you will send to translators. They can
 then use Excel to review the machine translations and make changes
@@ -830,7 +830,7 @@ wherever they are required.
 
 18. Click the **Export All Translations** button to export a master translation sheet with the translations for all languages.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image114.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image114.png" style="width:50%" />
 
 > Translations Builder creates a translation sheet named **Product Sales-Translations-Master.csv** and opens this CSV file in Excel
 
