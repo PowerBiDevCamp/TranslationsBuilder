@@ -1017,7 +1017,7 @@ translations.
 
 10. Switch to **Model** view to see the changes that have been made to the **Products** table.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image141.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image141.png" style="width:60%" />
 
 > Now that the dataset has been extended with extra translation columns, it's time to create a new Field Parameter.
 
