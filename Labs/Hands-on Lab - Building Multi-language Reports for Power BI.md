@@ -1360,7 +1360,7 @@ Translated Category Names = {
 
 71. You should see that a new column has been added named **Value4**.
 
-<img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image190.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image190.png" style="width:90%" />
 
 72. Rename the **Value4** field to **LanguageId**.
 
