@@ -7,8 +7,11 @@ build and test a multi-language report for Power BI. You will start by
 downloading a PBIX project file named **Product Sales.pbix** and opening
 it in Power BI Desktop. Once you have opened the **Product Sales**
 project, you will launch Translations Builder and move through the steps
-to add metadata translations and report label translations. In later
-exercises you will also learn how to implement data translations. At
+to add metadata translations and report label translations. The six lab exercises 
+build on one another so that you will work with a single PBIX project file
+to experience the end-to-end process building datasets and reports that support multiple languages. 
+
+> In later exercises you will also learn how to implement data translations. At
 various milestones in this lab, you will be required to publish the
 **Product Sales** project from Power BI Desktop to the Power BI Service
 so you can test out the translations you’ve added to the PBIX project to
