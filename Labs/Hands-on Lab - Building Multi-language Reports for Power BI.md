@@ -1183,7 +1183,7 @@ additional columns such as **LanguageId**.
 
 38. Hide the **LanguageId** column from **Report** view. Report authors will never need to see or use this column in a report.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image161.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image161.png" style="width:40%" />
 
 > At this point, you no longer need the slicer that was automatically
 added by Power BI Desktop when creating the Field Parameter. While the
@@ -1194,7 +1194,7 @@ across multiple Field Parameters.
 
 39. Delete the page you created earlier in this exercise named **Test Page**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image162.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image162.png" style="width:50%" />
 
 > Let's summarize where you are at. You have created a Field Parameter
 named **Translated Product Names** and extended it with an extra column
@@ -1205,15 +1205,15 @@ translations strategy by adding the **Languages** table.
 
 40. Create a new query by dropping down the **Get data** menu and selecting **Blank query**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image163.png" style="70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image163.png" style="50%" />
 
 41. You should see the Power Query window open with a new query named **Query1**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image164.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image164.png" style="width:90%" />
 
 42. Rename the new query from **Query1** to **Languages**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image165.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image165.png" style="width:90%" />
 
 43. From the **Home** tab, click the **Advanced Editor** button to display the Advanced Editor window for the **Languages** query.
 
