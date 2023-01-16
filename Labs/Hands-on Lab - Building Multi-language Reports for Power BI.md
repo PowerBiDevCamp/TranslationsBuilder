@@ -1299,11 +1299,11 @@ in
 
 59. Remove the **Product** column from the **Products** table and replace it with the **Product** field from **Translated Product Names**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image179.png" style="width:40%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image179.png" style="width:32%" />
 
 60. You should now see the data translations in the Column chart display in Spanish.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image180.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image180.png" style="width:40%" />
 
 61. Select the Table visual on the right. You can see that it is also using the **Product** column from the **Products** table.
 
