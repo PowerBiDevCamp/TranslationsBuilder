@@ -1588,41 +1588,41 @@ German
 
 121. Add the **bookmarkGuid** values into the text editor to record the URL parameters you need to load each of the four languages.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image231.png" style="width:60%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image231.png" style="width:80%" />
 
 122. Edit each of the four browser bookmarks you created earlier by adding the **bookmarkGuid** parameter to load data translations.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image232.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image232.png" style="width:40%" />
 
 123. For each browser bookmark, add the **bookmarkGuid** parameter in addition to **language** to apply the correct report bookmark.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image233.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image233.png" style="width:50%" />
 
 > Now all four browser bookmarks should pass the appropriate **bookmarkGuid** parameter value to load data translations correctly.
 
 124. Click the browser bookmark for **Spanish**. The **Sales Summary** page should now be fully translated into Spanish.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image234.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image234.png" style="width:90%" />
 
 125. Navigate to the **Sales By Category** page. This page should also be fully translated into Spanish.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image235.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image235.png" style="width:90%" />
 
 126. Click the browser bookmark for **French**. The **Sales Summary** page should now be fully translated into French.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image236.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image236.png" style="width:90%" />
 
 127. Navigate to the **Sales By Category** page. This page should also be fully translated into French.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image237.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image237.png" style="width:90%" />
 
 128. Click the browser bookmark for **German**. The **Sales Summary** page should now be fully translated into German.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image238.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image238.png" style="width:90%" />
 
 129. Navigate to the **Sales By Category** page. This page should also be fully translated into German.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image239.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image239.png" style="width:90%" />
 
 > You have now successfully implemented and tested the data translations
 for product names and category names. However, your work is not yet
@@ -1631,7 +1631,7 @@ calendar names that require your attention.
 
 130. Navigate the **Sales Over Time** page. You can see that the names of months and days are still in English.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image240.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image240.png" style="width:90%" />
 
 > You will now move on to the final exercise where you will implement data
 translations for the names of months and days of the week..
