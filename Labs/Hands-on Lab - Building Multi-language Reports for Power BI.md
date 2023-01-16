@@ -1790,15 +1790,15 @@ or from the **Snippets** folder inside the **StudentFiles** folder.
 
 15. Click **Close & Apply** to close the Power Query window and to add two new tables to the project's data model.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image140.png" style="width:60%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image140.png" style="width:50%" />
 
 16. Switch to **Data** view and locate **Translated Month Names Table** and **Translated Day Names Table** in the **Data** pane.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image251.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image251.png" style="width:90%" />
 
 17. Select **Translated Month Names Table** and configure all four translation columns to use **MonthNumber** as their sort column.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image252.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image252.png" style="width:90%" />
 
 18. Select **Translated Day Names Table** and configure all four translation columns to use **DayNumber** as their sort column.
 
