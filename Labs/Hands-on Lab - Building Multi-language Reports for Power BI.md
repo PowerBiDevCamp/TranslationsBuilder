@@ -572,17 +572,17 @@ you execute **Generate Translated Localized Labels Table**.
 
 26. Click on the ***fx*** button to the right of the textbox to replace the literal string value.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image78.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image78.png" style="width:40%" />
 
 27. In the **Text – Style** dialog, select **Field value** as the **Format style**.
 
 28. Drop down the select control with the caption of **What field should we base this on?**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image79.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image79.png" style="width:40%" />
 
 29. Select the **Product Sales Report Label** measure from the **Translated Localized Labels** table and click **OK**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image80.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image80.png" style="width:40%" />
 
 > Now that you've updated the Rectangle shape with the report title, it's time to make similar updates to the navigation buttons.
 
