@@ -1837,7 +1837,7 @@ steps should already be familiar.
 
 26. Name the Field Parameter **Translated Month Names** and add the translation columns from **Translated Month Names Table**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image260.png" style="width:30%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image260.png" style="width:40%" />
 
 27. Switch to **Data** view and select **Translated Month Names** in the **Data** pane so you can view its DAX expression.
 
@@ -1860,7 +1860,7 @@ Translated Month Names = {
 
 30. Update the field names inside **Translated Month Names** to **Month**. **Fields**, **SortOrder** and **LanguageId**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image263.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image263.png" style="width:90%" />
 
 31. Configure the **LanguageId** column to use **SortOrder** as its sort column.
 
@@ -1876,11 +1876,11 @@ Translated Month Names = {
 
 34. Name the Field Parameter **Translated Day Names** and add the translation columns from **Translated Day Names Table**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image265.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image265.png" style="width:40%" />
 
 35. Switch to **Data** view and select **Translated Day Names** in the **Data** pane so you can view its DAX expression.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image266.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image266.png" style="width:90%" />
 
 36. Update the DAX expression for **Translated Day Names** with the following DAX code.
 
