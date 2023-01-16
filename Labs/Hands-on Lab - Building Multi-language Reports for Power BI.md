@@ -122,11 +122,11 @@ and measure names in the dataset.
 
 12. The report named **Product Sales** should appear like the report shown in the screenshot below.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image13.png" style="width:90%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image13.png" style="width:80%" />
 
 13. Navigate to the two other pages using the navigation buttons in the toolbar under the report title.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image14.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image14.png" style="width:80%" />
 
 > Now it’s time to begin adding translations. As you begin to add
 translations to a PBIX project, you will often follow this set of
