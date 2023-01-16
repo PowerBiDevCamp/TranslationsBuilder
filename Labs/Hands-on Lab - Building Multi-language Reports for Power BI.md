@@ -715,6 +715,8 @@ translations. Now you need to prepare the report for deployment
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image98.png" style="width:70% />
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image97.png" style="width:70%" />
+
 > You have now implemented report label translations using the
 Translations Builder Localized Label table strategy. You should be able
 to see that this will add a significant level of productivity to your
