@@ -1163,15 +1163,15 @@ Translated Product Names = {
 
 34. Once you've updated the DAX expression with a language identifier for each language, a new column will appear named **Value4**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image158.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image158.png" style="width:90%" />
 
 35. Rename the **Value4** column to **LanguageId**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image159.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image159.png" style="width:90%" />
 
 36. Finally, don't forget to configure the sort column for the new column named **LanguageId**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image160.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image160.png" style="width:90%" />
 
 > You do not have to worry about configuring the sort column for the two
 pre-existing fields named **Fields** and **Product**. That is done
@@ -1183,7 +1183,7 @@ additional columns such as **LanguageId**.
 
 38. Hide the **LanguageId** column from **Report** view. Report authors will never need to see or use this column in a report.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image161.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image161.png" style="width:50%" />
 
 > At this point, you no longer need the slicer that was automatically
 added by Power BI Desktop when creating the Field Parameter. While the
