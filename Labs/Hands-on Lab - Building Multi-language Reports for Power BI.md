@@ -1969,7 +1969,7 @@ be shown to reporter authors in **Report** view.
 
 58. Set the report-level filter on the languages table to **English**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image280.png" style="width:30%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image280.png" style="width:25%" />
 
 59. Navigate back to the **Sales Summary** page and make it active before saving to ensure this page is the startup page.
 
