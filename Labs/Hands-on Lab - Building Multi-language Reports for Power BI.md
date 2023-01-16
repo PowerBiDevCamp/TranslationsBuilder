@@ -722,8 +722,7 @@ future efforts to build Power BI reports that support multiple
 languages.
 
 ## Exercise 4: Creating a Workflow Process To Gather and Integrate Human Translations
-
-Up to this point, you have done the work required to get the report and
+> Up to this point, you have done the work required to get the report and
 its underlying dataset into a structure to support translations for
 secondary languages. You were able to complete this work in a quick and
 efficient manner using Translations Builder together with
@@ -732,7 +731,7 @@ machine-generated translations alone will not be adequate for many
 production scenarios. You will need a way to integrate other people
 acting as translators into a human workflow process.
 
-In this lab exercise, you will work with the Translations Builder
+> In this lab exercise, you will work with the Translations Builder
 features to export and import translations using a CSV file format. This
 will provide a quick way to generate translations sheets that can be
 sent to human translators. As you will see, translators can make their
@@ -741,44 +740,31 @@ received an updated translation sheet back from a translator,
 Translations Builder provides an import operation to integrate those
 updated translations back into the dataset of the current project.
 
-**Prerequisite**: To complete this exercise, you will need Microsoft
+> **Prerequisite**: To complete this exercise, you will need Microsoft
 Excel installed on the same PC that's running Translations Builder.
 
-1.  Launch Windows Explorer and navigate to the folder where you copied
-    the project file **Product Sales.pbix**.
+1.  Launch Windows Explorer and navigate to the folder where you copied the project file **Product Sales.pbix**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image99.png"
-style="width:2.84476in;height:1.09043in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image99.png" style="width:70%" />
 
-132. Create two new folders inside the lab folder named **Outbox** and
-     **Inbox**.
+2. Create two new folders inside the lab folder named **Outbox** and **Inbox**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image100.png"
-style="width:3.34921in;height:1.4654in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image100.png" style="width:70%" />
 
-Next, you need to configure settings in Translations Builder so that
-these folders are used as targets for export and import operations.
+> Next, you need to configure settings in Translations Builder so that these folders are used as targets for export and import operations.
 
-133. Return to Translations Builder and drop down the **Dataset
+3. Return to Translations Builder and drop down the **Dataset
      Connection** menu.
 
-134. Click **Configure Settings…** to display the **Configuration
-     Options** dialog.
+4. Click **Configure Settings…** to display the **Configuration Options** dialog.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image101.png"
-style="width:2.43649in;height:1.1761in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image101.png" style="width:70%" />
 
-135. By default, folder paths for the **Outbox** and **Inbox** are
-     configured to target the current user’s **Documents** folder.
+5. By default, folder paths for the **Outbox** and **Inbox** are configured to target the current user’s **Documents** folder.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image102.png"
-style="width:3.39in;height:1.33in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image102.png" style="width:70%" />
 
-Why does **Outbox** come before **Inbox**? That’s because you generally
+> Why does **Outbox** come before **Inbox**? That’s because you generally
 work with the **Outbox** first when you export translation sheets that
 you will send to translators. Once you get updated translations sheets
 back from translators, you add them to the **Inbox** for import.
