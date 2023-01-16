@@ -1923,11 +1923,11 @@ Translated Day Names = {
 
 45. Switch to **Report** view, navigate to the **Sales Over Time** page and inspect the two new Field Parameters in the **Fields** pane.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image273.png" style="width:30%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image273.png" style="width:25%" />
 
 46. Display the **Filter** pane if it's not already showing and set the filter on the **Languages** table to **Spanish**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image274.png" style="width:35%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image274.png" style="width:30%" />
 
 47. Select the Column chart on the left which displays **Sales Revenue by Month and** **Year**.
 
@@ -1947,11 +1947,11 @@ Translated Day Names = {
 
 53. In the **Columns** data role, replace **Month** from the **Calendar** table with **Month** from **Translated Month Names**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image277.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image277.png" style="width:90%" />
 
 54. Now you can test the data translations for each language by switching the filter on the **Languages** table.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image278.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image278.png" style="width:90%" />
 
 > Now that you have completed the work to implement data translations, you
 will clean up the data model by hiding several columns that should not
@@ -1969,15 +1969,15 @@ be shown to reporter authors in **Report** view.
 
 58. Set the report-level filter on the languages table to **English**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image280.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image280.png" style="width:30%" />
 
 59. Navigate back to the **Sales Summary** page and make it active before saving to ensure this page is the startup page.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png" style="width:50%" />
 
 60. Save your work by clicking the **Save** button.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image51.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image51.png" style="width:50%" />
 
 > Now, it’s time once again to test your work in the Power BI Service.
 
@@ -1995,19 +1995,19 @@ be shown to reporter authors in **Report** view.
 
 66. Verify that the data translations are loading Spanish names for the names of months and days in all three visuals.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image281.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image281.png" style="width:90%" />
 
 67. Click on the browser book for **French**. Once the report has loaded, navigate to the **Sales Over Time** page.
 
 68. Verify that the data translations are loading French names for the names of months and days in all three visuals.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image282.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image282.png" style="width:90%" />
 
 69. Click on the browser book for **German**. Once the report has loaded, navigate to the **Sales Over Time** page.
 
 70. Verify that the data translations are loading German names for the names of months and days in all three visuals.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image283.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image283.png" style="width:90%" />
 
 >Congratulations. You have now completed this hands-on lab and you can
 now begin using your newfound localization skills in working with
