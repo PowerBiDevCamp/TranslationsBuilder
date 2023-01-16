@@ -25,8 +25,8 @@ Desktop and you know how to build queries, datasets and reports.
 
 - **Prerequisite 2**: This lab assumes you’ve already installed
 Translations Builder. If you haven’t installed Translations Builder yet,
-you must follow steps in the [Translations Builder Installation
-Guide](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Installation%20Guide.md)
+you must follow steps in the **[Translations Builder Installation
+Guide](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Installation%20Guide.md)**
 before continuing with these lab exercises.
 
 - **Prerequisite 3**: To complete this lab, you will need a Power BI
