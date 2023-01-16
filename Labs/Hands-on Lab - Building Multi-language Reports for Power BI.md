@@ -745,11 +745,11 @@ Excel installed on the same PC that's running Translations Builder.
 
 1.  Launch Windows Explorer and navigate to the folder where you copied the project file **Product Sales.pbix**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image99.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image99.png" style="width:50%" />
 
 2. Create two new folders inside the lab folder named **Outbox** and **Inbox**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image100.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image100.png" style="width:50%" />
 
 > Next, you need to configure settings in Translations Builder so that these folders are used as targets for export and import operations.
 
