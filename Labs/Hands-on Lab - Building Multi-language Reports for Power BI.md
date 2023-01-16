@@ -779,11 +779,11 @@ back from translators, you add them to the **Inbox** for import.
 8. Click the **set** button for **Translations Inbox Folder Path** and
      select the **Inbox** folder you created earlier
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image105.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image105.png" style="width:50%" />
 
 9. Click **Save Changes**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image106.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image106.png" style="width:50%" />
 
 > Now that you have configured the folder paths for the **Outbox** and **Inbox**, it’s time to begin exporting translation sheets.
 
