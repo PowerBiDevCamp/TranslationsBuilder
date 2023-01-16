@@ -1659,7 +1659,7 @@ current project. This makes it possible to write a query which uses the
 **Languages** table as its source to generate translation tables with
 the names of months or weekdays.
 
-<img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image241.png" style="width:60%" />
+<img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image241.png" style="width:90%" />
 
 1.  From the **Home** tab on the ribbon, click **Transform Data** to display the Power Query window with queries for the current project.
 
