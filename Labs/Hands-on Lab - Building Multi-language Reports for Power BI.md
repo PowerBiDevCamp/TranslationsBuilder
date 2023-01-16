@@ -1067,7 +1067,7 @@ translations.
 
 22. Add the child field from inside the Field Parameter into the **Columns** data role of the Table visual.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image150.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image150.png" style="width:90%" />
 
 > As long as nothing is selected in the slicer, the Table visual displays all four source columns.
 
