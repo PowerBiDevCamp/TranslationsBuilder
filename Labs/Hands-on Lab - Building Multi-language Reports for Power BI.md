@@ -1374,11 +1374,11 @@ Translated Category Names = {
 
 75. Reposition **Translated Category Names** so its underneath **Translated Product Names**. as shown in the following screenshot.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image193.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image193.png" style="width:90%" />
 
 76. Create a one-to-one relationship between **Translated Category Names** and **Languages** based on the **LanguageId** column.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image194.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image194.png" style="width:60%" />
 
 77. Hide the column **LanguageId** in **Translated Category Names** so it does not show up in **Report** view.
 
