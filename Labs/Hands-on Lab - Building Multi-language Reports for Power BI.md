@@ -945,11 +945,11 @@ exist in the current project.
 
 39. Right-click on the **French \[fr-FR\]** column header and click **Delete Secondary Language**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image130.png" style="width:60%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image130.png" style="width:80%" />
 
 40. When prompted by the **Confirm Delete Secondary Language Operation** dialog, click **OK** to continue.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image131.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image131.png" style="width:40%" />
 
 > The **Delete Secondary Language** command is useful when you'd like to
 remove a secondary language and all its translations from the current
