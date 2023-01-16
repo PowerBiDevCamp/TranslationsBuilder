@@ -1051,11 +1051,11 @@ translations.
 
 18. Examine the new Field Parameter named **Translated Product Names** in the **Fields** list.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image147.png" style="width:40%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image147.png" style="width:30%" />
 
 19. If you expand the node for **Translated Product Names**, you will see a single child field with the same name as the parent table.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image148.png" style="width:40%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image148.png" style="width:30%" />
 
 20. Select the top node for **Translated Product Names** in the **Fields** list to view the DAX expression that defines the fields collection.
 
