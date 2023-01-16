@@ -1276,7 +1276,7 @@ in
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image174.png" style="width:50%" />
 
-54. Switch to **Report** view and expand the nodes for **Translated Product Names** and **Languages** in **Fields** pane. Each of these
+54. Switch to **Report** view and expand the nodes in **Fields** pane for **Translated Product Names** and **Languages**. Each of these
      tables should now only display a single child field when in **Report** view.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image175.png" style="width:25%" />
@@ -1295,11 +1295,11 @@ in
 
 58. Select the Column chart on the left and verify it's using the **Product** column from the **Products** table for the **X-axis** data role.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image178.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image178.png" style="width:90%" />
 
 59. Remove the **Product** column from the **Products** table and replace it with the **Product** field from **Translated Product Names**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image179.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image179.png" style="width:40%" />
 
 60. You should now see the data translations in the Column chart display in Spanish.
 
