@@ -1194,7 +1194,7 @@ across multiple Field Parameters.
 
 39. Delete the page you created earlier in this exercise named **Test Page**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image162.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image162.png" style="width:60%" />
 
 > Let's summarize where you are at. You have created a Field Parameter
 named **Translated Product Names** and extended it with an extra column
@@ -1205,7 +1205,7 @@ translations strategy by adding the **Languages** table.
 
 40. Create a new query by dropping down the **Get data** menu and selecting **Blank query**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image163.png" style="50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image163.png" style="width:40%" />
 
 41. You should see the Power Query window open with a new query named **Query1**.
 
