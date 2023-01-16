@@ -1221,7 +1221,7 @@ translations strategy by adding the **Languages** table.
 
 44. The Advanced Editor window will initially contain a minimal amount of M code.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image167.png" style="width:40%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image167.png" style="width:54%" />
 
 45. Copy and paste the following M code into the Advanced Editor window
 
@@ -1246,7 +1246,7 @@ in
 
 46. Once you have copied the M code from above into the **Advanced Editor** window, click **Done** to save your changes.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image168.png" style="width:40%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image168.png" style="width:60%" />
 
 47. When the **Advanced Editor** window closes, the **Languages** query should run and generate an output table with four rows.
 
