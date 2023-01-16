@@ -1074,7 +1074,7 @@ translations.
 23. Select a specific field in the slicer. When you select a single slicer value such as the **ProductTranslationSpanish** field, the
      slicer applies filtering that reduces the number of columns displayed in the Table visual from four columns to a single column.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image151.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image151.png" style="width:80%" />
 
 > In the previous screenshot, you can see that the column values for
 product names have been translated into Spanish. However, there is still
@@ -1088,7 +1088,7 @@ Desktop created the new Field Parameter.
 
 25. Select the top-level node for **Translated Product Names** to see the DAX expression that defines the Field Parameter's fields collection.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image152.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image152.png" style="width:90%" />
 
 26. Currently, the DAX expression has hard-coded column names like **ProductTranslationEnglish** and **ProductTranslationSpanish**.
 
