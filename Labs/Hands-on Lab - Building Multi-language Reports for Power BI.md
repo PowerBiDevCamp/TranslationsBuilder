@@ -9,7 +9,7 @@ it in Power BI Desktop. Once you have opened the **Product Sales**
 project, you will launch Translations Builder and move through the steps
 to add metadata translations and report label translations. Each of the lab exercises 
 builds on the previous one. You will work on the same PBIX project file across all six exercises 
-to experience the end-to-end process building multi-lanuage reports with Power BI Desktop. 
+to experience the end-to-end process for building multi-lanuage reports with Power BI Desktop. 
  
 > In later exercises you will also learn how to implement data translations. At
 various milestones in this lab, you will be required to publish the
