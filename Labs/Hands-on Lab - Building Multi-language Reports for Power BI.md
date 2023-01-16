@@ -846,7 +846,7 @@ wherever they are required.
 
 21. In Windows Explorer, navigate to the **Outbox** folder. You should see the two files you generated using export operations.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image117.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image117.png" style="width:50%" />
 
 22. Return to Translations Builder and uncheck the checkbox with the caption **Open Export in Excel**.
 
