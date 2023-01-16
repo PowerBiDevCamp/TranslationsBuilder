@@ -753,8 +753,7 @@ Excel installed on the same PC that's running Translations Builder.
 
 > Next, you need to configure settings in Translations Builder so that these folders are used as targets for export and import operations.
 
-3. Return to Translations Builder and drop down the **Dataset
-     Connection** menu.
+3. Return to Translations Builder and drop down the **Dataset Connection** menu.
 
 4. Click **Configure Settings…** to display the **Configuration Options** dialog.
 
@@ -769,262 +768,173 @@ work with the **Outbox** first when you export translation sheets that
 you will send to translators. Once you get updated translations sheets
 back from translators, you add them to the **Inbox** for import.
 
-136. Click the **set** button to update the setting for **Translations
-     Outbox Folder Path**.
+6. Click the **set** button to update the setting for **Translations Outbox Folder Path**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image103.png"
-style="width:3.27in;height:1.28in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image103.png" style="width:70%" />
 
-137. Select the **Outbox** folder you created earlier in this exercise.
+7. Select the **Outbox** folder you created earlier in this exercise.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image104.png"
-style="width:2.84277in;height:1.59321in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image104.png" style="width:70%" />
 
-138. Click the **set** button for **Translations Inbox Folder Path** and
+8. Click the **set** button for **Translations Inbox Folder Path** and
      select the **Inbox** folder you created earlier
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image105.png"
-style="width:3.46in;height:1.39in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image105.png" style="width:70%" />
 
-139. Click **Save Changes**.
+9. Click **Save Changes**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image106.png"
-style="width:3.41in;height:1.37in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image106.png" style="width:70%" />
 
-Now that you have configured the folder paths for the **Outbox** and
-**Inbox**, it’s time to begin exporting translation sheets.
+> Now that you have configured the folder paths for the **Outbox** and **Inbox**, it’s time to begin exporting translation sheets.
 
-140. Examine what’s inside the **Export/Import Translations** section.
+10. Examine what’s inside the **Export/Import Translations** section.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image107.png"
-style="width:6.04352in;height:1.75in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image107.png" style="width:70%" />
 
-Let’s start by creating a translation sheet for a single language.
+> Let’s start by creating a translation sheet for a single language.
 
-141. Drop down the selection menu under the **Export Translations
-     Sheet** button and select **German \[de-DE\]**.
+11. Drop down the selection menu under the **Export Translations Sheet** button and select **German \[de-DE\]**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image108.png"
-style="width:2.83511in;height:1.00649in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image108.png" style="width:70%" />
 
-142. After selecting **German \[de-DE\]**, click the **Export
-     Translations Sheet** button.
+12. After selecting **German \[de-DE\]**, click the **Export Translations Sheet** button.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image109.png"
-style="width:2.87766in;height:1.05736in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image109.png" style="width:70%" />
 
-Translations Builder should create a translation sheet named **Product
-Sales-Translations-German.csv** and open it in Excel
+> Translations Builder should create a translation sheet named **Product Sales-Translations-German.csv** and open it in Excel
 
-143. Examine the contents of **Product Sales-Translations-German.csv**.
+13. Examine the contents of **Product Sales-Translations-German.csv**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image110.png"
-style="width:2.07937in;height:1.77051in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image110.png" style="width:70%" />
 
-Over the next two steps you will use a trick in Excel to widen the
+> Over the next two steps you will use a trick in Excel to widen the
 columns so ou can see all their contents.
 
-144. Click on the top left corner where the row headers and the column
-     headers meet. This should select all columns and rows.
+14. Click on the top left corner where the row headers and the column headers meet. This should select all columns and rows.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image111.png"
-style="width:2.83827in;height:1.5in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image111.png" style="width:70%" />
 
-145. Double-click on the column heading divider between the column
-     headers showing **A** and **B**.
+15. Double-click on the column heading divider between the column headers showing **A** and **B**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image112.png"
-style="width:3.46442in;height:1.42553in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image112.png" style="width:70%" />
 
-146. You should now be able to see all the text from each column.
+16. You should now be able to see all the text from each column.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image113.png"
-style="width:3in;height:1.8397in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image113.png" style="width:70%" />
 
-This translation sheet is what you will send to translators. They can
+> This translation sheet is what you will send to translators. They can
 then use Excel to review the machine translations and make changes
 wherever they are required.
 
-147. Close **Product Sales-Translations-German.csv** and return to
-     Translations Builder.
+17. Close **Product Sales-Translations-German.csv** and return to Translations Builder.
 
-148. Click the **Export All Translations** button to export a master
-     translation sheet with the translations for all languages.
+18. Click the **Export All Translations** button to export a master translation sheet with the translations for all languages.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image114.png"
-style="width:3.45213in;height:1.2704in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image114.png" style="width:70%" />
 
-Translations Builder creates a translation sheet named **Product
-Sales-Translations-Master.csv** and opens this CSV file in Excel
+> Translations Builder creates a translation sheet named **Product Sales-Translations-Master.csv** and opens this CSV file in Excel
 
-149. When **Product Sales-Translations-Master.csv** open in Microsoft
-     Excel, you cannot see the contents of all columns at first.
+19. When **Product Sales-Translations-Master.csv** open in Microsoft Excel, you cannot see the contents of all columns at first.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image115.png"
-style="width:3.73404in;height:2.12272in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image115.png" style="width:70%" />
 
-150. Use the Excel trick you learned earlier to expand all columns so
-     you can see the entire contents of all cells.
+20. Use the Excel trick you learned earlier to expand all columns so you can see the entire contents of all cells.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image116.png"
-style="width:3.75532in;height:1.43921in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image116.png" style="width:70%" />
 
-Now that you have learned to export translations sheets, it’s time to
-examine how to manage translation sheet files.
+> Now that you have learned to export translations sheets, it’s time to examine how to manage translation sheet files.
 
-151. In Windows Explorer, navigate to the **Outbox** folder. You should
-     see the two files you generated using export operations.
+21. In Windows Explorer, navigate to the **Outbox** folder. You should see the two files you generated using export operations.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image117.png"
-style="width:3.66489in;height:1.18261in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image117.png" style="width:70%" />
 
-152. Return to Translations Builder and uncheck the checkbox with the
-     caption **Open Export in Excel**.
+22. Return to Translations Builder and uncheck the checkbox with the caption **Open Export in Excel**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image118.png"
-style="width:3.4734in;height:1.28888in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image118.png" style="width:70%" />
 
-All three export commands use this checkbox to decide whether to open a
+>All three export commands use this checkbox to decide whether to open a
 translation sheet in Excel after it’s generated. In some cases, it’s
 handy to have the translation sheet open in Excel. In other scenarios
 like the one ahead, it’s unnecessary and distracting.
 
-153. Click the **Export All Translation Sheets** button.
+23. Click the **Export All Translation Sheets** button.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image119.png"
-style="width:3.47639in;height:1.26596in" />
+<img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image119.png" style="width:70%" />
 
-The **Export All Translation Sheets** command generates the complete set
+> The **Export All Translation Sheets** command generates the complete set
 of translation sheets to be sent to translators.
 
-154. Return to the **Outbox** folder in Windows Explorer.
+24. Return to the **Outbox** folder in Windows Explorer.
 
-155. You should see that a sperate translation sheet has been generated
-     for each secondary language.
+25. You should see that a sperate translation sheet has been generated for each secondary language.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image120.png"
-style="width:3.68847in;height:1.14308in"
-alt="Graphical user interface, text, application, email Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image120.png" style="width:70" />
 
-Now that you have experienced how to export translation sheets, you will
-now learn how to import translation sheets.
+> Now that you have experienced how to export translation sheets, you will now learn how to import translation sheets.
 
-156. In the **Outbox** folder, select **Product
-     Sales-Translations-Master.csv** and **Product
-     Sales-Translations-Spanish.csv**.
+26. In the **Outbox** folder, select **Product Sales-Translations-Master.csv** and **Product Sales-Translations-Spanish.csv**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image121.png"
-style="width:3.82846in;height:1.20809in"
-alt="Graphical user interface, text, application, email Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image121.png" style="width:70%" />
 
-157. Copy the two selected translation sheet files to the Windows
-     clipboard.
+27. Copy the two selected translation sheet files to the Windows clipboard.
 
-158. Navigate from the **Outbox** folder to the **Inbox** folder.
+28. Navigate from the **Outbox** folder to the **Inbox** folder.
 
-159. Paste the two translation sheet files from the Windows clipboard
-     into the **Inbox** folder.
+29. Paste the two translation sheet files from the Windows clipboard into the **Inbox** folder.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image122.png"
-style="width:5.5903in;height:1.56891in"
-alt="Graphical user interface, application Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image122.png" style="width:70%" />
 
-160. Open the translation sheet named **Inbox\Product
-     Sales-Translations-Spanish.csv** in Microsoft Excel.
+30. Open the translation sheet named **Inbox\Product Sales-Translations-Spanish.csv** in Microsoft Excel.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image123.png"
-style="width:5.30838in;height:1.8883in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image123.png" style="width:70%" />
 
-The job of the translator is to review all translations in the fifth
+> The job of the translator is to review all translations in the fifth
 column and to make updates where appropriate. From the perspective of
 the translator, the top row with column headers and the first four
 columns should be treated as read-only values.
 
-161. Enter new values for a few Spanish translations in the fifth column
-     as shown in the following screenshot.
+31. Enter new values for a few Spanish translations in the fifth column as shown in the following screenshot.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image124.png"
-style="width:5.43617in;height:1.7582in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image124.png" style="width:70%" />
 
-Don’t worry whether the text values you add are valid translations. You
+> Don’t worry whether the text values you add are valid translations. You -->
 just need to add text that is different for testing purposes.
 
-162. Save your changes to **Product Sales-Translations-Spanish.csv** and
-     then close the file in Microsoft Excel.
+32. Save your changes to **Product Sales-Translations-Spanish.csv** and then close the file in Microsoft Excel.
 
-163. Return to Translations Builder and click the **Import
-     Translations** button.
+33. Return to Translations Builder and click the **Import Translations** button.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image125.png"
-style="width:3.41489in;height:1.28903in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image125.png" style="width:70%" />
 
-Remember to close translation sheet files in Microsoft Excel before
+> Remember to close translation sheet files in Microsoft Excel before
 importing them with Translations Builder to prevent errors.
 
-164. In the **Open** file dialog, select **Product
-     Sales-Translations-Spanish.csv** and click **Open**.
+34. In the **Open** file dialog, select **Product Sales-Translations-Spanish.csv** and click **Open**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image126.png"
-style="width:3.0798in;height:1.23363in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image126.png" style="width:70%" />
 
-165. You should see that your updates to the Spanish translation sheet
-     now appear in the translation grid.
+35. You should see that your updates to the Spanish translation sheet now appear in the translation grid.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image127.png"
-style="width:4.04762in;height:1.64791in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image127.png" style="width:70%" />
 
-Now that you have seen how to import translations for a single language
+> Now that you have seen how to import translations for a single language
 using an updated translations sheet, it’s time to move ahead and learn
 how to import translations for all languages at once by importing a
 master translation sheet.
 
-166. click the **Import Translations** button.
+36. click the **Import Translations** button.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image125.png"
-style="width:2.75532in;height:1.04005in"
-alt="Graphical user interface, application Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image125.png" style="width:70%" />
 
-167. In the **Open** file dialog, select **Product
-     Sales-Translations-Master.csv** and click **Open**.
+37. In the **Open** file dialog, select **Product Sales-Translations-Master.csv** and click **Open**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image128.png"
-style="width:3.53263in;height:1.50444in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image128.png" style="width:70%" />
 
-168. You should see that the original, machine-generated Spanish
-     translations are now back in the translation grid.
+38. You should see that the original, machine-generated Spanish translations are now back in the translation grid.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image129.png"
-style="width:5.73585in;height:1.0537in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image129.png" style="width:70%" />
 
-You can see that the master translation sheet can provide a great way to
+> You can see that the master translation sheet can provide a great way to
 backup and restore your translations work. To make this point, you are
 now going to delete the French column from the translations grid which
 will remove all the French translations from the current project. As you
@@ -1033,48 +943,34 @@ all its translations back into the project when importing a translation
 sheet that contains translations for a secondary language that do not
 exist in the current project.
 
-169. Right-click on the **French \[fr-FR\]** column header and click
-     **Delete Secondary Language**.
+39. Right-click on the **French \[fr-FR\]** column header and click **Delete Secondary Language**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image130.png"
-style="width:6.82097in;height:1.07447in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image130.png" style="width:60%" />
 
-170. When prompted by the **Confirm Delete Secondary Language
-     Operation** dialog, click **OK** to continue.
+40. When prompted by the **Confirm Delete Secondary Language Operation** dialog, click **OK** to continue.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image131.png"
-style="width:2.44669in;height:1.00575in"
-alt="Graphical user interface, application Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image131.png" style="width:70%" />
 
-The **Delete Secondary Language** command is useful when you'd like to
+> The **Delete Secondary Language** command is useful when you'd like to
 remove a secondary language and all its translations from the current
 PBIX project.
 
-171. You should see that the column for French has been removed from the
-     translations grid.
+41. You should see that the column for French has been removed from the translations grid.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image132.png"
-style="width:6.66002in;height:1.27128in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image132.png" style="width:7o%" />
 
 Now that you have removed all French translations, you will restore them
 by importing the master translation sheet.
 
-172. Click the **Import Translations** button.
+42. Click the **Import Translations** button.
 
-173. In the **Open** file dialog, select **Product
-     Sales-Translations-Master.csv** and click **Open**.
+43. In the **Open** file dialog, select **Product Sales-Translations-Master.csv** and click **Open**.
 
-174. After the import operation competes, the **French \[fr-FR\]**
-     column should reappear as the last column on the right.
+44. After the import operation competes, the **French \[fr-FR\]** column should reappear as the last column on the right.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image133.png"
-style="width:7.1773in;height:3.0566in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image133.png" style="width:70%" />
 
-The key takeaway with this last step is that master translation sheets
+> The key takeaway with this last step is that master translation sheets
 make it possible to backup and restore all localization work.
 
 ## Exercise 5: Implementing Data Translations using Field Parameters
