@@ -582,7 +582,7 @@ you execute **Generate Translated Localized Labels Table**.
 
 29. Select the **Product Sales Report Label** measure from the **Translated Localized Labels** table and click **OK**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image80.png" style="width:40%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image80.png" style="width:50%" />
 
 > Now that you've updated the Rectangle shape with the report title, it's time to make similar updates to the navigation buttons.
 
