@@ -626,7 +626,7 @@ you execute **Generate Translated Localized Labels Table**.
 
 44. Select the **Sales Over Time Label** measure from the **Translated Localized Labels** table.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image86.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image86.png" style="width:27%" />
 
 > You have just implemented report label translations for the report title and for navigation button captions on the **Sales Summary** page.
 However, there is a separate Rectangle shape with the report title and a separate set of navigation buttons for each page in the report.
@@ -652,7 +652,7 @@ However, there is a separate Rectangle shape with the report title and a separat
 
 50. Select the **Top Selling Products Label** measure from the **Translated Localized Labels** table.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image90.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image90.png" style="width:27%" />
 
 51. Navigate to the third page named **Sales Over Time**.
 
