@@ -1129,7 +1129,7 @@ hidden from **Report** view.
 
 30. Expand the top-level node for **Translated Product Names** and examine the fields inside.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image155.png" style="width:25%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image155.png" style="width:40%" />
 
 > The names of the fields inside a Field Parameter are automatically
 generated based on the name you gave to the top-level Field Parameter.
