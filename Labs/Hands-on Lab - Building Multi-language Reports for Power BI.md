@@ -993,11 +993,11 @@ translations.
 
 4. In the left navigation of the Power Query window, select the **Products** query and examine the columns in its output table.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image135.png" style="width:90%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image135.png" style="width:94%" />
 
 5. Examine the query steps in the **APPLIED STEPS** list on the right and locate the step named **RemoveTranslatedColumns**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image136.png" style="width:32%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image136.png" style="width:30%" />
 
 6. Right-click the **RemoveTranslatedColumns** step and select the **Delete** menu command to delete this step from the query.
 
