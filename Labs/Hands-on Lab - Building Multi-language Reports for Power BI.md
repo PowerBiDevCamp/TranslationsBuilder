@@ -566,253 +566,157 @@ you execute **Generate Translated Localized Labels Table**.
 
 25. Expand the **Text** section to see the **Text** property is configured with the literal string value of **Product Sales Report**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image77.png"
-style="width:1.94611in;height:0.62599in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image77.png" style="width:70%" />
 
-Literal string values in a report layout cannot be localized. You will
-replace this string using a measure with dynamic translations.
+> Literal string values in a report layout cannot be localized. You will replace this string using a measure with dynamic translations.
 
-90. Click on the ***fx*** button to the right of the textbox to replace
-    the literal string value.
+26. Click on the ***fx*** button to the right of the textbox to replace the literal string value.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image78.png"
-style="width:2.77098in;height:0.96825in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image78.png" style="width:70%" />
 
-91. In the **Text – Style** dialog, select **Field value** as the
-    **Format style**.
+27. In the **Text – Style** dialog, select **Field value** as the **Format style**.
 
-92. Drop down the select control with the caption of **What field should
-    we base this on?**
+28. Drop down the select control with the caption of **What field should we base this on?**
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image79.png"
-style="width:2.2026in;height:1.11111in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image79.png" style="width:70%" />
 
-93. Select the **Product Sales Report Label** measure from the
-    **Translated Localized Labels** table and click **OK**.
+29. Select the **Product Sales Report Label** measure from the **Translated Localized Labels** table and click **OK**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image80.png"
-style="width:3.33333in;height:2.45617in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image80.png" style="width:70%" />
 
-Now that you've updated the Rectangle shape with the report title, it's
-time to make similar updates to the navigation buttons.
+> Now that you've updated the Rectangle shape with the report title, it's time to make similar updates to the navigation buttons.
 
-94. Select the first button in the navigation menu with the caption of
+30. Select the first button in the navigation menu with the caption of
     **Sales Summary**.
 
-95. With the **Sales Summary** button selected, move to the **Format**
-    pane and click the **Button** tab.
+31. With the **Sales Summary** button selected, move to the **Format** pane and click the **Button** tab.
 
-96. Locate the **Text** section and the **Text** property inside with
-    the literal text value of **Sales Summary**.
+32. Locate the **Text** section and the **Text** property inside with the literal text value of **Sales Summary**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image81.png"
-style="width:5.80942in;height:2.56604in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image81.png" style="width:70%" />
 
-97. Click on the ***fx*** button to display the **Text - State** dialog.
+33. Click on the ***fx*** button to display the **Text - State** dialog.
 
-98. Select the **Sales Summary Label** measure from the **Translated
-    Localized Labels** table.
+34. Select the **Sales Summary Label** measure from the **Translated Localized Labels** table.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image82.png"
-style="width:3.11333in;height:1.95938in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image82.png" style="width:70%" />
 
-99. Select the second button in the navigation menu with the caption of
-    **Sales By Category**.
+35. Select the second button in the navigation menu with the caption of **Sales By Category**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image83.png"
-style="width:3.47333in;height:1.49391in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image83.png" style="width:70%" />
 
-100. With the **Sales By Category** button selected, move to the
-     **Format** pane and click the **Button** tab.
+36. With the **Sales By Category** button selected, move to the **Format** pane and click the **Button** tab.
 
-101. Locate the **Text** section and the **Text** property inside with
-     the literal text value of **Sales By Category**.
+37. Locate the **Text** section and the **Text** property inside with the literal text value of **Sales By Category**.
 
-102. Click on the ***fx*** button to display the **Text - State**
-     dialog.
+38. Click on the ***fx*** button to display the **Text - State** dialog.
 
-103. Select the **Sales By Category Label** measure from the
-     **Translated Localized Labels** table.
+39. Select the **Sales By Category Label** measure from the **Translated Localized Labels** table.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image84.png"
-style="width:1.37169in;height:1.45333in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image84.png" style="width:70%" />
 
-104. Select the third button in the navigation menu with the caption of
-     **Sales Over Time**.
+40. Select the third button in the navigation menu with the caption of **Sales Over Time**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image85.png"
-style="width:3.54667in;height:1.53795in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image85.png" style="width:70%" />
 
-105. With the **Sales Over Time** button selected, move to the
-     **Format** pane and click the **Button** tab.
+41. With the **Sales Over Time** button selected, move to the **Format** pane and click the **Button** tab.
 
-106. Locate the **Text** section and the **Text** property inside with
-     the literal text value of **Sales Over Time**.
+42. Locate the **Text** section and the **Text** property inside with the literal text value of **Sales Over Time**.
 
-107. Click on the ***fx*** button to display the **Text - State**
-     dialog.
+43. Click on the ***fx*** button to display the **Text - State** dialog.
 
-108. Select the **Sales Over Time Label** measure from the **Translated
-     Localized Labels** table.
+44. Select the **Sales Over Time Label** measure from the **Translated Localized Labels** table.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image86.png"
-style="width:1.16777in;height:1.25157in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image86.png" style="width:70%" />
 
-You have just implemented report label translations for the report title
-and for navigation button captions on the **Sales Summary** page.
-However, there is a separate Rectangle shape with the report title and a
-separate set of navigation buttons for each page in the report. Over the
-net few steps, you must repeat the work you did in the **Sales Summary**
-page on the other two pages.
+> You have just implemented report label translations for the report title and for navigation button captions on the **Sales Summary** page.
+However, there is a separate Rectangle shape with the report title and a separate set of navigation buttons for each page in the report.
+ Over the net few steps, you must repeat the work you did in the **Sales Summary** page on the other two pages.
 
-109. Navigate to the second page named **Sales By Category**.
+45. Navigate to the second page named **Sales By Category**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image87.png"
-style="width:3.82667in;height:0.48452in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image87.png" style="width:70%" />
 
-110. Repeat the same set of steps to display the report title and button
-     captions using measures from **Translated Localized Labels**.
+46. Repeat the same set of steps to display the report title and button captions using measures from **Translated Localized Labels**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image88.png"
-style="width:4.44in;height:1.16535in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image88.png" style="width:70%" />
 
-Remember the **Sales By Category** page has the visual with the
-hard-coded title. Now you will configure this visual to use a measure.
+> Remember the **Sales By Category** page has the visual with the hard-coded title. Now you will configure this visual to use a measure.
 
-111. Select the Bar Chart visual with the title **Top Selling
-     Products**.
+47. Select the Bar Chart visual with the title **Top Selling Products**.
 
-112. With the Table visual selected, move to the **Format** pane and
-     click the **General** tab.
+48. With the Table visual selected, move to the **Format** pane and click the **General** tab.
 
-113. Locate the **Title** section and the **Text** property inside with
-     the literal text value of **Top Selling Products**.
+49. Locate the **Title** section and the **Text** property inside with the literal text value of **Top Selling Products**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image89.png"
-style="width:4.80403in;height:1.64557in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image89.png" style="width:70%" />
 
-114. Select the **Top Selling Products Label** measure from the
-     **Translated Localized Labels** table.
+50. Select the **Top Selling Products Label** measure from the **Translated Localized Labels** table.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image90.png"
-style="width:1.54387in;height:1.65823in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image90.png" style="width:70%" />
 
-115. Navigate to the third page named **Sales Over Time**.
+51. Navigate to the third page named **Sales Over Time**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image91.png"
-style="width:3.89353in;height:0.55851in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image91.png" style="width:70%" />
 
-116. Repeat the same steps to display the report title and button
-     captions using measures from **Translated Localized Labels**.
+52. Repeat the same steps to display the report title and button captions using measures from **Translated Localized Labels**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image92.png"
-style="width:7.17419in;height:1.24468in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image92.png" style="width:70%" />
 
-You've now completed the work of updating visuals to use report label
+> You've now completed the work of updating visuals to use report label
 translations. Now you need to prepare the report for deployment
 
-117. Navigate back to the **Sales Summary** page before saving to ensure
-     this page is the startup page.
+53. Navigate back to the **Sales Summary** page before saving to ensure this page is the startup page.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png"
-style="width:4.00425in;height:0.54787in"
-alt="Graphical user interface, text, application, Word Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png" style="width:70%" />
 
-118. Save your work by clicking the **Save** button.
+54. Save your work by clicking the **Save** button.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image51.png"
-style="width:4.02482in;height:1.09043in"
-alt="A screenshot of a computer Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image51.png" style="width:70%" />
 
-Now, it’s once again time to test your work in the Power BI Service,
+> Now, it’s once again time to test your work in the Power BI Service,
 
-119. Publish the **Product Sales** project to push your changes to the
-     project’s translations to the Power BI Service.
+55. Publish the **Product Sales** project to push your changes to the project’s translations to the Power BI Service.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image52.png"
-style="width:6.35449in;height:1.05319in"
-alt="Graphical user interface, application Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image52.png" style="width:70%" />
 
-120. When prompted by the **Replace this dataset?** dialog, click the
-     **Replace** button to continue.
+56. When prompted by the **Replace this dataset?** dialog, click the **Replace** button to continue.
 
-121. Once you see **Success!**, click **Open ‘Product Sales’ in Power
-     BI** to view the report in the Power BI Service.
+57. Once you see **Success!**, click **Open ‘Product Sales’ in Power BI** to view the report in the Power BI Service.
 
-122. The report should load as normal showing all text in English at
-     first.
+58. The report should load as normal showing all text in English at first.
 
-123. Use the browser bookmark created earlier to load the report in
-     Spanish.
+59. Use the browser bookmark created earlier to load the report in Spanish.
 
-124. Verify the report title and navigation button captions are
-     displayed using Spanish translations.
+60. Verify the report title and navigation button captions are displayed using Spanish translations.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image93.png"
-style="width:5.54088in;height:1.38149in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image93.png" style="width:70%" />
 
-125. Navigate to the second page and verify the title for the **Top
-     Selling Products** visual is displayed using Spanish translations.
+61. Navigate to the second page and verify the title for the **Top Selling Products** visual is displayed using Spanish translations.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image94.png"
-style="width:6.16352in;height:1.01356in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image94.png" style="width:70%" />
 
-126. Use the browser bookmark created earlier to load the report in
-     French.
+62. Use the browser bookmark created earlier to load the report in French.
 
-127. Verify the report title and navigation button captions are
-     displayed using French translations.
+63. Verify the report title and navigation button captions are displayed using French translations.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image95.png"
-style="width:6.19479in;height:1.5266in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image95.png" style="width:70%" />
 
-128. Navigate to the second page and verify the title for the **Top
-     Selling Products** visual is displayed using French translations.
+64. Navigate to the second page and verify the title for the **Top Selling Products** visual is displayed using French translations.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image96.png"
-style="width:6.23936in;height:0.97147in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image96.png" style="width:70%" />
 
-129. Use the browser bookmark created earlier to load the report in
-     German.
+65. Use the browser bookmark created earlier to load the report in German.
 
-130. Verify the report title and navigation button captions are
-     displayed using German translations.
+66. Verify the report title and navigation button captions are displayed using German translations.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image97.png"
-style="width:6.10525in;height:1.48936in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image97.png" style="width:70%" />
 
-131. Navigate to the second page and verify the title for the **Top
-     Selling Products** visual is displayed using German translations.
+67. Navigate to the second page and verify the title for the **Top Selling Products** visual is displayed using German translations.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image98.png"
-style="width:6.20506in;height:1.64894in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image98.png" style="width:70% />
 
-You have now implemented report label translations using the
+> You have now implemented report label translations using the
 Translations Builder Localized Label table strategy. You should be able
 to see that this will add a significant level of productivity to your
 future efforts to build Power BI reports that support multiple
