@@ -1533,17 +1533,17 @@ data translations but not the other two types of translations.
 
 110. Navigate back to the **Sales Summary** page and make it active before saving to ensure this page is the startup page.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png" style="width:50%" />
 
 111. Save your work by clicking the **Save** button.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image51.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image51.png" style="width:50%" />
 
 > Now, it’s time once again to test your work in the Power BI Service.
 
 112. Publish the **Product Sales** project to push your changes to the project’s translations to the Power BI Service.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image52.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image52.png" style="width:60%" />
 
 113. When prompted by the **Replace this dataset?** dialog, click the **Replace** button to continue.
 
@@ -1551,19 +1551,19 @@ data translations but not the other two types of translations.
 
 115. The report should load as normal showing all text in English at first.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image227.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image227.png" style="width:90%" />
 
 116. Drop down the **Bookmarks** menu on the toolbar and select **Show more bookmarks** to display the **Bookmarks** pane.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image228.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image228.png" style="width:90%" />
 
 117. Experiment by applying each of the report bookmarks which set the language used for data translations.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image229.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image229.png" style="width:90%" />
 
 118. After applying a report bookmark, examine the report URL in the address bar and locate the **bookmarkGuid** parameter value
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image230.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image230.png" style="width:90%" />
 
 > Yes, we agree. The parameter name of **bookmarkGuid** isn't the best name. But you can think of the **bookmarkGuid** value as the identifier
 for a report bookmark which is generated in the format of **Bookmarkdfa67c1b956e45694481**.
@@ -1588,7 +1588,7 @@ German
 
 121. Add the **bookmarkGuid** values into the text editor to record the URL parameters you need to load each of the four languages.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image231.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image231.png" style="width:60%" />
 
 122. Edit each of the four browser bookmarks you created earlier by adding the **bookmarkGuid** parameter to load data translations.
 
