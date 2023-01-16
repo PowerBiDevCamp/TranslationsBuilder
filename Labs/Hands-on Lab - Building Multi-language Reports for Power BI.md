@@ -1323,17 +1323,17 @@ in
 
 64. Navigate to the **Modeling** tab and select **New parameter \>  Fields** to create a Field Parameter.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image184.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image184.png" style="width:60%" />
 
 65. Create a new Field Parameter named **Translated Category Names**. Populate the fields collection with the four columns from the
      **Products** table with category name translations and be sure to disable the **Add slicer to this page** option.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image185.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image185.png" style="width:40%" />
 
 66. Make sure the fields collection is sorted like the fields shown in
      the following screenshot and then click the **Create** button.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image186.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image186.png" style="width:30%" />
 
 67. Move to **Data** view and select the Field Parameter named **Translated Category Names** in the **Data** pane on the right.
 
