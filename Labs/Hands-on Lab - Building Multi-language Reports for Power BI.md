@@ -1318,8 +1318,8 @@ in
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image183.png" style="width:90%" />
 
-> Now you have just implemented data translations for product names. 
-  Now, you will continue by adding the same type of data translation support for category names as well.
+> You have just implemented data translations for product names. Moving upwards and onwards you will continue 
+ by adding the same type of data translation support for category names as well.
 
 64. Navigate to the **Modeling** tab and select **New parameter \>  Fields** to create a Field Parameter.
 
@@ -1643,61 +1643,45 @@ translations for columns in a calendar table, you need a strategy to
 translate month names and day-of-week names into the secondary languages
 you plan to support.
 
-The strategy presented in this lab exercise for implementing calendar
+>The strategy presented in this lab exercise for implementing calendar
 table column translations is based on Power Query and the power of the M
 query language. Power Query provides several built-in functions such as
 **Date.MonthName** which accept a **Date** parameter and return a
 text-based calendar name. The following Power Query function call will
 evaluate to a text-based value of January in French.
 
-**Date.MonthName( \#date(2022, 12, 1), "fr-FR")**
+> **Date.MonthName( \#date(2022, 12, 1), "fr-FR")**
 
-Power Query is built on a functional query language named M which makes
+> Power Query is built on a functional query language named M which makes
 it possible to enumerate through the rows of the **Languages** table to
 discover what languages and what default cultures are supported in the
 current project. This makes it possible to write a query which uses the
 **Languages** table as its source to generate translation tables with
 the names of months or weekdays.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image241.png"
-style="width:4.30159in;height:1.8135in"
-alt="Graphical user interface, application, table Description automatically generated" />
+> <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image241.png" style="width:60%" />
 
-1.  From the **Home** tab on the ribbon, click **Transform Data** to
-    display the Power Query window with queries for the current project.
+1.  From the **Home** tab on the ribbon, click **Transform Data** to display the Power Query window with queries for the current project.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image242.png"
-style="width:4.1746in;height:0.72752in"
-alt="Graphical user interface, application Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image242.png" style="width:70%" />
 
-302. In the left navigation of the Power Query window, select the
-     **Languages** query and examine the columns in its output table.
+2. In the left navigation of the Power Query window, select the **Languages** query and examine the columns in its output table.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image243.png"
-style="width:3.76974in;height:1.24901in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image243.png" style="width:70%" />
 
-303. Create a new query by dropping down the **New Source** menu and
-     selecting **Blank Query**.
+3. Create a new query by dropping down the **New Source** menu and selecting **Blank Query**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image244.png"
-style="width:4.22186in;height:2.16964in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image244.png" style="width:70%" />
 
-304. Rename the new query to **Translated Month Names Table**.
+4. Rename the new query to **Translated Month Names Table**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image245.png"
-style="width:4.53371in;height:1.43615in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image245.png" style="width:70%" />
 
-305. Click on the **Advanced Editor** button in the ribbon to open the
-     Advanced Editor widow.
+5. Click on the **Advanced Editor** button in the ribbon to open the Advanced Editor widow.
 
-306. Copy the following M code listing and paste it into the Advanced
-     Editor window.
+6. Copy the following M code listing and paste it into the Advanced Editor window.
 
+```
 let
 
 Source = \#table( type table \[ MonthNumber = Int64.Type \],
@@ -1761,44 +1745,33 @@ TypedColumnsCollection)
 in
 
 QueryOutput
+```
 
-If you have trouble copying the M code from this page, it might be
-easier to copy it from
-[here](https://raw.githubusercontent.com/PowerBiDevCamp/TranslationsBuilder/main/Labs/Snippets/Translated%20Month%20Names%20Table.m.txt)
+If you have trouble copying the M code from this page, it might be easier to copy it from
+[here](https://raw.githubusercontent.com/PowerBiDevCamp/TranslationsBuilder/main/Labs/StudentFiles/Snippets/Translated%20Month%20Names%20Table.m.txt)
 or from the Student Files folder.
 
-307. Once you have copied the M code into the Advanced Editor, click
-     **Done** to save your changes and execute the new query.
+7. Once you have copied the M code into the Advanced Editor, click **Done** to save your changes and execute the new query.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image246.png"
-style="width:4.02462in;height:2.66008in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image246.png" style="width:70%" />
 
-308. You should now see the output table of the **Translated Month Names
-     Table** query as shown in the following screenshot.
+8. You should now see the output table of the **Translated Month Names Table** query as shown in the following screenshot.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image247.png"
-style="width:4.74387in;height:1.5446in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image247.png" style="width:70%" />
 
-You have now created the translation table for month names. Next you
-will create a second table for day names.
+> You have now created the translation table for month names. Next you will create a second table for day names.
 
-309. Create a new query by dropping down the **New Source** menu and
-     selecting **Blank Query**.
+9. Create a new query by dropping down the **New Source** menu and selecting **Blank Query**.
 
-310. Rename the new query to **Translated Day Names Table**.
+10. Rename the new query to **Translated Day Names Table**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image248.png"
-style="width:5.38744in;height:1.47008in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image248.png" style="width:70%" />
 
-311. Click on the **Advanced Editor** button in the ribbon to open the
-     Advanced Editor widow.
+11. Click on the **Advanced Editor** button in the ribbon to open the Advanced Editor widow.
 
-312. Copy the following M code listing and paste it into the Advanced
-     Editor window.
+12. Copy the following M code listing and paste it into the Advanced Editor window.
 
+```
 let
 
 Source = \#table( type table \[ DayNumber = Int64.Type \],
@@ -1871,397 +1844,243 @@ TypedColumnsCollection)
 in
 
 QueryOutput
+```
 
 If you have trouble copying this M code from this page, it might be
 easier to copy it from
-[here](https://raw.githubusercontent.com/PowerBiDevCamp/TranslationsBuilder/main/Labs/Snippets/Translated%20Day%20Names%20Table.m.txt)
+[here](https://raw.githubusercontent.com/PowerBiDevCamp/TranslationsBuilder/main/Labs/StudentFiles/Snippets/Translated%20Day%20Names%20Table.m.txt)
 or from the Student Files folder
 
-313. Once you have copied the M code into the Advanced Editor, click
-     **Done** to save your changes and execute the new query.
+13. Once you have copied the M code into the Advanced Editor, click **Done** to save your changes and execute the new query.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image249.png"
-style="width:3.24183in;height:2.36264in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image249.png" style="width:70" />
 
-314. You should now see the output of the **Translated Day Names Table**
-     query as shown in the following screenshot.
+14. You should now see the output of the **Translated Day Names Table** query as shown in the following screenshot.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image250.png"
-style="width:5.95238in;height:1.26013in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image250.png" style="width:70%" />
 
-315. Click **Close & Apply** to close the Power Query window and to add
-     two new tables to the project's data model.
+15. Click **Close & Apply** to close the Power Query window and to add two new tables to the project's data model.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image140.png"
-style="width:3.51818in;height:0.74664in"
-alt="Graphical user interface, application Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image140.png" style="width:70%" />
 
-316. Switch to **Data** view and locate **Translated Month Names Table**
-     and **Translated Day Names Table** in the **Data** pane.
+16. Switch to **Data** view and locate **Translated Month Names Table** and **Translated Day Names Table** in the **Data** pane.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image251.png"
-style="width:5.26984in;height:1.45237in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image251.png" style="width:70%" />
 
-317. Select **Translated Month Names Table** and configure all four
-     translation columns to use **MonthNumber** as their sort column.
+17. Select **Translated Month Names Table** and configure all four translation columns to use **MonthNumber** as their sort column.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image252.png"
-style="width:5.09555in;height:1.77778in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image252.png" style="width:70%" />
 
-318. Select **Translated Day Names Table** and configure all four
-     translation columns to use **DayNumber** as their sort column.
+18. Select **Translated Day Names Table** and configure all four translation columns to use **DayNumber** as their sort column.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image253.png"
-style="width:4.32039in;height:1.66234in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image253.png" style="width:70%" />
 
-319. Switch to **Model** view.
+19. Switch to **Model** view.
 
-320. Reposition **Translated Day Names Table** and **Translated Month
-     Names Table** just to the right of the **Calendar** table.
+20. Reposition **Translated Day Names Table** and **Translated Month Names Table** just to the right of the **Calendar** table.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image254.png"
-style="width:6.01299in;height:1.67027in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image254.png" style="width:70%" />
 
-321. Create a one-to-many relationship between **Translated Day Names
-     Table** and **Calendar** based on the **DayNumber** column.
+21. Create a one-to-many relationship between **Translated Day Names Table** and **Calendar** based on the **DayNumber** column.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image255.png"
-style="width:2.65189in;height:2.18826in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image255.png" style="width:70%" />
 
-322. Create a one-to-many relationship between **Translated Month Names
-     Table** and **Calendar** based on the **MonthNumber** column.
+22. Create a one-to-many relationship between **Translated Month Names Table** and **Calendar** based on the **MonthNumber** column.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image256.png"
-style="width:2.66667in;height:2.21752in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image256.png" style="width:70%" />
 
-323. Hide **Translated Day Names Table** and **Translated Month Names
-     Table** so they do not appear in **Report** view.
+23. Hide **Translated Day Names Table** and **Translated Month Names Table** so they do not appear in **Report** view.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image257.png"
-style="width:3.22792in;height:2.46283in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image257.png" style="width:70%" />
 
-324. Switch to **Report** view and navigate to the **Sales Over Time**
-     page.
+24. Switch to **Report** view and navigate to the **Sales Over Time** page.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image258.png"
-style="width:5.74684in;height:3.45098in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image258.png" style="width:70%" />
 
-Now you need to create two new Field Parameters to implement data
+> Now you need to create two new Field Parameters to implement data
 translations for month names and day names. However, you have created
 and configured two Field Parameters in the previous exercise so the
 steps should already be familiar.
 
-325. Navigate to the **Modeling** tab and select **New parameter \>
-     Fields** to create a Field Parameter.
+25. Navigate to the **Modeling** tab and select **New parameter \> Fields** to create a Field Parameter.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image259.png"
-style="width:5.89558in;height:2.01307in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image259.png" style="width:70%" />
 
-326. Name the Field Parameter **Translated Month Names** and add the
-     translation columns from **Translated Month Names Table**.
+26. Name the Field Parameter **Translated Month Names** and add the translation columns from **Translated Month Names Table**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image260.png"
-style="width:2.33211in;height:2.16338in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image260.png" style="width:70%" />
 
-327. Switch to **Data** view and select **Translated Month Names** in
-     the **Data** pane so you can view its DAX expression.
+27. Switch to **Data** view and select **Translated Month Names** in the **Data** pane so you can view its DAX expression.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image261.png"
-style="width:5.40523in;height:1.74294in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image261.png" style="width:70%" />
 
-328. Update the DAX expression for **Translated Month Names** with the
-     following DAX code.
+28. Update the DAX expression for **Translated Month Names** with the following DAX code.
 
+```
 Translated Month Names = {
-
-("Month", NAMEOF('Translated Month Names
-Table'\[MonthNameTranslationsEnglish\]), 0, "en"),
-
-("Mes", NAMEOF('Translated Month Names
-Table'\[MonthNameTranslationsSpanish\]), 1, "es"),
-
-("Mois", NAMEOF('Translated Month Names
-Table'\[MonthNameTranslationsFrench\]), 2, "fr"),
-
-("Monat", NAMEOF('Translated Month Names
-Table'\[MonthNameTranslationsGerman\]), 3, "de")
-
+  ("Month", NAMEOF('Translated Month Names Table'[MonthNameTranslationsEnglish]), 0, "en"),
+  ("Mes", NAMEOF('Translated Month Names Table'[MonthNameTranslationsSpanish]), 1, "es"),
+  ("Mois", NAMEOF('Translated Month Names Table'[MonthNameTranslationsFrench]), 2, "fr"),
+  ("Monat", NAMEOF('Translated Month Names Table'[MonthNameTranslationsGerman]), 3, "de")
 }
+```
 
-329. After you have updated the DAX expression for **Translated Month
-     Names**, you should see a new column named **Value4**.
+29. After you have updated the DAX expression for **Translated Month Names**, you should see a new column named **Value4**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image262.png"
-style="width:4.53896in;height:1.40288in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image262.png" style="width:70%" />
 
-330. Update the field names inside **Translated Month Names** to
-     **Month**. **Fields**, **SortOrder** and **LanguageId**.
+30. Update the field names inside **Translated Month Names** to **Month**. **Fields**, **SortOrder** and **LanguageId**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image263.png"
-style="width:4.52941in;height:1.62765in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image263.png" style="width:70%" />
 
-331. Configure the **LanguageId** column to use **SortOrder** as its
-     sort column.
+31. Configure the **LanguageId** column to use **SortOrder** as its sort column.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image264.png"
-style="width:4.40523in;height:1.99625in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image264.png" style="width:70%" />
 
-Now there is one more Field Parameter you need to create for day names.
+> Now there is one more Field Parameter you need to create for day names.
 
-332. Switch to **Report** view.
+32. Switch to **Report** view.
 
-333. Navigate to the **Modeling** tab and select **New parameter \>
-     Fields** to create a Field Parameter.
+33. Navigate to the **Modeling** tab and select **New parameter \> Fields** to create a Field Parameter.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image259.png"
-style="width:4.06536in;height:1.38814in"
-alt="Graphical user interface, application Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image259.png" style="width:70%" />
 
-334. Name the Field Parameter **Translated Day Names** and add the
-     translation columns from **Translated Day Names Table**.
+34. Name the Field Parameter **Translated Day Names** and add the translation columns from **Translated Day Names Table**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image265.png"
-style="width:2.3125in;height:2.13221in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image265.png" style="width:70%" />
 
-335. Switch to **Data** view and select **Translated Day Names** in the
-     **Data** pane so you can view its DAX expression.
+35. Switch to **Data** view and select **Translated Day Names** in the **Data** pane so you can view its DAX expression.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image266.png"
-style="width:5.29735in;height:1.98276in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image266.png" style="width:70%" />
 
-336. Update the DAX expression for **Translated Day Names** with the
-     following DAX code.
+36. Update the DAX expression for **Translated Day Names** with the following DAX code.
 
+```
 Translated Day Names = {
-
-("Day", NAMEOF('Translated Day Names
-Table'\[DayNameTranslationsEnglish\]), 0, "en"),
-
-("Día", NAMEOF('Translated Day Names
-Table'\[DayNameTranslationsSpanish\]), 1, "es"),
-
-("Jour", NAMEOF('Translated Day Names
-Table'\[DayNameTranslationsFrench\]), 2, "fr"),
-
-("Tag", NAMEOF('Translated Day Names
-Table'\[DayNameTranslationsGerman\]), 3, "de")
-
+  ("Day", NAMEOF('Translated Day Names Table'[DayNameTranslationsEnglish]), 0, "en"),
+  ("Día", NAMEOF('Translated Day Names Table'[DayNameTranslationsSpanish]), 1, "es"),
+  ("Jour", NAMEOF('Translated Day Names Table'[DayNameTranslationsFrench]), 2, "fr"),
+  ("Tag", NAMEOF('Translated Day Names Table'[DayNameTranslationsGerman]), 3, "de")
 }
+```
 
-337. After you have updated the DAX expression for **Translated Day
-     Names**, you should see a new column named **Value4**.
+37. After you have updated the DAX expression for **Translated Day Names**, you should see a new column named **Value4**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image267.png"
-style="width:5.03247in;height:1.25287in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image267.png" style="width:70%" />
 
-338. Update the field names inside **Translated Day Names** to **Day**.
-     **Fields**, **SortOrder** and **LanguageId**.
+38. Update the field names inside **Translated Day Names** to **Day**, **Fields**, **SortOrder** and **LanguageId**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image268.png"
-style="width:4.71429in;height:1.51551in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image268.png" style="width:70%" />
 
-339. Configure the **LanguageId** column to use **SortOrder** as its
-     sort column.
+39. Configure the **LanguageId** column to use **SortOrder** as its sort column.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image269.png"
-style="width:4.19149in;height:1.81437in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image269.png" style="width:70%" />
 
-340. Switch to **Model** view.
+40. Switch to **Model** view.
 
-341. Reposition **Translated Month Names** and **Translated Day Names**
-     so they appear just to the right of the **Languages** table.
+41. Reposition **Translated Month Names** and **Translated Day Names** so they appear just to the right of the **Languages** table.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image270.png"
-style="width:4.44976in;height:2.07655in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image270.png" style="width:70%" />
 
-342. Create a one-to-one relationship between **Languages** and
-     **Translated Month Names** based on the **LanguageId** column.
+42. Create a one-to-one relationship between **Languages** and **Translated Month Names** based on the **LanguageId** column.
 
-343. Create a one-to-one relationship between **Languages** and
-     **Translated Day Names** based on the **LanguageId** column.
+43. Create a one-to-one relationship between **Languages** and **Translated Day Names** based on the **LanguageId** column.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image271.png"
-style="width:3.86152in;height:1.81445in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image271.png" style="width:70%" />
 
-344. Hide the **LanguageId** field from **Report** view in both
-     **Translated Month Names** and **Translated Day Names**.
+44. Hide the **LanguageId** field from **Report** view in both **Translated Month Names** and **Translated Day Names**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image272.png"
-style="width:3.8942in;height:1.77883in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image272.png" style="width:70%" />
 
-345. Switch to **Report** view, navigate to the **Sales Over Time** page
-     and inspect the two new Field Parameters in the **Fields** pane.
+45. Switch to **Report** view, navigate to the **Sales Over Time** page and inspect the two new Field Parameters in the **Fields** pane.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image273.png"
-style="width:1.74726in;height:2.4026in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image273.png" style="width:70%" />
 
-346. Display the **Filter** pane if it's not already showing and set the
-     filter on the **Languages** table to **Spanish**.
+46. Display the **Filter** pane if it's not already showing and set the filter on the **Languages** table to **Spanish**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image274.png"
-style="width:1.46405in;height:1.88436in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image274.png" style="width:70%" />
 
-347. Select the Column chart on the left which displays **Sales Revenue
-     by Month and** **Year**.
+47. Select the Column chart on the left which displays **Sales Revenue by Month and** **Year**.
 
-348. In the **X-axis** data role, replace **Month** from the
-     **Calendar** table with **Month** from **Translated Month Names**.
+48. In the **X-axis** data role, replace **Month** from the **Calendar** table with **Month** from **Translated Month Names**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image275.png"
-style="width:5.39683in;height:1.42635in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image275.png" style="width:70" />
 
-349. Select the Column chart on the right which displays **Sales Revenue
-     by Day** **and** **Year**.
+49. Select the Column chart on the right which displays **Sales Revenue by Day** **and** **Year**.
 
-350. In the **X-axis** data role, replace **Day** from the **Calendar**
-     table with **Day** from **Translated Day Names**.
+50. In the **X-axis** data role, replace **Day** from the **Calendar** table with **Day** from **Translated Day Names**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image276.png"
-style="width:5.34921in;height:1.53274in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image276.png" style="width:70%" />
 
-351. Select the Matrix visual at the bottom of the page which displays
-     sales revenue by product and month.
+51. Select the Matrix visual at the bottom of the page which displays sales revenue by product and month.
 
-352. In the **Rows** data role, replace **Product** from the
-     **Products** table with **Product** from **Translated Product
-     Names**.
+52. In the **Rows** data role, replace **Product** from the **Products** table with **Product** from **Translated Product Names**.
 
-353. In the **Columns** data role, replace **Month** from the
-     **Calendar** table with **Month** from **Translated Month Names**.
+53. In the **Columns** data role, replace **Month** from the **Calendar** table with **Month** from **Translated Month Names**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image277.png"
-style="width:4.89091in;height:1.7965in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image277.png" style="width:70%" />
 
-354. Now you can test the data translations for each language by
-     switching the filter on the **Languages** table.
+54. Now you can test the data translations for each language by switching the filter on the **Languages** table.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image278.png"
-style="width:4.47273in;height:2.06574in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image278.png" style="width:70%" />
 
-Now that you have completed the work to implement data translations, you
+> Now that you have completed the work to implement data translations, you
 will clean up the data model by hiding several columns that should not
 be shown to reporter authors in **Report** view.
 
-355. Switch to **Model** view.
+55. Switch to **Model** view.
 
-356. Hide every column in the **Products** table except for the
-     **Image** column.
+56. Hide every column in the **Products** table except for the **Image** column.
 
-357. Hide the **Day** column and the **Month** column in the
-     **Calendars** table so only the **Date** and **Year** columns are
-     seen in **Report** view.
+57. Hide the **Day** column and the **Month** column in the **Calendars** table so only the **Date** and **Year** columns are seen in **Report** view.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image279.png"
-style="width:4.50221in;height:2.38182in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image279.png" style="width:70%" />
 
-Now you need to prepare the report for deployment to the Power BI
-Service.
+> Now you need to prepare the report for deployment to the Power BI Service.
 
-358. Set the report-level filter on the languages table to **English**.
+58. Set the report-level filter on the languages table to **English**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image280.png"
-style="width:1.47395in;height:1.55455in"
-alt="A picture containing graphical user interface Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image280.png" style="width:70%" />
 
-359. Navigate back to the **Sales Summary** page and make it active
-     before saving to ensure this page is the startup page.
+59. Navigate back to the **Sales Summary** page and make it active before saving to ensure this page is the startup page.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png"
-style="width:3.77273in;height:0.51619in"
-alt="Graphical user interface, text, application, Word Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png" style="width:70%" />
 
-360. Save your work by clicking the **Save** button.
+60. Save your work by clicking the **Save** button.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image51.png"
-style="width:4.09371in;height:1.10909in"
-alt="A screenshot of a computer Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image51.png" style="width:70%" />
 
-Now, it’s time once again to test your work in the Power BI Service.
+> Now, it’s time once again to test your work in the Power BI Service.
 
-361. Publish the **Product Sales** project to push your changes to the
-     project’s translations to the Power BI Service.
+61. Publish the **Product Sales** project to push your changes to the project’s translations to the Power BI Service.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image52.png"
-style="width:4.34425in;height:0.72001in"
-alt="Graphical user interface, application Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image52.png" style="width:70%" />
 
-362. When prompted by the **Replace this dataset?** dialog, click the
-     **Replace** button to continue.
+62. When prompted by the **Replace this dataset?** dialog, click the **Replace** button to continue.
 
-363. Once you see **Success!**, click **Open ‘Product Sales’ in Power
-     BI** to view the report in the Power BI Service.
+63. Once you see **Success!**, click **Open ‘Product Sales’ in Power BI** to view the report in the Power BI Service.
 
-364. The report should load as normal showing all text in English at
-     first.
+64. The report should load as normal showing all text in English at first.
 
-365. Click on the browser book for **Spanish**. Once the report has
-     loaded, navigate to the **Sales Over Time** page.
+65. Click on the browser book for **Spanish**. Once the report has loaded, navigate to the **Sales Over Time** page.
 
-366. Verify that the data translations are loading Spanish names for the
-     names of months and days in all three visuals.
+66. Verify that the data translations are loading Spanish names for the names of months and days in all three visuals.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image281.png"
-style="width:4.28826in;height:2.29499in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image281.png" style="width:70%" />
 
-367. Click on the browser book for **French**. Once the report has
-     loaded, navigate to the **Sales Over Time** page.
+67. Click on the browser book for **French**. Once the report has loaded, navigate to the **Sales Over Time** page.
 
-368. Verify that the data translations are loading French names for the
-     names of months and days in all three visuals.
+68. Verify that the data translations are loading French names for the names of months and days in all three visuals.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image282.png"
-style="width:4.38826in;height:2.37536in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image282.png" style="width:70%" />
 
-369. Click on the browser book for **German**. Once the report has
-     loaded, navigate to the **Sales Over Time** page.
+69. Click on the browser book for **German**. Once the report has loaded, navigate to the **Sales Over Time** page.
 
-370. Verify that the data translations are loading German names for the
-     names of months and days in all three visuals.
+70. Verify that the data translations are loading German names for the names of months and days in all three visuals.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image283.png"
-style="width:4.46098in;height:2.35309in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image283.png" style="width:70%" />
 
-Congratulations. You have now completed this hands-on lab and you can
+>Congratulations. You have now completed this hands-on lab and you can
 now begin using your newfound localization skills in working with
 translations and building multi-language reports on your own PBIX
 projects.
