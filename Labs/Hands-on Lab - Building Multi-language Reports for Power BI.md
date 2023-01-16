@@ -959,8 +959,7 @@ PBIX project.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image132.png" style="width:60%" />
 
-Now that you have removed all French translations, you will restore them
-by importing the master translation sheet.
+> Now that you have removed all French translations, you will restore them by importing the master translation sheet.
 
 42. Click the **Import Translations** button.
 
