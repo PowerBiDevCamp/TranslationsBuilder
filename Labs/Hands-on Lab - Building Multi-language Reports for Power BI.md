@@ -1470,15 +1470,15 @@ report load time.
 
 96. You should see a new report bookmark has been created named **Bookmark4**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image213.png" style="width:30%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image213.png" style="width:25%" />
 
 97. Rename the new report bookmark to **SetLanguageEnglish**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image214.png" style="width:30%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image214.png" style="width:25%" />
 
 98. Drop down the context menu for the report bookmark named **SetLanguageEnglish**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image215.png" style="width:30%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image215.png" style="width:25%" />
 
 99. By default, the behaviors of **Data**, **Display** and **Current page** are enabled. Disable the behaviors for **Display** and **Current page**.
 
@@ -1492,7 +1492,7 @@ report load time.
 
 101. Update the report-level filter on the **Languages** table to **Spanish**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image218.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image218.png" style="width:30%" />
 
 102. Click the **Add** button in the **Bookmarks** pane.
 
