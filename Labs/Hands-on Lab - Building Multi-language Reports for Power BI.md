@@ -713,9 +713,7 @@ translations. Now you need to prepare the report for deployment
 
 67. Navigate to the second page and verify the title for the **Top Selling Products** visual is displayed using German translations.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image98.png" style="width:70% />
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image97.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image98.png" style="width:70%" />
 
 > You have now implemented report label translations using the
 Translations Builder Localized Label table strategy. You should be able
