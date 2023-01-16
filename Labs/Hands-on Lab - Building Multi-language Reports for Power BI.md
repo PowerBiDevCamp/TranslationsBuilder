@@ -1270,16 +1270,16 @@ in
 
 52. Create a one-to-one relationship between **Translated Product Names** and **Languages** based on the **LanguageId** column.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image173.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image173.png" style="width:50%" />
 
 53. Hide the columns **DefaultCulture**, **Language** and **SortOrder** so that **Language** is the only non-hidden column.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image174.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image174.png" style="width:50%" />
 
 54. Switch to **Report** view and expand the nodes for **Translated Product Names** and **Languages** in **Fields** pane. Each of these
      tables should now only display a single child field when in **Report** view.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image175.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image175.png" style="width:25%" />
 
 55. Open the **Filters** pane and create a report-level filter based on the **Language** column from the **Languages** table.
 
