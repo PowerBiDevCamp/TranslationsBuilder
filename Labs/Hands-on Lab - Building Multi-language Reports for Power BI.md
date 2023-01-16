@@ -656,7 +656,7 @@ However, there is a separate Rectangle shape with the report title and a separat
 
 51. Navigate to the third page named **Sales Over Time**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image91.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image91.png" style="width:60%" />
 
 52. Repeat the same steps to display the report title and button captions using measures from **Translated Localized Labels**.
 
