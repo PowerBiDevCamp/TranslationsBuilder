@@ -1923,23 +1923,23 @@ Translated Day Names = {
 
 45. Switch to **Report** view, navigate to the **Sales Over Time** page and inspect the two new Field Parameters in the **Fields** pane.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image273.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image273.png" style="width:30%" />
 
 46. Display the **Filter** pane if it's not already showing and set the filter on the **Languages** table to **Spanish**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image274.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image274.png" style="width:35%" />
 
 47. Select the Column chart on the left which displays **Sales Revenue by Month and** **Year**.
 
 48. In the **X-axis** data role, replace **Month** from the **Calendar** table with **Month** from **Translated Month Names**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image275.png" style="width:70" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image275.png" style="width:90%" />
 
 49. Select the Column chart on the right which displays **Sales Revenue by Day** **and** **Year**.
 
 50. In the **X-axis** data role, replace **Day** from the **Calendar** table with **Day** from **Translated Day Names**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image276.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image276.png" style="width:90%" />
 
 51. Select the Matrix visual at the bottom of the page which displays sales revenue by product and month.
 
