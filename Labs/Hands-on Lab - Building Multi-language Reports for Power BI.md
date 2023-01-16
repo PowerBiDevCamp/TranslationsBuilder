@@ -1876,7 +1876,7 @@ Translated Month Names = {
 
 34. Name the Field Parameter **Translated Day Names** and add the translation columns from **Translated Day Names Table**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image265.png" style="width:40%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image265.png" style="width:46%" />
 
 35. Switch to **Data** view and select **Translated Day Names** in the **Data** pane so you can view its DAX expression.
 
@@ -1895,11 +1895,11 @@ Translated Day Names = {
 
 37. After you have updated the DAX expression for **Translated Day Names**, you should see a new column named **Value4**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image267.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image267.png" style="width:90%" />
 
 38. Update the field names inside **Translated Day Names** to **Day**, **Fields**, **SortOrder** and **LanguageId**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image268.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image268.png" style="width:90%" />
 
 39. Configure the **LanguageId** column to use **SortOrder** as its sort column.
 
