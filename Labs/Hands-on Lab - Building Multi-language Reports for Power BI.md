@@ -850,7 +850,7 @@ wherever they are required.
 
 22. Return to Translations Builder and uncheck the checkbox with the caption **Open Export in Excel**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image118.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image118.png" style="width:50%" />
 
 >All three export commands use this checkbox to decide whether to open a
 translation sheet in Excel after it’s generated. In some cases, it’s
@@ -859,7 +859,7 @@ like the one ahead, it’s unnecessary and distracting.
 
 23. Click the **Export All Translation Sheets** button.
 
-<img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image119.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image119.png" style="width:50%" />
 
 > The **Export All Translation Sheets** command generates the complete set
 of translation sheets to be sent to translators.
