@@ -1116,7 +1116,7 @@ Translated Product Names = {
 
 28. After you have replaced the DAX expression, verify that the column header is now translated properly along with product names.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image153.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image153.png" style="width:80%" />
 
 > Up to this point we have only examined the Field Parameter in **Report**
 view. Now it's time to switch over to **Data** view where you will be
@@ -1125,11 +1125,11 @@ hidden from **Report** view.
 
 29. Switch to **Data** view and select the top-level node for **Translated Product Names**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image154.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image154.png" style="width:90%" />
 
 30. Expand the top-level node for **Translated Product Names** and examine the fields inside.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image155.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image155.png" style="width:25%" />
 
 > The names of the fields inside a Field Parameter are automatically
 generated based on the name you gave to the top-level Field Parameter.
@@ -1138,11 +1138,11 @@ simplify the data model and to improve readability.
 
 31. In the **Fields** list, double-click on the field named **Translated Product Names** and rename it to **Product**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image156.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image156.png" style="width:90%" />
 
 32. Using the same technique, rename the two other hidden fields with the shorter names **Fields** and **SortOrder**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image157.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image157.png" style="width:90%" />
 
 > Currently, **Translated Product Names** contains three columns named
 **Product**, **Fields** and **SortOrder**. In the following steps, you
