@@ -1432,11 +1432,11 @@ between languages and want to drill into product names.
 
 89. Select the Slicer visual at the bottom of the page and verify it uses the **Category** column from the **Products** table
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image206.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image206.png" style="width:90%" />
 
 90. Update the **Fields** data role of the Slicer visual to use **Category** from **Translated Category Names**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image207.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image207.png" style="width:90%" />
 
 > Slicer visuals work differently when configured with a field from a
 Field Parameter. The default behavior is to provide a field picker for
@@ -1445,7 +1445,7 @@ values. You will correct the slicer's behavior in the next step
 
 91. Use the dropdown menu for the **Category** field inside the **Field** data role and select the option to **Show values of select field**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image208.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image208.png" style="width:40%" />
 
 92. The slicer visual should now display the three category names using data translations in German.
 
