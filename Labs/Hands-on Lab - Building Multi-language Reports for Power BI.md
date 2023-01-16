@@ -511,7 +511,7 @@ which provides a detailed explanation of the **Localized Labels** table strategy
 
 14. You should now see five new rows have been added to the translations grid for the new report labels.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image71.png" style="width:65%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image71.png" style="width:70%" />
 
 15. Click the **Fill All Empty Translations** button to generate translations for all the new report labels.
 
