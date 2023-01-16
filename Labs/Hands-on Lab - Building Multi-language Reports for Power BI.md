@@ -1092,887 +1092,552 @@ Desktop created the new Field Parameter.
 
 26. Currently, the DAX expression has hard-coded column names like **ProductTranslationEnglish** and **ProductTranslationSpanish**.
 
-**
 ```
 Translated Product Names = {
-  ("ProductTranslationEnglish", NAMEOF('Products'\[ProductTranslationEnglish\]), 0),
-  ("ProductTranslationSpanish", NAMEOF('Products'\[ProductTranslationSpanish\]), 1),
-  ("ProductTranslationFrench", NAMEOF('Products'\[ProductTranslationFrench\]), 2),
-  ("ProductTranslationGerman", NAMEOF('Products'\[ProductTranslationGerman\]), 3)
+  ("ProductTranslationEnglish", NAMEOF('Products'[ProductTranslationEnglish]), 0),
+  ("ProductTranslationSpanish", NAMEOF('Products'[ProductTranslationSpanish]), 1),
+  ("ProductTranslationFrench", NAMEOF('Products'[ProductTranslationFrench]), 2),
+  ("ProductTranslationGerman", NAMEOF('Products'[ProductTranslationGerman]), 3)
 }
 ```
-**
 
-The way to resolve this issue is to update the DAX expression to replace
-the column names with localized translations.
+> The way to resolve this issue is to update the DAX expression to replace the column names with localized translations.
 
-198. Replace the existing DAX expression with the follow DAX expression.
+27. Replace the existing DAX expression with the follow DAX expression.
 
+```
 Translated Product Names = {
-
-("Product", NAMEOF('Products'\[ProductTranslationEnglish\]), 0),
-
-("Producto", NAMEOF('Products'\[ProductTranslationSpanish\]), 1),
-
-("Produit", NAMEOF('Products'\[ProductTranslationFrench\]), 2),
-
-("Produkt", NAMEOF('Products'\[ProductTranslationGerman\]), 3)
-
+  ("Product", NAMEOF('Products'[ProductTranslationEnglish]), 0),
+  ("Producto", NAMEOF('Products'[ProductTranslationSpanish]), 1),
+  ("Produit", NAMEOF('Products'[ProductTranslationFrench]), 2),
+  ("Produkt", NAMEOF('Products'[ProductTranslationGerman]), 3)
 }
+```
 
-199. After you have replaced the DAX expression, verify that the column
-     header is now translated properly along with product names.
+28. After you have replaced the DAX expression, verify that the column header is now translated properly along with product names.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image153.png"
-style="width:4.13636in;height:1.27788in"
-alt="Graphical user interface, application Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image153.png" style="width:70%" />
 
-Up to this point we have only examined the Field Parameter in **Report**
+> Up to this point we have only examined the Field Parameter in **Report**
 view. Now it's time to switch over to **Data** view where you will be
 able to see two addition fields inside the Field Parameter that are
 hidden from **Report** view.
 
-200. Switch to **Data** view and select the top-level node for
-     **Translated Product Names**.
+29. Switch to **Data** view and select the top-level node for **Translated Product Names**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image154.png"
-style="width:5.22981in;height:2.0639in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image154.png" style="width:70%" />
 
-201. Expand the top-level node for **Translated Product Names** and
-     examine the fields inside.
+30. Expand the top-level node for **Translated Product Names** and examine the fields inside.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image155.png"
-style="width:1.99533in;height:0.75155in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image155.png" style="width:70%" />
 
-The names of the fields inside a Field Parameter are automatically
+> The names of the fields inside a Field Parameter are automatically
 generated based on the name you gave to the top-level Field Parameter.
 The fields inside a Field Parameter can (and should) be renamed to
 simplify the data model and to improve readability.
 
-202. In the **Fields** list, double-click on the field named
-     **Translated Product Names** and rename it to **Product**.
+31. In the **Fields** list, double-click on the field named **Translated Product Names** and rename it to **Product**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image156.png"
-style="width:4.54658in;height:2.08088in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image156.png" style="width:70%" />
 
-203. Using the same technique, rename the two other hidden fields with
-     the shorter names **Fields** and **SortOrder**.
+32. Using the same technique, rename the two other hidden fields with the shorter names **Fields** and **SortOrder**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image157.png"
-style="width:4.5912in;height:2.24031in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image157.png" style="width:70%" />
 
-Currently, **Translated Product Names** contains three columns named
+> Currently, **Translated Product Names** contains three columns named
 **Product**, **Fields** and **SortOrder**. In the following steps, you
 will configure support data translations by adding a fourth column named
 **LanguageId** to enable filtering to switch between languages.
 
-204. Replace the DAX expression for **Translated Product Names** with
-     the following DAX code which adds a fourth string parameter to the
-     row for each language with the lower-case, two character language
-     identifier.
+33. Replace the DAX expression for **Translated Product Names** with the following DAX code which adds a fourth string parameter to the
+     row for each language with the lower-case, two character language identifier.
 
+```
 Translated Product Names = {
-
-("Product", NAMEOF('Products'\[ProductTranslationEnglish\]), 0, "en" ),
-
-("Producto", NAMEOF('Products'\[ProductTranslationSpanish\]), 1, "es" ),
-
-("Produit", NAMEOF('Products'\[ProductTranslationFrench\]), 2, "fr" ),
-
-("Produkt", NAMEOF('Products'\[ProductTranslationGerman\]), 3, "de" )
-
+  ("Product", NAMEOF('Products'[ProductTranslationEnglish]), 0, "en" ),
+  ("Producto", NAMEOF('Products'[ProductTranslationSpanish]), 1, "es" ),
+  ("Produit", NAMEOF('Products'[ProductTranslationFrench]), 2, "fr" ),
+  ("Produkt", NAMEOF('Products'[ProductTranslationGerman]), 3, "de" )
 }
+```
 
-205. Once you've updated the DAX expression with a language identifier
-     for each language, a new column will appear named **Value4**.
+34. Once you've updated the DAX expression with a language identifier for each language, a new column will appear named **Value4**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image158.png"
-style="width:5.31639in;height:2.6646in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image158.png" style="width:70%" />
 
-206. Rename the **Value4** column to **LanguageId**.
+35. Rename the **Value4** column to **LanguageId**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image159.png"
-style="width:5.06211in;height:1.72363in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image159.png" style="width:70%" />
 
-207. Finally, don't forget to configure the sort column for the new
-     column named **LanguageId**.
+36. Finally, don't forget to configure the sort column for the new column named **LanguageId**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image160.png"
-style="width:4.91627in;height:2.04875in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image160.png" style="width:70%" />
 
-You do not have to worry about configuring the sort column for the two
+> You do not have to worry about configuring the sort column for the two
 pre-existing fields named **Fields** and **Product**. That is done
 automatically by Power BI Desktop when you create a new Field Parameter.
 However, you need to explicitly configure the sort column when you add
 additional columns such as **LanguageId**.
 
-208. Switch to **Model** view to inspect the Field Parameter named
-     **Translated Product Names**.
+37. Switch to **Model** view to inspect the Field Parameter named **Translated Product Names**.
 
-209. Hide the **LanguageId** column from **Report** view. Report authors
-     will never need to see or use this column in a report.
+38. Hide the **LanguageId** column from **Report** view. Report authors will never need to see or use this column in a report.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image161.png"
-style="width:2.85686in;height:1.6478in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image161.png" style="width:70%" />
 
-At this point, you no longer need the slicer that was automatically
+> At this point, you no longer need the slicer that was automatically
 added by Power BI Desktop when creating the Field Parameter. While the
 slicer added by Power BI Desktop is great for simple demos, it can only
 control a single Field Parameter at a time. You need a more scalable,
 report-wide strategy to enable switching between languages that works
 across multiple Field Parameters.
 
-210. Delete the page you created earlier in this exercise named **Test
-     Page**.
+39. Delete the page you created earlier in this exercise named **Test Page**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image162.png"
-style="width:4.00621in;height:0.79324in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image162.png" style="width:70%" />
 
-Let's summarize where you are at. You have created a Field Parameter
+> Let's summarize where you are at. You have created a Field Parameter
 named **Translated Product Names** and extended it with an extra column
 named **LanguageId**. The **LanguageId** column will be used to filter
 and effectively select which language is used for data translations.
 Over the next few steps, you will continue building out the data
 translations strategy by adding the **Languages** table.
 
-211. Create a new query by dropping down the **Get data** menu and
-     selecting **Blank query**.
+40. Create a new query by dropping down the **Get data** menu and selecting **Blank query**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image163.png"
-style="width:1.58491in;height:2.29753in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image163.png" style="70%" />
 
-212. You should see the Power Query window open with a new query named
-     **Query1**.
+41. You should see the Power Query window open with a new query named **Query1**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image164.png"
-style="width:6.48231in;height:1.88378in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image164.png" style="width:70%" />
 
-213. Rename the new query from **Query1** to **Languages**.
+42. Rename the new query from **Query1** to **Languages**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image165.png"
-style="width:5.98476in;height:1.07936in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image165.png" style="width:70%" />
 
-214. From the **Home** tab, click the **Advanced Editor** button to
-     display the Advanced Editor window for the **Languages** query.
+43. From the **Home** tab, click the **Advanced Editor** button to display the Advanced Editor window for the **Languages** query.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image166.png"
-style="width:5.88124in;height:1.63492in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image166.png" style="width:70%" />
 
-215. The Advanced Editor window will initially contain a minimal amount
-     of M code.
+44. The Advanced Editor window will initially contain a minimal amount of M code.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image167.png"
-style="width:2.39541in;height:1.28376in"
-alt="Graphical user interface, text, application, email, Teams Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image167.png" style="width:70" />
 
-216. Copy and paste the following M code into the Advanced Editor window
+45. Copy and paste the following M code into the Advanced Editor window
 
+```
 let
-
-LanguagesTable = \#table(type table \[
-
-Language = text,
-
-LanguageId = text,
-
-DefaultCulture = text,
-
-SortOrder = number
-
-\], {
-
-{"English", "en", "en-US", 1 },
-
-{"Spanish", "es", "es-ES", 2 },
-
-{"French", "fr", "fr-FR", 3 },
-
-{"German", "de", "de-DE", 4 }
-
-}),
-
-SortedRows = Table.Sort(LanguagesTable,{{"SortOrder",
-Order.Ascending}}),
-
-QueryOutput = Table.TransformColumnTypes(SortedRows,{{"SortOrder",
-Int64.Type}})
-
+  LanguagesTable = #table(type table [
+    Language = text,
+    LanguageId = text,
+    DefaultCulture = text,
+    SortOrder = number
+  ], {
+    {"English", "en", "en-US", 1 },
+    {"Spanish", "es", "es-ES", 2 },
+    {"French", "fr", "fr-FR", 3 },
+    {"German", "de", "de-DE", 4 }
+  }),
+  SortedRows = Table.Sort(LanguagesTable,{{"SortOrder", Order.Ascending}}),
+  QueryOutput = Table.TransformColumnTypes(SortedRows,{{"SortOrder", Int64.Type}})
 in
+  QueryOutput
+```
 
-QueryOutput
+46. Once you have copied the M code from above into the **Advanced Editor** window, click **Done** to save your changes.
 
-217. Once you have copied the M code from above into the **Advanced
-     Editor** window, click **Done** to save your changes.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image168.png" style="width:70%" />
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image168.png"
-style="width:2.92827in;height:1.65841in" />
+47. When the **Advanced Editor** window closes, the **Languages** query should run and generate an output table with four rows.
 
-218. When the **Advanced Editor** window closes, the **Languages** query
-     should run and generate an output table with four rows.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image169.png" style="width:70%" />
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image169.png"
-style="width:5.33533in;height:1.65346in" />
+48. Click **Close & Apply** to close the Power Query window and to add the **Languages** table to the project's data model.
 
-219. Click **Close & Apply** to close the Power Query window and to add
-     the **Languages** table to the project's data model.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image140.png" style="width:70%" />
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image140.png"
-style="width:4.16767in;height:0.88447in"
-alt="Graphical user interface, application Description automatically generated" />
+49. In the main Power BI Desktop window, switch to **Data** view and select the **Languages** table in the **Data** pane.
 
-220. In the main Power BI Desktop window, switch to **Data** view and
-     select the **Languages** table in the **Data** pane.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image170.png" style="width:70%" />
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image170.png"
-style="width:4.38323in;height:1.88532in" />
+50. Configure the columns named **Language**, **LanguageId** and **DefaultCulture** to use **SortOrder** as their sort column.
 
-221. Configure the columns named **Language**, **LanguageId** and
-     **DefaultCulture** to use **SortOrder** as their sort column.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image171.png" style="width:70%" />
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image171.png"
-style="width:4.46108in;height:1.84645in" />
+51. Switch to **Model** view and reposition **Translated Product Names** and the **Languages** table so they are next to each other.
 
-222. Switch to **Model** view and reposition **Translated Product
-     Names** and the **Languages** table so they are next to each other.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image172.png" style="width:70%" />
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image172.png"
-style="width:4.32889in;height:1.42222in" />
+52. Create a one-to-one relationship between **Translated Product Names** and **Languages** based on the **LanguageId** column.
 
-223. Create a one-to-one relationship between **Translated Product
-     Names** and **Languages** based on the **LanguageId** column.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image173.png" style="width:70%" />
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image173.png"
-style="width:3.12124in;height:1.30524in" />
+53. Hide the columns **DefaultCulture**, **Language** and **SortOrder** so that **Language** is the only non-hidden column.
 
-224. Hide the columns **DefaultCulture**, **Language** and **SortOrder**
-     so that **Language** is the only non-hidden column.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image174.png" style="width:70%" />
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image174.png"
-style="width:3.17042in;height:1.28832in" />
+54. Switch to **Report** view and expand the nodes for **Translated Product Names** and **Languages** in **Fields** pane. Each of these
+     tables should now only display a single child field when in **Report** view.
 
-225. Switch to **Report** view and expand the nodes for **Translated
-     Product Names** and **Languages** in **Fields** pane. Each of these
-     tables should now only display a single child field when in
-     **Report** view.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image175.png" style="width:70%" />
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image175.png"
-style="width:1.20946in;height:1.38546in" />
+55. Open the **Filters** pane and create a report-level filter based on the **Language** column from the **Languages** table.
 
-226. Open the **Filters** pane and create a report-level filter based on
-     the **Language** column from the **Languages** table.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image176.png" style="width:70%" />
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image176.png"
-style="width:2.07432in;height:1.85792in" />
+56. Enable the **Require single selection** filter option and set the filter to **Spanish**.
 
-227. Enable the **Require single selection** filter option and set the
-     filter to **Spanish**.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image177.png" style="width:70%" />
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image177.png"
-style="width:1.53164in;height:1.69091in" />
+57. Make sure the current page is **Sales Summary**.
 
-228. Make sure the current page is **Sales Summary**.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png" style="width:70%" />
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png"
-style="width:4.24528in;height:0.58085in"
-alt="Graphical user interface, text, application, Word Description automatically generated" />
+58. Select the Column chart on the left and verify it's using the **Product** column from the **Products** table for the **X-axis** data role.
 
-229. Select the Column chart on the left and verify it's using the
-     **Product** column from the **Products** table for the **X-axis**
-     data role.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image178.png" style="width:70%" />
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image178.png"
-style="width:5.05464in;height:1.67754in" />
+59. Remove the **Product** column from the **Products** table and replace it with the **Product** field from **Translated Product Names**.
 
-230. Remove the **Product** column from the **Products** table and
-     replace it with the **Product** field from **Translated Product
-     Names**.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image179.png" style="width:70%" />
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image179.png"
-style="width:1.9235in;height:1.98194in" />
+60. You should now see the data translations in the Column chart display in Spanish.
 
-231. You should now see the data translations in the Column chart
-     display in Spanish.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image180.png" style="width:70%" />
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image180.png"
-style="width:2.12568in;height:1.73475in" />
+61. Select the Table visual on the right. You can see that it is also using the **Product** column from the **Products** table.
 
-232. Select the Table visual on the right. You can see that it is also
-     using the **Product** column from the **Products** table.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image181.png" style="width:70%" />
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image181.png"
-style="width:5.25676in;height:1.82507in" />
+62. Remove the **Product** column from the **Products** table and replace it with the **Product** field from **Translated Product Names**. 
+    The table should now update and display product names in Spanish.
 
-233. Remove the **Product** column from the **Products** table and
-     replace it with the **Product** field from **Translated Product
-     Names**. The table should now update and display product names in
-     Spanish.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image182.png" style="width:70%" />
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image182.png"
-style="width:5.13186in;height:1.9235in" />
+63. Now you can test your data translations by changing the filter on the **Languages** table to quickly switch between languages.
 
-234. Now you can test your data translations by changing the filter on
-     the **Languages** table to quickly switch between languages.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image183.png" style="width:70%" />
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image183.png"
-style="width:4.36066in;height:1.8662in" />
+> Now you have just implemented data translations for product names. 
+  Now, you will continue by adding the same type of data translation support for category names as well.
 
-Now you have just implemented data translations for product names. Now,
-you will continue by adding the same type of data translation support
-for category names as well.
+64. Navigate to the **Modeling** tab and select **New parameter \>  Fields** to create a Field Parameter.
 
-235. Navigate to the **Modeling** tab and select **New parameter \>
-     Fields** to create a Field Parameter.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image184.png" style="width:70%" />
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image184.png"
-style="width:3.31148in;height:1.06311in" />
+65. Create a new Field Parameter named **Translated Category Names**. Populate the fields collection with the four columns from the
+     **Products** table with category name translations and be sure to disable the **Add slicer to this page** option.
 
-236. Create a new Field Parameter named **Translated Category Names**.
-     Populate the fields collection with the four columns from the
-     **Products** table with category name translations and be sure to
-     disable the **Add slicer to this page** option.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image185.png" style="width:70%" />
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image185.png"
-style="width:2.56933in;height:2.41422in" />
-
-237. Make sure the fields collection is sorted like the fields shown in
+66. Make sure the fields collection is sorted like the fields shown in
      the following screenshot and then click the **Create** button.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image186.png"
-style="width:2.61829in;height:1.46364in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image186.png" style="width:70%" />
 
-238. Move to **Data** view and select the Field Parameter named
-     **Translated Category Names** in the **Data** pane on the right.
+67. Move to **Data** view and select the Field Parameter named **Translated Category Names** in the **Data** pane on the right.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image187.png"
-style="width:6.55455in;height:2.68317in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image187.png" style="width:70%" />
 
-239. Expand the node **Translated Category Names** and inspect the three
-     child fields inside.
+68. Expand the node **Translated Category Names** and inspect the three child fields inside.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image188.png"
-style="width:2.61754in;height:1.23636in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image188.png" style="width:70%" />
 
-240. Update the child field names to **Category**, **Fields** and
-     **SortOrder** as shown in the following screenshot.
+69. Update the child field names to **Category**, **Fields** and **SortOrder** as shown in the following screenshot.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image189.png"
-style="width:5.73027in;height:2.6612in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image189.png" style="width:70%" />
 
-241. Update the DAX expression for **Translated Category Names** using
-     the following DAX code.
+70. Update the DAX expression for **Translated Category Names** using the following DAX code.
 
+```
 Translated Category Names = {
-
-("Category", NAMEOF('Products'\[CategoryTranslationEnglish\]), 0, "en"),
-
-("Categoría", NAMEOF('Products'\[CategoryTranslationSpanish\]), 1,
-"es"),
-
-("Catégorie", NAMEOF('Products'\[CategoryTranslationFrench\]), 2, "fr"),
-
-("Kategorie", NAMEOF('Products'\[CategoryTranslationGerman\]), 3, "de")
-
+  ("Category", NAMEOF('Products'[CategoryTranslationEnglish]), 0, "en"),
+  ("Categoría", NAMEOF('Products'[CategoryTranslationSpanish]), 1, "es"),
+  ("Catégorie", NAMEOF('Products'[CategoryTranslationFrench]), 2, "fr"),
+  ("Kategorie", NAMEOF('Products'[CategoryTranslationGerman]), 3, "de")
 }
+```
 
-242. You should see that a new column has been added named **Value4**.
+71. You should see that a new column has been added named **Value4**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image190.png"
-style="width:5.28969in;height:2.48503in" />
+<img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image190.png" style="width:70%" />
 
-243. Rename the **Value4** field to **LanguageId**.
+72. Rename the **Value4** field to **LanguageId**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image191.png"
-style="width:5.26534in;height:2.62035in"
-alt="Graphical user interface, application Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image191.png" style="width:70%" />
 
-244. Configure the **LanguageId** column to use **SortOrder** as its
-     sort column.
+73. Configure the **LanguageId** column to use **SortOrder** as its sort column.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image192.png"
-style="width:4.41857in;height:2.08982in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image192.png" style="width:70%" />
 
-245. Switch to **Model** view.
+74. Switch to **Model** view.
 
-246. Reposition **Translated Category Names** so its underneath
-     **Translated Product Names**. as shown in the following screenshot.
+75. Reposition **Translated Category Names** so its underneath **Translated Product Names**. as shown in the following screenshot.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image193.png"
-style="width:5.30168in;height:1.73054in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image193.png" style="width:70%" />
 
-247. Create a one-to-one relationship between **Translated Category
-     Names** and **Languages** based on the **LanguageId** column.
+76. Create a one-to-one relationship between **Translated Category Names** and **Languages** based on the **LanguageId** column.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image194.png"
-style="width:2.48634in;height:1.68828in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image194.png" style="width:70%" />
 
-248. Hide the column **LanguageId** in **Translated Category Names** so
-     it does not show up in **Report** view.
+77. Hide the column **LanguageId** in **Translated Category Names** so it does not show up in **Report** view.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image195.png"
-style="width:2.59091in;height:1.80517in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image195.png" style="width:70%" />
 
-249. Switch to **Report** view and then navigate to the **Sales By
-     Category** page.
+78. Switch to **Report** view and then navigate to the **Sales By Category** page.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image196.png"
-style="width:3.91892in;height:0.58379in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image196.png" style="width:70%" />
 
-250. When inspecting **Translated Category Names** in **Report** view,
-     it should only contain a single field named **Category**.
+79. When inspecting **Translated Category Names** in **Report** view, it should only contain a single field named **Category**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image197.png"
-style="width:1.31407in;height:1.75449in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image197.png" style="width:70%" />
 
-251. Set the report-level filter on the **Languages** table to
-     **German** for testing purposes.
+80. Set the report-level filter on the **Languages** table to **German** for testing purposes.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image198.png"
-style="width:1.23649in;height:1.20981in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image198.png" style="width:70%" />
 
-252. Select the Bar chart on the left and verify it uses the **Product**
-     column and the **Category** column from the **Products** table.
+81. Select the Bar chart on the left and verify it uses the **Product** column and the **Category** column from the **Products** table.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image199.png"
-style="width:5.12575in;height:2.17714in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image199.png" style="width:70%" />
 
-253. Update the Bar chart visual to use **Product** from **Translated
-     Product Names**.
+82. Update the Bar chart visual to use **Product** from **Translated Product Names**.
 
-254. Update the Bar chart visual to use **Category** from **Translated
-     Category Names**.
+83. Update the Bar chart visual to use **Category** from **Translated Category Names**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image200.png"
-style="width:1.95309in;height:2.2515in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image200.png" style="width:70%" />
 
-255. You should now see data translations for German in the Y-axis and
-     in the legend.
+84. You should now see data translations for German in the Y-axis and in the legend.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image201.png"
-style="width:2.47574in;height:2.24528in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image201.png" style="width:70%" />
 
-256. Select the Matrix visual and verify it uses the **Product** column
-     and the **Category** column from the **Products** table.
+85. Select the Matrix visual and verify it uses the **Product** column and the **Category** column from the **Products** table.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image202.png"
-style="width:3.73224in;height:2.40073in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image202.png" style="width:70%" />
 
-257. Update the **Rows** data role of the Matrix visual to use
-     **Product** from **Translated Product Names** and **Category** from
-     **Translated Category Names**. You should now see data translations
-     for German for category names.
+86. Update the **Rows** data role of the Matrix visual to use **Product** from **Translated Product Names** and **Category** from
+     **Translated Category Names**. You should now see data translations for German for category names.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image203.png"
-style="width:6.33789in;height:1.88024in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image203.png" style="width:70%" />
 
-258. Click the **Expand** button with the pitchfork icon to drill down
-     and display product names.
+87. Click the **Expand** button with the pitchfork icon to drill down and display product names.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image204.png"
-style="width:3.31923in;height:1.28743in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image204.png" style="width:70%" />
 
-259. You should now see an expanded matrix that displays both category
-     names and product names in German
+88. You should now see an expanded matrix that displays both category names and product names in German
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image205.png"
-style="width:2.57709in;height:2.06918in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image205.png" style="width:70%" />
 
-You will need to click the **Expand** button again any time you switch
+> You will need to click the **Expand** button again any time you switch
 between languages and want to drill into product names.
 
-260. Select the Slicer visual at the bottom of the page and verify it
-     uses the **Category** column from the **Products** table
+89. Select the Slicer visual at the bottom of the page and verify it uses the **Category** column from the **Products** table
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image206.png"
-style="width:5.22642in;height:2.45046in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image206.png" style="width:70%" />
 
-261. Update the **Fields** data role of the Slicer visual to use
-     **Category** from **Translated Category Names**.
+90. Update the **Fields** data role of the Slicer visual to use **Category** from **Translated Category Names**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image207.png"
-style="width:5.24528in;height:2.08284in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image207.png" style="width:70%" />
 
-Slicer visuals work differently when configured with a field from a
+> Slicer visuals work differently when configured with a field from a
 Field Parameter. The default behavior is to provide a field picker for
 the fields collection of the Field Parameter instead of showing the
 values. You will correct the slicer's behavior in the next step
 
-262. Use the dropdown menu for the **Category** field inside the
-     **Field** data role and select the option to **Show values of
-     select field**.
+91. Use the dropdown menu for the **Category** field inside the **Field** data role and select the option to **Show values of select field**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image208.png"
-style="width:2.19497in;height:2.66721in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image208.png" style="width:70%" />
 
-263. The slicer visual should now display the three category names using
-     data translations in German.
+92. The slicer visual should now display the three category names using data translations in German.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image209.png"
-style="width:6.7451in;height:0.35849in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image209.png" style="width:70%" />
 
-264. Now experiment by switching the report-level filter on the
-     **Languages** table to view the page in each of the supported
-     languages.
+93. Now experiment by switching the report-level filter on the **Languages** table to view the page in each of the supported languages.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image210.png"
-style="width:5.1166in;height:2.38095in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image210.png" style="width:70%" />
 
-You have now implemented data translations for product names and
+> You have now implemented data translations for product names and
 category names. The next step is to create a set of report bookmarks
 which will make it possible to set the filter for data translations at
 report load time.
 
-265. From the **View** tab, click the **Bookmarks** button to display
-     the **Bookmarks** pane.
+94. From the **View** tab, click the **Bookmarks** button to display the **Bookmarks** pane.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image211.png"
-style="width:6.35635in;height:1.42857in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image211.png" style="width:70%" />
 
-266. Set the report-level filter on the **Languages** table to
-     **English** and then click the **Add** button in the **Bookmarks**
-     pane.
+95. Set the report-level filter on the **Languages** table to **English** and then click the **Add** button in the **Bookmarks** pane.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image212.png"
-style="width:5.74863in;height:2.29626in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image212.png" style="width:70%" />
 
-267. You should see a new report bookmark has been created named
-     **Bookmark4**.
+96. You should see a new report bookmark has been created named **Bookmark4**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image213.png"
-style="width:1.62254in;height:1.48634in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image213.png" style="width:70%" />
 
-268. Rename the new report bookmark to **SetLanguageEnglish**.
+97. Rename the new report bookmark to **SetLanguageEnglish**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image214.png"
-style="width:1.69841in;height:1.61698in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image214.png" style="width:70%" />
 
-269. Drop down the context menu for the report bookmark named
-     **SetLanguageEnglish**.
+98. Drop down the context menu for the report bookmark named **SetLanguageEnglish**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image215.png"
-style="width:1.84127in;height:1.43969in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image215.png" style="width:70%" />
 
-270. By default, the behaviors of **Data**, **Display** and **Current
-     page** are enabled. Disable the behaviors for **Display** and
-     **Current page**.
+99. By default, the behaviors of **Data**, **Display** and **Current page** are enabled. Disable the behaviors for **Display** and **Current page**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image216.png"
-style="width:1.89071in;height:1.36973in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image216.png" style="width:70%" />
 
-271. Ensure that the only behavior that remains enabled is **Data** as
-     shown in the following screenshot.
+100. Ensure that the only behavior that remains enabled is **Data** as shown in the following screenshot.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image217.png"
-style="width:1.93989in;height:1.35675in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image217.png" style="width:70%" />
 
-You have now created the first report bookmark. Now you will create
-three more for the other languages using the same set of steps.
+> You have now created the first report bookmark. Now you will create three more for the other languages using the same set of steps.
 
-272. Update the report-level filter on the **Languages** table to
-     **Spanish**.
+101. Update the report-level filter on the **Languages** table to **Spanish**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image218.png"
-style="width:1.60966in;height:1.62842in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image218.png" style="width:70%" />
 
-273. Click the **Add** button in the **Bookmarks** pane.
+102. Click the **Add** button in the **Bookmarks** pane.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image219.png"
-style="width:1.59091in;height:1.04571in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image219.png" style="width:70%" />
 
-274. Rename the report bookmark to **SetLanguageSpanish** and ensure
-     that the only behavior that remains enable is **Data**.
+103. Rename the report bookmark to **SetLanguageSpanish** and ensure that the only behavior that remains enable is **Data**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image220.png"
-style="width:1.97364in;height:1.8in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image220.png" style="width:70%" />
 
-275. Update the report-level filter on the **Languages** table to
-     **French** and then click **Add** in the **Bookmarks** pane.
+104. Update the report-level filter on the **Languages** table to **French** and then click **Add** in the **Bookmarks** pane.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image221.png"
-style="width:1.58145in;height:1.42727in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image221.png" style="width:70%" />
 
-276. Rename the report bookmark to **SetLanguageFrench** and ensure that
-     the only behavior that remains enable is **Data**.
+105. Rename the report bookmark to **SetLanguageFrench** and ensure that the only behavior that remains enable is **Data**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image222.png"
-style="width:2.04514in;height:2.07274in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image222.png" style="width:70%" />
 
-277. Update the report-level filter on the **Languages** table to
-     **German** and then click **Add** in the **Bookmarks** pane.
+106. Update the report-level filter on the **Languages** table to **German** and then click **Add** in the **Bookmarks** pane.
 
-     <img
-     src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image223.png"
-     style="width:1.58611in;height:1.46944in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image223.png" style="width:70%" />
 
-278. Rename the report bookmark to **SetLanguageGerman** and ensure that
-     the only behavior that remains enable is **Data**.
+107. Rename the report bookmark to **SetLanguageGerman** and ensure that the only behavior that remains enable is **Data**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image224.png"
-style="width:1.60317in;height:1.75009in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image224.png" style="width:70%" />
 
-279. Now you should be able to apply these report bookmarks to change
-     the language for data translations.
+108. Now you should be able to apply these report bookmarks to change the language for data translations.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image225.png"
-style="width:4.43839in;height:1.88889in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image225.png" style="width:70%" />
 
-Before testing the report in the Power BI Service, you should explicitly
-set the default language filter and the start page.
+> Before testing the report in the Power BI Service, you should explicitly set the default language filter and the start page.
 
-280. Set the report-level filter on the **Languages** table to
-     **English**. Also hide the **Languages** filter so it is not seen
-     by report consumers.
+109. Set the report-level filter on the **Languages** table to **English**. Also hide the **Languages** filter so it is not seen by report consumers.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image226.png"
-style="width:1.40909in;height:1.4826in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image226.png" style="width:70%" />
 
-Don't give users the option of changing this filter as it only change
+> Don't give users the option of changing this filter as it only change
 data translations but not the other two types of translations.
 
-281. Navigate back to the **Sales Summary** page and make it active
-     before saving to ensure this page is the startup page.
+110. Navigate back to the **Sales Summary** page and make it active before saving to ensure this page is the startup page.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png"
-style="width:4.00425in;height:0.54787in"
-alt="Graphical user interface, text, application, Word Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png" style="width:70%" />
 
-282. Save your work by clicking the **Save** button.
+111. Save your work by clicking the **Save** button.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image51.png"
-style="width:4.02482in;height:1.09043in"
-alt="A screenshot of a computer Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image51.png" style="width:70%" />
 
-Now, it’s time once again to test your work in the Power BI Service.
+> Now, it’s time once again to test your work in the Power BI Service.
 
-283. Publish the **Product Sales** project to push your changes to the
-     project’s translations to the Power BI Service.
+112. Publish the **Product Sales** project to push your changes to the project’s translations to the Power BI Service.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image52.png"
-style="width:6.35449in;height:1.05319in"
-alt="Graphical user interface, application Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image52.png" style="width:70%" />
 
-284. When prompted by the **Replace this dataset?** dialog, click the
-     **Replace** button to continue.
+113. When prompted by the **Replace this dataset?** dialog, click the **Replace** button to continue.
 
-285. Once you see **Success!**, click **Open ‘Product Sales’ in Power
-     BI** to view the report in the Power BI Service.
+114. Once you see **Success!**, click **Open ‘Product Sales’ in Power BI** to view the report in the Power BI Service.
 
-286. The report should load as normal showing all text in English at
-     first.
+115. The report should load as normal showing all text in English at first.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image227.png"
-style="width:5.76519in;height:2.86364in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image227.png" style="width:70%" />
 
-287. Drop down the **Bookmarks** menu on the toolbar and select **Show
-     more bookmarks** to display the **Bookmarks** pane.
+116. Drop down the **Bookmarks** menu on the toolbar and select **Show more bookmarks** to display the **Bookmarks** pane.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image228.png"
-style="width:5.45897in;height:1.19091in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image228.png" style="width:70%" />
 
-288. Experiment by applying each of the report bookmarks which set the
-     language used for data translations.
+117. Experiment by applying each of the report bookmarks which set the language used for data translations.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image229.png"
-style="width:5.98096in;height:2.42727in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image229.png" style="width:70%" />
 
-289. After applying a report bookmark, examine the report URL in the
-     address bar and locate the **bookmarkGuid** parameter value
+118. After applying a report bookmark, examine the report URL in the address bar and locate the **bookmarkGuid** parameter value
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image230.png"
-style="width:5.24924in;height:1.95291in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image230.png" style="width:70%" />
 
-Yes, we agree. The parameter name of **bookmarkGuid** isn't the best
-name. But you can think of the **bookmarkGuid** value as the identifier
-for a report bookmark which is generated in the format of
-**Bookmarkdfa67c1b956e45694481**.
+> Yes, we agree. The parameter name of **bookmarkGuid** isn't the best name. But you can think of the **bookmarkGuid** value as the identifier
+for a report bookmark which is generated in the format of **Bookmarkdfa67c1b956e45694481**.
 
-290. Open a text editor such as Notepad and copy and paste the following
-     text.
+119. Open a text editor such as Notepad and copy and paste the following text.
 
+```
 English
-
 ?language=en-US&bookmarkGuid={bookmarkGuid for SetLanguageEnglish}
 
 Spanish
-
 ?language=es-ES&bookmarkGuid={bookmarkGuid for SetLanguageSpanish}
 
 French
-
 ?language=fr-FR&bookmarkGuid={bookmarkGuid for SetLanguageFrench}
 
 German
-
 ?language=de-DE&bookmarkGuid={bookmarkGuid for SetLanguageGerman}
+```
 
-291. Discover the **bookmarkGuid** values by applying report bookmarks
-     and copying the parameter value from the address bar.
+120. Discover the **bookmarkGuid** values by applying report bookmarks and copying the parameter value from the address bar.
 
-292. Add the **bookmarkGuid** values into the text editor to record the
-     URL parameters you need to load each of the four languages.
+121. Add the **bookmarkGuid** values into the text editor to record the URL parameters you need to load each of the four languages.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image231.png"
-style="width:5.18355in;height:2.55405in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image231.png" style="width:70%" />
 
-293. Edit each of the four browser bookmarks you created earlier by
-     adding the **bookmarkGuid** parameter to load data translations.
+122. Edit each of the four browser bookmarks you created earlier by adding the **bookmarkGuid** parameter to load data translations.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image232.png"
-style="width:2.4818in;height:1.46032in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image232.png" style="width:70%" />
 
-294. For each browser bookmark, add the **bookmarkGuid** parameter in
-     addition to **language** to apply the correct report bookmark..
+123. For each browser bookmark, add the **bookmarkGuid** parameter in addition to **language** to apply the correct report bookmark.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image233.png"
-style="width:1.57201in;height:1.11055in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image233.png" style="width:70%" />
 
-Now all four browser bookmarks should pass the appropriate
-**bookmarkGuid** parameter value to load data translations correctly.
+> Now all four browser bookmarks should pass the appropriate **bookmarkGuid** parameter value to load data translations correctly.
 
-295. Click the browser bookmark for **Spanish**. The **Sales Summary**
-     page should now be fully translated into Spanish.
+124. Click the browser bookmark for **Spanish**. The **Sales Summary** page should now be fully translated into Spanish.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image234.png"
-style="width:3.84697in;height:2.12409in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image234.png" style="width:70%" />
 
-296. Navigate to the **Sales By Category** page. This page should also
-     be fully translated into Spanish.
+125. Navigate to the **Sales By Category** page. This page should also be fully translated into Spanish.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image235.png"
-style="width:3.91971in;height:2.23314in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image235.png" style="width:70%" />
 
-297. Click the browser bookmark for **French**. The **Sales Summary**
-     page should now be fully translated into French.
+126. Click the browser bookmark for **French**. The **Sales Summary** page should now be fully translated into French.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image236.png"
-style="width:4.26577in;height:2.28571in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image236.png" style="width:70%" />
 
-298. Navigate to the **Sales By Category** page. This page should also
-     be fully translated into French.
+127. Navigate to the **Sales By Category** page. This page should also be fully translated into French.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image237.png"
-style="width:3.05109in;height:1.72538in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image237.png" style="width:70%" />
 
-299. Click the browser bookmark for **German**. The **Sales Summary**
-     page should now be fully translated into German.
+128. Click the browser bookmark for **German**. The **Sales Summary** page should now be fully translated into German.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image238.png"
-style="width:3.05839in;height:1.57754in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image238.png" style="width:70%" />
 
-300. Navigate to the **Sales By Category** page. This page should also
-     be fully translated into German.
+129. Navigate to the **Sales By Category** page. This page should also be fully translated into German.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image239.png"
-style="width:3.10219in;height:1.76578in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image239.png" style="width:70%" />
 
-You have now successfully implemented and tested the data translations
+> You have now successfully implemented and tested the data translations
 for product names and category names. However, your work is not yet
 done. The **Sales Over Time** page still contains text-based values for
 calendar names that require your attention.
 
-301. Navigate the **Sales Over Time** page. You can see that the names
-     of months and days are still in English.
+130. Navigate the **Sales Over Time** page. You can see that the names of months and days are still in English.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image240.png"
-style="width:3.94977in;height:2.23358in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image240.png" style="width:70%" />
 
-You will now move on to the final exercise where you will implement data
+> You will now move on to the final exercise where you will implement data
 translations for the names of months and days of the week..
 
 ## Exercise 6: Implementing Data Translations for a Calendar Table
-
-In this exercise you will implement data translations for the names of
+> In this exercise you will implement data translations for the names of
 months and days in a **Calendar** table. To properly implement data
 translations for columns in a calendar table, you need a strategy to
 translate month names and day-of-week names into the secondary languages
