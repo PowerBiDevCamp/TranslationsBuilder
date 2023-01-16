@@ -1043,7 +1043,7 @@ translations.
 
 16. Make sure the translation columns are ordered starting with English and then Spanish, French and German.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image146.png" style="width:40%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image146.png" style="width:30%" />
 
 17. Click the **Create** button in the **Parameters** dialog to create the new Field Parameter.
 
