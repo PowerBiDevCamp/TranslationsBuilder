@@ -475,7 +475,7 @@ translations.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image65.png" style="width:70%" />
 
-If you click **<u>Y</u>es**, you will be redirected to [this web page](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Building%20Multi-language%20Reports%20in%20Power%20BI.md#understanding-the-localized-labels-table)
+> If you click **<u>Y</u>es**, you will be redirected to [this web page](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Building%20Multi-language%20Reports%20in%20Power%20BI.md#understanding-the-localized-labels-table)
 which provides a detailed explanation of the **Localized Labels** table strategy.
 
 8. Once Translations Builder has created the **Localized Labels** table, it will also add three sample report labels.
@@ -499,108 +499,72 @@ which provides a detailed explanation of the **Localized Labels** table strategy
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image69.png" style="width:70%" />
 
 12. In the **Labels** textbox, type the following labels separated by line breaks.
-- **Product Sales Report**
-- **Sales Summary**
-- **Sales By Category**
-- **Sales Over Time**
-- **Top Selling Products**
+  - **Product Sales Report**
+  - **Sales Summary**
+  - **Sales By Category**
+  - **Sales Over Time**
+  - **Top Selling Products**
 
-77. Click the **Add Labels** button to add the five new report labels to
-    your project.
+13. Click the **Add Labels** button to add the five new report labels to your project.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image70.png"
-style="width:3.77489in;height:2.33333in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image70.png" style="width:70%" />
 
-78. You should now see five new rows have been added to the translations
-    grid for the new report labels.
+14. You should now see five new rows have been added to the translations grid for the new report labels.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image71.png"
-style="width:6.1731in;height:1.89308in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image71.png" style="width:70%" />
 
-79. Click the **Fill All Empty Translations** button to generate
-    translations for all the new report labels.
+15. Click the **Fill All Empty Translations** button to generate translations for all the new report labels.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image49.png"
-style="width:5.51528in;height:1.54804in"
-alt="Graphical user interface, application Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image49.png" style="width:70%" />
 
-80. At this point, the translations grid should be completely filled
-    with machine-generated translations.
+16. At this point, the translations grid should be completely filled with machine-generated translations.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image72.png"
-style="width:5.8826in;height:2.63492in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image72.png" style="width:70%" />
 
-There is one critical step you must complete after modifying report
+> There is one critical step you must complete after modifying report
 labels in the **Localized Labels** table. More specifically, you must
 execute **Generate Translated Localized Labels Table** to create the
 measures that will be used to surface report labels on a report.
 
-81. Drop down the **Generate Translated Tables** menu and select click
-    **Generate Translated Localized Labels Table**.
+17. Drop down the **Generate Translated Tables** menu and select click **Generate Translated Localized Labels Table**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image73.png"
-style="width:3.06918in;height:1.08398in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image73.png" style="width:70%" />
 
-Note you can also execute the **Generate Translated Localized Labels
+> Note you can also execute the **Generate Translated Localized Labels
 Table** command using the shortcut key of **Ctrl+L**.
 
-82. Return to the **Product Sales** project in Power BI Desktop and
-    navigate to **Report** view.
+18. Return to the **Product Sales** project in Power BI Desktop and navigate to **Report** view.
 
-83. Locate the **Translated Localized Labels** table in the **Fields**
-    list.
+19. Locate the **Translated Localized Labels** table in the **Fields** list.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image74.png"
-style="width:3.67665in;height:1.08038in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image74.png" style="width:70%" />
 
-The measures in the **Translated Localized Labels** table are used to
-display report labels on a Power BI report.
+> The measures in the **Translated Localized Labels** table are used to display report labels on a Power BI report.
 
-84. Select the measure named **Product Sales Report Label** and examine
-    the DAX expression behind this measure.
+20. Select the measure named **Product Sales Report Label** and examine the DAX expression behind this measure.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image75.png"
-style="width:3.68263in;height:1.56623in"
-alt="Graphical user interface Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image75.png" style="width:70%" />
 
-You should not edit the DAX expressions of any measures in the
+> You should not edit the DAX expressions of any measures in the
 **Translated Localized Labels** table. Any changes you make will be lost
 as all the measures in this table are deleted and recreated each time
 you execute **Generate Translated Localized Labels Table**.
 
-85. Take time to examine the DAX expression behind each of the measures
-    in the **Translated Localized Labels** table.
+21. Take time to examine the DAX expression behind each of the measures in the **Translated Localized Labels** table.
 
-Now that you have created measures for report labels in the **Translated
-Localized Labels** table, it’s time to use them in the report.
+> Now that you have created measures for report labels in the **Translated Localized Labels** table, it’s time to use them in the report.
 
-86. Ensure that **Sales Summary** is still the active page in **Report**
-    view.
+22. Ensure that **Sales Summary** is still the active page in **Report** view.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png"
-style="width:3.96667in;height:0.54273in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png" style="width:70%" />
 
-87. In the report layout, select the large black Rectangle shape that
-    displays the report title **Product Sales Report**.
+23. In the report layout, select the large black Rectangle shape that displays the report title **Product Sales Report**.
 
-88. With the Rectangle shape selected, move to the **Format** pane and
-    locate the **Text** section inside the **Style** selection.
+24. With the Rectangle shape selected, move to the **Format** pane and locate the **Text** section inside the **Style** selection.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image76.png"
-style="width:3.67639in;height:1.81688in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image76.png" style="width:70%" />
 
-89. Expand the **Text** section to see the **Text** property is
-    configured with the literal string value of **Product Sales
-    Report**.
+25. Expand the **Text** section to see the **Text** property is configured with the literal string value of **Product Sales Report**.
 
 <img
 src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image77.png"
