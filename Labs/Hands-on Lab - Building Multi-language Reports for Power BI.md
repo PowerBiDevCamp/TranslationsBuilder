@@ -1092,14 +1092,16 @@ Desktop created the new Field Parameter.
 
 26. Currently, the DAX expression has hard-coded column names like **ProductTranslationEnglish** and **ProductTranslationSpanish**.
 
-**```
+**
+```
 Translated Product Names = {
   ("ProductTranslationEnglish", NAMEOF('Products'\[ProductTranslationEnglish\]), 0),
   ("ProductTranslationSpanish", NAMEOF('Products'\[ProductTranslationSpanish\]), 1),
   ("ProductTranslationFrench", NAMEOF('Products'\[ProductTranslationFrench\]), 2),
   ("ProductTranslationGerman", NAMEOF('Products'\[ProductTranslationGerman\]), 3)
 }
-```**
+```
+**
 
 The way to resolve this issue is to update the DAX expression to replace
 the column names with localized translations.
