@@ -486,13 +486,13 @@ which provides a detailed explanation of the **Localized Labels** table strategy
 
 9. Drop down the **Generate Translated Tables** menu and select click **Add Labels to the Localized Labels Table**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image67.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image67.png" style="width:46%" />
 
 > Note you can also execute the **Add Labels to the Localized Labels Table** command using the shortcut key of **Ctrl+A**.
 
 10. In the **Add Localized Labels** dialog, click the **Advanced Mode** checkbox.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image68.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image68.png" style="width:50%" />
 
 11. Once the dialog is in **Advanced Mode**, click the **Delete All Labels** button to remove the sample report labels.
 
