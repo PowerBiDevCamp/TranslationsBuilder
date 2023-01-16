@@ -1643,23 +1643,23 @@ translations for columns in a calendar table, you need a strategy to
 translate month names and day-of-week names into the secondary languages
 you plan to support.
 
->The strategy presented in this lab exercise for implementing calendar
+The strategy presented in this lab exercise for implementing calendar
 table column translations is based on Power Query and the power of the M
 query language. Power Query provides several built-in functions such as
 **Date.MonthName** which accept a **Date** parameter and return a
 text-based calendar name. The following Power Query function call will
 evaluate to a text-based value of January in French.
 
-> **Date.MonthName( \#date(2022, 12, 1), "fr-FR")**
+**Date.MonthName( \#date(2022, 12, 1), "fr-FR")**
 
-> Power Query is built on a functional query language named M which makes
+Power Query is built on a functional query language named M which makes
 it possible to enumerate through the rows of the **Languages** table to
 discover what languages and what default cultures are supported in the
 current project. This makes it possible to write a query which uses the
 **Languages** table as its source to generate translation tables with
 the names of months or weekdays.
 
-> <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image241.png" style="width:60%" />
+<img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image241.png" style="width:60%" />
 
 1.  From the **Home** tab on the ribbon, click **Transform Data** to display the Power Query window with queries for the current project.
 
