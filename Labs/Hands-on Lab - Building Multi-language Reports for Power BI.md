@@ -757,7 +757,7 @@ Excel installed on the same PC that's running Translations Builder.
 
 4. Click **Configure Settings…** to display the **Configuration Options** dialog.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image101.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image101.png" style="width:40%" />
 
 5. By default, folder paths for the **Outbox** and **Inbox** are configured to target the current user’s **Documents** folder.
 
