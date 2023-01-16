@@ -475,7 +475,7 @@ translations.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image65.png" style="width:32%" />
 
-> If you click **<u>Y</u>es**, you will be redirected to [this web page](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Building%20Multi-language%20Reports%20in%20Power%20BI.md#understanding-the-localized-labels-table)
+> If you click **<u>Y</u>es**, you will be redirected to **[this web page](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Building%20Multi-language%20Reports%20in%20Power%20BI.md#understanding-the-localized-labels-table)**
 which provides a detailed explanation of the **Localized Labels** table strategy.
 
 8. Once Translations Builder has created the **Localized Labels** table, it will also add three sample report labels.
