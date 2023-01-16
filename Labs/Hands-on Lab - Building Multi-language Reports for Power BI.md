@@ -1812,15 +1812,15 @@ or from the **StudentFiles\Snippets** folder.
 
 21. Create a one-to-many relationship between **Translated Day Names Table** and **Calendar** based on the **DayNumber** column.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image255.png" style="width:40%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image255.png" style="width:35%" />
 
 22. Create a one-to-many relationship between **Translated Month Names Table** and **Calendar** based on the **MonthNumber** column.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image256.png" style="width:40%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image256.png" style="width:35%" />
 
 23. Hide **Translated Day Names Table** and **Translated Month Names Table** so they do not appear in **Report** view.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image257.png" style="width:40%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image257.png" style="width:35%" />
 
 24. Switch to **Report** view and navigate to the **Sales Over Time** page.
 
@@ -1837,11 +1837,11 @@ steps should already be familiar.
 
 26. Name the Field Parameter **Translated Month Names** and add the translation columns from **Translated Month Names Table**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image260.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image260.png" style="width:30%" />
 
 27. Switch to **Data** view and select **Translated Month Names** in the **Data** pane so you can view its DAX expression.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image261.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image261.png" style="width:90%" />
 
 28. Update the DAX expression for **Translated Month Names** with the following DAX code.
 
