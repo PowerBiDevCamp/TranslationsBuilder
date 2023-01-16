@@ -985,7 +985,7 @@ translations.
 
 2.  Make sure the current page is **Sales Summary**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png" style="width:60%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png" style="width:54%" />
 
 3.  From the **Home** tab on the ribbon, click **Transform Data** to display the Power Query window with queries for the current project.
 
