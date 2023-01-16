@@ -985,167 +985,98 @@ translations.
 
 2.  Make sure the current page is **Sales Summary**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png"
-style="width:4.24528in;height:0.58085in"
-alt="Graphical user interface, text, application, Word Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png" style="width:70%" />
 
-4.  From the **Home** tab on the ribbon, click **Transform Data** to
-    display the Power Query window with queries for the current project.
+3.  From the **Home** tab on the ribbon, click **Transform Data** to display the Power Query window with queries for the current project.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image134.png"
-style="width:4.55073in;height:0.79306in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image134.png" style="width:70%" />
 
-175. In the left navigation of the Power Query window, select the
-     **Products** query and examine the columns in its output table.
+4. In the left navigation of the Power Query window, select the **Products** query and examine the columns in its output table.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image135.png"
-style="width:4.60145in;height:1.47417in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image135.png" style="width:70%" />
 
-176. Examine the query steps in the **APPLIED STEPS** list on the right
-     and locate the step named **RemoveTranslatedColumns**.
+5. Examine the query steps in the **APPLIED STEPS** list on the right and locate the step named **RemoveTranslatedColumns**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image136.png"
-style="width:1.5338in;height:2.03659in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image136.png" style="width:70%" />
 
-177. Right-click the **RemoveTranslatedColumns** step and select the
-     **Delete** menu command to delete this step from the query.
+6. Right-click the **RemoveTranslatedColumns** step and select the **Delete** menu command to delete this step from the query.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image137.png"
-style="width:1.94337in;height:1.59756in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image137.png" style="width:70%" />
 
-178. You should see the query's output table now contains four columns
-     with translations for product names.
+7. You should see the query's output table now contains four columns with translations for product names.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image138.png"
-style="width:5.69281in;height:1.91925in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image138.png" style="width:70%" />
 
-179. If you scroll to the right, you will see there is also four columns
-     with translations for category names as well.
+8. If you scroll to the right, you will see there is also four columns with translations for category names as well.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image139.png"
-style="width:5.59205in;height:1.2795in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image139.png" style="width:70%" />
 
-180. Click **Close and Apply** to close the Power Query windows and to
-     execute the **Products** query with the update you made.
+9. Click **Close and Apply** to close the Power Query windows and to execute the **Products** query with the update you made.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image140.png"
-style="width:4.32919in;height:0.91875in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image140.png" style="width:70%" />
 
-181. Switch to **Model** view to see the changes that have been made to
-     the **Products** table.
+10. Switch to **Model** view to see the changes that have been made to the **Products** table.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image141.png"
-style="width:5.15438in;height:3.59006in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image141.png" style="width:70%" />
 
-Now that the dataset has been extended with extra translation columns,
-it's time to create a new Field Parameter.
+> Now that the dataset has been extended with extra translation columns, it's time to create a new Field Parameter.
 
-182. Switch to **Report** view and create a new page in the report.
-     Rename the new page **Test Page**.
+11. Switch to **Report** view and create a new page in the report. Rename the new page **Test Page**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image142.png"
-style="width:4.59773in;height:0.52795in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image142.png" style="width:70%" />
 
-This test page will be used temporarily to test out the Field Parameter.
-You will delete this page later in this exercise.
+> This test page will be used temporarily to test out the Field Parameter. You will delete this page later in this exercise.
 
-183. Navigate to the **Modeling** tab and select **New parameter \>
-     Fields** to create a Field Parameter.
+12. Navigate to the **Modeling** tab and select **New parameter \> Fields** to create a Field Parameter.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image143.png"
-style="width:4.87807in;height:1.14286in"
-alt="Graphical user interface, application, Word Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image143.png" style="width:70%" />
 
-184. Enter the **Name** for a new Field Parameter as **Translated
-     Product Names**.
+13. Enter the **Name** for a new Field Parameter as **Translated Product Names**.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image144.png"
-style="width:3.02345in;height:1.21739in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image144.png" style="width:70%" />
 
-185. Populate the fields collection with the four columns from the
-     **Products** table with product name translations.
+14. Populate the fields collection with the four columns from the **Products** table with product name translations.
 
-186. Leave the **Add slicer to this page** checkbox enabled.
+15. Leave the **Add slicer to this page** checkbox enabled.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image145.png"
-style="width:3.09237in;height:3.00533in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image145.png" style="width:70%" />
 
-187. Make sure the translation columns are ordered starting with English
-     and then Spanish, French and German,
+16. Make sure the translation columns are ordered starting with English and then Spanish, French and German.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image146.png"
-style="width:2.06918in;height:1.11596in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image146.png" style="width:70%" />
 
-188. Click the **Create** button in the **Parameters** dialog to create
-     the new Field Parameter.
+17. Click the **Create** button in the **Parameters** dialog to create the new Field Parameter.
 
-After you have created a new Field Parameter, it appears in the
-**Fields** list on the right as a new table.
+> After you have created a new Field Parameter, it appears in the **Fields** list on the right as a new table.
 
-189. Examine the new Field Parameter named **Translated Product Names**
-     in the **Fields** list.
+18. Examine the new Field Parameter named **Translated Product Names** in the **Fields** list.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image147.png"
-style="width:1.36534in;height:1.1677in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image147.png" style="width:70%" />
 
-190. If you expand the node for **Translated Product Names**, you will
-     see a single child field with the same name as the parent table.
+19. If you expand the node for **Translated Product Names**, you will see a single child field with the same name as the parent table.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image148.png"
-style="width:1.34783in;height:0.93007in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image148.png" style="width:70%" />
 
-191. Select the top node for **Translated Product Names** in the
-     **Fields** list to view the DAX expression that defines the fields
-     collection.
+20. Select the top node for **Translated Product Names** in the **Fields** list to view the DAX expression that defines the fields collection.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image149.png"
-style="width:6.26708in;height:3.0062in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image149.png" style="width:70%" />
 
-Now you will conduct a quick experiment so you can better understand how
-Field Parameters work.
+> Now you will conduct a quick experiment so you can better understand how Field Parameters work.
 
-192. Add a **Table** visual to the report page to the right of the
-     slicer.
+21. Add a **Table** visual to the report page to the right of the slicer.
 
-193. Add the child field from inside the Field Parameter into the
-     **Columns** data role of the Table visual.
+22. Add the child field from inside the Field Parameter into the **Columns** data role of the Table visual.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image150.png"
-style="width:5.27186in;height:1.7205in"
-alt="Graphical user interface, application, table Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image150.png" style="width:70%" />
 
-As long as nothing is selected in the slicer, the Table visual displays
-all four source columns.
+> As long as nothing is selected in the slicer, the Table visual displays all four source columns.
 
-194. Select a specific field in the slicer. When you select a single
-     slicer value such as the **ProductTranslationSpanish** field, the
-     slicer applies filtering that reduces the number of columns
-     displayed in the Table visual from four columns to a single column.
+23. Select a specific field in the slicer. When you select a single slicer value such as the **ProductTranslationSpanish** field, the
+     slicer applies filtering that reduces the number of columns displayed in the Table visual from four columns to a single column.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image151.png"
-style="width:3.55975in;height:1.16735in"
-alt="Graphical user interface, application Description automatically generated" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image151.png" style="width:70%" />
 
-In the previous screenshot, you can see that the column values for
+> In the previous screenshot, you can see that the column values for
 product names have been translated into Spanish. However, there is still
 an issue with the column header. The column header still displays the
 column name from the underlying datasource which is
@@ -1153,33 +1084,22 @@ column name from the underlying datasource which is
 header values were hard-coded into the DAX expression when Power BI
 Desktop created the new Field Parameter.
 
-195. Switch to **Data** view.
+24. Switch to **Data** view.
 
-196. Select the top node for **Translated Product Names** to see the DAX
-     expression that defines the Field Parameter's fields collection.
+25. Select the top node for **Translated Product Names** to see the DAX expression that defines the Field Parameter's fields collection.
 
-<img
-src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image152.png"
-style="width:4.16321in;height:1.61905in" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image152.png" style="width:70%" />
 
-197. Currently, the DAX expression has hard-coded column names like
-     **ProductTranslationEnglish** and **ProductTranslationSpanish**.
+26. Currently, the DAX expression has hard-coded column names like **ProductTranslationEnglish** and **ProductTranslationSpanish**.
 
+```
 Translated Product Names = {
-
-("ProductTranslationEnglish",
-NAMEOF('Products'\[ProductTranslationEnglish\]), 0),
-
-("ProductTranslationSpanish",
-NAMEOF('Products'\[ProductTranslationSpanish\]), 1),
-
-("ProductTranslationFrench",
-NAMEOF('Products'\[ProductTranslationFrench\]), 2),
-
-("ProductTranslationGerman",
-NAMEOF('Products'\[ProductTranslationGerman\]), 3)
-
+  ("ProductTranslationEnglish", NAMEOF('Products'\[ProductTranslationEnglish\]), 0),
+  ("ProductTranslationSpanish", NAMEOF('Products'\[ProductTranslationSpanish\]), 1),
+  ("ProductTranslationFrench", NAMEOF('Products'\[ProductTranslationFrench\]), 2),
+  ("ProductTranslationGerman", NAMEOF('Products'\[ProductTranslationGerman\]), 3)
 }
+```
 
 The way to resolve this issue is to update the DAX expression to replace
 the column names with localized translations.
