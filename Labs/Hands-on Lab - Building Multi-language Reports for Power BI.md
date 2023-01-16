@@ -911,7 +911,7 @@ importing them with Translations Builder to prevent errors.
 
 34. In the **Open** file dialog, select **Product Sales-Translations-Spanish.csv** and click **Open**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image126.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image126.png" style="width:60%" />
 
 35. You should see that your updates to the Spanish translation sheet now appear in the translation grid.
 
