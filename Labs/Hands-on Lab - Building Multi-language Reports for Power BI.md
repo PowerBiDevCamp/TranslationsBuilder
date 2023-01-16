@@ -1408,11 +1408,11 @@ Translated Category Names = {
 
 84. You should now see data translations for German in the Y-axis and in the legend.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image201.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image201.png" style="width:40%" />
 
 85. Select the Matrix visual and verify it uses the **Product** column and the **Category** column from the **Products** table.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image202.png" style="width:60%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image202.png" style="width:50%" />
 
 86. Update the **Rows** data role of the Matrix visual to use **Product** from **Translated Product Names** and **Category** from
      **Translated Category Names**. You should now see data translations for German for category names.
@@ -1421,11 +1421,11 @@ Translated Category Names = {
 
 87. Click the **Expand** button with the pitchfork icon to drill down and display product names.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image204.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image204.png" style="width:50%" />
 
 88. You should now see an expanded matrix that displays both category names and product names in German
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image205.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image205.png" style="width:50%" />
 
 > You will need to click the **Expand** button again any time you switch
 between languages and want to drill into product names.
