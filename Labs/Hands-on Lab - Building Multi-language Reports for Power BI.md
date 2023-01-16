@@ -692,11 +692,11 @@ translations. Now you need to prepare the report for deployment
 
 60. Verify the report title and navigation button captions are displayed using Spanish translations.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image93.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image93.png" style="width:90%" />
 
 61. Navigate to the second page and verify the title for the **Top Selling Products** visual is displayed using Spanish translations.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image94.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image94.png" style="width:90%" />
 
 62. Use the browser bookmark created earlier to load the report in French.
 
