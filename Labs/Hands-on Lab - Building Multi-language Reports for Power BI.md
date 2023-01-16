@@ -904,7 +904,7 @@ just need to add text that is different for testing purposes.
 
 33. Return to Translations Builder and click the **Import Translations** button.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image125.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image125.png" style="width:50%" />
 
 > Remember to close translation sheet files in Microsoft Excel before
 importing them with Translations Builder to prevent errors.
