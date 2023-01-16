@@ -1205,7 +1205,7 @@ translations strategy by adding the **Languages** table.
 
 40. Create a new query by dropping down the **Get data** menu and selecting **Blank query**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image163.png" style="width:40%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image163.png" style="width:30%" />
 
 41. You should see the Power Query window open with a new query named **Query1**.
 
