@@ -1673,7 +1673,7 @@ the names of months or weekdays.
 
 3. Create a new query by dropping down the **New Source** menu and selecting **Blank Query**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image244.png" style="width:90%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image244.png" style="width:80%" />
 
 4. Rename the new query to **Translated Month Names Table**.
 
@@ -1685,68 +1685,34 @@ the names of months or weekdays.
 
 ```
 let
-
-Source = \#table( type table \[ MonthNumber = Int64.Type \],
-List.Split({1..12},1)),
-
-Translations = Table.AddColumn( Source, "Translations",
-
-each
-
-\[ MonthDate = \#date( 2022, \[ MonthNumber \], 1 ),
-
-Translations = List.Transform(Languages\[DefaultCulture\], each
-Date.MonthName( MonthDate, \_ ) ),
-
-TranslationTable = Table.FromList( Translations, null ),
-
-TranslationsTranspose = Table.Transpose(TranslationTable),
-
-TranslationsColumns = Table.RenameColumns(
-
-TranslationsTranspose,
-
-List.Zip({ Table.ColumnNames( TranslationsTranspose ),
-
-List.Transform(Languages\[Language\],
-
-each "MonthNameTranslations" & \_ ) })
-
-)
-
-\]
-
-),
-
-ExpandedTranslations = Table.ExpandRecordColumn(Translations,
-
-"Translations",
-
-{ "TranslationsColumns" },
-
-{ "TranslationsColumns" }),
-
-ColumnsCollection = List.Transform(Languages\[Language\], each
-"MonthNameTranslations" & \_ ),
-
-ExpandedTranslationsColumns =
-Table.ExpandTableColumn(ExpandedTranslations,
-
-"TranslationsColumns",
-
-ColumnsCollection,
-
-ColumnsCollection ),
-
-TypedColumnsCollection = List.Transform(ColumnsCollection, each {\_,
-type text}),
-
-QueryOutput = Table.TransformColumnTypes(ExpandedTranslationsColumns,
-TypedColumnsCollection)
-
+    Source = #table( type table [ MonthNumber = Int64.Type ], List.Split({1..12},1)),
+    Translations = Table.AddColumn( Source, "Translations",
+        each
+            [ MonthDate = #date( 2022, [ MonthNumber ], 1 ),
+              Translations = List.Transform(Languages[DefaultCulture], each Date.MonthName( MonthDate, _ ) ),
+              TranslationTable = Table.FromList( Translations, null ),
+              TranslationsTranspose = Table.Transpose(TranslationTable),
+              TranslationsColumns = Table.RenameColumns(
+                TranslationsTranspose,
+                List.Zip({ Table.ColumnNames( TranslationsTranspose ), 
+                           List.Transform(Languages[Language], 
+                           each "MonthNameTranslations" & _ ) })
+              )
+            ]
+    ),
+    ExpandedTranslations = Table.ExpandRecordColumn(Translations, 
+                                                    "Translations", 
+                                                    { "TranslationsColumns" }, 
+                                                    { "TranslationsColumns" }),
+    ColumnsCollection = List.Transform(Languages[Language], each "MonthNameTranslations" & _ ),
+    ExpandedTranslationsColumns = Table.ExpandTableColumn(ExpandedTranslations, 
+                                                          "TranslationsColumns", 
+                                                          ColumnsCollection, 
+                                                          ColumnsCollection ),
+    TypedColumnsCollection = List.Transform(ColumnsCollection, each {_, type text}),
+    QueryOutput = Table.TransformColumnTypes(ExpandedTranslationsColumns, TypedColumnsCollection)
 in
-
-QueryOutput
+    QueryOutput
 ```
 
 If you have trouble copying the M code from this page, it might be easier to copy it from
@@ -1775,77 +1741,39 @@ or from the Student Files folder.
 
 ```
 let
-
-Source = \#table( type table \[ DayNumber = Int64.Type \],
-List.Split({1..7}, 1) ),
-
-NextSunday = Date.AddDays( Date.From(DateTime.LocalNow()),
-
-Value.Subtract(6,
-
-Date.DayOfWeek( Date.From(DateTime.LocalNow()),
-
-Day.Monday)) ),
-
-Translations = Table.AddColumn( Source, "Translations",
-
-each
-
-\[ DayOfWeek = Date.AddDays(NextSunday, \[DayNumber\] ),
-
-Translations = List.Transform(Languages\[DefaultCulture\],
-
-each Date.DayOfWeekName(DayOfWeek, \_ ) ),
-
-TranslationTable = Table.FromList( Translations, null ),
-
-TranslationsTranspose = Table.Transpose(TranslationTable),
-
-TranslationsColumns = Table.RenameColumns(
-
-TranslationsTranspose,
-
-List.Zip({ Table.ColumnNames( TranslationsTranspose ),
-
-List.Transform(Languages\[Language\],
-
-each "DayNameTranslations" & \_ ) })
-
-)
-
-\]
-
-),
-
-ExpandedTranslations = Table.ExpandRecordColumn(Translations,
-
-"Translations",
-
-{ "TranslationsColumns" },
-
-{ "TranslationsColumns" }),
-
-ColumnsCollection = List.Transform(Languages\[Language\], each
-"DayNameTranslations" & \_ ),
-
-ExpandedTranslationsColumns =
-Table.ExpandTableColumn(ExpandedTranslations,
-
-"TranslationsColumns",
-
-ColumnsCollection,
-
-ColumnsCollection ),
-
-TypedColumnsCollection = List.Transform(ColumnsCollection, each {\_,
-type text}),
-
-QueryOutput = Table.TransformColumnTypes(ExpandedTranslationsColumns,
-TypedColumnsCollection)
-
+    Source = #table( type table [ DayNumber = Int64.Type ], List.Split({1..7}, 1) ),
+    NextSunday  = Date.AddDays( Date.From(DateTime.LocalNow()), 
+                                Value.Subtract(6, 
+                                               Date.DayOfWeek( Date.From(DateTime.LocalNow()),
+                                               Day.Monday)) ),
+    Translations = Table.AddColumn( Source, "Translations",
+        each
+            [ DayOfWeek = Date.AddDays(NextSunday, [DayNumber] ),
+              Translations = List.Transform(Languages[DefaultCulture], 
+                                            each Date.DayOfWeekName(DayOfWeek, _ ) ),
+              TranslationTable = Table.FromList( Translations, null ),
+              TranslationsTranspose = Table.Transpose(TranslationTable),
+              TranslationsColumns = Table.RenameColumns(
+                TranslationsTranspose,
+                List.Zip({ Table.ColumnNames( TranslationsTranspose ), 
+                           List.Transform(Languages[Language], 
+                           each "DayNameTranslations" & _ ) })
+              )                
+            ]
+    ),
+    ExpandedTranslations = Table.ExpandRecordColumn(Translations, 
+                                                    "Translations", 
+                                                    { "TranslationsColumns" }, 
+                                                    { "TranslationsColumns" }),
+    ColumnsCollection = List.Transform(Languages[Language], each "DayNameTranslations" & _ ),
+    ExpandedTranslationsColumns = Table.ExpandTableColumn(ExpandedTranslations, 
+                                                          "TranslationsColumns", 
+                                                          ColumnsCollection, 
+                                                          ColumnsCollection ),
+    TypedColumnsCollection = List.Transform(ColumnsCollection, each {_, type text}),
+    QueryOutput = Table.TransformColumnTypes(ExpandedTranslationsColumns, TypedColumnsCollection)
 in
-
-QueryOutput
+    QueryOutput
 ```
 
 If you have trouble copying this M code from this page, it might be
