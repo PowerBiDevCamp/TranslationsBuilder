@@ -1307,23 +1307,23 @@ in
 
 61. Select the Table visual on the right. You can see that it is also using the **Product** column from the **Products** table.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image181.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image181.png" style="width:90%" />
 
 62. Remove the **Product** column from the **Products** table and replace it with the **Product** field from **Translated Product Names**. 
     The table should now update and display product names in Spanish.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image182.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image182.png" style="width:90%" />
 
 63. Now you can test your data translations by changing the filter on the **Languages** table to quickly switch between languages.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image183.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image183.png" style="width:90%" />
 
 > Now you have just implemented data translations for product names. 
   Now, you will continue by adding the same type of data translation support for category names as well.
 
 64. Navigate to the **Modeling** tab and select **New parameter \>  Fields** to create a Field Parameter.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image184.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image184.png" style="width:50%" />
 
 65. Create a new Field Parameter named **Translated Category Names**. Populate the fields collection with the four columns from the
      **Products** table with category name translations and be sure to disable the **Add slicer to this page** option.
