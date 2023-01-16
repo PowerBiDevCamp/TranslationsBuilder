@@ -846,7 +846,7 @@ wherever they are required.
 
 21. In Windows Explorer, navigate to the **Outbox** folder. You should see the two files you generated using export operations.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image117.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image117.png" style="width:60%" />
 
 22. Return to Translations Builder and uncheck the checkbox with the caption **Open Export in Excel**.
 
@@ -868,7 +868,7 @@ of translation sheets to be sent to translators.
 
 25. You should see that a sperate translation sheet has been generated for each secondary language.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image120.png" style="width:70" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image120.png" style="width:60" />
 
 > Now that you have experienced how to export translation sheets, you will now learn how to import translation sheets.
 
