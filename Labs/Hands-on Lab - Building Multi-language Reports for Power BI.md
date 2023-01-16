@@ -1341,7 +1341,7 @@ in
 
 68. Expand the node **Translated Category Names** and inspect the three child fields inside.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image188.png" style="width:25%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image188.png" style="width:32%" />
 
 69. Update the child field names to **Category**, **Fields** and **SortOrder** as shown in the following screenshot.
 
@@ -1364,17 +1364,17 @@ Translated Category Names = {
 
 72. Rename the **Value4** field to **LanguageId**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image191.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image191.png" style="width:90%" />
 
 73. Configure the **LanguageId** column to use **SortOrder** as its sort column.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image192.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image192.png" style="width:90%" />
 
 74. Switch to **Model** view.
 
 75. Reposition **Translated Category Names** so its underneath **Translated Product Names**. as shown in the following screenshot.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image193.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image193.png" style="width:50%" />
 
 76. Create a one-to-one relationship between **Translated Category Names** and **Languages** based on the **LanguageId** column.
 
