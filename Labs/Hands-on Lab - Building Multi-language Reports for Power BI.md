@@ -2009,7 +2009,5 @@ be shown to reporter authors in **Report** view.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image283.png" style="width:90%" />
 
->Congratulations. You have now completed this hands-on lab and you can
-now begin using your newfound localization skills in working with
-translations and building multi-language reports on your own PBIX
-projects.
+> Congratulations. You have now completed this hands-on lab and you can now move onwards and upwards as you begin
+to use your newfound localization skills working with translations and building multi-language reports on your own PBIX projects.
