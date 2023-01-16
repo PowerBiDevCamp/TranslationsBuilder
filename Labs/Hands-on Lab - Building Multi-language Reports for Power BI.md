@@ -1378,11 +1378,11 @@ Translated Category Names = {
 
 76. Create a one-to-one relationship between **Translated Category Names** and **Languages** based on the **LanguageId** column.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image194.png" style="width:60%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image194.png" style="width:50%" />
 
 77. Hide the column **LanguageId** in **Translated Category Names** so it does not show up in **Report** view.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image195.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image195.png" style="width:50%" />
 
 78. Switch to **Report** view and then navigate to the **Sales By Category** page.
 
