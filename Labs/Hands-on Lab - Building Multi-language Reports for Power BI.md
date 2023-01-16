@@ -1782,15 +1782,15 @@ or from the **Snippets** folder inside the **StudentFiles** folder.
 
 13. Once you have copied the M code into the Advanced Editor, click **Done** to save your changes and execute the new query.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image249.png" style="width:0" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image249.png" style="width:50%" />
 
 14. You should now see the output of the **Translated Day Names Table** query as shown in the following screenshot.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image250.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image250.png" style="width:90%" />
 
 15. Click **Close & Apply** to close the Power Query window and to add two new tables to the project's data model.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image140.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image140.png" style="width:60%" />
 
 16. Switch to **Data** view and locate **Translated Month Names Table** and **Translated Day Names Table** in the **Data** pane.
 
