@@ -1927,7 +1927,7 @@ Translated Day Names = {
 
 46. Display the **Filter** pane if it's not already showing and set the filter on the **Languages** table to **Spanish**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image274.png" style="width:30%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image274.png" style="width:25%" />
 
 47. Select the Column chart on the left which displays **Sales Revenue by Month and** **Year**.
 
