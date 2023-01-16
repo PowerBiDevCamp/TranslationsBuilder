@@ -1721,11 +1721,11 @@ or from the **Snippets** folder inside the **StudentFiles** folder.
 
 7. Once you have copied the M code into the Advanced Editor, click **Done** to save your changes and execute the new query.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image246.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image246.png" style="width:40%" />
 
 8. You should now see the output table of the **Translated Month Names Table** query as shown in the following screenshot.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image247.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image247.png" style="width:90%" />
 
 > You have now created the translation table for month names. Next you will create a second table for day names.
 
