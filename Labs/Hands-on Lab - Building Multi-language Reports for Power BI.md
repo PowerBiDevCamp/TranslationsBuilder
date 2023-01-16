@@ -757,11 +757,11 @@ Excel installed on the same PC that's running Translations Builder.
 
 4. Click **Configure Settings…** to display the **Configuration Options** dialog.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image101.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image101.png" style="width:50%" />
 
 5. By default, folder paths for the **Outbox** and **Inbox** are configured to target the current user’s **Documents** folder.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image102.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image102.png" style="width:50%" />
 
 > Why does **Outbox** come before **Inbox**? That’s because you generally
 work with the **Outbox** first when you export translation sheets that
@@ -770,11 +770,11 @@ back from translators, you add them to the **Inbox** for import.
 
 6. Click the **set** button to update the setting for **Translations Outbox Folder Path**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image103.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image103.png" style="width:50%" />
 
 7. Select the **Outbox** folder you created earlier in this exercise.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image104.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image104.png" style="width:50%" />
 
 8. Click the **set** button for **Translations Inbox Folder Path** and
      select the **Inbox** folder you created earlier
