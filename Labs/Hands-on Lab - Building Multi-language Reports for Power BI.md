@@ -973,8 +973,7 @@ PBIX project.
 make it possible to backup and restore all localization work.
 
 ## Exercise 5: Implementing Data Translations using Field Parameters
-
-In this exercise you will implement data translations for product names
+> In this exercise you will implement data translations for product names
 and category names. You will begin by extending the **Products** table
 by adding new columns that contain translations for product and category
 names. After that, you will implement data translations by adding Field
@@ -982,12 +981,9 @@ Parameters and a new table named **Languages**. This will provide a
 design which makes it possible to filter to select the language for data
 translations.
 
-1.  Return to the **Product Sales** project in Power BI Desktop and move
-    to **Report** view.
+1.  Return to the **Product Sales** project in Power BI Desktop and move to **Report** view.
 
-<!-- -->
-
-3.  Make sure the current page is **Sales Summary**.
+2.  Make sure the current page is **Sales Summary**.
 
 <img
 src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png"
