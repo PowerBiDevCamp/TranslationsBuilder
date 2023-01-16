@@ -1013,7 +1013,7 @@ translations.
 
 9. Click **Close and Apply** to close the Power Query windows and to execute the **Products** query with the update you made.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image140.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image140.png" style="width:50%" />
 
 10. Switch to **Model** view to see the changes that have been made to the **Products** table.
 
