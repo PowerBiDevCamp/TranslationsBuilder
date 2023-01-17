@@ -637,11 +637,11 @@ However, there is a separate Rectangle shape with the report title and a separat
 
 45. Navigate to the second page named **Sales By Category**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image87.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image87.png" style="width:50%" />
 
 46. Repeat the same set of steps to display the report title and button captions using measures from **Translated Localized Labels**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image88.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image88.png" style="width:90%" />
 
 > Remember the **Sales By Category** page has the visual with the hard-coded title. Now you will configure this visual to use a measure.
 
@@ -651,7 +651,7 @@ However, there is a separate Rectangle shape with the report title and a separat
 
 49. Locate the **Title** section and the **Text** property inside with the literal text value of **Top Selling Products**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image89.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image89.png" style="width:90%" />
 
 50. Select the **Top Selling Products Label** measure from the **Translated Localized Labels** table.
 
