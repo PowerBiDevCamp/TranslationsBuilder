@@ -601,7 +601,7 @@ you execute **Generate Translated Localized Labels Table**.
 
 34. Select the **Sales Summary Label** measure from the **Translated Localized Labels** table.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image82.png" style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image82.png" style="width:60%" />
 
 35. Select the second button in the navigation menu with the caption of **Sales By Category**.
 
