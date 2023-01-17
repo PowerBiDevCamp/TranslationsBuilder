@@ -1249,7 +1249,7 @@ in
 
 46. Once you have copied the M code from above into the **Advanced Editor** window, click **Done** to save your changes.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image168.png" style="width:45%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image168.png" style="width:60%" />
 
 47. When the **Advanced Editor** window closes, the **Languages** query should run and generate an output table with four rows.
 
