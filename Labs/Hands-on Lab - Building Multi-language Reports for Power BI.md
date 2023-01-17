@@ -564,6 +564,7 @@ you execute **Generate Translated Localized Labels Table**.
 23. In the report layout, select the large black Rectangle shape that displays the report title **Product Sales Report**.
 
 24. With the Rectangle shape selected, move to the **Format** pane and locate the **Text** section inside the **Style** selection.
+
 &nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image76.png" style="width:80%" />
 
 25. Expand the **Text** section to see the **Text** property is configured with the literal string value of **Product Sales Report**.
@@ -658,7 +659,7 @@ However, there is a separate Rectangle shape with the report title and a separat
 
 51. Navigate to the third page named **Sales Over Time**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image91.png" style="width:60%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image91.png" style="width:50%" />
 
 52. Repeat the same steps to display the report title and button captions using measures from **Translated Localized Labels**.
 
@@ -669,7 +670,7 @@ translations. Now you need to prepare the report for deployment
 
 53. Navigate back to the **Sales Summary** page before saving to ensure this page is the startup page.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png" style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image61.png" style="width:50%" />
 
 54. Save your work by clicking the **Save** button.
 
