@@ -564,8 +564,7 @@ you execute **Generate Translated Localized Labels Table**.
 23. In the report layout, select the large black Rectangle shape that displays the report title **Product Sales Report**.
 
 24. With the Rectangle shape selected, move to the **Format** pane and locate the **Text** section inside the **Style** selection.
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image76.png" style="width:80%" />
+&nbsp;&nbsp;&nbsp;&nbsp; <img src="./images/HandsOnLabBuildingMultiLanguageReportsForPowerBI/media/image76.png" style="width:80%" />
 
 25. Expand the **Text** section to see the **Text** property is configured with the literal string value of **Product Sales Report**.
 
