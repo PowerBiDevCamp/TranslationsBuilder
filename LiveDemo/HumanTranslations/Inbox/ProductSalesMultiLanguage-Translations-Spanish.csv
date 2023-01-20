@@ -9,18 +9,23 @@ Column,Caption,Customers[Age],Age,Edad
 Table,Caption,Sales,Sales,Ventas
 Measure,Caption,Sales[Sales Revenue],Sales Revenue,Ingresos Por Ventas
 Measure,Caption,Sales[Units Sold],Units Sold,Unidades Vendidas
-Measure,Caption,Sales[Customer Count],Customers,Clientela
+Measure,Caption,Sales[Customers],Customers,Clientela
 Measure,Caption,Sales[First Sale],First Sale,Primera Venta
 Measure,Caption,Sales[Last Sale],Last Sale,Última Venta
 Measure,Caption,Sales[Orders],Orders,Órdenes
 Measure,Caption,Sales[Ranking],Ranking,Clasificación
 Measure,Caption,Sales[Rank],Rank,Rango
 Table,Caption,Products,Products,Productos
+Column,Caption,Products[Product],Product,Producto
 Column,Caption,Products[Price],Price,Precio
-Column,Caption,Products[Image],Image,Imagen
+Column,Caption,Products[Product Image],Product Image,Imagen Del Producto
+Column,Caption,Products[Category],Category,Categoría
 Table,Caption,Calendar,Calendar,Calendario
 Column,Caption,Calendar[Date],Date,Fecha
 Column,Caption,Calendar[Year],Year,Año
+Column,Caption,Calendar[Quarter],Quarter,Cuatrimestre
+Column,Caption,Calendar[Month],Month,Mes
+Column,Caption,Calendar[Day],Day,Día
 Measure,Caption,Localized Labels[Product Sales Report],Product Sales Report,Informe De Ventas De Productos
 Measure,Caption,Localized Labels[Sales Summary],Sales Summary,Resumen De Ventas
 Measure,Caption,Localized Labels[Sales By Country],Sales By Country,Ventas Por País
