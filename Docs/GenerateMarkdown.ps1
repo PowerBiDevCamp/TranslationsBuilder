@@ -10,6 +10,6 @@
 
 # pandoc -s --extract-media ./images/HandsOnLabExercises "Hands-On Lab Exercises.docx" -t gfm -o "Hands-On Lab Exercises.md"
 
-# pandoc -s --extract-media ./images/UserGuide "User Guide.docx" -t gfm -o "User Guide.md"
+pandoc -s --extract-media ./images/UserGuide "User Guide.docx" -t gfm -o "User Guide.md"
 
 # pandoc -s --extract-media ./images/DeveloperGuide "Developer Guide.docx" -t gfm -o "Developer Guide.md"
