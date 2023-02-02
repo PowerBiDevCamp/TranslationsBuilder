@@ -1,22 +1,28 @@
-# User Guide for Translations Builder
+# Translations Builder User Guide
 
-This document provides information you need to become productive with
-Translations Builder.
+Translations Builder is an external tool created for Power BI Desktop
+specifically to assist report authors and dataset authors with tasks
+associated with creating translations and building multi-language
+reports. As a user, you can install Translations Builder and use it
+together with Power BI Desktop to build and test datasets and reports
+that support multiple languages.
 
-### Getting Started
+There are three types of translations that come into play when
+localizing Power BI datasets and building reports that support multiple
+languages. Translations Builder helps to create and manage the first two
+types of translations which are **metadata translations** and **report
+label translations**. Translations Builder does not provide any
+assistance with implementing **data translations**. For more background
+on this topic, please read [Understanding the Three Types of
+Translations](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Building%20Multi-language%20Reports%20in%20Power%20BI.md#understanding-the-three-types-of-translations).
 
-When it comes to localizing Power BI artifacts such as datasets and
-reports, there are three different types of translations.
-
-- Metadata Translations
-
-- Report Label Translations
-
-- Data Translations
-
-Translations Builder assists with the first two types which are metadata
-translations and report label translations. It is recommended that you
-read xxx. It will be helpful if you work through lab
+While this document has been designed to explain the features and
+limitations of Translations Builder, it is recommended that you
+additionally read through the [guidance
+document](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Building%20Multi-language%20Reports%20in%20Power%20BI.md)
+and work through the [hands-on lab
+exercises](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Labs/Hands-on%20Lab%20-%20Building%20Multi-language%20Reports%20for%20Power%20BI.md).
+They will provide a great compliment for the contents you’ll find here.
 
 ### Limitations
 
@@ -24,8 +30,29 @@ ddddd
 
 #### Supported Languages and Cultures
 
-The get the most out of Translations Builder, it is important you
-understand a few important limitation.
+Every report that loads in the Power BI Service is initialized with a
+specific language and a specific locale. These
+
+The default behavior of the Power BI Service is to load each report
+using the language and regional locale specified by the user’s browser
+settings. However, those settings can be overridden by adding the
+**language** query string parameter to the end of the report URL.
+
+Translations Builder supports 43 different languages. , it is important
+you understand a few important limitation.
+
+| Afrikaans \[af-ZA\] | Filipino \[fil-PH\]  | Italian \[it-IT\]    | Serbian \[sr-Latn-BA\] |
+|---------------------|----------------------|----------------------|------------------------|
+| Arabic \[ar-001\]   | Finnish \[fi-FI\]    | Japanese \[ja-JP\]   | Slovak \[sk-SK\]       |
+| Bulgarian \[bg-BG\] | French \[fr-FR\]     | Korean \[ko-KR\]     | Slovenian \[sl-SI\]    |
+| Catalan \[ca-ES\]   | German \[de-DE\]     | Latvian \[lv-LV\]    | Somalian \[so-SO\]     |
+| Chinese \[zh-CN\]   | Greek \[el-GR\]      | Napali \[ne-NP\]     | Spanish \[es-ES\]      |
+| Croatian \[hr-HR\]  | Hebrew \[he-IL\]     | Norwegian \[nb-NO\]  | Swedish \[sv-SE\]      |
+| Czech \[cs-CZ\]     | Hindi \[hi-IN\]      | Persian \[fa-IR\]    | Thai \[th-TH\]         |
+| Danish \[da-DK\]    | Hungarian \[hu-HU\]  | Polish \[pl-PL\]     | Turkish \[tr-TR\]      |
+| Dutch \[nl-NL\]     | Icelandic \[is-IS\]  | Portuguese \[pt-PT\] | Ukrainian \[uk-UA\]    |
+| English \[en-US\]   | Indonesian \[id-ID\] | Romanian \[ro-RO\]   | Vietnamese \[vi-VN\]   |
+| Estonian \[et-EE\]  | Irish \[ga-IE\]      | Russian \[ru-RU\]    |                        |
 
 #### Import and Export using CSV Formatted Files
 
