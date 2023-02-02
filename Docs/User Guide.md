@@ -41,8 +41,8 @@ settings. However, those settings can be overridden by adding the
 Translations Builder supports 43 different languages. , it is important
 you understand a few important limitation.
 
-| Afrikaans \[af-ZA\] | Filipino \[fil-PH\]  | Italian \[it-IT\]    | Serbian \[sr-Latn-BA\] |
 |---------------------|----------------------|----------------------|------------------------|
+| Afrikaans \[af-ZA\] | Filipino \[fil-PH\]  | Italian \[it-IT\]    | Serbian \[sr-Latn-BA\] |
 | Arabic \[ar-001\]   | Finnish \[fi-FI\]    | Japanese \[ja-JP\]   | Slovak \[sk-SK\]       |
 | Bulgarian \[bg-BG\] | French \[fr-FR\]     | Korean \[ko-KR\]     | Slovenian \[sl-SI\]    |
 | Catalan \[ca-ES\]   | German \[de-DE\]     | Latvian \[lv-LV\]    | Somalian \[so-SO\]     |
