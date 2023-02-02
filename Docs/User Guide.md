@@ -27,9 +27,9 @@ They will provide a great compliment for the contents you’ll find here.
 ### Supported Languages and Locales
 
 When the Power BI Service loads a report, it creates a user context that
-includes a language ID and a locale identifier. The Power BI Service
-parses the language ID and the locale identifier together into
-string-based value known as the culture identifier. For example, a
+includes a **language ID** and a **locale identifier**. The Power BI
+Service parses the language ID and the locale identifier together into
+string-based value known as the **culture identifier**. For example, a
 culture identifier of **en-US** represents a user who speaks English
 (**en**) in the United States (**US**). A culture identifier of
 **fr-FR** represents a user who speaks French (**fr**) in the France
