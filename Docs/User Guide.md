@@ -13,15 +13,15 @@ languages. Translations Builder helps to create and manage the first two
 types of translations which are **metadata translations** and **report
 label translations**. Translations Builder does not provide any
 assistance with implementing **data translations**. For more background
-on this topic, please read [Understanding the Three Types of
-Translations](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Building%20Multi-language%20Reports%20in%20Power%20BI.md#understanding-the-three-types-of-translations).
+on this topic, please read [**Understanding the Three Types of
+Translations**](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Building%20Multi-language%20Reports%20in%20Power%20BI.md#understanding-the-three-types-of-translations).
 
 While this document has been designed to explain the features and
 limitations of Translations Builder, it is recommended that you
-additionally read through the [guidance
-document](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Building%20Multi-language%20Reports%20in%20Power%20BI.md)
-and work through the [hands-on lab
-exercises](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Labs/Hands-on%20Lab%20-%20Building%20Multi-language%20Reports%20for%20Power%20BI.md).
+additionally read through the [**guidance
+document**](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Building%20Multi-language%20Reports%20in%20Power%20BI.md)
+and work through the [**hands-on lab
+exercises**](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Labs/Hands-on%20Lab%20-%20Building%20Multi-language%20Reports%20for%20Power%20BI.md).
 They will provide a great compliment for the contents you’ll find here.
 
 ### Supported Languages and Locales
