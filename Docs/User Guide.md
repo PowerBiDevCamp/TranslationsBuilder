@@ -35,7 +35,8 @@ culture identifier of **en-US** represents a user who speaks English
 **fr-FR** represents a user who speaks French (**fr**) in the France
 (**FR**).
 
-Translations Builder supports the following set of languages.
+Translations Builder supports the following set of languages and culture
+identifiers.
 
 | Afrikaans \[af-ZA\] | Filipino \[fil-PH\]      | Italian \[it-IT\]        | Serbian \[sr-Latn-BA\]   |
 |---------------------|--------------------------|--------------------------|--------------------------|
