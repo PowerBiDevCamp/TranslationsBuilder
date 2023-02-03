@@ -24,7 +24,7 @@ and work through the [**hands-on lab
 exercises**](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Labs/Hands-on%20Lab%20-%20Building%20Multi-language%20Reports%20for%20Power%20BI.md).
 They will provide a great compliment for the contents you’ll find here.
 
-### Supported Dataset Editing Scenarios
+### Supported Dataset Editing Scenarios xxx
 
 Translations Builder has been designed to work with Power BI datasets
 running locally in Power BI Desktop. Translations Builder does not
