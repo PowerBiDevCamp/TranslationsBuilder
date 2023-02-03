@@ -22,9 +22,16 @@ read through the [**guidance
 document**](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Building%20Multi-language%20Reports%20in%20Power%20BI.md)
 and that you work through the [**hands-on lab
 exercises**](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Labs/Hands-on%20Lab%20-%20Building%20Multi-language%20Reports%20for%20Power%20BI.md).
-These learning resources will compliment the contents you’ll find here.
+These learning resources will complement the contents you’ll find here.
 
-### Supported Dataset Editing Scenarios
+### Translations Builder Scope and Limitations
+
+To use Translations Builder effectively, you should be aware of a few
+important limitations. The following limitations are the result of
+design decisions that were made to define the scope of what Translations
+Builder can do.
+
+#### Supported Dataset Editing Scenarios
 
 Translations Builder has been designed to work with Power BI datasets
 running locally in Power BI Desktop. Translations Builder does not
@@ -43,7 +50,7 @@ changes to a dataset to the underlying PBIX project files. Therefore, it
 is important to return to Power BI Desktop and save your changes after
 adding and editing translations with translations builder.
 
-### Supported Languages and Locales
+#### Supported Languages and Locales
 
 When the Power BI Service loads a report, it creates a user context that
 includes a **language ID** and a **locale identifier**. The Power BI
@@ -104,7 +111,7 @@ For future versions of Translations Builder, we are considering adding
 support for other file formats for import/export operations such as the
 RESX file format and a JSON-based file format.
 
-#### Translations Builder Configuration Options
+### Translations Builder Configuration Options
 
 Before using Translations Builder, it is recommended you configure a few
 settings.
