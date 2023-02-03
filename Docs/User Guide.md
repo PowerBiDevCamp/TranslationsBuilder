@@ -24,6 +24,17 @@ and work through the [**hands-on lab
 exercises**](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Labs/Hands-on%20Lab%20-%20Building%20Multi-language%20Reports%20for%20Power%20BI.md).
 They will provide a great compliment for the contents you’ll find here.
 
+### Supported Dataset Editing Scenarios
+
+Translations Builder has been designed to work with Power BI datasets
+running locally in Power BI Desktop. Translations Builder does not
+support connecting to Power BI datasets in the Power BI Service or
+connecting to older dataset formats used by Analysis Services. It’s
+possible to move beyond these limitations by extending Translations
+Builder as a developer. See the [**Translations Builders Developers
+Guide**](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Developer%20Guide.md)
+for more information.
+
 ### Supported Languages and Locales
 
 When the Power BI Service loads a report, it creates a user context that
@@ -74,16 +85,20 @@ each of the 43 supported languages.
 
 #### Import and Export using CSV Formatted Files
 
-Translations Builder 2.0 use CSV files as its file format to import and
-export translations sheets. Due to CSV files using comma separated
-values, Translations Builder does not support adding commas (**,**) to
+Translations Builder 2.0 uses the CSV file format to import and export
+translations sheets. Due to CSV files using comma separated values,
+Translations Builder does not support adding commas (**,**) to
 translations as they will cause errors when generating or reading
 translations sheets during import and export operations.
 
-#### Translations Buread ilder Configuration Options
+#### Save Your Changes in Power BI Desktop
+
+Translations Builder.
+
+#### Translations Builder Configuration Options
 
 Inbox/Outbox to facilitate workflows associated with gathering and
-integrating human translations
+integrating human translations.
 
 Adding a Key and Location for the Machine Translator Service
 
