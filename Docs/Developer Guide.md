@@ -1,4 +1,4 @@
-## **Translations Builder Developers Guide**
+## **Translations Builder Developer Guide**
 > **Sorry, but the content for this page is not yet ready**
 
 Arrrrrrr. Same old story. Why is the documentation for developers always created last (if at all). 

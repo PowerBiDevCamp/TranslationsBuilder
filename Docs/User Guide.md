@@ -31,7 +31,7 @@ running locally in Power BI Desktop. Translations Builder does not
 support connecting to Power BI datasets in the Power BI Service or
 connecting to older dataset formats used by Analysis Services. It’s
 possible to move beyond these limitations by extending Translations
-Builder as a developer. See the [**Translations Builders Developers
+Builder as a developer. See the [**Translations Builders Developer
 Guide**](https://github.com/PowerBiDevCamp/TranslationsBuilder/blob/main/Docs/Developer%20Guide.md)
 for more information.
 
