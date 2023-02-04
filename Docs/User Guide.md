@@ -153,48 +153,54 @@ style="width:3.51673in;height:1.34434in" />
 
 ### Adding Metadata Translations
 
-Start any project by adding languages. Once you have added one or more
-languages, you can begin to add translations.
+In general, you start any PBIX project involving translations by adding
+one or more secondary languages. Once you have added the languages you
+require, then you can begin to add translations.
 
 #### Adding Secondary Languages
 
-Sssss
+You will use the **Add Language** button to add new languages.
 
 <img src="./images/UserGuide/media/image5.png"
-style="width:3.14623in;height:0.54977in"
-alt="A picture containing graphical user interface Description automatically generated" />
+style="width:4.58976in;height:1.26487in" />
 
-Sssss
+Click the **Add Languages** button will open the **Add Language**
+dialog. In this dialog you can select a language and then click the
+**Add Language** button.
 
 <img src="./images/UserGuide/media/image6.png"
 style="width:1.86792in;height:1.96005in"
 alt="Graphical user interface Description automatically generated" />
 
-Ssss
+Once the new language has been added, it should be displayed in the list
+box just underneath the **Add Languages** button in the **Secondary
+Languages** section. The new language should also get its own new column
+in the translation grid.
 
 <img src="./images/UserGuide/media/image7.png"
-style="width:3.53774in;height:0.79361in"
-alt="A picture containing chart Description automatically generated" />
+style="width:4.97838in;height:1.78175in" />
 
-Xxx
+Note the **Add Language** dialog supports multiple selection if you’d
+like to add more than one language in one operation.
 
 <img src="./images/UserGuide/media/image8.png"
-style="width:1.9434in;height:1.99258in"
+style="width:2.08108in;height:2.13374in"
 alt="Graphical user interface, application Description automatically generated" />
 
-xxxx
+If you’d like to remove a language from your PBIX project, you can do so
+by right-clicking the column header for that language in the translation
+grid and clicking the **Delete Secondary Language** menu command.
 
 <img src="./images/UserGuide/media/image9.png"
-style="width:5.0566in;height:0.79642in"
+style="width:5.97169in;height:0.94054in"
 alt="Graphical user interface, text Description automatically generated" />
 
-Xxxx
+When deleting a language, you’ll be prompted to confirm the operation as
+it deletes all the translations for that language.
 
 <img src="./images/UserGuide/media/image10.png"
 style="width:3.00472in;height:1.23484in"
 alt="Graphical user interface, application Description automatically generated" />
-
-xx
 
 #### Creating and Editing Translations by Hand
 
