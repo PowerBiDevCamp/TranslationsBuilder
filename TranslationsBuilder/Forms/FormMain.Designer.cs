@@ -380,7 +380,7 @@ namespace TranslationsBuilder {
       this.btnGenenrateMachineTranslations.Name = "btnGenenrateMachineTranslations";
       this.btnGenenrateMachineTranslations.Size = new System.Drawing.Size(271, 36);
       this.btnGenenrateMachineTranslations.TabIndex = 10;
-      this.btnGenenrateMachineTranslations.Text = "Genenrate Translations";
+      this.btnGenenrateMachineTranslations.Text = "Generate Translations";
       this.btnGenenrateMachineTranslations.UseVisualStyleBackColor = false;
       this.btnGenenrateMachineTranslations.Click += new System.EventHandler(this.GenenrateMachineTranslations);
       // 

@@ -29,6 +29,7 @@ namespace TranslationsBuilder {
         LoadModel();
       }
       else {
+        SetGenenrateMachineTranslationsButton();
         labelStatusBar.Text = "Not connected";
       }
     }
@@ -271,18 +272,6 @@ namespace TranslationsBuilder {
       bool translatedReportLabelsByLanguageTableExists = TranslationsManager.DoesTableExistInModel(TranslationsManager.TranslatedReportLabelTableName);
       menuGenerateTranslatedReportLabelTableMeasures.Enabled = translatedReportLabelsByLanguageTableExists;
       menuGenerateTranslatedDatasetObjectNamesTable.Enabled = TranslationsManager.TranslationsExist();
-    }
-
-    private void SetDatasetName(object sender, EventArgs e) {
-      using (FormSetDatasetName dialog = new FormSetDatasetName()) {
-        dialog.StartPosition = FormStartPosition.CenterParent;
-        dialog.DatasetName = TranslationsManager.DatasetName;
-        dialog.ShowDialog(this);
-        if (dialog.DialogResult == DialogResult.OK) {
-          TranslationsManager.DatasetAnnotationForName = dialog.DatasetName;
-          txtDatasetName.Text = dialog.DatasetName;
-        }
-      }
     }
 
     private void GenenrateMachineTranslations(object sender, EventArgs e) {

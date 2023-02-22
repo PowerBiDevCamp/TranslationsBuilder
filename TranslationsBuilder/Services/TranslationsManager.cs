@@ -718,37 +718,49 @@ namespace TranslationsBuilder.Services {
 
     public static void ExportTranslations(string targetLanguage = null, bool OpenInExcel = true) {
 
-      var translationsTable = GetTranslationsTable(targetLanguage);
+      try {
+        var translationsTable = GetTranslationsTable(targetLanguage);
 
-      string linebreak = "\r\n";
+        string linebreak = "\r\n";
 
-      // set csv file headers
-      string csv = string.Join(",", translationsTable.Headers) + linebreak;
+        // set csv file headers
+        string csv = string.Join(",", translationsTable.Headers) + linebreak;
 
-      // add line for each row
-      foreach (var row in translationsTable.Rows) {
-        csv += string.Join(",", row) + linebreak;
+        // add line for each row
+        foreach (var row in translationsTable.Rows) {
+          csv += string.Join(",", row) + linebreak;
+        }
+
+        DirectoryInfo path = Directory.CreateDirectory(AppSettings.TranslationsOutboxFolderPath);
+
+        string filePath;
+        if (targetLanguage == null) {
+          filePath = path + @"/" + DatasetName + "-Translations-Master.csv";
+        }
+        else {
+          string targetLanguageDisplayName = SupportedLanguages.AllLangauges[targetLanguage].DisplayName;
+          filePath = path + @"/" + DatasetName + "-Translations-" + targetLanguageDisplayName + ".csv";
+        }
+
+        StreamWriter writer = new StreamWriter(File.Open(filePath, FileMode.Create), Encoding.UTF8);
+        writer.Write(csv);
+        writer.Flush();
+        writer.Dispose();
+
+        StreamWriter writerJson = new StreamWriter(File.Open(filePath.Replace(".csv", ".json"), FileMode.Create), Encoding.UTF8);
+        writerJson.Write(System.Text.Json.JsonSerializer.Serialize(translationsTable));
+        writerJson.Flush();
+        writerJson.Dispose();
+
+        if (OpenInExcel) {
+          string excelFilePath = @"""" + filePath + @"""";
+          ExcelUtilities.OpenCsvInExcel(excelFilePath);
+        }
+
       }
 
-      DirectoryInfo path = Directory.CreateDirectory(AppSettings.TranslationsOutboxFolderPath);
-
-      string filePath;
-      if (targetLanguage == null) {
-        filePath = path + @"/" + DatasetName + "-Translations-Master.csv";
-      }
-      else {
-        string targetLanguageDisplayName = SupportedLanguages.AllLangauges[targetLanguage].DisplayName;
-        filePath = path + @"/" + DatasetName + "-Translations-" + targetLanguageDisplayName + ".csv";
-      }
-
-      StreamWriter writer = new StreamWriter(File.Open(filePath, FileMode.Create), Encoding.UTF8);
-      writer.Write(csv);
-      writer.Flush();
-      writer.Dispose();
-
-      if (OpenInExcel) {
-        string excelFilePath = @"""" + filePath + @"""";
-        ExcelUtilities.OpenCsvInExcel(excelFilePath);
+      catch (Exception ex) {
+        UserInteraction.PromptUserWithError(ex);
       }
 
 
@@ -756,36 +768,43 @@ namespace TranslationsBuilder.Services {
 
     public static void ExportAllTranslationSheets(bool OpenInExcel = false) {
 
-      string linebreak = "\r\n";
+      try {
 
-      foreach (var culture in model.Cultures) {
-        if (culture.Name != model.Culture) {
+        string linebreak = "\r\n";
 
-          string targetLanguage = culture.Name;
-          var translationsTable = GetTranslationsTable(targetLanguage);
-          string csv = string.Join(",", translationsTable.Headers) + linebreak;
+        foreach (var culture in model.Cultures) {
+          if (culture.Name != model.Culture) {
 
-          // add line for each row
-          foreach (var row in translationsTable.Rows) {
-            csv += string.Join(",", row) + linebreak;
+            string targetLanguage = culture.Name;
+            var translationsTable = GetTranslationsTable(targetLanguage);
+            string csv = string.Join(",", translationsTable.Headers) + linebreak;
+
+            // add line for each row
+            foreach (var row in translationsTable.Rows) {
+              csv += string.Join(",", row) + linebreak;
+            }
+
+            DirectoryInfo path = Directory.CreateDirectory(AppSettings.TranslationsOutboxFolderPath);
+
+            string targetLanguageDisplayName = SupportedLanguages.AllLangauges[targetLanguage].DisplayName;
+            string filePath = path + @"/" + DatasetName + "-Translations-" + targetLanguageDisplayName + ".csv";
+
+            StreamWriter writer = new StreamWriter(File.Open(filePath, FileMode.Create), Encoding.UTF8);
+            writer.Write(csv);
+            writer.Flush();
+            writer.Dispose();
+
+            if (OpenInExcel) {
+              string excelFilePath = @"""" + filePath + @"""";
+              ExcelUtilities.OpenCsvInExcel(excelFilePath);
+            }
+
           }
-
-          DirectoryInfo path = Directory.CreateDirectory(AppSettings.TranslationsOutboxFolderPath);
-
-          string targetLanguageDisplayName = SupportedLanguages.AllLangauges[targetLanguage].DisplayName;
-          string filePath = path + @"/" + DatasetName + "-Translations-" + targetLanguageDisplayName + ".csv";
-
-          StreamWriter writer = new StreamWriter(File.Open(filePath, FileMode.Create), Encoding.UTF8);
-          writer.Write(csv);
-          writer.Flush();
-          writer.Dispose();
-
-          if (OpenInExcel) {
-            string excelFilePath = @"""" + filePath + @"""";
-            ExcelUtilities.OpenCsvInExcel(excelFilePath);
-          }
-
         }
+
+      }
+      catch (Exception ex) {
+        UserInteraction.PromptUserWithError(ex);
       }
 
     }
@@ -856,17 +875,17 @@ namespace TranslationsBuilder.Services {
               return table.Columns.Contains(childName);
             case "Measure":
               bool measureExists = table.Measures.Contains(childName);
-              if(!measureExists && tableName.Equals(LocalizedLabelsTableName)) {
-                AddLocalizedLabel(childName, false); 
+              if (!measureExists && tableName.Equals(LocalizedLabelsTableName)) {
+                AddLocalizedLabel(childName, false);
                 measureExists = true;
               }
-              return measureExists;                                    
+              return measureExists;
             case "Hierarchy":
               return table.Hierarchies.Contains(childName);
             case "Level":
               string levelName = GetLevelName(ObjectName);
               return (table.Hierarchies[childName].Levels.Find(levelName) != null);
-              default:
+            default:
               return false;
           }
         }
@@ -1407,9 +1426,8 @@ namespace TranslationsBuilder.Services {
         AddLocalizedLabel("My Button Caption");
         AddLocalizedLabel("My Visual Title");
       }
-    
-    }
 
+    }
 
     public static void AddLocalizedLabel(string Label, bool NotifyOnDuplicateError = true) {
 
@@ -1526,6 +1544,7 @@ namespace TranslationsBuilder.Services {
 
 
     }
+
 
   }
 

@@ -54,7 +54,7 @@ namespace TranslationsBuilder.Models {
 
     static public Dictionary<string, Language> AllLangauges =
            new Dictionary<string, Language>{
-                        { Afrikaans.LanguageTag, Afrikaans },
+             { Afrikaans.LanguageTag, Afrikaans },
              { Arabic.LanguageTag, Arabic },
              { Bulgarian.LanguageTag, Bulgarian },
              { Catalan.LanguageTag, Catalan },

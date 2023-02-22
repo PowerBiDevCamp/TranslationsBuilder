@@ -2,7 +2,7 @@
 using System;
 using System.Reflection;
 
-[assembly: AssemblyCompanyAttribute("Power BI Dev Camp")]
+[assembly: AssemblyCompanyAttribute("Microsoft")]
 [assembly: AssemblyConfigurationAttribute("Release")]
 [assembly: AssemblyProductAttribute("Translations Builder")]
 [assembly: AssemblyTitleAttribute("Translations Builder")]
@@ -13,4 +13,3 @@ using System.Reflection;
 [assembly: AssemblyVersionAttribute(TranslationsBuilder.GlobalConstants.VersionNumber)]
 [assembly: AssemblyFileVersionAttribute(TranslationsBuilder.GlobalConstants.VersionNumber)]
 [assembly: AssemblyInformationalVersionAttribute(TranslationsBuilder.GlobalConstants.VersionNumber)]
-
