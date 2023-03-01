@@ -70,7 +70,8 @@ On the **Confirm Installation** page, click **Next** to continue.
 <img src="./images/InstallationGuide/media/image3.png"  style="width:40%" />
 
 At this point, you should be prompted by the **User Account Control**
-dialog. Click **Yes** to continue.
+dialog. You should be able to verify that **Microsoft Corporation** is
+listed as the **Verified publisher**. Click **Yes** to continue.
 
 <img src="./images/InstallationGuide/media/image4.png"  style="width:40%" />
 
