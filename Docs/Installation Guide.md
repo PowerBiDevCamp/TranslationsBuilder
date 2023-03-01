@@ -37,29 +37,23 @@ local **Downloads** folder.
 
 <img src="./images/InstallationGuide/media/Image0.png" style="width:60%" />
 
-The browser should show that
-**TranslationsBuilderSetup.msi** has been downloaded and provide a
-context menu of actions. 
-
-<img src="./images/InstallationGuide/media/Image0B.png" style="width:40%" />
-
-
-The following screenshot shows what this
+The browser should show that **TranslationsBuilderSetup.msi** has been downloaded and provide a
+context menu of actions.  The following screenshot shows what this
 experience looks like when using Google Chrome. Other browsers will
 provide a different experience.
+
+<img src="./images/InstallationGuide/media/Image0B.png" style="width:40%" />
 
 Run the setup program named **TranslationsBuilderSetup.msi**. When you
 see the **Welcome** screen of the **Translations Builder Setup Wizard**,
 click **Next** to continue,
 
-<img src="./images/InstallationGuide/media/image1.png" style="width:70%" />
+<img src="./images/InstallationGuide/media/image1.png" style="width:40%" />
 
 On the **Select Installation Folder** page, accept the default
 **Folder** location value and click **Next**.
 
-<img src="./images/InstallationGuide/media/image2.png"
-style="width:2.15333in;height:1.76621in"
-alt="Graphical user interface, text, application Description automatically generated" />
+<img src="./images/InstallationGuide/media/image2.png" style="width:40%" />
 
 Do not change default **Folder** path value of **C:\Program Files\\
 Translations Builder\\**. The reason you should avoid changing the
@@ -73,43 +67,34 @@ this article in the **Troubleshooting Installation** section.
 
 On the **Confirm Installation** page, click **Next** to continue.
 
-<img src="./images/InstallationGuide/media/image3.png"
-style="width:2.19847in;height:1.80324in"
-alt="Graphical user interface, text, application, email Description automatically generated" />
+<img src="./images/InstallationGuide/media/image3.png"  style="width:40%" />
 
 At this point, you should be prompted by the **User Account Control**
 dialog. Click **Yes** to continue.
 
-<img src="./images/InstallationGuide/media/image4.png"
-style="width:2.04762in;height:1.47382in" />
+<img src="./images/InstallationGuide/media/image4.png"  style="width:40%" />
 
 Wait until you see the **Installation Complete** dialog and then click
 **Close** to complete the installation process.
 
-<img src="./images/InstallationGuide/media/image5.png"
-style="width:2.09524in;height:1.71857in" />
+<img src="./images/InstallationGuide/media/image5.png"  style="width:40%" />
 
 Now that **Translations Builder** has been installed, you should be able
 to launch it from Power BI Desktop as an external tool.
 
 1.  Open Power BI Desktop.
-
 2.  Navigate to the **External Tools** tab.
 
-<img src="./images/InstallationGuide/media/image6.png"
-style="width:4.96825in;height:0.8446in" />
+<img src="./images/InstallationGuide/media/image6.png"  style="width:40%" />
 
-3.  Locate and click the **Translations Builder** link on the **External
-    Tools** tab.
+3.  Locate and click the **Translations Builder** link on the **External Tools** tab.
 
-<img src="./images/InstallationGuide/media/image7.png"
-style="width:3.15873in;height:1.04812in" />
+<img src="./images/InstallationGuide/media/image7.png"  style="width:40%" />
 
 4.  Once you see **Translations Builder** start up without an errors,
     you know it has been installed successfully.
 
-<img src="./images/InstallationGuide/media/image8.png"
-style="width:3.92969in;height:2.04402in" />
+<img src="./images/InstallationGuide/media/image8.png"  style="width:40%" />
 
 ### Troubleshooting Installation
 
@@ -123,8 +108,7 @@ C:\Program Files\Translations Builder
 Here is what this folder looks like after installation if you examine it
 with Windows Explorer.
 
-<img src="./images/InstallationGuide/media/image9.png"
-style="width:3.53349in;height:1.65079in" />
+<img src="./images/InstallationGuide/media/image9.png"  style="width:40%" />
 
 Another essential part of the installation process for an external tool
 is copying a special deployment file with JSON configuration information
@@ -141,8 +125,7 @@ If you examine this folder, it should contain the file named
 **\*.pbitool.json** extension for any other external tool that you have
 installed.
 
-<img src="./images/InstallationGuide/media/image10.png"
-style="width:4.76191in;height:1.44444in" />
+<img src="./images/InstallationGuide/media/image10.png"  style="width:40%" />
 
 If you open in **translationsbuilder.pbitool.json** in a text editor
 such as Notepad, you will see it contains a **path** property with a
@@ -150,8 +133,7 @@ configured file path to **TranslationsBuilder.exe**. This is the file
 path Power BI Desktop uses to launch **Translations Builder** as an
 external tool from the **External Tools** tab.
 
-<img src="./images/InstallationGuide/media/image11.png"
-style="width:5.07177in;height:1.47245in" />
+<img src="./images/InstallationGuide/media/image11.png"  style="width:40%" />
 
 If you installed **Translations Builder** into a **Folder** location
 other than the default value, you will need to modify the **path**
@@ -159,7 +141,7 @@ value, save **translationsbuilder.pbitool.json** and restart Power BI
 Desktop.
 
 ### Upgrading Translations Builder to a New Version
-
+The follow applies to version of Translations Builder 2.1 and later.
 When a new version of Translations Builder becomes available, you can
 upgrade by simply running the installation program again. Running the
 installation program for a new version Translations Builder will
