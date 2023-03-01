@@ -33,9 +33,18 @@ To install **Translations Builder**, begin by downloading
 [**TranslationsBuilderSetup.msi**](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/SetupFiles/TranslationsBuilderSetup.msi).
 When you click this download link, the browser should download the MSI
 file named **TranslationsBuilderSetup.msi** and place this file in the
-local **Downloads** folder. The browser should show that
+local **Downloads** folder. 
+
+<img src="./images/InstallationGuide/media/image0.png" style="width:70%76528in" />
+
+The browser should show that
 **TranslationsBuilderSetup.msi** has been downloaded and provide a
-context menu of actions. The following screenshot shows what this
+context menu of actions. 
+
+<img src="./images/InstallationGuide/media/image0B.png" style="width:70%76528in" />
+
+
+The following screenshot shows what this
 experience looks like when using Google Chrome. Other browsers will
 provide a different experience.
 
@@ -43,9 +52,7 @@ Run the setup program named **TranslationsBuilderSetup.msi**. When you
 see the **Welcome** screen of the **Translations Builder Setup Wizard**,
 click **Next** to continue,
 
-<img src="./images/InstallationGuide/media/image1.png"
-style="width:2.15219in;height:1.76528in"
-alt="Graphical user interface, text, application, email Description automatically generated" />
+<img src="./images/InstallationGuide/media/image1.png" style="width:70%76528in" />
 
 On the **Select Installation Folder** page, accept the default
 **Folder** location value and click **Next**.
