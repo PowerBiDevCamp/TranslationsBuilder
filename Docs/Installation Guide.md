@@ -1,8 +1,7 @@
 ## **Translations Builder Installation Guide**
 > This installation guide will walk you through the installation process
 to get **Translations Builder** up and running on the same machine where
-you work with Power BI Desktop. The current version of Translations
-Builder is **version 2.1**.
+you work with Power BI Desktop.
 
 Before installing **Translations Builder**, you must ensure your
 computer meets the following requirements.
@@ -10,7 +9,9 @@ computer meets the following requirements.
 - 64-bit Version of Windows 10 or Windows 11
 - 64-bit version of Power BI Desktop (January 2023 or later)
 
-> NOTE: If you have previously installed Translations Builder 2.0, you
+> The current version of Translations Builder is **version 2.1**.
+
+NOTE: If you have previously installed Translations Builder 2.0, you
 should first uninstall that version using the Windows **Add and remove
 programs** feature. Once you have uninstalled Translations Builder 2.0,
 you can continue with these setup instructions.
