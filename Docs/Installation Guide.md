@@ -108,7 +108,7 @@ deployment files uses this path.
 Here is what this folder looks like after installation if you examine it
 with Windows Explorer.
 
-<img src="./images/InstallationGuide/media/image13.png"  style="width:80%" />
+<img src="./images/InstallationGuide/media/image13.png"  style="width:50%" />
 
 Another essential part of the installation process for an external tool
 is copying a special deployment file with JSON configuration information
@@ -124,7 +124,7 @@ If you examine this folder, it should contain the file named
 **\*.pbitool.json** extension for any other external tool that you have
 installed.
 
-<img src="./images/InstallationGuide/media/image14.png"  style="width:80%" />
+<img src="./images/InstallationGuide/media/image14.png"  style="width:92%" />
 
 If you open in **translationsbuilder.pbitool.json** in a text editor
 such as Notepad, you will see it contains a **path** property with a
@@ -132,7 +132,7 @@ configured file path to **TranslationsBuilder.exe**. This is the file
 path Power BI Desktop uses to launch **Translations Builder** as an
 external tool from the **External Tools** tab.
 
-<img src="./images/InstallationGuide/media/image15.png"  style="width:80%" />
+<img src="./images/InstallationGuide/media/image15.png"  style="width:65%" />
 
 If you installed **Translations Builder** into a **Folder** location
 other than the default value, you will need to modify the **path**
