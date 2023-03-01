@@ -11,8 +11,8 @@ computer meets the following requirements.
 
 > The current version of Translations Builder is **version 2.1**.
 
-NOTE: If you have previously installed Translations Builder 2.0, you
-should first uninstall that version using the Windows **Add and remove
+> If you previously installed Translations Builder 2.0, you
+must first uninstall that version using the Windows **Add and remove
 programs** feature. Once you have uninstalled Translations Builder 2.0,
 you can continue with these setup instructions.
 
