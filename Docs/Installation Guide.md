@@ -41,7 +41,7 @@ The browser should show that
 **TranslationsBuilderSetup.msi** has been downloaded and provide a
 context menu of actions. 
 
-<img src="./images/InstallationGuide/media/Image0B.png" style="width:50%" />
+<img src="./images/InstallationGuide/media/Image0B.png" style="width:40%" />
 
 
 The following screenshot shows what this
