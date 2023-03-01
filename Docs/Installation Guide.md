@@ -103,12 +103,12 @@ troubleshoot your **Translations Builder** installation. The default
 **Folder** location for the **Translations Builder** EXE file and other
 deployment files uses this path.
 
-C:\Program Files\Translations Builder
+> **C:\Program Files\Translations Builder**
 
 Here is what this folder looks like after installation if you examine it
 with Windows Explorer.
 
-<img src="./images/InstallationGuide/media/image9.png"  style="width:40%" />
+<img src="./images/InstallationGuide/media/image9.png"  style="width:80%" />
 
 Another essential part of the installation process for an external tool
 is copying a special deployment file with JSON configuration information
@@ -117,15 +117,14 @@ More specifically, the **Translations Builder** installation program
 copies a file named **translationsbuilder.pbitool.json** into the
 following folder.
 
-C:\Program Files (x86)\Common Files\Microsoft Shared\Power BI
-Desktop\External Tools
+> **C:\Program Files (x86)\Common Files\Microsoft Shared\Power BI Desktop\External Tools**
 
 If you examine this folder, it should contain the file named
 **translationsbuilder.pbitool.json** along with a separate files with a
 **\*.pbitool.json** extension for any other external tool that you have
 installed.
 
-<img src="./images/InstallationGuide/media/image10.png"  style="width:40%" />
+<img src="./images/InstallationGuide/media/image10.png"  style="width:80%" />
 
 If you open in **translationsbuilder.pbitool.json** in a text editor
 such as Notepad, you will see it contains a **path** property with a
@@ -133,7 +132,7 @@ configured file path to **TranslationsBuilder.exe**. This is the file
 path Power BI Desktop uses to launch **Translations Builder** as an
 external tool from the **External Tools** tab.
 
-<img src="./images/InstallationGuide/media/image11.png"  style="width:40%" />
+<img src="./images/InstallationGuide/media/image11.png"  style="width:80%" />
 
 If you installed **Translations Builder** into a **Folder** location
 other than the default value, you will need to modify the **path**
