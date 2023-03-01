@@ -35,7 +35,7 @@ When you click this download link, the browser should download the MSI
 file named **TranslationsBuilderSetup.msi** and place this file in the
 local **Downloads** folder. 
 
-<img src="./images/InstallationGuide/media/image0.png" style="width:70%76528in" />
+<img src="./images/InstallationGuide/media/Image0.png" style="width:70%76528in" />
 
 The browser should show that
 **TranslationsBuilderSetup.msi** has been downloaded and provide a
