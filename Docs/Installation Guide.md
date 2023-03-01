@@ -55,8 +55,8 @@ On the **Select Installation Folder** page, accept the default
 
 <img src="./images/InstallationGuide/media/image2.png" style="width:40%" />
 
-> It is recommended that you do not change default **Folder** path value of **C:\Program Files\\
-Translations Builder\\**. The reason you should avoid changing the
+> It is recommended that you do not change default **Folder** path value 
+of **C:\Program Files\\Translations Builder\\**. The reason you should avoid changing the
 **Folder** location is the installation program copies a file named
 **translationsbuilder.pbitool.json** into the special folder for Power
 BI Desktop external tools and that file has the hardcoded path of the
