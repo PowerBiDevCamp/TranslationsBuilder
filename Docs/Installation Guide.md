@@ -94,7 +94,7 @@ to launch it from Power BI Desktop as an external tool.
 4.  Once you see **Translations Builder** start up without an errors,
     you know it has been installed successfully.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/InstallationGuide/media/image8.png"  style="width:80%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/InstallationGuide/media/image12.png"  style="width:80%" />
 
 ### Troubleshooting Installation
 
@@ -108,7 +108,7 @@ deployment files uses this path.
 Here is what this folder looks like after installation if you examine it
 with Windows Explorer.
 
-<img src="./images/InstallationGuide/media/image9.png"  style="width:80%" />
+<img src="./images/InstallationGuide/media/image13.png"  style="width:80%" />
 
 Another essential part of the installation process for an external tool
 is copying a special deployment file with JSON configuration information
@@ -124,7 +124,7 @@ If you examine this folder, it should contain the file named
 **\*.pbitool.json** extension for any other external tool that you have
 installed.
 
-<img src="./images/InstallationGuide/media/image10.png"  style="width:80%" />
+<img src="./images/InstallationGuide/media/image14.png"  style="width:80%" />
 
 If you open in **translationsbuilder.pbitool.json** in a text editor
 such as Notepad, you will see it contains a **path** property with a
@@ -132,7 +132,7 @@ configured file path to **TranslationsBuilder.exe**. This is the file
 path Power BI Desktop uses to launch **Translations Builder** as an
 external tool from the **External Tools** tab.
 
-<img src="./images/InstallationGuide/media/image11.png"  style="width:80%" />
+<img src="./images/InstallationGuide/media/image15.png"  style="width:80%" />
 
 If you installed **Translations Builder** into a **Folder** location
 other than the default value, you will need to modify the **path**
