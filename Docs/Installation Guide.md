@@ -94,7 +94,7 @@ to launch it from Power BI Desktop as an external tool.
 4.  Once you see **Translations Builder** start up without an errors,
     you know it has been installed successfully.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/InstallationGuide/media/image12.png"  style="width:80%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/InstallationGuide/media/image12.png"  style="width:92%" />
 
 ### Troubleshooting Installation
 
