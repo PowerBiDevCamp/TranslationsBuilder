@@ -85,16 +85,16 @@ to launch it from Power BI Desktop as an external tool.
 1.  Open Power BI Desktop.
 2.  Navigate to the **External Tools** tab.
 
-<img src="./images/InstallationGuide/media/image6.png"  style="width:70%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/InstallationGuide/media/image6.png"  style="width:70%" />
 
 3.  Locate and click the **Translations Builder** link on the **External Tools** tab.
 
-<img src="./images/InstallationGuide/media/image7.png"  style="width:50%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/InstallationGuide/media/image7.png"  style="width:40%" />
 
 4.  Once you see **Translations Builder** start up without an errors,
     you know it has been installed successfully.
 
-<img src="./images/InstallationGuide/media/image8.png"  style="width:40%" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="./images/InstallationGuide/media/image8.png"  style="width:80%" />
 
 ### Troubleshooting Installation
 
