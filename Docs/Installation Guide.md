@@ -20,7 +20,7 @@ you can continue with these setup instructions.
 
 Before installing Translations Builder, you must first download and
 install the **.NET 6 Runtime for Desktop Applications**. You can start
-by downloading the installation files from
+by downloading the installation file from
 [**here**](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-6.0.14-windows-x64-installer).
 Once the installation file has been downloaded, run the installation
 program and accept all default settings to begin the installation
