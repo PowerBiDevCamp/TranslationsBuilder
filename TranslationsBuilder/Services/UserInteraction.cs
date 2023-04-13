@@ -10,7 +10,6 @@ namespace TranslationsBuilder.Services {
 
   class UserInteraction {
 
-
     public static void PromptUserWithInformation(string Message) {
       MessageBox.Show(Message, GlobalConstants.ApplicationName, MessageBoxButtons.OK, MessageBoxIcon.Information);
     }
@@ -43,8 +42,6 @@ namespace TranslationsBuilder.Services {
     public static void PromptUserWithError(string ErrorMessage) {
       MessageBox.Show(ErrorMessage, GlobalConstants.ApplicationName + " Error Occured", MessageBoxButtons.OK, MessageBoxIcon.Error);
     }
-
-
 
     public static bool PromptUserToConfirmOperation(string Message, string Operation) {
       var dialogResult = MessageBox.Show(Message, "Confirm " + Operation, MessageBoxButtons.OKCancel, MessageBoxIcon.Question);

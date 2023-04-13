@@ -27,629 +27,635 @@ namespace TranslationsBuilder {
     ///  the contents of this method with the code editor.
     /// </summary>
     private void InitializeComponent() {
-      this.components = new System.ComponentModel.Container();
-      System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+      components = new System.ComponentModel.Container();
+      DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-      this.gridTranslations = new System.Windows.Forms.DataGridView();
-      this.dialogOpenFile = new System.Windows.Forms.OpenFileDialog();
-      this.groupDatasetProperties = new System.Windows.Forms.GroupBox();
-      this.lblDefaultCultureNameLabel = new System.Windows.Forms.Label();
-      this.txtDefaultCulture = new System.Windows.Forms.TextBox();
-      this.txtCompatibilityLevel = new System.Windows.Forms.TextBox();
-      this.lblCompatibilityLevel = new System.Windows.Forms.Label();
-      this.txtDatasetName = new System.Windows.Forms.TextBox();
-      this.txtServerConnection = new System.Windows.Forms.TextBox();
-      this.lblDatasetName = new System.Windows.Forms.Label();
-      this.lblServerConnection = new System.Windows.Forms.Label();
-      this.panel2 = new System.Windows.Forms.Panel();
-      this.grpMachineTranslationsAllLanguages = new System.Windows.Forms.GroupBox();
-      this.btnFillAllEmptyTranslations = new System.Windows.Forms.Button();
-      this.btnGenenrateAllMachineTranslations = new System.Windows.Forms.Button();
-      this.grpImportExportTranslations = new System.Windows.Forms.GroupBox();
-      this.btnExportAllTranslationSheets = new System.Windows.Forms.Button();
-      this.chkOpenExportInExcel = new System.Windows.Forms.CheckBox();
-      this.listLanguageForTransation = new System.Windows.Forms.ComboBox();
-      this.btnExportTranslations = new System.Windows.Forms.Button();
-      this.btnImportTranslations = new System.Windows.Forms.Button();
-      this.btnExportTranslationsSheet = new System.Windows.Forms.Button();
-      this.grpMachineTranslationsSingleLanguage = new System.Windows.Forms.GroupBox();
-      this.btnFillEmptyTranslations = new System.Windows.Forms.Button();
-      this.btnGenenrateMachineTranslations = new System.Windows.Forms.Button();
-      this.listCultureToPopulate = new System.Windows.Forms.ComboBox();
-      this.grpSecondaryCultures = new System.Windows.Forms.GroupBox();
-      this.addSecondaryCulture = new System.Windows.Forms.Button();
-      this.listSecondaryCultures = new System.Windows.Forms.ListBox();
-      this.menuStrip = new System.Windows.Forms.MenuStrip();
-      this.menuConnection = new System.Windows.Forms.ToolStripMenuItem();
-      this.menuConnect = new System.Windows.Forms.ToolStripMenuItem();
-      this.menuDisconnect = new System.Windows.Forms.ToolStripMenuItem();
-      this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-      this.menuConfigureSettings = new System.Windows.Forms.ToolStripMenuItem();
-      this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-      this.exportModelAsJson = new System.Windows.Forms.ToolStripMenuItem();
-      this.menuTranslatedTables = new System.Windows.Forms.ToolStripMenuItem();
-      this.menuCreateLocalizedLabelsTable = new System.Windows.Forms.ToolStripMenuItem();
-      this.menuAddLabelsToLocalizedLabelsTable = new System.Windows.Forms.ToolStripMenuItem();
-      this.menuGenerateTranslatedLocalizedLabelsTable = new System.Windows.Forms.ToolStripMenuItem();
-      this.menuGenerateTranslatedDatasetObjectNamesTable = new System.Windows.Forms.ToolStripMenuItem();
-      this.menuGenerateTranslatedReportLabelMatrixMeasures = new System.Windows.Forms.ToolStripMenuItem();
-      this.menuGenerateTranslatedReportLabelTableMeasures = new System.Windows.Forms.ToolStripMenuItem();
-      this.menuSyncDataModel = new System.Windows.Forms.ToolStripMenuItem();
-      this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-      this.labelStatusBar = new System.Windows.Forms.ToolStripStatusLabel();
-      this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-      this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-      this.tooltipDatasetName = new System.Windows.Forms.ToolTip(this.components);
-      this.tooltipServiceConnection = new System.Windows.Forms.ToolTip(this.components);
-      this.contextMenuSecondaryLanguageHeader = new System.Windows.Forms.ContextMenuStrip(this.components);
-      this.menuCommandDeleteSecondaryLanguage = new System.Windows.Forms.ToolStripMenuItem();
-      ((System.ComponentModel.ISupportInitialize)(this.gridTranslations)).BeginInit();
-      this.groupDatasetProperties.SuspendLayout();
-      this.panel2.SuspendLayout();
-      this.grpMachineTranslationsAllLanguages.SuspendLayout();
-      this.grpImportExportTranslations.SuspendLayout();
-      this.grpMachineTranslationsSingleLanguage.SuspendLayout();
-      this.grpSecondaryCultures.SuspendLayout();
-      this.menuStrip.SuspendLayout();
-      this.statusStrip1.SuspendLayout();
-      this.contextMenuSecondaryLanguageHeader.SuspendLayout();
-      this.SuspendLayout();
+      gridTranslations = new DataGridView();
+      dialogOpenFile = new OpenFileDialog();
+      groupDatasetProperties = new GroupBox();
+      lbldefaultLanguageNameLabel = new Label();
+      txtdefaultLanguage = new TextBox();
+      txtCompatibilityLevel = new TextBox();
+      lblCompatibilityLevel = new Label();
+      txtDatasetName = new TextBox();
+      txtServerConnection = new TextBox();
+      lblDatasetName = new Label();
+      lblServerConnection = new Label();
+      panel2 = new Panel();
+      grpMachineTranslationsAllLanguages = new GroupBox();
+      btnFillAllEmptyTranslations = new Button();
+      btnGenenrateAllMachineTranslations = new Button();
+      grpImportExportTranslations = new GroupBox();
+      btnExportAllTranslationSheets = new Button();
+      chkOpenExportInExcel = new CheckBox();
+      listLanguageForTransation = new ComboBox();
+      btnExportTranslations = new Button();
+      btnImportTranslations = new Button();
+      btnExportTranslationsSheet = new Button();
+      grpMachineTranslationsSingleLanguage = new GroupBox();
+      btnFillEmptyTranslations = new Button();
+      btnGenenrateMachineTranslations = new Button();
+      listCultureToPopulate = new ComboBox();
+      grpSecondaryCultures = new GroupBox();
+      btnAddSecondaryLanguage = new Button();
+      listSecondaryLanguages = new ListBox();
+      menuStrip = new MenuStrip();
+      menuConnection = new ToolStripMenuItem();
+      menuConnect = new ToolStripMenuItem();
+      menuDisconnect = new ToolStripMenuItem();
+      toolStripSeparator2 = new ToolStripSeparator();
+      menuConfigureSettings = new ToolStripMenuItem();
+      toolStripSeparator1 = new ToolStripSeparator();
+      exportModelAsJson = new ToolStripMenuItem();
+      menuTranslatedTables = new ToolStripMenuItem();
+      menuCreateLocalizedLabelsTable = new ToolStripMenuItem();
+      menuAddLabelsToLocalizedLabelsTable = new ToolStripMenuItem();
+      menuGenerateTranslatedLocalizedLabelsTable = new ToolStripMenuItem();
+      menuGenerateTranslatedDatasetObjectNamesTable = new ToolStripMenuItem();
+      menuSyncDataModel = new ToolStripMenuItem();
+      statusStrip1 = new StatusStrip();
+      labelStatusBar = new ToolStripStatusLabel();
+      toolStripStatusLabel1 = new ToolStripStatusLabel();
+      toolStripStatusLabel2 = new ToolStripStatusLabel();
+      tooltipDatasetName = new ToolTip(components);
+      tooltipServiceConnection = new ToolTip(components);
+      contextMenuSecondaryLanguageHeader = new ContextMenuStrip(components);
+      toolStripSeparator5 = new ToolStripSeparator();
+      menuCommandDuplicateSecondaryLanguage = new ToolStripMenuItem();
+      menuCommandCopyToSecondaryLanguage = new ToolStripMenuItem();
+      toolStripSeparator3 = new ToolStripSeparator();
+      menuCommandExportLanguageToTranslationSheet = new ToolStripMenuItem();
+      toolStripSeparator4 = new ToolStripSeparator();
+      menuCommandDeleteSecondaryLanguage = new ToolStripMenuItem();
+      toolStripSeparator6 = new ToolStripSeparator();
+      ((System.ComponentModel.ISupportInitialize)gridTranslations).BeginInit();
+      groupDatasetProperties.SuspendLayout();
+      panel2.SuspendLayout();
+      grpMachineTranslationsAllLanguages.SuspendLayout();
+      grpImportExportTranslations.SuspendLayout();
+      grpMachineTranslationsSingleLanguage.SuspendLayout();
+      grpSecondaryCultures.SuspendLayout();
+      menuStrip.SuspendLayout();
+      statusStrip1.SuspendLayout();
+      contextMenuSecondaryLanguageHeader.SuspendLayout();
+      SuspendLayout();
       // 
       // gridTranslations
       // 
-      this.gridTranslations.AllowUserToAddRows = false;
-      this.gridTranslations.AllowUserToDeleteRows = false;
-      this.gridTranslations.AllowUserToResizeColumns = false;
-      this.gridTranslations.AllowUserToResizeRows = false;
-      dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-      dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
-      dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial Black", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-      dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-      dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-      dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-      dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-      this.gridTranslations.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-      this.gridTranslations.ColumnHeadersHeight = 29;
-      this.gridTranslations.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-      this.gridTranslations.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.gridTranslations.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-      this.gridTranslations.EnableHeadersVisualStyles = false;
-      this.gridTranslations.Location = new System.Drawing.Point(0, 323);
-      this.gridTranslations.MultiSelect = false;
-      this.gridTranslations.Name = "gridTranslations";
-      this.gridTranslations.RowHeadersWidth = 24;
-      this.gridTranslations.RowTemplate.Height = 28;
-      this.gridTranslations.Size = new System.Drawing.Size(1519, 394);
-      this.gridTranslations.TabIndex = 0;
-      this.gridTranslations.TabStop = false;
-      this.gridTranslations.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.gridTranslations_CellBeginEdit);
-      this.gridTranslations.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridTranslations_CellDoubleClick);
-      this.gridTranslations.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridTranslations_CellEndEdit);
+      gridTranslations.AllowUserToAddRows = false;
+      gridTranslations.AllowUserToDeleteRows = false;
+      gridTranslations.AllowUserToResizeColumns = false;
+      gridTranslations.AllowUserToResizeRows = false;
+      dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+      dataGridViewCellStyle1.BackColor = Color.Black;
+      dataGridViewCellStyle1.Font = new Font("Arial Black", 7F, FontStyle.Bold, GraphicsUnit.Point);
+      dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+      dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+      dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+      dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+      gridTranslations.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+      gridTranslations.ColumnHeadersHeight = 29;
+      gridTranslations.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+      gridTranslations.Dock = DockStyle.Fill;
+      gridTranslations.EditMode = DataGridViewEditMode.EditProgrammatically;
+      gridTranslations.EnableHeadersVisualStyles = false;
+      gridTranslations.Location = new Point(0, 323);
+      gridTranslations.MultiSelect = false;
+      gridTranslations.Name = "gridTranslations";
+      gridTranslations.RowHeadersWidth = 24;
+      gridTranslations.RowTemplate.Height = 28;
+      gridTranslations.Size = new Size(1519, 394);
+      gridTranslations.TabIndex = 0;
+      gridTranslations.TabStop = false;
+      gridTranslations.CellBeginEdit += gridTranslations_CellBeginEdit;
+      gridTranslations.CellDoubleClick += gridTranslations_CellDoubleClick;
+      gridTranslations.CellEndEdit += gridTranslations_CellEndEdit;
       // 
       // groupDatasetProperties
       // 
-      this.groupDatasetProperties.Controls.Add(this.lblDefaultCultureNameLabel);
-      this.groupDatasetProperties.Controls.Add(this.txtDefaultCulture);
-      this.groupDatasetProperties.Controls.Add(this.txtCompatibilityLevel);
-      this.groupDatasetProperties.Controls.Add(this.lblCompatibilityLevel);
-      this.groupDatasetProperties.Controls.Add(this.txtDatasetName);
-      this.groupDatasetProperties.Controls.Add(this.txtServerConnection);
-      this.groupDatasetProperties.Controls.Add(this.lblDatasetName);
-      this.groupDatasetProperties.Controls.Add(this.lblServerConnection);
-      this.groupDatasetProperties.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-      this.groupDatasetProperties.Location = new System.Drawing.Point(9, 47);
-      this.groupDatasetProperties.Name = "groupDatasetProperties";
-      this.groupDatasetProperties.Size = new System.Drawing.Size(472, 269);
-      this.groupDatasetProperties.TabIndex = 0;
-      this.groupDatasetProperties.TabStop = false;
-      this.groupDatasetProperties.Text = "Dataset Properties";
+      groupDatasetProperties.Controls.Add(lbldefaultLanguageNameLabel);
+      groupDatasetProperties.Controls.Add(txtdefaultLanguage);
+      groupDatasetProperties.Controls.Add(txtCompatibilityLevel);
+      groupDatasetProperties.Controls.Add(lblCompatibilityLevel);
+      groupDatasetProperties.Controls.Add(txtDatasetName);
+      groupDatasetProperties.Controls.Add(txtServerConnection);
+      groupDatasetProperties.Controls.Add(lblDatasetName);
+      groupDatasetProperties.Controls.Add(lblServerConnection);
+      groupDatasetProperties.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+      groupDatasetProperties.Location = new Point(9, 47);
+      groupDatasetProperties.Name = "groupDatasetProperties";
+      groupDatasetProperties.Size = new Size(472, 269);
+      groupDatasetProperties.TabIndex = 0;
+      groupDatasetProperties.TabStop = false;
+      groupDatasetProperties.Text = "Dataset Properties";
       // 
-      // lblDefaultCultureNameLabel
+      // lbldefaultLanguageNameLabel
       // 
-      this.lblDefaultCultureNameLabel.AutoSize = true;
-      this.lblDefaultCultureNameLabel.Location = new System.Drawing.Point(6, 114);
-      this.lblDefaultCultureNameLabel.Name = "lblDefaultCultureNameLabel";
-      this.lblDefaultCultureNameLabel.Size = new System.Drawing.Size(130, 20);
-      this.lblDefaultCultureNameLabel.TabIndex = 33;
-      this.lblDefaultCultureNameLabel.Text = "Default Language:";
+      lbldefaultLanguageNameLabel.AutoSize = true;
+      lbldefaultLanguageNameLabel.Location = new Point(6, 115);
+      lbldefaultLanguageNameLabel.Name = "lbldefaultLanguageNameLabel";
+      lbldefaultLanguageNameLabel.Size = new Size(130, 20);
+      lbldefaultLanguageNameLabel.TabIndex = 33;
+      lbldefaultLanguageNameLabel.Text = "Default Language:";
       // 
-      // txtDefaultCulture
+      // txtdefaultLanguage
       // 
-      this.txtDefaultCulture.Location = new System.Drawing.Point(141, 112);
-      this.txtDefaultCulture.Name = "txtDefaultCulture";
-      this.txtDefaultCulture.Size = new System.Drawing.Size(307, 27);
-      this.txtDefaultCulture.TabIndex = 32;
-      this.txtDefaultCulture.TabStop = false;
+      txtdefaultLanguage.Location = new Point(141, 112);
+      txtdefaultLanguage.Name = "txtdefaultLanguage";
+      txtdefaultLanguage.Size = new Size(307, 27);
+      txtdefaultLanguage.TabIndex = 32;
+      txtdefaultLanguage.TabStop = false;
       // 
       // txtCompatibilityLevel
       // 
-      this.txtCompatibilityLevel.Location = new System.Drawing.Point(141, 152);
-      this.txtCompatibilityLevel.Name = "txtCompatibilityLevel";
-      this.txtCompatibilityLevel.ReadOnly = true;
-      this.txtCompatibilityLevel.Size = new System.Drawing.Size(307, 27);
-      this.txtCompatibilityLevel.TabIndex = 22;
-      this.txtCompatibilityLevel.TabStop = false;
+      txtCompatibilityLevel.Location = new Point(141, 152);
+      txtCompatibilityLevel.Name = "txtCompatibilityLevel";
+      txtCompatibilityLevel.ReadOnly = true;
+      txtCompatibilityLevel.Size = new Size(307, 27);
+      txtCompatibilityLevel.TabIndex = 22;
+      txtCompatibilityLevel.TabStop = false;
       // 
       // lblCompatibilityLevel
       // 
-      this.lblCompatibilityLevel.AutoSize = true;
-      this.lblCompatibilityLevel.Location = new System.Drawing.Point(33, 153);
-      this.lblCompatibilityLevel.Name = "lblCompatibilityLevel";
-      this.lblCompatibilityLevel.Size = new System.Drawing.Size(103, 20);
-      this.lblCompatibilityLevel.TabIndex = 21;
-      this.lblCompatibilityLevel.Text = "Compat Level:";
-      this.lblCompatibilityLevel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+      lblCompatibilityLevel.AutoSize = true;
+      lblCompatibilityLevel.Location = new Point(33, 153);
+      lblCompatibilityLevel.Name = "lblCompatibilityLevel";
+      lblCompatibilityLevel.Size = new Size(103, 20);
+      lblCompatibilityLevel.TabIndex = 21;
+      lblCompatibilityLevel.Text = "Compat Level:";
+      lblCompatibilityLevel.TextAlign = ContentAlignment.MiddleRight;
       // 
       // txtDatasetName
       // 
-      this.txtDatasetName.Location = new System.Drawing.Point(141, 72);
-      this.txtDatasetName.Name = "txtDatasetName";
-      this.txtDatasetName.ReadOnly = true;
-      this.txtDatasetName.Size = new System.Drawing.Size(307, 27);
-      this.txtDatasetName.TabIndex = 20;
-      this.txtDatasetName.TabStop = false;
+      txtDatasetName.Location = new Point(141, 72);
+      txtDatasetName.Name = "txtDatasetName";
+      txtDatasetName.ReadOnly = true;
+      txtDatasetName.Size = new Size(307, 27);
+      txtDatasetName.TabIndex = 20;
+      txtDatasetName.TabStop = false;
       // 
       // txtServerConnection
       // 
-      this.txtServerConnection.Location = new System.Drawing.Point(141, 32);
-      this.txtServerConnection.Margin = new System.Windows.Forms.Padding(10, 3, 3, 3);
-      this.txtServerConnection.Name = "txtServerConnection";
-      this.txtServerConnection.ReadOnly = true;
-      this.txtServerConnection.Size = new System.Drawing.Size(307, 27);
-      this.txtServerConnection.TabIndex = 0;
-      this.txtServerConnection.TabStop = false;
+      txtServerConnection.Location = new Point(141, 32);
+      txtServerConnection.Margin = new Padding(10, 3, 3, 3);
+      txtServerConnection.Name = "txtServerConnection";
+      txtServerConnection.ReadOnly = true;
+      txtServerConnection.Size = new Size(307, 27);
+      txtServerConnection.TabIndex = 0;
+      txtServerConnection.TabStop = false;
       // 
       // lblDatasetName
       // 
-      this.lblDatasetName.AutoSize = true;
-      this.lblDatasetName.Location = new System.Drawing.Point(29, 75);
-      this.lblDatasetName.Name = "lblDatasetName";
-      this.lblDatasetName.Size = new System.Drawing.Size(107, 20);
-      this.lblDatasetName.TabIndex = 18;
-      this.lblDatasetName.Text = "Dataset Name:";
-      this.lblDatasetName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+      lblDatasetName.AutoSize = true;
+      lblDatasetName.Location = new Point(29, 75);
+      lblDatasetName.Name = "lblDatasetName";
+      lblDatasetName.Size = new Size(107, 20);
+      lblDatasetName.TabIndex = 18;
+      lblDatasetName.Text = "Dataset Name:";
+      lblDatasetName.TextAlign = ContentAlignment.MiddleRight;
       // 
       // lblServerConnection
       // 
-      this.lblServerConnection.AutoSize = true;
-      this.lblServerConnection.Location = new System.Drawing.Point(49, 36);
-      this.lblServerConnection.Name = "lblServerConnection";
-      this.lblServerConnection.Size = new System.Drawing.Size(87, 20);
-      this.lblServerConnection.TabIndex = 17;
-      this.lblServerConnection.Text = "Connection:";
-      this.lblServerConnection.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+      lblServerConnection.AutoSize = true;
+      lblServerConnection.Location = new Point(49, 36);
+      lblServerConnection.Name = "lblServerConnection";
+      lblServerConnection.Size = new Size(87, 20);
+      lblServerConnection.TabIndex = 17;
+      lblServerConnection.Text = "Connection:";
+      lblServerConnection.TextAlign = ContentAlignment.MiddleRight;
       // 
       // panel2
       // 
-      this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-      this.panel2.Controls.Add(this.grpMachineTranslationsAllLanguages);
-      this.panel2.Controls.Add(this.grpImportExportTranslations);
-      this.panel2.Controls.Add(this.grpMachineTranslationsSingleLanguage);
-      this.panel2.Controls.Add(this.grpSecondaryCultures);
-      this.panel2.Controls.Add(this.groupDatasetProperties);
-      this.panel2.Controls.Add(this.menuStrip);
-      this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-      this.panel2.Location = new System.Drawing.Point(0, 0);
-      this.panel2.Name = "panel2";
-      this.panel2.Size = new System.Drawing.Size(1519, 323);
-      this.panel2.TabIndex = 8;
+      panel2.BackColor = SystemColors.ActiveCaption;
+      panel2.Controls.Add(grpMachineTranslationsAllLanguages);
+      panel2.Controls.Add(grpImportExportTranslations);
+      panel2.Controls.Add(grpMachineTranslationsSingleLanguage);
+      panel2.Controls.Add(grpSecondaryCultures);
+      panel2.Controls.Add(groupDatasetProperties);
+      panel2.Controls.Add(menuStrip);
+      panel2.Dock = DockStyle.Top;
+      panel2.Location = new Point(0, 0);
+      panel2.Name = "panel2";
+      panel2.Size = new Size(1519, 323);
+      panel2.TabIndex = 8;
       // 
       // grpMachineTranslationsAllLanguages
       // 
-      this.grpMachineTranslationsAllLanguages.Controls.Add(this.btnFillAllEmptyTranslations);
-      this.grpMachineTranslationsAllLanguages.Controls.Add(this.btnGenenrateAllMachineTranslations);
-      this.grpMachineTranslationsAllLanguages.Location = new System.Drawing.Point(980, 191);
-      this.grpMachineTranslationsAllLanguages.Name = "grpMachineTranslationsAllLanguages";
-      this.grpMachineTranslationsAllLanguages.Size = new System.Drawing.Size(294, 125);
-      this.grpMachineTranslationsAllLanguages.TabIndex = 10;
-      this.grpMachineTranslationsAllLanguages.TabStop = false;
-      this.grpMachineTranslationsAllLanguages.Text = "Machine Translations - All Languages";
+      grpMachineTranslationsAllLanguages.Controls.Add(btnFillAllEmptyTranslations);
+      grpMachineTranslationsAllLanguages.Controls.Add(btnGenenrateAllMachineTranslations);
+      grpMachineTranslationsAllLanguages.Location = new Point(981, 191);
+      grpMachineTranslationsAllLanguages.Name = "grpMachineTranslationsAllLanguages";
+      grpMachineTranslationsAllLanguages.Size = new Size(294, 125);
+      grpMachineTranslationsAllLanguages.TabIndex = 10;
+      grpMachineTranslationsAllLanguages.TabStop = false;
+      grpMachineTranslationsAllLanguages.Text = "Machine Translations - All Languages";
       // 
       // btnFillAllEmptyTranslations
       // 
-      this.btnFillAllEmptyTranslations.BackColor = System.Drawing.SystemColors.ControlLight;
-      this.btnFillAllEmptyTranslations.Location = new System.Drawing.Point(12, 72);
-      this.btnFillAllEmptyTranslations.Name = "btnFillAllEmptyTranslations";
-      this.btnFillAllEmptyTranslations.Size = new System.Drawing.Size(267, 37);
-      this.btnFillAllEmptyTranslations.TabIndex = 15;
-      this.btnFillAllEmptyTranslations.Text = "Fill All Empty Translations";
-      this.btnFillAllEmptyTranslations.UseVisualStyleBackColor = false;
-      this.btnFillAllEmptyTranslations.Click += new System.EventHandler(this.FillAllEmptyTranslations);
+      btnFillAllEmptyTranslations.BackColor = SystemColors.ControlLight;
+      btnFillAllEmptyTranslations.Location = new Point(11, 72);
+      btnFillAllEmptyTranslations.Name = "btnFillAllEmptyTranslations";
+      btnFillAllEmptyTranslations.Size = new Size(267, 37);
+      btnFillAllEmptyTranslations.TabIndex = 15;
+      btnFillAllEmptyTranslations.Text = "Fill All Empty Translations";
+      btnFillAllEmptyTranslations.UseVisualStyleBackColor = false;
+      btnFillAllEmptyTranslations.Click += FillAllEmptyTranslations;
       // 
       // btnGenenrateAllMachineTranslations
       // 
-      this.btnGenenrateAllMachineTranslations.BackColor = System.Drawing.SystemColors.ControlLight;
-      this.btnGenenrateAllMachineTranslations.Location = new System.Drawing.Point(10, 28);
-      this.btnGenenrateAllMachineTranslations.Name = "btnGenenrateAllMachineTranslations";
-      this.btnGenenrateAllMachineTranslations.Size = new System.Drawing.Size(269, 36);
-      this.btnGenenrateAllMachineTranslations.TabIndex = 14;
-      this.btnGenenrateAllMachineTranslations.Text = "Generate All Translations";
-      this.btnGenenrateAllMachineTranslations.UseVisualStyleBackColor = false;
-      this.btnGenenrateAllMachineTranslations.Click += new System.EventHandler(this.GenenrateAllMachineTranslations);
+      btnGenenrateAllMachineTranslations.BackColor = SystemColors.ControlLight;
+      btnGenenrateAllMachineTranslations.Location = new Point(10, 28);
+      btnGenenrateAllMachineTranslations.Name = "btnGenenrateAllMachineTranslations";
+      btnGenenrateAllMachineTranslations.Size = new Size(269, 36);
+      btnGenenrateAllMachineTranslations.TabIndex = 14;
+      btnGenenrateAllMachineTranslations.Text = "Generate All Translations";
+      btnGenenrateAllMachineTranslations.UseVisualStyleBackColor = false;
+      btnGenenrateAllMachineTranslations.Click += GenenrateAllMachineTranslations;
       // 
       // grpImportExportTranslations
       // 
-      this.grpImportExportTranslations.Controls.Add(this.btnExportAllTranslationSheets);
-      this.grpImportExportTranslations.Controls.Add(this.chkOpenExportInExcel);
-      this.grpImportExportTranslations.Controls.Add(this.listLanguageForTransation);
-      this.grpImportExportTranslations.Controls.Add(this.btnExportTranslations);
-      this.grpImportExportTranslations.Controls.Add(this.btnImportTranslations);
-      this.grpImportExportTranslations.Controls.Add(this.btnExportTranslationsSheet);
-      this.grpImportExportTranslations.Location = new System.Drawing.Point(730, 47);
-      this.grpImportExportTranslations.Name = "grpImportExportTranslations";
-      this.grpImportExportTranslations.Size = new System.Drawing.Size(235, 269);
-      this.grpImportExportTranslations.TabIndex = 4;
-      this.grpImportExportTranslations.TabStop = false;
-      this.grpImportExportTranslations.Text = "Export/Import Translations";
+      grpImportExportTranslations.Controls.Add(btnExportAllTranslationSheets);
+      grpImportExportTranslations.Controls.Add(chkOpenExportInExcel);
+      grpImportExportTranslations.Controls.Add(listLanguageForTransation);
+      grpImportExportTranslations.Controls.Add(btnExportTranslations);
+      grpImportExportTranslations.Controls.Add(btnImportTranslations);
+      grpImportExportTranslations.Controls.Add(btnExportTranslationsSheet);
+      grpImportExportTranslations.Location = new Point(730, 47);
+      grpImportExportTranslations.Name = "grpImportExportTranslations";
+      grpImportExportTranslations.Size = new Size(235, 269);
+      grpImportExportTranslations.TabIndex = 4;
+      grpImportExportTranslations.TabStop = false;
+      grpImportExportTranslations.Text = "Export/Import Translations";
       // 
       // btnExportAllTranslationSheets
       // 
-      this.btnExportAllTranslationSheets.BackColor = System.Drawing.SystemColors.ControlLight;
-      this.btnExportAllTranslationSheets.Location = new System.Drawing.Point(13, 144);
-      this.btnExportAllTranslationSheets.Name = "btnExportAllTranslationSheets";
-      this.btnExportAllTranslationSheets.Size = new System.Drawing.Size(209, 36);
-      this.btnExportAllTranslationSheets.TabIndex = 10;
-      this.btnExportAllTranslationSheets.Text = "Export All Translation Sheets";
-      this.btnExportAllTranslationSheets.UseVisualStyleBackColor = false;
-      this.btnExportAllTranslationSheets.Click += new System.EventHandler(this.ExportAllTranslationSheets);
+      btnExportAllTranslationSheets.BackColor = SystemColors.ControlLight;
+      btnExportAllTranslationSheets.Location = new Point(13, 144);
+      btnExportAllTranslationSheets.Name = "btnExportAllTranslationSheets";
+      btnExportAllTranslationSheets.Size = new Size(209, 36);
+      btnExportAllTranslationSheets.TabIndex = 10;
+      btnExportAllTranslationSheets.Text = "Export All Translation Sheets";
+      btnExportAllTranslationSheets.UseVisualStyleBackColor = false;
+      btnExportAllTranslationSheets.Click += ExportAllTranslationSheets;
       // 
       // chkOpenExportInExcel
       // 
-      this.chkOpenExportInExcel.AutoSize = true;
-      this.chkOpenExportInExcel.Checked = true;
-      this.chkOpenExportInExcel.CheckState = System.Windows.Forms.CheckState.Checked;
-      this.chkOpenExportInExcel.Location = new System.Drawing.Point(31, 187);
-      this.chkOpenExportInExcel.Name = "chkOpenExportInExcel";
-      this.chkOpenExportInExcel.Size = new System.Drawing.Size(168, 24);
-      this.chkOpenExportInExcel.TabIndex = 9;
-      this.chkOpenExportInExcel.Text = "Open Export in Excel";
-      this.chkOpenExportInExcel.UseVisualStyleBackColor = true;
+      chkOpenExportInExcel.AutoSize = true;
+      chkOpenExportInExcel.Checked = true;
+      chkOpenExportInExcel.CheckState = CheckState.Checked;
+      chkOpenExportInExcel.Location = new Point(31, 187);
+      chkOpenExportInExcel.Name = "chkOpenExportInExcel";
+      chkOpenExportInExcel.Size = new Size(168, 24);
+      chkOpenExportInExcel.TabIndex = 9;
+      chkOpenExportInExcel.Text = "Open Export in Excel";
+      chkOpenExportInExcel.UseVisualStyleBackColor = true;
       // 
       // listLanguageForTransation
       // 
-      this.listLanguageForTransation.BackColor = System.Drawing.SystemColors.Window;
-      this.listLanguageForTransation.FormattingEnabled = true;
-      this.listLanguageForTransation.Location = new System.Drawing.Point(13, 68);
-      this.listLanguageForTransation.Name = "listLanguageForTransation";
-      this.listLanguageForTransation.Size = new System.Drawing.Size(208, 28);
-      this.listLanguageForTransation.TabIndex = 6;
+      listLanguageForTransation.BackColor = SystemColors.Window;
+      listLanguageForTransation.FormattingEnabled = true;
+      listLanguageForTransation.Location = new Point(13, 68);
+      listLanguageForTransation.Name = "listLanguageForTransation";
+      listLanguageForTransation.Size = new Size(207, 28);
+      listLanguageForTransation.TabIndex = 6;
       // 
       // btnExportTranslations
       // 
-      this.btnExportTranslations.BackColor = System.Drawing.SystemColors.ControlLight;
-      this.btnExportTranslations.Location = new System.Drawing.Point(11, 102);
-      this.btnExportTranslations.Name = "btnExportTranslations";
-      this.btnExportTranslations.Size = new System.Drawing.Size(210, 36);
-      this.btnExportTranslations.TabIndex = 7;
-      this.btnExportTranslations.Text = "Export All Translations";
-      this.btnExportTranslations.UseVisualStyleBackColor = false;
-      this.btnExportTranslations.Click += new System.EventHandler(this.ExportAllTranslations);
+      btnExportTranslations.BackColor = SystemColors.ControlLight;
+      btnExportTranslations.Location = new Point(11, 101);
+      btnExportTranslations.Name = "btnExportTranslations";
+      btnExportTranslations.Size = new Size(210, 36);
+      btnExportTranslations.TabIndex = 7;
+      btnExportTranslations.Text = "Export All Translations";
+      btnExportTranslations.UseVisualStyleBackColor = false;
+      btnExportTranslations.Click += ExportAllTranslations;
       // 
       // btnImportTranslations
       // 
-      this.btnImportTranslations.BackColor = System.Drawing.SystemColors.ControlLight;
-      this.btnImportTranslations.Location = new System.Drawing.Point(11, 216);
-      this.btnImportTranslations.Name = "btnImportTranslations";
-      this.btnImportTranslations.Size = new System.Drawing.Size(210, 36);
-      this.btnImportTranslations.TabIndex = 8;
-      this.btnImportTranslations.Text = "Import Translations";
-      this.btnImportTranslations.UseVisualStyleBackColor = false;
-      this.btnImportTranslations.Click += new System.EventHandler(this.ImportTranslations);
+      btnImportTranslations.BackColor = SystemColors.ControlLight;
+      btnImportTranslations.Location = new Point(11, 216);
+      btnImportTranslations.Name = "btnImportTranslations";
+      btnImportTranslations.Size = new Size(210, 36);
+      btnImportTranslations.TabIndex = 8;
+      btnImportTranslations.Text = "Import Translations";
+      btnImportTranslations.UseVisualStyleBackColor = false;
+      btnImportTranslations.Click += ImportTranslations;
       // 
       // btnExportTranslationsSheet
       // 
-      this.btnExportTranslationsSheet.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-      this.btnExportTranslationsSheet.BackColor = System.Drawing.SystemColors.ControlLight;
-      this.btnExportTranslationsSheet.Location = new System.Drawing.Point(11, 26);
-      this.btnExportTranslationsSheet.Name = "btnExportTranslationsSheet";
-      this.btnExportTranslationsSheet.Size = new System.Drawing.Size(210, 36);
-      this.btnExportTranslationsSheet.TabIndex = 5;
-      this.btnExportTranslationsSheet.Text = "Export Translations Sheet";
-      this.btnExportTranslationsSheet.UseVisualStyleBackColor = false;
-      this.btnExportTranslationsSheet.Click += new System.EventHandler(this.ExportTranslationsSheet);
+      btnExportTranslationsSheet.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+      btnExportTranslationsSheet.BackColor = SystemColors.ControlLight;
+      btnExportTranslationsSheet.Location = new Point(11, 27);
+      btnExportTranslationsSheet.Name = "btnExportTranslationsSheet";
+      btnExportTranslationsSheet.Size = new Size(210, 36);
+      btnExportTranslationsSheet.TabIndex = 5;
+      btnExportTranslationsSheet.Text = "Export Translations Sheet";
+      btnExportTranslationsSheet.UseVisualStyleBackColor = false;
+      btnExportTranslationsSheet.Click += ExportTranslationsSheet;
       // 
       // grpMachineTranslationsSingleLanguage
       // 
-      this.grpMachineTranslationsSingleLanguage.Controls.Add(this.btnFillEmptyTranslations);
-      this.grpMachineTranslationsSingleLanguage.Controls.Add(this.btnGenenrateMachineTranslations);
-      this.grpMachineTranslationsSingleLanguage.Controls.Add(this.listCultureToPopulate);
-      this.grpMachineTranslationsSingleLanguage.Location = new System.Drawing.Point(978, 47);
-      this.grpMachineTranslationsSingleLanguage.Name = "grpMachineTranslationsSingleLanguage";
-      this.grpMachineTranslationsSingleLanguage.Size = new System.Drawing.Size(294, 140);
-      this.grpMachineTranslationsSingleLanguage.TabIndex = 9;
-      this.grpMachineTranslationsSingleLanguage.TabStop = false;
-      this.grpMachineTranslationsSingleLanguage.Text = "Machine Translations - Single Language";
+      grpMachineTranslationsSingleLanguage.Controls.Add(btnFillEmptyTranslations);
+      grpMachineTranslationsSingleLanguage.Controls.Add(btnGenenrateMachineTranslations);
+      grpMachineTranslationsSingleLanguage.Controls.Add(listCultureToPopulate);
+      grpMachineTranslationsSingleLanguage.Location = new Point(978, 47);
+      grpMachineTranslationsSingleLanguage.Name = "grpMachineTranslationsSingleLanguage";
+      grpMachineTranslationsSingleLanguage.Size = new Size(294, 140);
+      grpMachineTranslationsSingleLanguage.TabIndex = 9;
+      grpMachineTranslationsSingleLanguage.TabStop = false;
+      grpMachineTranslationsSingleLanguage.Text = "Machine Translations - Single Language";
       // 
       // btnFillEmptyTranslations
       // 
-      this.btnFillEmptyTranslations.BackColor = System.Drawing.SystemColors.ControlLight;
-      this.btnFillEmptyTranslations.ForeColor = System.Drawing.SystemColors.ControlText;
-      this.btnFillEmptyTranslations.Location = new System.Drawing.Point(8, 99);
-      this.btnFillEmptyTranslations.Name = "btnFillEmptyTranslations";
-      this.btnFillEmptyTranslations.Size = new System.Drawing.Size(271, 36);
-      this.btnFillEmptyTranslations.TabIndex = 14;
-      this.btnFillEmptyTranslations.Text = "Fill Empty Translations";
-      this.btnFillEmptyTranslations.UseVisualStyleBackColor = false;
-      this.btnFillEmptyTranslations.Click += new System.EventHandler(this.FillEmptyTranslations);
+      btnFillEmptyTranslations.BackColor = SystemColors.ControlLight;
+      btnFillEmptyTranslations.ForeColor = SystemColors.ControlText;
+      btnFillEmptyTranslations.Location = new Point(8, 99);
+      btnFillEmptyTranslations.Name = "btnFillEmptyTranslations";
+      btnFillEmptyTranslations.Size = new Size(271, 36);
+      btnFillEmptyTranslations.TabIndex = 14;
+      btnFillEmptyTranslations.Text = "Fill Empty Translations";
+      btnFillEmptyTranslations.UseVisualStyleBackColor = false;
+      btnFillEmptyTranslations.Click += FillEmptyTranslations;
       // 
       // btnGenenrateMachineTranslations
       // 
-      this.btnGenenrateMachineTranslations.BackColor = System.Drawing.SystemColors.ControlLight;
-      this.btnGenenrateMachineTranslations.ForeColor = System.Drawing.SystemColors.ControlText;
-      this.btnGenenrateMachineTranslations.Location = new System.Drawing.Point(8, 26);
-      this.btnGenenrateMachineTranslations.Name = "btnGenenrateMachineTranslations";
-      this.btnGenenrateMachineTranslations.Size = new System.Drawing.Size(271, 36);
-      this.btnGenenrateMachineTranslations.TabIndex = 10;
-      this.btnGenenrateMachineTranslations.Text = "Generate Translations";
-      this.btnGenenrateMachineTranslations.UseVisualStyleBackColor = false;
-      this.btnGenenrateMachineTranslations.Click += new System.EventHandler(this.GenenrateMachineTranslations);
+      btnGenenrateMachineTranslations.BackColor = SystemColors.ControlLight;
+      btnGenenrateMachineTranslations.ForeColor = SystemColors.ControlText;
+      btnGenenrateMachineTranslations.Location = new Point(8, 27);
+      btnGenenrateMachineTranslations.Name = "btnGenenrateMachineTranslations";
+      btnGenenrateMachineTranslations.Size = new Size(271, 36);
+      btnGenenrateMachineTranslations.TabIndex = 10;
+      btnGenenrateMachineTranslations.Text = "Generate Translations";
+      btnGenenrateMachineTranslations.UseVisualStyleBackColor = false;
+      btnGenenrateMachineTranslations.Click += GenenrateMachineTranslations;
       // 
       // listCultureToPopulate
       // 
-      this.listCultureToPopulate.FormattingEnabled = true;
-      this.listCultureToPopulate.Location = new System.Drawing.Point(8, 67);
-      this.listCultureToPopulate.Name = "listCultureToPopulate";
-      this.listCultureToPopulate.Size = new System.Drawing.Size(271, 28);
-      this.listCultureToPopulate.TabIndex = 11;
+      listCultureToPopulate.FormattingEnabled = true;
+      listCultureToPopulate.Location = new Point(8, 67);
+      listCultureToPopulate.Name = "listCultureToPopulate";
+      listCultureToPopulate.Size = new Size(271, 28);
+      listCultureToPopulate.TabIndex = 11;
       // 
       // grpSecondaryCultures
       // 
-      this.grpSecondaryCultures.Controls.Add(this.addSecondaryCulture);
-      this.grpSecondaryCultures.Controls.Add(this.listSecondaryCultures);
-      this.grpSecondaryCultures.Location = new System.Drawing.Point(494, 46);
-      this.grpSecondaryCultures.Name = "grpSecondaryCultures";
-      this.grpSecondaryCultures.Size = new System.Drawing.Size(224, 270);
-      this.grpSecondaryCultures.TabIndex = 2;
-      this.grpSecondaryCultures.TabStop = false;
-      this.grpSecondaryCultures.Text = "Secondary Languages";
+      grpSecondaryCultures.Controls.Add(btnAddSecondaryLanguage);
+      grpSecondaryCultures.Controls.Add(listSecondaryLanguages);
+      grpSecondaryCultures.Location = new Point(494, 45);
+      grpSecondaryCultures.Name = "grpSecondaryCultures";
+      grpSecondaryCultures.Size = new Size(224, 269);
+      grpSecondaryCultures.TabIndex = 2;
+      grpSecondaryCultures.TabStop = false;
+      grpSecondaryCultures.Text = "Secondary Languages";
       // 
-      // addSecondaryCulture
+      // btnAddSecondaryLanguage
       // 
-      this.addSecondaryCulture.Location = new System.Drawing.Point(8, 27);
-      this.addSecondaryCulture.Name = "addSecondaryCulture";
-      this.addSecondaryCulture.Size = new System.Drawing.Size(200, 36);
-      this.addSecondaryCulture.TabIndex = 3;
-      this.addSecondaryCulture.Text = "Add Language";
-      this.addSecondaryCulture.UseVisualStyleBackColor = true;
-      this.addSecondaryCulture.Click += new System.EventHandler(this.AddSecondaryCulture);
+      btnAddSecondaryLanguage.Location = new Point(8, 27);
+      btnAddSecondaryLanguage.Name = "btnAddSecondaryLanguage";
+      btnAddSecondaryLanguage.Size = new Size(200, 36);
+      btnAddSecondaryLanguage.TabIndex = 3;
+      btnAddSecondaryLanguage.Text = "Add Language";
+      btnAddSecondaryLanguage.UseVisualStyleBackColor = true;
+      btnAddSecondaryLanguage.Click += AddSecondaryLanguage;
       // 
-      // listSecondaryCultures
+      // listSecondaryLanguages
       // 
-      this.listSecondaryCultures.FormattingEnabled = true;
-      this.listSecondaryCultures.ItemHeight = 20;
-      this.listSecondaryCultures.Location = new System.Drawing.Point(9, 69);
-      this.listSecondaryCultures.Name = "listSecondaryCultures";
-      this.listSecondaryCultures.Size = new System.Drawing.Size(201, 184);
-      this.listSecondaryCultures.TabIndex = 0;
-      this.listSecondaryCultures.TabStop = false;
-      this.listSecondaryCultures.UseTabStops = false;
+      listSecondaryLanguages.FormattingEnabled = true;
+      listSecondaryLanguages.ItemHeight = 20;
+      listSecondaryLanguages.Location = new Point(9, 69);
+      listSecondaryLanguages.Name = "listSecondaryLanguages";
+      listSecondaryLanguages.Size = new Size(201, 184);
+      listSecondaryLanguages.TabIndex = 0;
+      listSecondaryLanguages.TabStop = false;
+      listSecondaryLanguages.UseTabStops = false;
       // 
       // menuStrip
       // 
-      this.menuStrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
-      this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
-      this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuConnection,
-            this.menuTranslatedTables,
-            this.menuSyncDataModel});
-      this.menuStrip.Location = new System.Drawing.Point(0, 0);
-      this.menuStrip.Name = "menuStrip";
-      this.menuStrip.Padding = new System.Windows.Forms.Padding(6, 3, 6, 3);
-      this.menuStrip.Size = new System.Drawing.Size(1519, 38);
-      this.menuStrip.TabIndex = 1;
-      this.menuStrip.Text = "menuMain";
+      menuStrip.BackColor = Color.FromArgb(221, 221, 221);
+      menuStrip.ImageScalingSize = new Size(20, 20);
+      menuStrip.Items.AddRange(new ToolStripItem[] { menuConnection, menuTranslatedTables, menuSyncDataModel });
+      menuStrip.Location = new Point(0, 0);
+      menuStrip.Name = "menuStrip";
+      menuStrip.Padding = new Padding(6, 3, 6, 3);
+      menuStrip.Size = new Size(1519, 38);
+      menuStrip.TabIndex = 1;
+      menuStrip.Text = "menuMain";
       // 
       // menuConnection
       // 
-      this.menuConnection.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuConnect,
-            this.menuDisconnect,
-            this.toolStripSeparator2,
-            this.menuConfigureSettings,
-            this.toolStripSeparator1,
-            this.exportModelAsJson});
-      this.menuConnection.Name = "menuConnection";
-      this.menuConnection.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.S)));
-      this.menuConnection.Size = new System.Drawing.Size(153, 32);
-      this.menuConnection.Text = "Dataset Connection";
+      menuConnection.DropDownItems.AddRange(new ToolStripItem[] { menuConnect, menuDisconnect, toolStripSeparator2, menuConfigureSettings, toolStripSeparator1, exportModelAsJson });
+      menuConnection.Name = "menuConnection";
+      menuConnection.ShortcutKeys = Keys.Control | Keys.Shift | Keys.S;
+      menuConnection.Size = new Size(153, 32);
+      menuConnection.Text = "Dataset Connection";
       // 
       // menuConnect
       // 
-      this.menuConnect.Name = "menuConnect";
-      this.menuConnect.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.C)));
-      this.menuConnect.Size = new System.Drawing.Size(281, 26);
-      this.menuConnect.Text = "Connect...";
-      this.menuConnect.Click += new System.EventHandler(this.menuConnect_Click);
+      menuConnect.Name = "menuConnect";
+      menuConnect.ShortcutKeys = Keys.Control | Keys.Shift | Keys.C;
+      menuConnect.Size = new Size(281, 26);
+      menuConnect.Text = "Connect...";
+      menuConnect.Click += menuConnect_Click;
       // 
       // menuDisconnect
       // 
-      this.menuDisconnect.Name = "menuDisconnect";
-      this.menuDisconnect.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.D)));
-      this.menuDisconnect.Size = new System.Drawing.Size(281, 26);
-      this.menuDisconnect.Text = "Disconnect";
-      this.menuDisconnect.Click += new System.EventHandler(this.menuDisconnect_Click);
+      menuDisconnect.Name = "menuDisconnect";
+      menuDisconnect.ShortcutKeys = Keys.Control | Keys.Shift | Keys.D;
+      menuDisconnect.Size = new Size(281, 26);
+      menuDisconnect.Text = "Disconnect";
+      menuDisconnect.Click += menuDisconnect_Click;
       // 
       // toolStripSeparator2
       // 
-      this.toolStripSeparator2.Name = "toolStripSeparator2";
-      this.toolStripSeparator2.Size = new System.Drawing.Size(278, 6);
+      toolStripSeparator2.Name = "toolStripSeparator2";
+      toolStripSeparator2.Size = new Size(278, 6);
       // 
       // menuConfigureSettings
       // 
-      this.menuConfigureSettings.Name = "menuConfigureSettings";
-      this.menuConfigureSettings.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-      this.menuConfigureSettings.Size = new System.Drawing.Size(281, 26);
-      this.menuConfigureSettings.Text = "Configure Settings...";
-      this.menuConfigureSettings.Click += new System.EventHandler(this.ConfigureSettings);
+      menuConfigureSettings.Name = "menuConfigureSettings";
+      menuConfigureSettings.ShortcutKeys = Keys.Control | Keys.S;
+      menuConfigureSettings.Size = new Size(281, 26);
+      menuConfigureSettings.Text = "Configure Settings...";
+      menuConfigureSettings.Click += ConfigureSettings;
       // 
       // toolStripSeparator1
       // 
-      this.toolStripSeparator1.Name = "toolStripSeparator1";
-      this.toolStripSeparator1.Size = new System.Drawing.Size(278, 6);
+      toolStripSeparator1.Name = "toolStripSeparator1";
+      toolStripSeparator1.Size = new Size(278, 6);
       // 
       // exportModelAsJson
       // 
-      this.exportModelAsJson.Name = "exportModelAsJson";
-      this.exportModelAsJson.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
-      this.exportModelAsJson.Size = new System.Drawing.Size(281, 26);
-      this.exportModelAsJson.Text = "Export As Model.bim";
-      this.exportModelAsJson.Click += new System.EventHandler(this.exportModelAsJson_Click);
+      exportModelAsJson.Name = "exportModelAsJson";
+      exportModelAsJson.ShortcutKeys = Keys.Control | Keys.E;
+      exportModelAsJson.Size = new Size(281, 26);
+      exportModelAsJson.Text = "Export As Model.bim";
+      exportModelAsJson.Click += exportModelAsJson_Click;
       // 
       // menuTranslatedTables
       // 
-      this.menuTranslatedTables.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuCreateLocalizedLabelsTable,
-            this.menuAddLabelsToLocalizedLabelsTable,
-            this.menuGenerateTranslatedLocalizedLabelsTable,
-            this.menuGenerateTranslatedDatasetObjectNamesTable,
-            this.menuGenerateTranslatedReportLabelMatrixMeasures,
-            this.menuGenerateTranslatedReportLabelTableMeasures});
-      this.menuTranslatedTables.Name = "menuTranslatedTables";
-      this.menuTranslatedTables.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.T)));
-      this.menuTranslatedTables.Size = new System.Drawing.Size(200, 32);
-      this.menuTranslatedTables.Text = "Generate Translated Tables";
+      menuTranslatedTables.DropDownItems.AddRange(new ToolStripItem[] { menuCreateLocalizedLabelsTable, menuAddLabelsToLocalizedLabelsTable, menuGenerateTranslatedLocalizedLabelsTable, menuGenerateTranslatedDatasetObjectNamesTable });
+      menuTranslatedTables.Name = "menuTranslatedTables";
+      menuTranslatedTables.ShortcutKeys = Keys.Control | Keys.Shift | Keys.T;
+      menuTranslatedTables.Size = new Size(200, 32);
+      menuTranslatedTables.Text = "Generate Translated Tables";
       // 
       // menuCreateLocalizedLabelsTable
       // 
-      this.menuCreateLocalizedLabelsTable.Name = "menuCreateLocalizedLabelsTable";
-      this.menuCreateLocalizedLabelsTable.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-      this.menuCreateLocalizedLabelsTable.Size = new System.Drawing.Size(480, 26);
-      this.menuCreateLocalizedLabelsTable.Text = "Create Localized Labels Table";
-      this.menuCreateLocalizedLabelsTable.Click += new System.EventHandler(this.CreateLocalizedLabelsTable);
+      menuCreateLocalizedLabelsTable.Name = "menuCreateLocalizedLabelsTable";
+      menuCreateLocalizedLabelsTable.ShortcutKeys = Keys.Control | Keys.C;
+      menuCreateLocalizedLabelsTable.Size = new Size(469, 26);
+      menuCreateLocalizedLabelsTable.Text = "Create Localized Labels Table";
+      menuCreateLocalizedLabelsTable.Click += CreateLocalizedLabelsTable;
       // 
       // menuAddLabelsToLocalizedLabelsTable
       // 
-      this.menuAddLabelsToLocalizedLabelsTable.Name = "menuAddLabelsToLocalizedLabelsTable";
-      this.menuAddLabelsToLocalizedLabelsTable.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-      this.menuAddLabelsToLocalizedLabelsTable.Size = new System.Drawing.Size(480, 26);
-      this.menuAddLabelsToLocalizedLabelsTable.Text = "Add Labels to Localized Labels Table...";
-      this.menuAddLabelsToLocalizedLabelsTable.Click += new System.EventHandler(this.AddLocalizedLabels);
+      menuAddLabelsToLocalizedLabelsTable.Name = "menuAddLabelsToLocalizedLabelsTable";
+      menuAddLabelsToLocalizedLabelsTable.ShortcutKeys = Keys.Control | Keys.A;
+      menuAddLabelsToLocalizedLabelsTable.Size = new Size(469, 26);
+      menuAddLabelsToLocalizedLabelsTable.Text = "Add Labels to Localized Labels Table...";
+      menuAddLabelsToLocalizedLabelsTable.Click += AddLocalizedLabels;
       // 
       // menuGenerateTranslatedLocalizedLabelsTable
       // 
-      this.menuGenerateTranslatedLocalizedLabelsTable.Name = "menuGenerateTranslatedLocalizedLabelsTable";
-      this.menuGenerateTranslatedLocalizedLabelsTable.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.L)));
-      this.menuGenerateTranslatedLocalizedLabelsTable.Size = new System.Drawing.Size(480, 26);
-      this.menuGenerateTranslatedLocalizedLabelsTable.Text = "Generate Translated Localized Labels Table";
-      this.menuGenerateTranslatedLocalizedLabelsTable.Click += new System.EventHandler(this.GenerateTranslatedLocalizedLabelsTable);
+      menuGenerateTranslatedLocalizedLabelsTable.Name = "menuGenerateTranslatedLocalizedLabelsTable";
+      menuGenerateTranslatedLocalizedLabelsTable.ShortcutKeys = Keys.Control | Keys.L;
+      menuGenerateTranslatedLocalizedLabelsTable.Size = new Size(469, 26);
+      menuGenerateTranslatedLocalizedLabelsTable.Text = "Generate Translated Localized Labels Table";
+      menuGenerateTranslatedLocalizedLabelsTable.Click += GenerateTranslatedLocalizedLabelsTable;
       // 
       // menuGenerateTranslatedDatasetObjectNamesTable
       // 
-      this.menuGenerateTranslatedDatasetObjectNamesTable.Name = "menuGenerateTranslatedDatasetObjectNamesTable";
-      this.menuGenerateTranslatedDatasetObjectNamesTable.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
-      this.menuGenerateTranslatedDatasetObjectNamesTable.Size = new System.Drawing.Size(480, 26);
-      this.menuGenerateTranslatedDatasetObjectNamesTable.Text = "Generate Translated Dataset Object Names Table";
-      this.menuGenerateTranslatedDatasetObjectNamesTable.Click += new System.EventHandler(this.GenerateTranslatedDatasetObjectNamesTable);
-      // 
-      // menuGenerateTranslatedReportLabelMatrixMeasures
-      // 
-      this.menuGenerateTranslatedReportLabelMatrixMeasures.Name = "menuGenerateTranslatedReportLabelMatrixMeasures";
-      this.menuGenerateTranslatedReportLabelMatrixMeasures.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.M)));
-      this.menuGenerateTranslatedReportLabelMatrixMeasures.Size = new System.Drawing.Size(480, 26);
-      this.menuGenerateTranslatedReportLabelMatrixMeasures.Text = "Generate Translated Report Label Matrix Measures";
-      this.menuGenerateTranslatedReportLabelMatrixMeasures.Click += new System.EventHandler(this.GenerateTranslatedReportLabelMatrixMeasures);
-      // 
-      // menuGenerateTranslatedReportLabelTableMeasures
-      // 
-      this.menuGenerateTranslatedReportLabelTableMeasures.Name = "menuGenerateTranslatedReportLabelTableMeasures";
-      this.menuGenerateTranslatedReportLabelTableMeasures.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
-      this.menuGenerateTranslatedReportLabelTableMeasures.Size = new System.Drawing.Size(480, 26);
-      this.menuGenerateTranslatedReportLabelTableMeasures.Text = "Generate Translated Report Label Table Measures";
-      this.menuGenerateTranslatedReportLabelTableMeasures.Click += new System.EventHandler(this.GenerateTranslatedReportLabelTableMeasures);
+      menuGenerateTranslatedDatasetObjectNamesTable.Name = "menuGenerateTranslatedDatasetObjectNamesTable";
+      menuGenerateTranslatedDatasetObjectNamesTable.ShortcutKeys = Keys.Control | Keys.D;
+      menuGenerateTranslatedDatasetObjectNamesTable.Size = new Size(469, 26);
+      menuGenerateTranslatedDatasetObjectNamesTable.Text = "Generate Translated Dataset Object Names Table";
+      menuGenerateTranslatedDatasetObjectNamesTable.Click += GenerateTranslatedDatasetObjectNamesTable;
       // 
       // menuSyncDataModel
       // 
-      this.menuSyncDataModel.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-      this.menuSyncDataModel.BackColor = System.Drawing.Color.LemonChiffon;
-      this.menuSyncDataModel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-      this.menuSyncDataModel.ForeColor = System.Drawing.Color.DarkRed;
-      this.menuSyncDataModel.Margin = new System.Windows.Forms.Padding(4);
-      this.menuSyncDataModel.Name = "menuSyncDataModel";
-      this.menuSyncDataModel.Size = new System.Drawing.Size(140, 24);
-      this.menuSyncDataModel.Text = "Sync Data Model";
-      this.menuSyncDataModel.Click += new System.EventHandler(this.SyncDataModel);
+      menuSyncDataModel.Alignment = ToolStripItemAlignment.Right;
+      menuSyncDataModel.BackColor = Color.LemonChiffon;
+      menuSyncDataModel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+      menuSyncDataModel.ForeColor = Color.DarkRed;
+      menuSyncDataModel.Margin = new Padding(4);
+      menuSyncDataModel.Name = "menuSyncDataModel";
+      menuSyncDataModel.Size = new Size(140, 24);
+      menuSyncDataModel.Text = "Sync Data Model";
+      menuSyncDataModel.Click += SyncDataModel;
       // 
       // statusStrip1
       // 
-      this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-      this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.labelStatusBar,
-            this.toolStripStatusLabel1,
-            this.toolStripStatusLabel2});
-      this.statusStrip1.Location = new System.Drawing.Point(0, 717);
-      this.statusStrip1.Name = "statusStrip1";
-      this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
-      this.statusStrip1.Size = new System.Drawing.Size(1519, 22);
-      this.statusStrip1.TabIndex = 9;
-      this.statusStrip1.Text = "statusStrip1";
+      statusStrip1.ImageScalingSize = new Size(20, 20);
+      statusStrip1.Items.AddRange(new ToolStripItem[] { labelStatusBar, toolStripStatusLabel1, toolStripStatusLabel2 });
+      statusStrip1.Location = new Point(0, 717);
+      statusStrip1.Name = "statusStrip1";
+      statusStrip1.Padding = new Padding(1, 0, 16, 0);
+      statusStrip1.Size = new Size(1519, 22);
+      statusStrip1.TabIndex = 9;
+      statusStrip1.Text = "statusStrip1";
       // 
       // labelStatusBar
       // 
-      this.labelStatusBar.Name = "labelStatusBar";
-      this.labelStatusBar.Size = new System.Drawing.Size(0, 16);
+      labelStatusBar.Name = "labelStatusBar";
+      labelStatusBar.Size = new Size(0, 16);
       // 
       // toolStripStatusLabel1
       // 
-      this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-      this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 16);
+      toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+      toolStripStatusLabel1.Size = new Size(0, 16);
       // 
       // toolStripStatusLabel2
       // 
-      this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-      this.toolStripStatusLabel2.Size = new System.Drawing.Size(0, 16);
+      toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+      toolStripStatusLabel2.Size = new Size(0, 16);
       // 
       // contextMenuSecondaryLanguageHeader
       // 
-      this.contextMenuSecondaryLanguageHeader.ImageScalingSize = new System.Drawing.Size(20, 20);
-      this.contextMenuSecondaryLanguageHeader.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuCommandDeleteSecondaryLanguage});
-      this.contextMenuSecondaryLanguageHeader.Name = "contextMenuSecondaryLanguageHeader";
-      this.contextMenuSecondaryLanguageHeader.Size = new System.Drawing.Size(265, 28);
-      this.contextMenuSecondaryLanguageHeader.MouseClick += new System.Windows.Forms.MouseEventHandler(this.contextMenuSecondaryLanguageHeader_MouseClick);
+      contextMenuSecondaryLanguageHeader.ImageScalingSize = new Size(20, 20);
+      contextMenuSecondaryLanguageHeader.Items.AddRange(new ToolStripItem[] { toolStripSeparator5, menuCommandDuplicateSecondaryLanguage, menuCommandCopyToSecondaryLanguage, toolStripSeparator3, menuCommandExportLanguageToTranslationSheet, toolStripSeparator4, menuCommandDeleteSecondaryLanguage, toolStripSeparator6 });
+      contextMenuSecondaryLanguageHeader.Name = "contextMenuSecondaryLanguageHeader";
+      contextMenuSecondaryLanguageHeader.Size = new Size(341, 124);
+      contextMenuSecondaryLanguageHeader.Text = "Actions on This Language";
+      // 
+      // toolStripSeparator5
+      // 
+      toolStripSeparator5.Name = "toolStripSeparator5";
+      toolStripSeparator5.Size = new Size(337, 6);
+      // 
+      // menuCommandDuplicateSecondaryLanguage
+      // 
+      menuCommandDuplicateSecondaryLanguage.Name = "menuCommandDuplicateSecondaryLanguage";
+      menuCommandDuplicateSecondaryLanguage.Size = new Size(340, 24);
+      menuCommandDuplicateSecondaryLanguage.Text = "Copy Translations to New Language";
+      menuCommandDuplicateSecondaryLanguage.MouseDown += menuCommandDuplicateSecondaryLanguage_MouseDown;
+      // 
+      // menuCommandCopyToSecondaryLanguage
+      // 
+      menuCommandCopyToSecondaryLanguage.Name = "menuCommandCopyToSecondaryLanguage";
+      menuCommandCopyToSecondaryLanguage.Size = new Size(340, 24);
+      menuCommandCopyToSecondaryLanguage.Text = "Copy Translations to Existing Language";
+      menuCommandCopyToSecondaryLanguage.MouseDown += menuCommandCopyToSecondaryLanguage_MouseDown;
+      // 
+      // toolStripSeparator3
+      // 
+      toolStripSeparator3.Name = "toolStripSeparator3";
+      toolStripSeparator3.Size = new Size(337, 6);
+      // 
+      // menuCommandExportLanguageToTranslationSheet
+      // 
+      menuCommandExportLanguageToTranslationSheet.Name = "menuCommandExportLanguageToTranslationSheet";
+      menuCommandExportLanguageToTranslationSheet.Size = new Size(340, 24);
+      menuCommandExportLanguageToTranslationSheet.Text = "Export Language to Translation Sheet";
+      menuCommandExportLanguageToTranslationSheet.MouseDown += menuCommandExportLanguageToTranslationSheet_MouseDown;
+      // 
+      // toolStripSeparator4
+      // 
+      toolStripSeparator4.Name = "toolStripSeparator4";
+      toolStripSeparator4.Size = new Size(337, 6);
       // 
       // menuCommandDeleteSecondaryLanguage
       // 
-      this.menuCommandDeleteSecondaryLanguage.Name = "menuCommandDeleteSecondaryLanguage";
-      this.menuCommandDeleteSecondaryLanguage.Size = new System.Drawing.Size(264, 24);
-      this.menuCommandDeleteSecondaryLanguage.Text = "Delete Secondary Language";
-      this.menuCommandDeleteSecondaryLanguage.MouseDown += new System.Windows.Forms.MouseEventHandler(this.menuCommandDeleteSecondaryLanguage_MouseDown);
+      menuCommandDeleteSecondaryLanguage.Name = "menuCommandDeleteSecondaryLanguage";
+      menuCommandDeleteSecondaryLanguage.Size = new Size(340, 24);
+      menuCommandDeleteSecondaryLanguage.Text = "Delete This Language from Data Model";
+      menuCommandDeleteSecondaryLanguage.MouseDown += menuCommandDeleteSecondaryLanguage_MouseDown;
+      // 
+      // toolStripSeparator6
+      // 
+      toolStripSeparator6.Name = "toolStripSeparator6";
+      toolStripSeparator6.Size = new Size(337, 6);
       // 
       // FormMain
       // 
-      this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-      this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(1519, 739);
-      this.Controls.Add(this.gridTranslations);
-      this.Controls.Add(this.statusStrip1);
-      this.Controls.Add(this.panel2);
-      this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-      this.MainMenuStrip = this.menuStrip;
-      this.Name = "FormMain";
-      this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-      this.Text = "Translations Builder";
-      this.Load += new System.EventHandler(this.onLoad);
-      ((System.ComponentModel.ISupportInitialize)(this.gridTranslations)).EndInit();
-      this.groupDatasetProperties.ResumeLayout(false);
-      this.groupDatasetProperties.PerformLayout();
-      this.panel2.ResumeLayout(false);
-      this.panel2.PerformLayout();
-      this.grpMachineTranslationsAllLanguages.ResumeLayout(false);
-      this.grpImportExportTranslations.ResumeLayout(false);
-      this.grpImportExportTranslations.PerformLayout();
-      this.grpMachineTranslationsSingleLanguage.ResumeLayout(false);
-      this.grpSecondaryCultures.ResumeLayout(false);
-      this.menuStrip.ResumeLayout(false);
-      this.menuStrip.PerformLayout();
-      this.statusStrip1.ResumeLayout(false);
-      this.statusStrip1.PerformLayout();
-      this.contextMenuSecondaryLanguageHeader.ResumeLayout(false);
-      this.ResumeLayout(false);
-      this.PerformLayout();
-
+      AutoScaleDimensions = new SizeF(8F, 20F);
+      AutoScaleMode = AutoScaleMode.Font;
+      ClientSize = new Size(1519, 739);
+      Controls.Add(gridTranslations);
+      Controls.Add(statusStrip1);
+      Controls.Add(panel2);
+      Icon = (Icon)resources.GetObject("$this.Icon");
+      MainMenuStrip = menuStrip;
+      Name = "FormMain";
+      StartPosition = FormStartPosition.CenterScreen;
+      Text = "Translations Builder";
+      Load += onLoad;
+      ((System.ComponentModel.ISupportInitialize)gridTranslations).EndInit();
+      groupDatasetProperties.ResumeLayout(false);
+      groupDatasetProperties.PerformLayout();
+      panel2.ResumeLayout(false);
+      panel2.PerformLayout();
+      grpMachineTranslationsAllLanguages.ResumeLayout(false);
+      grpImportExportTranslations.ResumeLayout(false);
+      grpImportExportTranslations.PerformLayout();
+      grpMachineTranslationsSingleLanguage.ResumeLayout(false);
+      grpSecondaryCultures.ResumeLayout(false);
+      menuStrip.ResumeLayout(false);
+      menuStrip.PerformLayout();
+      statusStrip1.ResumeLayout(false);
+      statusStrip1.PerformLayout();
+      contextMenuSecondaryLanguageHeader.ResumeLayout(false);
+      ResumeLayout(false);
+      PerformLayout();
     }
 
     #endregion
@@ -658,8 +664,8 @@ namespace TranslationsBuilder {
     private GroupBox groupDatasetProperties;
     private Panel panel2;
     private GroupBox grpSecondaryCultures;
-    private Button addSecondaryCulture;
-    private ListBox listSecondaryCultures;
+    private Button btnAddSecondaryLanguage;
+    private ListBox listSecondaryLanguages;
     private GroupBox grpMachineTranslationsSingleLanguage;
     private GroupBox grpImportExportTranslations;
     private Button btnExportTranslations;
@@ -678,34 +684,39 @@ namespace TranslationsBuilder {
     private ToolStripMenuItem menuConnection;
     private ToolStripMenuItem menuConfigureSettings;
     private ToolStripSeparator toolStripSeparator1;
-        private ToolStripMenuItem menuTranslatedTables;
-        private ToolStripMenuItem menuCreateLocalizedLabelsTable;
-        private ToolStripMenuItem menuGenerateTranslatedLocalizedLabelsTable;
-        private ToolStripMenuItem menuSyncDataModel;
-        private ToolStripMenuItem menuGenerateTranslatedReportLabelMatrixMeasures;
-        private ToolStripMenuItem menuGenerateTranslatedReportLabelTableMeasures;
-        private ToolStripMenuItem menuGenerateTranslatedDatasetObjectNamesTable;
-        private Button btnFillEmptyTranslations;
-        private StatusStrip statusStrip1;
-        private ToolStripStatusLabel labelStatusBar;
-        private ToolStripMenuItem menuAddLabelsToLocalizedLabelsTable;
-        private ToolStripMenuItem menuConnect;
-        private ToolStripMenuItem menuDisconnect;
-        private ToolTip tooltipDatasetName;
-        private ToolTip tooltipServiceConnection;
-        private ToolStripStatusLabel toolStripStatusLabel1;
-        private ToolStripStatusLabel toolStripStatusLabel2;
-        private ContextMenuStrip contextMenuSecondaryLanguageHeader;
-        private ToolStripMenuItem menuCommandDeleteSecondaryLanguage;
-        private ToolStripMenuItem exportModelAsJson;
-        private ToolStripSeparator toolStripSeparator2;
-        private Label lblDefaultCultureNameLabel;
-        private TextBox txtDefaultCulture;
-        private GroupBox grpMachineTranslationsAllLanguages;
-        private Button btnFillAllEmptyTranslations;
-        private Button btnGenenrateAllMachineTranslations;
-        private CheckBox chkOpenExportInExcel;
-        private Button btnExportAllTranslationSheets;
-    }
+    private ToolStripMenuItem menuTranslatedTables;
+    private ToolStripMenuItem menuCreateLocalizedLabelsTable;
+    private ToolStripMenuItem menuGenerateTranslatedLocalizedLabelsTable;
+    private ToolStripMenuItem menuSyncDataModel;
+    private ToolStripMenuItem menuGenerateTranslatedDatasetObjectNamesTable;
+    private Button btnFillEmptyTranslations;
+    private StatusStrip statusStrip1;
+    private ToolStripStatusLabel labelStatusBar;
+    private ToolStripMenuItem menuAddLabelsToLocalizedLabelsTable;
+    private ToolStripMenuItem menuConnect;
+    private ToolStripMenuItem menuDisconnect;
+    private ToolTip tooltipDatasetName;
+    private ToolTip tooltipServiceConnection;
+    private ToolStripStatusLabel toolStripStatusLabel1;
+    private ToolStripStatusLabel toolStripStatusLabel2;
+    private ContextMenuStrip contextMenuSecondaryLanguageHeader;
+    private ToolStripMenuItem menuCommandDeleteSecondaryLanguage;
+    private ToolStripMenuItem exportModelAsJson;
+    private ToolStripSeparator toolStripSeparator2;
+    private Label lbldefaultLanguageNameLabel;
+    private TextBox txtdefaultLanguage;
+    private GroupBox grpMachineTranslationsAllLanguages;
+    private Button btnFillAllEmptyTranslations;
+    private Button btnGenenrateAllMachineTranslations;
+    private CheckBox chkOpenExportInExcel;
+    private Button btnExportAllTranslationSheets;
+    private ToolStripMenuItem menuCommandDuplicateSecondaryLanguage;
+    private ToolStripMenuItem menuCommandCopyToSecondaryLanguage;
+    private ToolStripSeparator toolStripSeparator3;
+    private ToolStripMenuItem menuCommandExportLanguageToTranslationSheet;
+    private ToolStripSeparator toolStripSeparator4;
+    private ToolStripSeparator toolStripSeparator5;
+    private ToolStripSeparator toolStripSeparator6;
+  }
 }
 

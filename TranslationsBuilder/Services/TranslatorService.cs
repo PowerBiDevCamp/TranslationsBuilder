@@ -66,7 +66,6 @@ namespace TranslationsBuilder.Services {
       var translationsResult = GetMachineTranslations(textToTranslate, languages);
       CultureInfo cultureInfo = new CultureInfo(language);
       return cultureInfo.TextInfo.ToTitleCase(translationsResult[0].text);
-
     }
 
   }

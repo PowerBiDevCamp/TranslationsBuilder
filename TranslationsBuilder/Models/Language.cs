@@ -3,17 +3,25 @@
 namespace TranslationsBuilder.Models {
 
   class Language {
-    public string LanguageTag { get; set; }
-    public string TranslationId { get; set; }
+    public string LanguageId { get; set; }
+    public string LanguageGroupId { get; set; }
+    public string LanguageGroup { get; set; }
     public string DisplayName { get; set; }
     public string NativeName { get; set; }
     public bool ShownOnlyOnExtendedLanguageList { get; set; }
     public string FullName { get { 
-      return DisplayName + " [" + LanguageTag + "]";
+      return LanguageGroup + " [" + LanguageId + "]";
       }
     }
+
+    public string SelectionName {
+      get {
+        return DisplayName + " [" + LanguageId + "]";
+      }
+    }
+
     public override string ToString() {
-      return DisplayName + " [" + LanguageTag + "]";
+      return DisplayName + " - [" + LanguageId + "]";
     }
   }
 

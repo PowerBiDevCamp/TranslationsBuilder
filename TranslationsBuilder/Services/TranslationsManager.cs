@@ -15,10 +15,16 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 using System.Text.RegularExpressions;
 using System.Diagnostics;
 using System.Linq;
+using Newtonsoft.Json.Linq;
 
 namespace TranslationsBuilder.Services {
 
   class TranslationsManager {
+
+    public const string TranslatedDatasetObjectsTableName = "Translated Dataset Object Labels";
+    public const string LocalizedLabelsTableName = "Localized Labels";
+    public const string TranslatedLocalizedLabelsTableName = "Translated Localized Labels";
+    private const string AppAnnotationName = "TranslationsBuilder";
 
     private static Server server = new Server();
 
@@ -40,6 +46,7 @@ namespace TranslationsBuilder.Services {
           model = database.Model;
           IsConnected = true;
           ActiveConnection = session;
+          UpdateAppDataModelAnnotation();
           return;
         }
       }
@@ -63,6 +70,21 @@ namespace TranslationsBuilder.Services {
       IsConnected = true;
       SetLocalActiveConnection();
       AppSettings.Server = ConnectString;
+      UpdateAppDataModelAnnotation();
+    }
+
+    public static void UpdateAppDataModelAnnotation() {
+
+      string annotationValue = "Version:" + GlobalConstants.VersionNumber + "-Updated:" + DateTime.Today.ToString("yyyy-MM-dd");
+
+      if (model.Annotations.Contains(AppAnnotationName)) {
+        model.Annotations[AppAnnotationName].Value = annotationValue;
+      }
+      else {
+        model.Annotations.Add(new Annotation { Name = AppAnnotationName, Value = annotationValue });
+      }
+      model.SaveChanges();
+
     }
 
     private static void SetLocalActiveConnection() {
@@ -76,39 +98,9 @@ namespace TranslationsBuilder.Services {
       server.Disconnect(true);
     }
 
-    const string DatasetAnnotationName = "FriendlyDatasetName";
-
-    public const string TranslatedReportLabelMatrixName = "Translated Report Label Matrix";
-    public const string TranslatedReportLabelTableName = "Translated Report Label Table";
-    public const string TranslatedDatasetObjectsTableName = "Translated Dataset Object Labels";
-    public const string LocalizedLabelsTableName = "Localized Labels";
-    public const string TranslatedLocalizedLabelsTableName = "Translated Localized Labels";
-
     public static string DatasetName {
       get {
         return TranslationsManager.ActiveConnection.DatasetName;
-      }
-    }
-
-    public static string DatasetAnnotationForName {
-      get {
-        if (model.Annotations.Contains(DatasetAnnotationName)) {
-          return model.Annotations[DatasetAnnotationName].Value;
-        }
-        else {
-          return model.Database.Name;
-        }
-
-      }
-      set {
-
-        if (model.Annotations.Contains(DatasetAnnotationName)) {
-          model.Annotations[DatasetAnnotationName].Value = value;
-        }
-        else {
-          model.Annotations.Add(new Annotation { Name = DatasetAnnotationName, Value = value });
-        }
-        model.SaveChanges();
       }
     }
 
@@ -165,19 +157,19 @@ namespace TranslationsBuilder.Services {
     public static TranslationsTable GetTranslationsTable(string targtLanguage = null) {
 
       TranslationSet translationSet = new TranslationSet {
-        DefaultLangauge = SupportedLanguages.AllLangauges[model.Culture],
+        DefaultLangauge = SupportedLanguages.AllLanguages[model.Culture],
         SecondaryLanguages = new List<Language>()
       };
 
       if (targtLanguage != null) {
         // create table with a single secondary culture if targetLanguage is passed
-        translationSet.SecondaryLanguages.Add(SupportedLanguages.AllLangauges[targtLanguage]);
+        translationSet.SecondaryLanguages.Add(SupportedLanguages.AllLanguages[targtLanguage]);
       }
       else {
         // create table for all secondary cultures if no language is passed
         foreach (var culture in model.Cultures) {
           if (culture.Name != model.Culture) {
-            translationSet.SecondaryLanguages.Add(SupportedLanguages.AllLangauges[culture.Name]);
+            translationSet.SecondaryLanguages.Add(SupportedLanguages.AllLanguages[culture.Name]);
           }
         }
       }
@@ -198,7 +190,7 @@ namespace TranslationsBuilder.Services {
         index += 1;
       }
 
-      var defaultCulture = model.Cultures[model.Culture];
+      var defaultLanguage = model.Cultures[model.Culture];
       List<string[]> Rows = new List<string[]>();
 
       foreach (Table table in model.Tables) {
@@ -212,24 +204,24 @@ namespace TranslationsBuilder.Services {
 
           // do not include 'Localized Labels' table name but do include the measures inside
           if (!table.Name.Equals("Localized Labels")) {
-            Rows.AddRange((GetTableRows(table, defaultCulture, translationSet)));
+            Rows.AddRange((GetTableRows(table, defaultLanguage, translationSet)));
           }
 
           foreach (Column column in table.Columns) {
             if (!column.IsHidden && !column.Name.ToLower().Contains("translation") && !table.Name.Equals("Localized Labels") && column.Name != table.Name) {
-              Rows.AddRange(GetColumnRows(table, column, defaultCulture, translationSet, displayFoldersForTable));
+              Rows.AddRange(GetColumnRows(table, column, defaultLanguage, translationSet, displayFoldersForTable));
             }
           }
 
           foreach (Measure measure in table.Measures) {
             if (!measure.IsHidden || table.Name.Equals(LocalizedLabelsTableName)) {
-              Rows.AddRange(GetMeasureRows(table, measure, defaultCulture, translationSet, displayFoldersForTable));
+              Rows.AddRange(GetMeasureRows(table, measure, defaultLanguage, translationSet, displayFoldersForTable));
             }
           }
 
           foreach (Hierarchy hierarchy in table.Hierarchies) {
             if (!hierarchy.IsHidden) {
-              Rows.AddRange(GetHierarchyRows(table, hierarchy, defaultCulture, translationSet, displayFoldersForTable));
+              Rows.AddRange(GetHierarchyRows(table, hierarchy, defaultLanguage, translationSet, displayFoldersForTable));
             }
           }
 
@@ -242,7 +234,7 @@ namespace TranslationsBuilder.Services {
 
     }
 
-    public static List<string[]> GetTableRows(Table table, Culture defaultCulture, TranslationSet translationSet) {
+    public static List<string[]> GetTableRows(Table table, Culture defaultLanguage, TranslationSet translationSet) {
 
       List<string[]> rows = new List<string[]>();
 
@@ -251,11 +243,11 @@ namespace TranslationsBuilder.Services {
         "Table",
         "Caption",
         { table.Name },
-        defaultCulture.ObjectTranslations[table, TranslatedProperty.Caption]?.Value  ??  table.Name
+        defaultLanguage.ObjectTranslations[table, TranslatedProperty.Caption]?.Value  ??  table.Name
       };
 
       foreach (var language in translationSet.SecondaryLanguages) {
-        captionRowValues.Add(model.Cultures[language.LanguageTag].ObjectTranslations[table, TranslatedProperty.Caption]?.Value);
+        captionRowValues.Add(model.Cultures[language.LanguageId].ObjectTranslations[table, TranslatedProperty.Caption]?.Value);
       }
       rows.Add(captionRowValues.ToArray());
 
@@ -264,10 +256,10 @@ namespace TranslationsBuilder.Services {
           "Table",
           "Description",
           table.Name,
-          defaultCulture.ObjectTranslations[table, TranslatedProperty.Description]?.Value ?? table.Name
+          defaultLanguage.ObjectTranslations[table, TranslatedProperty.Description]?.Value ?? table.Name
         };
         foreach (var language in translationSet.SecondaryLanguages) {
-          descriptionRowValues.Add(model.Cultures[language.LanguageTag].ObjectTranslations[table, TranslatedProperty.Description]?.Value);
+          descriptionRowValues.Add(model.Cultures[language.LanguageId].ObjectTranslations[table, TranslatedProperty.Description]?.Value);
         }
         rows.Add(descriptionRowValues.ToArray());
       }
@@ -275,7 +267,7 @@ namespace TranslationsBuilder.Services {
       return rows;
     }
 
-    public static List<string[]> GetColumnRows(Table table, Column column, Culture defaultCulture, TranslationSet translationSet, List<string> displayFoldersForTable) {
+    public static List<string[]> GetColumnRows(Table table, Column column, Culture defaultLanguage, TranslationSet translationSet, List<string> displayFoldersForTable) {
 
       List<string[]> rows = new List<string[]>();
 
@@ -284,26 +276,26 @@ namespace TranslationsBuilder.Services {
         "Column",
         "Caption",
         $"{table.Name}[{column.Name}]",
-        defaultCulture.ObjectTranslations[column, TranslatedProperty.Caption]?.Value ?? column.Name
+        defaultLanguage.ObjectTranslations[column, TranslatedProperty.Caption]?.Value ?? column.Name
       };
       foreach (var language in translationSet.SecondaryLanguages) {
-        captionRowValues.Add(model.Cultures[language.LanguageTag].ObjectTranslations[column, TranslatedProperty.Caption]?.Value);
+        captionRowValues.Add(model.Cultures[language.LanguageId].ObjectTranslations[column, TranslatedProperty.Caption]?.Value);
       }
       rows.Add(captionRowValues.ToArray());
 
       if (!string.IsNullOrEmpty(column.DisplayFolder) && !displayFoldersForTable.Contains(column.DisplayFolder)) {
-        List<string> displayFolderRowValues = new List<string> { "Table", "DisplayFolder", $"{table.Name}[{column.Name}]{column.DisplayFolder}", defaultCulture.ObjectTranslations[column, TranslatedProperty.DisplayFolder]?.Value };
+        List<string> displayFolderRowValues = new List<string> { "Table", "DisplayFolder", $"{table.Name}[{column.Name}]{column.DisplayFolder}", defaultLanguage.ObjectTranslations[column, TranslatedProperty.DisplayFolder]?.Value };
         foreach (var language in translationSet.SecondaryLanguages) {
-          displayFolderRowValues.Add(model.Cultures[language.LanguageTag].ObjectTranslations[column, TranslatedProperty.DisplayFolder]?.Value);
+          displayFolderRowValues.Add(model.Cultures[language.LanguageId].ObjectTranslations[column, TranslatedProperty.DisplayFolder]?.Value);
         }
         rows.Add(displayFolderRowValues.ToArray());
         displayFoldersForTable.Add(column.DisplayFolder);
       }
 
       if (!string.IsNullOrEmpty(column.Description)) {
-        List<string> descriptionRowValues = new List<string> { "Column", "Description", $"{table.Name}[{column.Name}]", defaultCulture.ObjectTranslations[column, TranslatedProperty.Description]?.Value };
+        List<string> descriptionRowValues = new List<string> { "Column", "Description", $"{table.Name}[{column.Name}]", defaultLanguage.ObjectTranslations[column, TranslatedProperty.Description]?.Value };
         foreach (var language in translationSet.SecondaryLanguages) {
-          descriptionRowValues.Add(model.Cultures[language.LanguageTag].ObjectTranslations[column, TranslatedProperty.Description]?.Value);
+          descriptionRowValues.Add(model.Cultures[language.LanguageId].ObjectTranslations[column, TranslatedProperty.Description]?.Value);
         }
         rows.Add(descriptionRowValues.ToArray());
       }
@@ -311,7 +303,7 @@ namespace TranslationsBuilder.Services {
       return rows;
     }
 
-    public static List<string[]> GetMeasureRows(Table table, Measure measure, Culture defaultCulture, TranslationSet translationSet, List<string> displayFoldersForTable) {
+    public static List<string[]> GetMeasureRows(Table table, Measure measure, Culture defaultLanguage, TranslationSet translationSet, List<string> displayFoldersForTable) {
 
       List<string[]> rows = new List<string[]>();
 
@@ -320,26 +312,26 @@ namespace TranslationsBuilder.Services {
         "Measure",
         "Caption",
         $"{table.Name}[{measure.Name}]",
-        defaultCulture.ObjectTranslations[measure, TranslatedProperty.Caption]?.Value ?? measure.Name
+        defaultLanguage.ObjectTranslations[measure, TranslatedProperty.Caption]?.Value ?? measure.Name
       };
       foreach (var language in translationSet.SecondaryLanguages) {
-        captionRowValues.Add(model.Cultures[language.LanguageTag].ObjectTranslations[measure, TranslatedProperty.Caption]?.Value);
+        captionRowValues.Add(model.Cultures[language.LanguageId].ObjectTranslations[measure, TranslatedProperty.Caption]?.Value);
       }
       rows.Add(captionRowValues.ToArray());
 
       if (!string.IsNullOrEmpty(measure.DisplayFolder) && !displayFoldersForTable.Contains(measure.DisplayFolder)) {
-        List<string> displayFolderRowValues = new List<string> { "Table", "DisplayFolder", $"{table.Name}[{measure.DisplayFolder}]", defaultCulture.ObjectTranslations[measure, TranslatedProperty.DisplayFolder]?.Value };
+        List<string> displayFolderRowValues = new List<string> { "Table", "DisplayFolder", $"{table.Name}[{measure.DisplayFolder}]", defaultLanguage.ObjectTranslations[measure, TranslatedProperty.DisplayFolder]?.Value };
         foreach (var language in translationSet.SecondaryLanguages) {
-          displayFolderRowValues.Add(model.Cultures[language.LanguageTag].ObjectTranslations[measure, TranslatedProperty.DisplayFolder]?.Value);
+          displayFolderRowValues.Add(model.Cultures[language.LanguageId].ObjectTranslations[measure, TranslatedProperty.DisplayFolder]?.Value);
         }
         rows.Add(displayFolderRowValues.ToArray());
         displayFoldersForTable.Add(measure.DisplayFolder);
       }
 
       if (!string.IsNullOrEmpty(measure.Description)) {
-        List<string> descriptionRowValues = new List<string> { "Measure", "Description", $"{table.Name}[{measure.Name}]{measure.Name}", defaultCulture.ObjectTranslations[measure, TranslatedProperty.Description]?.Value };
+        List<string> descriptionRowValues = new List<string> { "Measure", "Description", $"{table.Name}[{measure.Name}]{measure.Name}", defaultLanguage.ObjectTranslations[measure, TranslatedProperty.Description]?.Value };
         foreach (var language in translationSet.SecondaryLanguages) {
-          descriptionRowValues.Add(model.Cultures[language.LanguageTag].ObjectTranslations[measure, TranslatedProperty.Description]?.Value);
+          descriptionRowValues.Add(model.Cultures[language.LanguageId].ObjectTranslations[measure, TranslatedProperty.Description]?.Value);
         }
         rows.Add(descriptionRowValues.ToArray());
       }
@@ -347,7 +339,7 @@ namespace TranslationsBuilder.Services {
       return rows;
     }
 
-    public static List<string[]> GetHierarchyRows(Table table, Hierarchy hierarchy, Culture defaultCulture, TranslationSet translationSet, List<string> displayFoldersForTable) {
+    public static List<string[]> GetHierarchyRows(Table table, Hierarchy hierarchy, Culture defaultLanguage, TranslationSet translationSet, List<string> displayFoldersForTable) {
 
       List<string[]> rows = new List<string[]>();
 
@@ -356,10 +348,10 @@ namespace TranslationsBuilder.Services {
         "Hierarchy",
         "Caption",
         $"{table.Name}[{hierarchy.Name}]",
-        defaultCulture.ObjectTranslations[hierarchy, TranslatedProperty.Caption]?.Value ?? hierarchy.Name
+        defaultLanguage.ObjectTranslations[hierarchy, TranslatedProperty.Caption]?.Value ?? hierarchy.Name
       };
       foreach (var language in translationSet.SecondaryLanguages) {
-        captionRowValues.Add(model.Cultures[language.LanguageTag].ObjectTranslations[hierarchy, TranslatedProperty.Caption]?.Value);
+        captionRowValues.Add(model.Cultures[language.LanguageId].ObjectTranslations[hierarchy, TranslatedProperty.Caption]?.Value);
       }
       rows.Add(captionRowValues.ToArray());
 
@@ -368,10 +360,10 @@ namespace TranslationsBuilder.Services {
           "Table",
           "DisplayFolder",
           $"{table.Name}[{hierarchy.DisplayFolder}]",
-          defaultCulture.ObjectTranslations[hierarchy, TranslatedProperty.DisplayFolder]?.Value ?? hierarchy.DisplayFolder
+          defaultLanguage.ObjectTranslations[hierarchy, TranslatedProperty.DisplayFolder]?.Value ?? hierarchy.DisplayFolder
         };
         foreach (var language in translationSet.SecondaryLanguages) {
-          displayFolderRowValues.Add(model.Cultures[language.LanguageTag].ObjectTranslations[hierarchy, TranslatedProperty.DisplayFolder]?.Value);
+          displayFolderRowValues.Add(model.Cultures[language.LanguageId].ObjectTranslations[hierarchy, TranslatedProperty.DisplayFolder]?.Value);
         }
         rows.Add(displayFolderRowValues.ToArray());
       }
@@ -381,10 +373,10 @@ namespace TranslationsBuilder.Services {
           "Level",
           "Caption",
           $"{table.Name}[{hierarchy.Name}]{hierarchyLevel.Name}",
-          defaultCulture.ObjectTranslations[hierarchyLevel, TranslatedProperty.Caption]?.Value ?? hierarchyLevel.Name
+          defaultLanguage.ObjectTranslations[hierarchyLevel, TranslatedProperty.Caption]?.Value ?? hierarchyLevel.Name
         };
         foreach (var language in translationSet.SecondaryLanguages) {
-          levelCaptionRowValues.Add(model.Cultures[language.LanguageTag].ObjectTranslations[hierarchyLevel, TranslatedProperty.Caption]?.Value);
+          levelCaptionRowValues.Add(model.Cultures[language.LanguageId].ObjectTranslations[hierarchyLevel, TranslatedProperty.Caption]?.Value);
         }
         rows.Add(levelCaptionRowValues.ToArray());
       }
@@ -392,9 +384,9 @@ namespace TranslationsBuilder.Services {
 
 
       if (!string.IsNullOrEmpty(hierarchy.Description)) {
-        List<string> descriptionRowValues = new List<string> { "Hierarchy", "Description", $"{table.Name}[{hierarchy.Name}]", defaultCulture.ObjectTranslations[hierarchy, TranslatedProperty.Description]?.Value };
+        List<string> descriptionRowValues = new List<string> { "Hierarchy", "Description", $"{table.Name}[{hierarchy.Name}]", defaultLanguage.ObjectTranslations[hierarchy, TranslatedProperty.Description]?.Value };
         foreach (var language in translationSet.SecondaryLanguages) {
-          descriptionRowValues.Add(model.Cultures[language.LanguageTag].ObjectTranslations[hierarchy, TranslatedProperty.Description]?.Value);
+          descriptionRowValues.Add(model.Cultures[language.LanguageId].ObjectTranslations[hierarchy, TranslatedProperty.Description]?.Value);
         }
         rows.Add(descriptionRowValues.ToArray());
       }
@@ -402,7 +394,7 @@ namespace TranslationsBuilder.Services {
       return rows;
     }
 
-    public static List<string> GetSecondaryCulturesInDataModel() {
+    public static List<string> GetSecondaryLanguagesInDataModel() {
       List<string> secondaryCultures = new List<string>();
       foreach (var culture in model.Cultures) {
         if (!culture.Name.Equals(model.Culture)) {
@@ -412,21 +404,21 @@ namespace TranslationsBuilder.Services {
       return secondaryCultures;
     }
 
-    public static List<string> GetSecondaryCultureFullNamesInDataModel() {
+    public static List<string> GetSecondaryLanguageFullNamesInDataModel() {
       var secondaryCultures = new List<string>();
       foreach (var culture in model.Cultures) {
         if (!culture.Name.Equals(model.Culture)) {
-          secondaryCultures.Add(SupportedLanguages.AllLangauges[culture.Name].FullName);
+          secondaryCultures.Add(SupportedLanguages.AllLanguages[culture.Name].FullName);
         }
       }
       return secondaryCultures;
     }
 
-    public static List<string> GetSecondaryCulturesAvailable() {
+    public static List<string> GetSecondaryLanguagesAvailable() {
       var secondaryCultures = new List<string>();
-      foreach (var language in SupportedLanguages.AllLangauges) {
-        if (!language.Value.LanguageTag.Equals(model.Culture)) {
-          secondaryCultures.Add(language.Value.LanguageTag);
+      foreach (var language in SupportedLanguages.AllLanguages) {
+        if (!language.Value.LanguageId.Equals(model.Culture)) {
+          secondaryCultures.Add(language.Value.LanguageId);
         }
       }
       return secondaryCultures;
@@ -738,7 +730,7 @@ namespace TranslationsBuilder.Services {
           filePath = path + @"/" + DatasetName + "-Translations-Master.csv";
         }
         else {
-          string targetLanguageDisplayName = SupportedLanguages.AllLangauges[targetLanguage].DisplayName;
+          string targetLanguageDisplayName = SupportedLanguages.AllLanguages[targetLanguage].DisplayName;
           filePath = path + @"/" + DatasetName + "-Translations-" + targetLanguageDisplayName + ".csv";
         }
 
@@ -747,10 +739,10 @@ namespace TranslationsBuilder.Services {
         writer.Flush();
         writer.Dispose();
 
-        StreamWriter writerJson = new StreamWriter(File.Open(filePath.Replace(".csv", ".json"), FileMode.Create), Encoding.UTF8);
-        writerJson.Write(System.Text.Json.JsonSerializer.Serialize(translationsTable));
-        writerJson.Flush();
-        writerJson.Dispose();
+        //StreamWriter writerJson = new StreamWriter(File.Open(filePath.Replace(".csv", ".json"), FileMode.Create), Encoding.UTF8);
+        //writerJson.Write(System.Text.Json.JsonSerializer.Serialize(translationsTable));
+        //writerJson.Flush();
+        //writerJson.Dispose();
 
         if (OpenInExcel) {
           string excelFilePath = @"""" + filePath + @"""";
@@ -786,7 +778,7 @@ namespace TranslationsBuilder.Services {
 
             DirectoryInfo path = Directory.CreateDirectory(AppSettings.TranslationsOutboxFolderPath);
 
-            string targetLanguageDisplayName = SupportedLanguages.AllLangauges[targetLanguage].DisplayName;
+            string targetLanguageDisplayName = SupportedLanguages.AllLanguages[targetLanguage].DisplayName;
             string filePath = path + @"/" + DatasetName + "-Translations-" + targetLanguageDisplayName + ".csv";
 
             StreamWriter writer = new StreamWriter(File.Open(filePath, FileMode.Create), Encoding.UTF8);
@@ -1016,7 +1008,7 @@ namespace TranslationsBuilder.Services {
 
         for (int columnNumber = 3; (columnNumber < headers.Length); columnNumber++) {
           var language = SupportedLanguages.GetLanguageFromFullName(headers[columnNumber]);
-          culturesList.Add(language.LanguageTag);
+          culturesList.Add(language.LanguageId);
         }
 
         foreach (string cultureName in culturesList) {
@@ -1034,7 +1026,7 @@ namespace TranslationsBuilder.Services {
           string objectName = rowValues[2];
           // enumerate across language columns
           for (int columnNumber = 3; (columnNumber < headers.Length); columnNumber++) {
-            string targetLanguage = SupportedLanguages.GetLanguageFromFullName(headers[columnNumber]).LanguageTag;
+            string targetLanguage = SupportedLanguages.GetLanguageFromFullName(headers[columnNumber]).LanguageId;
             string translatedValue = rowValues[columnNumber];
             if (!string.IsNullOrEmpty(translatedValue) && TranslationsManager.EnsureMetadataObjectExists(objectType, objectName)) {
               TranslationsManager.SetDatasetObjectTranslation(objectType, propertyName, objectName, targetLanguage, translatedValue);
@@ -1110,16 +1102,17 @@ namespace TranslationsBuilder.Services {
 
       Table translatedDatasetObjectsTable = CreateEmptyTable(TranslatedDatasetObjectsTableName);
 
-      string defaultLanguage = model.Culture.Substring(0, 2);
-      Culture defaultCulture = model.Cultures[model.Culture];
+      string defaultLanguageId = model.Culture;
+      Culture defaultLanguage = model.Cultures[model.Culture];
 
       List<string> secondaryLanguagesList = new List<string>();
 
-      foreach (var currentCulture in model.Cultures) {
-        if (currentCulture.Name != model.Culture) {
-          secondaryLanguagesList.Add(currentCulture.Name);
+      foreach (var language in model.Cultures) {
+        if (language.Name != model.Culture) {
+          secondaryLanguagesList.Add(language.Name);
         }
       }
+
       string[] secondaryLanguages = secondaryLanguagesList.ToArray();
 
       foreach (Table table in model.Tables) {
@@ -1134,7 +1127,7 @@ namespace TranslationsBuilder.Services {
             Culture culture = model.Cultures[language];
             string translation = culture.ObjectTranslations[table, TranslatedProperty.Caption]?.Value;
             if (!string.IsNullOrEmpty(translation)) {
-              secondaryLanguageTranslations.Add((language.Substring(0, 2), translation));
+              secondaryLanguageTranslations.Add((language, translation));
             }
           }
 
@@ -1154,7 +1147,7 @@ namespace TranslationsBuilder.Services {
                 Culture culture = model.Cultures[language];
                 string translation = culture.ObjectTranslations[column, TranslatedProperty.Caption]?.Value;
                 if (!string.IsNullOrEmpty(translation)) {
-                  secondaryLanguageTranslations.Add((language.Substring(0, 2), translation));
+                  secondaryLanguageTranslations.Add((language, translation));
                 }
               }
 
@@ -1176,7 +1169,7 @@ namespace TranslationsBuilder.Services {
                 Culture culture = model.Cultures[language];
                 string translation = culture.ObjectTranslations[measure, TranslatedProperty.Caption]?.Value;
                 if (!string.IsNullOrEmpty(translation)) {
-                  secondaryLanguageTranslations.Add((language.Substring(0, 2), translation));
+                  secondaryLanguageTranslations.Add((language, translation));
                 }
               }
 
@@ -1196,7 +1189,7 @@ namespace TranslationsBuilder.Services {
               Culture culture = model.Cultures[language];
               string translation = culture.ObjectTranslations[hierarchy, TranslatedProperty.Caption]?.Value;
               if (!string.IsNullOrEmpty(translation)) {
-                secondaryLanguageTranslations.Add((language.Substring(0, 2), translation));
+                secondaryLanguageTranslations.Add((language, translation));
               }
             }
 
@@ -1213,7 +1206,7 @@ namespace TranslationsBuilder.Services {
                 Culture culture = model.Cultures[language];
                 string translation = culture.ObjectTranslations[level, TranslatedProperty.Caption]?.Value;
                 if (!string.IsNullOrEmpty(translation)) {
-                  secondaryLanguageTranslations.Add((language.Substring(0, 2), translation));
+                  secondaryLanguageTranslations.Add((language, translation));
                 }
               }
 
@@ -1233,123 +1226,6 @@ namespace TranslationsBuilder.Services {
 
     }
 
-    public static void GenerateTranslatedReportLabelMatrixMeasures() {
-
-      Console.WriteLine(" - Executing GenerateReportLabelMeasures...");
-
-      Table reportLabelsTable = model.Tables[TranslatedReportLabelMatrixName];
-
-      foreach (var column in reportLabelsTable.Columns) {
-        if (column.IsHidden == false) {
-          reportLabelsTable.Columns[column.Name].DisplayFolder = "Columns";
-        }
-      }
-
-      model.SaveChanges();
-
-      foreach (var measure in reportLabelsTable.Measures) {
-        reportLabelsTable.Measures.Remove(measure);
-        model.SaveChanges();
-      }
-
-      AdomdClient.AdomdConnection adomdConnection = new AdomdClient.AdomdConnection("DataSource=" + AppSettings.Server);
-      adomdConnection.Open();
-
-      // DAX query header
-      string DaxQuery = @"EVALUATE SUMMARIZECOLUMNS( '" + TranslatedReportLabelMatrixName + "'[Label]";
-      // DAX query body
-      foreach (var column in reportLabelsTable.Columns) {
-        if (column.Name.Length == 2) {
-          DaxQuery += ", '" + TranslatedReportLabelMatrixName + "'[" + column.Name + "]";
-        }
-      }
-      // DAX query fotter
-      DaxQuery += " )";
-
-      // execute DAX query
-      AdomdClient.AdomdCommand adomdCommand = new AdomdClient.AdomdCommand(DaxQuery, adomdConnection);
-      AdomdClient.AdomdDataReader Reader = adomdCommand.ExecuteReader();
-
-      string defaultLanguage = Reader.GetName(1);
-      List<string> secondaryLanguagesList = new List<string>();
-
-      for (int col = 2; col < Reader.FieldCount; col++) {
-        secondaryLanguagesList.Add(Reader.GetName(col).Replace(TranslatedReportLabelMatrixName, "").Replace("[", "").Replace("]", ""));
-      }
-
-      string[] secondaryLanguages = secondaryLanguagesList.ToArray();
-
-      // Create a loop for every row in the resultset
-      while (Reader.Read()) {
-        string label = Reader.GetValue(0).ToString();
-
-        string defaultranslation = Reader.GetValue(1).ToString();
-
-        List<(string language, string value)> secondaryLanguageTranslations = new List<(string, string)>();
-
-        for (int col = 2; col < Reader.FieldCount; col++) {
-          secondaryLanguageTranslations.Add((language: secondaryLanguages[col - 2], value: Reader.GetValue(col).ToString()));
-        }
-
-        reportLabelsTable.Measures.Add(new Measure {
-          Name = label + " (Static)",
-          Expression = GetReportLabelStaticMeasureDax(defaultranslation, secondaryLanguageTranslations),
-          DisplayFolder = "Static Measures"
-        });
-
-        reportLabelsTable.Measures.Add(new Measure {
-          Name = label + " (Dynamic)",
-          Expression = GetReportLabelDynamicMeasureDax(label, defaultranslation, secondaryLanguages),
-          DisplayFolder = "Dynamic Measures"
-        });
-      }
-
-      Reader.Close();
-
-      model.SaveChanges();
-
-    }
-
-    public static void GenerateTranslatedReportLabelTableMeasures() {
-
-      Table reportLabelsByLanguageTable = model.Tables[TranslatedReportLabelTableName];
-
-      foreach (var column in reportLabelsByLanguageTable.Columns) {
-        if (column.IsHidden == false) {
-          reportLabelsByLanguageTable.Columns[column.Name].DisplayFolder = "Columns";
-        }
-      }
-
-      model.SaveChanges();
-
-      foreach (var measure in reportLabelsByLanguageTable.Measures) {
-        reportLabelsByLanguageTable.Measures.Remove(measure);
-        model.SaveChanges();
-      }
-
-      AdomdClient.AdomdConnection adomdConnection = new AdomdClient.AdomdConnection("DataSource=" + AppSettings.Server);
-      adomdConnection.Open();
-
-      string DaxQuery = "EVALUATE SUMMARIZECOLUMNS('" + TranslatedReportLabelTableName + "'[Label])";
-
-      AdomdClient.AdomdCommand adomdCommand = new AdomdClient.AdomdCommand(DaxQuery, adomdConnection);
-      AdomdClient.AdomdDataReader Reader = adomdCommand.ExecuteReader();
-
-      while (Reader.Read()) {
-
-        string label = Reader.GetValue(0).ToString();
-        Console.WriteLine(label);
-
-        reportLabelsByLanguageTable.Measures.Add(new Measure {
-          Name = label,
-          Expression = GetReportLabelTableMeasureDax(TranslatedReportLabelTableName, label),
-        });
-
-        model.SaveChanges();
-      }
-
-    }
-
     public static string GetReportLabelStaticMeasureDax(string defaultTranslation, List<(string language, string value)> secondaryTranslations) {
 
       if (secondaryTranslations.Count == 0) {
@@ -1357,7 +1233,7 @@ namespace TranslationsBuilder.Services {
       }
 
       string lineBreak = "\r\n";
-      string measureExpression = "SWITCH(LEFT(USERCULTURE(), 2)," + lineBreak;
+      string measureExpression = "SWITCH(USERCULTURE()," + lineBreak;
 
       foreach (var translation in secondaryTranslations) {
         measureExpression += @"   """ + translation.language + @""", """ + translation.value + @"""," + lineBreak;
@@ -1367,25 +1243,6 @@ namespace TranslationsBuilder.Services {
       measureExpression += ")";
       return measureExpression;
 
-    }
-
-    public static string GetReportLabelDynamicMeasureDax(string labelName, string defaultTranslation, string[] secondaryLanguages) {
-
-      string lineBreak = "\r\n";
-      string measureExpression = "SWITCH(LEFT(USERCULTURE(), 2)," + lineBreak;
-
-      foreach (var language in secondaryLanguages) {
-        measureExpression += @"""" + language + @""", LOOKUPVALUE('" +
-                                                          TranslatedReportLabelMatrixName + "'[" + language + @"], '" +
-                                                          TranslatedReportLabelMatrixName + @"'[Label], """ + labelName + @""")," + lineBreak;
-      }
-
-      measureExpression += @"LOOKUPVALUE('" +
-                               TranslatedReportLabelMatrixName + @"'[en],'" +
-                               TranslatedReportLabelMatrixName + @"'[Label], """ + labelName + @""")" + lineBreak;
-
-      measureExpression += ")";
-      return measureExpression;
     }
 
     public static string GetReportLabelTableMeasureDax(string tableName, string labelName) {
@@ -1459,9 +1316,9 @@ namespace TranslationsBuilder.Services {
       Table localizedLabelsTable = model.Tables[LocalizedLabelsTableName];
       foreach (var measure in localizedLabelsTable.Measures) {
         foreach (Culture culture in model.Cultures) {
-          ObjectTranslationCollection defaultCultureTranslations = culture.ObjectTranslations;
-          var defaultCultureTranslation = defaultCultureTranslations[measure, TranslatedProperty.Caption];
-          defaultCultureTranslations.Remove(defaultCultureTranslation);
+          ObjectTranslationCollection defaultLanguageTranslations = culture.ObjectTranslations;
+          var defaultLanguageTranslation = defaultLanguageTranslations[measure, TranslatedProperty.Caption];
+          defaultLanguageTranslations.Remove(defaultLanguageTranslation);
         }
         localizedLabelsTable.Measures.Remove(measure);
         model.SaveChanges();
@@ -1473,9 +1330,9 @@ namespace TranslationsBuilder.Services {
       Table localizedLabelsTable = model.Tables[LocalizedLabelsTableName];
       Measure measure = localizedLabelsTable.Measures[LabelName];
       foreach (Culture culture in model.Cultures) {
-        ObjectTranslationCollection defaultCultureTranslations = culture.ObjectTranslations;
-        var defaultCultureTranslation = defaultCultureTranslations[measure, TranslatedProperty.Caption];
-        defaultCultureTranslations.Remove(defaultCultureTranslation);
+        ObjectTranslationCollection defaultLanguageTranslations = culture.ObjectTranslations;
+        var defaultLanguageTranslation = defaultLanguageTranslations[measure, TranslatedProperty.Caption];
+        defaultLanguageTranslations.Remove(defaultLanguageTranslation);
       }
       localizedLabelsTable.Measures.Remove(measure);
       model.SaveChanges();
@@ -1498,7 +1355,7 @@ namespace TranslationsBuilder.Services {
 
       Table translatedLocalizedLabelsTable = CreateEmptyTable(TranslatedLocalizedLabelsTableName);
 
-      Culture defaultCulture = model.Cultures[model.Culture];
+      Culture defaultLanguage = model.Cultures[model.Culture];
 
       Table localizedLabelsTable = model.Tables[LocalizedLabelsTableName];
 
@@ -1514,14 +1371,14 @@ namespace TranslationsBuilder.Services {
 
       foreach (Measure measure in localizedLabelsTable.Measures) {
 
-        string defaultranslation = defaultCulture.ObjectTranslations[measure, TranslatedProperty.Caption]?.Value;
+        string defaultranslation = defaultLanguage.ObjectTranslations[measure, TranslatedProperty.Caption]?.Value;
 
         List<(string language, string value)> secondaryLanguageTranslations = new List<(string, string)>();
 
         foreach (var language in secondaryLanguages) {
           var translation = model.Cultures[language].ObjectTranslations[measure, TranslatedProperty.Caption]?.Value;
           if (!string.IsNullOrEmpty(translation)) {
-            secondaryLanguageTranslations.Add((language: language.Substring(0, 2), translation));
+            secondaryLanguageTranslations.Add((language: language, translation));
           }
         }
 
@@ -1537,15 +1394,26 @@ namespace TranslationsBuilder.Services {
 
     }
 
-    public static void DeleteSecondaryCulture(string Language) {
-
+    public static void DeleteSecondaryLanguage(string Language) {
       model.Cultures.Remove(Language);
       model.SaveChanges();
-
-
     }
 
+    public static void DuplicateLanguage(Culture SourceLanguage, string TargetLanguageIdentifier) {
+      Culture targetLanguage = SourceLanguage.Clone();
+      targetLanguage.RequestRename(TargetLanguageIdentifier);
+      model.Cultures.Add(targetLanguage);
+      model.SaveChanges();
+    }
 
+    public static void CopyTranslationsToExisitngLanguage(string SourceLanguageId, string TargetLanguageId) {      
+      Culture sourceLanguage = model.Cultures[SourceLanguageId];
+      Culture targetLanguage = model.Cultures[TargetLanguageId];
+      model.Cultures.Remove(targetLanguage);
+      model.SaveChanges();
+      DuplicateLanguage(sourceLanguage, TargetLanguageId);
+    }
+ 
   }
 
 }

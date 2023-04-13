@@ -28,7 +28,7 @@ namespace TranslationsBuilder {
         settings.Save();
       }
     }
-
+  
     public static string TranslationsOutboxFolderPath {
       get {
         if (string.IsNullOrEmpty(settings.TranslationsOutboxFolderPath)) {
@@ -76,8 +76,16 @@ namespace TranslationsBuilder {
       }
     }
 
+    public static void CheckForUpgrade() {
+      if (settings.UpgradeSettings) {
+        settings.Upgrade();
+        settings.UpgradeSettings = false;
+      }
+    }
+
     public static void processStartupParameters(string[] args) {
 
+      CheckForUpgrade();
 
       if (args.Length > 0) {
         if (args[0].ToLower().Contains("powerbi:")) {
@@ -93,11 +101,10 @@ namespace TranslationsBuilder {
       }
 
       if (args.Length == 0 && string.IsNullOrEmpty(settings.Server)) {
-        // WTF
+        // start up without loading data model
       }
 
     }
-
 
   }
 }
