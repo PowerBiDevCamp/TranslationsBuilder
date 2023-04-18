@@ -9,12 +9,7 @@ computer meets the following requirements.
 - 64-bit Version of Windows 10 or Windows 11
 - 64-bit version of Power BI Desktop (January 2023 or later)
 
-The current version of Translations Builder is **version 2.1**.
-
-> If you previously installed Translations Builder 2.0, you
-must first uninstall that version using the Windows **Add and remove
-programs** feature. Once you have uninstalled Translations Builder 2.0,
-you can continue with these setup instructions.
+The current version of Translations Builder is **version 2.2**.
 
 ### Download and Install the .NET 6 Runtime for Desktop Applications
 
