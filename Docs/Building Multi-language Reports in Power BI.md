@@ -261,7 +261,7 @@ HTTP GET request, the browser transmits an HTTP header named
 following screenshot of the Fiddler utility shows a GET request which
 transmits an **Accept-Language** header value of **en-US**.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image5.png"  style="width:75%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image5.png"  style="width:92%" />
 
 When the Power BI Service loads a report, it reads the culture name
 passed in the **Accept-Language** header and uses it to initialize the
