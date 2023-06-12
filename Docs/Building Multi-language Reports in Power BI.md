@@ -126,7 +126,7 @@ the **Caption** property which tracks an object's display name, dataset
 objects also support adding metadata translations for two other
 properties which are **Description** and **DisplayFolder**.
 
-When you begin designing a dataset with metadata translations, you can
+> When you begin designing a dataset with metadata translations, you can
 assume you will always be adding translations for the **Caption**
 property. However, it might not be as obvious when to also include
 metadata translations for the **Description** property and the
