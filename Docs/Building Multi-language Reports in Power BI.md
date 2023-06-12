@@ -277,7 +277,7 @@ the end of the report URL and setting its value to a valid culture name.
 For example, you can test loading a report for a user in Canada who
 speaks French by setting the **language** parameter value to **fr-CA**.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image6.png" style="width:92%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image6.png" style="width:80%" />
 
 > Adding the **language** parameter to report URLs provides a convenient
 way to test metadata translations in the Power BI Service. That’s
