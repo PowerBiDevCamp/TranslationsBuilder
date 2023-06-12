@@ -197,7 +197,7 @@ speaks German.
 | fr-FR       | French   | France        |
 | de-DE       | German   | Germany       |
 
-In some case a culture name can also include extra parts in addition to
+> In some case a culture name can also include extra parts in addition to
 spoken language and locale. For example, there are two different culture
 names for the language Serbian in Serbia which are **sr-Cyrl-RS** and
 **sr-Latn-RS**. The part in the middle known as the script (**Cyrl** vs
