@@ -322,7 +322,7 @@ match of culture names, then the Power BI Service will always fall back
 to loading dataset object names. Therefore, the names of tables and
 columns in this scenario would load using English dataset object names.
 
-The Power BI team recognized this inconsistency in metadata translation
+> The Power BI team recognized this inconsistency in metadata translation
 loading behavior as a bug early in Q1 of 2023. Currently, there’s work
 underway to fix this bug so that measures exhibit the same metadata
 translation loading behavior as tables and columns. Once this bug is
