@@ -226,7 +226,7 @@ specific culture name. You can see that cultures names act as lookup
 keys which are used to add and retrieve metadata translations within the
 context of a Power BI dataset.
 
-A second thing to notice is you do not need to supply metadata
+An important thing to notice is you do not need to supply metadata
 translations for dataset’s default language. That’s because Power BI can
 just use the dataset object names directly for the culture name of
 **en-US**. One way to think about this is that the dataset object names
