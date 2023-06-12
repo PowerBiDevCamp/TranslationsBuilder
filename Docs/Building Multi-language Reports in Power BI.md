@@ -221,7 +221,7 @@ translations for three additional culture names which are **es-ES**,
 
 <img src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image3.png" style="width:75%" />
 
-Keep in mind that every metadata translation is associated with a
+> Keep in mind that every metadata translation is associated with a
 specific culture name. You can see that cultures names act as lookup
 keys which are used to add and retrieve metadata translations within the
 context of a Power BI dataset.
