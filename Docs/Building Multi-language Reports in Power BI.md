@@ -344,59 +344,42 @@ translation for users in Canada.
 
 ### Implementing Translations Dynamically using Measures and USERCULTURE
 
-A second essential feature to assist with building multi-language
-reports in Power BI is the DAX **USERCULTURE** function. The
-**USERCULTURE** function returns a string which includes a lower-case
-language ID parsed together with an upper-case locale identifier. Here
-are a few examples of string values retuned by the **USERCULTURE**
-function which indicate a specific language and locale.
+A second essential feature in Power BI to assist with building
+multi-language reports is the DAX **USERCULTURE** function. When called
+inside a measure, the **USERCULTURE** function returns the culture name
+of the current report loading context. This makes it possible to write
+DAX logic in measures which implement translations dynamically.
 
-| USERCULTURE | Language | Locale        |
-|-------------|----------|---------------|
-| **en-US**   | English  | United States |
-| **es-ES**   | Spanish  | Spain         |
-| **fr-FR**   | French   | France        |
-| **de-DE**   | German   | Germany       |
-| **Ja-JP**   | Japanese | Japan         |
+While you can implement translations dynamically by calling
+**USERCULTURE** in a measure, you will not be able to achieve the same
+result with calculated tables or calculated columns. That’s because the
+DAX expressions for calculated tables and calculated columns get
+evaluated at dataset load time. If you call the **USERCULTURE** function
+in the DAX expression for a calculated table or calculated column, it
+just returns the culture name of the dataset’s default language. Calling
+**USERCULTURE** in a measure is much better because that it will return
+the culture name for the current user.
 
-Remember that you can only use the **USERCULTURE** function to implement
-dynamic translations in measures. When you use **USERCULTURE** in the
-DAX expression for a measure, it’s guaranteed to return the language and
-locale identifier for the current user. The same is not true if you use
-the **USERCULTURE** function in the DAX expression for a calculated
-table or a calculated column which get evaluated at dataset load time.
-When you use **USERCULTURE** in the DAX expression for a table or
-calculated column, you don’t get the same guaranteed that it uses the
-language and locale of the current user.
-
-The live demo displays the return value of **USERCULTURE** in the upper
+The live demo displays the **USERCULTURE** return value in the upper
 right corner of the report banner. You will not typically display a
 report element like this in a real application, but it’s included with
-the live demo so you can see exactly what language and locale identifier
-are being used to load the report each time you switch to a new
-language.
+the live demo so you can see exactly what culture name is being used to
+load the report each time you switch to a new language.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image3.png"
-style="width:7.25869in;height:0.52381in" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image9.png" style="width:75%" />
 
 Let’s look at a simple example of writing a DAX expression for a measure
-that implements dynamic translations. You can start by extracting the
-language ID for the current user using **USERCULTURE** together with
-**LEFT**.
+that implements dynamic translations. You can use a **SWITCH** statement
+which calls **USERCULTURE** to form a basic pattern for implementing
+dynamic translations.
 
 ```
-CurrentLanguage = LEFT(USERCULTURE(), 2)
-```
-
-Now, you can take things a step further by adding a **SWITCH** statement
-to form a basic pattern for dynamic translations.
-
-```
-Product Sales Report Label = SWITCH(LEFT(USERCULTURE(), 2),
-  "es", "Informe De Ventas De Productos",
-  "fr", "Rapport Sur Les Ventes De Produits",
-  "de", "Produktverkaufsbericht",
+Product Sales Report Label = SWITCH(USERCULTURE()),
+  "es-ES", "Informe De Ventas De Productos",
+  "fr-FR", "Rapport Sur Les Ventes De Produits",
+  "fr-BE", "Rapport Sur Les Ventes De Produits",
+  "fr-CA", "Rapport Sur Les Ventes De Produits",
+  "de-DE", "Produktverkaufsbericht",
   "Product Sales Report"
 )
 ```
