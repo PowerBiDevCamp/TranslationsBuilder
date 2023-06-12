@@ -133,7 +133,7 @@ metadata translations for the **Description** property and the
 **DisplayFolder** property. If your requirement is just to support
 metadata translations for report consumers, then providing metadata
 translations for the **Caption** property is likely enough. Things are
-different if your requirement includes supporting metadata translations
+different if your requirements includes supporting metadata translations
 for report authors who will be creating and editing reports in The Power
 BI Service using a browser. This is the main scenario in which you will
 also be required to provide metadata translations for the
@@ -170,6 +170,188 @@ As a second example, page tabs in a Power BI report are also problematic
 because their display names cannot be localized. Therefore, you must
 design multi-language reports so that page tabs are hidden and never
 displayed to the user.
+
+### Understanding Culture Names and Power BI Report Loading
+
+Every report that loads in the Power BI Service is initialized with a
+user context that identifies a specific **language** and a specific
+geographical region known as a **locale**. In most cases, a locale
+identifies a specific country. The Power BI Service tracks the
+combination of the user’s language and locale using a string value known
+as a **culture name**. The culture name is usually constructed by
+parsing together a lower-case language identifier and an upper-case
+locale identifier separated by a hyphen in the form of **en-US**.
+
+Consider a few examples of culture names you might encounter when adding
+metadata translations to a Power BI dataset. A culture name of **en-US**
+identifies a user in the United States that speaks English. A culture
+name of **es-ES** identifies a user in Spain that speaks Spanish. A
+culture name of **fr-FR** identifies a user in France that speaks
+French. A culture name of **de-DE** identifies a user in Germany that
+speaks German.
+
+| USERCULTURE | Language | Locale        |
+|-------------|----------|---------------|
+| en-US       | English  | United States |
+| es-ES       | Spanish  | Spain         |
+| fr-FR       | French   | France        |
+| de-DE       | German   | Germany       |
+
+In some case a culture name can also include extra parts in addition to
+spoken language and locale. For example, there are two different culture
+names for the language Serbian in Serbia which are **sr-Cyrl-RS** and
+**sr-Latn-RS**. The part in the middle known as the script (**Cyrl** vs
+**Latn**) indicates whether to use the Cyrillic alphabet or the Latin
+alphabet. If you want to learn more about culture names (also known as
+**language tags**), look at Internet specification [RFC
+4646](https://datatracker.ietf.org/doc/html/rfc4646).
+
+At the start of a project which involves creating a new Power BI dataset
+with metadata translations, an important aspect of gathering project
+requirements is to create a list of the culture names you plan to
+support. Once you have created the list of required culture names, the
+next step is to extend the dataset by adding metadata translations for
+each culture name. Consider the dataset shown in the following diagram.
+This dataset has been created with a default language setting of
+**en-US**. In addition to that, it’s been extended with metadata
+translations for three additional culture names which are **es-ES**,
+**fr-FR** and **de-DE**.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image3.png"
+style="width:5.14565in;height:1.71505in" />
+
+Keep in mind that every metadata translation is associated with a
+specific culture name. You can see that cultures names act as lookup
+keys which are used to add and retrieve metadata translations within the
+context of a Power BI dataset.
+
+A second thing to notice is you do not need to supply metadata
+translations for dataset’s default language. That’s because Power BI can
+just use the dataset object names directly for the culture name of
+**en-US**. One way to think about this is that the dataset object names
+act as a virtual set of metadata translations for default language.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image4.png"
+style="width:6.2997in;height:1.74194in"
+alt="A screenshot of a computer Description automatically generated with medium confidence" />
+
+While it is possible to explicitly add metadata translation for the
+default language, this technique should be used sparingly because it
+produces results that can be confusing. The problem is that Power BI
+Desktop has no support for loading metadata translations in its report
+designer. Instead, Power BI Desktop only knows how to load dataset
+object names. If you explicitly add metadata translations for the
+default language then Power BI reports will look different in Power BI
+Desktop than they do in the Power BI Service.
+
+It’s recommended that you avoid adding metadata translations for the
+default language as a general practice and that you, instead, rely on
+the dataset object names to provide the text for the default language.
+Yes, it is possible to add metadata translations for the dataset’s
+default language using tools such as Translations Builder and Tabular
+Editor. But just because you **can** do this doesn’t mean you
+**should**. You should add metadata translations for the default
+language in exceptional situations such as when you need to patch
+translations in a production dataset.
+
+Now that you understand how culture names are used to identify metadata
+translations, let’s examine how the Power BI Service uses culture names
+when loading reports. When a user navigates to a Power BI report with an
+HTTP GET request, the browser transmits an HTTP header named
+**Accept-Language** with a value set to a valid culture name. The
+following screenshot of the Fiddler utility shows a GET request which
+transmits an **Accept-Language** header value of **en-US**.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image5.png"
+style="width:5.81604in;height:1.22885in" />
+
+When the Power BI Service loads a report, it reads the culture name
+passed in the **Accept-Language** header and uses it to initialize the
+language and locale of the report loading context. On a user’s device or
+PC, it’s possible to control which culture name is passed in the
+**Accept-Language** header value by configuring regional settings. These
+regional settings can typically be configured either at the level of the
+operating system or of the browser.
+
+When opening a Power BI report in the Power BI Service, you can override
+the **Accept-Language** header value by adding **language** parameter at
+the end of the report URL and setting its value to a valid culture name.
+For example, you can test loading a report for a user in Canada who
+speaks French by setting the **language** parameter value to **fr-CA**.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image6.png"
+style="width:5.56132in;height:2.10558in" />
+
+Adding the **language** parameter to report URLs provides a convenient
+way to test metadata translations in the Power BI Service. That’s
+because it doesn’t require you to reconfigure any settings on your local
+machine or in your browser.
+
+### Supporting Multiple Locales for a Single Language
+
+Now let’s examine a common scenario in which you’re required to support
+multiple locales for a single spoken language. Consider a scenario with
+users that all speak French but live in different countries such as
+France, Belgium and Canada. Also imagine that you’ve just published a
+dataset with a default language of **en-US** and metadata translations
+for three additional culture names including **es-ES**, **fr-FR** and
+**de-DE**.
+
+So here’s an important question to answer. What happens when a
+French-speaking Canadian user opens report with an **Accept-Language**
+header value of **fr-CA**? Will the Power BI Service load translations
+for French (**fr-FR**) or will it fall back on the English dataset
+object names?
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image7.png"
+style="width:4.70778in;height:1.04245in" />
+
+Up through the time of this writing in June 2023, Power BI has a bug
+that causes inconsistent behavior in loading metadata translations. The
+problem is that the loading behavior for measures is different than it
+is for table and columns when the Power BI Service cannot find an exact
+match between the culture name in the request and the culture names of
+metadata translations supported by the dataset.
+
+With measures, the Power BI Service attempts to find the closest match
+so it can attempt to load metadata translations of the same language. In
+the scenario above where the user has a culture name of **fr-CA**, the
+names of measures would load using the metadata translations for
+**fr-FR**.
+
+With tables and columns, the Power BI Service requires an exact match
+between the culture name passed in the request and the culture name of
+metadata translations supported by the dataset. If there is not an exact
+match of culture names, then the Power BI Service will always fall back
+to loading dataset object names. Therefore, the names of tables and
+columns in this scenario would load using English dataset object names.
+
+The Power BI team recognized this inconsistency in metadata translation
+loading behavior as a bug early in Q1 of 2023. Currently, there’s work
+underway to fix this bug so that measures exhibit the same metadata
+translation loading behavior as tables and columns. Once this bug is
+fixed, you can expect the metadata translations loading behavior for
+measures to match the current behavior exhibited by tables and columns.
+
+The key takeaway from this discussion is that you must explicitly add
+metadata translation for any culture name you want to support. You
+cannot add a generic set of metadata translation for a spoken language
+such as French that covers multiple locales. This often means you’re
+required to add redundant sets of metadata translations for a single
+language such as the case of adding three sets of metadata translations
+to support the culture names of **fr-FR**, **fr-BE** and **fr-CA**. The
+good news here is that is makes it possible to handle the scenario where
+the French translations for user in France is different from French
+translation for users in Canada.
+
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image8.png"
+style="width:4.34323in;height:1.3871in" />
 
 ### Implementing Translations Dynamically using Measures and USERCULTURE
 
