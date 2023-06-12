@@ -423,7 +423,7 @@ you should understand.
 - **Report Label Translations**
 - **Data Translations**
 
-Now, let’s examine all three types in a little more depth.
+> Now, let’s examine all three types in a little more depth.
 
 **Metadata translations** provides localized values for dataset object
 properties. The object types which support metadata translation include
