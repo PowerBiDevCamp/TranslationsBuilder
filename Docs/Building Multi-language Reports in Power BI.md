@@ -69,34 +69,40 @@ predictable and scalable.
 <hr/>
 
 ### Multi-language Report Live Demo
-This article is accompanied a [**live
+
+This article is accompanied by a [**live
 demo**](https://multilanguagereportdemo.azurewebsites.net/) based on a
 single PBIX file solution named
 [**ProductSalesMultiLanguage.pbix**](https://github.com/PowerBiDevCamp/TranslationsBuilder/raw/main/LiveDemo/ProductSalesMultiLanguage.pbix).
 This live demo shows the potential of building multi-language reports
 for Power BI. The report in the live demo can be loaded using English,
 Spanish, French, German, Dutch, Italian, Portuguese, Greek, Russian,
-Japanese, Chinese, Hindi and Hebrew. You can test out the
-live demo and the experience a Power BI report that support over a dozen
-secondary languages by navigating the following URL.
+Japanese, Chinese, Hindi and Hebrew. Note that the languages of English
+and French support multiple geographical regions. For example, French is
+supported in the geographical regions of France, Belgium, Switzerland
+and Canada. You can test out the live demo and experience this Power BI
+report demo by navigating the following URL.
 
 - [**https://multilanguagereportdemo.azurewebsites.net**](https://multilanguagereportdemo.azurewebsites.net)
 
 When you test out the live demo, experiment by clicking links in the
 left navigation to reload the report using different langauges. For
-example, click on the link with the caption of **German (Deutsch)**.
-When you do, you will see the report load with German translations as
-shown in the following screenshot.
+example, click on the link with the caption of **French (Switzerland)
+\[fr-CH\]**. When you do, you will see the report load with French
+translations for users in Switzerland as shown in the following
+screenshot.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image1.png" style="width:85%" />
+<img
+src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image1.png"
+style="width:6.85621in;height:3.61538in" />
 
 The live demo is based on a custom web application that uses Power BI
 embedding. When you click on a link in the left navigation, there is
 JavaScript behind this web page that responds by explicitly reloading
-the report using the language of German intead of English. You can see
-that all the text-based elements for the entire report are now displayed
-with their German translations instead of with the default English
-translations.
+the report using the language of French and a regional locale of
+Switzerland. You can see that all the text-based elements for the entire
+report are now displayed with their French translations instead of with
+the default English translations.
 
 ### Power BI Support for Metadata Translations
 
