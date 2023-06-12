@@ -366,7 +366,7 @@ report element like this in a real application, but it’s included with
 the live demo so you can see exactly what culture name is being used to
 load the report each time you switch to a new language.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image9.png" style="width:75%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image9.png" style="width:95%" />
 
 Let’s look at a simple example of writing a DAX expression for a measure
 that implements dynamic translations. You can use a **SWITCH** statement
