@@ -149,7 +149,7 @@ workspace, you will likely find that multi-language reports don’t work
 as expected because there is no support for loading metadata
 translations.
 
-There is currently work underway within the Power BI team to enable the
+> There is currently work underway within the Power BI team to enable the
 loading of metadata translations in Power BI workspaces not associated
 with a Premium Capacity. This support is expected to be in place by the
 end of 2023.
