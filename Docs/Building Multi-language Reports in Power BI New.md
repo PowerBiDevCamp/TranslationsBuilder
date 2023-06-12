@@ -420,9 +420,7 @@ able distinguish between them. These are the three types of translations
 you should understand.
 
 - **Metadata Translations**
-
 - **Report Label Translations**
-
 - **Data Translations**
 
 Now, let’s examine all three types in a little more depth.
