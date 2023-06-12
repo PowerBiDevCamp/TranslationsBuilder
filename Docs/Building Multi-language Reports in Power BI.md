@@ -277,7 +277,7 @@ the end of the report URL and setting its value to a valid culture name.
 For example, you can test loading a report for a user in Canada who
 speaks French by setting the **language** parameter value to **fr-CA**.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image6.png" style="width:92%" />> 
+<img src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image6.png" style="width:92%" />
 
 > Adding the **language** parameter to report URLs provides a convenient
 way to test metadata translations in the Power BI Service. That’s
@@ -300,9 +300,7 @@ header value of **fr-CA**? Will the Power BI Service load translations
 for French (**fr-FR**) or will it fall back on the English dataset
 object names?
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image7.png"
-style="width:4.70778in;height:1.04245in" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image7.png"  style="width:92%" />
 
 Up through the time of this writing in June 2023, Power BI has a bug
 that causes inconsistent behavior in loading metadata translations. The
