@@ -232,10 +232,7 @@ just use the dataset object names directly for the culture name of
 **en-US**. One way to think about this is that the dataset object names
 act as a virtual set of metadata translations for default language.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image4.png"
-style="width:6.2997in;height:1.74194in"
-alt="A screenshot of a computer Description automatically generated with medium confidence" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image4.png"  style="width:75%" />
 
 While it is possible to explicitly add metadata translation for the
 default language, this technique should be used sparingly because it
@@ -246,7 +243,7 @@ object names. If you explicitly add metadata translations for the
 default language then Power BI reports will look different in Power BI
 Desktop than they do in the Power BI Service.
 
-It’s recommended that you avoid adding metadata translations for the
+> It’s recommended that you avoid adding metadata translations for the
 default language as a general practice and that you, instead, rely on
 the dataset object names to provide the text for the default language.
 Yes, it is possible to add metadata translations for the dataset’s
@@ -264,9 +261,7 @@ HTTP GET request, the browser transmits an HTTP header named
 following screenshot of the Fiddler utility shows a GET request which
 transmits an **Accept-Language** header value of **en-US**.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image5.png"
-style="width:5.81604in;height:1.22885in" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image5.png"  style="width:75%" />
 
 When the Power BI Service loads a report, it reads the culture name
 passed in the **Accept-Language** header and uses it to initialize the
