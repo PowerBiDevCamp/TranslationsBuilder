@@ -211,7 +211,9 @@ with metadata translations, an important aspect of gathering project
 requirements is to create a list of the culture names you plan to
 support. Once you have created the list of required culture names, the
 next step is to extend the dataset by adding metadata translations for
-each culture name. Consider the dataset shown in the following diagram.
+each culture name. 
+
+Consider the dataset shown in the following diagram.
 This dataset has been created with a default language setting of
 **en-US**. In addition to that, it’s been extended with metadata
 translations for three additional culture names which are **es-ES**,
