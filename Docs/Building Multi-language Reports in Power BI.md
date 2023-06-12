@@ -389,45 +389,32 @@ coming out of Italy. But hey, it’s a start.
 
 ### Formatting Dates and Numbers with the Current User’s Locale
 
-Every report that loads in the Power BI Service is initialized with a
-specific language and a specific locale. The default behavior of the
-Power BI Service is to load each report using the language and regional
-locale specified by the user’s browser settings. However, those settings
-can be overridden by adding the **language** query string parameter to
-the end of the report URL. If you’re developing with Power BI embedding,
-you also have complete control to load a report with a specific language
-and locale as demonstrated by the live demo.
-
-You’ve already seen that you can implement dynamic translations by
+You’ve already seen that you can implement translations dynamically by
 writing a DAX expression in a measure with conditional logic based on
-the user’s language. This is a technique that will be used frequently
-when building reports that support multiple languages. However, you will
-not be required to write conditional DAX logic based on the user’s
-locale. Why is that?
+the user’s culture name. This is a technique that will be used
+frequently when building reports that support multiple languages.
+However, in most cases you will not be required to write conditional DAX
+logic based on the user’s locale. Why is that?
 
 The short answer is that Power BI visuals automatically handle
-locale-specific formatting behind the scenes. 
-The long answer is that a Power BI visual inspects the locale of
+locale-specific formatting behind the scenes. This makes things so much
+easier. The long answer is that a Power BI visual inspects the locale of
 the current user before rendering. During the rendering process, the
 visual determines what formatting to use for a date or numeric value
 based on the user’s locale and the format string of the source column or
 measure.
 
 Consider a simple scenario in which you’re building a report for an
-audience of report consumers that live in both New York [**en-US**]
-and in London [**en-GB**]. All users speak English (**en**), but yet
+audience of report consumers that live in both New York \[**en-US**\]
+and in London \[**en-GB**\]. All users speak English (**en**), but yet
 some live in different regions (**US** vs **GB**) where dates and
 numbers are formatted differently. For example, a user from New York
 wants to see dates in a **mm/dd/yyyy** format while a user from London
 wants to see dates in a **dd/mm/yyyy** format. Everything thing works
 out as long as you configure columns and measures using format strings
-that support regional formatting.
-
-If you are formatting a date, it is recommended you use a format string
-of **Short Date** or **Long Date** because those format strings support
-regional formatting. Power BI Desktop offers some other formatting options
- that should be avoided as they have a pre-defined display patterns to do 
- not change in response to the user’s locale.
+that support regional formatting. If you are formatting a date, it is
+recommended you use a format string such as **Short Date** or **Long
+Date** because they support regional formatting.
 
 <img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image4.png" style="width:35%" />
 
