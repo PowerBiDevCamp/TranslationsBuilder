@@ -685,13 +685,7 @@ directly in the translation grid with an Excel-like editing experience.
 
 <img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image22.png"  style="width:60%" />
 
-> Technically speaking, Translations Builder isn’t just adding a language
-object to the dataset. Instead, Translations Builder is actually adding
-a **Culture** object with includes both a language ID and a locale
-identifier. In Power BI datasets, a **Culture** object is identified
-using a string-based key which combines a lower-case language ID and an
-upper-case locale identifier for the geographical region. Note this is
-the same string-based format returned by the **USERCULTURE** function.
+> Technically speaking, Translations Builder isn’t just adding a new set of metadata translations for an entire language. Instead, it’s adding metadata translations for a culture name which is identifies both a language and a locale. Translations Builder abstracts away the differences between a language and a culture name. This has been done to simplify the user experience for content creators who can just think in terms of languages and countries instead of culture names.
 
 Translations Builder abstracts away the differences between a language
 and a culture. This has been done to simplify the user experience for
