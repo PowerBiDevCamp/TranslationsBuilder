@@ -219,7 +219,7 @@ This dataset has been created with a default language setting of
 translations for three additional culture names which are **es-ES**,
 **fr-FR** and **de-DE**.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image3.png" style="width:75%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image3.png" style="width:70%" />
 
 > Keep in mind that every metadata translation is associated with a
 specific culture name. You can see that cultures names act as lookup
