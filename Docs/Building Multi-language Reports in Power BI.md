@@ -126,15 +126,33 @@ the **Caption** property which tracks an object's display name, dataset
 objects also support adding metadata translations for two other
 properties which are **Description** and **DisplayFolder**.
 
-Power BI reports and datasets that support multiple languages can only
-run in workspaces which are associated a dedicated capacity created
+When you begin designing a dataset with metadata translations, you can
+assume you will always be adding translations for the **Caption**
+property. However, it might not be as obvious when to also include
+metadata translations for the **Description** property and the
+**DisplayFolder** property. If your requirement is just to support
+metadata translations for report consumers, then providing metadata
+translations for the **Caption** property is likely enough. Things are
+different if your requirement includes supporting metadata translations
+for report authors who will be creating and editing reports in The Power
+BI Service using a browser. This is the main scenario in which you will
+also be required to provide metadata translations for the
+**Description** property and the **DisplayFolder** property.
+
+Power BI reports and datasets that support metadata translations can
+only run in workspaces which are associated a dedicated capacity created
 using Power BI Premium or the Power BI Embedded Service. That means
 multi-language reports will not load correctly when launched from a
 workspace in the shared capacity. If you are working in a Power BI
 workspace that does not display a diamond indicating it’s a Premium
-workspace, you will find that multi-language reports don’t work as
-expected because there is no support for loading translations from
-secondary languages.
+workspace, you will likely find that multi-language reports don’t work
+as expected because there is no support for loading metadata
+translations.
+
+There is currently work underway within the Power BI team to enable the
+loading of metadata translations in Power BI workspaces not associated
+with a Premium Capacity. This support is expected to be in place by the
+end of 2023.
 
 Another critical point to understand is that the Power BI support for
 metadata translations only applies to datasets. Neither Power BI Desktop
