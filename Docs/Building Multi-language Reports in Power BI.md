@@ -340,9 +340,7 @@ good news here is that is makes it possible to handle the scenario where
 the French translations for user in France is different from French
 translation for users in Canada.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image8.png"
-style="width:4.34323in;height:1.3871in" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image8.png" style="80%" />
 
 ### Implementing Translations Dynamically using Measures and USERCULTURE
 
