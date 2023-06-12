@@ -26,115 +26,6 @@ predictable and scalable.
 
 # Table of Contents
 
-[Building Multi-language Reports in Power BI
-[1](#building-multi-language-reports-in-power-bi)](#building-multi-language-reports-in-power-bi)
-
-[Multi-language Report Live Demo
-[2](#multi-language-report-live-demo)](#multi-language-report-live-demo)
-
-[Power BI Support for Metadata Translations
-[3](#power-bi-support-for-metadata-translations)](#power-bi-support-for-metadata-translations)
-
-[Understanding the Report Loading Process in the Power BI Service
-[3](#understanding-culture-names-and-power-bi-report-loading)](#understanding-culture-names-and-power-bi-report-loading)
-
-[Implementing Translations Dynamically using Measures and USERCULTURE
-[4](#implementing-translations-dynamically-using-measures-and-userculture)](#implementing-translations-dynamically-using-measures-and-userculture)
-
-[Formatting Dates and Numbers with the Current User’s Locale
-[4](#formatting-dates-and-numbers-with-the-current-users-locale)](#formatting-dates-and-numbers-with-the-current-users-locale)
-
-[Understanding the Three Types of Translations
-[5](#understanding-the-three-types-of-translations)](#understanding-the-three-types-of-translations)
-
-[Packaging Dataset and Report in PBIX Project Files
-[7](#packaging-dataset-and-report-in-pbix-project-files)](#packaging-dataset-and-report-in-pbix-project-files)
-
-[Understanding How Translations Builder Works
-[8](#understanding-how-translations-builder-works)](#understanding-how-translations-builder-works)
-
-[Adding Secondary Languages and Translations
-[9](#adding-secondary-languages-and-translations)](#adding-secondary-languages-and-translations)
-
-[Testing Translations in the Power BI Service
-[11](#testing-translations-in-the-power-bi-service)](#testing-translations-in-the-power-bi-service)
-
-[Embedding Power BI Reports Using a Specific Language and Locale
-[12](#embedding-power-bi-reports-using-a-specific-language-and-locale)](#embedding-power-bi-reports-using-a-specific-language-and-locale)
-
-[Generating Machine Translations using Azure Translator Service
-[13](#generating-machine-translations-using-azure-translator-service)](#generating-machine-translations-using-azure-translator-service)
-
-[Understanding the Localized Labels Table
-[14](#understanding-the-localized-labels-table)](#understanding-the-localized-labels-table)
-
-[Introducing the Localized Labels Table Strategy
-[15](#introducing-the-localized-labels-table-strategy)](#introducing-the-localized-labels-table-strategy)
-
-[Generating the Translated Localized Labels Table
-[18](#generating-the-translated-localized-labels-table)](#generating-the-translated-localized-labels-table)
-
-[Surfacing Localized Labels on a Report Page
-[19](#surfacing-localized-labels-on-a-report-page)](#surfacing-localized-labels-on-a-report-page)
-
-[Adding Support for Page Navigation
-[21](#adding-support-for-page-navigation)](#adding-support-for-page-navigation)
-
-[Using Best Practices When Localizing Power BI Reports
-[22](#using-best-practices-when-localizing-power-bi-reports)](#using-best-practices-when-localizing-power-bi-reports)
-
-[Enabling Workflows for Human Translation using Export and Import
-[23](#enabling-workflows-for-human-translation-using-export-and-import)](#enabling-workflows-for-human-translation-using-export-and-import)
-
-[Configuring Target Folders for Import and Export Operations
-[24](#configuring-target-folders-for-import-and-export-operations)](#configuring-target-folders-for-import-and-export-operations)
-
-[Exporting a Translation Sheet for a Secondary Language
-[25](#exporting-a-translation-sheet-for-a-secondary-language)](#exporting-a-translation-sheet-for-a-secondary-language)
-
-[Exporting the Master Translation Sheet
-[25](#exporting-the-master-translation-sheet)](#exporting-the-master-translation-sheet)
-
-[Exporting Translation Sheets for All Secondary Languages
-[26](#exporting-translation-sheets-for-all-secondary-languages)](#exporting-translation-sheets-for-all-secondary-languages)
-
-[Importing Translation Sheets
-[26](#importing-translation-sheets)](#importing-translation-sheets)
-
-[Importing a Master Translation Sheet
-[27](#importing-a-master-translation-sheet)](#importing-a-master-translation-sheet)
-
-[Managing Dataset Translations at Enterprise Level
-[28](#managing-dataset-translations-at-enterprise-level)](#managing-dataset-translations-at-enterprise-level)
-
-[Implementing a Data Translations Strategy
-[29](#implementing-a-data-translations-strategy)](#implementing-a-data-translations-strategy)
-
-[Determining Whether Your Solution Really Requires Data Translations
-[30](#determining-whether-your-solution-really-requires-data-translations)](#determining-whether-your-solution-really-requires-data-translations)
-
-[Extending the Datasource Schema to Support Data Translations
-[31](#extending-the-datasource-schema-to-support-data-translations)](#extending-the-datasource-schema-to-support-data-translations)
-
-[Implementing Data Translation using Field Parameters
-[32](#implementing-data-translation-using-field-parameters)](#implementing-data-translation-using-field-parameters)
-
-[Adding the Languages Table to Filter Field Parameters
-[37](#adding-the-languages-table-to-filter-field-parameters)](#adding-the-languages-table-to-filter-field-parameters)
-
-[Synchronizing Multiple Field Parameters
-[39](#synchronizing-multiple-field-parameters)](#synchronizing-multiple-field-parameters)
-
-[Implementing Data Translations for a Calendar Table
-[40](#implementing-data-translations-for-a-calendar-table)](#implementing-data-translations-for-a-calendar-table)
-
-[Loading Reports using Bookmarks to Select a Language
-[45](#loading-reports-using-bookmarks-to-select-a-language)](#loading-reports-using-bookmarks-to-select-a-language)
-
-[Embedding Reports That Implement Data Translations
-[46](#embedding-reports-that-implement-data-translations)](#embedding-reports-that-implement-data-translations)
-
-[Summary [47](#summary)](#summary)
 
 ### Multi-language Report Live Demo
 
@@ -194,7 +85,7 @@ the **Caption** property which tracks an object's display name, dataset
 objects also support adding metadata translations for two other
 properties which are **Description** and **DisplayFolder**.
 
-When you begin designing a dataset with metadata translations, you can
+> When you begin designing a dataset with metadata translations, you can
 assume you will always be adding translations for the **Caption**
 property. However, it might not be as obvious when to also include
 metadata translations for the **Description** property and the
