@@ -374,7 +374,7 @@ which calls **USERCULTURE** to form a basic pattern for implementing
 dynamic translations.
 
 ```
-Product Sales Report Label = SWITCH(USERCULTURE()),
+Product Sales Report Label = SWITCH( USERCULTURE() ),
   "es-ES", "Informe De Ventas De Productos",
   "fr-FR", "Rapport Sur Les Ventes De Produits",
   "fr-BE", "Rapport Sur Les Ventes De Produits",
