@@ -303,7 +303,7 @@ object names?
 
 <img src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image7.png"  style="width:80%" />
 
-Up through the time of this writing in June 2023, Power BI has a bug
+Up through the time of this writing in June 2023, Power BI has exhibited a bug
 that causes inconsistent behavior in loading metadata translations. The
 problem is that the loading behavior for measures is different than it
 is for table and columns when the Power BI Service cannot find an exact
