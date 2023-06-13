@@ -1034,7 +1034,7 @@ strategy is based on running code to generate a second table named
 directly on a report page. You can create this table by executing the
 **Generate Translated Localized Labels Table** command.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image44.png"  style="width:50%" />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image38.png"  style="width:50%" />
 
 The first time you execute the **Generate Translated Localized Labels
 Table** command, Translations Builder executes code to create the
@@ -1069,14 +1069,13 @@ Labels** table to ensure their names are unique.
 
 If you examine the machine-generated DAX expressions for measures inside
 the **Translated Localized Labels** table, you will see they are based
-on the same DAX pattern shown earlier. First, this pattern uses the DAX
-functions **USERCULTURE** and **LEFT** to determine the 2-character
-language ID of the current user. The pattern then uses the **SWITCH**
-function to return the best translation for the current user. Note that
-this DAX pattern falls back on the default language translations 
-if no match is found with a secondary language.
+on the same DAX pattern shown earlier. This pattern uses the DAX
+functions **USERCULTURE** together with the **SWITCH** function to
+return the best translation for the current user. Note that this DAX
+pattern falls back on the translations of the dataset’s default language
+if no match is found with another culture name.
 
-<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image41.png"   style="width:50%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image47.png"   style="width:50%"  />
 
 You must remember to execute **Generate Translated Localized Labels
 Table** anytime you make changes to the **Localized Labels** table. Keep
