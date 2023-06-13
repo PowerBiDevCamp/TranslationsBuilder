@@ -685,7 +685,7 @@ directly in the translation grid with an Excel-like editing experience.
 
 <img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image22.png"  style="width:60%" />
 
-> Technically speaking, Translations Builder isn’t adding metadata translations for a language language. Instead, it’s adding metadata translations for a culture name which is identifies both a language and a locale. Translations Builder abstracts away the differences between a language and a culture name. This has been done to simplify the user experience for content creators who can just think in terms of languages and countries instead of culture names.
+> Technically speaking, Translations Builder isn’t actually adding metadata translations for a specific language. Instead, it’s adding metadata translations for a culture name which is identifies both a language and a locale. Translations Builder abstracts away the differences between a language and a culture name. This has been done to simplify the user experience for content creators who can just think in terms of languages and countries instead of culture names.
 
 Another important aspect of working with Translations Builder has to do
 with saving your work. While external tools for Power BI Desktop like
