@@ -32,6 +32,7 @@ predictable and scalable.
 - [Building Multi-language Reports in Power BI](#building-multi-language-reports-in-power-bi)
   - [Multi-language Report Live Demo](#multi-language-report-live-demo)
   - [Power BI Support for Metadata Translations](#power-bi-support-for-metadata-translations)
+  - [Understanding Culture Names and Power BI Report Loading](#Understanding Culture Names and Power BI Report Loading)
   - [Implementing Translations Dynamically using Measures and USERCULTURE](#implementing-translations-dynamically-using-measures-and-userculture)
   - [Formatting Dates and Numbers with the Current User’s Locale](#formatting-dates-and-numbers-with-the-current-users-locale)
   - [Understanding the Three Types of Translations](#understanding-the-three-types-of-translations)
