@@ -335,11 +335,11 @@ metadata translation for any culture name you want to support. You
 cannot add a generic set of metadata translation for a spoken language
 such as French that covers multiple locales. This often means you’re
 required to add redundant sets of metadata translations for a single
-language such as the case of adding three sets of metadata translations
+language such as the case of adding three sets of French translations
 to support the culture names of **fr-FR**, **fr-BE** and **fr-CA**. The
 good news here is that is makes it possible to handle the scenario where
-the French translations for user in France is different from French
-translation for users in Canada.
+the French translations for users in France are different from French
+translations for users in Canada.
 
 <img src="./images/BuildingMultiLanguageReportsInPowerBI1/media/image8.png" style="80%" />
 
@@ -652,8 +652,7 @@ if required. The fourth column in the translation grid always displays
 the translations for the dataset’s default language and locale which in
 this case is **English [en-US]**.
 
-<img
-src="./images/BuildingMultiLanguageReportsInPowerBI/media/image17.png"  style="width:45%"  />
+<img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image17.png"  style="width:45%"  />
 
 > While Translations Builder makes it possible to update the translations
 for the default language, you should do it sparingly. Doing so can be
@@ -687,14 +686,6 @@ directly in the translation grid with an Excel-like editing experience.
 <img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image22.png"  style="width:60%" />
 
 > Technically speaking, Translations Builder isn’t adding metadata translations for a language language. Instead, it’s adding metadata translations for a culture name which is identifies both a language and a locale. Translations Builder abstracts away the differences between a language and a culture name. This has been done to simplify the user experience for content creators who can just think in terms of languages and countries instead of culture names.
-
-Translations Builder abstracts away the differences between a language
-and a culture. This has been done to simplify the user experience for
-content creators who can just think in terms of languages and not worry
-about the differences between a language and a culture. It’s not overly
-important to distinguish between a language and a culture until you
-begin programming with TOM and you need to add new **Culture** objects
-to a Power BI dataset.
 
 Another important aspect of working with Translations Builder has to do
 with saving your work. While external tools for Power BI Desktop like
