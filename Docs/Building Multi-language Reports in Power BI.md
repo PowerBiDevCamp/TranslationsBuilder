@@ -727,15 +727,16 @@ the following **language** parameter to the end of the report URL.
 /?language=es-ES
 ```
 
-Once you add the **language** parameter to the end of the URL and press
-**ENTER**, you should be able to verify that the **language** parameter
-has been accepted by the browser as it reloads the report. If you forget
-to add the **?** or if you do not format the **language** parameter
-correctly, the browser will reject the parameter and remove it from the
-URL as it loads the report. Once you correctly loaded a report using a
-**language** parameter value of **es-ES**, you should see the user
-experience for the entire Power BI Service UI switch from English to
-Spanish.
+When you add the **language** parameter to the end of the report URL,
+you must assign it with a value that is a valid culture name. Once you
+add the **language** parameter and press **ENTER**, you should be able
+to verify that the parameter has been accepted by the browser as it
+reloads the report. If you forget to add the **?** or if you do not
+format the **language** parameter correctly, the browser will reject the
+parameter and remove it from the URL as it loads the report. Once you
+correctly load a report using a **language** parameter value of
+**es-ES**, you should see the user experience for the entire Power BI
+Service UI switch from English to Spanish.
 
 <img src="./images/BuildingMultiLanguageReportsInPowerBI/media/image25.png"  style="width:95%" />
 
