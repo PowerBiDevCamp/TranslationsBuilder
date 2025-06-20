@@ -95,10 +95,10 @@
                     "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
                     "ProductCode" = "8:.NETFramework,Version=v4.7.2"
                     }
-                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.NetCore.DesktopRuntime.6.0.x64"
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.NetCore.DesktopRuntime.8.0.x64"
                     {
-                    "Name" = "8:.NET Desktop Runtime 6.0.11 (x64)"
-                    "ProductCode" = "8:Microsoft.NetCore.DesktopRuntime.6.0.x64"
+                    "Name" = "8:.NET Desktop Runtime 8.0.3 (x64)"
+                    "ProductCode" = "8:Microsoft.NetCore.DesktopRuntime.8.0.x64"
                     }
                 }
             }
@@ -225,7 +225,7 @@
             }
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_7CBF58AB6A584CE8AD83661C46AFB597"
             {
-            "DefaultLocation" = "8:[ProgramFiles64Folder][Manufacturer]\\[ProductName]"
+            "DefaultLocation" = "8:[ProgramFiles64Folder]\\[ProductName]"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -250,25 +250,25 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:Translations Builder"
-        "ProductCode" = "8:{9738FFA7-A9B3-4F1B-A82C-1C35DBB1A7AE}"
-        "PackageCode" = "8:{04BFABB6-F527-4F47-B55B-D8337BAA4145}"
+        "ProductName" = "8:Power BI Translations Builder"
+        "ProductCode" = "8:{1D5AAC9B-98A6-48D6-BD12-2981837710A5}"
+        "PackageCode" = "8:{523FCE49-2881-4AE8-ACBA-794615B08C5A}"
         "UpgradeCode" = "8:{3024AE64-35C9-44A9-B343-EB1849B294C8}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:2.0"
-        "Manufacturer" = "8:Power BI Dev Camp"
+        "ProductVersion" = "8:2.5"
+        "Manufacturer" = "8:samsonfr"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:Translations Builder Installer"
+        "Title" = "8:Power BI Translations Builder Installer"
         "Subject" = "8:"
-        "ARPCONTACT" = "8:Power BI Dev Camp"
+        "ARPCONTACT" = "8:samsonfr"
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
-        "ARPURLINFOABOUT" = "8:https://www.powerbidevcamp.net"
+        "ARPURLINFOABOUT" = "8:https://github.com/samsonfr/TranslationsBuilder"
         "ARPPRODUCTICON" = "8:_AC6C2C4CCE8249D1B985C0B00D412695"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
@@ -773,7 +773,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_87A722ED67EE4E37AAA9168D104167BC"
             {
-            "SourcePath" = "8:..\\TranslationsBuilder\\obj\\Release\\net6.0-windows\\apphost.exe"
+            "SourcePath" = "8:..\\TranslationsBuilder\\obj\\Release\\net8.0-windows7.0\\apphost.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_7CBF58AB6A584CE8AD83661C46AFB597"

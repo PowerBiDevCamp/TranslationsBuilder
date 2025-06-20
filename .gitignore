@@ -1,1 +1,6 @@
 ~*
+/TranslationsBuilder/obj
+/.vs
+/TranslationsBuilder/bin
+/TranslationsBuilder/TranslationsBuilder.csproj.user
+/.gitignore

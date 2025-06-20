@@ -386,7 +386,7 @@ namespace TranslationsBuilder.Models {
     }
 
     static public Language GetLanguageFromFullName(string FullName) {
-      return AllLanguages.First(languageEntry => languageEntry.Value.FullName == FullName).Value;
+      return AllLanguages.FirstOrDefault(languageEntry => languageEntry.Value.FullName == FullName).Value;      
     }
 
     static public string[] GetLanguageGroups() {

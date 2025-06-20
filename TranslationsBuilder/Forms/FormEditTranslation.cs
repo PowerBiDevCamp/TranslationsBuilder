@@ -35,7 +35,7 @@ namespace TranslationsBuilder {
     }
 
     private void btnUpdate_Click(object sender, EventArgs e) {
-      TranslationsManager.SetDatasetObjectTranslation(ObjectType, PropertyName, ObjectName, Language, txtTranslation.Text);
+      TranslationsManager.SetDatasetObjectTranslation(ObjectType, PropertyName, ObjectName, Language, txtTranslation.Text, saveModel: true);
       this.DialogResult = DialogResult.OK;
       this.Close();
     }

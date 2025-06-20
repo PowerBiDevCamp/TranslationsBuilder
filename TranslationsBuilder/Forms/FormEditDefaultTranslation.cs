@@ -35,7 +35,7 @@ namespace TranslationsBuilder.Forms {
     }
 
     private void btnUpdate_Click(object sender, EventArgs e) {
-      TranslationsManager.SetDatasetObjectTranslation(ObjectType, PropertyName, ObjectName, Language, txtTranslation.Text);
+      TranslationsManager.SetDatasetObjectTranslation(ObjectType, PropertyName, ObjectName, Language, txtTranslation.Text, saveModel:true);
       this.DialogResult = DialogResult.OK;
       this.Close();
     }
@@ -48,7 +48,7 @@ namespace TranslationsBuilder.Forms {
 
     private void btnRevertToDefault_Click(object sender, EventArgs e) {
       txtTranslation.Text = DefaultTranslationFromObjectName;
-      TranslationsManager.SetDatasetObjectTranslation(ObjectType, PropertyName, ObjectName, Language, DefaultTranslationFromObjectName);
+      TranslationsManager.SetDatasetObjectTranslation(ObjectType, PropertyName, ObjectName, Language, DefaultTranslationFromObjectName, saveModel:true);
 
     }
   }

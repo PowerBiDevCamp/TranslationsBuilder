@@ -16,6 +16,7 @@ using System.Text.RegularExpressions;
 using System.Diagnostics;
 using System.Linq;
 using Newtonsoft.Json.Linq;
+using ClosedXML.Excel;
 
 namespace TranslationsBuilder.Services {
 
@@ -251,18 +252,19 @@ namespace TranslationsBuilder.Services {
       }
       rows.Add(captionRowValues.ToArray());
 
-      if (!string.IsNullOrEmpty(table.Description)) {
-        List<string> descriptionRowValues = new List<string> {
-          "Table",
-          "Description",
-          table.Name,
-          defaultLanguage.ObjectTranslations[table, TranslatedProperty.Description]?.Value ?? table.Name
-        };
-        foreach (var language in translationSet.SecondaryLanguages) {
-          descriptionRowValues.Add(model.Cultures[language.LanguageId].ObjectTranslations[table, TranslatedProperty.Description]?.Value);
-        }
-        rows.Add(descriptionRowValues.ToArray());
+      // Always add row for Description
+
+      List<string> descriptionRowValues = new List<string> {
+        "Table",
+        "Description",
+        table.Name,
+        defaultLanguage.ObjectTranslations[table, TranslatedProperty.Description]?.Value ?? table.Name
+      };
+      foreach (var language in translationSet.SecondaryLanguages) {
+        descriptionRowValues.Add(model.Cultures[language.LanguageId].ObjectTranslations[table, TranslatedProperty.Description]?.Value);
       }
+      rows.Add(descriptionRowValues.ToArray());
+      
 
       return rows;
     }
@@ -292,14 +294,14 @@ namespace TranslationsBuilder.Services {
         displayFoldersForTable.Add(column.DisplayFolder);
       }
 
-      if (!string.IsNullOrEmpty(column.Description)) {
-        List<string> descriptionRowValues = new List<string> { "Column", "Description", $"{table.Name}[{column.Name}]", defaultLanguage.ObjectTranslations[column, TranslatedProperty.Description]?.Value };
-        foreach (var language in translationSet.SecondaryLanguages) {
-          descriptionRowValues.Add(model.Cultures[language.LanguageId].ObjectTranslations[column, TranslatedProperty.Description]?.Value);
-        }
-        rows.Add(descriptionRowValues.ToArray());
+      // Always add row for Description
+      
+      List<string> descriptionRowValues = new List<string> { "Column", "Description", $"{table.Name}[{column.Name}]", defaultLanguage.ObjectTranslations[column, TranslatedProperty.Description]?.Value };
+      foreach (var language in translationSet.SecondaryLanguages) {
+        descriptionRowValues.Add(model.Cultures[language.LanguageId].ObjectTranslations[column, TranslatedProperty.Description]?.Value);
       }
-
+      rows.Add(descriptionRowValues.ToArray());
+      
       return rows;
     }
 
@@ -328,14 +330,14 @@ namespace TranslationsBuilder.Services {
         displayFoldersForTable.Add(measure.DisplayFolder);
       }
 
-      if (!string.IsNullOrEmpty(measure.Description)) {
-        List<string> descriptionRowValues = new List<string> { "Measure", "Description", $"{table.Name}[{measure.Name}]{measure.Name}", defaultLanguage.ObjectTranslations[measure, TranslatedProperty.Description]?.Value };
-        foreach (var language in translationSet.SecondaryLanguages) {
-          descriptionRowValues.Add(model.Cultures[language.LanguageId].ObjectTranslations[measure, TranslatedProperty.Description]?.Value);
-        }
-        rows.Add(descriptionRowValues.ToArray());
+      // Always add row for Description
+      
+      List<string> descriptionRowValues = new List<string> { "Measure", "Description", $"{table.Name}[{measure.Name}]{measure.Name}", defaultLanguage.ObjectTranslations[measure, TranslatedProperty.Description]?.Value };
+      foreach (var language in translationSet.SecondaryLanguages) {
+        descriptionRowValues.Add(model.Cultures[language.LanguageId].ObjectTranslations[measure, TranslatedProperty.Description]?.Value);
       }
-
+      rows.Add(descriptionRowValues.ToArray());
+      
       return rows;
     }
 
@@ -381,16 +383,14 @@ namespace TranslationsBuilder.Services {
         rows.Add(levelCaptionRowValues.ToArray());
       }
 
-
-
-      if (!string.IsNullOrEmpty(hierarchy.Description)) {
-        List<string> descriptionRowValues = new List<string> { "Hierarchy", "Description", $"{table.Name}[{hierarchy.Name}]", defaultLanguage.ObjectTranslations[hierarchy, TranslatedProperty.Description]?.Value };
-        foreach (var language in translationSet.SecondaryLanguages) {
-          descriptionRowValues.Add(model.Cultures[language.LanguageId].ObjectTranslations[hierarchy, TranslatedProperty.Description]?.Value);
-        }
-        rows.Add(descriptionRowValues.ToArray());
+      // Always add row for Description
+      
+      List<string> descriptionRowValues = new List<string> { "Hierarchy", "Description", $"{table.Name}[{hierarchy.Name}]", defaultLanguage.ObjectTranslations[hierarchy, TranslatedProperty.Description]?.Value };
+      foreach (var language in translationSet.SecondaryLanguages) {
+        descriptionRowValues.Add(model.Cultures[language.LanguageId].ObjectTranslations[hierarchy, TranslatedProperty.Description]?.Value);
       }
-
+      rows.Add(descriptionRowValues.ToArray());
+      
       return rows;
     }
 
@@ -544,7 +544,7 @@ namespace TranslationsBuilder.Services {
       MetadataObject DatasetObject = GetMetadataObject(ObjectType, PropertyName, ObjectName);
       var DefaultTranslation = GetDefaultTranslation(ObjectName, ObjectType, PropertyName);
 
-      SetDatasetObjectTranslation(ObjectType, PropertyName, ObjectName, model.Culture, DefaultTranslation);
+      SetDatasetObjectTranslation(ObjectType, PropertyName, ObjectName, model.Culture, DefaultTranslation, saveModel:true);
       UpdateStatus(StatusCalback, model.Culture, ObjectName, DefaultTranslation, DefaultTranslation);
 
 
@@ -559,13 +559,13 @@ namespace TranslationsBuilder.Services {
       foreach (string language in secondaryLanguages) {
         var translation = TranslateContent(DefaultTranslation, language);
         Culture culture = model.Cultures[language];
-        SetDatasetObjectTranslation(ObjectType, PropertyName, ObjectName, language, translation);
+        SetDatasetObjectTranslation(ObjectType, PropertyName, ObjectName, language, translation, saveModel:true);
         UpdateStatus(StatusCalback, language, ObjectName, DefaultTranslation, translation);
       }
 
     }
 
-    public static void PopulateEmptyTranslations(string CultureName, IStatusCalback StatusCalback = null) {
+   public static void PopulateEmptyTranslations(string CultureName, IStatusCalback StatusCalback = null) {
 
       // add culture to data model if it doesn't already exist
       if (!model.Cultures.ContainsName(CultureName)) {
@@ -704,101 +704,100 @@ namespace TranslationsBuilder.Services {
       startInfo.FileName = "Notepad.exe";
       startInfo.Arguments = filePath;
       Process.Start(startInfo);
-
-
     }
 
     public static void ExportTranslations(string targetLanguage = null, bool OpenInExcel = true) {
 
-      try {
-        var translationsTable = GetTranslationsTable(targetLanguage);
-
-        string linebreak = "\r\n";
-
-        // set csv file headers
-        string csv = string.Join(",", translationsTable.Headers) + linebreak;
-
-        // add line for each row
-        foreach (var row in translationsTable.Rows) {
-          csv += string.Join(",", row) + linebreak;
-        }
+      try
+      {
+        // Build output file path
 
         DirectoryInfo path = Directory.CreateDirectory(AppSettings.TranslationsOutboxFolderPath);
 
         string filePath;
-        if (targetLanguage == null) {
-          filePath = path + @"/" + DatasetName + "-Translations-Master.csv";
+        if (targetLanguage == null)
+        {
+          filePath = path + @"/" + DatasetName + "-Translations-Master.xlsx";
         }
-        else {
+        else
+        {
           string targetLanguageDisplayName = SupportedLanguages.AllLanguages[targetLanguage].DisplayName;
-          filePath = path + @"/" + DatasetName + "-Translations-" + targetLanguageDisplayName + ".csv";
+          filePath = path + @"/" + DatasetName + "-Translations-" + targetLanguageDisplayName + ".xlsx";
         }
 
-        StreamWriter writer = new StreamWriter(File.Open(filePath, FileMode.Create), Encoding.UTF8);
-        writer.Write(csv);
-        writer.Flush();
-        writer.Dispose();
+        // Save to Excel
 
-        //StreamWriter writerJson = new StreamWriter(File.Open(filePath.Replace(".csv", ".json"), FileMode.Create), Encoding.UTF8);
-        //writerJson.Write(System.Text.Json.JsonSerializer.Serialize(translationsTable));
-        //writerJson.Flush();
-        //writerJson.Dispose();
+        TranslationsTable translationsTable = GetTranslationsTable(targetLanguage);
 
-        if (OpenInExcel) {
+        WriteTranslationsTableToExcel(filePath, translationsTable);
+
+        if (OpenInExcel)
+        {
           string excelFilePath = @"""" + filePath + @"""";
-          ExcelUtilities.OpenCsvInExcel(excelFilePath);
+          ExcelUtilities.OpenInExcel(excelFilePath);
         }
-
       }
 
       catch (Exception ex) {
         UserInteraction.PromptUserWithError(ex);
       }
-
-
     }
-
+   
     public static void ExportAllTranslationSheets(bool OpenInExcel = false) {
 
       try {
-
-        string linebreak = "\r\n";
-
+        DirectoryInfo path = Directory.CreateDirectory(AppSettings.TranslationsOutboxFolderPath);
+        
         foreach (var culture in model.Cultures) {
           if (culture.Name != model.Culture) {
 
             string targetLanguage = culture.Name;
             var translationsTable = GetTranslationsTable(targetLanguage);
-            string csv = string.Join(",", translationsTable.Headers) + linebreak;
-
-            // add line for each row
-            foreach (var row in translationsTable.Rows) {
-              csv += string.Join(",", row) + linebreak;
-            }
-
-            DirectoryInfo path = Directory.CreateDirectory(AppSettings.TranslationsOutboxFolderPath);
 
             string targetLanguageDisplayName = SupportedLanguages.AllLanguages[targetLanguage].DisplayName;
-            string filePath = path + @"/" + DatasetName + "-Translations-" + targetLanguageDisplayName + ".csv";
+            string filePath = path + @"/" + DatasetName + "-Translations-" + targetLanguageDisplayName + ".xlsx";
 
-            StreamWriter writer = new StreamWriter(File.Open(filePath, FileMode.Create), Encoding.UTF8);
-            writer.Write(csv);
-            writer.Flush();
-            writer.Dispose();
-
+            WriteTranslationsTableToExcel(filePath, translationsTable);
+            
             if (OpenInExcel) {
               string excelFilePath = @"""" + filePath + @"""";
-              ExcelUtilities.OpenCsvInExcel(excelFilePath);
+              ExcelUtilities.OpenInExcel(excelFilePath);
             }
-
           }
         }
-
       }
       catch (Exception ex) {
         UserInteraction.PromptUserWithError(ex);
       }
+    }
 
+    private static void WriteTranslationsTableToExcel(string filePath, TranslationsTable translationsTable)
+    {
+      using (var workbook = new XLWorkbook())
+      {
+        var worksheet = workbook.Worksheets.Add("Translations");
+
+        for (int col = 0; col < translationsTable.Headers.Length; ++col)
+        {
+          worksheet.Cell(1, col + 1).Value = translationsTable.Headers[col];
+        }
+
+        for (int row = 0; row < translationsTable.Rows.Count; ++row)
+        {
+          string[] curRow = translationsTable.Rows[row];
+
+          for (int col = 0; col < curRow.Length; ++col)
+          {
+            worksheet.Cell(row + 2, col + 1).Value = curRow[col];
+          }
+        }
+        
+        var range = worksheet.Range(1, 1, translationsTable.Rows.Count + 1, translationsTable.Headers.Length);       
+        var table = range.CreateTable();
+        worksheet.Columns().AdjustToContents();
+
+        workbook.SaveAs(filePath);
+      }
     }
 
     private static string GetTableName(string ObjectName) {
@@ -807,6 +806,10 @@ namespace TranslationsBuilder.Services {
 
     private static string GetChildName(string ObjectName) {
       return ObjectName.Substring(ObjectName.IndexOf("[") + 1, (ObjectName.IndexOf("]") - ObjectName.IndexOf("[") - 1));
+    }
+
+    private static string GetDisplayFolder(string ObjectName) {
+      return ObjectName.Substring(ObjectName.IndexOf("]") + 1, ObjectName.Length - ObjectName.IndexOf("]") - 1);
     }
 
     private static string GetLevelName(string ObjectName) {
@@ -819,7 +822,7 @@ namespace TranslationsBuilder.Services {
       // display folder translations for child columns, measures and hierchies
       if (ObjectType.Equals("Table") && PropertyName.Equals("DisplayFolder")) { return null; }
 
-      if (ObjectType.Equals("Table") && PropertyName.Equals("Caption")) {
+      if (ObjectType.Equals("Table") && (PropertyName.Equals("Caption") || PropertyName.Equals("Description"))) {
         return model.Tables[ObjectName];
       }
       else {
@@ -845,7 +848,8 @@ namespace TranslationsBuilder.Services {
     public static bool EnsureMetadataObjectExists(string ObjectType, string ObjectName) {
 
       if (ObjectType.Equals("Table")) {
-        return model.Tables.Contains(ObjectName);
+        string useTableName = ObjectName.IndexOf("[") != -1 ? GetTableName(ObjectName) : ObjectName; // Display Folder ObjectName format: D_TEMPS[ID_DATE]Date
+        return model.Tables.Contains(useTableName);
       }
       else {
         string tableName = GetTableName(ObjectName);
@@ -888,7 +892,7 @@ namespace TranslationsBuilder.Services {
       }
     }
 
-    public static void SetDatasetObjectTranslation(string ObjectType, string PropertyName, string ObjectName, string TargetLanguage, string TranslatedValue) {
+    public static void SetDatasetObjectTranslation(string ObjectType, string PropertyName, string ObjectName, string TargetLanguage, string TranslatedValue, bool saveModel) {
 
       MetadataObject targetObject = TranslationsManager.GetMetadataObject(ObjectType, PropertyName, ObjectName);
 
@@ -910,19 +914,20 @@ namespace TranslationsBuilder.Services {
 
       }
 
-      model.SaveChanges();
-
+      if (saveModel) {
+        model.SaveChanges();
+      }
     }
 
     public static void UpdateDisplayFolderForTable(string ObjectName, string TargetLanguage, string TranslatedValue) {
 
       string tableName = GetTableName(ObjectName);
-      string folderName = GetChildName(ObjectName);
+      string folderName = GetDisplayFolder(ObjectName);
 
 
       Table table = model.Tables[tableName];
 
-      foreach (Column column in table.Columns) {
+      foreach (Column column in table.Columns.Where(c => c.Type != ColumnType.RowNumber)) { // Important : Skip RowNumber columns or it will fail
         if (column.DisplayFolder.Equals(folderName)) {
           model.Cultures[TargetLanguage].ObjectTranslations.SetTranslation(column, TranslatedProperty.DisplayFolder, TranslatedValue);
         }
@@ -957,7 +962,11 @@ namespace TranslationsBuilder.Services {
           break;
       };
 
-      var customizedDefaultTranslation = model.Cultures[model.Culture].ObjectTranslations[targetObject, PropertyType]?.Value;
+      string customizedDefaultTranslation = null;
+
+      if (targetObject != null) { // FS: Always null for DisplayFolder
+        customizedDefaultTranslation = model.Cultures[model.Culture].ObjectTranslations[targetObject, PropertyType]?.Value;
+      }
 
       if (!string.IsNullOrEmpty(customizedDefaultTranslation)) {
         return customizedDefaultTranslation;
@@ -995,54 +1004,75 @@ namespace TranslationsBuilder.Services {
     public static void ImportTranslations(string filePath) {
 
       try {
+        Cursor.Current = Cursors.WaitCursor;
 
-        string linebreak = "\r\n";
+        using (var workbook = new XLWorkbook(filePath))
+        {          
+          var worksheet = workbook.Worksheets.FirstOrDefault();
 
-        FileStream stream = File.Open(filePath, FileMode.Open, FileAccess.Read, FileShare.Read);
-        StreamReader reader = new StreamReader(stream);
-        var lines = reader.ReadToEnd().Trim().Split(linebreak);
-        var headers = lines[0].Split(",");
+          if (worksheet != null)
+          {
+            // Make sure cultures are defined in the model
 
-        var cultureCount = headers.Length - 3;
-        var culturesList = new List<string>();
+            int columnCount = worksheet.CellsUsed().Max(cell => cell.Address.ColumnNumber);
+            
+            var cultureCount = columnCount - 3;
+            
+            for (int col = 3; col < columnCount; ++col)
+            {
+              string curLanguage = worksheet.Cell(1, col + 1).Value.GetText();
+              var language = SupportedLanguages.GetLanguageFromFullName(curLanguage);
 
-        for (int columnNumber = 3; (columnNumber < headers.Length); columnNumber++) {
-          var language = SupportedLanguages.GetLanguageFromFullName(headers[columnNumber]);
-          culturesList.Add(language.LanguageId);
-        }
-
-        foreach (string cultureName in culturesList) {
-          if (!model.Cultures.Contains(cultureName)) {
-            model.Cultures.Add(new Culture { Name = cultureName });
-          }
-        }
-
-        // enumerate through lines in CSV data
-        for (int lineNumber = 1; lineNumber <= lines.Length - 1; lineNumber++) {
-          var row = lines[lineNumber];
-          var rowValues = row.Split(",");
-          string objectType = rowValues[0];
-          string propertyName = rowValues[1];
-          string objectName = rowValues[2];
-          // enumerate across language columns
-          for (int columnNumber = 3; (columnNumber < headers.Length); columnNumber++) {
-            string targetLanguage = SupportedLanguages.GetLanguageFromFullName(headers[columnNumber]).LanguageId;
-            string translatedValue = rowValues[columnNumber];
-            if (!string.IsNullOrEmpty(translatedValue) && TranslationsManager.EnsureMetadataObjectExists(objectType, objectName)) {
-              TranslationsManager.SetDatasetObjectTranslation(objectType, propertyName, objectName, targetLanguage, translatedValue);
+              if (language != null)
+              {
+                if (!model.Cultures.Contains(language.LanguageId))
+                {
+                  model.Cultures.Add(new Culture { Name = language.LanguageId });
+                }                
+              }              
             }
+            
+            // Scan rows
+
+            int rowCount = worksheet.CellsUsed().Max(cell => cell.Address.RowNumber);
+            
+            for (int row = 1; row < rowCount; ++row)
+            {
+              string objectType = worksheet.Cell(row + 1, 1).Value.GetText();
+              string propertyName = worksheet.Cell(row + 1, 2).Value.GetText();
+              string objectName = worksheet.Cell(row + 1, 3).Value.GetText();
+
+              for (int columnNumber = 3; columnNumber < columnCount; ++columnNumber)
+              {
+                string curLanguage = worksheet.Cell(1, columnNumber + 1).Value.GetText();
+                var language = SupportedLanguages.GetLanguageFromFullName(curLanguage);
+
+                if (language != null)
+                {
+                  string targetLanguage = language.LanguageId;
+                  var curValue = worksheet.Cell(row + 1, columnNumber + 1).Value;
+
+                  string translatedValue = !curValue.IsBlank ? curValue.GetText() : String.Empty;
+
+                  if (!string.IsNullOrEmpty(translatedValue) && TranslationsManager.EnsureMetadataObjectExists(objectType, objectName))
+                  {                    
+                    TranslationsManager.SetDatasetObjectTranslation(objectType, propertyName, objectName, targetLanguage, translatedValue, saveModel:false);
+                  }
+                }
+              }
+            }
+
+            model.SaveChanges();
           }
         }
-
-        // close file and release resources
-        reader.Close();
-        stream.Close();
-
       }
       catch (Exception ex) {
         UserInteraction.PromptUserWithError(ex);
       }
-
+      finally
+      {
+        Cursor.Current = Cursors.Default;
+      }
     }
 
     public static void ImportLocalizedLabels(string filePath) {

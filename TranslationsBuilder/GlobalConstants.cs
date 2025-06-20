@@ -9,8 +9,8 @@ namespace TranslationsBuilder {
 
   class GlobalConstants {
 
-    public const string VersionNumber = "2.2";
-    public const string ApplicationName = "Translations Builder";
+    public const string VersionNumber = "2.5";
+    public const string ApplicationName = "Power BI Translations Builder";
     public const string ApplicationTitle = ApplicationName + " | Version " + VersionNumber;
 
   }

@@ -7,7 +7,7 @@ namespace TranslationsBuilder.Services {
 
   class ExcelUtilities {
 
-    public static void OpenCsvInExcel(string FilePath) {
+    public static void OpenInExcel(string FilePath) {
 
       ProcessStartInfo startInfo = new ProcessStartInfo();
 

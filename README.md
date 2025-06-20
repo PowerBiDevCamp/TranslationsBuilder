@@ -1,3 +1,17 @@
+# This fork
+
+**Excel Export/Import**
+- Translation Builder always use comma as a separator which is not convenient for Canadien French computers (where semicolon is used because comma is a decimal separator).
+- This version use the ClosedXml open source libray to Export and Import Excel files. When exporting it creates a real table that is autosized by column content and can be sorted/filtered.
+
+**Display Folder support**
+- Fixed DisplayFolder bugs : import from CSV and directly in the UI grid.
+
+**UI changes**
+- Changed default shortcut keys to avoid Ctrl+C and Ctrl+S which are usually associated with Copy and Save.
+- A wait cursor is shown when importing translations from Excel
+- Always show descriptions for Tables, Columns, Measures and Hierarchies
+
 # Translations Builder
 
 Translations Builder is an external tool created for Power BI Desktop
